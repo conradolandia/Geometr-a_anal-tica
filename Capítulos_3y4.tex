@@ -1,0 +1,3765 @@
+\section{Paralelogramos, triángulos, paralelepípedos y tetraedros en el espacio}
+
+\subsection{Áreas de paralelogramos y triángulos en el espacio}
+
+De la sección de producto cruz, sabemos que el área del paralelogramo generado por dos vectores $X$ y $Y$ en el espacio $\mathbb{R}^{3}$ es $\left\Vert X\times Y\right\Vert$, como se ve en la figura \ref{fig:placeholder3.1}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Área de paralelogramo generado por dos vectores}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T84.png}
+    \label{fig:placeholder3.1}
+\end{figure}
+
+El área del paralelogramo generado por tres puntos no colineales $P$, $Q$ y $R$ es $\left\Vert \overrightarrow{PQ}\times \overrightarrow{PR}\right\Vert$, como se muestra en la figura \ref{fig:placeholder3.2}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Área del paralelogramo generado por tres puntos}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T85.png}
+    \label{fig:placeholder3.2}
+\end{figure}
+
+El área del triángulo con vértices $P$, $Q$ y $R$ es $\frac{1}{2}\left\Vert 
+\overrightarrow{PQ}\times \overrightarrow{PR}\right\Vert$,como se ilustra en la figura \ref{fig:placeholder3.3}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Área de un triángulo en el espacio}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T86.png}
+    \label{fig:placeholder3.3}
+\end{figure}
+
+\begin{example}
+Sean $P=\left( 1,4,1\right), Q=\left( 3,1,1\right)$ y $R=\left(2,1,5\right)$ tres puntos y $T$ el triángulo con vértices $PQR$, halle el área de $T$.
+\end{example}
+
+\textbf{Solución}
+
+$X=\overrightarrow{PQ}=Q-P=\left( 2,-3,0\right)$
+
+$Y=\overrightarrow{PR}=R-P=\left( 1,-3,4\right)$
+
+$\acute{a}rea(T)=\frac{1}{2}\acute{a}rea\left( \text{paralelogramo}\right) $
+
+$\qquad =\frac{1}{2}\left\Vert X\times Y\right\Vert $
+
+$\qquad =\frac{1}{2}\left\Vert \left\vert 
+\begin{array}{cccccc}
+2 & -3 & 0 & 2 & -3 & 0 \\ 
+1 & -3 & 4 & 1 & -3 & 4%
+\end{array}%
+\right\vert \right\Vert $
+
+$\qquad =\frac{1}{2}\left\Vert \left( -12,-8,-3\right) \right\Vert $
+
+$\qquad =\frac{1}{2}\sqrt{12^{2}+8^{2}+6^{2}}$
+
+$\qquad =\sqrt{61}\approx 7.810\,2$
+
+En la figura \ref{fig:placeholder3.4} se dibuja el triángulo en el espacio.
+\begin{figure}[H]
+    \centering
+    \caption{Área del triángulo $T$ }
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T87.png}
+    \label{fig:placeholder3.4}
+\end{figure}
+
+\bigskip
+
+\subsection{Volumen de paralelepípedos y tetraedros en el espacio}
+
+\bigskip
+
+Recuerde de la sección sobre el producto cruz de vectores que el valor de $\left\vert X\cdot \left( Y\times Z\right) \right\vert$ es el volumen del paralelepípedo generado por los vectores $X$, $Y$ y $Z$, mostrado en la figura \ref{fig:placeholder3.5}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Paralelepípedo generado por tres vectores}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T88.png}
+    \label{fig:placeholder3.5}
+\end{figure}
+
+\begin{example}
+Halle el volumen del paralelepípedo generado por los vectores $u=\left( 10,5,8\right) $, $v=\left( 3,9,11\right) $ y $w=\left( 4,-3,7\right)$.
+\end{example}
+
+\textbf{Solución}
+
+Volumen$\left( P\right) $
+
+$=\left\vert \det \left[ u\text{ }v\text{ }w\right] \right\vert $
+
+$=\left\vert \det \left( 
+\begin{array}{ccc}
+10 & 3 & 4 \\ 
+5 & 9 & -3 \\ 
+8 & 11 & 7%
+\end{array}%
+\right) \right\vert $
+
+$=\left\vert 10\left\vert 
+\begin{array}{cc}
+9 & -3 \\ 
+11 & 7%
+\end{array}%
+\right\vert -3\left\vert 
+\begin{array}{cc}
+5 & -3 \\ 
+8 & 7%
+\end{array}%
+\right\vert +4\left\vert 
+\begin{array}{cc}
+5 & 9 \\ 
+8 & 11%
+\end{array}%
+\right\vert \right\vert$
+
+$=\left\vert 10\left( 63+33\right) -3\left( 35+24\right) +4\left(
+55-72\right) \right\vert$
+
+$=\left\vert 960-177-68\right\vert =715$ unidades$^{3}$
+
+En la figura \ref{fig:placeholder3.6}, se dibuja el paralelepípedo en el espacio. 
+\begin{figure}[H]
+    \centering
+    \caption{Paralelepípedo generado por los vectores $u,v$ y $w$}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T89.png}
+    \label{fig:placeholder3.6}
+\end{figure}
+
+El volumen del tetraedro es una sexta parte del volumen del paralelepípedo generado por los tres vectores.
+
+El volumen $V$ de un tetraedro, que es una pirámide de base triangular, es igual a la tercera parte del área de la base multiplicada por la altura:
+
+\begin{equation*}
+    V=\frac{1}{3}A_{b}h
+\end{equation*}
+
+\begin{figure}[H]
+    \centering
+    \caption{Tetraedro generado por tres vectores}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T8A.png}
+    \label{fig:placeholder3.7}
+\end{figure}
+
+A partir de la figura \ref{fig:placeholder3.7}, se deduce:
+
+$V=\frac{1}{3}\left( \frac{1}{2}\left\Vert X\times Y\right\Vert \left\Vert 
+\text{Proy}_{X\times Y}Z\right\Vert \right) $
+
+$=\frac{1}{6}\left( \left\Vert X\times Y\right\Vert \left\Vert \frac{\left(
+X\times Y\right) \cdot Z}{\left\Vert X\times Y\right\Vert ^{2}}X\times
+Y\right\Vert \right) $
+
+$=\frac{1}{6}\left\vert \left( X\times Y\right) \cdot Z\right\vert $
+
+$=\frac{1}{6}\left\vert \det \left[ 
+\begin{array}{c}
+X \\ 
+Y \\ 
+Z%
+\end{array}%
+\right] \right\vert $
+
+$=\frac{1}{6}\left\vert \det \left( 
+\begin{array}{ccc}
+x_{1} & x_{2} & x_{3} \\ 
+y_{1} & y_{2} & y_{3} \\ 
+z_{1} & z_{2} & z_{3}%
+\end{array}%
+\right) \right\vert $
+
+\begin{example}
+Halle el volumen del tetraedro generado por los vectores
+$u=\left( 10,8,3\right)$, $v=\left( 5,6,4\right)$ y $w=\left( 7,5,9\right)$.
+\end{example}
+
+\textbf{Solución}
+
+El volumen de este tetraedro es:
+
+$V=\frac{1}{6}\left\vert \left( u\times v\right) \cdot w\right\vert $
+
+$=\frac{1}{6}\left\vert \det \left( 
+\begin{array}{ccc}
+10 & 8 & 3 \\ 
+5 & 6 & 4 \\ 
+7 & 5 & 9%
+\end{array}%
+\right) \right\vert $
+
+$=\frac{1}{6}\left\vert 
+\begin{array}{ccccc}
+10 & 8 & 3 & 10 & 8 \\ 
+5 & 6 & 4 & 5 & 6 \\ 
+7 & 5 & 9 & 7 & 5%
+\end{array}%
+\right\vert $
+
+$=\frac{1}{6}\left( 540+224+75-126-200-360\right) $
+
+En la figura \ref{fig:placeholder3.8}, se dibuja el tetraedro generado por los vectores $u,v$ y $w$.
+
+$=\frac{51}{2}=25.5$ unidades cúbicas
+
+En la figura \ref{fig:placeholder3.8} se dibuja el tetraedro.  .
+
+\begin{figure}[H]
+    \centering
+    \caption{Tetraedro generado por los vectores $u,v$ y $w$}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T8B.png}
+    \label{fig:placeholder3.8}
+\end{figure}
+
+\subsection{Ejercicios}
+
+\begin{enumerate}
+    \item Halle el volumen del paralelepípedo generado por los vectores.
+    \begin{enumerate}
+        \item $u=\left( 1,7,3\right)$, $v=\left( 3,1,8\right)$ y $w=\left(6,10,12\right)$
+        \item $u=\left( 2,4,8\right)$, $v=\left( 3,6,9\right)$ y $w=\left(5,10,18\right)$
+    \end{enumerate}
+    \item Calcule el volumen del paralelepípedo generado por los puntos.
+    \begin{enumerate}
+        \item $P=\left( 1,1,1\right)$, $Q=\left( 3,5,7\right) ,R=\left( 4,-2,6\right)$ y $S=\left( 6,0,2\right)$
+        \item $P=\left( 1,-1,-1\right)$, $Q=\left( 3,-5,7\right) ,R=\left(4,2,-6\right)$ y $S=\left( 6,6,6\right)$
+    \end{enumerate}
+    \item Determine el volumen del tetraedro generado por los vectores.
+    \begin{enumerate}
+        \item $u=\left( 1,0,4\right)$, $v=\left( 3,5,7\right) $ y $w=\left(8,6,14\right)$
+        \item $u=\left( 2,-2,5\right)$, $v=\left( 4,4,-8\right)$ y $w=\left(9,7,16\right)$
+    \end{enumerate}
+    \item Halle el volumen del tetraedro generado por los vectores.
+    \begin{enumerate}
+        \item $u=\left( 2,3,4\right)$, $v=\left( 3,-2,6\right)$ y $w=\left(4,3,16\right)$
+        \item $u=\left( 4,4,8\right)$, $v=\left( 3,-3,11\right)$ y $w=\left(6,5,-2\right)$
+    \end{enumerate}
+\end{enumerate}
+
+
+\section{Transformaciones en el plano}
+
+\subsection{Transformaciones rígidas}
+
+Una transformación de una figura en un plano es un cambio en la posición, forma o tamaño de la figura.
+
+En una transformación, la figura original es la preimagen, y la figura resultante es la imagen.
+
+Desde un punto de vista analítico, una transformación es una función $T:\mathbb{R}^{2}\rightarrow \mathbb{R}^{2}$.
+
+Si $P=\left( x,y\right)$ es un punto del plano, su imagen es $P^{\prime}=T\left( P\right) =T\left( x,y\right)$.
+
+Si $F\subseteq \mathbb{R}^{2}$ es la preimagen, $T\left( F\right) $ es la imagen. También podemos denotar como $F^{\prime}$ la imagen de $F$. Esto se ilustra en la figura \ref{fig:placeholder3.9}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Transformación en el plano}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T8C.png}
+    \label{fig:placeholder3.9}
+\end{figure}
+
+Para graficar la preimagen y la imagen de un subconjunto $A$ de $\mathbb{R}^{2}$, podemos usar un mismo plano, como se ve en la figura \ref{fig:placeholder3.10}. 
+
+\begin{figure}[H]
+    \centering
+    \caption{Imagen de un subconjunto $F$}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T8D.png}
+    \label{fig:placeholder3.10}
+\end{figure}
+
+Una isometría es una transformación en la cual la preimagen y la imagen son congruentes. Esto significa que las medidas de los ángulos y las longitudes de los lados se mantienen iguales en la preimagen y la imagen.
+
+Una isometría también se denomina transformación rígida, porque la forma original y el tamaño de la figura no cambian. 
+
+En esta sección, se estudian tres isometrías básicas o transformaciones rígidas: traslaciones, reflexiones y rotaciones (o giros).
+
+Una transformación $T:\mathbb{R}^{2}\rightarrow \mathbb{R}^{2}$ es una transformación matricial si existe una matriz $2\times 2,$ $A=\left( 
+\begin{array}{cc}
+a & b \\ 
+c & d%
+\end{array}%
+\right) $ tal que $T\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+a & b \\ 
+c & d%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right)$.
+
+\bigskip
+
+\subsubsection{Traslaciones}
+
+Una traslación es una transformación sobre el plano, que desplaza todos los puntos de una figura a la misma distancia y en la misma dirección.
+
+Para dibujar la traslación de una figura, se pueden representar en el mismo plano la preimagen y a imagen, como se ve en la figura \ref{fig:placeholder3.11}.
+
+La preimagen es el triángulo $ABC$, y la imagen, tras la traslación, es el triángulo $A^{\prime }B^{\prime }C^{\prime}$.
+
+\begin{figure}[H]
+    \centering
+    \caption{Traslación de una figura plana}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T8E.png}
+    \label{fig:placeholder3.11}
+\end{figure}
+
+Analíticamente una traslación es una transformación $T:\mathbb{R}^{2}\rightarrow \mathbb{R}^{2}$ que mueve cada punto del plano $u$ según un vector dado $v$, llamado el vector de traslación.
+
+$T\left( u\right) =u+v\qquad $
+
+En coordenadas, si $u=\left( x,y\right) $ y $v=\left( a,b\right) $, entonces
+
+$T\left( x,y\right) =\left( x,y\right) +\left( a,b\right) =\left(
+x+a,y+b\right)$.
+
+Se cumple que las distancias entre cada punto de la imagen y su correspondiente punto en la imagen miden igual:
+
+\begin{center}
+$d\left( A,A^{\prime }\right) =d\left( B,B^{\prime }\right)$
+\end{center}
+
+Sean $A=\left( x_{1},y_{1}\right) ,$ $B=\left( x_{2},y_{2}\right) $
+
+$d\left( A,A\prime \right) =d\left( \left( x_{1},y_{1}\right) ,\left(
+x_{1}+a,y_{1}+b\right) \right) =\sqrt{a^{2}+b^{2}}$
+
+$d\left( B,B\prime \right) =d\left( \left( x_{2},y_{2}\right) ,\left(
+x_{2}+a,y_{2}+b\right) \right) =\sqrt{a^{2}+b^{2}}$
+
+Por tanto $d\left( A,A^{\prime }\right) =d\left( B,B^{\prime }\right)$.
+
+Las traslaciones son isometrías:
+
+Sea $T$ la traslación \ $T\left( x,y\right) =\left( x,y\right) +\left(
+a,b\right) $
+
+$T$ preserva longitudes:
+
+$d\left( T\left( x_{1},y_{1}\right) ,T\left( x_{2},y_{2}\right) \right)
+=d\left( \left( x_{1}+a,y_{1}+b\right) ,\left( x_{2}+a,y_{2}+b\right)
+\right) $
+
+$=\left( x_{1}-x_{2}\right) ^{2}+\left( y_{1}-y_{2}\right) ^{2}$
+
+$=d\left( \left( x_{1},y_{1}\right) ,\left( x_{2},y_{2}\right) \right) ^{2}.$
+
+$T$ preserva ángulos:
+
+Sean $A,B$ y $C$ puntos. Si $A^{\prime }=T\left( A\right) $, $B^{\prime
+}=T\left( B\right) $ y $C^{\prime }=T\left( C\right)$, como se muestra en la figura \ref{fig:placeholder3.12}, 
+
+\begin{figure}[H]
+    \centering
+    \caption{Traslación}
+    $%
+    \begin{array}{c}
+    \begin{array}{c}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T8F.png}
+    \end{array}%
+    \end{array}%
+    $
+    \label{fig:placeholder3.12}
+\end{figure}
+
+$B^{\prime }-A^{\prime }=\left( x_{2}+a,y_{2}+b\right) -\left(
+x_{1}+a,y_{1}+b\right) =\left( x_{2},y_{2}\right) -\left( x_{1},y_{1}\right)
+=B-A.$
+
+$C^{\prime }-A^{\prime }=\left( x_{3}+a,y_{3}+b\right) -\left(
+x_{1}+a,y_{1}+b\right) =\left( x_{3},y_{3}\right) -\left( x_{1},y_{1}\right)
+=C-A$
+
+Así, $\overrightarrow{A^{\prime }B^{\prime }}\cdot \overrightarrow{A^{\prime
+}C^{\prime }}=\left( B^{\prime }-A^{\prime }\right) \cdot \left( C^{\prime
+}-A^{\prime }\right) =\left( B-A\right) \cdot \left( C-A\right) =%
+\overrightarrow{AB}\cdot \overrightarrow{AC}$
+
+Por tanto, $\frac{\overrightarrow{A^{\prime }B^{\prime }}\cdot 
+\overrightarrow{A^{\prime }C^{\prime }}}{d\left( A^{\prime },B^{\prime
+}\right) d\left( A^{\prime },C^{\prime }\right) }=\frac{\overrightarrow{AB}%
+\cdot \overrightarrow{AC}}{d\left( A,B\right) d\left( A,C\right) }$
+
+Así que $\angle \left( \overrightarrow{A^{\prime }B^{\prime }},%
+\overrightarrow{A^{\prime }C^{\prime }}\right) \cong \angle \left( 
+\overrightarrow{AB},\overrightarrow{AC}\right)$
+
+\textbf{Composición de traslaciones}
+
+Sean $T_{1}\left( x,y\right) =\left( x,y\right) +\left( a,b\right) $ y $
+T_{2}\left( x,y\right) =\left( x,y\right) +\left( c,d\right) $ dos traslaciones.
+
+La composición de $T_{1}$ y $T_{2}$ nuevamente es una traslación y conmuta.
+
+$\left( T_{1}\circ T_{2}\right) \left( x,y\right) =T_{1}\left( T_{2}\left(
+x,y\right) \right) $
+
+$\qquad \qquad \qquad =T_{1}\left( \left( x,y\right) +\left( c,d\right)
+\right) $
+
+$\qquad \qquad \qquad =T_{1}\left( \left( x+c,y+d\right) \right) $
+
+$\qquad \qquad \qquad =\left( x+c,y+d\right) +\left( a,b\right) $
+
+$\qquad \qquad \qquad =\left( x+c+a,y+d+b\right) $
+
+$\qquad \qquad \qquad =\left( x,y\right) +\left( a+c,b+d\right) $ \ 
+
+es la traslación según el vector suma $\left( a,b\right) +\left( c,d\right)$
+
+$\left( T_{2}\circ T_{1}\right) \left( x,y\right) =T_{2}\left( T_{1}\left(
+x,y\right) \right) $
+
+$\qquad \qquad \qquad =T_{2}\left( \left( x,y\right) +\left( a,b\right)
+\right) $
+
+$\qquad \qquad \qquad =\left( x,y\right) +\left( a,b\right) +\left(
+c,d\right) $
+
+$\qquad \qquad \qquad =\left( T_{1}\circ T_{2}\right) \left( x,y\right) $
+
+Luego, la composición de traslaciones es conmutativa.
+
+\bigskip
+
+\textbf{Inversa de una traslación y traslación de curvas}
+
+Si $T\left( x,y\right) =\left( x^{/},y^{/}\right) =T\left( x,y\right) +\left( a,b\right) =\allowbreak \left( a+x,b+y\right)$, para despejar $\left( x,y\right) $ a partir de $\left( x^{/},y^{/}\right)$ se tiene:
+
+$\left( x,y\right) =\left( x^{/}-a,y^{/}-b\right) $
+
+Así que $T^{-1}\left( x,y\right) =\left( x-a,y-b\right) $
+
+Sea $C$ una curva con ecuación implícita $F\left( x,y\right) =0$. Al trasladar $C$ $a$ unidades a la derecha y $b$ unidades arriba, la ecuación de la curva trasladada $C^{\prime }$ es $F\left( x-a,y-b\right) =0$.
+
+\begin{example}
+Sea $C$ la circunferencia con ecuación $x^{2}+y^{2}=4$. Encuentre la ecuación de la curva $C^{\prime }$ obtenida al trasladarla $3$ unidades a la derecha y $2$ unidades hacia arriba. Grafique $C$ y $C^{\prime }$.
+\end{example}
+
+\textbf{Solución}
+
+En la circunferencia con ecuación $x^{2}+y^{2}=4$, reemplazamos $x$ por $x-3$
+y $y$ por $y-2$; así se obtiene $C^{\prime }$, que es la circunferencia con ecuación: $\left( x-3\right) ^{2}+\left( y-2\right) ^{2}=4$.
+
+En la figura \ref{fig:placeholder3.13}, se dibujan la circunferencia $C$ y su imagen.
+
+\begin{figure}[H]
+    \centering
+    \caption{Traslación de una circunferencia}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T8G.png}
+    \label{fig:placeholder3.13}
+\end{figure}
+
+\subsubsection{Reflexiones}
+
+Cuando una figura gira a través de una línea, la preimagen y su imagen son congruentes y tienen orientaciones opuestas,como se ve en la figura \ref{fig:placeholder3.14}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Imagen por una reflexión}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T8H.png}
+    \label{fig:placeholder3.14}
+\end{figure}
+
+Cuando se refleja la figura a través de una recta, su orientación se invierte.
+
+La reflexión respecto a una recta $l$ es una transformación con las siguientes dos propiedades:
+
+\begin{enumerate}
+    \item Cada punto $A$ sobre la recta $l$ es invariante por la reflexión, es decir, $A^{\prime }=A$ o $T\left( A\right) =A$.
+    \item Si $B$ no está sobre $l$, entonces $l$ es el bisector perpendicular del segmento $BB^{\prime }.$ Es decir, $l$ es perpendicular al segmento $BB^{\prime }$ y la distancia de $B$ a $l$ es igual a la distancia de $B^{\prime }$ a $l$, como se ilustra en la figura \ref{fig:placeholder3.15}.
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    \caption{Reflexión de un punto alrededor de $l$}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T8I.png}
+    \label{fig:placeholder3.15}
+\end{figure}
+
+Una reflexión respecto a una recta es una isometría.
+
+\bigskip
+
+\textbf{Reflexión respecto a una recta que pasa por el origen}
+
+\textit{Reflexión respecto a la recta $y=mx$}
+
+\begin{figure}[H]
+    \centering
+    \caption{Reflexión respecto a la recta $y=mx$}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T8J.png}
+    \label{fig:placeholder3.16}
+\end{figure}
+
+$%
+\begin{tabular}{l}
+Recta de reflexión $y=mx$ \\ 
+Vector director de la recta $v=\left( 1,m\right) $ \\ 
+
+De acuerdo a la figura \ref{fig:placeholder3.16}, se tiene:
+
+$u=\left( x,y\right) ,$ \ $u^{/}=\left( x^{/},y^{/}\right) $ \\ 
+$u^{/}=T\left( u\right) =\Pr oy_{v}u+\Pr oy_{v}u-u$ \\ 
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $=2\Pr oy_{v}u-u$ \\ 
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $=2\frac{u\cdot v}{\left\Vert v\right\Vert
+^{2}}v-u$ \\ 
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $=2\frac{x+my}{1+m^{2}}\left( 1,m\right)
+-\left( x,y\right) $ \\ 
+$\ =\frac{1}{m^{2}+1}\left( -xm^{2}+2ym+x,ym^{2}+2xm-y\right) \allowbreak $%
+\end{tabular}%
+$
+
+Matricialmente, la reflexión queda:
+
+$T\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\frac{1}{m^{2}+1}\left( 
+\begin{array}{c}
+\left( 1-m^{2}\right) x+2ym \\ 
+2xm+y\left( m^{2}-1\right)%
+\end{array}%
+\right) =\frac{1}{m^{2}+1}\left( 
+\begin{array}{cc}
+1-m^{2} & 2m \\ 
+2m & m^{2}-1%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+Note que los números $2m,m^{2}-1$ y $m^{2}+1$ forman una tripla pitagórica.
+
+La reflexión respecto al eje $x$ se obtiene reemplazando $m$ por $0$:
+
+$T\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+1 & 0 \\ 
+0 & -1%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+La reflexión respecto al eje $y$ se obtiene tomando el límite cuando $m$ tiende a $\infty$:
+
+$T\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+\lim_{m\rightarrow \infty }\frac{1-m^{2}}{m^{2}+1} & \lim_{m\rightarrow
+\infty }\frac{2m}{m^{2}+1} \\ 
+\lim_{m\rightarrow \infty }\frac{2m}{m^{2}+1} & \lim_{m\rightarrow \infty }%
+\frac{m^{2}-1}{m^{2}+1}%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$\qquad \qquad =\left( 
+\begin{array}{cc}
+-1 & 0 \\ 
+0 & 1%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+\bigskip
+\textit{Reflexión respecto a la recta $y=x$}
+
+En este caso, la pendiente de la recta es $m=1$ y la reflexión es:
+
+$T\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\frac{1}{2}\left( 
+\begin{array}{cc}
+0 & 2 \\ 
+2 & 0%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$\qquad \qquad =\left( 
+\begin{array}{cc}
+0 & 1 \\ 
+1 & 0%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$\qquad \qquad =\left( 
+\begin{array}{c}
+y \\ 
+x%
+\end{array}%
+\right) $
+
+Una reflexión respecto a la recta $y=x$ de una curva consiste en intercambiar las variables $x$ y $y$, de manera que el reflejo de la curva $f\left(x,y\right) =0$ es $f\left( y,x\right) =0$.
+
+\bigskip
+\textit{Reflexión respecto a la recta $y=4x$}
+
+La pendiente de la recta es $m=4$
+
+$T\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\frac{1}{17}\left( 
+\begin{array}{cc}
+-15 & 8 \\ 
+8 & 15%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$\qquad \qquad =\left( 
+\begin{array}{cc}
+-\frac{15}{17} & \frac{8}{17} \\ 
+\frac{8}{17} & \frac{15}{17}%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$\qquad \qquad =\left( 
+\begin{array}{c}
+\frac{8}{17}y-\frac{15}{17}x \\ 
+\frac{8}{17}x+\frac{15}{17}y%
+\end{array}%
+\right) $
+
+\begin{example}
+Refleje la curva $y=\sqrt{x}$ respecto a la recta $y=4x$.
+\end{example}
+
+\textbf{Solución}
+
+$y-\sqrt{x}=0\qquad \frac{8}{17}x+\frac{15}{17}y-\sqrt{\frac{8}{17}y-\frac{15%
+}{17}x}=0$
+
+En la figura \ref{fig:placeholder3.17} se dibujan la curva $y=\sqrt{x}$ y su reflexión respecto a la recta $y=4x$.
+
+\begin{figure}[H]
+    \centering
+    \caption{Reflexión de la curva $y=\sqrt{x}$}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T8K.png}
+    \label{fig:placeholder3.17}
+\end{figure}
+
+\bigskip
+
+\textbf{Composición de una reflexión y una traslación}
+
+Sean $T_{m}$ la reflexión respecto a la recta $y=mx$ y $T$ la traslación
+
+$T\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{c}
+x+a \\ 
+y+b%
+\end{array}%
+\right)$.
+
+La compuesta de la reflexión $T_{m}$ y la traslación $T$ es:
+
+\begin{center}
+$T_{m}\left( T\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) \right) =\frac{1}{m^{2}+1}\left( 
+\begin{array}{cc}
+1-m^{2} & 2m \\ 
+2m & m^{2}-1%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x+a \\ 
+y+b%
+\end{array}%
+\right) $
+\end{center}
+
+\textbf{Composición de dos reflexiones}
+
+Sean $T_{m}$ la reflexión respecto a la recta $y=mx$ y $T_{n}$ la reflexión
+respecto a la recta $y=nx,$ la composición de estas dos reflexiones es:
+
+$T_{n}\left( T_{m}\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) \right) $
+
+$=T_{n}\left( \frac{1}{m^{2}+1}\left( 
+\begin{array}{cc}
+1-m^{2} & 2m \\ 
+2m & m^{2}-1%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) \right) $
+
+$=\frac{1}{n^{2}+1}\left( 
+\begin{array}{cc}
+1-n^{2} & 2n \\ 
+2n & n^{2}-1%
+\end{array}%
+\right) \frac{1}{m^{2}+1}\left( 
+\begin{array}{cc}
+1-m^{2} & 2m \\ 
+2m & m^{2}-1%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$=\frac{1}{\left( n^{2}+1\right) \left( m^{2}+1\right) }\left( 
+\begin{array}{cc}
+1-n^{2} & 2n \\ 
+2n & n^{2}-1%
+\end{array}%
+\right) \left( 
+\begin{array}{cc}
+1-m^{2} & 2m \\ 
+2m & m^{2}-1%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$=\left( 
+\begin{array}{cc}
+\frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( n^{2}+1\right) \left(
+m^{2}+1\right) } & \frac{2m^{2}n-2mn^{2}+2m-2n}{\left( n^{2}+1\right) \left(
+m^{2}+1\right) } \\ 
+\frac{-2m^{2}n+2mn^{2}-2m+2n}{\left( n^{2}+1\right) \left( m^{2}+1\right) }
+& \frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( n^{2}+1\right) \left(
+m^{2}+1\right) }%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+Ahora, se calcula la compuesta en el orden contrario:
+
+$T_{m}\left( T_{n}\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) \right) $
+
+$=T_{m}\left( \frac{1}{n^{2}+1}\left( 
+\begin{array}{cc}
+1-n^{2} & 2n \\ 
+2n & n^{2}-1%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) \right) $
+
+$=\frac{1}{m^{2}+1}\left( 
+\begin{array}{cc}
+1-m^{2} & 2m \\ 
+2m & m^{2}-1%
+\end{array}%
+\right) \frac{1}{n^{2}+1}\left( 
+\begin{array}{cc}
+1-n^{2} & 2n \\ 
+2n & n^{2}-1%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$=\frac{1}{\left( m^{2}+1\right) \left( n^{2}+1\right) }\left( 
+\begin{array}{cc}
+1-m^{2} & 2m \\ 
+2m & m^{2}-1%
+\end{array}%
+\right) \left( 
+\begin{array}{cc}
+1-n^{2} & 2n \\ 
+2n & n^{2}-1%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$=\left( 
+\begin{array}{cc}
+\frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( m^{2}+1\right) \left(
+n^{2}+1\right) } & \frac{-2m^{2}n+2mn^{2}-2m+2n}{\left( m^{2}+1\right)
+\left( n^{2}+1\right) } \\ 
+\frac{2m^{2}n-2mn^{2}+2m-2n}{\left( m^{2}+1\right) \left( n^{2}+1\right) } & 
+\frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( m^{2}+1\right) \left(
+n^{2}+1\right) }%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right)$
+
+Tenemos que la matriz de $T_{n}\circ T_{m}$ es la transpuesta de la matriz de $T_{m}\circ T_{n}$.
+
+\bigskip
+
+\subsubsection{Rotaciones}
+
+\textbf{Rotaciones alrededor de un punto}
+
+Una rotación de un ángulo $\alpha $ alrededor de un punto $R$ (llamado el centro de la rotación) es una transformación que satisface las condiciones:
+\begin{enumerate}
+    \item El centro $R$ es invariante bajo la rotación, es decir, $R^{\prime }=R$.
+    \item Para cada punto $A\neq R$, se cumple que $RA=R^{\prime }A$ y $m\angle ARA^{\prime}=\alpha$.
+\end{enumerate}
+
+En la figura \ref{fig:placeholder3.18}, se ilustra la rotación y sus propiedades.
+
+\begin{figure}[H]
+    \centering
+    \caption{Rotación centrada en $R$}
+
+\includegraphics[width=0.7\textwidth]{Images/SDY12T8L.png}
+    \label{fig:placeholder3.18}
+\end{figure}
+
+\textbf{Rotaciones centradas en el origen}
+
+Una rotación alrededor de un punto es una isometría.
+
+\bigskip
+
+Transformación de rotación de un ángulo $\phi $ en sentido antihorario, centrada en el origen.
+
+\begin{figure}[H]
+    \centering
+    \caption{Rotación centrada en el origen}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T8M.png}
+    \label{fig:placeholder3.19}
+\end{figure}
+
+De  la figura \ref{fig:placeholder3.19} tenemos:
+
+\begin{tabular}{l}
+$T\left( P\right) =P^{/},$ \ $P=\left( x,y\right) ,P^{/}=\left(
+x^{/},y^{/}\right) $ \ $x=r\cos \theta ,y=r\sin \theta $ \\ 
+$x^{/}=r\cos \left( \theta +\phi \right) =r\cos \theta \cos \phi -r\sin
+\theta \sin \phi $ \ \  \\ 
+$y^{/}=r\sin \left( \theta +\phi \right) =r\sin \theta \cos \phi +r\cos
+\theta \sin \phi $ \ \  \\ 
+$x^{/}=x\cos \phi -y\sin \phi $ \ \  \\ 
+$y^{/}=y\cos \phi +x\sin \phi $ \ \ 
+\end{tabular}
+
+$T\left( P\right) =T\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$\qquad =\left( 
+\begin{array}{c}
+x^{/} \\ 
+y^{/}%
+\end{array}%
+\right) $
+
+$\qquad =\left( 
+\begin{array}{c}
+x\cos \phi -y\sin \phi \\ 
+x\sin \phi +y\cos \phi%
+\end{array}%
+\right) $
+
+$\qquad =\left( 
+\begin{array}{cc}
+\cos \phi & -\sin \phi \\ 
+\sin \phi & \cos \phi%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $.
+
+El determinante de la matriz de rotación es:
+
+$\det \left( 
+\begin{array}{cc}
+\cos \phi & -\sin \phi \\ 
+\sin \phi & \cos \phi%
+\end{array}%
+\right) =\cos ^{2}\phi -\left( -\sin ^{2}\phi \right) =1$
+
+La inversa de la matriz de rotación es:
+
+$\left( 
+\begin{array}{cc}
+\cos \phi & -\sin \phi \\ 
+\sin \phi & \cos \phi%
+\end{array}%
+\right) ^{-1}$
+
+$=\frac{1}{\det \left( 
+\begin{array}{cc}
+\cos \phi & -\sin \phi \\ 
+\sin \phi & \cos \phi%
+\end{array}%
+\right) }\left( 
+\begin{array}{cc}
+\cos \phi & \sin \phi \\ 
+-\sin \phi & \cos \phi%
+\end{array}%
+\right) $
+
+$=\left( 
+\begin{array}{cc}
+\cos \phi & \sin \phi \\ 
+-\sin \phi & \cos \phi%
+\end{array}%
+\right) $
+
+De manera que, al despejar $\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $ con la matriz inversa, tenemos:$\ $
+
+$\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+\cos \phi & -\sin \phi \\ 
+\sin \phi & \cos \phi%
+\end{array}%
+\right) ^{-1}\left( 
+\begin{array}{c}
+x^{/} \\ 
+y^{/}%
+\end{array}%
+\right) $
+
+$\qquad =\left( 
+\begin{array}{cc}
+\cos \phi & \sin \phi \\ 
+-\sin \phi & \cos \phi%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x^{/} \\ 
+y^{/}%
+\end{array}%
+\right)$
+
+\bigskip
+
+\begin{example}
+Halle la imagen bajo la rotación de un ángulo de $\frac{\pi }{3}$, con centro en el origen de cada uno de los siguientes puntos:
+\begin{enumerate}
+ \renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item $A=\left( 2,5\right)$
+        \item $B=\left( 4,1\right)$
+        \item $C=\left(-1,4\right) $
+    \end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+Para rotar cada punto, lo escribimos como vector columna y multiplicamos usando la matriz de rotación de ángulo $\phi =\frac{\pi }{3}$.
+
+$T\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+\cos \frac{\pi }{3} & -\sin \frac{\pi }{3} \\ 
+\sin \frac{\pi }{3} & \cos \frac{\pi }{3}%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+\frac{1}{2} & -\frac{1}{2}\sqrt{3} \\ 
+\frac{1}{2}\sqrt{3} & \frac{1}{2}%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+Así, la imagen rotada de cada punto es:
+
+a) $A^{/}=T\left( A\right) =\left( 
+\begin{array}{cc}
+\frac{1}{2} & -\frac{1}{2}\sqrt{3} \\ 
+\frac{1}{2}\sqrt{3} & \frac{1}{2}%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+2 \\ 
+5%
+\end{array}%
+\right) $
+
+$\qquad \qquad \qquad =\left( 
+\begin{array}{c}
+1-\frac{5}{2}\sqrt{3} \\ 
+\sqrt{3}+\frac{5}{2}%
+\end{array}%
+\right) \approx \left( 
+\begin{array}{c}
+-3.330\,1 \\ 
+4.232\,1%
+\end{array}%
+\right)$
+
+b) $B^{/}=T\left( B\right) =\left( 
+\begin{array}{cc}
+\frac{1}{2} & -\frac{1}{2}\sqrt{3} \\ 
+\frac{1}{2}\sqrt{3} & \frac{1}{2}%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+4 \\ 
+1%
+\end{array}%
+\right) $
+
+$\qquad \qquad \qquad =\left( 
+\begin{array}{c}
+2-\frac{1}{2}\sqrt{3} \\ 
+2\sqrt{3}+\frac{1}{2}%
+\end{array}%
+\right) \approx \left( 
+\begin{array}{c}
+1.\,\allowbreak 134\,0 \\ 
+3.\,\allowbreak 964\,1%
+\end{array}%
+\right)$
+
+c) $C^{/}=T\left( C\right) =\left( 
+\begin{array}{cc}
+\frac{1}{2} & -\frac{1}{2}\sqrt{3} \\ 
+\frac{1}{2}\sqrt{3} & \frac{1}{2}%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+-1 \\ 
+4%
+\end{array}%
+\right) $
+
+$\qquad \qquad \qquad =\left( 
+\begin{array}{c}
+-2\sqrt{3}-\frac{1}{2} \\ 
+2-\frac{1}{2}\sqrt{3}%
+\end{array}%
+\right) \approx \left( 
+\begin{array}{c}
+-3.964\,1 \\ 
+1.134\,0%
+\end{array}%
+\right)$
+
+En la figura \ref{fig:placeholder3.20}, se dibujan los puntos y sus imagenes por la rotación. 
+
+\begin{figure}[H]
+    \centering
+    \caption{Rotación respecto al origen de los puntos $A,B$ y $C$}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T8N.png}
+    \label{fig:placeholder3.20}
+\end{figure}
+
+\begin{example}
+Encuentre la imagen por medio de una rotación de un ángulo de $\frac{\pi }{4}
+$ radianes de la recta con ecuación $2x+3y=5$.
+\end{example}
+
+\textbf{Solución}
+
+La matriz de rotación de un ángulo de $\frac{\pi }{4}$ es $\left( 
+\begin{array}{cc}
+\cos \frac{\pi }{4} & -\sin \frac{\pi }{4} \\ 
+\sin \frac{\pi }{4} & \cos \frac{\pi }{4}%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+\frac{1}{2}\sqrt{2} & -\frac{1}{2}\sqrt{2} \\ 
+\frac{1}{2}\sqrt{2} & \frac{1}{2}\sqrt{2}%
+\end{array}%
+\right) $.
+
+Así que:
+
+$\left( 
+\begin{array}{c}
+x^{/} \\ 
+y^{/}%
+\end{array}%
+\right) =T\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$\qquad \qquad =\left( 
+\begin{array}{cc}
+\cos \frac{\pi }{4} & -\sin \frac{\pi }{4} \\ 
+\sin \frac{\pi }{4} & \cos \frac{\pi }{4}%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$T\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{c}
+\sqrt{2}\left( \frac{1}{2}x-\frac{1}{2}y\right) \\ 
+\sqrt{2}\left( \frac{1}{2}x+\frac{1}{2}y\right)%
+\end{array}%
+\right) $
+
+Al usar la matriz de rotación inversa, tenemos:
+
+$\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+\cos \frac{\pi }{4} & \sin \frac{\pi }{4} \\ 
+-\sin \frac{\pi }{4} & \cos \frac{\pi }{4}%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x^{/} \\ 
+y^{/}%
+\end{array}%
+\right) =\left( 
+\begin{array}{c}
+\sqrt{2}\left( \frac{1}{2}x^{/}+\frac{1}{2}y^{/}\right) \\ 
+-\sqrt{2}\left( \frac{1}{2}x^{/}-\frac{1}{2}y^{/}\right)%
+\end{array}%
+\right) $
+
+La recta rotada $\frac{\pi }{4}$ con centro en el origen se obtiene al reemplazar $x,y$ en la curva a rotar. Para esto, en $2x+3y=5$, reemplazamos $x,y$:
+
+$2\sqrt{2}\left( \sqrt{2}\left( \frac{1}{2}x^{/}+\frac{1}{2}y^{/}\right)
+\right) +3\sqrt{2}\left( -\sqrt{2}\left( \frac{1}{2}x^{/}-\frac{1}{2}%
+y^{/}\right) \right) =5$ \ \ 
+
+Se simplifica.
+
+$-\sqrt{2}\left( \frac{1}{2}x^{/}-\frac{5}{2}y^{/}\right) =5$ \
+
+
+Se multiplica por $2$.
+
+$\sqrt{2}\left( -x^{/}+5y^{/}\right) =10$
+
+Reemplazamos $x$ por $x^{/}$ y $y$ por $y^{/}$ para graficar la ecuación de la recta y de la recta rotada en el mismo sistema de coordenadas $\sqrt{2}%
+\left( -x+5y\right) =10$.
+
+En la figura \ref{fig:placeholder3.21}, se dibuja la recta y su imagen por la rotación.
+
+\begin{figure}[H]
+    \centering
+    \caption{Rotación de una recta}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T8O.png}
+    \label{fig:placeholder3.21}
+\end{figure}
+
+\textbf{Composición de dos rotaciones}
+
+A continuación, probaremos que la composición de dos rotaciones centradas en el origen es una rotación centrada en el origen.
+
+Sean $R_{\phi }\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+\cos \phi & -\sin \phi \\ 
+\sin \phi & \cos \phi%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $ la rotación de un ángulo $\phi ,$ y $R_{\theta }\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+\cos \theta & -\sin \theta \\ 
+\sin \theta & \cos \theta%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $ la rotación de un ángulo $\theta $, la composición de estas dos rotaciones es:
+
+$R_{\phi }\left( R_{\theta }\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) \right) $
+
+$=$ $R_{\phi }\left( \left( 
+\begin{array}{cc}
+\cos \theta & -\sin \theta \\ 
+\sin \theta & \cos \theta%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) \right) $
+
+$=\left( 
+\begin{array}{cc}
+\cos \phi & -\sin \phi \\ 
+\sin \phi & \cos \phi%
+\end{array}%
+\right) \left( 
+\begin{array}{cc}
+\cos \theta & -\sin \theta \\ 
+\sin \theta & \cos \theta%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right)$
+
+$=\left( 
+\begin{array}{cc}
+\cos \phi \cos \theta -\sin \phi \sin \theta & -\sin \theta \cos \phi -\sin
+\phi \cos \theta \\ 
+\sin \phi \cos \theta +\sin \theta \cos \phi & -\sin \phi \sin \theta +\cos
+\phi \cos \theta%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+Al usar las identidades de la suma para el seno y el coseno, se tiene:
+
+$=\left( 
+\begin{array}{cc}
+\cos \left( \theta +\phi \right) & -\sin \left( \theta +\phi \right) \\ 
+\sin \left( \theta +\phi \right) & \cos \left( \theta +\phi \right)%
+\end{array}%
+\right) $
+
+$=R_{\theta +\phi }$
+
+$=R_{\theta }\left( R_{\phi }\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) \right)$
+
+Así que la composición de rotaciones centradas en el origen es equivalente a una única rotación centrada en el origen, correspondiente a la suma de los dos ángulos de rotación.
+
+Las matrices de la forma $\left( 
+\begin{array}{cc}
+\cos \phi & -\sin \phi \\ 
+\sin \phi & \cos \phi%
+\end{array}%
+\right) $ conmutan.
+
+La inversa de $R_{\theta }\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $ es $R_{-\theta }\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $, ya que
+
+$\left( 
+\begin{array}{cc}
+\cos \theta & -\sin \theta \\ 
+\sin \theta & \cos \theta%
+\end{array}%
+\right) \left( 
+\begin{array}{cc}
+\cos \left( -\theta \right) & -\sin \left( -\theta \right) \\ 
+\sin \left( -\theta \right) & \cos \left( -\theta \right)%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+1 & 0 \\ 
+0 & 1%
+\end{array}%
+\right)$.
+
+El conjunto $\left\{ \left( 
+\begin{array}{cc}
+\cos \theta & -\sin \theta \\ 
+\sin \theta & \cos \theta
+\end{array}
+\right) \right\} $ es un grupo conmutativo con el producto de matrices.
+
+\bigskip
+
+\paragraph{La composición de dos reflexiones es una rotación.}
+
+Sea $\alpha $ el ángulo entre las rectas $y=mx$ y $y=nx.$
+
+$\alpha =\angle \left( \left( 1,m\right) ,\left( 1,n\right) \right)$
+
+$\cos \alpha =\frac{1+mn}{\sqrt{m^{2}+1}\sqrt{n^{2}+1}}$
+
+$\cos ^{2}\alpha =\frac{\left( 1+mn\right) ^{2}}{\left( m^{2}+1\right)
+\left( n^{2}+1\right) }$
+
+$\sin ^{2}\alpha =\frac{\left( m^{2}+1\right) \left( n^{2}+1\right) -\left(
+1+mn\right) ^{2}}{\left( m^{2}+1\right) \left( n^{2}+1\right) }=\frac{\left(
+m-n\right) ^{2}}{\left( m^{2}+1\right) \left( n^{2}+1\right) }$
+
+$\cos 2\alpha =\cos ^{2}\alpha -\sin ^{2}\alpha $
+
+$=\frac{\left( 1+mn\right) ^{2}}{\left( m^{2}+1\right) \left( n^{2}+1\right) 
+}-\frac{\left( m-n\right) ^{2}}{\left( m^{2}+1\right) \left( n^{2}+1\right) }
+$
+
+$=\frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( m^{2}+1\right) \left(
+n^{2}+1\right) }$
+
+$=\frac{\left( m-n+mn+1\right) \left( -m+n+mn+1\right) }{\left(
+m^{2}+1\right) \left( n^{2}+1\right) }$
+
+$\sin 2\alpha =2\sin \alpha \cos \alpha $
+
+$=2\sqrt{\frac{\left( m-n\right) ^{2}}{\left( m^{2}+1\right) \left(
+n^{2}+1\right) }\frac{\left( 1+mn\right) ^{2}}{\left( m^{2}+1\right) \left(
+n^{2}+1\right) }}$
+
+$=2\frac{\left( m-n\right) \left( mn+1\right) }{\left( m^{2}+1\right) \left(
+n^{2}+1\right) }$
+
+Así que:
+
+$T_{m}\left( T_{n}\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) \right) $
+
+$=\left( 
+\begin{array}{cc}
+\frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( m^{2}+1\right) \left(
+n^{2}+1\right) } & \frac{-2m^{2}n+2mn^{2}-2m+2n}{\left( m^{2}+1\right)
+\left( n^{2}+1\right) } \\ 
+\frac{2m^{2}n-2mn^{2}+2m-2n}{\left( m^{2}+1\right) \left( n^{2}+1\right) } & 
+\frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( m^{2}+1\right) \left(
+n^{2}+1\right) }%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right)$
+
+$=\left( 
+\begin{array}{cc}
+\frac{\left( m-n+mn+1\right) \left( -m+n+mn+1\right) }{\left( n^{2}+1\right)
+\left( m^{2}+1\right) } & \frac{-2\left( m-n\right) \left( mn+1\right) }{%
+\left( n^{2}+1\right) \left( m^{2}+1\right) } \\ 
+\frac{2\left( m-n\right) \left( mn+1\right) }{\left( n^{2}+1\right) \left(
+m^{2}+1\right) } & \frac{\left( m-n+mn+1\right) \left( -m+n+mn+1\right) }{%
+\left( n^{2}+1\right) \left( m^{2}+1\right) }%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$=\left( 
+\begin{array}{cc}
+\cos 2\alpha & -\sin 2\alpha \\ 
+\sin 2\alpha & \cos 2\alpha%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$=R_{2\alpha }\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right)$
+
+En conclusión, la composición de dos reflexiones es una rotación de ángulo $2\alpha $, donde $\alpha$ es el ángulo formado por las rectas de reflexión.
+
+\bigskip
+
+\paragraph{La inversa de una reflexión es ella misma.}
+
+La inversa de la reflexión respecto a la recta $y=mx,$ $T_{m}$ es ella misma, pues al componerlas nos da la identidad:
+
+$\left( T_{m}\circ T_{m}\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$=\left( \frac{1}{m^{2}+1}\left( 
+\begin{array}{cc}
+1-m^{2} & 2m \\ 
+2m & m^{2}-1%
+\end{array}%
+\right) \frac{1}{m^{2}+1}\left( 
+\begin{array}{cc}
+1-m^{2} & 2m \\ 
+2m & m^{2}-1%
+\end{array}%
+\right) \right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+$=\left( 
+\begin{array}{cc}
+1 & 0 \\ 
+0 & 1%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+
+\begin{example}
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+    \item Halle la ecuación de la curva obtenida al reflejar la curva $y=-x^{2}$; primero, respecto a la recta $y=0$ y luego respecto a la recta $y=x$.
+    \item Halle la ecuación de la curva obtenida al rotar la curva $y=-x^{2}\,$un ángulo de $\frac{\pi }{2}$.
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+a) Al reflejar la curva respecto al eje $x$, reemplazamos $y$ por $-y$ en $y=-x^{2}$ y obtenemos $y=x^{2}$. Luego, al reflejar la curva respecto a la recta $y=x$, intercambiamos las variables $x$ y $y$ en $y=x^{2}$, obteniendo la ecuación $x=y^{2}$.
+
+En la figura \ref{fig:placeholder3.22} se dibuja la imagen de  $y=-x^{2}$ bajo las dos reflexiones.
+
+\begin{figure}[H]
+    \centering
+    \caption{Dos reflexiones de una parábola}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T8P.png}
+    \label{fig:placeholder3.22}
+\end{figure}
+
+El ángulo entre las rectas de reflexión $y=0$ y $y=x$ es $\theta =\tan^{-1}\left( 1\right) =\frac{\pi }{4}$.
+
+Luego, la compuesta de estas dos reflexiones equivale a una rotación de $\frac{\pi }{2}$ con centro en el origen.
+
+b) Al rotar un ángulo de $\frac{\pi }{2}$, usamos la matriz de rotación inversa:
+
+$\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+\cos \frac{\pi }{2} & \sin \frac{\pi }{2} \\ 
+-\sin \frac{\pi }{2} & \cos \frac{\pi }{2}%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x^{/} \\ 
+y^{/}%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+0 & 1 \\ 
+-1 & 0%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x^{/} \\ 
+y^{/}%
+\end{array}%
+\right) =\left( 
+\begin{array}{c}
+y^{/} \\ 
+-x^{/}%
+\end{array}%
+\right)$
+
+Para graficar en un mismo sistema la curva y su imagen rotada, reemplazamos $x$ por $y$, y $y$ por $-x$ en $y=-x^{2}\,$, así la curva rotada es $-x=-y^{2}$ que equivale a $x=y^{2}$, como se ve enla figura \ref{fig:placeholder3.23}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Rotación de ángulo $\frac{\pi}{2}$ de la parábola}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T8Q.png}
+    \label{fig:placeholder3.23}
+\end{figure}
+
+\bigskip
+
+\subsubsection{Dilataciones}
+
+Podemos usar un factor de escala para hacer una copia más grande o más pequeña de una figura que también es semejante a la figura original.
+
+Una dilatación con centro en $O$ y factor de escala $c>0$ es una transformación que satisface las siguientes propiedades:
+
+\begin{enumerate}
+    \item El centro $O$ es invariante en la dilatación; esto es $O^{\prime }=O$ $\left( T\left( O\right) =O\right)$.
+    \item Para cada punto $A\neq O$, $A^{\prime }$ está sobre el segmento de recta que une $O$ con $A$ y cumple que $OA^{\prime }=cOA,$ $\ d\left( 0,T\left( A\right) \right) =cd\left(O,A\right)$.
+\end{enumerate}
+
+Así que el factor de escala de la dilatación es: 
+
+$c=\frac{OA^{\prime }}{OA}$
+
+Y la imagen de una figura bajo una dilatación es semejante a la preimagen (figura \ref{fig:placeholder3.24}).
+
+\begin{figure}[H]
+    \centering
+    \caption{Dilatación con centro en $O$}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T8R.png}
+    \label{fig:placeholder3.24}
+\end{figure}
+
+Una dilatación es un agrandamiento (figura \ref{fig:placeholder3.25}) si el factor de escala es mayor que 1. Por otro lado, la dilatación es una reducción si el factor de escala está entre 0 y 1. (Nótese que si el factor es 1, la figura permanece invariable).
+
+\begin{figure}[H]
+    \centering
+    \caption{Dilatación con factor de escala maypr que 1}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T8S.png}
+    \label{fig:placeholder3.25}
+\end{figure}
+
+La transformación de dilatación centrada en el origen y con factor de escala $c>0$, matricialmente tiene la forma:
+
+$\left( 
+\begin{array}{c}
+x^{/} \\ 
+y^{/}%
+\end{array}%
+\right) =T\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{c}
+cx \\ 
+cy%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+c & 0 \\ 
+0 & c%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right)$
+
+La transformación $T$ tiene inversa, por lo que se puede despejar $x$ y $y$ en términos de $x^{/},y^{/}$:
+
+$\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{c}
+\frac{1}{c}x^{/} \\ 
+\frac{1}{c}y^{/}%
+\end{array}%
+\right) $
+
+\begin{example}
+Halle la imagen de la curva $x^{2}+y^{2}=1$ por una dilatación de factor de escala $c=4$.
+\end{example}
+
+\textbf{Solución}
+
+Reemplazamos en la ecuación de la curva $x,y$ por $\frac{1}{4}x^{/},\frac{1}{%
+4}y^{/}$.
+
+$x^{2}+y^{2}=1$
+
+$\left( \frac{x^{/}}{4}\right) ^{2}+\left( \frac{y^{/}}{4}\right) ^{2}=1$ \
+
+Multiplicamos por $16$.
+
+$\left( x^{/}\right) ^{2}+\left( y^{/}\right) ^{2}=16$
+
+En la figura \ref{fig:placeholder3.26}, se dibuja la circunferencia y su imagen dilatada.
+
+\begin{figure}[H]
+    \centering
+    \caption{Dilatación de una circunferencia}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T8T.png}
+    \label{fig:placeholder3.26}
+\end{figure}
+
+\paragraph{Toda dilatación preserva ángulos}
+
+Sea T$\left( x,y\right) =c\left( x,y\right) $ una dilatación de factor de escala $c>0.$
+
+cos$\angle \left( T\left( u\right) ,T\left( v\right) \right) =\frac{T\left(
+u\right) \cdot T\left( v\right) }{\left\Vert T\left( u\right) \right\Vert
+\left\Vert T\left( v\right) \right\Vert }=\frac{cu\cdot cv}{\left\Vert
+cu\right\Vert \left\Vert cv\right\Vert }=\frac{c^{2}\left( u\cdot v\right) }{%
+c^{2}\left\Vert u\right\Vert \left\Vert v\right\Vert }=\frac{\left( u\cdot
+v\right) }{\left\Vert u\right\Vert \left\Vert v\right\Vert }=$cos$\angle
+\left( T\left( u\right) ,T\left( v\right) \right) $
+
+Por tanto $\angle \left( Ta\left( u\right) ,T\left( v\right) \right) =\angle
+\left( u,v\right) $
+
+\bigskip
+
+\subsection{Ejercicios}
+
+\begin{enumerate}
+\item Dibuje la imagen del triángulo con vértices $A=\left( 1,1\right), B=\left( 3,6\right)$ y $C=\left( 4,13\right)$ trasladado según el vector $\left( 2,5\right)$.
+
+\item Halle la ecuación de la curva trasladada según el vector dado en cada caso.
+\begin{enumerate}
+    \item $4x+3y=8$, $u=\left( -3,7\right) $
+    \item $3x-2y=12$, $u=\left(4,-6\right) $
+    \item $x^{2}+y^{2}=4$ \ $u=\left( 2,5\right)$
+\end{enumerate}
+
+\item Halle la imagen del triángulo con vértices $A=\left( 1,2\right), B=\left( 2,1\right)$ y $C=\left( 4,11\right)$ bajo una reflexión respecto a la recta $y=4x$.
+
+\item Halle la ecuación de la reflexión de la curva $y=x^{2}$ respecto a la recta $y=2x$.
+
+\item Determine la ecuación de la reflexión de la curva $\left( x-2\right)^{2}+\left( y-4\right) ^{2}=25$ respecto a la recta $y=3x$.
+
+\item Encuentre la ecuación de la reflexión de la curva $xy=2$ respecto a la recta $y=\frac{1}{2}x$.
+
+\item Halle la imagen del triángulo con vértices $A=\left( 1,2\right), B=\left( 2,1\right)$ y $C=\left( 4,11\right)$ tras una rotación de $\frac{\pi }{4}$ con centro en el origen.
+
+\item Encuentre la ecuación de la imagen por medio de una rotación de un ángulo de $\frac{\pi }{3}$ radianes de la recta con ecuación $4x-y=4$ centrada en el origen.
+
+\item Halle la ecuación de la imagen por medio de una rotación de un ángulo de $\frac{\pi }{6}$ radianes de la curva con ecuación $x^{2}-y=2$ centrada en el origen.
+
+\item Determine la ecuación de la imagen por medio de una rotación de un ángulo de $\frac{2\pi }{3}$ radianes de la curva con ecuación $\left(x-2\right) ^{2}+\left( y-2\right) ^{2}=16$ centrada en el origen.
+
+\item Obtenga la ecuación de la imagen por medio de una rotación de un ángulo de $\frac{\pi }{4}$ radianes de la curva con ecuación $xy=2$ centrada en el origen.
+
+\item Halle la ecuación de la imagen de la curva $9x+2y=11$ por una dilatación de factor de escala $c=8$ centrada en el origen.
+
+\item Determine la ecuación de la imagen de la curva $x+y^{2}=1$ por una dilatación de factor de escala $c=3$ centrada en el origen.
+
+\item Encuentre la ecuación de la imagen de la curva $\left( x+1\right)^{2}+\left( y-2\right) ^{2}=1$ por una dilatación de factor de escala $c=5$ centrada en el origen.
+
+\item Encuentre la ecuación de la imagen de la curva $xy=1$ por una dilatación de factor de escala $c=10$ centrada en el origen.
+\end{enumerate}
+
+
+\chapter{Cónicas}
+
+En este capítulo se presentan las secciones cónicas, que son curvas obtenidas por la intersección de un cono y un plano. Se estudian las circunferencias, parábolas, elipses e hipérbolas, y se construyen sus ecuaciones canónicas cuando su centro está en el origen. Además, se determinan cada uno de sus elementos, se transforman sus ecuaciones por medio de traslaciones y se estudian las cónicas a partir de la ecuación general de segundo orden en dos variables. Finalmente, se transforman los ejes por medio de una rotación para identificar y graficar las ecuaciones de cónicas rotadas.
+
+\section{Circunferencias}
+
+Las circunferencias se generan por la intersección de un cono con un plano perpendicular a su eje (figura \ref{fig:placeholder3.27}).
+
+\begin{figure}[H]
+    \centering
+    \caption{Circunferencia intersección de cono y plano}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12R3U.png}
+    \label{fig:placeholder3.27}
+\end{figure}
+
+Una circunferencia es el conjunto de puntos del plano que equidistan de un punto fijo llamado centro (figura \ref{fig:placeholder3.28}).
+
+\begin{figure}[H]
+    \centering
+    \caption{Circunferencia}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12R3V.png}
+    \label{fig:placeholder3.28}
+\end{figure}
+
+Si el centro es $C=(h,k)$ y la distancia constante es $r$, tenemos que un punto $P=(x,y)$ está sobre la circunferencia si satisface:
+
+$d(P,C)=r$
+
+Se aplica la fórmula de la distancia
+
+$\sqrt{(x-h)^{2}+(y-k)^{2}}=r$; se eleva al cuadrado
+
+$(x-h)^{2}+(y-k)^{2}=r^{2}$
+
+La última ecuación obtenida es llamada la ecuación canónica de la circunferencia con centro en $\left( h,k\right)$ y radio $r$.
+
+\bigskip
+
+\begin{example}
+Supongamos que un satélite Starlink orbita alrededor de la Tierra en una órbita circular. Se sabe que la altitud promedio de estos satélites es de aproximadamente 550 kilómetros sobre la superficie terrestre, y que si el radio
+promedio de la Tierra es 6371 km. Calcule la ecuación de la órbita circular del satelite, donde el origen de coordenadas es el centro de la Tierra.
+\end{example}
+
+\textbf{Solución}
+
+Dado que la órbita del satélite Starlink es circular, podemos modelarla como una circunferencia. Se debe calcular el radio de la órbita.
+
+Como la altitud del satélite sobre la Tierra es de $550$ kilómetros y el radio de la Tierra es 6371 km, el radio de la órbita del satélite Starlink es la suma del radio promedio de la Tierra y la altitud del satelite: $r=6371+550=6921$ kilómetros.
+
+Por lo tanto, la ecuación de la circunferencia que modela la órbita del satélite Starlink es:
+
+\begin{center}
+$x^{2}+y^{2}=6921^{2}$
+\end{center}
+
+\begin{example}
+Hallando centro y radio de una circunferencia que pasa por tres puntos no colineales.
+
+Hallar el centro y radio de la circunferencia que pasa por $\left(1,2\right) ,\left( -1,-1\right) $ y $\left( 4,0\right)$.
+\end{example}
+
+\textbf{Solución}
+
+$\left( x,y\right) \rightarrow E:h^{2}+k^{2}-2xh-2yk=r^{2}-x^{2}-y^{2}$
+
+\begin{tabular}{|l|l|l|}
+\hline
+$\left( x,y\right) $ & $E$ & $h^{2}+k^{2}-2xh-2yk=r^{2}-x^{2}-y^{2}$ \\ 
+\hline
+$\left( 1,2\right) $ & $E_{1}$ & $h^{2}+k^{2}-2h-4k=r^{2}-5$ \\ \hline
+$\left( -1,-1\right) $ & $E_{2}$ & $h^{2}+k^{2}+2h+2k=r^{2}-2$ \\ \hline
+$\left( 4,0\right) $ & $E_{3}$ & $h^{2}+k^{2}-8h=r^{2}-16$ \\ \hline
+\end{tabular}
+
+$E_{1}-E_{2}:E_{4}:-4h-6k=-3\rightarrow h=\frac{-6k+3}{4}$
+
+$E_{1}-E_{3}:E_{5}:6h-4k=11$
+
+Reemplazamos $h=\frac{-6k+3}{4}$ en $E_{5}:$
+
+$6\left( \frac{-6k+3}{4}\right) -4k=11\rightarrow \frac{3}{2}\left(
+-6k+3\right) -4k=11\rightarrow -9k+\frac{9}{2}-4k=11$
+
+$\rightarrow -13k=11-\frac{9}{2}\rightarrow k=\frac{\frac{13}{2}}{-13}=-%
+\frac{1}{2}=-0.5$
+
+Reemplazamos $k=-\frac{1}{2}$ en $h=\frac{-6k+3}{4}=\frac{-6\left( -\frac{1}{%
+2}\right) +3}{4}=\frac{3}{2}=1.5$
+
+Reemplazamos $h=\frac{3}{2},k=-\frac{1}{2}$ en $E_{3}:$
+
+$h^{2}+k^{2}-8h=r^{2}-16\rightarrow r=\sqrt{h^{2}+k^{2}-8h+16}$
+
+$r=\sqrt{\left( \frac{3}{2}\right) ^{2}+\left( -\frac{1}{2}\right)
+^{2}-8\left( \frac{3}{2}\right) +16}=\sqrt{\frac{13}{2}}$
+
+Ecuación $\left( x-\frac{3}{2}\right) ^{2}+\left( y+\frac{1}{2}\right) ^{2}=%
+\frac{13}{2}$
+
+En la figura \ref{fig:placeholder3.29} se dibujan los puntos y la circunferencia que los contiene. 
+
+\begin{figure}[H]
+    \centering
+    \caption{Circunferencia que pasa por tres puntos}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12R3W.png}
+    \label{fig:placeholder3.29}
+\end{figure}
+
+\bigskip
+
+\begin{example}
+Cómo encontrar los centros de las circunferencias que pasan por dos puntos distintos y tienen un mismo radio.
+
+Halle los centros de las circunferencias que pasan por $\left(-1,-1\right)$, $\left( 2,3\right) $ y tienen radio $r=5$.
+\end{example}
+
+\textbf{Solución}
+
+$\left( x,y\right) \rightarrow E:h^{2}+k^{2}-2xh-2yk=r^{2}-x^{2}-y^{2}\qquad
+\qquad r=5$
+
+\begin{tabular}{|l|l|l|}
+\hline
+$\left( x,y\right) $ & $E$ & $h^{2}+k^{2}-2xh-2yk=r^{2}-x^{2}-y^{2}$ \\ 
+\hline
+$\left( -1,-1\right) $ & $E_{1}$ & $h^{2}+k^{2}+2h+2k=23$ \\ \hline
+$\left( 2,3\right) $ & $E_{2}$ & $h^{2}+k^{2}-4h-6k=12$ \\ \hline
+\end{tabular}
+
+$E_{1}-E_{2}:6h+8k=11\rightarrow h=\frac{-8k+11}{6}$
+
+Reemplazamos $h=\frac{-8k+11}{6}$ en $E_{1}:h^{2}+k^{2}+2h+2k=23$
+
+$\left( \frac{-8k+11}{6}\right) ^{2}+k^{2}+2\frac{-8k+11}{6}+2k-23=0$
+
+$\frac{64k^{2}-166k+121}{36}+k^{2}+\frac{-8k+11}{3}+2k-23=0$ 
+
+Multiplicamos
+cada término por $36$.
+
+$64k^{2}-166k+121+36k^{2}+12\left( -8k+11\right) +72k-36\left( 23\right) =0$
+
+$64k^{2}-166k+121+36k^{2}-96k+132+72k-828=0$
+
+$100k^{2}-190k-575=0$
+
+Resolvemos la ecuación cuadrática con $a=100\qquad b=-190\qquad c=-575$
+
+$k=\frac{-b\pm \sqrt{b^{2}-4ac}}{2a}=\frac{190\pm \sqrt{190^{2}-4\left(
+100\right) \left( -575\right) }}{200}=\frac{190\pm \sqrt{266\,100}}{200}$
+
+$k_{1}=\frac{190-\sqrt{266\,100}}{200}=-1.6292\qquad \qquad k_{2}=\frac{190+%
+\sqrt{266\,100}}{200}=3.529\,2$
+
+De $h=\frac{-8k+11}{6}$, tenemos:
+
+$h_{1}=\frac{-8k_{1}+11}{6}=\frac{-8\left( -1.6292\right) +11}{6}=4.0056$
+
+$h_{2}=\frac{-8\left( 3.529\,2\right) +11}{6}=-2.8723$
+
+Centros: $\left( h_{1},k_{1}\right) =\left( 4.0056,-1.6292\right) \qquad
+\qquad \left( h_{2},k_{2}\right) =\left( -2.8723,3.529\,2\right) $
+
+En la figura \ref{fig:placeholder3.30} se dibujan los dos puntos y la circunferencias que los contienen. 
+
+\begin{figure}[H]
+    \centering
+    \caption{Circunferencias que contienen dos puntos dados}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12R3X.png}
+    \label{fig:placeholder3.30}
+\end{figure}
+\bigskip
+
+\begin{example}
+Puntos de intersección de dos circunferencias
+
+Halle los puntos de intersección de las circunferencias con ecuaciones $x^{2}+4x+y^{2}+6y=3$ y $x^{2}+2x+y^{2}+4y=11$.
+\end{example}
+
+\textbf{Solución}
+
+\begin{tabular}{l}
+Restamos las ecuaciones. \\ 
+$E_{1}:x^{2}+4x+y^{2}+6y=3$ \\ 
+$E_{2}:x^{2}+2x+y^{2}+4y=11$ \\ 
+$E_{1}-E_{2}:2x+2y=-8$ \\ Dividimos cada término entre $2$. \\ 
+$x+y=-4\rightarrow y=-x-4=-\left( x+4\right) $ \\ 
+Reemplazamos $y=-\left( x+4\right) $\ en $E_{1}$. \\ 
+$E_{1}:x^{2}+4x+\left( -\left( x+4\right) \right) ^{2}+6\left( -\left(
+x+4\right) \right) =3$ \\ 
+$x^{2}+4x+x^{2}+8x+16-6x-24-3=0$%
+\end{tabular}
+
+\begin{tabular}{l}
+$\underset{a}{\underbrace{2}}x^{2}+\underset{b}{\underbrace{6}}x\underset{c}{%
+\underbrace{-11}}=0$ Resolvemos la cuadrática: \\ 
+$x=\dfrac{-b\pm \sqrt{b^{2}-4ac}}{2a}=\dfrac{-6\pm \sqrt{36-8\left( -11\right) }}{%
+4}.$ $x_{1}\approx -4.284,$ $x_{2}\approx 1.284$ \\ 
+$y_{1}=-x_{1}-4\approx 4.284-4\approx 0.\,284$ \\ 
+$y_{2}=-x_{2}-4\approx -1.284-4\approx -5.284$ \\ 
+Los puntos de intersección son: \  \\ 
+$\left( x_{1},y_{1}\right) =\left( -4.284,0.\,284\right) $ \ y \ $\left(
+x_{2},y_{2}\right) =\left( 1.284,-5.284\right) $%
+\end{tabular}
+
+En la figura \ref{fig:placeholder3.31} se dibujan las circunferencias y sus puntos de intersección. 
+
+\begin{figure}[H]
+    \centering
+    \caption{Puntos de corte de dos circunferencias}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12R3Y.png}
+    \label{fig:placeholder3.31}
+\end{figure}
+
+\subsection{Ejercicios}
+
+En los ejercicios del 1 al 6, halle el centro, el radio y graficque las circunferencias a partir de los elementos dados:
+
+\begin{enumerate}
+\item Ecuación $x^{2}+4x+y^{2}+8y=5$
+
+\item Ecuación $x^{2}+7x+y^{2}+9y=\frac{5}{4}$
+
+\item Centro (-1,1) y pasa por el punto (2,10)
+
+\item Pasa por los puntos (-1,2), (2,0) y (1,4)
+
+\item Pasa por los puntos (0,0), (1,1) y (2,0)
+
+\item Radio 4 y pasa por los puntos (1,1) y (-2,5)
+
+\item Halle los puntos de intersección de la circunferencia con ecuación
+
+$x^{2}-2x+y^{2}+2y=2$ y la recta $x+y=2$.
+
+\item Halle los puntos de intersección de la circunferencia con ecuación
+
+$x^{2}-6x+y^{2}+4y=3$ y la recta $x-y=1$.
+
+\item Halle los puntos de intersección de las circunferencias con
+ecuaciones $x^{2}+4x+y^{2}+6y=3$ y $x^{2}+2x+y^{2}+4y=11$
+
+\item Halle los puntos de intersección de las circunferencias con
+ecuaciones $x^{2}+2x+y^{2}+2y=2$ y $x^{2}+4x+y^{2}+2y=4$
+\end{enumerate}
+
+\section{Parábolas}
+
+Las parábolas se generan por la intersección de un cono con un plano oblicuo, como se muestra en la figura \ref{fig:placeholder3.32}:
+
+\begin{figure}[H]
+    \centering
+    \caption{Parábola intersección de un plano y un cono}
+    \begin{tabular}{l}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12R3Z.png}
+    \end{tabular}
+    \label{fig:placeholder3.32}
+\end{figure}
+
+
+Una parábola es una curva plana formada por el conjunto de puntos que equidistan de un punto fijo llamado foco y una recta fija llamada directriz.
+
+El eje de la parábola es la recta perpendicular a la directriz que pasa por el foco
+
+El vértice de la parábola es el punto de intersección entre la parábola y su eje.
+
+\bigskip
+
+\subsection{Parábolas que abren hacia arriba}
+
+Si suponemos que las coordenadas del vértice son $\left( 0,0\right)$, las del foco son $F=\left( 0,p\right)$ con $p>0$, y la directriz es la recta $L$ con ecuación $y=-p$.
+
+\begin{figure}[H]
+    \centering
+    \caption{Parábola que abre hacia arriba}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12S40.png}
+    \label{fig:placeholder3.33}
+\end{figure}
+
+Como se ve en la figura \ref{fig:placeholder3.33}, cada punto $P=\left( x,y\right)$ en la parábola satisface:
+
+\QTP{Body Math}
+$d\left( P,F\right) =d\left( P,L\right) $
+
+\QTP{Body Math}
+$d\left( \left( x,y\right) ,\left( 0,p\right) \right) =d\left( \left(
+x,y\right) ,\left( x,-p\right) \right) $ \ elevamos al cuadrado
+
+\QTP{Body Math}
+$d\left( \left( x,y\right) ,\left( 0,p\right) \right) ^{2}=d\left( \left(
+x,y\right) ,\left( x,-p\right) \right) ^{2}$ \ \ aplicamos la fórmula de la
+distancia
+
+\QTP{Body Math}
+$x^{2}+\left( y-p\right) ^{2}=\left( y-\left( -p\right) \right) ^{2}$
+
+\QTP{Body Math}
+$x^{2}=\left( y-p\right) ^{2}-\left( y+p\right) ^{2}$
+
+\QTP{Body Math}
+$x^{2}=\left( y-p-\left( y+p\right) \right) \left( y-p+y+p\right) $
+
+\QTP{Body Math}
+$x^{2}=2p\left( 2y\right) $
+
+\QTP{Body Math}
+$x^{2}=4py$
+
+Esta última es la ecuación de la parábola que abre hacia arriba. Tiene vértice $V=\left( 0,0\right) $ y distancia focal $p$.
+
+Si sustituimos en $x^{2}=4py$,$\ x$ por $-x$, la ecuación queda igual. Esto significa que la parábola es simétrica respecto al eje $y$.
+
+\bigskip
+
+\subsection{Parábolas que abren hacia abajo}
+
+Al reflejar la parábola con ecuación $x^{2}=4py$ respecto al eje $x$, se obtiene una parábola con vértice $V=\left( 0,0\right)$ que abre hacia abajo (figura \ref{fig:placeholder3.34}). Esto se logra reemplazando $y$ por $-y$, obteniendo la ecuación:
+
+$x^{2}=-4py$
+
+\begin{figure}[H]
+    \centering
+    \caption{Parábola que abre hacia abajo}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12S41.png}
+    \label{fig:placeholder3.34}
+\end{figure}
+
+\subsection{Parábolas que abren a la derecha}
+
+Al reflejar la parábola con ecuación $x^{2}=4py$ respecto a la recta $y=x$, se obtiene una parábola con vértice $V=\left( 0,0\right)$ que abre hacia la derecha (figura \ref{fig:placeholder3.35}). Esto se realiza intercambiando las variables $x$ y $y$, obteniendo la ecuación:
+
+$y^{2}=4px$
+
+\bigskip 
+\begin{figure}[H]
+    \centering
+    \caption{Parábola que abre hacia la derecha}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12S42.png}
+    \label{fig:placeholder3.35}
+\end{figure}
+
+\subsection{Parábolas que abren a la izquierda}
+
+Al reflejar la parábola con ecuación $x^{2}=-4py$ respecto a la recta $y=x$, se obtiene una parábola con vértice $V=\left( 0,0\right)$ que abre hacia la izquierda (figura \ref{fig:placeholder3.36}). Esto se logra intercambiando las variables $x$ y $y$, obteniendo la ecuación:
+
+\begin{center}
+$y^{2}=-4px$
+\end{center}
+\begin{figure}[H]
+    \centering
+    \caption{Parábola que abre a la izquierda}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12S43.png}
+    \label{fig:placeholder3.36}
+\end{figure}
+
+\begin{example}
+Halle el foco y la directriz de la parábola $y^{2}-16x=0$.
+\end{example}
+
+\textbf{Solución}
+
+La ecuación de la parábola es $y^{2}=16x$, por lo tanto, su vértice es $\left(0,0\right) $ y abre a la derecha.
+
+El valor de $4p$ es~$16$; luego $p=\frac{16}{4}=4$. Así, el su foco de la parábola es $\left( 0,4\right) $ y su directriz es la recta vertical $y=-4$.
+
+En la figura \ref{fig:placeholder3.37} se dibuja la parábola y sus elementos.
+
+\begin{figure}[H]
+    \centering
+    \caption{Ejemplo de parábola que abre a la derecha}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12S44.png}
+    \label{fig:placeholder3.37}
+\end{figure}
+
+\begin{example}
+El cometa Nishimura fue descubierto por el astrónomo aficionado japonés Hideo Nishimura el 12 de agosto de 2023. Se conoce que este cometa tiene una órbita casi parabólica con el Sol en su foco. Teniendo en cuenta que su perihelio (la distancia mínima al Sol del cometa) es de 0.22 UA (unidades astronómicas), encuentre una ecuación de la órbita parabólica del cometa si el Sol es el origen del sistema de coordenadas.
+\end{example}
+
+\textbf{Solución}
+
+Consideremos un sistema de coordenadas $xy$ con el Sol en el origen.
+
+Entonces, el vértice de la órbita parabólica del cometa Nishimura es $\left(0,-p\right)$, donde $p=0.22$ UA.
+
+\begin{figure}[H]
+    \centering
+    \caption{Órbita del cometa}
+    \includegraphics[width=0.5\textwidth]{Images/SDY1D29S.png}
+    \label{fig:placeholder3.38}
+\end{figure}
+
+Así que
+
+$x^{2}=4p\left( y-\left( -p\right) \right) $
+
+Como el valor de $p$ es $0.22$ UA,
+
+$x^{2}=4\left( 0.22\right) \left( y+0.22\right) $
+
+$x^{2}=0.88\left( y+0.22\right) $
+
+$x^{2}=0.88y+0.1936$
+
+Al despejar $x$ en términos de $y$, la ecuación de la órbita es:
+
+\begin{center}
+$y=\frac{1}{0.88}\left( x^{2}-0.1936\right)$
+\end{center}
+
+En la figura \ref{fig:placeholder3.38}, se dibuja la órbita del cometa, su vértice y foco.
+
+\section{Elipses}
+Las elipses se generan por intersección de un cono con un plano oblicuo, como se muestra en la figura \ref{fig:placeholder3.39}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Elipse intersección de un cono y un plano}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12S45.png}
+    \label{fig:placeholder3.39}
+\end{figure}
+
+Una elipse se define como una curva formada por el conjunto de todos los puntos del plano cuya suma de distancias a dos puntos fijos, llamados focos, es constante (figura \ref{fig:placeholder3.40}).
+
+\begin{figure}[H]
+    \centering
+    \caption{Elipse}
+    $\begin{array}{c}
+    \includegraphics[width=0.9\textwidth]{Images/SDY12S46.png}
+    \end{array}$
+    \label{fig:placeholder3.40}
+\end{figure}
+
+\subsection{Elipse alargada en la horizontal}
+
+El centro de la elipse es $C=\left( 0,0\right) $ y las coordenadas de los focos son $F_{1}=\left( -c,0\right) $ y $F_{1}=\left(
+c,0\right) $, como la suma de distancias de cada punto a los focos es la constante $2a$, llamando $c^{2}=a^{2}-b^{2}$ con $a>b$, cada punto $P=\left( x,y\right)$ en la elipse de la figura \ref{fig:placeholder3.41}, satisface:
+
+\begin{figure}[H]
+    \centering
+    \caption{Elipse alargada horizontalmente}
+    \includegraphics[width=0.9\textwidth]{Images/SDY12S47.png}
+    \label{fig:placeholder3.41}
+\end{figure}
+
+\QTP{Body Math}
+$d\left( P,F_{1}\right) +d\left( P,F_{2}\right) =2a$
+
+\QTP{Body Math}
+$d\left( P,F_{1}\right) =2a-d\left( P,F_{2}\right) $
+
+\QTP{Body Math}
+$d\left( P,F_{1}\right) =\left( 2a-d\left( P,F_{2}\right) \right) ^{2}$
+
+\QTP{Body Math}
+$d\left( P,F_{1}\right) ^{2}=4a^{2}-4ad\left( P,F_{2}\right) +d\left(
+P,F_{2}\right) ^{2}$ \ \ \ \ elevamos al cuadrado
+
+\QTP{Body Math}
+$d\left( \left( x,y\right) ,\left( -c,0\right) \right) ^{2}=4a^{2}-4ad\left(
+\left( x,y\right) ,\left( c,0\right) \right) +d\left( \left( x,y\right)
+,\left( c,0\right) \right) ^{2}$ \ \ \ 
+
+\QTP{Body Math}
+aplicamos la fórmula de la distancia
+
+\QTP{Body Math}
+$\left( x+c\right) ^{2}+y^{2}=4a^{2}-4a\sqrt{\left( x-c\right) ^{2}+y^{2}}%
++\left( x-c\right) ^{2}+y^{2}$
+
+\QTP{Body Math}
+$\left( x+c\right) ^{2}-\left( x-c\right) ^{2}=4a^{2}-4a\sqrt{\left(
+x-c\right) ^{2}+y^{2}}$
+
+\QTP{Body Math}
+$\left( x+c-\left( x-c\right) \right) \left( x+c+x-c\right) =4a^{2}-4a\sqrt{%
+\left( x-c\right) ^{2}+y^{2}}$
+
+\QTP{Body Math}
+$2c\left( 2x\right) =4a^{2}-4a\sqrt{\left( x-c\right) ^{2}+y^{2}}$
+
+\QTP{Body Math}
+$4a\sqrt{\left( x-c\right) ^{2}+y^{2}}=4\left( a^{2}-cx\right) $
+
+\QTP{Body Math}
+$a^{2}\left( \sqrt{\left( x-c\right) ^{2}+y^{2}}\right) ^{2}=\left(
+a^{2}-cx\right) ^{2}$
+
+\QTP{Body Math}
+$a^{2}x^{2}-2a^{2}cx+a^{2}c^{2}+a^{2}y^{2}=a^{4}-2a^{2}cx+c^{2}x^{2}$
+
+\QTP{Body Math}
+$a^{2}x^{2}+a^{2}c^{2}+a^{2}y^{2}=a^{4}+c^{2}x^{2}$
+
+\QTP{Body Math}
+$\left( a^{2}-c^{2}\right) x^{2}+a^{2}y^{2}=a^{2}\left( a^{2}-c^{2}\right) $
+
+\QTP{Body Math}
+$b^{2}x^{2}+a^{2}y^{2}=a^{2}b^{2}$
+
+\QTP{Body Math}
+$\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1.$
+
+
+Si reemplazamos $x$ por $-x$ o $y$ por $-y$ en la ecuación de la elipse $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1$, la ecuación permanece igual. Esto significa que la elipse es simétrica respecto a los ejes $x$ y $y$.
+
+\subsection{Elipse alargada en la vertical}
+
+Al reflejar la elipse achatada en la horizontal con ecuación $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1$ respecto a la recta $y=x$, se obtiene una elipse con vértice $V=\left( 0,0\right)$ que es achatada en la vertical (figura \ref{fig:placeholder3.42}). Esto se realiza intercambiando las variables $x$ y $y$, obteniendo que la ecuación de esta elipse es:
+
+$$\frac{y^{2}}{a^{2}}+\frac{x^{2}}{b^{2}}=1.$$
+
+\begin{figure}[H]
+    \centering
+    \caption{Elipse alargada verticalmente}
+    \includegraphics[width=0.9\textwidth]{Images/SDY12T8V.png}
+    \label{fig:placeholder3.42}
+\end{figure}
+
+\begin{example}
+Halle los elementos y grafique la curva con ecuación $9x^{2}+25y^{2}=\allowbreak 225$.
+\end{example}
+
+\textbf{Solución}
+
+Al dividir cada término de la ecuación entre 225, obtenemos:
+
+\begin{center}
+$\frac{x^{2}}{25}+\frac{y^{2}}{9}=1$
+\end{center}
+
+Esta es la ecuación de una elipse aplanada en la horizontal y centro en $\left( 0,0\right)$, $a=\sqrt{25}=5$, $b=\sqrt{9}=3$. 
+
+El valor de $c$ es: \ $c=\sqrt{a^{2}-b^{2}}=\sqrt{25-9}=\sqrt{16}=4$.
+
+Los focos son: $\left( \pm c,0\right) :\left( \pm 4,0\right)$
+
+Los vértices son: $\left( \pm a,0\right) ,\left( 0\pm b\right) $ es decir $\left( \pm 5,0\right) ,\left( 0,\pm 3\right)$
+
+La gráfica de la elipse se muestra en la figura \ref{fig:placeholder3.43}:
+
+\begin{figure}[H]
+    \centering
+    \caption{Ejemplo de elipse achatada horizontalmente}
+    \includegraphics[width=0.9\textwidth]{Images/SDY12T8W.png}
+    \label{fig:placeholder3.43}
+\end{figure}
+
+\begin{example}
+Conociendo que la distancia entre Marte y el Sol en su punto más cercano (perihelio) es aproximadamente de 206.7 millones de kilómetros y que su punto más lejano (afelio) es aproximadamente de 249.2 millones de kilómetros, halle la ecuación de la órbita elíptica de Marte donde el Sol es uno de sus focos.
+\end{example}
+
+\textbf{Solución}
+
+La ecuación de una elipse en coordenadas cartesianas centrada en el origen es:
+
+$\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1$
+
+Donde $a$ es la longitud del semieje mayor y $b$ es la longitud del semieje menor. 
+
+En el caso de la órbita de Marte, podemos considerar el Sol como uno de los focos de la elipse.
+
+Por lo tanto, $a=\frac{206.7+249.22}{2}=227.96$ millones de kilómetros, y
+
+$c=\frac{249.2-206.72}{2}=21.25$ millones de kilómetros, donde $c$ es la distancia del centro al foco.
+
+Ahora, podemos calcular $b$ utilizando la relación $c^{2}=a^{2}-b^{2}$.
+
+$b=\sqrt{a^{2}-c^{2}}=\sqrt{(227.96)^{2}-(21.25)^{2}}\approx 226.97$
+millones de kilómetros.
+
+Entonces, la ecuación de la órbita de Marte alrededor del Sol es:
+
+\begin{center}
+$\frac{x^{2}}{(227.95)^{2}}+\frac{y^{2}}{(226.97)^{2}}=1.$
+\end{center}
+
+\subsection{Excentricidad de una elipse}
+
+La excentricidad de una elipse mide qué tan achatada o qué tan circular es la curva.
+
+Para la elipse $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1$\ o $\frac{x^{2}}{b^{2}}+\frac{y^{2}}{a^{2}}=1,$ con $a>b$, la excentricidad $e$ es el número $e=\frac{c}{a}$, donde $c=\sqrt{a^{2}-b^{2}}$.
+
+La excentricidad de toda elipse satisface $0<e<1$.
+
+Por lo tanto, si $e$ es cercana a $1$, entonces $c$ es casi igual a $a$ y la elipse tiene forma alargada, pero si $e$ es cercana a $0$, entonces la elipse tiene forma casi como una circunferencia. La excentricidad es una medida de qué tan \textquotedblleft alargada\textquotedblright es la elipse.
+
+En la figura \ref{fig:placeholder3.44}, se ilustran varias elipses para visualizar el efecto
+de variar la excentricidad $e$.
+
+\begin{figure}[H]
+    \centering
+    \caption{Excentricidades de elipses}
+    $%
+    \begin{tabular}{llll}
+    \includegraphics[width=0.2\textwidth]{Images/SDY12T8X.png}
+    
+    &
+    
+    \includegraphics[width=0.2\textwidth]{Images/SDY12T8Y.png}
+    
+    & 
+    
+    
+    \includegraphics[width=0.2\textwidth]{Images/SDY12T8Z.png}
+    
+    
+    & 
+    \includegraphics[width=0.2\textwidth]{Images/SDY12T90.png}
+    \\ 
+    $e=0.1$ & $e=0.6$ & $e=0.8$ & $e=0.9$%
+    \end{tabular}%
+    $   
+    \label{fig:placeholder3.44}
+\end{figure}
+
+
+\bigskip
+
+\begin{example}
+Halle la ecuación y los elementos, y grafique la elipse con excentricidad $e=\frac{1}{2}$ y con focos en $\left( 0,\pm 6\right)$.
+\end{example}
+
+\textbf{Solución}
+
+Dado que los focos están en $\left( 0,\pm 6\right)$, el centro de la elipse es $\left(0,0\right) $ y es achatada en la vertical; luego $c=6$ y $e=\frac{c}{a}=%
+\frac{1}{2}$ y $\ a=2c=12$.
+
+$b=\sqrt{a^{2}-c^{2}}=\sqrt{12^{2}-6^{2}}=\sqrt{6^{2}\left( 4\right) -6^{2}}=6\sqrt{3}$
+
+La ecuación de la elipse es:
+
+\begin{center}
+$\frac{x^{2}}{108}+\frac{y^{2}}{144}=1$
+\end{center}
+
+Los vértices son $\left( 0,\pm 12\right) $ y $\left( \pm 6\sqrt{3},0\right)$.
+
+La longitud del eje mayor vertical es $2a=24$ y la longitud del eje menor horizontal, $2b=12\sqrt{3}$.
+
+Su gráfica se muestra en la figura \ref{fig:placeholder3.45}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Ejemplo de elipse alargada verticalmente}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T91.png}
+    \label{fig:placeholder3.45}
+\end{figure}
+
+\section{Hipérbolas}
+
+Las hipérbolas se generan por intersección de un cono con un plano paralelo al eje del cono, como se ilustra en la figura \ref{fig:placeholder3.46}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Hipérbola intersección de un plano y un cono}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T92.png}
+    \label{fig:placeholder3.46}
+\end{figure}
+
+Una hipérbola es la curva formada por el conjunto de puntos del plano cuya diferencia de distancias a dos puntos fijos, llamados focos, es constante.
+
+\subsection{Hipérbola que abre horizontalmente}
+
+Si el centro de la hipérbola es $C=\left( 0,0\right) $ y las coordenadas de los focos son $F_{1}=\left( -c,0\right) $ y $F_{1}=\left( c,0\right) $, entonces la diferencia de distancias a los focos es constante e igual a $2a$. Donde llamamos $c^{2}=a^{2}+b^{2}$, cada punto $X=\left( x,y\right)$ en la hipérbola de la figura \ref{fig:placeholder3.47} satisface la ecuación canónica que se deduce a continuación:
+
+\begin{figure}[H]
+    \centering
+    \caption{Hipérbola que abre horizontalmente}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T93.png}
+    \label{fig:placeholder3.47}
+\end{figure}
+
+\QTP{Body Math}
+$d\left( P,F_{1}\right) -d\left( P,F_{2}\right) =2a$
+
+\QTP{Body Math}
+$d\left( P,F_{1}\right) =2a+d\left( P,F_{2}\right) $
+
+\QTP{Body Math}
+$d\left( P,F_{1}\right) ^{2}=\left( 2a+d\left( P,F_{2}\right) \right) ^{2}$
+
+\QTP{Body Math}
+$d\left( P,F_{1}\right) ^{2}=4a^{2}+4ad\left( P,F_{2}\right) +d\left(
+P,F_{2}\right) ^{2}$ \ \ \ \ elevamos al cuadrado
+
+\QTP{Body Math}
+$d\left( \left( x,y\right) ,\left( -c,0\right) \right) ^{2}=4a^{2}+4ad\left(
+\left( x,y\right) ,\left( c,0\right) \right) +d\left( \left( x,y\right)
+,\left( c,0\right) \right) ^{2}$ \ \ \ 
+
+\QTP{Body Math}
+aplicamos la fórmula de la distancia
+
+\QTP{Body Math}
+$\left( x+c\right) ^{2}+y^{2}=4a^{2}+4a\sqrt{\left( x-c\right) ^{2}+y^{2}}%
++\left( x-c\right) ^{2}+y^{2}$
+
+\QTP{Body Math}
+$\left( x+c\right) ^{2}-\left( x-c\right) ^{2}=4a^{2}+4a\sqrt{\left(
+x-c\right) ^{2}+y^{2}}$
+
+\QTP{Body Math}
+$\left( x+c-\left( x-c\right) \right) \left( x+c+x-c\right) =4a^{2}+4a\sqrt{\left( x-c\right) ^{2}+y^{2}}$
+
+\QTP{Body Math}
+$2c\left( 2x\right) =4\left( a^{2}+a\sqrt{\left( x-c\right) ^{2}+y^{2}}%
+\right) $
+
+\QTP{Body Math}
+$cx=a^{2}+a\sqrt{\left( x-c\right) ^{2}+y^{2}}$
+
+\QTP{Body Math}
+$cx-a^{2}=a\sqrt{\left( x-c\right) ^{2}+y^{2}}$
+
+\QTP{Body Math}
+$\left( cx-a^{2}\right) ^{2}=\left( a\sqrt{\left( x-c\right) ^{2}+y^{2}}%
+\right) ^{2}$
+
+\QTP{Body Math}
+$c^{2}x^{2}-2a^{2}cx+a^{4}=a^{2}x^{2}-2a^{2}cx+a^{2}c^{2}+a^{2}y^{2}$
+
+\QTP{Body Math}
+$\left( c^{2}-a^{2}\right) x^{2}=a^{2}\left( c^{2}-a^{2}\right) +a^{2}y^{2}$
+
+\QTP{Body Math}
+$b^{2}x^{2}=a^{2}b^{2}+a^{2}y^{2}\qquad $
+
+\QTP{Body Math}
+$\frac{x^{2}}{a^{2}}=1+\frac{y^{2}}{b^{2}}$
+
+\QTP{Body Math}
+$\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1$
+
+\QTP{Body Math}
+
+Si sustituimos $x$ por $-x$ o $y$ por $-y$ en la ecuación de la hipérbola $\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1$, la ecuación queda igual. Esto significa que la hipérbola es simétrica respecto a los ejes $x$ y $y$. 
+
+Los puntos de intersección con el eje $x$ son $\pm a$, por lo que los puntos $\left(-a,0\right) $ y $\left( a,0\right)$ son los vértices de la hipérbola. 
+
+No hay punto de intersección con el eje $y$, ya que, al hacer $x=0$ en la ecuación de la hipérbola, se obtiene $-y^{2}=b^{2}$, lo cual no tiene solución real. 
+
+Además, la ecuación de la hipérbola implica que
+
+\QTP{Body Math}
+$\frac{x^{2}}{a^{2}}=\frac{y^{2}}{b^{2}}+1\geq 1$, así que $\frac{x^{2}}{a^{2}}\geq 1$; entonces $x^{2}\geq a^{2}$ y, por lo tanto, $x\geq a$ o $x\leq a$.
+
+Esto significa que la hipérbola está formada por dos partes llamadas ramas.
+
+El segmento que une los dos vértices en las ramas separadas es el eje transverso de la hipérbola, mientras que el origen recibe el nombre de centro.
+
+\QTP{Body Math}
+\subsection{Asíntonas de la hipérbola}
+Las asíntotas de la hipérbola son rectas a las que la hipérbola se aproxima para valores grandes de $x$ y $y$. Para hallarlas, despejamos $y$:
+
+\QTP{Body Math}
+$y=\pm \sqrt{b^{2}\left( \frac{x^{2}}{a^{2}}-1\right) }\qquad \qquad y=\pm 
+\frac{b}{a}\sqrt{x^{2}-a^{2}}\qquad \qquad y=\pm \frac{b}{a}x\sqrt{1-\frac{%
+a^{2}}{x^{2}}}$
+
+\QTP{Body Math}
+Cuando $x$ se hace grande, $\frac{a^{2}}{x^{2}}$ se acerca a cero. En consecuencia, para $x$ grande, el valor de $y$ puede aproximarse a $y=\pm\frac{b}{a}x$. Esto demuestra que estas rectas son asíntotas de la hipérbola.
+
+\QTP{Body Math}
+Las asíntotas son recurso esencial para graficar una hipérbola, ya que nos ayudan a determinar su forma. 
+
+Una manera útil de hallar las asíntotas, para una hipérbola con eje transverso horizontal, es primero localizar los puntos $\left(-a,0\right) $, $\left( a,0\right)$, $\left( 0,-b\right) $ y $\left(0,b\right)$. Entonces, trace segmentos horizontales y verticales que pasen por estos puntos para construir un rectángulo. A este rectángulo se le da el nombre de rectángulo auxiliar de la hipérbola. Las pendientes de las diagonales del rectángulo central son $\pm \frac{b}{a}$, de modo que, al prolongarlas, obtenemos las asíntotas $y=\pm \frac{b}{a}x$.
+
+\QTP{Body Math}
+Finalmente, determinamos los vértices y usamos las asíntotas como guía para trazar la hipérbola.
+
+\QTP{Body Math}
+\subsection{Gráfica de una hipérbola paso a paso}
+En la figura \ref{fig:placeholder3.48}, se muestra como se construye la gráfica de la hipérbola, primero se dibuja el rectángulo auxiliar, luego se dibujan las asíntotas que son las diagonales del rectángulo auxiliar y después se ubican los vértices y a partir de ellos se traza la hipérbola siguiendo la dirección de las asíntotas.
+
+\begin{figure}[H]
+    \centering
+    \caption{Construcción de la gráfica de una hipérbola}
+    $%
+    \begin{array}{ccc}
+    
+    \includegraphics[width=0.4\textwidth]{Images/SDY12T94.png}
+    
+    & 
+    
+    \includegraphics[width=0.4\textwidth]{Images/SDY12T95.png}
+    
+    & 
+    \includegraphics[width=0.4\textwidth]{Images/SDY12T96.png}
+    \\ 
+    \text{Rectángulo auxiliar} & \text{Asíntotas} & \text{Hipérbola}%
+    \end{array}%
+    $
+    \label{fig:placeholder3.48}
+\end{figure}
+
+\subsection{Hipérbola que abre verticalmente}
+
+Al reflejar la hipérbola con focos en la horizontal, con ecuación $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1$ respecto a la recta $y=x$, se obtiene una hipérbola con vértice $V=\left( 0,0\right)$, cuyos focos están en la vertical (figura \ref{fig:placeholder3.49}). Esto se logra intercambiando las variables $x$ y $y$, obteniendo así que la ecuación de esta hipérbola es:
+
+$\frac{y^{2}}{a^{2}}-\frac{x^{2}}{b^{2}}=1$
+
+\begin{figure}[H]
+    \centering
+    \caption{Hipérbola con focos verticales}
+    \includegraphics[width=0.9\textwidth]{Images/SDY12T97.png}
+    \label{fig:placeholder3.49}
+\end{figure}
+
+\begin{example}
+Halle los elementos y grafique la curva con ecuación $16x^{2}-9y^{2}=-144$.
+\end{example}
+
+\textbf{Solución}
+
+Al dividir cada término de la ecuación entre $-144$, obtenemos:
+
+\begin{center}
+$-\frac{x^{2}}{9}+\frac{y^{2}}{16}=1$
+\end{center}
+
+Esta es la ecuación de una hipérbola que abre verticalmente, con centro en $\left( 0,0\right) $, $a=\sqrt{16}=4$, $b=\sqrt{9}=3$.
+
+El valor de $c$ es: \ $c=\sqrt{a^{2}+b^{2}}=\sqrt{9+16}=\sqrt{25}=5$
+
+Los focos son: $\left( 0,\pm c\right) :\left( 0,\pm 5\right)$
+
+Los vértices son: $\left( 0,\pm a\right)$, es decir, $\left( 0,\pm 4\right)$
+
+Las ecuaciones de las asíntotas son: $y=\pm \frac{4}{3}x$
+
+La gráfica de la hipérbola se muestra en la figura \ref{fig:placeholder3.50}:
+
+\begin{figure}[H]
+    \centering
+    \caption{Ejemplo de hipérbola que abre verticalmente}
+    \includegraphics[width=0.9\textwidth]{Images/SDY12T98.png}
+    \label{fig:placeholder3.50}
+\end{figure}
+
+\begin{example}
+Una nave espacial viaja desde la Tierra hacia Marte utilizando una trayectoria hiperbólica. Esta nave espacial necesita pasar muy cerca de Marte para una maniobra de asistencia gravitatoria que le permitirá cambiar su velocidad y dirección. En el punto de máxima aproximación, la nave está a $300$ km de la superficie de Marte. Si sabemos que el semieje mayor de la hipérbola es $a=5000$ km, la distancia focal es $c=5200$ km y el radio de Marte es aproximadamente $3390$ km, determine la ecuación de la trayectoria hiperbólica de la nave espacial y la distancia mínima desde el centro de Marte a la trayectoria de la nave.
+\end{example}
+
+\textbf{Solución}
+
+La ecuación de una hipérbola con el centro en el origen $(0,0)$ es:
+
+$\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1$
+
+Donde $a$ es el semieje mayor y $b$ se puede calcular usando la relación:
+
+$c^{2}=a^{2}+b^{2}$
+
+Dado que $c=5200$ km y $a=5000$ km, podemos calcular $b$:
+
+$b=\sqrt{c^{2}-a^{2}}$
+
+$=\sqrt{5200^{2}-5000^{2}}$
+
+$\approx 1428.28$\thinspace km
+
+Así que la ecuación de la hipérbola es \ $\frac{x^{2}}{5000^{2}}-\frac{y^{2}%
+}{\left( 1428.28\right) ^{2}}=1$.
+
+La distancia mínima desde el centro de Marte a la trayectoria de la nave espacial (distancia más cercana al foco) es la resta de la distancia focal y el semieje mayor:
+
+$d_{min}=c-a$
+
+$d_{min}=5200\,km-5000\,km=200\,km$
+
+Dado que la nave pasa a $300$ km de la superficie de Marte y el radio de Marte es aproximadamente de $3390$ km, la distancia desde el centro de Marte al punto de mayor aproximación de la nave es:
+
+$300\,km+3390\,km=3690\,km$
+
+\bigskip
+
+\subsection{Ejercicios}
+
+Halle los elementos y grafique cada una de las cónicas de acuerdo con la ecuación dada.
+
+\begin{enumerate}
+\item $x^{2}+8y=0$
+
+\item $x^{2}-16y=0$
+
+\item $8x+y^{2}=0$
+
+\item $32x-2y^{2}=0$
+
+\item $x^{2}+4y^{2}=16$
+
+\item $25x^{2}+9y^{2}=225$
+
+\item $9x^{2}+25y^{2}=255$
+
+\item $16x^{2}+4y^{2}=16$
+
+\item $9x^{2}+y^{2}=9$
+
+\item $16x^{2}-9y^{2}=144$
+
+\item $-9x^{2}+16y^{2}=144$
+
+\item $-4x^{2}+4y^{2}=16$
+
+\item $9x^{2}-9y^{2}=81$
+\end{enumerate}
+
+\section{Cónicas trasladadas}
+
+\subsection{Desplazamiento de gráficas de ecuaciones}
+
+Si $h$ y $k$ son números reales positivos, las sustituciones de $x$ por $x-h$, de $x$ por $x+h$, de $y$ por $y-k$ o de $y$ por $y+k$ tiene el siguiente efecto en la gráfica de cualquier ecuación en $x$ y $y$.
+
+\begin{center}
+\begin{tabular}{ll}
+Cambio & Cómo es desplazada la gráfica\\ 
+1. Reemplazo de $x$ por $x-h$ & Traslación de $h$ unidades a la derecha \\ 
+2. Reemplazo de $x$ por $x+h$ & Traslación de $h$ unidades a la izquierda \\ 
+3. Reemplazo de $y$ por $y-k$ & Traslación de $k$ unidades hacia arriba \\ 
+4. Reemplazo de $y$ por $y+k$ & Traslación de $k$ unidades hacia abajo%
+\end{tabular}
+\end{center}
+
+\subsection{Traslación de parábolas}
+
+\begin{enumerate}
+\item Al trasladar $h$ unidades en la horizontal y $k$ unidades en la vertical la parábola con ecuación $x^{2}=4py$, se obtiene la parábola (figura \ref{fig:placeholder3.51}) con ecuación:
+
+\begin{center}
+$\left( x-h\right) ^{2}=4p\left( y-k\right)$
+\end{center}
+
+\begin{figure}[H]
+    \centering
+    \caption{Parábola que abre hacia arriba trasladada}
+    $%
+    \begin{array}{c}
+    \begin{array}{c}
+    
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T99.png}
+    \end{array}%
+    \end{array}%
+    $
+    \label{fig:placeholder3.51}
+\end{figure}
+
+\item Al trasladar $h$ unidades a la derecha y $k$ unidades hacia arriba la parábola con ecuación $x^{2}=-4py$, se obtiene la parábola (figura \ref{fig:placeholder3.52}) con ecuación:
+
+\begin{center}
+$\left( x-h\right) ^{2}=-4p\left( y-k\right)$
+
+
+
+\end{center}
+\begin{figure}[H]
+    \centering
+    \caption{Parábola que abre hacia abajo trasladada}
+    $%
+    \begin{array}{c}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T9A.png}
+    \end{array}%
+    $
+    \label{fig:placeholder3.52}
+\end{figure}
+
+\item Al trasladar $h$ unidades a la derecha y $k$ unidades en la vertical la parábola con ecuación $y^{2}=4px$, se obtiene la parábola (figura \ref{fig:placeholder3.53}) con ecuación:
+
+\begin{center}
+$\left( y-k\right) ^{2}=4p\left( x-h\right)$
+
+\end{center}
+\begin{figure}[H]
+    \centering
+    \caption{Parábola que abre a la derecha trasladada}
+    \includegraphics[width=0.6\textwidth]{Images/SDY12U9B.png}
+    \label{fig:placeholder3.53}
+\end{figure}
+
+\item Al trasladar $h$ unidades a la derecha y $k$ unidades hacia arriba la parábola con ecuación $x^{2}=4py$, se obtiene la parábola (figura \ref{fig:placeholder3.54}) con ecuación:
+
+\begin{center}
+$\left( y-k\right) ^{2}=-4p\left( x-h\right)$
+
+\end{center}
+\begin{figure}[H]
+    \centering
+    \caption{Parábola que abre a la izquierda trasladada}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12U9C.png}
+    \label{fig:placeholder3.54}
+\end{figure}
+\end{enumerate}
+
+\begin{example}
+Determine el vértice, el foco, la directriz, el eje y grafique las parábolas con ecuación:
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item $x^{2}+4x+8y-12=0$
+        \item $4y^{2}+16y-6x-2=0$
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+a)$x^{2}+4x+8y-12=0$ \ \ 
+
+Completamos el cuadrado para $x$.
+
+$x^{2}+4x+4=-8y+12+4$ \ 
+
+Factorizamos el término $-8$ en $y$.
+
+$\left( x+2\right) ^{2}=-8\left( y-2\right) $
+
+La parábola abre hacia abajo con vértice $\left( -2,2\right) $.\qquad $%
+4p=8\rightarrow p=2$
+
+Eje $x=-2$\qquad Foco$=\left( -2,0\right)$ \qquad Directriz:$y=4$
+
+La gráfica de la parábola se muestra en la figura \ref{fig:placeholder3.55}.
+
+
+\begin{figure}[H]
+    \centering
+    \caption{Ejemplo parábola que abre hacia abajo trasladada}
+    $%
+    \begin{array}{c}
+    
+    \includegraphics[width=0.7\textwidth]{Images/SDY12U9D.png}
+    
+    \end{array}%
+    $
+    \label{fig:placeholder3.55}
+\end{figure}
+
+b) $4y^{2}+16y-6x-2=0$ $\ \ $dividimos la ecuación entre 4.$\ $
+
+$y^{2}+4y=\frac{3}{2}x+\frac{1}{2}$ \ \ completamos cuadrados para $y$
+
+$y^{2}+4y+4=\frac{3}{2}x+\frac{1}{2}+4$
+
+$\left( y+2\right) ^{2}=\frac{3}{2}x+\frac{9}{2}$ \ \ 
+
+$\left( y+2\right) ^{2}=\frac{3}{2}\left( x+3\right) $ \ \ \ 
+
+La ecuación corresponde con una parábola trasladada con vértice $V=\left( -3,-2\right)$, que abre a la derecha. Al calcular $4p=\frac{3}{2}$, tenemos que $p=\frac{3}{8}$. Por lo tanto, el eje de simetría es $y=-2$, la ecuación de la directriz es $x=-3-\frac{3}{8}$, es decir, $x=-\frac{27}{8}$, y el el foco
+tiene coordenadas $\left( -\frac{21}{8},-2\right)$.
+
+En la figura \ref{fig:placeholder3.56}, se dibuja la gráfica de esta parábola.
+
+\begin{figure}[H]
+    \centering
+    \caption{Parábola que abre a la derecha trasladada}
+    \begin{tabular}{l}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12U9E.png}
+    
+    \end{tabular}
+    \label{fig:placeholder3.56}
+\end{figure}
+
+\bigskip
+
+\begin{example}
+Encuentre la ecuación de la parábola que cumpla las condiciones dadas: \\
+Foco (0,7) \\
+Directriz $y=-7$ 
+\end{example}
+
+\textbf{Solución}
+
+El vértice es el punto medio entre la directriz y el foco $V=\left(0,0\right) $.
+
+El valor de $p$, que es la distancia foco - vértice, es 7.
+
+Es una parábola que abre hacia arriba con ecuación $:x^{2}=4\ast
+7y\rightarrow x^{2}=28y$ \ es decir $x^{2}=28y.$
+
+La gráfica de esta parábola se presenta en la figura \ref{fig:placeholder3.57}.
+\begin{figure}[H]
+    \centering
+    \caption{Parábola con foco y directriz dados}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12U9F.png}
+    \label{fig:placeholder3.57}
+\end{figure}
+
+\subsection{Ejercicios}
+
+Para cada parábola en los ejercicios del 1 al 6, halle el vértice, el foco, la directriz, el eje y grafíquela:
+
+\begin{enumerate}
+\item $y^{2}+12y-4x+16=0\qquad $
+
+\item $x^{2}+5x-y+6=0\qquad $
+
+\item $-2x^{2}+12x-8y-18=0$
+
+\item $4y^{2}+16y-6x-2=0\qquad $
+
+\item $3x^{2}+30x-8y+75=0\qquad $
+
+\item $y^{2}-4y-4x+3=0$
+
+En los ejercicios del 7 al 13, encuentre la ecuación de la parábola que cumpla las condiciones dadas:
+
+\item Foco (0,7), directriz $y=-7$ \ \ \ 
+
+\item Foco (0,-5), directriz $y = 5$ \ \ \ 
+
+\item Foco (1,5), vértice (1,-3)
+
+\item Foco (8,-3), Vértice (0,-3) \ \ \ 
+
+\item Vértice (-1,4), directriz $x=0$ \ \ \ \ 
+
+\item Vertice (1,1), directriz $y=4$
+
+\item Vértice (0,0), eje a lo largo del eje $y$, pasa por el punto (-2,8).
+
+\item Suponga que el chorro de agua del extremo de un tubo horizontal sigue un arco parabólico con vértice en el extremo del tubo. El tubo se encuentra a una altura de 20 metros del suelo. En un punto, a 2 metros por debajo del final del tubo, la distancia horizontal desde el chorro de agua hasta la vertical del final del tubo es de 4 metros. ¿A qué distancia de la vertical del
+final del tubo el agua toca el suelo?
+
+\item Un lanzador de dardos arroja un dardo a 5 metros sobre el suelo. El dardo se lanza horizontalmente y sigue una trayectoria parabólica, golpeando el suelo a $30$ metros del lanzador. A una distancia de 10 metros del lanzador, ¿qué tan alto debería ser ubicado un blanco (objetivo) para que el dardo lo golpee? (Suponga que el vértice de la parábola está en el punto inicial a una altura de 5 metros)
+
+\item La órbita de un cometa es una parábola con el Sol como foco. Cuando el cometa se encuentra a 60\,000 km del sol, la recta que va del cometa al Sol es perpendicular al eje de la parábola. Encuentre la ecuación de la trayectoria del cometa
+\end{enumerate}
+
+\subsection{Traslación de elipses}
+
+\begin{enumerate}
+\item Al trasladar $h$ unidades a la derecha y $k$ unidades hacia arriba la elipse horizontal con ecuación $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1$, se obtiene la elipse (figura \ref{fig:placeholder3.58}) con ecuación:
+
+\begin{center}
+$\frac{\left( x-h\right) ^{2}}{a^{2}}+\frac{\left( y-k\right) ^{2}}{b^{2}}%
+=1. $
+
+\end{center}
+\begin{figure}[H]
+    \centering
+    \caption{Elipse con focos horizontales trasladada}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12U9G.png}
+    \label{fig:placeholder3.58}
+\end{figure}
+
+
+\item Al trasladar $h$ unidades a la derecha y $k$ unidades hacia arriba la elipse vertical con ecuación $\frac{x^{2}}{b^{2}}+\frac{y^{2}}{a^{2}}=1$, se obtiene la elipse (figura \ref{fig:placeholder3.59}) con ecuación:
+
+\begin{center}
+$\frac{\left( x-h\right) ^{2}}{b^{2}}+\frac{\left( y-k\right) ^{2}}{a^{2}}%
+=1. $
+
+\end{center}
+
+\begin{figure}[H]
+    \centering
+    \caption{Elipse alargada en la vertical trasladada}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12U9H.png}
+    \label{fig:placeholder3.59}
+\end{figure}
+\end{enumerate}
+
+\begin{example}
+Halle los elementos y grafique la curva con ecuación $9x^{2}+36x+25y^{2}-150y=-36$.
+\end{example}
+
+\textbf{Solución}
+
+$9x^{2}+36x+25y^{2}-150y=-36$
+
+$9\left( x^{2}+4x+4\right) +25\left( y^{2}-6y+9\right) =-36+36+225$
+
+$9\left( x+2\right) ^{2}+25\left( y-3\right) ^{2}=225\qquad \left( \div
+225\right) $
+
+$\frac{9\left( x+2\right) ^{2}}{225}+\frac{25\left( y-3\right) ^{2}}{225}=1$
+
+$\frac{\left( x+2\right) ^{2}}{25}+\frac{\left( y-3\right) ^{2}}{9}=1$
+
+La elipse tiene centro en $\left( -2,3\right) $ \ $a=\sqrt{25}=5,b=\sqrt{9}=3,a>b$ y está
+achatada en la horizontal
+
+$c=\sqrt{25-9}=\sqrt{16}=4\qquad ejes$ \ $x=-2,y=3$
+
+\begin{figure}[H]
+    \centering
+    \caption{Ejemplo de elipse trasladada}
+    $%
+    \begin{array}{c}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12U9I.png}
+    
+    \end{array}%
+    $
+    \label{fig:placeholder3.60}
+\end{figure}
+
+Las coordenadas de los vértices y focos son:
+
+$%
+\begin{array}{c}
+V_{1}=\left( -7,3\right) \\ 
+V_{2}=\left( 3,3\right) \\ 
+V_{3}=\left( -2,6\right) \\ 
+V_{4}=\left( -2,0\right) \\ 
+F_{1}=\left( -6,3\right) \\ 
+F_{2}=\left( 2,3\right)%
+\end{array}%
+$
+
+La gráfica de esta elipse se presenta en la figura \ref{fig:placeholder3.60}
+
+\subsection{Ejercicios}
+
+
+En los problemas 1 a 6, halle el centro, los focos, los vértices, el eje mayor, el eje menor y grafique cada elipse:
+
+\begin{enumerate}
+
+\item $27.4x^{2}+\left( y+\frac{2}{3}\right) ^{2}=4\qquad $
+
+\item $2x^{2}+4y^{2}+4x+16y=7\qquad $
+
+\item $25x^{2}+9y^{2}-100x+18y-116=0$
+
+\item $x^{2}+3y^{2}+18y+18=0\qquad $
+
+\item $4y^{2}+12x^{2}-4y-24x+1=0\qquad $
+
+\item $x^{2}+4y^{2}-2x-4y+1=0.$
+
+En los problemas 7 a 12, encuentre una ecuación de la elipse que satisfaga las condiciones dadas.
+
+\item Vértices $(\pm 5,0)$, focos $(\pm 3,0)$
+
+\item Vértices $(0,\pm 2)$ y $(\pm 4,0)$
+
+\item Un foco (0,-2), centro en el origen, longitud del eje menor igual a
+3.\qquad\ 
+
+\item Focos $(\pm 4,0)$, longitud del eje menor 6
+
+\item Focos $(0,\pm \sqrt{6})$, longitud del eje mayor 16 \qquad
+
+\item Centro (1,3), un vértice (1,-1) y un foco (1,0)
+
+\item Plutón tiene una órbita elíptica alrededor del Sol, con este en uno de sus focos. Si la longitud del eje mayor es de 7350 millones de millas y la longitud del eje menor es 7117 millones de millas, ¿cuáles son las distancias mínima y máxima entre Plutón y el Sol?
+
+\item Un satélite de la Tierra se mueve en una órbita elíptica, con el centro de la Tierra en un foco. Tiene una altitud mínima de 200 millas y una altitud máxima de 1000 millas sobre la superficie de la Tierra. Si el radio de la Tierra es de 4000 millas, ¿cuál es la ecuación de la trayectoria del satélite?
+
+\item Un pasadizo bajo un arco es semielíptico con un eje mayor vertical. La base del arco es de 2 metros y la parte más alta del arco es de 3 metros. Encuentre la altura del arco por encima del punto sobre la base del arco a $\frac{3}{5}$ metros del centro.
+
+\item Un carpintero desea cortar la parte superior de una mesa de café, con forma elíptica, a partir de una pieza rectangular de madera de 2 metros por 3 metros, utilizando toda la longitud y el ancho disponible. Si la elipse va a ser dibujada poniendo dos tachuelas sobre los focos, ¿cuál debe ser la longitud de la cuerda cerrada que debe usarse para dibujarla sobre la madera?
+\end{enumerate}
+
+\subsection{Traslación de hipérbolas}
+
+
+\begin{enumerate}
+
+\item Al trasladar $h$ unidades a la derecha y $k$ unidades hacia arriba la hipérbola horizontal con ecuación $\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1$, se obtiene la hipérbola (figura \ref{fig:placeholder3.61}) con ecuación:
+
+\begin{center}
+$\frac{\left( x-k\right) ^{2}}{a^{2}}-\frac{\left( y-h\right) ^{2}}{b^{2}}%
+=1. $
+
+\end{center}
+\begin{figure}[H]
+    \centering
+    \caption{Hipérbola horizontal trasladada}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12U9J.png}
+    \label{fig:placeholder3.61}
+\end{figure}
+
+\item Al trasladar $h$ unidades a la derecha y $k$ unidades hacia arriba la hipérbola vertical con ecuación $\frac{y^{2}}{a^{2}}-\frac{x^{2}}{b^{2}}=1$, se obtiene la hipérbola (figura \ref{fig:placeholder3.62}) con ecuación:
+
+\begin{center}
+$\frac{\left( y-k\right) ^{2}}{a^{2}}-\frac{\left( x-h\right) ^{2}}{b^{2}}%
+=1. $
+\end{center}
+\begin{figure}[H]
+    \centering
+    \caption{Hipérbola vertical trasladada}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12U9K.png}
+    \label{fig:placeholder3.62}
+\end{figure}
+\end{enumerate}
+
+\begin{example}
+Halle los elementos y grafique la curva con ecuación $9x^{2}+18x-y^{2}-4y=4$.
+\end{example}
+
+\textbf{Solución}
+
+$9x^{2}+18x-y^{2}-4y=4$
+
+$9\left( x^{2}+2x+1\right) -\left( y^{2}+4y+4\right) =4+9-4$
+
+$9\left( x+1\right) ^{2}-\left( y+2\right) ^{2}=9\qquad \left( \div 9\right) 
+$
+
+$\left( x+1\right) ^{2}-\frac{\left( y+2\right) ^{2}}{9}=1$
+
+Esta ecuación es una hipérbola que abre horizontalmente, con centro en $\left( -1,-2\right) $ y semiejes $a=1$ y $b=3$.
+
+Los ejes de simetría son: $x=-1,y=-2$
+
+La distancia centro foco es: $c=\sqrt{1+9}=\sqrt{10}%
+\approx 3.162\,3$
+
+Las ecuaciones de las asíntotas son:\ $y=\pm 3\left( x+1\right) -2$ \
+
+La gráfica de la hipérbola se presenta en la figura \ref{fig:placeholder3.63}.
+
+
+\begin{figure}[H]
+    \centering
+    \caption{Ejemplo de hipérbola horizontal trasladada}
+    $%
+    \begin{array}{c}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12U9L.png}
+    
+    \end{array}%
+    $
+    \label{fig:placeholder3.63}
+\end{figure}
+
+Las coordenadas de los vértices y focos son:
+
+$V_{1}=\left( -2,-2\right) ,$ $V_{2}=\left( 0,-2\right) ,F_{1}=\left( -1+%
+\sqrt{10},-2\right) $ y $F_{2}=\left( -1+\sqrt{10},-2\right)$
+
+\subsection{Ejercicios}
+
+En los problemas 1 a 5, halle el centro, los focos, los vértices, las asíntotas de las hipérbolas y grafíquelas.
+
+\begin{enumerate}
+\item $5x^{2}-6y^{2}-20x+12y-16=0\qquad $
+
+\item $16x^{2}-25y^{2}+-256x-150y+399=0\qquad $
+
+\item $4x^{2}-y^{2}-8x+6y-4=0\qquad $
+
+\item $x^{2}-y^{2}+2y=5\qquad $
+
+\item $y^{2}-2x^{2}-4y-4x=2$
+
+En los problemas 6 a 11, encuentre una ecuación de la hipérbola que satisfaga las condiciones dadas.
+
+\item Vértices $(\pm 4,0)$ y un foco en $\left( 0,5\right) \qquad $
+
+\item Centro $(-1,3)$, un vértice$(-1,4)$ y pasa por $(-5,3+\sqrt{5})$
+
+\item Un foco $(0,-3)$, centro $(0,0)$, vértice $(0,\frac{5}{2}$) \ \ 
+
+\item Vértices $(0,\pm 8)$ y asíntotas $y=\pm 2x$
+
+\item Vértices $(0,\pm 3)$ y pasa por $(\frac{16}{3},5)$
+
+\item Focos (3,0) y (11,0), la diferencia de distancias fija $2a=12$
+
+En los problemas 12 a 14 grafique y encuentre los puntos de intersección aproximados si los hay entre las cónicas dadas.
+
+\item $x^{2}-y^{2}-1=0\qquad $y$\qquad x^{2}-3x+y^{2}=7$
+
+\item $y^{2}+12y-4x+16=0\qquad $y$\qquad 2x^{2}+y^{2}+4x+12y=7$
+
+\item $y^{2}-x^{2}-12y-4x+16=0\qquad $y$\qquad
+400x^{2}-1600x+4y^{2}+8y+1204=0$
+\end{enumerate}
+
+\section{Cónicas rotadas}
+
+\subsection{Ecuación general de una cónica desplazada}
+
+Si expandimos y simplificamos las ecuaciones de cualquiera de las cónicas desplazadas, siempre vamos a obtener una ecuación de la forma
+
+\begin{center}
+$Ax^{2}+Cy^{2}+Dx+Ey+F=0$
+\end{center}
+
+Donde tanto $A$ como $C$ son diferentes de cero. 
+
+Recíprocamente, si partimos de una ecuación con esta forma, podemos completar el cuadrado en $x$ y $y$ para determinar qué tipo de sección cónica representa. En algunos casos, la gráfica de la ecuación resulta ser solo un par de rectas, un solo punto, o puede no haber gráfica en absoluto. Estos casos reciben el nombre de cónicas degeneradas.
+
+\subsubsection{Casos de cónicas degeneradas}
+
+\begin{example}
+Grafique la ecuación $x^{2}+y^{2}+5=0$.
+\end{example}
+
+\textbf{Solución}
+
+El conjunto de puntos que satisface $x^{2}+y^{2}+5=0$ es vacío, ya que una
+suma de cuadrados siempre es mayor o igual que cero. Por lo tanto, esta ecuación no tiene gráfica en el plano.
+
+\begin{example}
+Grafique la ecuación $x^{2}+y^{2}+2x-4y+5=0$.
+\end{example}
+
+\textbf{Solución}
+
+Se completan los cuadrados.
+
+$\left( x+1\right) ^{2}+\left( y-2\right) ^{2}=0$ \ 
+
+Una suma de cuadrados es cero solamente cuando cada uno de ellos es cero, por lo que
+
+$x=-1$, $y=2$
+
+Así, la gráfica de la ecuación es solamente el punto $\left( -1,2\right)$.
+
+\begin{example}
+Grafique la ecuación $x^{2}-y^{2}+8x+8y=0$.
+\end{example}
+
+\textbf{Solución}
+
+Al completar los cuadrados, la ecuación es equivalente a
+
+$\left( x+4\right) ^{2}-\left( y-4\right) ^{2}=0$
+
+$\left( y-4\right) ^{2}=\left( x+4\right) ^{2}$
+
+$y-4=\pm \left( x+4\right) $
+
+La gráfica de la ecuación son las dos rectas $y=x+8$ y $y=-x$ y se dibujan en la figura \ref{fig:placeholder3.64}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Cónica degenerada}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12U9M.png}
+    \label{fig:placeholder3.64}
+\end{figure}
+
+Si la ecuación no es la gráfica de una cónica degenerada, entonces podemos saber si representa una parábola, una elipse o una hipérbola simplemente con examinar los signos de $A$ y $C$.
+
+La gráfica de la ecuación
+
+\begin{center}
+$Ax^{2}+Cy^{2}+Dx+Ey+F=0$
+\end{center}
+
+donde tanto $A$ como $C$ son diferentes de cero, es una cónica o una cónica
+degenerada.
+
+En los casos no degenerados, la gráfica corresponde a:
+
+\begin{enumerate}
+    \item Una parábola si $A$ o $C$ es $0$.
+    \item Una elipse si $A$ y $C$ tienen el mismo signo (o una circunferencia si $A=C$).
+    \item Una hipérbola si $A$ y $C$ tienen signos contrarios.
+\end{enumerate}
+
+\subsection{Rotación de ejes}
+
+En la figura \ref{fig:placeholder3.65} los ejes $x$ y $y$ han sido rotados un ángulo agudo $\phi$ alrededor del origen para producir un nuevo par de ejes, que llamamos ejes $X$ y $Y$. 
+
+\begin{figure}[H]
+    \centering
+    \caption{Rotación de ejes}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12U9N.png}
+    \label{fig:placeholder3.65}
+\end{figure}
+ 
+
+Un punto $P$, cuyas coordenadas en el sistema antiguo son $\left( x,y\right)$, tiene nuevas coordenadas $\left( X,Y\right)$ en el sistema rotado. Si denotamos por $r$ la distancia de $P$ al origen y por $\theta $ el ángulo que el segmento $OP$ forma con el nuevo eje $X$, entonces, en la figura \ref{fig:placeholder3.65} (al considerar los dos triángulos rectángulos de la figura). Se  hallan $X,Y$ en términos de $x,y$, de la siguiente forma:
+
+Supongamos $X=r\cos \theta ,Y=r\sin \theta $
+
+Entonces $x=r\cos \left( \theta +\phi \right) ,y=r\sin \left( \theta +\phi
+\right) $
+
+Por identidades de suma de ángulos para seno y coseno, tenemos:
+
+$x=r\cos \theta \cos \phi -r\sin \theta \sin \phi =X\cos \phi -Y\sin \phi $
+
+$y=r\sin \theta \cos \phi +r\cos \theta \sin \phi =Y\cos \phi +X\sin \phi $
+
+Esto puede escribirse matricialmente por:
+
+$\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+\cos \phi & -\sin \phi \\ 
+\sin \phi & \cos \phi%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+X \\ 
+Y%
+\end{array}%
+\right) $
+
+y como $\left( 
+\begin{array}{cc}
+\cos \phi & -\sin \phi \\ 
+\sin \phi & \cos \phi%
+\end{array}%
+\right) ^{-1}=\left( 
+\begin{array}{cc}
+\cos \phi & \sin \phi \\ 
+-\sin \phi & \cos \phi%
+\end{array}%
+\right) ,$ se cumple:
+
+$\left( 
+\begin{array}{c}
+X \\ 
+Y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+\cos \phi & \sin \phi \\ 
+-\sin \phi & \cos \phi%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) $
+
+\subsection{Ecuación general de una cónica}
+
+La ecuación general de segundo grado
+
+\begin{center}
+$Ax^{2}+Bxy+Cx^{2}+Dx+Ey+F=0$
+\end{center}
+
+es la ecuación de una cónica en el plano.
+
+El discriminante de la ecuación es $B^{2}-4AC$.
+
+Si $B\neq 0$, la ecuación contiene un término en el producto cruzado $xy$, lo uqe indica que esta cónica tiene sus ejes rotados. Luego, aplicando una transformación de rotación, se puede convertir en una ecuación en $X$ y $Y$ que no contiene el término $XY$ al escoger un ángulo de rotación adecuado.
+
+Para hallar el ángulo que funcione, giramos los ejes un ángulo $\phi$ y sustituimos $x$ y $y$ usando la fórmula para rotación de ejes:
+
+\begin{center}
+$\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+\cos \phi & -\sin \phi \\ 
+\sin \phi & \cos \phi%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+X \\ 
+Y%
+\end{array}%
+\right) =\left( 
+\begin{array}{c}
+X\cos \phi -Y\sin \phi \\ 
+X\sin \phi +Y\cos \phi%
+\end{array}%
+\right) $
+\end{center}
+
+Se obtiene:
+
+\begin{equation*}
+Ax^{2}+Bxy+Cy^{2}+Dx+Ey+F=0
+\end{equation*}
+
+\begin{eqnarray*}
+&&A\left( X\cos \phi -Y\sin \phi \right) ^{2}+B\left( X\cos \phi -Y\sin \phi
+\right) \left( X\sin \phi +Y\cos \phi \right) \\
+&&+C\left( X\sin \phi +Y\cos \phi \right) ^{2}+D\left( X\cos \phi -Y\sin
+\phi \right) +E\left( X\sin \phi +Y\cos \phi \right) +F \\
+&=&0
+\end{eqnarray*}
+
+\begin{eqnarray*}
+&&\underset{A^{/}}{\underbrace{\left( A\cos ^{2}\phi +B\cos \phi \sin \phi
++C\sin ^{2}\phi \right) }}X^{2} \\
+&&+\underset{B^{/}}{\underbrace{\left( B\left( \cos ^{2}\phi -\sin ^{2}\phi
+\right) +\left( C-A\right) 2\cos \phi \sin \phi \right) }}XY \\
+&&+\underset{C^{/}}{\underbrace{\left( A\sin ^{2}\phi -B\cos \phi \sin \phi
++C\cos ^{2}\phi \right) }}Y^{2} \\
+&&+\underset{D^{/}}{\underbrace{\left( D\cos \phi +E\sin \phi \right)
+X+\left( E\cos \phi -D\sin \phi \right) }}Y+\underset{F^{/}}{\underbrace{F}}
+\\
+&=&0
+\end{eqnarray*}
+
+Para eliminar el término en $XY$, el ángulo $\phi$ debe cumplir:
+
+$B\left( \cos ^{2}\phi -\sin ^{2}\phi \right) -\left( A-C\right) 2\cos \phi
+\sin \phi =0$ \qquad \qquad \qquad
+
+Al aplicar identidades del ángulo doble\ $\sin \left( 2\phi \right) =2\sin
+\phi \cos \phi ,$ \ $\sin \left( 2\phi \right) =\cos ^{2}\phi -\sin ^{2}\phi 
+$, se tiene
+
+$B\cos \left( 2\phi \right) =\left( A-C\right) \sin \left( 2\phi \right) $ \
+de donde:
+
+$\cot \left( 2\phi \right) =\frac{A-C}{B}$ \ \ $B\neq 0$, pues hay término en 
+$xy.$
+
+Luego, el ángulo de rotación $\phi $ que elimina el producto $XY$ satisface:
+
+\begin{center}
+$\cot \left( 2\phi \right) =\frac{C-A}{B}.$
+
+\bigskip
+\end{center}
+
+El discriminante de la ecuación general de segundo grado $Ax^{2}+Bxy+Cy^{2}+Dx+Ey+F=0$ y el discriminante de la ecuación rotada $A^{/}x^{2}+B^{/}xy+C^{/}y^{2}+D^{/}x+E^{/}y+F^{/}=0$ son iguales.
+
+De la ecuación general rotada, tenemos:
+
+$\left( B^{/}\right) ^{2}-4A^{/}C^{/}$
+
+$=\left( B\left( \cos ^{2}\phi -\sin ^{2}\phi \right) +\left( C-A\right)
+2\cos \phi \sin \phi \right) ^{2}$
+
+$\ \ -4\left( A\cos ^{2}\phi +B\cos \phi \sin \phi +C\sin ^{2}\phi \right)
+\left( A\sin ^{2}\phi -B\cos \phi \sin \phi +C\cos ^{2}\phi \right) $
+
+$=4A^{2}\cos ^{2}\phi \sin ^{2}\phi -4AB\cos ^{3}\phi \sin \phi +4AB\cos
+\phi \sin ^{3}\phi -8AC\cos ^{2}\phi \sin ^{2}\phi +\allowbreak B^{2}\cos
+^{4}\phi -2B^{2}\cos ^{2}\phi \sin ^{2}\phi +B^{2}\sin ^{4}\phi $
+
+$\ \ +4BC\cos ^{3}\phi \sin \phi -4BC\cos \phi \sin ^{3}\phi +4C^{2}\cos
+^{2}\phi \sin ^{2}\phi -4A^{2}\cos ^{2}\phi \sin ^{2}\phi +4AB\cos ^{3}\phi
+\sin \phi -4AB\cos \phi \sin ^{3}\phi $
+
+$\ -4AC\cos ^{4}\phi -4AC\sin ^{4}\phi +4B^{2}\cos ^{2}\phi \sin ^{2}\phi
+-4BC\cos ^{3}\phi \sin \phi +\allowbreak 4BC\cos \phi \sin ^{3}\phi
+-4C^{2}\cos ^{2}\phi \sin ^{2}\phi $
+
+$=B^{2}-4AC$
+
+$\bigskip $
+
+\begin{example}
+Elimine el término $xy$ y grafique la cónica con ecuación $x^{2}+2xy+y^{2}+12\sqrt{2}x-12\sqrt{2}y=0$.
+\end{example}
+
+\textbf{Solución}
+
+Hallamos el ángulo $\phi$ de rotación.
+
+$\cot \left( 2\phi \right) =\frac{A-C}{B}\rightarrow \cot \left( 2\phi
+\right) =\frac{1-1}{2}=0\rightarrow \frac{\cos \left( 2\phi \right) }{\sin
+\left( 2\phi \right) }=0\rightarrow \cos \left( 2\phi \right) =0\rightarrow
+2\phi =\frac{\pi }{2}\rightarrow \phi =\frac{\pi }{4}$
+
+El ángulo $\phi =\frac{\pi }{4}$ $radianes=45^{0}$ y el cambio de coordenadas es:
+
+$\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+\cos \frac{\pi }{4} & -\sin \frac{\pi }{4} \\ 
+\sin \frac{\pi }{4} & \cos \frac{\pi }{4}%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+X \\ 
+Y%
+\end{array}%
+\right) =\left( 
+\begin{array}{c}
+\frac{1}{\sqrt{2}}X-\frac{1}{\sqrt{2}}Y \\ 
+\frac{1}{\sqrt{2}}X+\frac{1}{\sqrt{2}}Y%
+\end{array}%
+\right) $
+
+Se reemplaza
+
+$%
+\begin{array}{r}
+\left( \frac{1}{\sqrt{2}}X-\frac{1}{\sqrt{2}}Y\right) ^{2}+2\left( \frac{1}{%
+\sqrt{2}}X-\frac{1}{\sqrt{2}}Y\right) \left( \frac{1}{\sqrt{2}}X+\frac{1}{%
+\sqrt{2}}Y\right) +\left( \frac{1}{\sqrt{2}}X+\frac{1}{\sqrt{2}}Y\right) ^{2}
+\\ 
++12\sqrt{2}\left( \frac{1}{\sqrt{2}}X-\frac{1}{\sqrt{2}}Y\right) -12\sqrt{2}%
+\left( \frac{1}{\sqrt{2}}X+\frac{1}{\sqrt{2}}Y\right) =0%
+\end{array}%
+$
+
+$2X^{2}-24Y=0\qquad $ dividimos entre $2:$
+
+$X^{2}=12Y$
+
+El resultado es la ecuación de una parábola centrada en $\left( 0,0\right)$ en el plano $
+X,Y$, que abre en dirección positiva de $Y$ y con $p=3$. Su gráfica se presenta en la figura \ref{fig:placeholder3.66}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Parábola rotada}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12U9O.png}
+    \label{fig:placeholder3.66}
+\end{figure}
+
+\begin{example}
+Elimine el término $xy$ y grafique la cónica con ecuación $91x^{2}+18\sqrt{3}xy+73y^{2}=1600$.
+\end{example}
+
+\textbf{Solución}
+
+Hallamos el ángulo $\phi$ de rotación.
+
+$\cot \left( 2\phi \right) =\frac{A-C}{B}\rightarrow \cot \left( 2\phi
+\right) =\frac{91-73}{18\sqrt{3}}=\frac{1}{\sqrt{3}}$
+
+Para hallar la rotación, debemos hallar $\cos \phi $ \ y \ $\sin \phi $.
+Para esto, usamos el triángulo de la figura \ref{fig:placeholder3.67} para $2\phi$.
+
+\begin{figure}[H]
+    \centering
+    \caption{Ángulo de rotación}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12U9P.png}
+    \label{fig:placeholder3.67}
+\end{figure}
+
+Usando las identidades del ángulo medio $\cos \phi =\sqrt{\frac{1+\cos 2\phi 
+}{2}}$ y $\sin \phi =\sqrt{\frac{1-\cos 2\phi }{2}}$, se obtiene
+
+$\cos \phi =\sqrt{\frac{1+\frac{1}{2}}{2}}=\frac{\sqrt{3}}{2}=$ y $\sin \phi
+=\sqrt{\frac{1-\frac{1}{2}}{2}}=\frac{1}{2}$
+
+y el ángulo $\phi =\frac{\pi }{6}$ $radianes=30^{0}$.
+
+El cambio de coordenadas es
+
+$\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+\cos \frac{\pi }{6} & -\sin \frac{\pi }{6} \\ 
+\sin \frac{\pi }{6} & \cos \frac{\pi }{6}%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+X \\ 
+Y%
+\end{array}%
+\right) =\left( 
+\begin{array}{c}
+\frac{\sqrt{3}}{2}X-\frac{1}{2}Y \\ 
+\frac{1}{2}X+\frac{\sqrt{3}}{2}Y%
+\end{array}%
+\right) $
+
+Reemplazamos.
+
+$%
+\begin{array}{l}
+91\left( \frac{\sqrt{3}}{2}X-\frac{1}{2}Y\right) ^{2}+18\sqrt{3}\left( \frac{%
+\sqrt{3}}{2}X-\frac{1}{2}Y\right) \left( \frac{1}{2}X+\frac{\sqrt{3}}{2}%
+Y\right) +73\left( \frac{1}{2}X+\frac{\sqrt{3}}{2}Y\right) ^{2}-1600 \\ 
+=100X^{2}+64Y^{2}-1600%
+\end{array}%
+$
+
+$100X^{2}+64Y^{2}-1600=0$ \ 
+
+Dividimos entre 1600.
+
+$\frac{100X^{2}}{1600}+\frac{64Y^{2}}{1600}=1$
+
+$\frac{X^{2}}{16}+\frac{Y^{2}}{25}=1$
+
+Es la ecuación de una elipse centrada en $(0,0)$ en el plano $XY$ con semieje menor $b=4$ sobre el eje $X$ y semieje mayor $a=5$ sobre el eje $Y$, cuya gráfica se presenta en la figura \ref{fig:placeholder3.68}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Elipse rotada}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12U9Q.png}
+    \label{fig:placeholder3.68}
+\end{figure}
+
+\begin{example}
+Elimine el término $xy$ y grafique la cónica con ecuación $-11x^{2}+50\sqrt{3}xy-36\sqrt{3}x+39y^{2}+36y=612$.
+\end{example}
+
+\textbf{Solución}
+
+Hallamos el ángulo $\phi$ de rotación.
+
+$\cot \left( 2\phi \right) =\frac{A-C}{B}\rightarrow \cot \left( 2\phi
+\right) =\frac{-11-39}{50\sqrt{3}}=-\frac{1}{\sqrt{3}}$
+
+Resolvemos la ecuación trigonométrica.
+
+$\cot \left( 2\phi \right) =-\frac{1}{\sqrt{3}}$
+
+$\tan \left( 2\phi \right) =-\sqrt{3}$
+
+$2\phi =\tan ^{-1}\left( -\sqrt{3}\right) =-\frac{1}{3}\pi +k\pi ,$ $k\in 
+\mathbb{Z}$
+
+$\phi =-\frac{\pi }{6}+k\frac{\pi }{2},$ con $k=1,$ tenemos $\phi =\frac{\pi 
+}{3}$
+
+El ángulo de rotación es $\phi =\frac{\pi }{3}$ $radianes=60^{0}$ y el cambio de coordenadas es
+
+$\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+\cos \frac{\pi }{3} & -\sin \frac{\pi }{3} \\ 
+\sin \frac{\pi }{3} & \cos \frac{\pi }{3}%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+X \\ 
+Y%
+\end{array}%
+\right) =\left( 
+\begin{array}{c}
+\frac{1}{2}X-\frac{1}{2}\sqrt{3}Y \\ 
+\frac{1}{2}Y+\frac{1}{2}\sqrt{3}X%
+\end{array}%
+\right)$
+
+Al reemplazar
+
+$%
+\begin{array}{r}
+-11\left( \frac{1}{2}X-\frac{1}{2}\sqrt{3}Y\right) ^{2}+\left( 50\sqrt{3}%
+\right) \left( \frac{1}{2}X-\frac{1}{2}\sqrt{3}Y\right) \left( \frac{1}{2}Y+%
+\frac{1}{2}\sqrt{3}X\right) -\left( 36\sqrt{3}\right) \left( \frac{1}{2}X-%
+\frac{1}{2}\sqrt{3}Y\right) \\ 
++39\left( \frac{1}{2}Y+\frac{1}{2}\sqrt{3}X\right) ^{2}+36\left( \frac{1}{2}%
+Y+\frac{1}{2}\sqrt{3}X\right) =612%
+\end{array}%
+$
+
+Simplificando, se obtiene
+
+$64X^{2}-36Y^{2}+72Y=612$ \ \ 
+
+Completamos los cuadrados.
+
+$64X^{2}-36\left( Y^{2}-2Y+1\right) =612-36$
+
+$64X^{2}-36\left( Y-1\right) ^{2}=576$ \ \ \ \ 
+
+Dividimos entre 576.
+
+$\frac{64X^{2}}{576}-\frac{36\left( Y-1\right) ^{2}}{576}=1\qquad $
+
+$\frac{X^{2}}{9}-\frac{\left( Y-1\right) ^{2}}{16}=1.$
+
+Esta última ecuación es la de una hipérbola trasladada con centro $\left(0,1\right) $ en el plano $XY$, que abre en dirección de $X$ con $a=3$, $b=4,c=5$. Su gráfica se presenta en la figura \ref{fig:placeholder3.69}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Hipérbola rotada}
+    $
+    \begin{array}{c}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12U9R.png}
+    \end{array}
+    $
+    \label{fig:placeholder3.69}
+\end{figure}
+
+\subsection{Identificación de cónicas por el discriminante}
+
+La gráfica de la ecuación $Ax^{2}+Bxy+Cx^{2}+Dx+Ey+F=0$ representa una cónica o una cónica degenerada. En los casos no degenerados, la gráfica es:
+
+\begin{enumerate}
+    \item Una parábola si su discriminante es $B^{2}-4AC=0$.
+    \item Una elipse si $B^{2}-4AC<0$.
+    \item Una hipérbola si $B^{2}-4AC>0$.
+\end{enumerate}
+
+La prueba de este resultado se demuestra considerando una rotación de los ejes en un ángulo $\phi$, lo que permite obtener una ecuación de la forma
+
+\begin{center}
+$A^{/}x^{2}+B^{/}xy+C^{/}y^{2}+D^{/}x+E^{/}y+F^{/}=0$
+\end{center}
+
+Ya probamos que el discriminante: $B^{2}-4AC=\left( B^{/}\right)
+^{2}-4A^{/}C^{/}.$
+
+Por lo tanto, la expresión $B^{2}-4AC$ sigue sin cambio para cualquier rotación. En particular, si escogemos una rotación que elimina el término en $xy$ $\left(B^{/}=0\right) $, obtenemos:
+
+\begin{center}
+$A^{/}x^{2}+C^{/}y^{2}+D^{/}x+E^{/}y+F^{/}=0$
+\end{center}
+
+En este caso, $B^{2}-4AC=\left( B^{/}\right) ^{2}-4A^{/}C^{/}=-4A^{/}C^{/}$.
+
+Por lo tanto:
+
+Si $B^{2}-4AC=0$, entonces $A^{/}C^{/}=0$ y $A^{/}=0$ o $C^{/}=0$ y la gráfica de la ecuación es una parábola.
+
+Si $B^{2}-4AC<0$, entonces $A^{/}C^{/}>0$ y $A^{/}$, y $C^{/}$ tienen el mismo signo y la gráfica de la ecuación es una elipse.
+
+Si $B^{2}-4AC>0$, entonces $A^{/}C^{/}<0$ y $A^{/}$, y $C^{/}$ tienen signo contrario y la gráfica de la ecuación es una hipérbola.
+
+
+\begin{example}
+Identifique si la gráfica de cada ecuación es una parábola elipse o una hipérbola.
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item $2x^{2}+4xy+3y^{2}-2x+6y+1=0$
+        \item $x^{2}+4xy+4y^{2}-x+y-2=0$
+        \item $4x^{2}+7xy+2y^{2}+3x+3y+5=0$
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+    \item En esta ecuación de segundo grado, $A=2,B=4,C=3.$ El discriminante $B^{2}-4AC=16-24=-8<0$, lo que indica que es una elipse.
+    \item De la ecuación $A=1,B=4,C=4$. El discriminante $B^{2}-4AC=16-16=0$, por lo cual es una parábola.
+    \item Los coeficiente de la ecuación son $A=4,B=7,C=2$. El discriminante $B^{2}-4AC=49-32=17>0$, lo que implica que es una hipérbola.
+\end{enumerate}
+
+\subsection{Ejercicios}
+
+En los ejercicios del 1 al 12, identifique si la gráfica de cada ecuación es una parábola, una elipse o una hipérbola, elimine el término $xy$ y grafique la cónica rotada con la ecuación dada.
+
+\begin{enumerate}
+\item $xy=8$
+
+\item $x^{2}-2xy+y^{2}-4\sqrt{2}x-4\sqrt{2}y=0$
+
+\item $4x^{2}-xy+y^{2}=16$
+
+\item $x^{2}+xy-y^{2}=10$
+
+\item $x^{2}+4xy+4y^{2}+x+y=0$
+
+\item $x^{2}+2xy+y^{2}+4x+y=0$
+
+\item $x^{2}+xy+y^{2}+x+y=16$
+
+\item $4x^{2}+4xy+4y^{2}=16$
+
+\item $4x^{2}-4xy+16y^{2}=16$
+
+\item $x^{2}-16xy+4y^{2}=16$
+
+\item $x^{2}+2xy+y^{2}-x+y=0$
+
+\item $x^{2}+5xy+4y^{2}+10x+8y=0$
+\end{enumerate}
+

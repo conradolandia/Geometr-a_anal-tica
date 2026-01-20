@@ -1,0 +1,3219 @@
+\chapter{Introducción}
+
+\bigskip
+
+La geometría analítica es la rama de las matemáticas que estudia las figuras, sus distancias, sus áreas, puntos de intersección, ángulos de inclinación, puntos de división y volúmenes. Estudia las propiedades de las figuras geométricas mediante técnicas del análisis matemático y del álgebra en un determinado sistema de coordenadas.
+
+Dos preguntas fundamentales de la geometría analítica son: dado el lugar geométrico de un sistema de coordenadas, obtener su ecuación y, recíprocamente, dada la ecuación en un sistema de coordenadas, determinar la gráfica o lugar geométrico de los puntos que verifican dicha ecuación.
+
+La geometría analítica representa las figuras geométricas mediante ecuaciones. Así, las rectas se expresan mediante una ecuación lineal, mientras que las circunferencias y el resto de cónicas se representan con ecuaciones polinómicas de segundo grado.
+
+La historia de la geometría analítica se remonta a la antigua Grecia. El matemático griego Apolonio de Perga, en \textit{Sobre la sección determinada}, trató los problemas de una manera que puede llamarse "geometría analítica de una dimensión", con la cuestión de encontrar puntos en una recta que estuvieran en proporción a los demás. Apolonio desarrolló, además, en las cónicas un método similar a la geometría analítica. Desarrolló relaciones entre las abscisas y las ordenadas correspondientes, que son equivalentes a las ecuaciones de curvas expresadas en palabras. Sin embargo, aunque Apolonio estuvo cerca de desarrollar la geometría analítica, no lo logró, ya que no tuvo en cuenta las magnitudes negativas. En todos los casos, en el sistema de coordenadas las ecuaciones estaban determinadas por curvas, pero las curvas no estaban determinadas por ecuaciones. Las coordenadas, las variables y las ecuaciones eran nociones que se aplicaban a una situación geométrica específica.
+
+La geometría analítica se originó en el siglo \textsc{XVII} con los trabajos del filósofo y matemático francés René Descartes, quien fue uno de los pensadores más destacados de su tiempo. En su obra \textit{La Géométrie}, introdujo una nueva forma revolucionaria de estudiar las figuras geométricas.
+
+Descartes creía que las figuras geométricas podrían describirse de manera precisa utilizando coordenadas numéricas, lo que le permitiría aplicar las herramientas del álgebra a la geometría. Para ello, dispuso un sistema de coordenadas en el que se utilizan dos ejes perpendiculares (horizontal y vertical) para representar puntos en un plano. Cada punto en el plano se podía describir con un par ordenado de números $(x,y)$, donde $x$ representa la posición horizontal del punto y $y$ representa su posición vertical. Esta idea revolucionaria permitió a Descartes describir puntos, líneas, curvas y otras figuras geométricas utilizando ecuaciones matemáticas.
+
+El trabajo de Descartes sentó las bases de la geometría analítica, y su sistema de coordenadas, conocido como "sistema de coordenadas cartesianas", se convirtió en una herramienta fundamental para el estudio de las figuras geométricas en dos dimensiones.
+
+A lo largo de los siglos, matemáticos de todo el mundo, como Pierre de Fermat, Leonhard Euler y Augustin-Louis Cauchy, entre otros, desarrollaron y expandieron la geometría analítica, aplicándola a diversos campos de la ciencia y la ingeniería. La geometría analítica se convirtió en una herramienta poderosa para resolver problemas geométricos, estudiar las propiedades de las figuras y desarrollar nuevas teorías matemáticas.
+
+Con el tiempo, la geometría analítica evolucionó y se expandió a dimensiones superiores, como la geometría analítica en tres dimensiones y la geometría analítica en espacios vectoriales, lo que la convirtió en una herramienta esencial en áreas como la geometría algebraica, la física y la informática.
+
+Hoy en día, la geometría analítica sigue siendo una rama activa y fundamental de las matemáticas, con aplicaciones en diversos campos de la ciencia y la tecnología. La obra pionera de Descartes y otros matemáticos en el desarrollo de la geometría analítica ha dejado un legado duradero y sigue siendo una parte integral de la educación matemática moderna.
+
+En este texto se pretende dar una visión vectorial de la geometría analítica; para ello, se usan técnicas vectoriales para resolver algunos problemas geométricos, como hallar fórmulas para las coordenadas de puntos importantes asociados a un triángulo, tales como el circuncentro, ortocentro e incentro, a partir de las coordenadas de los vértices del triángulo. También se tratan las transformaciones geométricas, como las transformaciones matriciales, y se deducen las fórmulas matriciales que definen estas transformaciones correspondientes a traslaciones, reflexiones, rotaciones, dilataciones y sus respectivas composiciones, como productos de matrices.
+
+Se deducen fórmulas para hallar áreas de polígonos en términos de las coordenadas de sus vértices, y se usan las transformaciones de traslación y rotación para trasladar y rotar curvas, en particular, para identificar las cónicas trasladadas y las cónicas rotadas al usar un giro en el sistema de coordenadas.
+
+En cada apartado del libro se incluye una gran variedad de ejemplos resueltos que ejemplifican de manera efectiva cada uno de los temas y conceptos abordados. Al concluir cada sección, se plantea una serie de ejercicios con el propósito de brindar al estudiante la oportunidad de poner en práctica los conceptos aprendidos y resolver desafíos relacionados con los temas tratados. Esta estructura didáctica busca fortalecer la comprensión y aplicación de los contenidos, alentando un aprendizaje activo.
+
+El libro está dirigido a estudiantes de tecnologías e ingenierías que utilizan la geometría como herramienta en la solución de problemas en sus campos de estudio. Puede usarse como referencia para los cursos de Geometría Analítica, Fundamentos de Matemáticas y Precálculo, y como apoyo a los cursos de cálculo.
+
+Cada una de las gráficas del libro fue realizada por el autor en el \textit{software} Geogebra; algunas de ellas se pueden animar para visualizar el resultado geométrico. El levantamiento del texto se hizo en el procesador LATEX.
+
+La temática del libro es autocontenida y no requiere prerrequisitos adicionales a los cursos de Aritmética y Álgebra del bachillerato. En el primer capítulo se presentan todos los elementos y resultados necesarios para el desarrollo de los demás capítulos.
+
+\bigskip
+
+\mainmatter
+
+\chapter{Plano cartesiano $\mathbb{R}^{2}$ y espacio $\mathbb{R}^{3}$}
+
+El plano cartesiano y el espacio tridimensional son dos conceptos fundamentales en la geometría y las matemáticas que se utilizan para representar y describir posiciones y relaciones entre puntos y objetos en el espacio.
+
+El plano cartesiano es un sistema de coordenadasbidimensional creado por el matemático y filósofo francés René Descartes, también conocido como "sistema de coordenadas cartesianas". Consiste en dos ejes perpendiculares entre sí: uno horizontal, llamado eje $x$, y otro vertical, llamado eje $y$, que se intersecan en un punto llamado origen. Cada punto en el plano cartesiano se representa por un par ordenado de números $(x,y)$,donde $x$ es la coordenada en el eje $x$ y $y$ es la coordenada en el eje $y$. El plano cartesiano se utiliza para representar puntos, líneas, figuras geométricas y funciones matemáticas.
+
+El espacio tridimensional, por otro lado, es un sistema de coordenadas tridimensionales que agrega una dimensión adicional al plano cartesiano, creando un espacio en tres dimensiones. Se compone de tres ejes perpendiculares entre sí: el eje $x$, el eje $y$ y el eje $z$, que se intersecan en un punto llamado origen. Cada punto en el espacio tridimensional se representa por una terna ordenada de números $(x,y,z)$, donde $x$ es la coordenada en el eje $x$, $y$ es la coordenada en el eje $y$ y $z$ es la coordenada en el eje $z$. El espacio tridimensional se utiliza para representar objetos y espacios en el mundo físico, como edificios, objetos tridimensionales y sistemas de coordenadas en sistemas de referencia tridimensionales. Es una herramienta fundamental en la geometría y en disciplinas como la física, la arquitectura, la informática gráfica y la ingeniería.
+
+En este primer capítulo, se presentan los conceptos y herramientas fundamentales de la geometría analítica de la recta, el plano y el espacio, como son el plano cartesiano, el espacio tridimensional, vectores de dimensión dos y tres, matrices de tamaños $2\times 2$ y $3\times 3$, determinantes y el producto cruz.
+
+\section{Números reales (la recta coordenada)}
+
+\subsection{La recta numérica}
+
+El conjunto de los números naturales, notado por $\mathbb{N}$, está formado por el 0, 1, 2, 3, 4,$\cdots $, donde cada natural $n$ se obtiene sumando una unidad al anterior. Los puntos suspensivos indican que los números continúan en ese orden y que no hay un último elemento. Este conjunto se puede representar gráficamente en la figura \ref{fig:placeholder1}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Números Naturales}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S48.png}
+    \label{fig:placeholder1}
+\end{figure}
+
+
+
+Ecuaciones elementales como $x+5=0$ no tienen solución en $\mathbb{N}$. Un conjunto donde este tipo de ecuaciones sí tiene solución es el de los números enteros, notado por $\mathbb{Z}$ y conformado por la unión de los naturales y los negativos de cada natural no nulo. Así, $\mathbb{Z}=\left\{ \cdots ,-4,-3,-2,-1,0,1,2,3,4,\cdots \right\}$ que graficamente se representa en la en la figura \ref{fig:placeholder2}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Números Enteros}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S49.png}
+    \label{fig:placeholder2}
+\end{figure}
+
+Problemas como el de dividir un segmento en un cierto número de partes conducen a la aparición de fracciones, que son cocientes de números enteros. El conjunto formado por todos estos cocientes es el conjunto de números racionales, denotado por $\mathbb{Q}$. De está forma, $\mathbb{Q}=\left\{ \frac{m}{n}:m,n\in Z\text{ y }n\neq 0\right\}$. 
+
+Preguntas elementales como encontrar la medida de una diagonal de un cuadrado nos llevan a la aparición de raíces cuadradas. Las raíces cuadradas inexactas como $\sqrt{2},\sqrt{3},\sqrt{5} ,...$ no se pueden expresar como cocientes de números enteros. 
+
+Un número es irracional si no se puede expresar como el cociente de dos enteros. De otra parte, cada número racional se puede escribir como un decimal finito, por ejemplo, $\frac{4}{5}=0.8$, o como una expansión decimal infinita periódica: $\frac{2}{3}=0.66666...=0.\overline{6}$. 
+
+El conjunto de los irracionales, denotado por $\mathbb{I}$, está formado por todos aquellos números que no se pueden expresar como cocientes de enteros o, de forma equivalente, por todos aquellos números cuya expansión decimal es infinita y no periódica.
+
+El conjunto de los números reales, denotado $\mathbb{R}$, es la unión de los números racionales e irracionales. Existe una correspondencia biunívoca entre los puntos de una recta y los números reales: si cortamos la recta por un punto, este representa un único número, que puede ser un racional o un irracional. Así, la representación gráfica de $\mathbb{R}$ como  una recta se muestra en la figura \ref{fig:placeholder3}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Recta de los números Reales}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4A.png}
+    \label{fig:placeholder3}
+\end{figure}
+
+\subsection{Distancia entre puntos en la recta}
+
+Sean $A$ y $B$ dos puntos sobre la recta real con coordenadas $x$ y $y$ respectivamente. La longitud del segmento que une los dos puntos notada $AB $ es\ $AB=\left\vert x-y\right\vert$. Eta longitud se grafica en la figura \ref{fig:placeholder4}. \ Si $A$ está antes que $B$, entonces $AB=y-x$.
+
+\begin{figure}[H]
+    \centering
+    \caption{Longitud de un segmento}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4B.png}
+    \label{fig:placeholder4}
+\end{figure}
+
+
+
+\subsection{Punto medio}
+
+El punto medio $M$ del segmento $AB$ tiene como coordenada el promedio de las coordenadas de $A$ y de $B$, que se representa gráficamente en la figura \ref{fig:placeholder5}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Punto medio de un segmento}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4C.png}
+    \label{fig:placeholder5}
+\end{figure}
+
+Así, \ $AM=MB$ \ o \ $\frac{AB}{AM}=2$.
+
+
+\subsection{División de un segmento en una razón dada}
+
+Sean $A,P$ y $B$ puntos ordenados en $\mathbb{R}$, con coordenadas $x_{1},x$ y $x_{2}$, respectivamente. Se debe encontrar la coordenada de $x$ a partir de las coordenadas $x_{1}$ y $x_{2}$, sabiendo que $\frac{AP}{PB}=r$, donde $r$ es un número positivo. Esto se muestra en la figura \ref{fig:placeholder6}.
+
+Si $\frac{AP}{PB}=r$, con $r>0$, entonces $AP=rPB,$ $\ x-x_{1}=r\left(x_{2}-x\right)$ y $x=\frac{x_{1}+rx_{2}}{r+1}$.
+
+Por lo tanto, la coordenada de $P$ es $x=\frac{x_{1}+rx_{2}}{r+1}$.
+\begin{figure}[H]
+    \centering
+    \caption{División de un segmento en una razón $r$}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4D.png}
+    \label{fig:placeholder6}
+\end{figure}
+
+\begin{example} 
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+\begin{enumerate}
+        \item Dado el segmento que une los puntos $A=-5$ y $B=7$, halle el punto $P$ que divida el segmento en una razón de $5$.
+        \item Para el segmento que une los puntos $A=-3$ y $B=12$, halle el punto $P$ que divida el segmento en una razón de $\frac{1}{4}$.
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item Según el resultado anterior, se tiene que $r=5$ y la coordenada de $P$ es $x=\frac{x_{1}+rx_{2}}{r+1}=\frac{\left( -5\right) +5\left( 7\right) }{5+1} =5$. El punto $P$ tiene coordenada $5$, así $AP=5PB$.
+        \item $r=\frac{1}{4},$ así $x=\frac{x_{1}+rx_{2}}{r+1}=\frac{\left( -3\right) +\frac{1}{4}\left( 12\right) }{\frac{1}{4}+1}=0$. El punto $P$ tiene coordenada $0$, así $AP=\frac{1}{4}PB$.
+\end{enumerate}
+
+\subsection{Ejercicios}
+
+\begin{enumerate}
+\item Halle la longitud del segmento en la recta real que une los puntos $A=-\frac{15}{7}$ y $B=$ $\frac{3}{5}$.
+
+\item Halle el punto medio del segmento en la recta real que une los puntos 
+$A=-10$ y $B=$ $-5$.
+
+\item Sean $A=-2$ y $B=3$, halle el punto $P$ del segmento $AB$ que lo divida en una razón de 4.
+
+\item Sean $A=-\frac{8}{3}$ y $B=7$, halle el punto $P$ del segmento $AB$ que lo divida en una razón de $\frac{2}{5}$.
+\end{enumerate}
+
+\section{Plano cartesiano $\mathbb{R}^{2}$}
+
+\QTP{Body Math}
+\subsection{Plano y localización de puntos}
+
+Para construir un sistema de coordenadas rectangulares, se trazan dos rectas perpendiculares que se intersecan en el punto $O$, llamado origen.
+
+La recta horizontal es el eje de las abscisas, o eje de las $x$, y la recta vertical es el eje de las ordenadas, o eje de las $y$. Al usar un segmento unidad conveniente, se divide cada eje de manera que los números enteros positivos queden ubicados a la derecha del origen sobre el eje $x$ y arriba del origen sobre el eje $y$. Los enteros negativos se sitúan a la izquierda del origen sobre el eje $x$ y abajo del origen sobre el eje $y$.
+
+Los ejes sirven como elementos de referencia para localizar cualquier punto situado en el plano que forman, procediendo en la forma siguiente: se indica la distancia del punto hacia la derecha o la izquierda del eje horizontal, y la distancia hacia arriba o hacia abajo del eje vertical.
+
+La abscisa es positiva o negativa según si el punto $P$ está situado a la derecha o a la izquierda del eje horizontal. De manera similar, la ordenada es positiva o negativa dependiendo de si el punto está ubicado arriba o abajo del eje vertical.
+
+A la abscisa y a la ordenada de un punto se les llaman coordenadas del punto y se escriben como un par de números dentro de un paréntesis, separado por una coma. El primero de estos números representa siempre a la abscisa y el segundo la ordenada.
+
+En general, un punto cualquiera, por ejemplo, el punto $P$, cuya abscisa es $x$ y cuya ordenada es $y$, se designa mediante la notación $P=(x,y)$.
+
+Los ejes de coordenadas dividen al plano en cuatro partes, cada una de ellas llamada cuadrante. Los cuadrantes se numeran con números romanos: \textsc{I,II,III,IV}, como se indica en la figura \ref{fig:placeholder7}.
+
+
+\begin{figure}[H]
+    \centering
+    \caption{Plano cartesiano}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4E.png}
+    \label{fig:placeholder7}
+\end{figure}
+
+\subsection{Distancia entre puntos}
+
+El teorema de Pitágoras establece que, en todo triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos. A partir de este resultado, se puede encontrar la fórmula para la distancia $d$ entre los puntos $P=\left( x_{1},y_{1}\right) $ y $Q=\left( x_{2},y_{2}\right)$:
+
+\begin{figure}[H]
+    \centering
+    \caption{Distancia entre dos puntos del plano}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4F.png}
+    \label{fig:placeholder8}
+\end{figure}
+Usando la gráfica de la figura \ref{fig:placeholder8} se tiene:
+\begin{center}
+$d^{2}=\left\vert x_{1}-x_{2}\right\vert ^{2}+\left\vert
+y_{1}-y_{2}\right\vert ^{2}$ \ de donde \ $d=\sqrt{\left( x_{1}-x_{2}\right)
+^{2}+\left( y_{1}-y_{2}\right) ^{2}}$
+\end{center}
+
+
+Así, la fórmula para la distancia entre dos puntos es la raíz cuadrada de la suma de la diferencia al cuadrado de las coordenadas $x$ y la diferencia al cuadrado de las coordenadas $y$:
+
+\begin{center}
+$d\left( P,Q\right) =\sqrt{\left( x_{1}-x_{2}\right) ^{2}+\left(
+y_{1}-y_{2}\right) ^{2}}=\sqrt{\left( x_{2}-x_{1}\right) ^{2}+\left(
+y_{2}-y_{1}\right) ^{2}}$
+\end{center}
+
+\subsection{División de un segmento en el plano en una razón dada}
+
+Sean $A=\left( x_{1},y_{1}\right) $, $P=\left( x,y\right) $ y $B=\left(x_{2},y_{2}\right) $ puntos ordenados en $\mathbb{R}^{2}$, se debe encontrar las coordenadas de $P$ a partir de las coordenadas de $A$ y $B$, sabiendo que $\frac{d\left( A,P\right) }{d\left( P,B\right) }=r$, donde $r$ es un número positivo, como se muestra en la figura \ref{fig:placeholder9}.
+
+\begin{figure}[H]
+    \centering
+    \caption{División de un segmento en el plano en una razón $r$}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4G.png}
+    \label{fig:placeholder9}
+\end{figure}
+
+Usando la división de un segmento en la recta real $\mathbb{R}$ en la razón $r$\ para el segmento que une los puntos $x_{1}$ y $x_{2}$ en el eje X y el
+segmento que unen los puntos $y_{1}$ y $y_{2}$ en el eje Y \ tenemos que $x=\frac{x_{1}+rx_{2}}{r+1}$ \ \ y \ \ $y=\frac{y_{1}+ry_{2}}{r+1}$.
+
+Si $P=\left( \frac{x_{1}+rx_{2}}{r+1},\frac{y_{1}+ry_{2}}{r+1}\right)$, se cumple $\frac{d\left( A,P\right) }{d\left( PB\right) }=r$, es decir, $r^{2}d\left( PB\right) ^{2}=d\left( A,P\right) ^{2}:$
+
+$r^{2}d\left( PB\right) ^{2}$
+
+$=r^{2}\left( \left( x-x_{2}\right) ^{2}+\left( y-y_{2}\right) ^{2}\right) $
+
+$=r^{2}\left( \left( \frac{x_{1}+rx_{2}}{r+1}-_{2}\right) ^{2}+\left( \frac{y_{1}+ry_{2}}{r+1}-y_{2}\right) ^{2}\right) $
+
+$=r^{2}\left( \left( \frac{x_{1}+rx_{2}-rx_{2}-x_{2}}{r+1}\right)
+^{2}+\left( \frac{y_{1}+ry_{2}-rx_{y2}-y_{2}}{r+1}\right) ^{2}\right) $
+
+$=r^{2}\left( \left( \frac{x_{1}-x_{2}}{r+1}\right) ^{2}+\left( \frac{y_{1}-y_{2}}{r+1}\right) ^{2}\right) $
+
+$=r^{2}\left( \frac{x_{2}-x_{1}}{r+1}\right) ^{2}+\left( \frac{y_{2}-y_{1}}{r+1}\right) ^{2}$
+
+$=\left( \frac{rx_{2}-rx_{1}}{r+1}\right) ^{2}+\left( \frac{ry_{2}-ry_{1}}{r+1}\right) ^{2}$
+
+$=\left( \frac{x_{1}+rx_{2}-rx_{1}-x_{1}}{r+1}\right) ^{2}+\left( \frac{y_{1}+ry_{2}-ry_{1}-y_{1}}{r+1}\right) ^{2}$
+
+$=\left( x_{1}-\frac{x_{1}+rx_{2}}{r+1}\right) ^{2}+\left( y_{1}-\frac{y_{1}+ry_{2}}{r+1}\right) ^{2}$
+
+$=d\left( A,P\right) ^{2}$
+
+En particular, con $r=1$ el punto medio del segmento que une $A=\left(
+x_{1},y_{1}\right) $ y $B=\left( x_{2},y_{2}\right) $ es $P=\left( \frac{x_{1}+x_{2}}{2},\frac{y_{1}+y_{2}}{2}\right)$.
+
+\begin{example}
+Dado el segmento que une los puntos $A=(-2,3)$ y $B=(8,9),$ halle el punto $P$ en el segmento que lo divida en una razón de $3$.
+\end{example}
+
+\textbf{Solución}
+
+Según el resultado anterior, se tiene que $r=3$ y las coordenadas de $P$ son:
+
+\begin{center}
+$x=\frac{x_{1}+rx_{2}}{r+1}=\frac{8+3\left( -2\right) }{4}=\frac{1}{2},$ $y=%
+\frac{y_{1}+ry_{2}}{r+1}=\frac{9+3\left( 3\right) }{4}=\frac{9}{2}$, y que el
+punto $P=\left( \frac{1}{2},\frac{9}{2}\right)$.
+\end{center}
+
+\subsection{Ejercicios}
+
+\begin{enumerate}
+\item Halle la distancia entre los puntos $P=\left( 2,3\right) $ y $Q=\left( 4,-1\right)$.
+\item Halle el perímetro del triángulo con vértices $A=\left( -4,-4\right)
+,B=\left( 1,3\right) $ y $C=\left( 4,-1\right)$.
+\item Halle el perímetro del cuadrilátero con vértices $A=\left(
+-2,-3\right) ,$$B=\left( 4-1\right) $, $C=\left( 3,3\right) $ y $\left( 1,4\right)$.
+\item Halle el punto medio del segmento que une los puntos $\left(
+-2,2\right) $ y $\left( 4,10\right)$.
+\item El punto medio del segmento $AB$ tiene coordenadas $(-1,2)$. El punto final $B$ tiene coordenadas $(4,17)$. ¿Cuáles son las coordenadas de $A$?
+\item Sean $A=\left( -3,6\right) $ \ y \ $B=\left( 8,-2\right) $, halle el punto $P$ del segmento $AB$ que lo divida en una razón de $3.$
+\item Sean $A=\left( 2,6\right) $ \ y \ $B=\left( 10,12\right) $, halle el punto $P$ del segmento $AB$ que lo divida en una razón de $4.$
+\item Sean $A=\left( -10,-8\right) $ \ y \ $B=\left( 6,14\right) $, halle el punto $P$ del segmento $AB$ que lo divida en una razón de $\frac{1}{2}$.
+\end{enumerate}
+
+\section{Vectores en el plano}
+
+\subsection{Segmentos de recta dirigidos}
+
+Sean $P$ y $Q$ dos puntos en el plano. El segmento de recta dirigido de $P$ a $Q$, denotado por $\overrightarrow{PQ}$, es el segmento de recta que va de $P$ a $Q$. Los segmentos de recta dirigidos $ \overrightarrow{PQ}$ y $\overrightarrow{QP}$ son diferentes, puesto que tienen direcciones opuestas, como se ve en la figura \ref{fig:placeholder10}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Segmentos dirigidos}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4H.png}
+    \label{fig:placeholder10}
+\end{figure}
+
+El punto $P$ en el segmento de recta dirigido $\overrightarrow{PQ}$ se denomina punto inicial, y el punto $Q$ se denomina punto final. Las dos propiedades más importantes de un segmento de recta dirigido son su magnitud (longitud) y su dirección. Si dos segmentos de recta dirigidos $\overrightarrow{PQ}$ y $\overrightarrow{RS}$ tienen la misma magnitud y dirección, se dice que son equivalentes sin importar en dónde se localizan respecto al origen.
+
+Los segmentos de recta dirigidos en la figura \ref{fig:placeholder11} son todos equivalentes.
+
+\begin{figure}[H]
+    \centering
+    \caption{Segmentos dirigidos equivalentes}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4I.png}
+    \label{fig:placeholder11}
+\end{figure}
+
+\subsection{Definición geométrica de vector}
+
+El conjunto de todos los segmentos de recta dirigidos equivalentes a un segmento dado se llama vector. Cualquier segmento de recta en ese conjunto se denomina una representación del vector.
+
+De la definición geométrica, se observa que un vector dado $v$ puede representarse de múltiples formas. Sea $\overrightarrow{PQ}$ una representación de $v$. Sin cambiar su magnitud ni dirección, es posible trasladar $\overrightarrow{PQ}$ en forma paralela de manera que su punto inicial se ubique en el origen. Como resultado, se obtiene el segmento de recta dirigido $ \overrightarrow{OR}$, que es la representación natural del vector $v$.
+
+Si se supone que el punto $R$ tiene las coordenadas cartesianas $(a,b)$, entonces el segmento de recta dirigido $\overrightarrow{OR}$ puede describirse mediante las coordenadas $(a,b)$. Es decir,$\overrightarrow{OR}$ es el segmento de recta dirigido con punto inicial $(0,0)$ y punto terminal $(a,b)$. Puesto que una representación de un vector es tan buena como cualquier otra, se puede escribir el vector $v$ como $(a,b)$. Esto se muestra en la figura \ref{fig:placeholder12}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Vector en el plano}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4J.png}
+    \label{fig:placeholder12}
+\end{figure}
+
+\subsection{Definición algebraica de vector plano}
+
+Un vector $v$ en el plano $xy$ es un par ordenado de números reales $(a,b)$. Los números $a$ y $b$ se denominan elementos o componentes del vector $v$.
+El vector cero es el vector $(0,0)$.
+
+Con esta definición, se establece que un punto en el plano $xy$ con coordenadas $(a,b)$ representa un vector que inicia en el origen y termina en $(a,b)$.
+
+El vector cero tiene magnitud cero. Dado que los puntos inicial y terminal coinciden, se dice que el vector cero no tiene dirección.
+
+Las definiciones geométrica y algebraica del vector describen exactamente los mismos objetos.
+
+Existe una dualidad entre punto y vector: cada punto $R$ del plano con coordenadas $\left( a,b\right)$ representa de forma única al vector $v=\left( a,b\right)$ que parte del origen y termina en $R$. Es decir, representa el conjunto de segmentos dirigidos equivalentes a $\overrightarrow{OR}$.
+
+El conjunto de todos los vectores planos se denota por $\mathbb{R}^{2}$ así:
+
+\begin{center}
+$\mathbb{R}^{2}=\left\{ \left( x,y\right) :x,y\in \mathbb{R}\right\} $
+\end{center}
+
+\subsection{Operaciones y propiedades}
+
+El conjunto $\mathbb{R}^{2}$ está dotado de las siguientes operaciones.
+ 	
+\begin{itemize}
+\item \textit{Suma.} Notada $+$ y definida por:
+$\left( x_{1},y_{1}\right) +\left( x_{2},y_{2}\right) =\left(x_{1}+x_{2},y_{1}+y_{2}\right)$.
+
+\item \textit{Producto por escalar.} Notado $\cdot$ y definido por:
+$\alpha \left( x_{1},y_{1}\right) =\left( \alpha x_{1},\alpha y_{1}\right)$, que satisfacen las siguientes propiedades para $u=\left( x_{1},y_{1}\right), $ $v=\left( x_{2},y_{2}\right) ,$ y $w=\left( x_{3},y_{3}\right)$ vectores planos y $\alpha ,\beta$ números reales también llamados escalares.
+\end{itemize}
+
+Asimismo, estas operaciones cuentan con las siguientes propiedades.
+
+    \begin{enumerate}
+        \item Conmutativa de la suma:
+        \begin{center}
+            $u+v=v+u$
+        \end{center}
+        \item Asociativa de la suma:
+        \begin{center}
+        $u+\left( v+w\right) =\left( u+v\right) +w$
+        \end{center} 
+        \item Modulativa de la suma:
+        \\ Existe el vector nulo $0=\left( 0,0\right) $ tal que $u+0=u$
+        \item Invertiva:
+        \\ Para cada vector$\ u=\left( x_{1},y_{1}\right) $ existe el vector $-u=\left(-x_{1},-y_{1}\right) ,$ tal que $u+\left( -u\right) =0$.
+        \item Asociativa de los escalares respecto al producto por escalar:
+        \begin{center}
+        $\alpha \left( \beta u\right) =\left( \alpha \beta \right) u$
+        \end{center}
+        \item Distributiva del producto por escalar con la suma de matrices:
+        \begin{center}
+        \item $\alpha \left( u+v\right) =\alpha u+\alpha v$
+        \end{center}
+        \item Distributiva del producto por escalar con la suma de escalares:
+        \begin{center}
+        $\left( \alpha +\beta \right) u=\alpha u+\beta u$
+        \end{center}
+        \item Acción del unitario:
+        \begin{center}
+         $1u=u.$
+        \end{center}
+    \end{enumerate}
+
+
+\subsection{Operaciones vectoriales gráficamente}
+
+\subsubsection{Suma en $\mathbb{R}^{2}$}
+
+\textbf{Primera forma. Ley del paralelogramo}
+
+Dados los vectores $u$ y $v$, para determinar el vector suma $u+v$, primero dibujamos los vectores en su posición natural, partiendo del origen. Luego, trazamos el vector $u$ a partir del extremo final de $v$ y el vector $v$ a partir del extremo de $u$. De esta forma, se forma un paralelogramo. El vector $u+v$ es el que está en la diagonal del paralelogramo partiendo del origen, como se ve en la figura \ref{fig:placeholder13}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Suma de vectores con la ley del paralelogramo}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4K.png}
+    \label{fig:placeholder13}
+\end{figure}
+
+\textbf{Segunda forma. Regla del triángulo}
+
+Dados los vectores $u$ y $v$, para determinar vector suma $u+v$, primero dibujamos el vector $u$. A continuación, trazamos el vector $v$, a partir del final de $u$. El vector $u+v$ es aquel que cierra el triángulo, partiendo del origen, como se ve en la figura \ref{fig:placeholder14}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Suma de vectores con la ley del triángulo}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4L.png}
+    \label{fig:placeholder14}
+\end{figure}
+
+\subsubsection{Interpretación gráfica de la resta}
+
+Dados los vectores $u$ y $v$, para determinar el vector resta $u-v$, primero dibujamos ambos vectores partiendo del origen. El vector $u-v$ es aquel que cierra el triángulo en la dirección de $u$, mientras que el vector $v-u$ es el que cierra el triángulo en dirección la de $v$.
+
+\begin{figure}[H]
+    \centering
+    \caption{Resta de vectores}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4M.png}
+    \label{fig:placeholder15}
+\end{figure}
+
+Otra forma de obtener gráficamente la resta de vectores es aplicando la ley del paralelogramo o la regla del triángulo, junto con el hecho de que $\ u-v=u+\left(-v\right)$, donde $-v$ es el vector que tiene la misma longitud de $v$, pero con dirección contraria, como se indica en la figura \ref{fig:placeholder15}.
+
+\subsubsection{Interpretación gráfica del producto por escalar}
+
+El producto por escalar $\alpha u$ donde $u$ es un vector de $\mathbb{R}^{n}$ es una dilatación, contracción o reflexión del vector $u$.
+
+Si $\alpha >1,$ $\alpha u$ es una dilatación del vector $u$ por un factor de $\alpha $ respecto al origen, como se indica en la figura \ref{fig:placeholder16}.
+
+Si $0<\alpha <1,$ $\alpha u$ es una contracción del vector $u$ por un factor de $\alpha $ respecto al origen.
+
+Si $\alpha =-1,\qquad \alpha u=-u$ es una reflexión del vector $u$ respecto al origen.
+
+\begin{figure}[H]
+    \centering
+    \caption{Producto de un escalar por un vector}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4N.png}
+    \label{fig:placeholder16}
+\end{figure}
+
+\subsubsection{Magnitud y dirección}
+
+Dado que un vector es un conjunto de segmentos de recta equivalentes, se define su magnitud o longitud como la longitud de cualquiera de sus representaciones, en particular, su representación natural: aquella cuyo punto inicial está en el origen y su dirección como la dirección de cualquiera de sus representaciones. Al hacer uso de la representación $\overrightarrow{0R}$ y expresando el vector como $v=(a,b)$, se tiene que:
+
+\begin{center}
+   $\left\Vert v\right\Vert =\sqrt{a^{2}+b^{2}}$ 
+\end{center}
+
+La dirección de $v$ es el ángulo formado por el eje $x$ y $\overrightarrow{0R}$, por lo que satisface:
+
+\begin{center}
+Si $a\neq 0$, $\tan \theta =\frac{b}{a}$ así que $\theta =\tan ^{-1}\left(\frac{b}{a}\right) $ \ $0\leq \theta <2\pi$  
+\end{center}
+
+Para determinar la dirección de $v$, es necesario tener en cuenta el cuadrante en el que se encuentra $v$.
+
+\begin{example}
+Halle la magnitud y dirección de cada vector dado.
+
+\begin{enumerate}
+    \item $v=\left( 2,0\right) \qquad $
+    \item $v=\left( 0,4\right) \qquad $
+    \item $v=\left( \sqrt{3},1\right) \qquad $
+    \item $v=\left( -3,\sqrt{3}\right) \qquad $
+    \item $v=\left( -3,-3\right) \qquad $
+    \item $v=\left( 1,-\sqrt{3}\right) \qquad $
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+\begin{enumerate}
+    \item 
+    \begin{enumerate}
+        \item La magnitud de $v=\left( 2,0\right) $ es $\left\Vert v\right\Vert =\sqrt{2^{2}+0^{2}}=2.$
+        \item El punto $\left( 2,0\right) $\ está sobre el eje $x$ positivo, luego su dirección es $0=\tan ^{-1}\left( \frac{0}{2}\right) $ radianes.
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item La magnitud de $v=\left( 0,4\right) $ es $\left\Vert v\right\Vert =\sqrt{0^{2}+4^{2}}=4.$
+        \item El punto $\left( 0,4\right) $ está sobre el eje $y$ positivo, luego su dirección es $\frac{\pi }{2}$ radianes = $90^{\circ }$.
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item La magnitud de $v=\left( \sqrt{3},1\right) $ es $\left\Vert v\right\Vert =\sqrt{\sqrt{3}^{2}+1^{2}}=\sqrt{4}=2$.
+        \item El punto está en el primer cuadrante, luego su dirección es $\tan ^{-1}\left( \frac{1}{\sqrt{3}}\right) =\frac{\pi }{6}$ radianes = $30^{\circ}$.
+        \item $30^{\circ}$.
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item La magnitud de $v=\left( -3,\sqrt{3}\right) $ es $\left\Vert v\right\Vert =\sqrt{\left( -3\right) ^{2}+\sqrt{3}^{2}}=\sqrt{12}=2\sqrt{3}\approx 3.4641$.
+        \item El punto está en el segundo cuadrante, el valor de $\tan ^{-1}\left( -\frac{\sqrt{3}}{3}\right) =-\frac{\pi }{6},$ luego la dirección de $v$ es $\pi +\tan ^{-1}\left( -\frac{\sqrt{3}}{3}\right) =\pi -\tan ^{-1}\left(\frac{\sqrt{3}}{3}\right) =$ $\pi -\frac{\pi }{6}=\frac{5\pi }{6}$.
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item La magnitud de $v=\left( -3,-3\right) $ es $\left\Vert v\right\Vert =\sqrt{\left( -3\right) ^{2}+\left( -3\right) ^{2}}=\sqrt{18}=3\sqrt{2}\approx 4.\,242\,6$.
+        \item El punto está en el tercer cuadrante, el valor de $\tan ^{-1}\left( \frac{-3}{-3}\right) =\frac{\pi }{4},$ luego la dirección de $v$ es $\pi +\tan^{-1}\left( \frac{-3}{-3}\right) =$ $\pi +\frac{\pi }{4}=\frac{5\pi }{4}$.
+    \end{enumerate}
+    \item  
+    \begin{enumerate}
+        \item La magnitud de $v=\left( 1,-\sqrt{3}\right) $ es $\left\Vert v\right\Vert =\sqrt{1^{2}+\left( -\sqrt{3}\right) ^{2}}=\sqrt{4}=2$.
+        \item El punto $\left( 1,-\sqrt{3}\right) $ está en el cuarto cuadrante, el valor de $\tan ^{-1}\left( \frac{-\sqrt{3}}{1}\right) =-\frac{\pi }{3},$ luego la dirección de $v$ es $2\pi +\tan ^{-1}\left( \frac{-\sqrt{3}}{1}\right) =$ $2\pi -\tan^{-1}\left( \sqrt{3}\right) =$ $2\pi -\frac{\pi }{3}=\frac{5\pi }{3}$.
+    \end{enumerate}
+\end{enumerate}
+La figura \ref{fig:placeholder17} muestra la gráfica de cada vector de los numerales del 3. al 6. con su correspondiente dirección. 
+\begin{figure}[H]
+    \centering
+    \caption{Dirección de los vectores de los numerales del 3 al 6.}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4O.png}
+    \label{fig:placeholder17}
+\end{figure}
+
+\begin{center}
+
+\includegraphics[width=0.5\textwidth]{Images/SDY12S4P.png}
+
+
+$
+\begin{array}{c}
+\includegraphics[width=0.5\textwidth]{Images/SDY12S4Q.png}
+\end{array}%
+$
+
+\includegraphics[width=0.5\textwidth]{Images/SDY12S4R.png}
+\end{center}
+
+Sea $a$ un real positivo, la dirección de un vector que esté sobre uno de los ejes es:
+
+La dirección de $\left( a,0\right) $ \ es $0$.
+
+La dirección de $\left( -a,0\right) $ \ es $\pi $.
+
+La dirección de $\left( 0,a\right) $ \ es $\frac{\pi }{2}$.
+
+La dirección de $\left( 0,-a\right) $ \ es $\frac{3\pi }{2}$.
+
+\subsubsection{Forma polar de un vector}
+Cada vector plano $v=\left( x,y\right)$ se puede describir en la forma $v=\left( r\cos \theta ,r\sin \theta \right)$, donde $r=\left\Vert v\right\Vert =\sqrt{x^{2}+y^{2}}$ y $\theta$ es la dirección
+de $v$. $\tan \theta =\frac{y}{x},$ $\ 0\leq \theta <2\pi$, como se indica en la figura \ref{fig:placeholder18}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Forma polar de un vector}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4S.png}
+    \label{fig:placeholder18}
+\end{figure}
+
+\begin{example}
+Escriba en forma polar cada uno de los siguientes vectores: 
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item $v=\left(\sqrt{3},1\right) \qquad$
+        \item $v=\left( -4,4\right)$
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item $r=\left\Vert v\right\Vert =\sqrt{1^{2}+2^{2}}=\sqrt{5},$ $\theta =\tan^{-1}\left( \frac{1}{\sqrt{3}}\right) =\allowbreak \frac{\pi }{6}$. \ Así que una representación polar de $v=\left( \sqrt{3},1\right) $ es $\left( \sqrt{5}\cos \frac{\pi }{6},\sqrt{5}\sin \frac{\pi }{6}\right)$.
+        \item $r=\left\Vert v\right\Vert =\sqrt{4^{2}+4^{2}}=4\sqrt{2},$ $\tan^{-1}\left( \frac{4}{-4}\right) =-\frac{\pi }{4}$. Como $v$ esta en el segundo cuadrante la dirección de $v$ es $\theta =\pi -\frac{\pi }{4}=\frac{3\pi }{4}$\ Así que una representación polar de $v=\left( -4,4\right) $ es $\ \left( 4\sqrt{2}\cos \frac{3\pi }{4},4\sqrt{2}\sin \frac{3\pi }{4}\right)$.
+\end{enumerate}
+
+\subsection{Ejercicios}
+
+\begin{enumerate}
+    \item Grafique cada vector.
+    \begin{enumerate}
+        \item $\left( 2,3\right)$
+        \item $\left(-5,2\right)$
+        \item $\left( 4,-8\right)$
+        \item $\left( -6,-3\right)$
+    \end{enumerate}
+    \item Sean $u=\left( 1,2\right) ,v=\left( 3,5\right) ,w=\left( 4,-2\right)$. Sume gráficamente usando la ley del paralelogramo los siguientes vectores:
+    \begin{enumerate}
+        \item $u+v$
+        \item $v+w$
+        \item $u+w$
+    \end{enumerate}
+    \item Sean $u=\left( -1,2\right) ,v=\left( 3,4\right) ,w=\left( 5,1\right)$. Reste gráficamente los vectores:
+    \begin{enumerate}
+        \item $u-v$
+        \item $v-w$
+        \item $u-w$
+    \end{enumerate}
+    \item Si $u=\left( 2,3\right) $ y $v=\left( -1,4\right) $ halle $2\left(u-3\left( 2u+4v\right) \right) +9u+27v$.
+    \item Resuelva las siguientes ecuaciones vectoriales.
+    \begin{enumerate}
+        \item $2\left( X-3\left( 1,4\right) \right) +\left( 1,2\right) =\left(4,2\right) -X$
+        \item $3\left( X+3\left( 1,4\right) \right) +\left( 1,2\right) =\left(12,9\right) +2X$
+    \end{enumerate}
+    \item Halle la magnitud y dirección de cada vector. \
+    \begin{enumerate}
+        \item $\left( 4,0\right)$
+        \item $\left( -5,5\right)$
+        \item $\left(5,5\sqrt{3}\right)$
+        \item $\left( -4\sqrt{3},4\right)$
+        \item $\left( 2,4\right)$
+        \item $\left( 6,3\right)$
+    \end{enumerate}
+    \item Sean $P=\left( 1,1\right) ,Q=\left( 2,4\right) $ y $R=\left(4,3\right)$, halle las magnitudes de los vectores dirigidos.
+    \begin{enumerate}
+        \item $\overrightarrow{PQ}$
+        \item $\overrightarrow{PR}$
+        \item $\overrightarrow{QR}$
+    \end{enumerate}
+    \item Escriba en forma polar cada uno de los siguientes vectores:
+    \begin{enumerate}
+        \item $v=\left( -2\sqrt{3},2\right)$
+        \item $v=\left( 4,-4\right) \qquad $
+        \item$(2,4)$
+    \end{enumerate}
+\end{enumerate}
+
+\section{Vectores en el espacio}
+
+Se ha visto que cualquier punto en el plano se puede representar como un par ordenado de números reales. De manera análoga, cualquier punto en el espacio se puede representar por una terna ordenada de números reales $\left(a,b,c\right) $. Estos vectores constituyen el espacio $\mathbb{R}^{3}$. Para representar un punto en el espacio, se comienza por elegir un punto en $\mathbb{R}^{3}$, denominado origen, y se denota por $0$.
+
+Después, se trazan tres rectas perpendiculares entre sí, llamadas eje $x$, eje $y$ y eje $z$, como se muestra en la figura \ref{fig:placeholder19}. Dichos ejes pueden seleccionarse de diferentes formas, pero la más común es aquella que tiene los ejes $x$ y $y$ horizontales, mientras que el eje $z$ es vertical. Sobre cada eje, se elige una dirección positiva, y las distancias a lo largo de cada eje se miden como el número de unidades en esta dirección positiva a partir del origen.
+
+\begin{figure}[H]
+    \centering
+    \caption{Ejes en el espacio tridimensional}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4T.png}
+    \label{fig:placeholder19}
+\end{figure}
+
+En las figuras, las flechas indican la dirección positiva de los ejes.
+
+Los tres ejes en nuestro sistema determinan tres planos coordenados como se muestra en la figura \ref{fig:placeholder20}, denominados plano $xy$, plano $xz$ y plano $yz$. El plano $xy$ contiene los ejes $x$ y $y$ y corresponde al plano con el que se ha venido trabajando hasta ahora en la mayor parte del libro. De manera similar, los planos $xz$ y $yz$ pueden visualizarse del mismo modo.
+
+\begin{figure}[H]
+    \centering
+    \caption{Planos coordenados en el espacio}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4U.png}
+    \label{fig:placeholder20}
+\end{figure}
+
+Al tener nuestra estructura establecida de ejes coordenados y planos, podemos describir cualquier punto $P=\left( a,b,c\right)$ en $\mathbb{R}^{3}$ de manera única, como se indica en la figura \ref{fig:placeholder21}: 
+\begin{itemize}
+    \item La primera coordenada, $a$, representa la distancia dirigida desde el plano $yz$ hasta $P$, medida en la dirección positiva del eje $x$ a lo largo de una recta paralela al eje $x$.
+    \item La segunda coordenada, $b$, es la distancia dirigida desde el plano $xz$ hasta $P$, medida en la dirección positiva del eje $y$ y a lo largo de una recta paralela al eje $y$.
+    \item La tercera coordenada, $c$, indica la distancia dirigida desde el plano $xy$ hasta $P$, medida en la dirección positiva del eje $z$ y a lo largo de una recta paralela al eje $z$).
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \caption{Representación gráfica de un punto en el espacio}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4V.png}
+    \label{fig:placeholder21}
+\end{figure}
+
+En este sistema, los tres planos coordenados dividen al espacio en ocho octantes, de la misma forma que en la que los ejes coordenados dividen el plano en cuatro cuadrantes. Siempre se selecciona como el primer octante aquel donde los tres ejes coordenados son positivos.
+
+El sistema coordenado que acaba de establecerse se conoce con frecuencia como sistema de coordenadas rectangulares o sistema de coordenadas cartesianas.
+
+\subsubsection{Distancia entre puntos del espacio}
+
+Sean $P=\left( x_{1},y_{1},z_{1}\right) $ y $Q=\left(
+x_{2},y_{2},z_{2}\right) $ dos puntos en el espacio. Entonces, la distancia $d\left( P,Q\right) $ entre $P$ y $Q$ está dada por:
+
+\begin{center}
+$d\left( P,Q\right) =\sqrt{\left( x_{1}-x_{2}\right) ^{2}+\left(y_{1}-y_{2}\right) ^{2}+\left( z_{1}-z_{2}\right) ^{2}}$
+\end{center}
+
+\begin{example}
+Halle la distancia entre los puntos $P\,=\,\left( 4,-3,2\right)$ y $Q\,=\,\left(-2,5,8\right)$.
+\end{example}
+
+\textbf{Solución}
+
+$d\left( P,Q\right) =\sqrt{\left( x_{1}-x_{2}\right) ^{2}+\left(
+y_{1}-y_{2}\right) ^{2}+\left( z_{1}-z_{2}\right) ^{2}}$
+\\$\qquad =\sqrt{\left( 4-\left( -2\right) \right) ^{2}+\left( -3-5\right)
+^{2}+\left( 2-8\right) ^{2}}$
+\\$\qquad =\sqrt{36+64+36}=\sqrt{136}$
+
+Sean $P$ y $Q$ dos puntos distintos en $\mathbb{R}^{3}$. Entonces, el segmento de recta dirigido $\overrightarrow{PQ}$ es el segmento de recta que se extiende de $P$ a $Q$. 
+
+Dos segmentos de recta dirigidos son equivalentes si tienen la misma magnitud y dirección. Un vector en $\mathbb{R}^{3}$ se define como el conjunto de todos los segmentos de recta dirigidos equivalentes a un segmento de recta dirigido dado. Cualquier segmento dirigido $\overrightarrow{PQ}$ dentro de ese conjunto se denomina una representación del vector. 
+
+Hasta aquí las definiciones son idénticas. Por conveniencia, se elige $P$ en el origen para poder describir el vector $v=\overrightarrow{OQ}$ mediante las coordenadas $(x,y,z)$ del punto $Q$.
+
+Entonces, la magnitud de $v$ es
+
+\begin{center}
+$\left\Vert v\right\Vert =\sqrt{x^{2}+y^{2}+z^{2}}$
+\end{center}
+
+\begin{example}
+Calcule la magnitud del vector $\left( -5,8,10\right)$.
+\end{example}
+
+\textbf{Solución}
+
+$\left\Vert v\right\Vert =\sqrt{x^{2}+y^{2}+z^{2}}=\sqrt{\left( -5\right)
+^{2}+8^{2}+10^{2}}=\sqrt{189}$
+
+Sean $u=\left( x_{1},y_{1},z_{1}\right)$, $v=\left(
+x_{2},y_{2},z_{2}\right)$ dos vectores y $\alpha$ un número real (escalar). Entonces se define la suma de vectores y multiplicación por un escalar de la siguiente
+forma:
+
+\begin{center}
+    $u+v=\left( x_{1}+x_{2},y_{1}+y_{2},z_{1}+z_{2}\right) $
+\\$\alpha u=\left( \alpha x_{1},\alpha y_{1},\alpha z_{1}\right) $
+\end{center}
+
+Esta es la misma definición de suma de vectores y multiplicación por un escalar que se tenía para vectores en el plano y se representan gráficamente en la figura \ref{fig:placeholder22}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Representación del producto por escalar, suma y resta de vectores en el espacio}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4W.png}
+    \label{fig:placeholder22}
+\end{figure}
+
+Un vector unitario $u$ es un vector con magnitud 1. Si $v$ es un vector diferente de cero, entonces $u=\frac{v}{\left\Vert v\right\Vert }$ es un
+vector unitario que tiene la misma dirección que $v$.
+
+De igual forma, $v=\left\Vert v\right\Vert u=\left\Vert v\right\Vert \left(\frac{v}{\left\Vert v\right\Vert }\right) ,$ luego cada vector se puede
+expresar como un múltiplo escalar de un vector unitario.
+
+\begin{example}
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item Encuentre un vector unitario que tenga la misma dirección que $v=\left(2,-3,6\right)$.
+        \item Exprese el vector $v=\left( 1,4,8\right) $ como un múltiplo escalar de un vector unitario.
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+\begin{enumerate}
+ \renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item Este vector unitario es:\\$u=\frac{1}{\left\Vert v\right\Vert }v=\frac{1}{\sqrt{2^{2}+\left( -3\right)^{2}+6^{2}}}\left( 2,-3,6\right) =\frac{1}{\sqrt{49}}\left( 2,-3,6\right) =\frac{1}{7}\left( 2,-3,6\right) =\left( \frac{2}{7},-\frac{3}{7},\frac{6}{7}\right)$
+        \item $\left\Vert v\right\Vert =\sqrt{1^{2}+4^{2}+8^{2}}=\sqrt{81}=9$, así que $ u=\frac{1}{\left\Vert v\right\Vert }v=\frac{1}{9}\left( 1,4,8\right)$ y $v=\left\Vert v\right\Vert u=9\left( \frac{1}{9},\frac{4}{9},\frac{8}{9}\right) =9u$
+\end{enumerate}
+
+La dirección de un vector $v$ en $\mathbb{R}^{3}$ se define como el vector unitario $u=\frac{v}{\left\Vert v\right\Vert }$.
+
+Para un vector $v$, definimos $\alpha$ como el ángulo entre $v$ y el eje $x$ positivo; $\beta$, como el ángulo entre $v$ y el eje $y$ positivo, y $\gamma$, como el ángulo entre $v$ y el eje $z$ positivo. Los ángulos $\alpha$, $\beta$ y $\gamma$ se denominan ángulos directores del vector $v$ y se muestran en la figura \ref{fig:placeholder23}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Cosenos directores de un vector}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4X.png}
+    \label{fig:placeholder23}
+\end{figure}
+\begin{center}
+$\cos \alpha =\frac{x}{\left\Vert v\right\Vert },$ $\cos \beta =\frac{y}{\left\Vert v\right\Vert }$ $\ $y $\cos \beta =\frac{z}{\left\Vert v\right\Vert }$
+\end{center}
+
+Si $v$ es un vector unitario, entonces
+
+\begin{center}
+$\cos \alpha =x,$ $\cos \beta =y$ $\ $y $\cos \gamma =z$
+\end{center}
+
+Para un vector $v$, los cosenos de los ángulos directores son llamados cosenos directores y cumplen la propiedad
+
+\begin{center}
+$\cos ^{2}\alpha +\cos ^{2}\beta +\cos ^{2}\gamma =\frac{x^{2}+y^{2}+z^{2}}{\left\Vert v\right\Vert ^{2}}=1$
+\end{center}
+
+\begin{example}
+Calcule los cosenos y ángulos directores de $v=\left( -1,4,8\right)$.
+\end{example}
+
+\textbf{Solución}
+
+
+$\left\Vert v\right\Vert =\sqrt{1+16+64}=9$
+
+$\cos \alpha =\frac{-1}{9},$ $\cos \beta =\frac{4}{9}$ $\ $y $\cos \beta =%
+\frac{8}{9}$
+
+$\alpha =\cos ^{-1}\left( \frac{-1}{9}\right) =96.\,\allowbreak 377^{\circ }$
+
+$\beta =\cos ^{-1}\left( \frac{4}{9}\right) =63.\,\allowbreak 610^{\circ }$
+
+$\gamma =\cos ^{-1}\left( \frac{8}{9}\right) =27.266^{\circ }$
+
+
+\begin{example}
+Encuentre un vector $v$ de magnitud 21, cuyos cosenos directores son $\cos\alpha =\frac{4}{21},\cos \beta =\frac{5}{21}$ y $\cos \gamma =\frac{20}{21}$
+\end{example}
+
+\textbf{Solución}
+
+La dirección de $v$ es $\frac{v}{\left\Vert v\right\Vert }=\left( \cos \alpha ,\cos \beta ,\cos \gamma \right) ,$ entonces $v=21\left( \frac{4}{21}, \frac{5}{21},\frac{20}{21}\right) =\left( 4,5,20\right)$.
+
+\subsection{Producto punto o producto escalar en $\mathbb{R}^{2}$ \textbf{y} $\mathbb{R}^{3}$}
+
+El producto escalar o producto punto de dos vectores $X,Y$, notado $X\cdot Y $, es un número real y está definido para vectores $X=\left(x_{1},x_{2}\right) ,Y=\left( y_{1},y_{2}\right)$ de $\mathbb{R}^{2}$ por:
+
+\begin{center}
+$X\cdot Y=x_{1}y_{1}+x_{2}y_{2}$
+\end{center}
+
+De forma similar para vectores $X=\left( x_{1},x_{2},x_{3}\right) ,Y=\left(y_{1},y_{2},y_{3}\right) $ de $\mathbb{R}^{3},$
+
+\begin{center}
+$X\cdot Y=x_{1}y_{1}+x_{2}y_{2}+x_{3}y_{3}$
+\end{center}
+
+\begin{example}
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+    \item Si \ $X=\left( -2,3\right) ,Y=\left( 4,8\right) ,Z=\left( 5,6\right)$, halle:
+    \begin{enumerate}
+        \item $X \cdot Y$
+        \item $X\cdot Z$
+        \item $Y\cdot Z$
+    \end{enumerate}
+    \item Si \ $X=\left( 11,3,5\right)$, $Y=\left( 4,10,-2\right)$ y $Z=\left(1,7,9\right)$, halle:
+    \begin{enumerate}
+        \item $X \cdot Y$
+        \item $X\cdot Z$
+        \item $Y\cdot Z$
+    \end{enumerate}
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+    \item 
+    \begin{enumerate}
+        \item $X\cdot Y=\left( -2,3\right) \cdot \left( 4,8\right) =\left( -2\right)4+3\left( 8\right) =16$
+        \item $X\cdot Z=\left( -2,3\right) \cdot \left( 5,6\right) =\left( -2\right)5+3\left( 6\right) =8$
+        \item $Y\cdot Z=\left( 4,8\right) \cdot \left( 5,6\right) =4\left( 5\right)+8\left( 6\right) =68$
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item $X\cdot Y=\left( 11,3,5\right) \cdot \left( 4,10,-2\right) =11\left(4\right) +3\left( 10\right) +5\left( -2\right) =44+30-10=64$
+        \item $X\cdot Z=\left( 11,3,5\right) \cdot \left( 1,7,9\right) =11\left(1\right) +3\left( 7\right) +5\left( 9\right) =11+21+45=77$
+        \item $Y\cdot Z=\left( 4,10,-2\right) \cdot \left( 1,7,9\right) =4\left(1\right) +10\left( 7\right) +\left( -2\right) \left( 9\right) =4+70-18=56$
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{Propiedades del producto punto}
+
+Sean $X,Y,Z$ vectores de $\mathbb{R}^{3}$ o$\mathbb{R}^{2}$
+
+\begin{enumerate}
+    \item $X\cdot X\geq 0$
+    \item $X\cdot X=0,$ entonces $X=0$
+    \item $X\cdot Y=Y\cdot X$
+    \item $X\cdot \left( Y+Z\right) =X\cdot Y+X\cdot Z$
+    \item $\left( \alpha X\right) \cdot Y=X\cdot \left( \alpha Y\right) =\alpha\left( X\cdot Y\right)$
+\end{enumerate}
+
+\textbf{Demostración}
+
+\begin{enumerate}
+    \item $X\cdot X=x_{1}x_{1}+x_{2}x_{2}+x_{3}x_{3}=\left( x_{1}\right) ^{2}+\left(x_{2}\right) ^{2}+\left( x_{3}\right) ^{2}\geq 0$
+    \item $X\cdot X=0\rightarrow \left( x_{1}\right) ^{2}+\left( x_{2}\right)^{2}+\left( x_{3}\right) ^{2}=0\rightarrow x_{1}=x_{2}=x_{3}\rightarrow X=0$
+    \item $X\cdot Y=x_{1}y_{1}+x_{2}y_{2}+x_{3}y_{3}=y_{1}x_{1}+y_{2}x_{2}+y_{3}x_{3}=Y\cdot X$
+    \item $X\cdot \left( Y\pm Z\right) =\left( x_{1},x_{2},x_{3}\right) \cdot \left(y_{1}+z_{1},y_{2}+z_{2},y_{3}+z_{3}\right)$\\ $\qquad \qquad \qquad =x_{1}\left( y_{1}+z_{1}\right) +x_{2}\left(y_{2}+z_{2}\right) +x_{3}\left( y_{3}+z_{3}\right)$ \\$\qquad \qquad \qquad =x_{1}y_{1}+x_{2}y_{2}+x_{3}y_{3}+x_{1}z_{1}+x_{2}z_{2}+x_{3}z_{3}=X\cdot Y\pm X\cdot Z$
+    \item $\left( \alpha X\right) \cdot Y=\left( \alpha x_{1},\alpha x_{2},\alpha x_{3}\right) \cdot \left( y_{1},y_{2},y_{3}\right)$ \\$=\alpha x_{1}y_{1}+\alpha x_{2}y_{2}+\alpha x_{3}y_{3}$ \\$=\alpha \left( x_{1}y_{1}+x_{2}y_{2}+x_{3}y_{3}\right) =\alpha \left(X\cdot Y\right)$ \\$=x_{1}\alpha y_{1}+x_{2}\alpha y_{2}+\alpha x_{3}\alpha y_{3}$ \\$=\left( x_{1},x_{2},x_{3}\right) \cdot \left( \alpha y_{1},\alpha y_{2},\alpha y_{3}\right) =X\cdot \left( \alpha Y\right)$
+\end{enumerate}
+
+\subsection{Longitud o norma de un vector en términos del producto punto}
+
+De la definición de longitud de un vector resulta que
+
+\begin{center}
+$\left\Vert X\right\Vert ^{2}=X\cdot X$
+\end{center}
+
+\subsubsection{Propiedades de la longitud o norma}
+
+\begin{enumerate}
+    \item $\left\Vert X\right\Vert \geq 0$
+    \item $\left\Vert X\right\Vert =0$ si y solo si $X=0$
+    \item $\left\Vert \alpha X\right\Vert =\left\vert \alpha \right\vert \left\Vert X\right\Vert$
+    \item $\left\Vert X+Y\right\Vert ^{2}=\left\Vert X\right\Vert ^{2}+2\left(X\cdot Y\right) +\left\Vert Y\right\Vert ^{2}$
+    \item $\left\Vert X-Y\right\Vert ^{2}=\left\Vert X\right\Vert ^{2}-2\left(X\cdot Y\right) +\left\Vert Y\right\Vert ^{2}$
+    \item Desigualdad de Cauchy-Schwartz \ $\left\vert X\cdot Y\right\vert \leq \left\Vert X\right\Vert \left\Vert Y\right\Vert$
+    \item Desigualdad triangular \ $\left\Vert X+Y\right\Vert \leq \left\Vert X\right\Vert +\left\Vert Y\right\Vert$
+\end{enumerate}
+
+\subsubsection{Demostración de las propiedades de la longitud}
+
+\begin{enumerate}
+    \item $\left\Vert X\right\Vert =\sqrt{X\cdot X}\geq 0,$ entonces $\left\Vert X\right\Vert \geq 0$
+    \item $\left\Vert X\right\Vert =0$ $\Leftrightarrow \left\Vert X\right\Vert ^{2}=0\Leftrightarrow X\cdot X=0\Leftrightarrow X=0$
+    \item $\left\Vert \alpha X\right\Vert =\sqrt{\left( \alpha X\right) \cdot \left( \alpha X\right) }=\sqrt{\alpha ^{2}\left( X\cdot X\right) }=\sqrt{\alpha ^{2}}\sqrt{X\cdot X}=\left\vert \alpha \right\vert \left\Vert X\right\Vert$
+    \item $\left\Vert X+Y\right\Vert ^{2}=\left( X+Y\right) \cdot \left( X+Y\right) $ \\ $\qquad \qquad \qquad =X\cdot X+X\cdot Y+Y\cdot X+Y\cdot Y$ \\ $\qquad \qquad \qquad =\left\Vert X\right\Vert ^{2}+2\left( X\cdot Y\right) +\left\Vert Y\right\Vert ^{2}$
+    \item $\left\Vert X-Y\right\Vert ^{2}=\left( X-Y\right) \cdot \left( X-Y\right) =X\cdot X-X\cdot Y-Y\cdot X+Y\cdot Y$\\ $\qquad \qquad \qquad =\left\Vert X\right\Vert ^{2}-2\left( X\cdot Y\right) +\left\Vert Y\right\Vert ^{2}$
+    \item Desigualdad de Cauchy-Schwartz \\ $\left\vert X\cdot Y\right\vert \leq \left\Vert X\right\Vert \left\Vert Y\right\Vert $ \\ Para todo $t\in \mathbb{R}$ \\ $0\leq \left\Vert tX-Y\right\Vert ^{2}=\left\Vert tX\right\Vert ^{2}-2\left( tX\cdot Y\right) +\left\Vert Y\right\Vert ^{2}$ \\ $\qquad \qquad \qquad =\left\vert t\right\vert ^{2}\left\Vert X\right\Vert^{2}-2t\left( X\cdot Y\right) +\left\Vert Y\right\Vert ^{2}$ \\ $\qquad \qquad \qquad =t^{2}\left\Vert X\right\Vert ^{2}-2t\left( X\cdot Y\right) +\left\Vert Y\right\Vert ^{2}$ \\ Así que $\ \left\Vert X\right\Vert ^{2}t^{2}-2\left( X\cdot Y\right) t+\left\Vert Y\right\Vert ^{2}\geq 0\qquad $ \\ Llamando $a=\left\Vert X\right\Vert ^{2},b=-2\left( X\cdot Y\right) $ \ y $ c=\left\Vert Y\right\Vert ^{2}$, la anterior desigualdad se transforma en: $at^{2}+bt+c\geq 0$. \\ Usando la fórmula cuadrática, tenemos que $at^{2}+bt+c=0$ para $t=\frac{-b\pm \sqrt{b^{2}-4ac}}{2a}$. \\Para que la parábola este por encima del eje horizontal que pasa por el origen, se debe cumplir: $b^{2}-4ac\leq 0$, de donde $b^{2}\leq 4ac$, reemplazando los valores de $a,b$ y $c$, se obtiene:\\ $\left( -2\left( X\cdot Y\right) \right) ^{2}\leq 4\left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}$ \\ $4\left( X\cdot Y\right) ^{2}\leq 4\left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}$ \\ $\left( X\cdot Y\right) ^{2}\leq \left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}$ \ \\ Tomando raíz en cada miembro se llega a \\ $\left\vert X\cdot Y\right\vert \leq \left\Vert X\right\Vert \left\Vert Y\right\Vert$
+    \item Desigualdad triangular \ $\left\Vert X+Y\right\Vert \leq \left\Vert X\right\Vert +\left\Vert Y\right\Vert$.
+\end{enumerate}
+
+\textbf{Demostración}
+
+$\left\Vert X+Y\right\Vert ^{2}=\left\Vert X\right\Vert ^{2}+2\left( X\cdot Y\right) +\left\Vert Y\right\Vert ^{2}$ \ \qquad Desigualdad de
+Cauchy-Schwartz
+
+$\leq \left\Vert X\right\Vert ^{2}+2\left\Vert X\right\Vert \left\Vert
+Y\right\Vert +\left\Vert Y\right\Vert ^{2}$ \ \ \ \qquad \qquad \qquad
+Trinomio cuadrado perfecto
+
+$=\left( \left\Vert X\right\Vert +\left\Vert Y\right\Vert \right) ^{2}$
+
+
+Concluimos 
+
+$\left\Vert X+Y\right\Vert ^{2}\leq \left( \left\Vert
+X\right\Vert +\left\Vert Y\right\Vert \right) ^{2}$
+
+Por lo tanto,
+
+\ $\left\Vert X+Y\right\Vert \leq \left\Vert X\right\Vert +\left\Vert
+Y\right\Vert$
+
+\begin{figure}[H]
+    \centering
+    \caption{Desigualdad triangular}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4Y.png}
+    \label{fig:placeholder24}
+\end{figure}
+En la figura \ref{fig:placeholder24} se visualiza la desigualdad triangular.
+\subsection{Distancia en términos de la longitud}
+
+Si $X,Y$ son puntos, la distancia entre $X$ y $Y$ es $d\left( X,Y\right) =\left\Vert X-Y\right\Vert $, como se muestra en la figura \ref{fig:placeholder25}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Distancia entre puntos}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S4Z.png}
+    \label{fig:placeholder25}
+\end{figure}
+
+\subsubsection{Propiedades de la distancia}
+
+\begin{enumerate}
+    \item $d\left( X,Y\right) \geq 0$
+    \item $d\left( X,Y\right) =0$ si y solo si $X=Y$
+    \item $d\left( X,Y\right) =d\left( Y,X\right) $
+    \item Desigualdad Triangular \ $d\left( X,Z\right) \leq d\left( X,Y\right) +d\left( Y,Z\right)$
+\end{enumerate}
+En la figura \ref{fig:placeholder26} se ilustra la desigualdad triangular para la distancia entre puntos.
+\begin{figure}[H]
+    \centering
+    \caption{Desigualdad triangular para la distancia}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S50.png}
+    \label{fig:placeholder26}
+\end{figure}
+
+\begin{example}
+Sean $X=\left( 3,0,4\right) ,Y=\left( 3,5,2\right) $ y $Z=\left(4,6,3\right) \in \mathbb{R}^{3}$, halle:
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item $X\cdot Y$
+        \item $X\cdot Z$
+        \item $Y\cdot Z$
+        \item $\left\Vert X\right\Vert$
+        \item $\left\Vert Y\right\Vert$
+        \item $\left\Vert Z\right\Vert$
+        \item $d\left( X,Y\right)$
+        \item $d\left( Y,Z\right)$
+        \item $d\left( X,Z\right)$
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item $X\cdot Y=x_{1}y_{1}+x_{2}y_{2}+x_{3}y_{3}=3\left( 3\right) +0\left( 5\right) +4\left( 2\right) =17$
+        \item $X\cdot Z=12+0+12=24\qquad $
+        \item $Y\cdot Z=12+30+6=48$
+        \item $\left\Vert X\right\Vert =\sqrt{\left( x_{1}\right) ^{2}+\left(x_{2}\right) ^{2}+\left( x_{3}\right) ^{2}}=\sqrt{9+0+16}=5$
+        \item $\left\Vert Y\right\Vert =\sqrt{9+25+4}=\sqrt{38}$
+        \item $\left\Vert Z\right\Vert =\sqrt{16+36+9}=\sqrt{61}$
+        \item $d\left( X,Y\right) =\left\Vert X-Y\right\Vert =\left\Vert \left(0,-5,2\right) \right\Vert =\sqrt{25+4}=\sqrt{29}$
+        \item $d\left( Y,Z\right) =\left\Vert Y-Z\right\Vert =\left\Vert \left(-1,-1,-1\right) \right\Vert =\sqrt{1+1+1}=\sqrt{3}$
+        \item $d\left( X,Z\right) =\left\Vert X-Z\right\Vert =\left\Vert \left(-1,-6,1\right) \right\Vert =\sqrt{1+36+1}=\sqrt{38}$
+\end{enumerate}
+
+Dos vectores $X$ y $Y$ son paralelos si uno es múltiplo del otro es decir si 
+$X=\alpha Y$ para un número real $\alpha \neq 0.$
+
+\begin{example}
+Verifique si los vectores $X=\left( 225,90\right) ,Y=\left( 5,2\right) $ son
+paralelos. $\ $
+\end{example}
+
+\textbf{Solución}
+Para hallar el valor del escalar $\alpha$, dividimos las coordenadas correspondientes. Si este valor es el mismo, este será múltiplo $\alpha$ y los vectores $X$ y $Y$ serán paralelos.
+
+$\alpha =\frac{225}{5}=\frac{90}{2}=45,$ luego\ \ $X=\left( 225,90\right)=45\left( 5,2\right) =\alpha Y$
+
+\subsubsection{Vector unitario}
+Un vector $Z$ es unitario si $\left\Vert Z\right\Vert =1$.
+
+\begin{example}
+Compruebe si el vector $X=\left( \frac{3}{5},\frac{4}{5}\right) $ es un vector unitario.
+\end{example}
+
+\textbf{Solución}
+
+Calculamos su longitud:
+
+$\left\Vert X\right\Vert =\sqrt{\left( \frac{3}{5}\right) ^{2}+\left( \frac{4}{5}\right) ^{2}}=\sqrt{\frac{9}{25}+\frac{16}{25}}=\sqrt{\frac{25}{25}}=1$
+
+Por tanto, $X$ es un vector unitario de $\mathbb{R}^{2}$.
+
+Dado un vector no nulo $X$, existe un único vector unitario y con la misma dirección de $X$. Este es $u=\frac{1}{\left\Vert X\right\Vert }X$ y se visualiza en la figura \ref{fig:placeholder27}.
+
+En efecto, $\left\Vert u\right\Vert =\left\Vert \frac{1}{\left\Vert X\right\Vert }X\right\Vert =\frac{1}{\left\Vert X\right\Vert }\left\Vert X\right\Vert =1$.
+
+\begin{figure}[H]
+    \centering
+    \caption{Vector unitario}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S51.png}
+    \label{fig:placeholder27}
+\end{figure}
+
+\begin{example}
+Halle un vector unitario en la dirección del vector $X=\left( 9,4,12\right)$.
+\end{example}
+
+\textbf{Solución}
+
+Calculamos la longitud del vector.
+
+$\left\Vert X\right\Vert =\sqrt{9^{2}+4^{2}+12^{2}}=\sqrt{241}$
+
+El único vector unitario que lleva la dirección de $X$ es $u=\frac{1}{\left\Vert X\right\Vert }X=\frac{1}{\sqrt{241}}\left(
+9,4,12\right)$.
+
+\subsection{Ortogonalidad y ángulos entre vectores}
+
+\subsubsection{Ángulo entre vectores}
+
+Usando la desigualdad de Cauchy-Schwartz,
+$\left\vert X\cdot Y\right\vert \leq \left\Vert X\right\Vert \left\Vert
+Y\right\Vert \rightarrow \left\vert \frac{X\cdot Y}{\left\Vert X\right\Vert
+\left\Vert Y\right\Vert }\right\vert \leq 1\rightarrow -1\leq \frac{X\cdot Y%
+}{\left\Vert X\right\Vert \left\Vert Y\right\Vert }\leq 1$, se define el coseno del ángulo $\theta $ entre los vectores $X,Y$ por:
+$\cos \theta =\cos \left( \angle X,Y\right) =\frac{X\cdot Y}{\left\Vert
+X\right\Vert \left\Vert Y\right\Vert },$ así \ $\theta =\arccos \left( \frac{%
+X\cdot Y}{\left\Vert X\right\Vert \left\Vert Y\right\Vert }\right) \qquad
+0\leq \theta \leq \pi$.
+
+Veamos una justificación geométrica de la fórmula del ángulo entre dos vectores.
+
+En el triángulo de la figura, al aplicar el teorema del coseno, se tiene:
+
+\begin{figure}[H]
+    \centering
+    \caption{Ángulo entre dos vectores}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S52.png}
+    \label{fig:placeholder28}
+\end{figure}
+Aplicando el teorema del coseno al triángulo de la figura \ref{fig:placeholder28} se obtiene:
+$\left\Vert X-Y\right\Vert ^{2}=\left\Vert X\right\Vert ^{2}+\left\Vert
+Y\right\Vert ^{2}-2\left\Vert X\right\Vert \left\Vert Y\right\Vert \cos
+\theta $
+
+$\left\Vert X\right\Vert ^{2}-2\left( X\cdot Y\right) +\left\Vert
+Y\right\Vert ^{2}=\left\Vert X\right\Vert ^{2}+\left\Vert Y\right\Vert
+^{2}-2\left\Vert X\right\Vert \left\Vert Y\right\Vert \cos \theta $
+
+$-2\left( X\cdot Y\right) =-2\left\Vert X\right\Vert \left\Vert Y\right\Vert
+\cos \theta $
+
+Entonces,
+
+$\cos \theta =\frac{-2\left( X\cdot Y\right) }{-2\left\Vert X\right\Vert
+\left\Vert Y\right\Vert }\ \ $y
+$\ \cos \theta =\frac{X\cdot Y}{\left\Vert X\right\Vert \left\Vert
+Y\right\Vert }$
+
+Dos vectores $X,Y$ son ortogonales si y solo si su ángulo es $\frac{\pi }{2}$, lo que equivale a tener que $X\cdot Y=0$.
+
+\begin{example}
+Si $X=\left( 3,2,2\right) ,Y=\left( 2,3,3\right) ,Z=\left( 4,1,2\right)$, halle el ángulo entre:
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item $\angle \left( X,Y\right) \qquad $
+        \item $\angle \left(X,Z\right) \qquad $
+        \item $\angle \left( Y,Z\right)$
+    \end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+Calculamos los productos punto y las longitudes.
+
+$X\cdot Y=18,X\cdot Z=18,Y\cdot Z=17,\left\Vert X\right\Vert =\sqrt{17},\left\Vert Y\right\Vert =\sqrt{22},\left\Vert Z\right\Vert =\sqrt{21}$
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item $\theta =\angle (X,Y)=\arccos \left( \frac{X\cdot Y}{\left\Vert X\right\Vert \left\Vert Y\right\Vert }\right)$ \\$\qquad \qquad \qquad =\arccos \left( \frac{18}{\sqrt{17}\sqrt{22}}\right) $ \\$\qquad \qquad \qquad =\arccos \left( 0.93076\right) $ \\$\qquad \qquad \qquad =0.374\,31rad=21.446^{0}$
+        \item $\theta =\angle (X,Z)=\arccos \left( \frac{X\cdot Z}{\left\Vert X\right\Vert \left\Vert Z\right\Vert }\right)$ \\ $\qquad \qquad \qquad =\arccos \left( \ \frac{18}{\sqrt{17}\sqrt{21}}\right)$ \\$\qquad \qquad \qquad =0.308\,92rad=17.\,7^{0}$
+        \item $\theta =\angle Y,Z=\arccos \left( \frac{Y\cdot Z}{\left\Vert Y\right\Vert\left\Vert Z\right\Vert }\right)$ \\ $\qquad \qquad \qquad =\arccos \left( \ \frac{17}{\sqrt{22}\sqrt{21}}\right)$ \\ $\qquad \qquad \qquad =0.658\,5rad=37.\,729^{0}$
+\end{enumerate}
+
+Para encontrar un vector que sea perpendicular a un vector fijo dado, usamos:
+
+\begin{itemize}
+    \item En $\mathbb{R}^{2}$ un vector perpendicular a $\left( a,b\right) $ es $\left( -b,a\right)$.
+    \item En $\mathbb{R}^{3}$ un vector $\left( x,y,z\right) $ perpendicular a $\left(a,b,c\right) $ satisface $ax+by+cz=0.$
+\end{itemize}
+
+El vector $\left( -b-c,a,a\right) $ es perpendicular a $\left( a,b,c\right)$.
+
+\subsection{Proyección de un vector sobre otro}
+
+La proyección del vector $Y$ sobre el vector $X$ es\ Proy$_{X}Y=\left(\frac{X\cdot Y}{\left\Vert X\right\Vert ^{2}}\right) X.$
+
+A continuación, se presenta una justificación para esta fórmula del vector proyección.
+
+Dados dos vectores $X,Y$ no paralelos y no nulos, el vector proyección de $Y$ sobre $X$ es un múltiplo escalar de $X$, $\alpha X$, de tal forma que \ $Y-\alpha X$ sea perpendicular a $X$, como se ve en la figura \ref{fig:placeholder29}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Proyección de un vector sobre otro}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S53.png}
+    \label{fig:placeholder29}
+\end{figure}
+
+Para hallar el valor de $\alpha$, se procede de la siguiente forma:
+
+$\left( \alpha X\right) \cdot \left( Y-\alpha X\right) =0$, pues $Y-\alpha X $ sea perpendicular a $X$.
+
+$\alpha \left( X\cdot Y-\alpha X\cdot X\right) =0$ \ propiedades del producto punto.
+
+$X\cdot Y-\alpha X\cdot X=0$ \ se despeja $\alpha $
+
+$\alpha =\frac{X\cdot Y}{X\cdot X}=\frac{X\cdot Y}{\left\Vert X\right\Vert
+^{2}}$
+
+Así, se obtiene la fórmula para la proyección:
+
+\begin{center}
+$Proy_{X}Y=\alpha X=\left( \frac{X\cdot Y}{\left\Vert X\right\Vert ^{2}}%
+\right) X$
+\end{center}
+
+\begin{example}
+Si $X=\left( 7,3,3\right) ,Y=\left( 4,3,6\right) ,Z=\left( 3,1,-2\right) $, halle:
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item Proy$_{Y}X$
+        \item Proy$_{x}Y$
+        \item Proy$_{Y}Z,iv)$
+        \item Proy$_{X}Z$
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item Proy$_{Y}X=\left( \frac{X\cdot Y}{\left\Vert Y\right\Vert ^{2}}\right) Y=\frac{28+9+18}{4^{2}+3^{2}+6^{2}}Y=\frac{55}{61}\left( 4,3,6\right) $
+        \item Proy$_{X}Y=\left( \frac{X\cdot Y}{\left\Vert X\right\Vert ^{2}}\right) X=\frac{55}{7^{2}+9+9}X=\frac{55}{67}\left( 7,3,3\right) $
+        \item Proy$_{Y}Z=\left( \frac{Y\cdot Z}{\left\Vert Y\right\Vert ^{2}}\right) Y=\frac{3}{61}\left( 4,3,6\right)$
+        \item Proy$_{X}Z=\left( \frac{X\cdot Z}{\left\Vert X\right\Vert ^{2}}\right)X=\frac{18}{67}\left( 7,3,3\right)$
+\end{enumerate}
+
+\subsection{Ejercicios}
+
+\begin{enumerate}
+    \item Grafique cada uno de los vectores. \
+    \begin{enumerate}
+        \item $\left( 1,2,4\right) $
+        \item $\left( -2,-4,3\right)$
+        \item $\left( 1,4,8\right)$
+        \item $\left( 3,6,-3\right)$
+    \end{enumerate}
+    \item Si $u=\left( 2,4,6\right) $ y $v=\left( 1,3,5\right)$, halle $3\left(u+2\left( 2u+4v\right) \right) -13u+22v$.
+    \item Halle la magnitud y los cosenos directores de cada vector.\
+    \begin{enumerate}
+        \item $\left( 2,2,1\right)$
+        \item $\left( 4,-3,0\right)$
+        \item $\left( 1,-1,-1\right) \qquad$
+        \item $\left( -\sqrt{5},4,2\right) \qquad$
+        \item $\left( 2,4,6\right)$
+    \end{enumerate}
+    \item Sean $P=\left( 1,1,1\right) ,Q=\left( 1,2,4\right) $ y $R=\left(1,-4,4\right)$, halle las magnitudes de los vectores dirigidos:
+    \begin{enumerate}
+        \item $\overrightarrow{PQ}$
+        \item $\overrightarrow{PR}$
+        \item $\overrightarrow{QR}$
+    \end{enumerate}
+    \item Encuentre un vector unitario en la dirección del vector dado:
+    \begin{enumerate}
+        \item $v=\left( 2,2,6\right)$
+        \item $v=\left( 2,-2,1\right)$
+        \item $v=\left( 0,3,4\right)$
+        \item $v=\left( 17,8,0\right)$
+    \end{enumerate}
+    \item Halle el ángulo entre los vectores dados.
+    \begin{enumerate}
+        \item $u=\left( 1,-1,0\right) $ y $v=\left( 1,1,1\right)$
+        \item $u=\left(1,1,2\right) $ y $v=\left( 1,-2,2\right)$
+        \item $u=\left( 1,2,3\right) $ y $v=\left( 3,0,4\right) $
+    \end{enumerate}
+    \item Sean $u=\left( 2,4,5\right) ,v=\left( -2,3,8\right) $ y $w=\left(3,-5,8\right) $, halle:
+    \begin{enumerate}
+        \item Proy$_{u}v$
+        \item Proy$_{v}u$
+        \item Proy$_{u}w$
+        \item Proy$_{w}u$
+        \item Proy$_{w}v$
+        \item Proy$_{v}w$
+    \end{enumerate}
+    \item De los siguientes vectores, $u_{1}=\left( 2,4,2\right) ,u_{2}=\left(3,5,-13\right) $, $u_{3}=\left( 1,1,-3\right) $ y $u_{4}=\left( 2,1,1\right),$ ¿cuáles pares de vectores son perpendiculares?
+\end{enumerate}
+
+\section{Matrices $2\times 2$ \ y $3\times 3$}
+
+Una matriz de tamaño $2\times 2$ con entradas reales es un arreglo rectangular de $2$ filas y $2$ columnas:
+
+$A=\left( 
+\begin{array}{cc}
+a_{11} & a_{12} \\ 
+a_{21} & a_{22}
+\end{array}
+\right) $
+
+Donde\ $a_{11},a_{12},a_{21},a_{22}$ son números reales.
+
+Una matriz de tamaño $3\times 3$ con entradas reales es un arreglo rectangular de $3$ filas y $3$ columnas:
+
+$A=\left( 
+\begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\ 
+a_{21} & a_{22} & a_{23} \\ 
+a_{31} & a_{32} & a_{33}
+\end{array}
+\right) $
+
+Donde $a_{11},a_{12},a_{13},a_{21},a_{22},a_{23},a_{31},a_{32},a_{33}$ son números reales.
+
+\textbf{Filas y columnas de una matriz}
+
+Si $A=\left( 
+\begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\ 
+a_{21} & a_{22} & a_{23} \\ 
+a_{31} & a_{32} & a_{33}%
+\end{array}%
+\right) $
+
+Las filas de A son:
+
+$Fil_{1}A=F_{1}=\left( 
+\begin{array}{ccc}
+a_{11} & a_{12} & a_{13}%
+\end{array}%
+\right) $
+
+$Fil_{2}A=F_{2}=\left( 
+\begin{array}{ccc}
+a_{21} & a_{22} & a_{23}%
+\end{array}%
+\right) $
+
+$Fil_{3}A=F_{3}=\left( 
+\begin{array}{ccc}
+a_{31} & a_{32} & a_{33}%
+\end{array}%
+\right) $
+
+Las columnas de $A$ son:
+
+$Col_{1}A=C_{1}=\left( 
+\begin{array}{c}
+a_{11} \\ 
+a_{21} \\ 
+a_{31}%
+\end{array}%
+\right) ,$
+
+$Col_{2}A=C_{2}=\left( 
+\begin{array}{c}
+a_{12} \\ 
+a_{22} \\ 
+a_{32}%
+\end{array}%
+\right) $ y
+
+$Col_{3}A=C_{3}=\left( 
+\begin{array}{c}
+a_{13} \\ 
+a_{23} \\ 
+a_{33}%
+\end{array}%
+\right) $
+
+\begin{example}
+Si $B=\left( 
+\begin{array}{ccc}
+7 & 2 & -1 \\ 
+\frac{4}{5} & -1 & 1 \\ 
+\frac{1}{3} & 4 & 7%
+\end{array}%
+\right)$, halle $Col_{1}\left( B\right) ,\qquad Col_{3}\left( B\right) ,\qquad
+Fil_{1}\left( B\right) ,\qquad Fil_{2}\left( B\right) $ \ \ \ y \ \ $%
+Fil_{3}\left( B\right)$.
+\end{example}
+
+\textbf{Solución}
+
+$Col_{1}\left( B\right) =\left( 
+\begin{array}{c}
+7 \\ 
+\frac{4}{5} \\ 
+\frac{1}{3}%
+\end{array}%
+\right) ,Col_{3}\left( B\right) =\left( 
+\begin{array}{c}
+-1 \\ 
+1 \\ 
+7%
+\end{array}%
+\right) $
+
+$Fil_{1}\left( B\right) =\left( 
+\begin{array}{ccc}
+7 & 2 & -1%
+\end{array}%
+\right) ,$ $Fil_{2}\left( B\right) =\left( 
+\begin{array}{ccc}
+\frac{4}{5} & -1 & 1%
+\end{array}%
+\right) ,Fil_{3}\left( B\right) =\left( 
+\begin{array}{ccc}
+\frac{1}{3} & 4 & 7%
+\end{array}%
+\right) _{1\times 6}$
+
+\subsection{Suma y producto por escalar de matrices}
+
+\subsubsection{Producto por escalar (producto número real por matriz)}
+
+Sea $\alpha \in \mathbb{R}$ y $A$ una matriz $m\times n$. El producto del número $\alpha$ por la matriz $A$ es $\alpha A=\alpha \left( a_{ij}\right) =\left( \alpha a_{ij}\right)$.
+
+$\alpha A=\alpha \left( 
+\begin{array}{ccc}
+a_{11} & a_{12} & a_{13}\\ 
+a_{21} & a_{22} & a_{23}\\ 
+a_{31} & a_{32} & a_{33}
+\end{array}
+\right) _{3\times 3}=\left( 
+\begin{array}{ccc}
+\alpha a_{11} & \alpha a_{12} & \alpha a_{13}\\ 
+\alpha a_{21} & \alpha a_{22} & \alpha a_{23}\\ 
+\alpha a_{31} & \alpha a_{32} & \alpha a_{33}
+\end{array}
+\right) _{3\times 3}$
+
+Para calcular el producto de un número $\alpha$ por la matriz $A$, se multiplica cada una de las entradas de la matriz $A$ por el número $\alpha$.
+
+\begin{example}
+Si \ $A=\left( 
+\begin{array}{cc}
+4 & 6 \\ 
+-1 & \frac{1}{2}%
+\end{array}%
+\right) _{2\times 2}$, halle:
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item $-\frac{1}{2}A$
+        \item $\frac{7}{5}A$
+    \end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+a) $-\frac{1}{2}A=-\frac{1}{2}\left(\begin{array}{cc}
+4 & 6 \\ -1 & \frac{1}{2}\end{array}\right) $
+
+$\qquad \qquad =\left( 
+\begin{array}{cc}
+\left( -\frac{1}{2}\right) 4 & \left( -\frac{1}{2}\right) 6 \\ 
+\left( -\frac{1}{2}\right) \left( -1\right) & \left( -\frac{1}{2}\right) 
+\frac{1}{2}
+\end{array}
+\right) $
+
+$\qquad \qquad =\left( 
+\begin{array}{cc}
+-2 & -3 \\ 
+\frac{1}{2} & -\frac{1}{4}
+\end{array}
+\right) $
+
+b) $\frac{7}{5}A=\frac{7}{5}\left( 
+\begin{array}{cc}4 & 6 \\ 
+-1 & \frac{1}{2}
+\end{array}
+\right) $
+
+$\qquad \qquad =\left( 
+\begin{array}{cc}
+\left( \frac{7}{5}\right) 4 & \left( \frac{7}{5}\right) 6 \\ 
+\left( \frac{7}{5}\right) \left( -1\right) & \left( \frac{7}{5}\right) \frac{1}{2}
+\end{array}
+\right) $
+
+$\qquad \qquad =\left( 
+\begin{array}{cc}
+\frac{28}{5} & \frac{42}{5} \\ 
+-\frac{7}{5} & \frac{7}{10}%
+\end{array}%
+\right) $
+
+\subsubsection{Suma y resta de matrices}
+
+Si $A$ y $B$ son matrices de tamaño $3\times 3$, su suma o resta es:
+
+$A\pm B=\left( a_{ij}\right) \pm \left( b_{ij}\right) =\left( a_{ij}\pm
+b_{ij}\right) _{3\times 3}$
+
+$A\pm B=\left( 
+\begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\ 
+a_{21} & a_{22} & a_{23} \\ 
+a_{31} & a_{32} & a_{33}
+\end{array}
+\right) \pm \left( 
+\begin{array}{ccc}
+b_{11} & b_{12} & b_{13} \\ 
+b_{21} & b_{22} & b_{23} \\ 
+b_{31} & b_{32} & b_{33}
+\end{array}
+\right) $
+
+$\qquad =\left( 
+\begin{array}{ccc}
+a_{11}\pm b_{11} & a_{12}\pm b_{12} & a_{13}\pm b_{13} \\ 
+a_{21}\pm b_{21} & a_{22}\pm b_{22} & a_{23}\pm b_{23} \\ 
+a_{31}\pm b_{31} & a_{32}\pm b_{32} & a_{33}\pm b_{33}%
+\end{array}%
+\right) $
+
+Para sumar las matrices $A$ y $B$, se suman los elementos correspondientes a las matrices $A$ y $B$.
+
+\begin{example}
+Sean $A=\left( 
+\begin{array}{ccc}
+\frac{1}{2} & -3 & 2 \\ 
+1 & 2 & \frac{3}{2} \\ 
+2 & -2 & 3%
+\end{array}%
+\right) \qquad B=\left( 
+\begin{array}{ccc}
+\frac{5}{2} & 6 & 3 \\ 
+4 & 2 & -2 \\ 
+-2 & 3 & \frac{5}{2}%
+\end{array}%
+\right)$, halle:
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item $A+B$
+        \item $A-B$
+        \item $6A+4B$
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+$a)A+B=\left( 
+\begin{array}{ccc}
+\frac{1}{2} & -3 & 2 \\ 
+1 & 2 & \frac{3}{2} \\ 
+2 & -2 & 3%
+\end{array}%
+\right) +\left( 
+\begin{array}{ccc}
+\frac{5}{2} & 6 & 3 \\ 
+4 & 2 & -2 \\ 
+-2 & 3 & \frac{5}{2}%
+\end{array}%
+\right) $
+
+$\qquad \qquad =\left( 
+\begin{array}{ccc}
+\frac{1}{2}+\frac{5}{2} & -3+6 & 2+3 \\ 
+1+4 & 2+2 & \frac{3}{2}+\left( -2\right) \\ 
+2+\left( -2\right) & -2+3 & 3+\frac{5}{2}%
+\end{array}%
+\right) $
+
+$\qquad \qquad =\left( 
+\begin{array}{ccc}
+3 & 3 & 5 \\ 
+5 & 4 & -\frac{1}{2} \\ 
+0 & 1 & \frac{11}{2}%
+\end{array}%
+\right) $
+
+$b)A-B=\left( 
+\begin{array}{ccc}
+\frac{1}{2} & -3 & 2 \\ 
+1 & 2 & \frac{3}{2} \\ 
+2 & -2 & 3%
+\end{array}%
+\right) -\left( 
+\begin{array}{ccc}
+\frac{5}{2} & 6 & 3 \\ 
+4 & 2 & -2 \\ 
+-2 & 3 & \frac{5}{2}%
+\end{array}%
+\right) $
+
+$\qquad \qquad =\left( 
+\begin{array}{ccc}
+\frac{1}{2}-\frac{5}{2} & -3-6 & 2-3 \\ 
+1-4 & 2-2 & \frac{3}{2}-\left( -2\right) \\ 
+2-\left( -2\right) & -2-3 & 3-\frac{5}{2}%
+\end{array}%
+\right) $
+
+$\qquad \qquad =\left( 
+\begin{array}{ccc}
+-2 & -9 & -1 \\ 
+-3 & 0 & \frac{7}{2} \\ 
+4 & -5 & \frac{1}{2}%
+\end{array}%
+\right) $
+
+$c)$ $6A=6\left( 
+\begin{array}{ccc}
+\frac{1}{2} & -3 & 2 \\ 
+1 & 2 & \frac{3}{2} \\ 
+2 & -2 & 3%
+\end{array}%
+\right) =\left( 
+\begin{array}{ccc}
+3 & -18 & 12 \\ 
+6 & 12 & 9 \\ 
+12 & -12 & 18%
+\end{array}%
+\right) ,$
+
+$4B=4\left( 
+\begin{array}{ccc}
+\frac{5}{2} & 6 & 3 \\ 
+4 & 2 & -2 \\ 
+-2 & 3 & \frac{5}{2}%
+\end{array}%
+\right) =\left( 
+\begin{array}{ccc}
+10 & 24 & 12 \\ 
+16 & 8 & -8 \\ 
+-8 & 12 & 10%
+\end{array}%
+\right) $
+
+$6A+4B=\left( 
+\begin{array}{ccc}
+3 & -18 & 12 \\ 
+6 & 12 & 9 \\ 
+12 & -12 & 18%
+\end{array}%
+\right) +\left( 
+\begin{array}{ccc}
+10 & 24 & 12 \\ 
+16 & 8 & -8 \\ 
+-8 & 12 & 10%
+\end{array}%
+\right) $
+
+$\qquad \qquad =\left( 
+\begin{array}{ccc}
+13 & 6 & 24 \\ 
+22 & 20 & 1 \\ 
+4 & 0 & 28%
+\end{array}%
+\right) $
+
+\subsubsection{Propiedades de la suma y producto por escalar}
+
+Sean $A,B,C$ matrices de tamaño $2\times 2$ o $3\times 3$ y $\alpha ,\beta$ números reales, la suma y producto por escalar de matrices satisfacen las siguientes propiedades:
+
+\begin{enumerate}
+    \item Conmutativa de la suma: 
+    \begin{center}
+        $A+B=B+A$
+    \end{center}
+    \item Asociativa de la suma: 
+    \begin{center}
+        $A+\left( B+C\right) =\left( A+B\right) +C$
+    \end{center}
+    \item Modulativa de la suma: 
+    \begin{center}
+        Existe la matriz nula $\mathbb{O}_{m\times n}=\left( 0\right) _{m\times n},$ tal que $A+\mathbb{O}=A$
+    \end{center}
+    \item Invertiva: 
+    \begin{center}
+        Para $\ A$ existe la matriz $-A=-\left( a_{ij}\right) _{m\times n}=\left( -a_{ij}\right) _{m\times n},$ tal que $A+\left(-A\right) =\mathbb{O}$.
+    \end{center}
+    \item Asociativa de los escalares respecto al producto por escalar:
+    \begin{center}
+    $\alpha \left( \beta A\right) =\left( \alpha \beta \right) A$
+    \end{center}
+    \item Distributiva del producto por escalar con la suma de matrices:
+    \begin{center}
+    $\alpha \left( A+B\right) =\alpha A+\alpha B$
+     \end{center}
+    \item Distributiva del producto por escalar con la suma de escalares:
+     \begin{center}
+    \item $\left( \alpha +\beta \right) A=\alpha A+\beta A$
+     \end{center}
+    \item Acción del unitario: $1A=A$. Las matrices nulas de tamaños $2\times 2$\ y $3\times 3$ son:
+   \begin{center}
+       
+   \end{center} $\mathbb{O}_{2\times 2}=\left(
+    \begin{array}{cc}
+     0 & 0 \\
+     0 & 0%
+     \end{array}%
+    \right) ,\mathbb{O}_{3\times 3}=\left(
+    \begin{array}{ccc}
+     0 & 0 & 0 \\
+    0 & 0 & 0 \\
+     0 & 0 & 0%
+     \end{array}%
+    \ \right)$
+\end{enumerate}
+
+La matriz opuesta de la matriz$\ A=\left( 
+\begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\ 
+a_{21} & a_{22} & a_{23} \\ 
+a_{31} & a_{32} & a_{33}%
+\end{array}%
+\right) $ es
+
+\begin{center}
+$-A=\left( 
+\begin{array}{ccc}
+-a_{11} & -a_{12} & -a_{13} \\ 
+-a_{21} & -a_{22} & -a_{23} \\ 
+-a_{31} & -a_{32} & -a_{33}%
+\end{array}%
+\right) $
+\end{center}
+
+\textbf{Implicaciones de las propiedades}
+
+\begin{enumerate}
+    \item La propiedad 5 implica que la ley de signos vale en álgebra matricial $-\left( -A\right) =\left( -1\right) \left( \left( -1\right) A\right) =\left( -1\left( -1\right) \right) A=1A=A$.
+    \item La suma de términos semejantes vale en álgebra matricial (por la propiedad 7). Por ejemplo: $15A+43A=\left( 15+43\right) A=58A.$
+\end{enumerate}
+
+\begin{example}
+Sean $A=\left( 
+\begin{array}{ccc}
+1 & 1 & -1 \\ 
+-1 & 2 & 3 \\ 
+2 & 4 & 0%
+\end{array}%
+\right) $ y $B=\left( 
+\begin{array}{ccc}
+3 & 2 & 3 \\ 
+1 & -2 & -2 \\ 
+2 & 3 & 5
+\end{array}
+\right) $, halle:
+\begin{center}
+    $4\left( A-3\left( A+3\left( \frac{1}{3}A-\frac{1}{3}B\right) \right)\right) $
+\end{center}
+\end{example}
+
+\textbf{Solución}
+
+$4\left( A-3\left( A+3\left( \frac{1}{3}A-\frac{1}{3}B\right) \right)\right) $
+
+Primero, se debe simplificar usando las propiedades:
+
+$4\left( A-3\left( A+\underbrace{3\left( \frac{1}{3}A-\frac{1}{3}B\right) } \right) \right) \qquad $Propiedad distributiva
+
+$=4\left( A-3\left( A+3\left( \frac{1}{3}A\right) -3\left( \frac{1}{3} B\right) \right) \right) \qquad $Propiedades 5 y 8
+
+$=4\left( A-3\left( A+A-B\right) \right) \qquad \qquad \qquad$   Propiedad $7;$ suma de semejantes
+
+$=4\left( A-\underbrace{3\left( 2A-B\right) }\right) \qquad $ Propiedad distributiva P6 y ley de signos
+
+$=4\left( A-6A+3B\right) \qquad \qquad$  Suma de términos semejantes
+
+$=4\left( -5A+3B\right) \qquad \qquad \qquad $ Propiedad distributiva
+
+$=-20A+12B$ \ \ 
+
+Luego, se reemplazan por las matrices y se realizan las operaciones:
+
+$=-20\left( 
+\begin{array}{ccc}
+1 & 1 & -1 \\ 
+-1 & 2 & 3 \\ 
+2 & 4 & 0%
+\end{array}%
+\right) +12\left( 
+\begin{array}{ccc}
+3 & 2 & 3 \\ 
+1 & -2 & -2 \\ 
+2 & 3 & 5%
+\end{array}%
+\right) $
+
+$=\left( 
+\begin{array}{ccc}
+-20 & -20 & 20 \\ 
+20 & -40 & -60 \\ 
+-40 & -80 & 0%
+\end{array}%
+\right) +\left( 
+\begin{array}{ccc}
+36 & 24 & 36 \\ 
+12 & -24 & -24 \\ 
+24 & 36 & 60%
+\end{array}%
+\right) $
+
+$=\left( 
+\begin{array}{ccc}
+16 & 4 & 56 \\ 
+32 & -64 & -84 \\ 
+-16 & -44 & 60%
+\end{array}%
+\right) $
+
+\bigskip
+
+\subsection{Producto de matrices}
+
+\textbf{Producto fila por columna}
+
+El producto de una fila por una columna de longitud 2 es:
+
+$\left( 
+\begin{array}{cc}
+a_{1} & a_{2}%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+b_{1} \\ 
+b_{2}%
+\end{array}%
+\right) =a_{1}b_{1}+a_{2}b_{2}$
+
+El producto de una fila por una columna de longitud 3 es:
+
+$\left( 
+\begin{array}{ccc}
+a_{1} & a_{2} & a_{3}
+\end{array}
+\right) \left( 
+\begin{array}{c}
+b_{1} \\ 
+b_{2} \\ 
+b_{3}
+\end{array}
+\right) =a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}$
+
+\begin{example}
+Halle:
+ \begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+         \item $\left( \begin{array}{cc}4 & -5\end{array}\right) \left(\begin{array}{c}11 \\ 7\end{array}\right) $ \
+         \item $\left( \begin{array}{ccc}2 & -10 & 4\end{array}\right) \left( \begin{array}{c}4 \\2 \\ 4\end{array}\right)$
+ \end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item $\left(\begin{array}{cc}4 & -5\end{array}\right) \left( \begin{array}{c}11 \\ 7\end{array}\right) =4\left( 11\right) +\left( -5\right) \left( 7\right) =9$
+        \item $\left( \begin{array}{ccc}2 & -10 & 4\end{array} \right) \left( \begin{array}{c}4 \\ 2 \\ 4\end{array}\right) =2\left( 4\right) +\left( -10\right) \ast 2+4\ast 4=4$
+\end{enumerate}
+
+Sean $A$ y $B$ matrices $2\times 2$, el producto de $A$ y $B$ es:
+
+$AB=\left( 
+\begin{array}{cc}
+a_{11} & a_{12} \\ 
+a_{21} & a_{22}%
+\end{array}%
+\right) \left( 
+\begin{array}{cc}
+b_{11} & b_{12} \\ 
+b_{21} & b_{22}%
+\end{array}%
+\right) $
+
+$\qquad =\left( 
+\begin{array}{cc}
+Fil_{1}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{1}\left(
+A\right) \cdot \func{col}_{2}\left( B\right) \\ 
+Fil_{2}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{2}\left(
+A\right) \cdot \func{col}_{2}\left( B\right)%
+\end{array}%
+\right) $
+
+$\qquad =\left( 
+\begin{array}{cc}
+a_{11}b_{11}+a_{12}b_{21} & a_{11}b_{12}+a_{12}b_{22} \\ 
+a_{21}b_{11}+a_{22}b_{21} & a_{21}b_{12}+a_{22}b_{22}%
+\end{array}%
+\right) $
+
+Sean $A$ y $B$ matrices $3\times 3$, el producto de $A$ y $B$ es:
+
+$AB=\left( 
+\begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\ 
+a_{21} & a_{22} & a_{23} \\ 
+a_{31} & a_{32} & a_{33}%
+\end{array}%
+\right) \left( 
+\begin{array}{ccc}
+b_{11} & b_{12} & b_{13} \\ 
+b_{21} & b_{22} & b_{23} \\ 
+b_{31} & b_{32} & b_{33}%
+\end{array}%
+\right) $
+
+$=\left( 
+\begin{array}{ccc}
+Fil_{1}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{1}\left(
+A\right) \cdot \func{col}_{2}\left( B\right) & Fil_{1}\left( A\right) \cdot 
+\func{col}_{3}\left( B\right) \\ 
+Fil_{2}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{2}\left(
+A\right) \cdot \func{col}_{2}\left( B\right) & Fil_{2}\left( A\right) \cdot 
+\func{col}_{3}\left( B\right) \\ 
+Fil_{3}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{3}\left(
+A\right) \cdot \func{col}_{2}\left( B\right) & Fil_{3}\left( A\right) \cdot 
+\func{col}_{3}\left( B\right)%
+\end{array}%
+\right) $
+
+$=\left( 
+\begin{array}{ccc}
+a_{11}b_{11}+a_{12}b_{21}+a_{13}b_{31} & 
+a_{11}b_{12}+a_{12}b_{22}+a_{13}b_{32} & 
+a_{11}b_{13}+a_{12}b_{23}+a_{13}b_{33} \\ 
+a_{21}b_{11}+a_{22}b_{21}+a_{23}b_{31} & 
+a_{21}b_{12}+a_{22}b_{22}+a_{23}b_{32} & 
+a_{21}b_{13}+a_{22}b_{23}+a_{23}b_{33} \\ 
+a_{31}b_{11}+a_{32}b_{21}+a_{33}b_{31} & 
+a_{31}b_{12}+a_{32}b_{22}+a_{33}b_{32} & 
+a_{31}b_{13}+a_{32}b_{23}+a_{33}b_{33}%
+\end{array}%
+\right)$
+
+\begin{example}
+Sean $A=\left( 
+\begin{array}{ccc}
+1 & 1 & 3 \\ 
+0 & 2 & 3 \\ 
+2 & 4 & 5%
+\end{array}%
+\right) ,B=\left( 
+\begin{array}{ccc}
+1 & 2 & 1 \\ 
+4 & -1 & 2 \\ 
+2 & 0 & 4%
+\end{array}%
+\right) $,\ halle $AB.$
+\end{example}
+
+\textbf{Solución}
+
+$AB=\left( 
+\begin{array}{ccc}
+1 & 1 & 3 \\ 
+0 & 2 & 3 \\ 
+2 & 4 & 5%
+\end{array}%
+\right) \left( 
+\begin{array}{ccc}
+1 & 2 & 1 \\ 
+4 & -1 & 2 \\ 
+2 & 0 & 4%
+\end{array}%
+\right) $
+
+$\qquad =\left( 
+\begin{array}{ccc}
+Fil_{1}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{1}\left(
+A\right) \cdot \func{col}_{2}\left( B\right) & Fil_{1}\left( A\right) \cdot 
+\func{col}_{3}\left( B\right) \\ 
+Fil_{2}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{2}\left(
+A\right) \cdot \func{col}_{2}\left( B\right) & Fil_{2}\left( A\right) \cdot 
+\func{col}_{3}\left( B\right) \\ 
+Fil_{3}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{3}\left(
+A\right) \cdot \func{col}_{2}\left( B\right) & Fil_{3}\left( A\right) \cdot 
+\func{col}_{3}\left( B\right)%
+\end{array}%
+\right) $
+
+$\qquad =\left( 
+\begin{array}{ccc}
+11 & 1 & 15 \\ 
+14 & -2 & 16 \\ 
+28 & 0 & 30%
+\end{array}%
+\right)$
+
+Si $A$ es una matriz $2\times 2$ o $3\times 3,$ las potencias de $A$ se
+definen de manera inductiva:
+
+$A^{1}=A,\qquad A^{2}=AA,\qquad A^{3}=A^{2}A,\qquad \cdots, A^{n+1}=A^{n}A.$
+
+\subsubsection{Propiedades del producto de matrices}
+
+Sean $A$, $B$ y $C$ matrices de tamaño $2\times 2$ o $3\times 3$, el producto matricial satisface las siguientes propiedades:
+
+\begin{enumerate}
+    \item $A0=0\qquad 0A=0$
+    \item $A(BC)=(AB)C$ (ley asociativa de la multiplicación)
+    \item $A(B+C)=AB+AC$ (ley distributiva izquierda)
+    \item $(B+C)A=BA+CA$ (ley distributiva derecha)
+    \item $r(AB)=(rA)B=A(rB)$\ para cualquier escalar $r\in \mathbb{R}$
+    \item $IA=A=AI$ (módulo de la multiplicación)
+\end{enumerate}
+
+Donde $I=\left( 
+\begin{array}{cc}
+1 & 0 \\ 
+0 & 1%
+\end{array}%
+\right) $ es la matriz identidad de tamaño $2\times 2$, \ $I=\left( 
+\begin{array}{ccc}
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1%
+\end{array}%
+\right) $ es la matriz identidad de tamaño $3\times 3.$
+
+\subsubsection{Producto matriz por vector columna}
+
+Si $A=\left( 
+\begin{array}{cc}
+a & b \\ 
+c & d%
+\end{array}%
+\right) $ una matriz $2\times 2$ y $X=\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) ,$ el producto $AX$ es el vector columna:
+
+$AX=\left( 
+\begin{array}{cc}
+a & b \\ 
+c & d%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
+\begin{array}{c}
+ax+by \\ 
+cx+dy%
+\end{array}%
+\right) $
+
+Si $A=\left( 
+\begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\ 
+a_{21} & a_{22} & a_{23} \\ 
+a_{31} & a_{32} & a_{33}%
+\end{array}%
+\right) $ una matriz $3\times 3$ y $X=\left( 
+\begin{array}{c}
+x \\ 
+y \\ 
+z%
+\end{array}%
+\right) ,$ el producto $AX$ es el vector columna:
+
+$AX=\left( 
+\begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\ 
+a_{21} & a_{22} & a_{23} \\ 
+a_{31} & a_{32} & a_{33}%
+\end{array}%
+\right) \left( 
+\begin{array}{c}
+x \\ 
+y \\ 
+z%
+\end{array}%
+\right) =\left( 
+\begin{array}{c}
+a_{11}x+a_{12}y+a_{13}z \\ 
+a_{21}x+a_{22}y+a_{23}z \\ 
+a_{31}x+a_{32}y+a_{33}z%
+\end{array}%
+\right) $
+
+\subsection{Ejercicios}
+
+Si $A=\left( 
+\begin{array}{cc}
+2 & 1 \\ 
+5 & 2%
+\end{array}%
+\right) \qquad B=\left( 
+\begin{array}{cc}
+3 & 1 \\ 
+2 & 4%
+\end{array}%
+\right) $, calcule:
+
+\begin{enumerate}
+    \item 
+    \begin{enumerate}
+        \item $A+B\qquad$
+        \item $A-B\qquad c)$ $5A-3B$
+    \end{enumerate}
+    \item 2 $\left( A-2\left( B+A\right) -\left( A+\left( B-\frac{1}{2}A\right)\right) \right) $
+    \item 
+    \begin{enumerate}
+        \item $AB\qquad $
+        \item $BA\qquad $
+        \item $A\left( A-B\right) \qquad $
+        \item $B\left(2A-3B\right) $
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item $\left( A+B\right) \left( A-B\right) \qquad$
+        \item $A^{2}-B^{2}$
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item  $\left( A-B\right) \left( A^{2}+AB+B^{2}\right) \qquad$
+        \item $A^{3}-B^{3}$
+    \end{enumerate}
+    \begin{center}
+    \item Si $A=\left(\begin{array}{ccc}1 & 1 & -1 \\ -1 & 2 & 1 \\ 2 & 4 & 0\end{array}\right) \qquad B=\left( \begin{array}{ccc}3 & 2 & 1 \\ 1 & 1 & -2 \\ 2 & 0 & 1\end{array}\right) $, calcule:
+    \end{center}
+    \item 
+    \begin{enumerate}
+        \item $A+B\qquad$
+        \item $A-B\qquad$
+        \item $3A-2B$
+    \end{enumerate}
+    \item $-2\left( A+2\left( B+A\right) -\left( A+3\left( B-\frac{2}{3}A\right) \right) \right) $
+    \item $4\left( -2A+2\left( B+A\right) -2\left( -A+3\left( B-\frac{2}{3}\left( A+B\right) \right) \right) +A+2B\right) $
+    \item $2\left( \frac{1}{2}A-4\left( B+\frac{1}{4}A\right) -3\left( A+4\left(B-\frac{3}{4}\left( A+B\right) \right) \right) -2A+5B\right)$
+    \item $3\left( \frac{1}{3}A-4\left( \frac{3}{4}B+\frac{1}{4}A\right)-3\left( A+4\left( B-\frac{1}{4}\left( A+B\right) \right) \right)-A+4B\right)$
+    \item Halle una matriz $X$, $3\times 3$ que cumpla $A+2B+3X=X-B$.
+    \item Halle una matriz $Y$, $3\times 3$ que cumpla $2\left( 3A-2B+3Y\right)=3Y+2B$.
+    \item 
+    \begin{enumerate}
+        \item $AB\qquad $
+        \item $BA\qquad $
+        \item $A^{2}\qquad $
+        \item $B^{2}$
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item $\left( A+B\right) \left( A-B\right) \qquad $
+        \item $A^{2}-B^{2}\qquad $
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item $\left( A+B\right) ^{2}\qquad $
+        \item $A^{2}+2AB+B^{2}$
+    \end{enumerate}
+    \item 
+    \begin{enumerate}
+        \item $\left( I-A\right) \left( I+A+A^{2}+A^{3}\right) \qquad $
+        \item $\left(I+A\right) \left( I-A+A^{2}-A^{3}\right) $
+    \end{enumerate}
+\end{enumerate}
+
+\section{Determinante de matrices $2\times 2$ y $3\times 3$}
+
+\subsection{Determinante de una matriz cuadrada}
+
+El determinante de una matriz cuadrada $A$ es un número real y se denota por 
+$\det \left( A\right) $ o $\left\vert A\right\vert$.
+
+\subsubsection{Determinantes de matrices $2\times 2$}
+
+El determinante de una matriz $2\times 2$ se calcula por la fórmula:
+
+\begin{center}
+$\det \left( 
+\begin{array}{cc}
+a & b \\ 
+c & d%
+\end{array}%
+\right) =\left\vert 
+\begin{array}{cc}
+a & b \\ 
+c & d%
+\end{array}%
+\right\vert =ad-bc$
+\end{center}
+
+\begin{example}
+Halle $\left\vert 
+\begin{array}{cc}
+25 & 11 \\ 
+33 & 20%
+\end{array}%
+\right\vert$.
+\end{example}
+
+\textbf{Solución}
+
+$\left\vert 
+\begin{array}{cc}
+25 & 11 \\ 
+33 & 20%
+\end{array}%
+\right\vert =25\ast 20-33\ast 11=500-363=137$
+
+
+
+\subsubsection{Determinantes de matrices $3\times 3$}
+
+Esta primera forma de calcular el determinante se llama "desarrollo por la primera fila".
+
+$\det \left( 
+\begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\ 
+a_{21} & a_{22} & a_{23} \\ 
+a_{31} & a_{32} & a_{33}
+\end{array}
+\right) =\left\vert 
+\begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\ 
+a_{21} & a_{22} & a_{23} \\ 
+a_{31} & a_{32} & a_{33}
+\end{array}
+\right\vert $
+
+$\qquad \qquad \qquad \qquad \qquad =a_{11}\left\vert 
+\begin{array}{cc}
+a_{22} & a_{23} \\ 
+a_{32} & a_{33}
+\end{array}
+\right\vert -a_{12}\left\vert 
+\begin{array}{cc}
+a_{21} & a_{23} \\ 
+a_{31} & a_{33}%
+\end{array}%
+\right\vert +a_{13}\left\vert 
+\begin{array}{cc}
+a_{21} & a_{22} \\ 
+a_{31} & a_{32}%
+\end{array}%
+\right\vert $
+
+\textbf{Ejemplo:}
+
+$\left\vert 
+\begin{array}{ccc}
+2 & 4 & 5 \\ 
+8 & 9 & -4 \\ 
+4 & 3 & 10%
+\end{array}%
+\right\vert =2\left\vert 
+\begin{array}{cc}
+9 & -4 \\ 
+3 & 10%
+\end{array}%
+\right\vert -4\left\vert 
+\begin{array}{cc}
+8 & -4 \\ 
+4 & 10%
+\end{array}%
+\right\vert +5\left\vert 
+\begin{array}{cc}
+8 & 9 \\ 
+4 & 3%
+\end{array}%
+\right\vert $
+
+$\qquad \qquad \qquad =2\left( 90-\left( -12\right) \right) -4\left(
+80-\left( -16\right) \right) +5\left( 24-36\right) $
+
+$\qquad \qquad \qquad =2\left( 102\right) -4\left( 96\right) +5\left(
+-12\right) =-240$
+
+
+Esta segunda forma de calcular el determinante se llama regla de Sarrus. Consiste en repetir las dos primeras filas de la matriz debajo de ella, de manera que se formen cinco filas; después, se suman los productos de las diagonales descendentes y se restan los productos de las diagonales ascendentes:
+
+$\det \left( 
+\begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\ 
+a_{21} & a_{22} & a_{23} \\ 
+a_{31} & a_{32} & a_{33}
+\end{array}
+\right) =$
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S54.png}
+\end{figure}
+
+$=a_{11}a_{22}a_{33}+a_{21}a_{32}a_{13}+a_{31}a_{12}a_{23}-a_{13}a_{22}a_{31}+a_{23}a_{32}a_{11}+a_{33}a_{12}a_{21} $
+
+\begin{example}
+Calcule con la regla de Sarrus el determinante $\left\vert 
+\begin{array}{ccc}
+9 & 5 & 3 \\ 
+1 & 11 & 2 \\ 
+4 & 6 & 7
+\end{array}
+\right\vert$.
+\end{example}
+
+\textbf{Solución}
+
+$\left\vert 
+\begin{array}{ccc}
+9 & 5 & 3 \\ 
+1 & 11 & 2 \\ 
+4 & 6 & 7
+\end{array}
+\right\vert $
+
+$=\left\vert 
+\begin{array}{ccc}
+9 & 5 & 3 \\ 
+1 & 11 & 2 \\ 
+4 & 6 & 7 \\ 
+9 & 5 & 3 \\ 
+1 & 11 & 2%
+\end{array}%
+\right\vert $
+
+$=9\left( 11\right) \left( 7\right) +1\left( 6\right) \left( 3\right)
++4\left( 5\right) \left( 2\right) -3\left( 11\right) \left( 4\right)
+-2\left( 6\right) \left( 9\right) -7\left( 5\right) \left( 1\right) $
+
+$=476$
+
+\subsection{Ejercicios}
+
+Calcule cada determinante.
+
+\begin{enumerate}
+\item $\left\vert 
+\begin{array}{cc}
+13 & 14 \\ 
+5 & 5%
+\end{array}%
+\right\vert $
+
+\item $\left\vert 
+\begin{array}{cc}
+a & a+1 \\ 
+2a & a+2%
+\end{array}%
+\right\vert $
+
+\item $\left\vert 
+\begin{array}{ccc}
+10 & 11 & -15 \\ 
+18 & -13 & 14 \\ 
+4 & 13 & 5%
+\end{array}%
+\right\vert $
+
+\item $\left\vert 
+\begin{array}{ccc}
+-4 & 20 & -5 \\ 
+11 & -10 & 4 \\ 
+7 & 11 & -5%
+\end{array}%
+\right\vert $
+
+\item Halle el valor de $a$ para que $\left\vert 
+\begin{array}{ccc}
+2 & 4 & a \\ 
+8 & 9 & -4 \\ 
+-4 & 3 & a%
+\end{array}%
+\right\vert =10$. \ 
+
+\item Halle el valor de $a$ para que $\left\vert 
+\begin{array}{ccc}
+a & 4 & 1 \\ 
+8 & 9 & -4 \\ 
+0 & 3 & a%
+\end{array}%
+\right\vert =20$.
+
+\item Halle los valores de $x$ tales que $\det \left( \left( 
+\begin{array}{cc}
+2 & 4 \\ 
+1 & 5%
+\end{array}%
+\right) -x\left( 
+\begin{array}{cc}
+1 & 0 \\ 
+0 & 1%
+\end{array}%
+\right) \right) =0$.
+\end{enumerate}
+
+\subsection{Inversas de matrices $2\times 2$ y $3\times 3$}
+
+Sean $A,B$ matrices. Una matriz $B$ es inversa de $A$ si satisface las condiciones $AB=I$ y $BA=I$, donde $I$ es la matriz identidad. \ 
+
+La matriz identidad $2\times 2$ es $I=\left( 
+\begin{array}{cc}
+1 & 0 \\ 
+0 & 1
+\end{array}
+\right)$.
+
+La inversa de una matriz $A$, cuando existe, es única y se denota $A^{-1}$. 
+
+Cuando $A$ tiene inversa, se cumplen las ecuaciones $AA^{-1}=I$ y $A^{-1}A=I$.
+
+Una fórmula para la inversa de una matriz $2\times 2$ es:
+
+\begin{center}
+$\left( 
+\begin{array}{cc}
+a & b \\ 
+c & d
+\end{array}
+\right) ^{-1}=\frac{1}{ad-bc}\left( 
+\begin{array}{cc}
+d & -b \\ 
+-c & a
+\end{array}
+\right) ,$ $\ \ si$ $ad-bc\neq 0$
+\end{center}
+
+Si $ad-bc=0$ la matriz $\left( 
+\begin{array}{cc}
+a & b \\ 
+c & d
+\end{array}
+\right) $ no tiene inversa.
+
+Una fórmula para la inversa de una matriz $3\times 3$ es:
+
+Sea $A=\left( 
+\begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\ 
+a_{21} & a_{22} & a_{23} \\ 
+a_{31} & a_{32} & a_{33}%
+\end{array}%
+\right) $, supongamos que $\det \left( A\right) \neq 0$, entonces
+
+$\left( 
+\begin{array}{ccc}
+a_{11} & a_{12} & a_{13} \\ 
+a_{21} & a_{22} & a_{23} \\ 
+a_{31} & a_{32} & a_{33}%
+\end{array}%
+\right) ^{-1}$.
+
+$=\frac{1}{\det \left( A\right) }\left( 
+\begin{array}{ccc}
+\left\vert 
+\begin{array}{cc}
+a_{22} & a_{23} \\ 
+a_{32} & a_{33}%
+\end{array}%
+\right\vert & -\left\vert 
+\begin{array}{cc}
+a_{12} & a_{13} \\ 
+a_{32} & a_{33}%
+\end{array}%
+\right\vert & \left\vert 
+\begin{array}{cc}
+a_{12} & a_{13} \\ 
+a_{22} & a_{23}%
+\end{array}%
+\right\vert \\ 
+-\left\vert 
+\begin{array}{cc}
+a_{21} & a_{23} \\ 
+a_{31} & a_{33}%
+\end{array}%
+\right\vert & \left\vert 
+\begin{array}{cc}
+a_{11} & a_{13} \\ 
+a_{31} & a_{33}%
+\end{array}%
+\right\vert & -\left\vert 
+\begin{array}{cc}
+a_{11} & a_{13} \\ 
+a_{21} & a_{23}%
+\end{array}%
+\right\vert \\ 
+\left\vert 
+\begin{array}{cc}
+a_{21} & a_{22} \\ 
+a_{31} & a_{32}%
+\end{array}%
+\right\vert & -\left\vert 
+\begin{array}{cc}
+a_{11} & a_{12} \\ 
+a_{31} & a_{32}%
+\end{array}%
+\right\vert & \left\vert 
+\begin{array}{cc}
+a_{11} & a_{12} \\ 
+a_{21} & a_{22}%
+\end{array}%
+\right\vert%
+\end{array}%
+\right) $
+
+Si $\det \left( A\right) =0$, entonces $A$ no tiene inversa.
+
+\begin{example}
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item Halle la inversa de $A=\left( \begin{array}{cc} 5 & 9 \\  2 & 4\end{array}\right)$.
+        \item Halle la inversa de $B=\left(\begin{array}{ccc} 1 & 1 & 2 \\ 2 & 3 & 5 \\ 3 & 3 & 8 \end{array} \right)$. 
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item Usamos \ $\left(\begin{array}{cc} a & b \\ c & d \end{array} \right) ^{-1}=\frac{1}{ad-bc}\left(\begin{array}{cc} d & -b \\  -c & a \end{array} \right) $ \\$\left( \begin{array}{cc} 5 & 9 \\ 2 & 4\end{array} \right) ^{-1}=\frac{1}{20-18}\left(  \begin{array}{cc} 4 & -9 \\  -2 & 5 \end{array} \right) =\left(  \begin{array}{cc} 2 & -\frac{9}{2} \\  -1 & \frac{5}{2} \end{array} \right)$ \\ Prueba de la inversa \\ $AA^{-1}=\left(\begin{array}{cc} 5 & 9 \\ 2 & 4\end{array} \right) \left(\begin{array}{cc} 2 & -\frac{9}{2} \\ -1 & \frac{5}{2}\end{array} \right) =\left(\begin{array}{cc}1 & 0 \\ 0 & 1\end{array} \right)$
+        \item Usamos la fórmula
+\end{enumerate}
+$\left( 
+\begin{array}{ccc}
+b_{11} & b_{12} & b_{13} \\ 
+b_{21} & b_{22} & b_{23} \\ 
+b_{31} & b_{32} & b_{33}%
+\end{array}%
+\right) ^{-1}$
+
+$=\frac{1}{\det \left( B\right) }\left( 
+\begin{array}{ccc}
+\left\vert 
+\begin{array}{cc}
+b_{22} & b_{23} \\ 
+b_{32} & b_{33}%
+\end{array}%
+\right\vert & -\left\vert 
+\begin{array}{cc}
+b_{12} & b_{13} \\ 
+b_{32} & b_{33}%
+\end{array}%
+\right\vert & \left\vert 
+\begin{array}{cc}
+b_{12} & b_{13} \\ 
+b_{22} & b_{23}%
+\end{array}%
+\right\vert \\ 
+-\left\vert 
+\begin{array}{cc}
+b_{21} & b_{23} \\ 
+b_{31} & b_{33}%
+\end{array}%
+\right\vert & \left\vert 
+\begin{array}{cc}
+b_{11} & b_{13} \\ 
+b_{31} & b_{33}%
+\end{array}%
+\right\vert & -\left\vert 
+\begin{array}{cc}
+b_{11} & b_{13} \\ 
+b_{21} & b_{23}%
+\end{array}%
+\right\vert \\ 
+\left\vert 
+\begin{array}{cc}
+b_{21} & b_{22} \\ 
+b_{31} & b_{32}%
+\end{array}%
+\right\vert & -\left\vert 
+\begin{array}{cc}
+b_{11} & b_{12} \\ 
+b_{31} & b_{32}%
+\end{array}%
+\right\vert & \left\vert 
+\begin{array}{cc}
+b_{11} & b_{12} \\ 
+b_{21} & b_{22}%
+\end{array}%
+\right\vert%
+\end{array}%
+\right) $
+
+El siguiente sería el procedimiento usando la regla de Sarrus:
+
+$\det \left( B\right) =\left\vert 
+\begin{array}{ccccc}
+1 & 1 & 2 & 1 & 1 \\ 
+2 & 3 & 5 & 2 & 3 \\ 
+3 & 3 & 8 & 3 & 3%
+\end{array}%
+\right\vert =24+15+12-18-15-16=2$ y
+
+$\left( 
+\begin{array}{ccc}
+1 & 1 & 2 \\ 
+2 & 3 & 5 \\ 
+3 & 3 & 8%
+\end{array}%
+\right) ^{-1}$
+
+$=\frac{1}{2}\left( 
+\begin{array}{ccc}
+\left\vert 
+\begin{array}{cc}
+3 & 5 \\ 
+3 & 8%
+\end{array}%
+\right\vert & -\left\vert 
+\begin{array}{cc}
+1 & 2 \\ 
+3 & 8%
+\end{array}%
+\right\vert & \left\vert 
+\begin{array}{cc}
+1 & 2 \\ 
+3 & 5%
+\end{array}%
+\right\vert \\ 
+-\left\vert 
+\begin{array}{cc}
+2 & 5 \\ 
+3 & 8%
+\end{array}%
+\right\vert & \left\vert 
+\begin{array}{cc}
+1 & 2 \\ 
+3 & 8%
+\end{array}%
+\right\vert & -\left\vert 
+\begin{array}{cc}
+1 & 2 \\ 
+2 & 5%
+\end{array}%
+\right\vert \\ 
+\left\vert 
+\begin{array}{cc}
+2 & 3 \\ 
+3 & 3%
+\end{array}%
+\right\vert & -\left\vert 
+\begin{array}{cc}
+1 & 1 \\ 
+3 & 3%
+\end{array}%
+\right\vert & \left\vert 
+\begin{array}{cc}
+1 & 2 \\ 
+2 & 5%
+\end{array}%
+\right\vert%
+\end{array}%
+\right) $
+
+$=\frac{1}{2}\left( 
+\begin{array}{ccc}
+9 & -2 & -1 \\ 
+-1 & 2 & -1 \\ 
+-3 & 0 & 1%
+\end{array}%
+\right)$
+
+Prueba de la inversa
+
+$BB^{-1}=\left( 
+\begin{array}{ccc}
+1 & 1 & 2 \\ 
+2 & 3 & 5 \\ 
+3 & 3 & 8%
+\end{array}%
+\right) \frac{1}{2}\left( 
+\begin{array}{ccc}
+9 & -2 & -1 \\ 
+-1 & 2 & -1 \\ 
+-3 & 0 & 1%
+\end{array}%
+\right) =\left( 
+\begin{array}{ccc}
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1%
+\end{array}%
+\right)$
+
+\begin{center}
+\bigskip
+\end{center}
+
+\subsection{Ejercicios}
+Halle la inversa de cada matriz.
+\begin{enumerate}
+
+\item $\left( 
+\begin{array}{cc}
+4 & 5 \\ 
+3 & 4%
+\end{array}%
+\right) $
+
+\item $\left( 
+\begin{array}{cc}
+11 & 12 \\ 
+10 & 10%
+\end{array}%
+\right) $
+
+\item $\left( 
+\begin{array}{ccc}
+1 & 2 & 2 \\ 
+2 & 3 & 5 \\ 
+3 & 6 & 7%
+\end{array}%
+\right) $
+
+\item $\left( 
+\begin{array}{ccc}
+1 & 2 & 2 \\ 
+2 & 28 & 5 \\ 
+3 & 29 & 7%
+\end{array}%
+\right) $
+
+\item $\left( 
+\begin{array}{ccc}
+2 & 2 & 2 \\ 
+2 & 3 & 1 \\ 
+3 & 1 & 4%
+\end{array}%
+\right) $
+
+\item Halle una matriz $X$ de tamaño $2\times 2$ que cumpla:
+
+\begin{equation*}
+   \left( 
+\begin{array}{cc}
+1 & 2 \\ 
+1 & 3%
+\end{array}%
+\right) X=\left( 
+\begin{array}{cc}
+1 & 4 \\ 
+2 & 10%
+\end{array}%
+\right) 
+\end{equation*}
+
+
+\item Halle una matriz $X$ de tamaño $2\times 2$ que cumpla:
+
+\begin{equation*}
+    X\left( 
+\begin{array}{cc}
+1 & 2 \\ 
+1 & 3%
+\end{array}%
+\right) =\left( 
+\begin{array}{cc}
+10 & 9 \\ 
+2 & 1%
+\end{array}%
+\right)
+\end{equation*}
+
+
+\item Halle una matriz $X$ de tamaño $3\times 3$ que cumpla:
+
+\begin{equation*}
+    \left( 
+\begin{array}{ccc}
+1 & 2 & 2 \\ 
+2 & 3 & 1 \\ 
+2 & 4 & 5%
+\end{array}%
+\right) X=\left( 
+\begin{array}{ccc}
+3 & 2 & 2 \\ 
+2 & 0 & 1 \\ 
+-1 & 1 & 1%
+\end{array}%
+\right)
+\end{equation*}
+
+\item Halle una matriz $X$ de tamaño $3\times 3$ que cumpla:
+
+\begin{equation*}
+    X\left( 
+\begin{array}{ccc}
+1 & -1 & 1 \\ 
+1 & 0 & 1 \\ 
+2 & -2 & 3%
+\end{array}%
+\right) =\left( 
+\begin{array}{ccc}
+1 & 2 & 2 \\ 
+0 & 2 & 2 \\ 
+1 & 3 & 1%
+\end{array}%
+\right) 
+\end{equation*}
+\end{enumerate}
+
+\subsection{Producto cruz \ }
+
+El producto cruz es una operación vectorial definida únicamente en el espacio $\mathbb{R}^{3}.$
+
+El producto cruz resuelve el problema de dados dos vectores $u$ y $v$ de $\mathbb{R}^{3}$ como conseguir un vector $w$ perpendicular a $u$ y a $v$, como se ilustra en la figura \ref{fig:placeholder30}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Producto cruz de dos vectores}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S55.png}
+    \label{fig:placeholder30}
+\end{figure}
+
+\subsubsection{Fórmulas para calcular el producto cruz}
+
+\textbf{Primera forma con los vectores canónicos del espacio $\mathbb{R}^{3}$}
+
+Sean $i=\left( 1,0,0\right) ,j=\left( 0,1,0\right) ,k=\left( 0,0,1\right) $
+los vectores de la base canónica de $\mathbb{R}^{3}.$
+
+Para $X=\left( x_{1},x_{2},x_{3}\right) =x_{1}i+x_{2}j+x_{3}k$ $\ $y $\
+Y=\left( y_{1},y_{2},y_{3}\right) =y_{1}i+y_{2}j+y_{3}k$ vectores de $%
+\mathbb{R}^{3}$.
+
+Se puede definir la operación producto cruz de la siguiente forma:
+
+$X\times Y=\left\vert 
+\begin{array}{ccc}
+i & j & k \\ 
+x_{1} & x_{2} & x_{3} \\ 
+y_{1} & y_{2} & y_{3}%
+\end{array}%
+\right\vert $
+
+$\qquad =\left\vert 
+\begin{array}{cc}
+x_{2} & x_{3} \\ 
+y_{2} & y_{3}%
+\end{array}%
+\right\vert i-\left\vert 
+\begin{array}{cc}
+x_{1} & x_{3} \\ 
+y_{1} & y_{3}%
+\end{array}%
+\right\vert j+\left\vert 
+\begin{array}{cc}
+x_{1} & x_{2} \\ 
+y_{1} & y_{2}%
+\end{array}%
+\right\vert k$
+
+$\qquad =\left( x_{2}y_{3}-x_{3}y_{2},-\left( x_{1}y_{3}-x_{3}y_{1}\right)
+,x_{1}y_{2}-x_{2}y_{1}\right) $
+
+\textbf{Segunda manera. Como determinantes dos por dos consecutivos}
+
+Para calcular el producto cruz de esta forma, se escribe el primer vector en la primera fila y se repite a continuación. En la segunda fila, se escribe
+el segundo vector y también se repite. Luego, se marcan las flechas como se indica.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S56.png}
+\end{figure}
+
+La primera coordenada del producto cruz se obtiene restando el producto de los elementos que une la primera flecha descendente con los de la primera flecha ascendente. 
+
+La segunda coordenada del producto cruz es la resta del producto de los elementos que unen la segunda flecha descendente y los de la segunda flecha ascendente.
+
+Por último, la tercera coordenada del producto cruz es el producto de los elementos que une la tercera flecha descendente menos los de la tercera flecha ascendente:
+
+$X\times Y=\left( x_{1},x_{2},x_{3}\right) \times \left(
+x_{1},x_{2},x_{3}\right) $
+
+$
+\begin{tabular}{ccc}
+\qquad= &
+\includegraphics[width=0.5\textwidth, align=c]{Images/SDY12S57.png}
+
+\end{tabular} 
+$
+
+\qquad $=\left(
+x_{2}y_{3}-x_{3}y_{2},x_{3}y_{1}-x_{1}y_{3},x_{1}y_{2}-x_{2}y_{1}\right) $
+
+\begin{example}
+Si $X=\left( 1,3,5\right) ,Y=\left( 2,1,6\right) ,Z=\left( 3,1,-2\right) $,\ halle:
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+            \item $X\times Y$
+            \item $X\times Z$
+            \item $Y\times Z$
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+a) $X\times Y=\left\vert 
+\begin{array}{ccc}
+i & j & k \\ 
+1 & 3 & 5 \\ 
+2 & 1 & 6%
+\end{array}%
+\right\vert $
+
+$\qquad \qquad =\left\vert 
+\begin{array}{cc}
+3 & 5 \\ 
+1 & 6%
+\end{array}%
+\right\vert i-\left\vert 
+\begin{array}{cc}
+1 & 5 \\ 
+2 & 6%
+\end{array}%
+\right\vert j+\left\vert 
+\begin{array}{cc}
+1 & 3 \\ 
+2 & 1%
+\end{array}%
+\right\vert k$
+
+$\qquad \qquad =13i-\left( -4\right) j+\left( -5\right) k=\left(
+13,4,-5\right) $
+
+b) $X\times Z=\left\vert 
+\begin{array}{ccc}
+i & j & k \\ 
+1 & 3 & 5 \\ 
+3 & 1 & -2%
+\end{array}%
+\right\vert $
+
+$\qquad \qquad =\left\vert 
+\begin{array}{cc}
+3 & 5 \\ 
+1 & -2%
+\end{array}%
+\right\vert i-\left\vert 
+\begin{array}{cc}
+1 & 5 \\ 
+3 & -2%
+\end{array}%
+\right\vert j+\left\vert 
+\begin{array}{cc}
+1 & 3 \\ 
+3 & 1%
+\end{array}%
+\right\vert k$
+
+$\qquad \qquad =-11i-\left( -17\right) j+\left( -8\right) k=\left(
+-11,17,-8\right) $
+
+c) $Y\times Z=\left\vert 
+\begin{array}{ccc}
+i & j & k \\ 
+2 & 1 & 6 \\ 
+3 & 1 & -2%
+\end{array}%
+\right\vert $
+
+$\qquad \qquad =\left\vert 
+\begin{array}{cc}
+1 & 6 \\ 
+1 & -2%
+\end{array}%
+\right\vert i-\left\vert 
+\begin{array}{cc}
+2 & 6 \\ 
+3 & -2%
+\end{array}%
+\right\vert j+\left\vert 
+\begin{array}{cc}
+2 & 1 \\ 
+3 & 1%
+\end{array}%
+\right\vert k$
+
+$\qquad \qquad =-8i-\left( -22\right) j+\left( -1\right) k=\left(
+-8,22,-1\right) $
+
+\textbf{Propiedades del producto cruz}
+
+Sean $X,Y,Z$ vectores de $\mathbb{R}^{3}$ y $\alpha $ un escalar:
+
+\begin{enumerate}
+    \item $X\times 0=0$
+    \item $X\times Y$ es perpendicular a $X$ y a $Y$, es decir: \begin{center} $X\cdot \left( X\times Y\right) =0=Y\cdot \left( X\times Y\right) $\end{center}
+    \item $\left( \alpha X\right) \times Y=X\times \left( \alpha Y\right) =\alpha \left( X\times Y\right)$
+    \item $X\times Y=-Y\times X$
+    \item $X\times \left( Y\pm Z\right) =X\times Y\pm X\times Z$
+    \item $X\cdot \left( Y\times Z\right) =X\cdot \left( Y\times Z\right) =\left\vert \det \left[\begin{array}{c} X \\ Y \\ \text{ }Z \end{array} \right] \right\vert$ \\Este producto es llamado el triple producto escalar.
+    \item $X\times \left( Y\times Z\right) =\left( X\cdot Z\right) Y-\left( X\cdot Y\right) Z$
+    \item $\left\Vert X\times Y\right\Vert =\left\Vert X\right\Vert \left\Vert Y\right\Vert \sin \theta ,$ donde $\theta $ es el ángulo entre $X$ y $Y$
+    \item $\left\Vert X\times Y\right\Vert $ es el área del paralelogramo generado $p$
+    \item El valor de $\left\vert X\times \left( Y\cdot Z\right) \right\vert $ es el volumen del paralelepípedo generado por los vectores $X,Y$ y $Z$.
+\end{enumerate}
+
+\bigskip
+
+\textbf{Prueba de las propiedades}
+\begin{enumerate}
+\item
+\begin{align*}
+X\times 0=\left( x_{2}0-x_{3}0,x_{3}0-x_{1}0,x_{1}0-x_{2}0\right)\\&=\left( 0,0,0\right)\\&=0\in \mathbb{R}^{3}
+\end{align*}
+
+\item
+\begin{equation*}
+\begin{split}
+X\cdot \left( X\times Y\right)
+=\left( x_{1},x_{2},x_{3}\right) \cdot
+\left(
+x_{2}y_{3}-x_{3}y_{2},x_{3}y_{1}-x_{1}y_{3},x_{1}y_{2}-x_{2}y_{1}\right)
+=x_{1}x_{2}y_{3}-x_{1}x_{3}y_{2}+x_{2}x_{3}y_{1}-x_{2}x_{1}y_{3}+x_{3}x_{1}y_{2}-x_{3}x_{2}y_{1} 
+&=0
+\end{split}
+\end{equation*}
+De forma análoga se prueba que $Y\cdot \left( X\times Y\right) =0$.
+
+\item
+$\left( \alpha X\right) \times Y=\left\vert 
+\begin{array}{ccc}
+i & j & k \\ 
+\alpha x_{1} & \alpha x_{2} & \alpha x_{3} \\ 
+y_{1} & y_{2} & y_{3}%
+\end{array}%
+\right\vert $
+
+$\qquad \qquad =\alpha \left\vert 
+\begin{array}{ccc}
+i & j & k \\ 
+x_{1} & x_{2} & x_{3} \\ 
+y_{1} & y_{2} & y_{3}%
+\end{array}%
+\right\vert $
+
+$\qquad \qquad =\left\vert 
+\begin{array}{ccc}
+i & j & k \\ 
+x_{1} & x_{2} & x_{3} \\ 
+\alpha y_{1} & \alpha y_{2} & \alpha y_{3}%
+\end{array}%
+\right\vert $
+
+\item
+$X\times Y=\left\vert 
+\begin{array}{ccc}
+i & j & k \\ 
+x_{1} & x_{2} & x_{3} \\ 
+y_{1} & y_{2} & y_{3}%
+\end{array}%
+\right\vert $
+
+$\qquad \qquad =-\left\vert 
+\begin{array}{ccc}
+i & j & k \\ 
+y_{1} & y_{2} & y_{3} \\ 
+x_{1} & x_{2} & x_{3}%
+\end{array}%
+\right\vert $
+
+$\qquad \qquad =-Y\times X$
+
+\item
+$X\times \left( Y\pm Z\right) =\left\vert 
+\begin{array}{ccc}
+i & j & k \\ 
+x_{1} & x_{2} & x_{3} \\ 
+y_{1}\pm z_{1} & y_{2}\pm z_{2} & y_{3}\pm z_{3}%
+\end{array}%
+\right\vert $
+
+$\qquad \qquad =\left\vert 
+\begin{array}{ccc}
+i & j & k \\ 
+x_{1} & x_{2} & x_{3} \\ 
+y_{1} & y_{2} & y_{3}%
+\end{array}%
+\right\vert \pm \left\vert 
+\begin{array}{ccc}
+i & j & k \\ 
+x_{1} & x_{2} & x_{3} \\ 
+z_{1} & z_{2} & z_{3}%
+\end{array}%
+\right\vert $
+
+$\qquad \qquad =X\times Y\pm X\times Z$
+
+\item
+$\left( X\times Y\right) \cdot Z=\left\vert 
+\begin{array}{cccccc}
+x_{1} & x_{2} & x_{3} & x_{1} & x_{2} & x_{3} \\ 
+y_{1} & y_{2} & y_{3} & y_{1} & y_{2} & y_{3}%
+\end{array}%
+\right\vert \cdot Z$
+
+$\qquad \qquad \qquad =\left(
+x_{2}y_{3}-x_{3}y_{2},x_{3}y_{1}-x_{1}y_{3},x_{1}y_{2}-x_{2}y_{1}\right)
+\cdot \left( z_{1},z_{2},z_{3}\right) $
+
+$\qquad \qquad \qquad
+=x_{2}y_{3}z_{1}-x_{3}y_{2}z_{1}+x_{3}y_{1}z_{2}-x_{1}y_{3}z_{2}+x_{1}y_{2}z_{3}-x_{2}y_{1}z_{3} 
+$
+
+$\qquad \qquad \qquad =\left\vert 
+\begin{array}{ccccc}
+x_{1} & x_{2} & x_{3} & x_{1} & x_{2} \\ 
+y_{1} & y_{2} & y_{3} & y_{1} & y_{2} \\ 
+z_{1} & z_{2} & z_{3} & z_{1} & z_{2}%
+\end{array}%
+\right\vert =\det \left( 
+\begin{array}{ccc}
+x_{1} & x_{2} & x_{3} \\ 
+y_{1} & y_{2} & y_{3} \\ 
+z_{1} & z_{2} & z_{3}%
+\end{array}%
+\right) $
+
+$\qquad \qquad \qquad =x_{1}\left( y_{2}z_{3}-y_{3}z_{2}\right) +x_{2}\left(
+y_{3}z_{1}-y_{1}z_{3}\right) +x_{3}\left( y_{1}z_{2}-y_{2}z_{1}\right) $
+
+$\qquad \qquad \qquad =\left( x_{1},x_{2},x_{3}\right) \cdot \left(
+y_{2}z_{3}-y_{3}z_{2},y_{3}z_{1}-y_{1}z_{3},y_{1}z_{2}-y_{2}z_{1}\right) $
+
+$\qquad \qquad \qquad =\left( x_{1},x_{2},x_{3}\right) \cdot \left\vert 
+\begin{array}{cccccc}
+y_{1} & y_{2} & y_{3} & y_{1} & y_{2} & y_{3} \\ 
+z_{1} & z_{2} & z_{3} & z_{1} & z_{2} & z_{3}%
+\end{array}%
+\right\vert $
+
+$\qquad \qquad \qquad =X\cdot \left( Y\times Z\right) $
+
+\item
+$X\times \left( Y\times Z\right) =\left( X\cdot Z\right) Y-\left( X\cdot
+Y\right) Z$
+
+Desarrollamos los productos de ambos miembros por separado y vemos que producen el mismo vector.
+
+$X\times \left( Y\times Z\right) $
+
+$=\left( x_{1},x_{2},x_{3}\right) \times \left(
+y_{2}z_{3}-y_{3}z_{2},y_{3}z_{1}-_{2}y_{1}z_{3},y_{1}z_{2}-y_{2}z_{1}\right) 
+$
+
+$=\left\vert 
+\begin{array}{cccccc}
+x_{1} & x_{2} & x_{3} & x_{1} & x_{2} & x_{3} \\ 
+y_{2}z_{3}-y_{3}z_{2} & y_{3}z_{1}-y_{1}z_{3} & y_{1}z_{2}-y_{2}z_{1} & 
+y_{2}z_{3}-y_{3}z_{2} & y_{3}z_{1}-y_{1}z_{3} & y_{1}z_{2}-y_{2}z_{1}%
+\end{array}%
+\right\vert $
+
+$=\left( 
+\begin{array}{c}
+x_{2}\left( y_{1}z_{2}-y_{2}z\right) -x_{3}\left(
+y_{3}z_{1}-y_{1}z_{3}\right) ,x_{3}\left( y_{2}z_{3}-y_{3}z_{2}\right)
+-x_{1}\left( y_{1}z_{2}-y_{2}z_{1}\right) , \\ 
+\text{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ }x_{1}\left( y_{3}z_{1}-y_{1}z_{3}\right) -x_{2}\left(
+y_{2}z_{3}-y_{3}z_{2}\right)%
+\end{array}%
+\right) $
+
+$=\left( 
+\begin{array}{c}
+x_{2}y_{1}z_{2}-x_{2}y_{2}z_{1}+x_{3}y_{1}z_{3}-x_{3}y_{3}z_{1},x_{1}y_{2}z_{1}-x_{1}y_{1}z_{2}+x_{3}y_{2}z_{3}-x_{3}y_{3}z_{2},
+\\ 
+\text{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ }%
+x_{1}y_{3}z_{1}-x_{1}y_{1}z_{3}-x_{2}y_{2}z_{3}+x_{2}y_{3}z_{2}%
+\end{array}%
+\right) $
+
+$\left( X\cdot Z\right) Y-\left( X\cdot Y\right) Z=\left(
+x_{1}z_{1}+x_{2}z_{2}+x_{3}z_{3}\right) \left( y_{1},y_{2},y_{3}\right)
+-\left( x_{1}y_{1}+x_{2}y_{2}+x_{3}y_{3}\right) \left(
+z_{1},z_{2},z_{3}\right) $
+
+$=\left( x_{1}z_{1}+x_{2}z_{2}+x_{3}z_{3}\right) \left(
+y_{1},y_{2},y_{3}\right) -\left( x_{1}y_{1}+x_{2}y_{2}+x_{3}y_{3}\right)
+\left( z_{1},z_{2},z_{3}\right) $
+
+$=\left( 
+\begin{array}{c}
+x_{2}y_{1}z_{2}-x_{2}y_{2}z_{1}+x_{3}y_{1}z_{3}-x_{3}y_{3}z_{1},x_{1}y_{2}z_{1}-x_{1}y_{1}z_{2}+x_{3}y_{2}z_{3}-x_{3}y_{3}z_{2},
+\\ 
+\text{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ }%
+x_{1}y_{3}z_{1}-x_{1}y_{1}z_{3}-x_{2}y_{2}z_{3}+x_{2}y_{3}z_{2}%
+\end{array}%
+\right) \allowbreak $
+
+\item
+$\left\Vert X\times Y\right\Vert =\left\Vert X\right\Vert \left\Vert
+Y\right\Vert \sin \theta ,$ donde $\theta $ es el ángulo entre $X$ y $Y.$
+
+$\left\Vert X\times Y\right\Vert ^{2}=\left( X\times Y\right) \cdot \left(
+X\times Y\right) $
+
+$=X\cdot \left( Y\times \left( X\times Y\right) \right) =X\cdot \left(
+\left( Y\cdot Y\right) X-\left( Y\cdot X\right) Y\right) $
+
+$=\left( Y\cdot Y\right) \left( X\cdot X\right) -\left( Y\cdot X\right)
+\left( X\cdot Y\right) $
+
+$=\left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}-\left( X\cdot
+Y\right) ^{2}$
+
+$=\left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}-\left\Vert
+X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}\frac{\left( X\cdot Y\right)
+^{2}}{\left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}}$
+
+$=\left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}\left( 1-\cos
+^{2}\theta \right) $, donde $\theta $ es el ángulo entre $X$ y $Y$.
+
+$=\left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}\sin ^{2}\theta $
+
+De aquí se tiene que
+
+$\left\Vert X\times Y\right\Vert =\left\Vert X\right\Vert \left\Vert
+Y\right\Vert \sin \theta $
+
+\item
+$\left\Vert X\times Y\right\Vert $ es el área del paralelogramo generado
+por $X,Y.$
+
+\begin{figure}[H]
+    \centering
+    \caption{Área del paralelogramo generado por dos vectores}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S58.png}
+    \label{fig:placeholder31}
+\end{figure}
+
+De la figura \ref{fig:placeholder31}, se cumple que el área del paralelogramo es:
+
+$A=bh=\left\Vert X\right\Vert \left\Vert Y\right\Vert \sin \theta
+=\left\Vert X\times Y\right\Vert $
+
+\item
+$\left\vert X\cdot \left( Y\times Z\right) \right\vert =\left\vert \det %
+\left[ X\text{ }Y\text{ }Z\right] \right\vert $
+
+El valor de $\left\vert X\cdot \left( Y\times Z\right) \right\vert $ es el volumen del paralelepípedo generado por los vectores $X,Y$ y $Z.$
+
+La prueba de este resultado la comenzamos con la siguiente figura:
+
+\begin{figure}[H]
+    \centering
+    \caption{Volumen del paralelepípedo generado por tres vectores}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S59.png}
+    \label{fig:placeholder32}
+\end{figure}
+
+
+El volumen de un paralelepípedo que se muestra en la figura \ref{fig:placeholder32}, es el área de su base por la altura.
+
+$Vol=A_{b}h$
+
+$=\left\Vert X\times Y\right\Vert h$
+
+$=\left\Vert X\times Y\right\Vert \left\Vert \Pr oy_{X\times Y}Z\right\Vert $
+
+$=\left\Vert X\times Y\right\Vert \left\Vert \frac{\left( X\times Y\right)
+\cdot Z}{\left\Vert X\times Y\right\Vert ^{2}}\left( X\times Y\right)
+\right\Vert $
+
+$=\left\Vert X\times Y\right\Vert \frac{\left\vert \left( X\times Y\right)
+\cdot Z\right\vert }{\left\Vert X\times Y\right\Vert ^{2}}\left\Vert \left(
+X\times Y\right) \right\Vert $
+
+$=\left\vert X\cdot \left( Y\times Z\right) \right\vert $
+\end{enumerate}
+
+\subsection{Ejercicios}
+
+\begin{enumerate}
+    \item Sean $X=\left( 2,2,3\right) ,Y=\left( 4,4,2\right) $ y $Z=\left( 5,3,1\right)$, calcule:
+    \begin{enumerate}
+        \item $X\times Y\qquad \qquad $
+        \item $X\times Z\qquad \qquad $
+        \item $Y\times Z$
+    \end{enumerate}
+    \item Sean $P=\left( 8,4,5\right) ,Q=\left( -3,7,9\right) $ y $R=\left( 11,-2,6 \right)$ tres puntos y $T$ el triángulo con vértices $PQR$, halle:
+    \begin{enumerate}
+        \item $\overrightarrow{PQ}\times \overrightarrow{PR}\qquad \qquad $
+        \item $\overrightarrow{PQ}\times \overrightarrow{QR}\qquad \qquad $
+        \item $\overrightarrow{PR}\times \overrightarrow{QR}$
+    \end{enumerate}
+    \item Sean $X=\left( 1,1,3\right) ,Y=\left( 4,3,7\right) $ y $Z=\left(8,3,4\right)$, calcule:
+    \begin{enumerate}
+        \item $\left\Vert X\times Y\right\Vert \qquad \qquad $
+        \item $\left\Vert X\times Z\right\Vert \qquad \qquad $
+        \item $\left\Vert Y\times Z\right\Vert$
+    \end{enumerate}
+    \item Halle un vector perpendicular a $\left( 1,3,5\right) $ y $\left(4,2,6\right)$.
+    \item Encuentre un vector perpendicular a los vectores $\left( 2,1,3\right) $ y $\left( -1,2,4\right)$.
+    \item Halle dos vectores unitarios y de distinta dirección perpendiculares a $\left( -1,2,6\right) $ y $\left( 3,4,7\right)$.
+\end{enumerate}

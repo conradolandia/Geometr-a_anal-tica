@@ -1,0 +1,3070 @@
+\chapter{Rectas y planos}
+
+Las rectas y los planos son conceptos geométricos fundamentales que permiten describir y analizar las formas y estructuras en el espacio tridimensional.
+
+Una recta es una línea infinita, sin principio ni fin, que puede representarse mediante dos puntos en un plano o a través de una ecuación algebraica que describe su posición en un sistema de coordenadas. Una recta tiene dos direcciones opuestas y es clave en la geometría analítica para describir y estudiar relaciones lineales, como ecuaciones y funciones lineales.
+
+Un plano, por otro lado, es una superficie plana que se extiende infinitamente en dos direcciones perpendiculares entre sí. Puede representarse mediante tres puntos no colineales en el espacio tridimensional o con una ecuación algebraica que describa su posición en un sistema de coordenadas tridimensionales. Los planos son fundamentales en áreas como la geometría analítica, la física y la arquitectura, donde se utilizan para describir superficies, como pisos, paredes y techos de edificios, así como analizar relaciones geométricas más complejas, como ángulos, intersecciones y áreas.
+
+Las rectas y los planos son herramientas esenciales para el estudio y análisis de objetos y estructuras en el espacio tridimensional. Se aplican en diversos campos, como en el diseño y la construcción de edificios, la representación de objetos en modelos 3D en informática gráfica, y en la descripción matemática de fenómenos físicos y geométricos en la ciencia e ingeniería. Comprender sus características, propiedades y relaciones resulta fundamental para el estudio y aplicación de la geometría en distintas disciplinas y contextos.
+
+Este capítulo presentan los conceptos, propiedades y ejemplos de las rectas en el plano cartesiano, las rectas en el espacio y los planos en $\mathbb{R}^{3}$.  Para las rectas en el plano y en el espacio, se muestra cómo encontrar sus ecuaciones, ángulos, puntos de intersección, se explican los conceptos de paralelismo, perpendicularidad, distancia de un punto a recta, punto plano, entre dos rectas. Para los planos en el espacio, se determinan sus ecuaciones, el cálculo de ángulos entre planos, la intersección entre ellos y cómo hallar la distancia de un punto a un plano, entre dos planos, entre dos rectas y entre una recta y un plano.
+
+\section{Rectas en el plano}
+
+En el plano, una recta se representa analíticamente como la gráfica de una ecuación lineal o de primer grado en dos variables.
+
+Para determinar completamente una recta, es necesario conocer dos condiciones, como dos de sus puntos o un punto y su dirección (pendiente o coeficiente angular).
+
+\subsection{Ecuación general de la recta}
+
+La ecuación general de la recta es $Ax+By+C=0$ donde $A,B,C$ son números reales.
+
+Si $A=0,B\neq 0$, la recta toma la forma $y=c$ \ y es una recta horizontal.
+
+Si $A\neq 0,B=0$, la recta toma la forma $x=d$ \ y es una recta vertical.
+
+Si $P$ y $Q$ son dos puntos que pertenecen a una recta $L$, esta recta se denota por $\overleftrightarrow{PQ}$.
+
+El segmento de recta que une los dos puntos $P$ y $Q$ se denota por $\overline{PQ}$.
+
+La semirrecta que parte del punto $P$ contiene al punto $Q$, se denota por $\overrightarrow{PQ}$ y se ilustran en la figura \ref{fig:placeholder2.1}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Segmento, semirrecta y recta que pasa por dos puntos}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5A.png}
+    \label{fig:placeholder2.1}
+\end{figure}
+
+\bigskip
+
+La pendiente de una recta, denotada por $m$, mide su inclinación entre la recta y cualquier recta horizontal, en particular, el eje $X$, como se muestra en la figura \ref{fig:placeholder2.2}. Más
+precisamente:
+
+\begin{center}
+$m=\tan \theta $
+\end{center}
+
+Donde $\theta $ es el ángulo formado por la recta con el eje $X$.
+
+\begin{figure}[H]
+    \centering
+    \caption{Pendiente de una recta}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5B.png}
+    \label{fig:placeholder2.2}
+\end{figure}
+
+Fórmula para la pendiente de la recta que pasa por los puntos $P=\left(x_{1},y_{1}\right) $ y $Q=\left( x_{2},y_{2}\right) $ .
+
+La pendiente de una recta es $m=\frac{cambio\text{ en y}}{cambio\text{ en x}}=%
+\frac{\triangle y}{\triangle x}=\frac{y_{2}-y_{1}}{x_{2}-x_{1}}$.
+\begin{figure}[H]
+    \centering
+    \caption{Pendiente de la recta que pasa por dos puntos}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5C.png}
+    \label{fig:placeholder2.3}
+\end{figure}
+
+Para probar esta fórmula, usamos el triángulo de la figura \ref{fig:placeholder2.3} y la relación trigonométrica tangente.
+
+Si $\theta $ es el ángulo entre la horizontal y la recta,
+
+\begin{center}
+$m=\tan \theta =\frac{\text{cateto opuesto}}{\text{cateto adyacente}}=\frac{%
+\triangle y}{\triangle x}=\frac{y_{2}-y_{1}}{x_{2}-x_{1}}$
+\end{center}
+
+\subsubsection{Ecuación de la recta pendiente intercepto}
+
+La ecuación de la recta pendiente intercepto es $y=mx+b$, donde$\ \left(
+0,b\right) $ es el punto de corte con el eje $Y$ como se ve en la figura \ref{fig:placeholder2.4}.
+\begin{figure}[H]
+    \centering
+    \caption{Recta pendiente-intercepto}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5D.png}
+    \label{fig:placeholder2.4}
+\end{figure}
+
+\subsubsection{Ecuación punto pendiente}
+
+Si $m$ es la pendiente de una recta y $\left( x_{1},y_{1}\right) $ es un
+punto sobre la recta, la ecuación punto pendiente es: 
+
+\begin{center}
+$y=m\left( x-x_{1}\right) +y_{1}$
+\end{center}
+
+\subsubsection{Ecuación simétrica de la recta}
+
+Sean $a\neq 0$ y $b\neq 0$, los segmentos de una recta determinada sobre los ejes $X$ y $Y$, es decir, sus intersecciones con los ejes coordenados son $(a,0) $ y $(0,b)$, la pendiente de esta recta es $m=-\frac{b}{a}$ y el corte con el eje $y$ es $(0,b)$; luego, la ecuación es:
+
+$y=-\frac{b}{a}x+b$
+
+$\frac{b}{a}x+y=b$ $\ $ se divide entre $b$ cada término.
+
+$\frac{x}{a}+\frac{y}{b}=1$.
+
+La ecuación simétrica de la recta que pasa por $(a,0)$ y $(0,b)$ es $\frac{x%
+}{a}+\frac{y}{b}=1$ como se ilustra en la figura \ref{fig:placeholder2.5}.
+\begin{figure}[H]
+    \centering
+    \caption{Ecuación simétrica de la recta}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5E.png}
+    \label{fig:placeholder2.5}
+\end{figure}
+
+\subsubsection{Ángulo entre rectas}
+
+Si $L_{1}$ y $L_{2}$ son dos rectas con ecuaciones $L_{1}:y=m_{1}x+b_{1}$, $L_{2}:y=m_{2}x+b_{2},$ hay dos ángulos entre las rectas $\alpha $ y $\beta $ con la condición $\alpha +\beta =180^{0}$ ($\alpha $ y $\beta $ son suplementarios) como se ve en la figura \ref{fig:placeholder2.6}.
+\begin{figure}[H]
+    \centering
+    \caption{Ángulos entre dos rectas}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5F.png}
+    \label{fig:placeholder2.6}
+\end{figure}
+
+La pendiente de una recta es la tangente del ángulo formado por la recta y el eje $X$, o cualquier recta horizontal; luego, $\tan \theta _{1}=m_{1}$ y $\tan \theta _{2}=m_{2},$ de donde\ \ $\theta _{1}=\tan ^{-1}\left(m_{1}\right) $ y\ $\theta _{2}=\tan ^{-1}\left( m_{2}2\right) $, así el ángulo $\alpha $ entre $L_{1}$ y\ $L_{2}$ es:
+
+\begin{center}
+  $\alpha =\theta _{2}-\theta _{1}=\tan ^{-1}\left( m_{2}\right) -\tan
+^{-1}\left( m_{1}\right) $ \ \ y \ $\beta =180^{0}-\alpha$  
+\end{center}
+
+
+Por otro lado, al aplicar la tangente en ambos miembros de $\alpha =\theta_{2}-\theta _{1}$, se obtiene:
+
+$\tan \alpha =\tan \left( \theta _{2}-\theta _{1}\right) $ \ 
+
+Al usar la identidad para la tangente de una diferencia:
+
+$\tan \alpha =\frac{\tan \theta _{2}-\tan \theta _{1}}{1+\tan \theta
+_{2}\tan \theta _{1}}.$ $\ $Así que $\tan \alpha =\frac{m_{2}-m_{1}}{%
+1+m_{2}m_{1}}.$
+
+Dos rectas con ecuaciones $y=m_{1}x+b_{1}$ y $y=m_{2}x+b_{2}$ son paralelas si el ángulo entre ellas es $0$, de manera que
+
+$\tan ^{-1}\left( m_{1}\right) -\tan ^{-1}\left( m_{1}\right) =0$, entonces $\tan ^{-1}\left( m_{1}\right) =\tan ^{-1}\left( m_{2}\right) $ y $m_{1}=m_{2} $.
+
+Por lo tanto, dos rectas son paralelas si tienen igual pendiente.
+
+Dos rectas con ecuaciones $y=m_{1}x+b_{1}$ y $y=m_{2}x+b_{2}$ son
+perpendiculares si el ángulo entre ellas es $90^{0}=\frac{\pi }{2}$ radianes.
+
+De $\tan \alpha =\frac{m_{2}-m_{1}}{1+m_{2}m_{1}}$, usando recíprocos, se
+tiene $\cot \alpha =\frac{1+m_{1}m_{2}}{m_{2}-m_{1}}$, de forma que si $L_{1}$ es perpendicular a $L_{2}$, entonces el ángulo entre ellas es $\alpha =\frac{\pi 
+}{2}$, por tanto $\frac{1+m_{1}m_{2}}{m_{2}-m_{1}}=\cot \frac{\pi }{2}=0$ y $m_{1}m_{2}=-1.$
+
+Así que las rectas con ecuaciones $y=m_{1}x+b_{1}$ y $y=m_{2}x+b_{2}$, son perpendiculares si el producto de sus pendientes es $-1$, es decir, si $m_{2}=-\frac{1}{m_{1}}$, donde $m_{1}\neq 0$.
+
+
+\begin{example}
+Halle el menor ángulo entre las rectas $L_{1}$, que pasa por (1,1) y (2,3), y $L_{2}$, que pasa por $(1,-2)$ y $(2,-5)$.
+\end{example}
+
+\textbf{Solución}
+
+Sean $L_{1}$ la recta que pasa por (1,1) y (2,3), $L_{2}$ la recta que pasa por (1,-2) y (2,-5), la pendiente de la recta $L_{1}$ es $m=\frac{\triangle y}{\triangle x}=%
+\frac{3-1}{2-1}=2.$
+
+Usando la ecuación punto pendiente, la ecuación de la recta $L$ es:
+
+$y=m\left( x-x_{1}\right) +y_{1}$
+
+$y=2\left( x-1\right) +1\qquad $
+
+$y=2x-2+1\qquad $
+
+$L_{1}:y=2x-1\qquad $
+
+La pendiente de la recta $L_{2}$ es$:m=\frac{\triangle y}{\triangle x}=\frac{-5-\left( -2\right) }{2-1}=\frac{-3}{1}=-3$
+
+Usando la ecuación punto pendiente, la ecuación de la recta $L_{2}$ es:
+
+$y=m\left( x-x_{1}\right) +y_{1}$
+
+$y=-3\left( x-1\right) -2$
+
+$y=-3x+3-2$
+
+$L_{2}:y=-3x+1$
+
+El ángulo mayor entre las rectas $L_{1}$ y $L_{2}$\ es:
+
+\begin{center}
+$\angle \left( L_{1},L_{2}\right) =\tan ^{-1}\left( 2\right) -\tan
+^{-1}\left( -3\right) =135^{0}$
+\end{center}
+Y el menor ángulo es $45^{0}$.
+La figura \ref{fig:placeholder2.7} muestra la gráfica de las rectas y sus ángulos.
+\begin{figure}[H]
+    \centering
+    \caption{Menor ángulo entre las rectas  $L_{1}$ y $L_{2}$}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5G.png}
+    \label{fig:placeholder2.7}
+\end{figure}
+
+\subsubsection{Punto de intersección de dos rectas}
+
+Para determinar analíticamente el punto de intersección de dos rectas, se resuelve el sistema formado por sus ecuaciones.
+
+\begin{example}
+Halle analíticamente el punto de corte de las rectas con ecuaciones $L_{1}$:$y=3x-2$\ y $L_{2}:y=-2x+5$.
+\end{example}
+
+\textbf{Solución}
+Se restan las ecuaciones de las rectas término a término:
+
+$
+\begin{array}{l}
+L_{1}:y=3x-2 \\ 
+L_{2}:y=-2x+5%
+\end{array}%
+$
+
+$L_{2}-L_{1}:0=-5x+7$ \ \ 
+
+Si se soluciona $x$, se obtiene$:$
+
+$5x=7\,\ $así que $\ x=\frac{7}{5}.$
+
+Si se reemplaza $x=\frac{7}{5}$ en $L_{1}$,
+
+$L_{1}:y=3x-2=3\left( \frac{7}{5}\right) -2=\frac{21}{5}-2=\frac{11}{5}$
+
+De esta forma, el punto de intersección es $\left( \frac{7}{5},\frac{11}{5}\right)$.
+
+En la figura \ref{fig:placeholder2.8}, se muestran las rectas y el punto de intersección.
+
+\begin{figure}[H]
+    \centering
+    \caption{Punto de intersección de dos rectas}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5H.png}
+    \label{fig:placeholder2.8}
+\end{figure}
+
+\subsubsection{Distancia entre un punto y una recta}
+
+\begin{example}
+Halle la distancia entre el punto $P=\left( 1,2\right) $ y la recta $L$ con
+ecuación $y=2x-1.$
+\end{example}
+
+\textbf{Solución}
+
+i) Se halla la ecuación de la recta $L_{\bot }$ perpendicular a $L$, que pasa por $P=\left( 1,2\right)$.
+
+La pendiente de la recta perpendicular a $L$ es $m=-\frac{1}{2}$.
+
+Usamos la ecuación punto pendiente y obtenemos la ecuación de $L_{\bot }$:
+
+$y=-\frac{1}{2}\left( x-1\right) +2$
+
+$y=-\frac{1}{2}x+\frac{1}{2}+2$
+
+$y=-\frac{1}{2}x+\frac{5}{2}$
+
+Así, la ecuación de la recta perpendicular a $L$\ es \ $L_{\bot }:y=-\frac{1}{2}x+\frac{5}{2}$.
+
+ii) Se determina el punto de corte entre $L$ y $L_{\bot }$.
+
+$%
+\begin{array}{l}
+L:y=2x-1 \\ 
+L_{\bot }:y=-\frac{1}{2}x+\frac{5}{2}%
+\end{array}%
+$
+
+Se restan las ecuaciones de las rectas término a término:
+
+$L_{\bot }-L:0=-\frac{5}{2}x+\frac{7}{2}$ \ \ 
+
+Al solucionar para $x$, se obtiene$:$
+
+$\frac{5}{2}x=\frac{7}{2}$, así que $x=\frac{7}{5}$.
+
+Y, al reemplazar $x=\frac{7}{5}$ en $L$ resulta que
+
+$L_{1}:y=2x-1=2\left( \frac{7}{5}\right) -1=\frac{9}{5}$
+
+De esta forma, se obtiene que el punto de intersección es $Y=\left( \frac{7}{5},\frac{9}{5}\right)$.
+
+\begin{figure}[H]
+    \centering
+    \caption{Distancia punto recta}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5I.png}
+    \label{fig:placeholder2.9}
+\end{figure}
+
+iii) La distancia entre $P$ y $L$ es la distancia entre los puntos $P$ y $Y$.
+
+$d\left( P,Y\right) =\sqrt{\left( \triangle x\right) ^{2}+\left( \triangle
+y\right) ^{2}}=\sqrt{\left( 1-\frac{7}{5}\right) ^{2}+\left( 2-\frac{9}{5}%
+\right) ^{2}}=\frac{1}{5}\sqrt{5}\approx 0.447\,21.$\\
+La figura \ref{fig:placeholder2.9} ilustra la distancia entre el punto $P$ y la recta $L$.
+\subsection{Ejercicios}
+
+\begin{enumerate}
+    \item Encuentre la ecuación punto - intercepto de la recta que pasa por (-1,-5) y (7,-2).
+    \item Encuentre la ecuación general de la recta que pasa por (2,5) y (1,-1).
+    \item Encuentre la ecuación simétrica de la recta que pasa por (-2,3) y (1,-2).
+    \item Encuentre la ecuación punto - intercepto de la recta que pasa por (8,7) y paralela a la recta $5x-3y=6$.
+    \item Encuentre la ecuación punto - intercepto de la recta que pasa por (-2,7) y paralela a la recta $-2x-y=4$.
+    \item Encuentre la ecuación punto - intercepto de la recta que pasa por (4,7) y perpendicular a la recta $8x+6y=6$.
+    \item Encuentre la ecuación punto - intercepto de la recta que corta perpendicularmente a la recta $2x-y=5$ en el punto (3,1). \\ \\ Para los ejercicios 7 a 9, tenga en cuenta lo siguiente: sea  $L$ la recta que pasa por (1,1) y (2,3), $M$ la recta que pasa por (1,-2) y (2,-5), y $N$ la recta que pasa por los puntos (-1,-4) y (-2,1). Además, considere los puntos $P$ =(1,2) y $Q$ =(3,3).
+    \item Halle el punto de intersección entre las rectas dadas.
+    \begin{enumerate}
+        \item $L$ y $M$
+        \item $L$ y $N$
+        \item $M$ y $N$
+    \end{enumerate}
+    \item Halle los ángulos entre las rectas dadas. \
+    \begin{enumerate}
+        \item $L$ y $M$
+        \item $L$ y $N$
+        \item $M$ y $N$
+    \end{enumerate}
+    \item Halle las distancias entre el punto y la recta. \
+    \begin{enumerate}
+        \item $P$ y $L$
+        \item $Q$ y $M$
+        \item $P$ y $N$ \\ Sea $T$ el triángulo con vértices $A=\left( 2,3\right) ,B=\left( 6,-4\right)$ \ y \ $C=\left( 8,5\right) $
+    \end{enumerate}
+    \item Halle la ecuación de la recta que pasa por $A=\left( 2,3\right) $ y por el punto medio de $\overline{BC}$.
+    \item Halle la ecuación general de la recta que pasa por $A=\left(2,3\right) $ y es perpendicular a $\overleftrightarrow{BC}$.
+    \item Halle la ecuación general de la recta que pasa por $B=\left(6,-4\right) $ y es perpendicular a $\overleftrightarrow{AC}$.
+    \item Halle la ecuación general de la recta que pasa por el punto medio del segmento $\overline{BC}$ y es perpendicular a $\overleftrightarrow{BC}$.
+\end{enumerate}
+
+
+\section{Rectas en el espacio $\mathbb{R}^{3}$}
+
+Para determinar una recta en el espacio, es necesario tener un punto por donde pasa la recta y un vector que indique la dirección de la recta.
+
+La ecuación vectorial de la recta que pasa por un punto $P$ y tiene como vector director $v$ es:
+
+\begin{center}
+    $X=tv+P,$ \ $-\infty <t<\infty$
+\end{center}
+
+
+\begin{figure}[H]
+    \centering
+    \caption{Ecuación vectorial de una recta}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5J.png}
+    \label{fig:placeholder2.10}
+\end{figure}
+
+La figura \ref{fig:placeholder2.10} ilustra como se obtiene cada punto $X$ sobre la recta usando la ley del paralelogramo.
+
+Al escribir esta ecuación con las coordenadas $X=\left( x,y,z\right) ,v=\left( a,b,c\right)$, $P=\left( x_{0},y_{0},z_{0}\right)$, tenemos:
+
+$X=tv+P$
+
+$\left( x,y,z\right) =t\left( a,b,c\right) +\left( x_{0},y_{0},z_{0}\right) $
+
+$\left( x,y,z\right) =\left( at+x_{0},bt+y_{0},ct+z_{0}\right) $
+
+Al igualar las coordenadas, se obtienen las ecuaciones paramétricas de la recta:
+
+$\left\{ 
+\begin{array}{c}
+x=at+x_{0} \\ 
+y=bt+y_{0} \\ 
+z=ct+z_{0}%
+\end{array}%
+\right. $ $-\infty <t<\infty $
+
+Si $a\neq 0,b\neq 0$ y $c\neq 0$, al despejar $t$ en cada ecuación y luego igualar, obtenemos las ecuaciones simétricas de la recta:
+
+$\frac{x-x_{0}}{a}=\frac{y-y_{0}}{b}=\frac{z-z_{0}}{c}$
+
+\begin{example}
+Halle las ecuaciones de la recta que pasan por los puntos $P=\left( 5,3,8\right) $ y $Q=\left( 8,5,11\right)$.
+\end{example}
+
+\textbf{Solución}
+
+Punto =\,$P=\left( 
+\begin{array}{c}
+5 \\ 
+3 \\ 
+8%
+\end{array}%
+\right) $, de la figura \ref{fig:placeholder2.11} el vector director $v=\overrightarrow{PQ}=Q-P=\left( 
+\begin{array}{c}
+3 \\ 
+2 \\ 
+3%
+\end{array}%
+\right) $
+
+\begin{figure}[H]
+    \centering
+    \caption{Ecuación de recta que contiene dos puntos}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5K.png}
+    \label{fig:placeholder2.11}
+\end{figure}
+
+Ecuación vectorial $X=tv+P:\qquad \left( 
+\begin{array}{c}
+x \\ 
+y \\ 
+z%
+\end{array}%
+\right) =t\left( 
+\begin{array}{c}
+3 \\ 
+2 \\ 
+3%
+\end{array}%
+\right) +\left( 
+\begin{array}{c}
+5 \\ 
+3 \\ 
+8%
+\end{array}%
+\right) $
+
+Ecuaciones paramétricas: $L$:$\left\{ 
+\begin{array}{c}
+x=3t+5 \\ 
+y=2t+3 \\ 
+z=3t+8%
+\end{array}%
+\right. t\in \mathbb{R}$.
+
+Las ecuaciones simétricas se obtienen al despejar $t$ en cada una de las ecuaciones paramétricas e
+igualarlas:
+
+$\frac{x-5}{3}=\frac{y-3}{2}=\frac{z-8}{3}$
+
+Para verificar fácilmente la pertenencia de puntos a una recta, se usan las ecuaciones simétricas.
+
+\begin{example}
+¿Cuáles de los siguientes puntos pertenecen a la recta $L$ del ejemplo anterior? 
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item $\left( 17,11,20\right)$
+        \item $\left( -4,-3,-2\right)$
+        \item $\left( -10,-7,-7\right)$
+        \item $\left( 65,43,69\right)$
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+Se deben reemplazar las coordenadas $x,y,z$ del punto por las variables en las ecuaciones simétricas de la recta $L$: $\frac{x-5}{3}=\frac{y-3}{2}\frac{%
+z-8}{3}$.
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item $\left( \underset{x}{17},\underset{y}{11},\underset{z}{20}\right) \rightarrow \frac{17-5}{3}=\frac{11-3}{2}=\frac{20-8}{3}\rightarrow 4=4=4$ \\ Como todas las igualdades se satisfacen, el punto pertenece a $L$.
+        \item $\left( \underset{x}{-4},\underset{y}{-3},\underset{z}{-2}\right) $ $\rightarrow \frac{-4-5}{3}=\frac{-3-3}{2}=\frac{-2-8}{3}\rightarrow-3=-3\neq -\frac{10}{3}$ \\Como no todas las igualdades se satisfacen, el punto no pertenece a $L$.
+        \item $\left( -10,-7,-7\right) \rightarrow \frac{-10-5}{3}=\frac{-7-3}{2}=\frac{-7-8}{3}\rightarrow -5=-5=-5$ \\ Como todas las igualdades se satisfacen, el punto pertenece a $L$.
+        \item $\left( 65,43,69\right) \rightarrow \frac{65-5}{3}=\frac{43-3}{2}=\frac{69-8}{3}\rightarrow 20=20\neq \frac{61}{3}$ \\ Como no todas las igualdades se satisfacen, el punto no pertenece a $L$.
+\end{enumerate}
+
+
+\begin{example}
+Intersección de rectas y ángulo
+
+Sean $L_{1}:\left\{ 
+\begin{array}{c}
+x=2t+2 \\ 
+y=3t+1 \\ 
+z=t-1%
+\end{array}%
+\right. $y $L_{2}:\left\{ 
+\begin{array}{c}
+x=3t+10 \\ 
+y=2t+3 \\ 
+z=t+1
+\end{array}
+\right. $
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item Halle el punto de intersección de las rectas (si se cortan).
+        \item Halle el ángulo entre las rectas.
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+a) Cambiamos el parámetro $t$ por $s$ en alguna de las dos rectas (en $L_{2}$) e igualamos las coordenadas $x$,$y$ y $z$, y resolvemos el sistema:
+
+$L_{1}:\left\{ 
+\begin{array}{c}
+x=2t+2 \\ 
+y=3t+1 \\ 
+z=t-1%
+\end{array}%
+\right. ,$ $L_{2}:\left\{ 
+\begin{array}{c}
+x=3s+10 \\ 
+y=2s+3 \\ 
+z=s+1%
+\end{array}%
+\right. $
+
+Se igualan las coordenadas correspondientes para obtener el siguiente sistema.
+
+$%
+\begin{array}{l}
+\left( E_{1}\right) :3s+10=2t+2 \\ 
+\left( E_{2}\right) :2s+3=3t+1 \\ 
+\left( E_{3}\right) :s+1=t-1%
+\end{array}%
+$
+
+$\left( E_{3}\right) :s=t-2$ se reemplaza en $E_{1}$ y $E_{2}$.
+
+$%
+\begin{array}{l}
+\left( E_{1}\right) :3\left( t-2\right) +10=2t+2 \\ 
+\left( E_{2}\right) :2\left( t-2\right) +3=3t+1%
+\end{array}%
+\begin{array}{l}
+\left( E_{1}\right) :t=-2 \\ 
+\left( E_{2}\right) :t=-2%
+\end{array}%
+$
+
+Al sustituir este valor de $t$ en $\left( E_{3}\right) $, resulta
+
+$\left( E_{3}\right) :s=t-2=-2-2=-4$
+
+Al reemplazar $t=-2$ en $L_{1}$, se obtiene el punto de intersección de las dos rectas: $\left\{ 
+\begin{array}{c}
+x=-2 \\ 
+y=-5 \\ 
+z=-3%
+\end{array}%
+\right.$.
+
+b) El ángulo entre 2 rectas es el ángulo entre sus vectores directores.
+
+\ $d_{1}=$ director de $L_{1}=\left( 
+\begin{array}{c}
+2 \\ 
+3 \\ 
+1%
+\end{array}%
+\right) ,d_{2}=$ director de $L_{2}=\left( 
+\begin{array}{c}
+3 \\ 
+2 \\ 
+1%
+\end{array}%
+\right) $
+
+$\angle \left( L_{1},L_{2}\right) =\angle \left( d_{1},d_{2}\right) =\cos
+^{-1}\left( \frac{d_{1}\cdot d_{2}}{\left\Vert d_{1}\right\Vert \left\Vert
+d_{2}\right\Vert }\right) =\cos ^{-1}\left( \frac{13}{\sqrt{14}\sqrt{14}}%
+\right) =21.78^{0}$
+
+\begin{example}
+Ecuación de una recta perpendicular a dos vectores
+Halle las ecuaciones paramétricas de una recta que pasa por $A=\left(6,1,4\right) $ y es perpendicular a los vectores $u=\left( 1,-2,3\right) $ y $v=\left( 2,3,5\right)$.
+
+\textbf{Solución}
+
+\begin{figure}[H]
+    \centering
+    \caption{Recta perpendicular a dos vectores}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5L.png}
+    \label{fig:placeholder2.12}
+\end{figure}
+Como se ilustra en la figura \ref{fig:placeholder2.12}, el vector director $d$ de la recta debe ser perpendicular tanto a $u$ como a $v$, así que:
+
+$d=u\times v=\left\vert 
+\begin{array}{cccccc}
+1 & -2 & 3 & 1 & -2 & 3 \\ 
+2 & 3 & 5 & 2 & 3 & 5%
+\end{array}%
+\right\vert =\left( -19,1,7\right) $\thinspace
+
+Con $d$ y el punto $A=\left( 6,1,4\right)$, determinamos las ecuaciones paramétricas de la recta buscada:
+
+\begin{center}
+$\left\{ 
+\begin{array}{c}
+x=-19t+6 \\ 
+y=t+1 \\ 
+z=7t+4%
+\end{array}%
+\right. $, $\ t\in \mathbb{R}$
+\end{center}
+\end{example}
+
+\subsubsection{Distancia entre un punto y una recta}
+
+\begin{figure}[H]
+    \centering
+    \caption{Distancia entre un punto y una recta}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5M.png}
+    \label{fig:placeholder2.13}
+\end{figure}
+
+Usando la figura  \ref{fig:placeholder2.13}, la distancia entre el punto $Q$ y la recta $L$ es:
+
+\begin{center}
+$d\left( Q,L\right) =\left\Vert \overrightarrow{PQ}-\text{Proy}_{d}%
+\overrightarrow{PQ}\right\Vert $
+\end{center}
+
+Donde $P$ es un punto cualquiera de $L$ y $d$ es el vector director de la recta $L$.
+
+\begin{example}
+Sea $L$ la recta con ecuaciones paramétricas
+
+$L:\left\{ 
+\begin{array}{c}
+x=2t+2 \\ 
+y=3t+1 \\ 
+z=t+4%
+\end{array}%
+\right. \qquad t\in \mathbb{R}$
+
+Halle la distancia entre el punto\ $Q=\left( 4,11,29\right) $ y la recta $L$.
+\end{example}
+
+\textbf{Solución:}
+
+Datos: $Q=\left( 4,11,29\right) ,director=d=\left( 2,3,1\right)$, punto de $L:P=\left( 0,-2,3\right) $
+
+$\overrightarrow{PQ}=Q-P=\left( 4,13,26\right) .\qquad $Proy$_{d}\overrightarrow{PQ}=\frac{\overrightarrow{PQ}\cdot d}{\left\Vert
+d\right\Vert ^{2}}d=\frac{73}{14}\left( 2,3,1\right) =\left( \frac{73}{7},\frac{219}{14},\frac{73}{14}\right) $
+
+La distancia entre el punto $Q$ y la recta $L$ es:
+
+$d\left( Q,L\right) =\left\Vert \overrightarrow{PQ}-\text{Proy}_{d}%
+\overrightarrow{PQ}\right\Vert $
+
+$\qquad \ \ \ \ =\left\Vert \left( 4,13,26\right) -\left( \frac{73}{7},\frac{%
+219}{14},\frac{73}{14}\right) \right\Vert $
+
+$\qquad \ \ \ \ =\left\Vert \left( -\frac{45}{7},-\frac{37}{14},\frac{291}{14%
+}\right) \right\Vert $
+
+$\qquad \ \ \ \ =\sqrt{\left( -\frac{45}{7}\right) ^{2}+\left( -\frac{37}{14}%
+\right) ^{2}+\left( \frac{291}{14}\right) ^{2}}$
+
+$\qquad \ \ \ \ =\sqrt{\frac{6725}{14}}=21.917$
+
+La fórmula de la distancia es independiente del punto $P$ de la recta que se use.
+
+Ahora, se hallará la distancia usando otro punto $P=\left( 2,1,4\right) $ de la recta $L$.
+
+Datos: $Q=\left( 4,11,29\right) ,$ $director=d=\left( 2,3,1\right)$, punto de $L$$_{1}:P=\left( 2,1,4\right) $
+
+$\overrightarrow{PQ}=Q-P=\left( 2,10,25\right) .\qquad $Proy$_{d}%
+\overrightarrow{PQ}=\frac{\overrightarrow{PQ}\cdot d}{\left\Vert
+d\right\Vert ^{2}}d=\frac{59}{14}\left( 2,3,1\right) =\left( \frac{59}{7},%
+\frac{177}{14},\frac{59}{14}\right) $
+
+$d\left( Q,L\right) =\left\Vert \overrightarrow{PQ}-\text{Proy}_{d}%
+\overrightarrow{PQ}\right\Vert =\left\Vert \left( 2,10,25\right) -\left( 
+\frac{59}{7},\frac{177}{14},\frac{59}{14}\right) \right\Vert =21.917.$
+
+\bigskip
+
+Dos rectas son paralelas si sus vectores directores son paralelos, como se ilustra en la figura \ref{fig:placeholder2.14}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Rectas paralelas}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5N.png}
+    \label{fig:placeholder2.14}
+\end{figure}
+
+\bigskip Dos rectas son ortogonales si sus vectores directores son ortogonales, como se muestra en la figura \ref{fig:placeholder2.15} . 
+
+\begin{figure}[H]
+    \centering
+    \caption{Rectas ortogonales}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5O.png}
+    \label{fig:placeholder2.15}
+\end{figure}
+
+\subsection{Ejercicios}
+
+\begin{enumerate}
+    \item Determine la ecuación vectorial, las paramétricas y simétricas de la recta que pasa por los puntos:
+    \begin{enumerate}
+        \item $\left( 1,1,3\right) $ y $\left( 2,-3,7\right) \qquad \qquad $
+        \item $\left(9,4,1\right) $ y $\left( 12,5,-10\right) \qquad \qquad $
+        \item $\left(-1,-2,2\right) $ y $\left( 3,7,9\right) $
+    \end{enumerate}
+    \item Encuentre la ecuación vectorial, las paramétricas y simétricas de la recta que pasa por $\left( 3,3,7\right) $ y es paralela a la recta con ecuaciones simétricas $\frac{x-2}{4}=\frac{y+1}{3}=\frac{z+4}{2}$.
+    \item Halle la ecuación vectorial, las paramétricas y simétricas de la recta que pasa por $\left( 1,1,2\right) $ y es perpendicular a los vectores $\left( -1,0,1\right) $ y $\left( 4,4,3\right) $
+    \item Sean $L_{1}:\left\{\begin{array} {c}x=4t+2 \\y=-3t+1 \\ z=t-1\end{array}\right. $ y $L_{2}:\left\{\begin{array} {c}x=2t+10 \\y=-2t+3 \\ z=2t-23\end{array}\right. $.
+    \begin{enumerate}
+        \item Halle el punto de intersección de las rectas (si se cortan)
+        \item Halle el ángulo entre las rectas.
+        \item ¿$L_{1}$ y $L_{2}$ son paralelas?
+        \item ¿$L_{1}$ y $L_{2}$ son perpendiculares?
+    \end{enumerate}
+    \item Sean $L_{1}:\left\{\begin{array}{c}x=t+2 \\ y=3t+1 \\ z=-t+4\end{array}\right. ,t\in \mathbb{R}$ y $L_{2}:\left\{ \begin{array}{c}x=5t-2 \\ y=-t-1 \\ z=2t+3\end{array}\right. ,t\in \mathbb{R}$.
+    \begin{enumerate}
+        \item Halle el ángulo entre $L_{1}$ y $L_{2}$.
+        \item ¿$L_{1}$ y $L_{2}$ son paralelas? \ \ \
+        \item Halle el punto de intersección de $L_{1}$ y $L_{2}$ si las rectas se cortan.
+    \end{enumerate}
+    \item Sean $L_{1}:\left\{\begin{array}{c}x=2t+2 \\ y=3t+1 \\ z=t+4\end{array}\right. ,t\in \mathbb{R}$ \ y $L_{2}:\left\{\begin{array}{c}x=3t-2 \\ y=2t \\ z=t+3\end{array}\right. ,t\in \mathbb{R}$.
+    \begin{enumerate}
+        \item ¿Cuáles de los siguientes puntos pertenecen a $L_{1}$ o $L_{2}:$?
+        \begin{enumerate}
+            \item $\left( 4,4,5\right)$
+            \item $\left( 4,6,5\right)$
+            \item $\left(9,15,22\right)$
+            \item $\left( -9,-12,-14\right)$
+            \item $\left(-46,12,15\right)$
+        \end{enumerate}
+        \item Halle el ángulo entre $L_{1}$ y $L_{2}$ $\angle \left(L_{1},L_{2}\right)$.
+        \item Calcule el punto de intersección de $L_{1}$ y $L_{2}$ si las rectas se cortan.
+    \end{enumerate}
+    \item Sean $R_{1}$ la recta que contiene los puntos $\left( 1,2,3\right) $ y $\left( 3,4,5\right) $ y $R_{2}$ la recta que contiene los puntos $\left(2,-1,3\right) $ \ y \ $\left( -1,3,5\right)$.
+    \begin{enumerate}
+        \item Halle el ángulo entre las rectas $R_{1}$ y $R_{2}$
+        \item Halle el punto de intersección de $R_{1}$ y $R_{2}$ si las rectas se cortan.
+    \end{enumerate}
+    \item Encuentre la distancia entre el punto \ $Q=\left( 8,10,20\right) $ y la recta $L_{2}:\left\{\begin{array}{c}x=3t-2 \\ y=2t \\ z=t+3\end{array}\right.$.
+    \item Determine la distancia entre el punto \ $Q=\left( 11,10,12\right) $ y la recta $L_{3}$ que pasa por $\left( 1,1,1\right) $ y $\left( 4,2,2\right)$.
+    \item Calcule la distancia entre el punto $Q=\left( 1,1,2\right) $ y la recta $L_{1}:\left\{\begin{array}{c} x=2t+2 \\ y=3t+1 \\ z=t+4\end{array}\right.$.
+    \item Halle la distancia entre $Q=\left( 8,1,2\right) $ y la recta $L_{2}:\left\{\begin{array}{c}x=3t-2 \\ y=2t \\ z=t+3\end{array}\right.$.
+    \item Halle la distancia entre $Q=\left( 1,7,2\right) $ y la recta $L_{3}$ que pasa por $\left( 1,1,1\right) $ y $\left( 4,2,2\right)$.
+\end{enumerate}
+
+\bigskip
+
+\section{Planos en $\mathbb{R}^{3}$}
+
+En geometría euclidiana, un postulado establece que por tres puntos no colineales hay un plano que los contiene. Por lo tanto, para determinar un plano en el espacio, se necesitan tres puntos no colineales o bien un punto y un vector normal, que es perpendicular a cualquier vector contenido en el plano.
+
+\subsection{Ecuaciones de un plano en el espacio}
+
+La ecuación del plano que pasa por $P=\left( x_{0},y_{0},z_{0}\right) $ y es perpendicular al vector $n=\left( a,b,c\right)$, es $n\cdot \left(X-P\right) =0$, como se ve en la figura \ref{fig:placeholder2.16}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Ecuación punto normal de un plano}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5P.png}
+    \label{fig:placeholder2.16}
+\end{figure}
+
+\subsubsection{Ecuación punto normal y cartesiana de un plano}
+
+Si $X=\left( x,y,z\right) $ es un punto cualquiera de un plano $\pi ,$ $X-P$
+pertenece al plano $\pi $ y es perpendicular a $n$ así:
+
+\begin{center}
+$n\cdot \left( X-P\right) =0$, lo que equivale a $n\cdot X=n\cdot P$
+\end{center}
+
+La ecuación punto normal del plano vectorialmente es: \ $n\cdot \left(
+X-P\right) =0.$
+
+Escribiendo las coordenadas de los vectores:
+
+$\left( a,b,c\right) \cdot \left( \left( x,y,z\right) -\left(
+x_{0},y_{0},z_{0}\right) \right) =0$
+
+Al efectuar las operaciones, se obtiene:
+
+$\left( a,b,c\right) \cdot \left( x-x_{0},y-y_{0},z-z_{0}\right) =0$
+
+$a\left( x-x_{0}\right) +b\left( y-y_{0}\right) +c\left( z-z_{0}\right) =0$
+
+Esta última ecuación es llamada la ecuación punto normal del plano.
+
+Si simplificamos
+
+$ax-ax_{0}+by-by_{0}+cz-cz_{0}=0$
+
+$ax+by+cz=ax_{0}+by_{0}+cz_{0}$,
+
+llegamos a la ecuación: $ax+by+cz=d,$ donde $d=ax_{0}+by_{0}+cz_{0}$.
+
+Está ecuación es la denominada ecuación cartesiana del plano.
+
+\begin{example}
+Halle la ecuación cartesiana del plano que pasa por $P=\left( 2,1,3\right)
+, $ $Q=\left( 3,-1,2\right)$ y $R=\left( 4,6,5\right) $.
+\end{example}
+
+\textbf{Solución}
+
+
+\begin{figure}[H]
+    \centering
+    \caption{Plano que contiene tres puntos}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5Q.png}
+    \label{fig:placeholder2.17}
+\end{figure}
+
+Según la figura \ref{fig:placeholder2.17}, un vector normal del plano es:
+
+$n=\overrightarrow{PQ}\times \overrightarrow{PR}$
+
+$\qquad =\left( Q-P\right) \times \left( R-P\right) =\left( 1,-2,-1\right)
+\times \left( 2,5,2\right) $
+
+$\qquad =\left\vert 
+\begin{array}{cccccc}
+1 & -2 & -1 & 1 & -2 & -1 \\ 
+2 & 5 & 2 & 2 & 5 & 2%
+\end{array}%
+\right\vert $
+
+$\qquad =\left( 1,-4,9\right) $
+
+Efectuamos $n\cdot X=n\cdot P$.
+
+$\left( 1,-4,9\right) \cdot \left( x,y,z\right) =\left( 1,-4,9\right) \cdot
+\left( 2,1,3\right) $
+
+$x-4y+9z=25$
+
+La ecuación cartesiana del plano que contiene los puntos $P,Q$ y $R$ es $x-4y+9z=25.$
+
+\begin{example}
+Halle el punto de intersección entre la recta $L_{1}:\left\{ 
+\begin{array}{l}
+x=-5t+4 \\ 
+y=t+2 \\ 
+z=t+5%
+\end{array}%
+\right. ,$ \ $t\in \mathbb{R}$ y el plano $\pi :2x+3y+4z=20.$
+\end{example}
+
+\textbf{Solución}
+
+Se remplazan las coordenadas $x,y$ y $z$ de las ecuaciones paramétricas de $%
+L_{1} $ en la ecuación cartesiana del plano.
+
+$2x+3y+4z=20$
+
+$2\left( -5t+4\right) +3\left( t+2\right) +4\left( t+5\right) =20$\
+
+
+Resolvemos para $t$: $t=\frac{14}{3}$.
+
+Luego, reemplazamos el parámetro $t$ de $L_{1}$ por $\frac{14}{3}$.
+
+$\left\{ 
+\begin{array}{l}
+x=-5\left( \frac{14}{3}\right) +4 \\ 
+y=\frac{14}{3}+2 \\ 
+z=\frac{14}{3}+5%
+\end{array}%
+\right. $
+
+El punto intersección es $\left( -\frac{58}{3},\frac{20}{3},\frac{29}{3}%
+\right) $.
+
+\subsubsection{Distancia entre un punto y un plano}
+
+Para hallar la distancia entre un punto $R$ y un plano $\pi$, usamos la
+siguiente figura:
+
+\begin{figure}[H]
+    \centering
+    \caption{Distancia de un punto a un plano}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5R.png}
+    \label{fig:placeholder2.18}
+\end{figure}
+
+Sea $P$ un punto del plano $\pi$, $n$ es un vector normal del plano. Usando la figura \ref{fig:placeholder2.18}, la distancia entre el punto $P$ y el plano $\pi$ es:
+
+\begin{center}
+$d(R,\pi )=\left\Vert \text{Proy}_{n}\overrightarrow{PR}\right\Vert
+=\left\Vert \frac{n\cdot \overrightarrow{PR}}{n\cdot n}n\right\Vert =\frac{%
+\left\vert n\cdot \overrightarrow{PR}\right\vert }{\left\Vert n\right\Vert
+^{2}}\left\Vert n\right\Vert =\frac{\left\vert n\cdot \overrightarrow{PR}%
+\right\vert }{\left\Vert n\right\Vert }$
+\end{center}
+
+\begin{example}
+Halle la distancia entre el punto $R=\left( 4,6,9\right) $ y el plano $\pi:2x+3y+6z=4$.
+\end{example}
+
+\textbf{Solución}
+
+Encontramos un punto del plano $\pi$, por ejemplo $P=\left( 2,0,0\right)$.
+Un vector normal es $n=\left( 2,3,6\right)$.
+
+$\overrightarrow{PR}=R-P=\left( 2,6,9\right) $
+
+$n\cdot \overrightarrow{PR}=\left( 2,3,6\right) \cdot \left( 2,6,9\right)
+=76 $
+
+$\left\Vert n\right\Vert =\sqrt{2^{2}+3^{2}+6^{2}}=7$
+
+La distancia entre $R$ y $\pi $ es
+
+$d(R,\pi )=\frac{\left\vert n\cdot \overrightarrow{PR}\right\vert }{%
+\left\Vert n\right\Vert }=\frac{76}{7}$
+
+\begin{example}
+Halle las ecuaciones paramétricas de la recta intersección de los planos \ $\pi _{1}:2x+y-z=2$ y el plano $\pi _{2}$ \ que contiene los puntos $A=\left( 1,1,1\right)
+,B=\left( 1,6,1\right) ,C=\left( 3,-1,4\right)$.
+\end{example}
+
+\textbf{Solución}
+
+1. Ecuación del plano $\pi_2$ que contiene A,B,C.
+
+Tomamos los vectores
+\[
+\overrightarrow{AB}=B-A=(0,5,0),\qquad 
+\overrightarrow{AC}=C-A=(2,-2,3).
+\]
+
+El vector normal a \(\pi_2\) es
+\[
+\mathbf{n}_2=\overrightarrow{AB}\times\overrightarrow{AC}
+=\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k}\\[4pt]
+0 & 5 & 0\\[4pt]
+2 & -2 & 3
+\end{vmatrix}
+=(15,0,-10)=5(3,0,-2).
+\]
+Tomamos \(\mathbf{n}_2=(3,0,-2)\). Usando el punto \(A=(1,1,1)\),
+\[
+\mathbf{n}_2\cdot (x-1,y-1,z-1)=0
+\quad\Longrightarrow\quad 3(x-1)-2(z-1)=0,
+\]
+por lo tanto la ecuación cartesiana de \(\pi_2\) es
+\[
+3x-2z=1.
+\]
+
+2. Intersección $\pi_1\cap\pi_2$ 
+
+Tenemos el sistema de dos ecuaciones lineales:
+\[
+\begin{cases}
+2x+y-z=2,\\[4pt]
+3x-2z=1.
+\end{cases}
+\]
+
+De la segunda ecuación despejamos \(z\) en términos de \(x\):
+\[
+3x-2z=1 \;\Longrightarrow\; z=\dfrac{3x-1}{2}.
+\]
+
+Sustituimos en la primera para hallar \(y\):
+\[
+2x+y-\dfrac{3x-1}{2}=2
+\quad\Longrightarrow\quad
+y=2-2x+\dfrac{3x-1}{2}.
+\]
+Simplificando:
+\[
+y=\dfrac{4-4x+3x-1}{2}=\dfrac{3-x}{2}.
+\]
+
+Y las ecuaciones paramétricas son:
+\[
+x=t,\qquad y=\dfrac{3-t}{2},\qquad z=\dfrac{3t-1}{2},\qquad t\in\mathbb{R}.
+\]
+
+
+\subsubsection{Distancia entre dos rectas alabeadas}
+
+Dos rectas $L_{1}$ y $L_{2}$ son alabeadas si no son paralelas y  no se cortan en el espacio.
+
+\begin{figure}[H]
+    \centering
+    \caption{Distancia entre dos rectas alabeadas}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5S.png}
+    \label{fig:placeholder2.19}
+\end{figure}
+
+Sean $Q$ un punto de $\ L_{1}$, y $\pi $ el plano con vector normal $n=d_{1}\times d_{2}$ que pasa por un punto $P$ de $L_{2}$. Según la figura \ref{fig:placeholder2.19}, la distancia
+entre las rectas $L_{1}$ y $L_{2}$ es la distancia entre el punto $Q$ y el
+plano $\pi$:
+
+\begin{center}
+$d\left( L_{1},L_{2}\right) =d(Q,\pi )=\left\Vert \text{Proy}_{n}%
+\overrightarrow{PQ}\right\Vert =\frac{\left\vert n\cdot \overrightarrow{PQ}%
+\right\vert }{\left\Vert n\right\Vert }$
+\end{center}
+
+\begin{example}
+Halle la distancia mínima entre las rectas: $L_{1}:\left\{ 
+\begin{array}{c}
+x=t+1 \\ 
+y=2t+2 \\ 
+z=t+5%
+\end{array}%
+\right. $ \ y $L_{2}:\left\{ 
+\begin{array}{c}
+x=-2t+1 \\ 
+y=t+3 \\ 
+z=2t-6%
+\end{array}%
+\right.$.
+\end{example}
+
+\textbf{Solución}
+Calculamos el producto cruz de los vectores directores $d_{1}=\left(
+1,2,1\right) $ y $d_{2}=\left( -2,1,2\right) $.
+
+$n=d_{1}\times d_{2}$
+
+$\qquad =\left( 1,2,1\right) \times \left( -2,1,2\right) $
+
+$\qquad =\left\vert 
+\begin{array}{cccccc}
+1 & 2 & 1 & 1 & 2 & 1 \\ 
+-2 & 1 & 2 & -2 & 1 & 2%
+\end{array}%
+\right\vert $
+
+$\qquad =\left( 3,-4,5\right)$
+
+Elegimos los puntos $Q=\left( 1,2,5\right) $ de $L_{1}$, y $P=\left( 1,3,6\right) $ de $L_{2}$.
+
+$\overrightarrow{PQ}=Q-P=\left( 0,1,1\right) ,\qquad n\cdot \overrightarrow{%
+PQ}=1,\qquad \left\Vert n\right\Vert =\sqrt{3^{2}+4^{2}+5^{2}}=5\sqrt{2}$
+
+Por lo tanto, la distancia entre las rectas es
+
+$d\left( L_{1},L_{2}\right) =\frac{\left\vert n\cdot \overrightarrow{PQ}%
+\right\vert }{\left\Vert n\right\Vert }=\frac{1}{5\sqrt{2}}\approx
+0.141\,42$
+
+\subsection{Ejercicios}
+
+\begin{enumerate}
+    \item Halle una ecuación cartesiana del plano que contiene el punto $P=\left( 1,2,3\right) $ y con vector normal $v=\left( 3,4,2\right)$.
+    \item Determine una ecuación cartesiana del plano que contiene los puntos \\$P=\left( 1,2,3\right) ,Q=\left( -2,1,-3\right) $ y $R=\left( 4,6,1\right)$
+    \item Encuentre una ecuación cartesiana del plano que contiene los puntos \\$P=\left( 1,0,-2\right) ,Q=\left( 2,-1,0\right) $ y $R=\left( 4,6,1\right)$
+    \item Encuentre una ecuación cartesiana del plano que contiene el punto \\ $P=\left( 1,1,-4\right) $ y es paralelo al plano con ecuación $3x+4y+5z=12$.
+    \item Halle las ecuaciones paramétricas de la recta intersección de los
+    \item planos con ecuaciones $2x+3y+z=6$ y $4x+7y+4z=15$.
+    \item Halle las ecuaciones paramétricas de la recta intersección de los planos con ecuaciones $x+y+z=4$ y $3x+4y+4z=15$.
+    \item Encuentre el punto de intersección entre la recta que pasa por los puntos $\left( 1,1,1\right) $, $\left( 2,2,3\right) $ \ y el plano con ecuación $x+y+2z=10$.
+    \item Determine el punto de intersección entre la recta que pasa por los puntos $\left( 2,-3,1\right) $, $\left( 4,5,6\right) $ \ y el plano con ecuación $2x+8y+5z=15$.
+    \item Calcule la distancia entre el punto $\left( 1,2,10\right) $ y el plano con ecuación $4x+6y+7z=20$.
+    \item Halle la distancia entre el punto $\left( 4,20,10\right) $ y el plano que contiene los puntos $\left( 1,1,1\right) ,\left( -1,-1,2\right) $ y $ \left( 2,2,3\right)$.
+    \item Halle la distancia entre la recta que pasa por los puntos $\left(1,2,2\right) $, $\left( 2,4,5\right) $ \ y el plano con ecuación $3x+3y-3z=12$.
+    \item Sean $\pi _{1}$ y $\pi _{2}$ los planos con ecuaciones cartesianas $ 2x+3y-5z=6$ y $-4x-6y+10z=30$, calcule la distancia entre los planos.
+    \item Sean $L_{1}:\left\{\begin{array}{c}x=2t+2 \\ y=3t+1 \\ z=t+4\end{array}\right. ,t\in \mathbb{R}$ \ y $L_{2}:\left\{ \begin{array}{c}x=3t-2 \\ y=2t+4 \\ z=t+3\end{array}\right. ,t\in \mathbb{R}$.
+    \begin{enumerate}
+        \item Pruebe que $L_{1}$ y $L_{2}$ no se cortan
+        \item Calcule la distancia entre las rectas.
+    \end{enumerate}
+\end{enumerate}
+
+\chapter{Triángulos, polígonos y transformaciones}
+
+En este capítulo se presentan las propiedades fundamentales de los triángulos y se encuentran fórmulas para hallar las coordenadas del baricentro, circuncentro, ortocentro e incentro de un triángulo dado a partir de las coordenadas de sus vértices. También se presentan los criterios de semejanza de triángulos, se estudian los triángulos rectángulos y la trigonometría, y se demuestra la fórmula de Heron para hallar el área de un triángulo a partir de las medidas de sus lados. Además, se deducen fórmulas para hallar el área de un polígono a partir de las coordenadas de sus vértices y se introduce el teorema de Pick, que proporciona una fórmula para el área de un polígono cuyos vértices tienencoordenadas enteras. 
+
+Desde un punto de vista analítico, se muestran las transformaciones geométricas del plano, como las traslaciones, reflexiones, rotaciones y dilataciones a partir del uso de herramientas vectoriales y de matrices $2\times 2$.
+
+\section{Triángulos}
+
+Un triángulo, como el de la figura \ref{fig:placeholder2.20}, está formado por tres puntos no colineales conectados por segmentos. Estos puntos no colineales se denominan vértices, y los segmentos que los unen se llaman lados.
+
+\begin{figure}[H]
+    \centering
+    \caption{Triángulo}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5T.png}
+    \label{fig:placeholder2.20}
+\end{figure}
+
+Cuando los puntos $A$, $B$, y $C$ son sus vértices, el triángulo se denota como $\triangle ABC$, sus lados son $\overline{AB}$, $\overline{BC}$ y $\overline{CA}$, y los ángulos internos son $\angle A,\angle B$ y $\angle C$.
+
+La suma de las medidas de los ángulos internos de un triángulo es $180^{0}$
+o $\pi $ radianes.
+
+\subsection{Definición}
+
+Una mediana de un triángulo, como la mostrada en la figura \ref{fig:placeholder2.21}, es un segmento que une un vértice y el punto medio de su lado opuesto. Las tres medianas de un triángulo son concurrentes en un punto llamado baricentro.
+
+\begin{figure}[H]
+    \centering
+    \caption{Mediana de un triángulo}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5U.png}
+    \label{fig:placeholder2.21}
+\end{figure}
+
+Las medianas de un triángulo son concurrentes en un punto ubicado a dos tercios de la distancia entre cada vértice y el punto medio del lado opuesto, como se ilustra en la figura \ref{fig:placeholder2.22}. 
+
+\begin{figure}[H]
+    \centering
+    \caption{Concurrencia de las medianas}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5V.png}
+    \label{fig:placeholder2.22}
+\end{figure}
+
+\bigskip
+
+\subsection{Coordenadas del baricentro}
+
+Sea $T$ el triángulo con vértices $A=\left( a_{1},a_{2}\right) ,B=\left(
+b_{1},b_{2}\right) $ y $C=\left( c_{1},c_{2}\right)$, como se muestra en la figura \ref{fig:placeholder2.23}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Baricentro}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5W.png}
+    \label{fig:placeholder2.23}
+\end{figure}
+
+Sea $L_{1}$ la mediana que pasa por $A=\left( a_{1},a_{2}\right)$ y $E=\left( \frac{b_{1}+c_{1}}{2},\frac{b_{2}+c_{2}}{2}\right)$, la pendiente
+de $L_{1}$ es:
+
+\begin{center}
+$m=\frac{\frac{b_{2}+c_{2}-2a_{2}}{2}}{\frac{b_{1}+c_{1}-2a_{1}}{2}}=\frac{%
+b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}$
+\end{center}
+
+Por lo tanto, la ecuación de la recta $L_{1}$ es $\ y=\frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}\left( x-a_{1}\right) +a_{2}$.
+
+Sea $L_{2}$ la mediana que pasa por $B=\left( b_{1},b_{2}\right) $ y $F=\left( \frac{a_{1}+c_{1}}{2},\frac{a_{2}+c_{2}}{2}\right)$, la pendiente
+de $L_{2}$ es:
+
+$m=\frac{\frac{a_{2}+c_{2}-2b_{2}}{2}}{\frac{b_{1}+c_{1}-2a_{1}}{2}}=\frac{%
+a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}}$ \ 
+
+De esto que la ecuación de la recta de $L_{2}$ es$y=\frac{a_{2}+c_{2}-2b_{2}}{%
+a_{1}+c_{1}-2b_{1}}\left( x-b_{1}\right) +b_{2}$. \ 
+
+El punto de intersección de las dos medianas ($L_{1}$ y $L_{2}$) se obtiene de la siguiente manera:
+
+\begin{center}
+$\frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}\left( x-a_{1}\right) +a_{2}=%
+\frac{a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}}\left( x-b_{1}\right) +b_{2}$
+\end{center}
+
+$\left( \frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}-\frac{%
+a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}}\right) x=\frac{b_{2}+c_{2}-2a_{2}}{%
+b_{1}+c_{1}-2a_{1}}a_{1}-\frac{a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}}%
+b_{1}+b_{2}-a_{2}$
+
+Se resuelve para $x$:
+
+$x=\frac{\frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}a_{1}-\frac{%
+a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}}b_{1}+b_{2}-a_{2}}{\frac{%
+b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}-\frac{a_{2}+c_{2}-2b_{2}}{%
+a_{1}+c_{1}-2b_{1}}}$
+
+$=\frac{\left( a_{1}+b_{1}+c_{1}\right) \frac{%
+a_{1}b_{2}-a_{2}b_{1}-a_{1}c_{2}+a_{2}c_{1}+b_{1}c_{2}-b_{2}c_{1}}{%
+2a_{1}^{2}-5a_{1}b_{1}+a_{1}c_{1}+2b_{1}^{2}+b_{1}c_{1}-c_{1}^{2}}}{3\frac{%
+a_{1}b_{2}-a_{2}b_{1}-a_{1}c_{2}+a_{2}c_{1}+b_{1}c_{2}-b_{2}c_{1}}{%
+2a_{1}^{2}-5a_{1}b_{1}+a_{1}c_{1}+2b_{1}^{2}+b_{1}c_{1}-c_{1}^{2}}}$
+
+$=\frac{a_{1}+b_{1}+c_{1}}{3}.$
+
+Para obtener la coordenada $y$, reemplazamos $x=\frac{a_{1}+b_{1}+c_{1}}{3}$ en la ecuación de $L_{1}$:
+
+$y=\frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}\left( \frac{a_{1}+b_{1}+c_{1}}{3}-a_{1}\right) +a_{2}$
+
+$=\frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}\left( \frac{b_{1}-2a_{1}+c_{1}}{3}\right) +a_{2}$
+
+$=\frac{b_{2}+c_{2}-2a_{2}}{3}+a_{2}$
+
+$=\frac{a_{2}+b_{2}+c_{2}}{3}$.
+
+Así que las coordenadas del baricentro son:
+
+\begin{center}
+$\left( \overline{x},\overline{y}\right) =\left( \frac{a_{1}+b_{1}+c_{1}}{3},%
+\frac{a_{2}+b_{2}+c_{2}}{3}\right) $
+\end{center}
+
+\subsection{Mediatrices de un triángulo}
+
+Una mediatriz de un triángulo es una recta (o un segmento, rayo, o un plano) perpendicular a un lado del triángulo en su punto medio, como se ilustra en la figura \ref{fig:placeholder2.24}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Mediatriz de un triángulo}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5X.png}
+    \label{fig:placeholder2.24}
+\end{figure}
+
+Las mediatrices de los lados de un triángulo son concurrentes en un punto,llamado circuncentro, que equidista de los vértices, como se ve en la figura \ref{fig:placeholder2.25}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Concurrencia de las mediatrices}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5Y.png}
+    \label{fig:placeholder2.25}
+\end{figure}
+\bigskip
+
+\subsubsection{Cálculo del circuncentro vectorialmente}
+
+Sea $T$ el triángulo con vértices $A=\left( a_{1},a_{2}\right) ,B=\left(
+b_{1},b_{2}\right) $ y $C=\left( c_{1},c_{2}\right)$, que se ilustra en la figura \ref{fig:placeholder2.26}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Circuncentro}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5Z.png}
+    \label{fig:placeholder2.26}
+\end{figure}
+
+De las propiedades del circuncentro y la figura anterior, tenemos:
+
+$\overrightarrow{DG}+\overrightarrow{GF}=\overrightarrow{DF},$ $\ \ 
+\overrightarrow{DG}\cdot \overrightarrow{AB}=0,$ $\ \ \overrightarrow{GF}%
+\cdot \overrightarrow{AC}=0$
+
+Como $\overrightarrow{DG}$ es perpendicular a $\overrightarrow{AB}$, $\overrightarrow{DG}=\alpha v$, donde $v$ es perpendicular a $\overrightarrow{AB}$
+
+$\overrightarrow{GF}\cdot \overrightarrow{AC}=0.$
+
+$\left( \overrightarrow{DF}-\overrightarrow{DG}\right) \cdot \overrightarrow{AC}=0$
+
+$\left( \overrightarrow{DF}-\alpha v\right) \cdot \overrightarrow{AC}=0$
+
+$\overrightarrow{DF}\cdot \overrightarrow{AC}-\alpha v\cdot \overrightarrow{AC}=0$, al resolver para $\alpha $ tenemos
+
+$\alpha =\frac{\overrightarrow{DF}\cdot \overrightarrow{AC}}{v\cdot 
+\overrightarrow{AC}}$ \ y
+
+$G=\overrightarrow{OG}=\overrightarrow{OD}+\overrightarrow{DG}=D+\frac{%
+\overrightarrow{DF}\cdot \overrightarrow{AC}}{v\cdot \overrightarrow{AC}}v$.
+
+\textbf{Fórmula para calcular el circuncentro}
+
+\begin{center}
+$G=D+\frac{\overrightarrow{DF}\cdot \overrightarrow{AC}}{v\cdot 
+\overrightarrow{AC}}v$
+\end{center}
+
+Donde $D=\frac{1}{2}\left( A+B\right) ,E=\frac{1}{2}\left( B+C\right) ,F=%
+\frac{1}{2}\left( A+C\right) $ y $v$ es perpendicular a $\overrightarrow{AB}$.
+
+\begin{example}
+Halle el circuncentro del triángulo con vértices $A=\left( -2,2\right)$, $B=\left( 6,0\right) $ y $C=\left( 4,8\right)$.
+\end{example}
+
+\textbf{Solución}
+
+Se hallan los puntos medios de $D=\left( 2,1\right) ,E=\left( 5,4\right)$ y $F=\left( 1,5\right) $
+
+$\overrightarrow{DF}=\left( -1,4\right) \qquad \overrightarrow{AC}=\left(
+6,6\right) ,$ $\overrightarrow{AB}=\left( 8,-2\right) ,v=\left( 2,8\right) $
+perpendicular a $\overrightarrow{AB}.$
+
+$G=D+\frac{\overrightarrow{DF}\cdot \overrightarrow{AC}}{v\cdot 
+\overrightarrow{AC}}v$
+
+$=\left( 2,1\right) +\frac{-6+24}{12+48}\left( 2,8\right) $
+
+$=\left( 2,1\right) +\frac{3}{10}\left( 2,8\right) $
+
+$=\left( \frac{13}{5},\frac{17}{5}\right) $
+
+$=(2.6,3.4) $.
+
+La gráfica del triángulo y su circuncentro se muestran en la figura \ref{fig:placeholder2.27}.
+\begin{figure}[H]
+    \centering
+    \caption{Circuncentro del triángulo $ABC$}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S60.png}
+    \label{fig:placeholder2.27}
+\end{figure}
+
+\subsection{Altura de un triángulo}
+Una altura de un triángulo es el segmento perpendicular desde un vértice del triángulo a la recta que contiene el lado opuesto. Una altura de un triángulo puede estar dentro o fuera del triángulo, o puede ser un lado del triángulo.
+
+Tenga cuidado al construir o identificar una altura. 
+
+\textbf{Recuerde:} una altura es un segmento de un vértice del triángulo perpendicular al lado opuesto (o el lado opuesto extendido).
+
+En la figura \ref{fig:placeholder2.28} se ilustran las alturas para los distintos tipos de triángulos.
+\begin{figure}[H]
+    \centering
+    \caption{Alturas de triángulos}
+    $%
+    \begin{array}{c}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12S61.png}
+    \end{array}%
+    \begin{array}{c}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12S62.png}
+    \end{array}%
+    $
+    
+    $%
+    \begin{array}{c}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12S63.png}
+    \end{array}%
+    $
+    \label{fig:placeholder2.28}
+\end{figure}
+
+\bigskip
+
+\subsubsection{Concurrencia de las alturas}
+
+Las tres rectas que contienen las alturas son concurrentes en un punto llamado el ortocentro del triángulo. El ortocentro de un triángulo puede estar dentro, sobre, o fuera del triángulo, como se observa  en la figura \ref{fig:placeholder2.29}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Ortocentro de triángulos}
+    $%
+    \begin{array}{c}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12S64.png}
+    \end{array}%
+    \begin{array}{c}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12S65.png}
+    \end{array}%
+    $
+    
+    $%
+    \begin{array}{c}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12S66.png}
+    \end{array}%
+    $
+    \label{fig:placeholder2.29}
+\end{figure}
+
+
+
+\subsubsection{Coordenadas del ortocentro vectorialmente}
+
+Para el triángulo con vértices $A$, $B$ y $C$, que se muesta en la figura \ref{fig:placeholder2.30}, se tiene:
+
+\begin{figure}[H]
+    \centering
+    \caption{Ortocentro del triángulo $ABC$}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12S67.png}
+    \label{fig:placeholder2.30}
+\end{figure}
+
+$\overrightarrow{AP}+\overrightarrow{PC}=\overrightarrow{AC},$ de donde$\ 
+\overrightarrow{PC}=\overrightarrow{AC}-\overrightarrow{AP}$.
+
+De las propiedades del ortocentro:
+
+Si $v$ es un vector perpendicular a $\overrightarrow{BC},$ como también $%
+\overrightarrow{AP}$ es perpendicular a $\overrightarrow{BC},$ entonces $%
+\overrightarrow{AP}=cv$.
+
+$\overrightarrow{PC}\cdot \overrightarrow{AB}=0$
+
+$\left( \overrightarrow{AC}-\overrightarrow{AP}\right) \cdot \overrightarrow{%
+AB}=0$
+
+$\left( \overrightarrow{AC}-cv\right) \cdot \overrightarrow{AB}=0$
+
+$\overrightarrow{AC}\cdot \overrightarrow{AB}-cv\cdot \overrightarrow{AB}=0$
+
+$cv\cdot \overrightarrow{AB}=\overrightarrow{AC}\cdot \overrightarrow{AB}$
+
+$c=\frac{\overrightarrow{AC}\cdot \overrightarrow{AB}}{v\cdot 
+\overrightarrow{AB}}.$
+
+$P=\overrightarrow{OP}=\overrightarrow{OA}+\overrightarrow{AP}=A+cv=A+\frac{%
+\overrightarrow{AC}\cdot \overrightarrow{AB}}{v\cdot \overrightarrow{AB}}v$
+
+\textbf{Fórmula para el ortocentro}
+
+\begin{center}
+$P=A+\frac{\overrightarrow{AC}\cdot \overrightarrow{AB}}{v\cdot 
+\overrightarrow{AB}}v,$ donde $v$ un vector perpendicular a $\overrightarrow{%
+BC}$
+\end{center}
+
+Esta fórmula para el ortocentro en coordenadas queda así:
+
+Si $A=\left( a_{1},a_{2}\right) ,B=\left( b_{1},b_{2}\right) $ y $C=\left(
+c_{1},c_{2}\right) $ tenemos que un vector perpendicular a $\overrightarrow{BC}=\left(
+c_{1}-b_{1},c_{2}-b_{2}\right) $ es $v=\left( c_{2}-b_{2},-\left(
+c_{1}-b_{1}\right) \right) $
+
+$\overrightarrow{AC}=\left( c_{1}-a_{1},c_{2}-a_{2}\right) $
+
+$\overrightarrow{AB}=\left( b_{1}-a_{1},b_{2}-a_{2}\right) $
+
+$\overrightarrow{AC}\cdot \overrightarrow{AB}=\left(
+c_{1}-a_{1},c_{2}-a_{2}\right) \cdot \left( b_{1}-a_{1},b_{2}-a_{2}\right)
+=\left( c_{1}-a_{1}\right) \left( b_{1}-a_{1}\right) +\left(
+c_{2}-a_{2}\right) \left( b_{2}-a_{2}\right) $
+
+$v\cdot \overrightarrow{AB}=\left( c_{2}-b_{2},-\left( c_{1}-b_{1}\right)
+\right) \cdot \left( b_{1}-a_{1},b_{2}-a_{2}\right) $
+
+$\qquad =\left( c_{2}-b_{2}\right) \left( b_{1}-a_{1}\right) -\left(
+c_{1}-b_{1}\right) \left( b_{2}-a_{2}\right) $
+
+$P=A+\frac{\overrightarrow{AC}\cdot \overrightarrow{AB}}{v\cdot 
+\overrightarrow{AB}}v$
+
+$=\left( a_{1},a_{2}\right) +\frac{\left( c_{1}-a_{1}\right) \left(
+b_{1}-a_{1}\right) +\left( c_{2}-a_{2}\right) \left( b_{2}-a_{2}\right) }{%
+\left( c_{2}-b_{2}\right) \left( b_{1}-a_{1}\right) -\left(
+c_{1}-b_{1}\right) \left( b_{2}-a_{2}\right) }\left( c_{2}-b_{2},-\left(
+c_{1}-b_{1}\right) \right)$
+
+\begin{example}
+Halle el ortocentro del triángulo con vértices $A=\left( -1,-1\right)$, $B=\left( 6,0\right) $ y $C=\left( 3,5\right)$.
+\end{example}
+
+\textbf{Solución}
+
+Aplicamos la fórmula para el ortocentro.
+
+$\overrightarrow{BC}=\left( -3,5\right) $ \ $v=\left( 5,3\right) $
+perpendicular a $\overrightarrow{BC}$.
+
+$\overrightarrow{AC}=\left( 4,6\right) ,\overrightarrow{AB}=\left(
+7,1\right) $
+
+$P=A+\frac{\overrightarrow{AC}\cdot \overrightarrow{AB}}{v\cdot 
+\overrightarrow{AB}}v=\left( -1,-1\right) +\frac{28+6}{38}\left( 5,3\right)
+=\left( \frac{66}{19},\frac{32}{19}\right) \approx \left(
+3.4737,1.684\,2\right) $
+
+En la figura \ref{fig:placeholder2.31} se dibuja el triángulo y su ortocentro.
+\begin{figure}[H]
+    \centering
+    \caption{Ortocentro del ejemplo}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T68.png}
+    \label{fig:placeholder2.31}
+\end{figure}
+
+\subsubsection{Concurrencia de las bisectrices}
+
+Una bisectriz de un triángulo es una bisectriz de un ángulo interno del triángulo.
+
+Las bisectrices de los ángulos de un triángulo son concurrentes en un punto que equidista de los lados del triángulo, como se observa en la figura \ref{fig:placeholder2.32}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Bisectrices de un triángulo}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T69.png}
+    \label{fig:placeholder2.32}
+\end{figure}
+
+El punto de concurrencia de las bisectrices de los ángulos de un triángulo se llama el incentro del triángulo, y este siempre se encuentra en el interior del triángulo, como se observa en la figura \ref{fig:placeholder2.33}.
+
+El incentro $I$ es el centro de la circunferencia que está inscrita en el triángulo. Note que la circunferencia toca cada uno de los lados en tres puntos: $D $, $E$, y $F$. El radio del círculo es la distancia (perpendicular) desde $I$ a cada lado.
+
+\begin{figure}[H]
+    \centering
+    \caption{Concurrencia de las bisectrices}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6A.png}
+    \label{fig:placeholder2.33}
+\end{figure}
+\begin{center}
+$%
+\begin{array}{c}
+ID=IF=IE,\text{ }AB\bot ID,AC\bot IF\text{ y }CD\bot IE.%
+\end{array}%
+$
+
+\end{center}
+
+\textbf{Área de un triángulo usando el incentro}
+
+\begin{figure}[H]
+    \centering
+    \caption{Incentro}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6B.png}
+    \label{fig:placeholder2.34}
+\end{figure}
+
+Sea $ABC$ el triángulo con lados $a=BC,b=AC$ y $c=AB$, como se observa en la figura \ref{fig:placeholder2.34}.
+
+Sabemos que $CF=CE,AF=AD,BD=BE$ \ y \ $ID=IE=IF=r$
+
+$\acute{a}rea\left( \triangle ABC\right) $
+
+$=2\acute{a}rea\left( \triangle ADI\right) +2\acute{a}rea\left( \triangle
+BDI\right) +2\acute{a}rea\left( \triangle CEI\right) $
+
+$=\frac{1}{2}\left( 2rAD+2rDB+2rEC\right) $
+
+$=\frac{r}{2}\left( AD+AF+DB+BE+EC+CF\right) $
+
+$=\frac{r\left( a+b+c\right) }{2}.$
+
+Por otro lado, si $h$ es la altura perpendicular al lado $\overline{AB},$ se tiene que
+
+$\sin A=\frac{h}{AC},$ así que:
+
+\begin{center}
+$\acute{a}rea\left( \triangle ABC\right) =\frac{1}{2}AB\ast h=\frac{1}{2}%
+\left( AB\right) \left( AC\right) \sin A=\frac{bc\sin A}{2}$
+\end{center}
+
+Luego, se cumple que: \ 
+
+\begin{center}
+$\frac{r\left( a+b+c\right) }{2}=\frac{bc\sin A}{2}.$
+\end{center}
+
+\textbf{Coordenadas del incentro}
+
+Sea $ABC$ el triángulo con lados $a=BC=\left\Vert \overrightarrow{BC}\right\Vert ,b=AC=\left\Vert \overrightarrow{AC}\right\Vert $ y $c=AB=\left\Vert \overrightarrow{AB}\right\Vert ,$ $P$ un punto sobre el segmento $\overline{AB}$, y $Q$ un punto sobre el segmento $\overline{AC}$, tales que $\overline{PI}$ sea paralelo a $\overline{AC}$ y $\overline{QI}$ sea paralelo a $\overline{AB}$, como se observa en la figura \ref{fig:placeholder2.35}. \ Como $I$ es el incentro y está sobre la bisectriz del ángulo $A$, el paralelogramo $APIQ$ es un rombo. Sea $m$ la medida del lado de este rombo. El ángulo $IPD$ mide igual que el ángulo $\angle A$, así ,en el triángulo rectángulo $IDP$, tenemos que $\sin A=\frac{r}{m}$.
+
+\begin{figure}[H]
+    \centering
+    \caption{Coordenadas del incentro}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6C.png}
+    \label{fig:placeholder2.35}
+\end{figure}
+
+Por otro lado, del área de $\triangle ABC$ se obtiene de la igualdad $\frac{r\left( a+b+c\right) }{2}=\frac{bc\sin A}{2}$.
+
+Reemplazando $\sin A=\frac{r}{m}$, se tiene:
+
+$r\left( a+b+c\right) =bc\frac{r}{m}$ \ y $m=\frac{bc}{a+b+c}$
+
+Consideremos los vectores unitarios en dirección de $\overrightarrow{AB}$ y $\overrightarrow{AC}$, estos son$\frac{\overrightarrow{AB}}{\left\Vert \overrightarrow{AB}\right\Vert }$ y $\frac{\overrightarrow{AC}}{\left\Vert \overrightarrow{AC}\right\Vert }$, así que:
+
+$\overrightarrow{AI}=\overrightarrow{AP}+\overrightarrow{AQ}$
+
+$=m\frac{\overrightarrow{AB}}{\left\Vert \overrightarrow{AB}\right\Vert }+m%
+\frac{\overrightarrow{AC}}{\left\Vert \overrightarrow{AC}\right\Vert }$
+
+$=m\left( \frac{\overrightarrow{AB}}{c}+\frac{\overrightarrow{AC}}{b}\right) 
+$
+
+$=\frac{bc}{a+b+c}\left( \frac{\overrightarrow{AB}}{c}+\frac{\overrightarrow{%
+AC}}{b}\right) $
+
+$=\frac{1}{a+b+c}\left( b\overrightarrow{AB}+c\overrightarrow{AC}\right) $
+
+Por lo tanto, las coordenadas del incentro son:
+
+$I=\overrightarrow{OI}$
+
+$=\overrightarrow{OA}+\overrightarrow{AI}$
+
+$=A+\frac{1}{a+b+c}\left( b\left( B-A\right) +c\left( C-A\right) \right) $
+
+$=\frac{aA+bA+cA+bB-bA+cC-cA}{a+b+c}$
+
+$=\frac{aA+bB+cC}{a+b+c}$
+
+
+\textbf{Fórmula para las coordenadas del incentro}
+
+\begin{center}
+$I=\frac{aA+bB+cC}{a+b+c}$
+\end{center}
+
+\begin{example}
+Encuentre las coordenadas del incentro del triángulo con vértices $A=\left(-1,0\right)$, $B=\left( 2,3\right)$ y $C=\left( -3,4\right)$.
+\end{example}
+
+\textbf{Solución}
+
+Aplicamos la fórmula para el incentro $I$.
+
+$a=\left\Vert \overrightarrow{BC}\right\Vert =\left\Vert C-B\right\Vert
+=\left\Vert \left( -5,1\right) \right\Vert =\sqrt{26}$
+
+$b=\left\Vert \overrightarrow{AC}\right\Vert =\left\Vert C-A\right\Vert
+=\left\Vert \left( 2,4\right) \right\Vert =2\sqrt{5}$
+
+$c=\left\Vert \overrightarrow{AB}\right\Vert =\left\Vert B-A\right\Vert
+=\left\Vert \left( 3,3\right) \right\Vert =3\sqrt{2}$
+
+$I=\frac{aA+bB+cC}{a+b+c}$
+
+$=\frac{1}{\sqrt{26}+2\sqrt{5}+3\sqrt{2}}\left( \sqrt{26}\left( -1,0\right)
++2\sqrt{5}\left( 2,3\right) +3\sqrt{2}\left( -3,4\right) \right) $
+
+$\approx \left( -0.64303,2.1998\right)$
+
+En la figura \ref{fig:placeholder2.36} se dibuja el triángulo y su incentro.
+\begin{figure}[H]
+    \centering
+    \caption{Incentro del triángulo $ABC$}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6D.png}
+    \label{fig:placeholder2.36}
+\end{figure}
+
+\subsection{Ejercicios}
+
+\begin{enumerate}
+    \item Halle ecuaciones para las rectas medianas del triángulo con vértices:
+    \begin{enumerate}
+        \item $P=\left( 1,1\right) ,\qquad Q=\left( 6,1\right) $ \ \ y \ \ $R=\left(4,8\right) $
+        \item $P=\left( -1,1\right) ,\qquad Q=\left( 3,-2\right) $ \ \ y \ \ $R=\left(5,4\right) $
+    \end{enumerate}
+    \item Encuentre las coordenadas del baricentro del triángulo con vértices:
+    \begin{enumerate}
+        \item $P=\left( -2,1\right) ,\qquad Q=\left( 6,3\right) $ \ \ y \ \ $R=\left(4,9\right) $
+        \item $P=\left( -4,2\right) ,\qquad Q=\left( 2,-2\right) $ \ \ y \ \ $R=\left(0,8\right) $
+    \end{enumerate}
+    \item Determine las coordenadas del circuncentro del triángulo con vértices:
+    \begin{enumerate}
+        \item $P=\left( -2,1\right) ,\qquad Q=\left( 6,3\right) $ \ \ y \ \ $R=\left(4,9\right) $
+        \item $P=\left( -4,2\right) ,\qquad Q=\left( 2,-2\right) $ \ \ y \ \ $R=\left(0,8\right) $
+    \end{enumerate}
+    \item Halle las coordenadas del incentro del triángulo con vértices:
+    \begin{enumerate}
+        \item $P=\left( -2,1\right) ,\qquad Q=\left( 6,3\right) $ \ \ y \ \ $R=\left(4,9\right) $
+        \item $P=\left( -4,2\right) ,\qquad Q=\left( 2,-2\right) $ \ \ y \ \ $R=\left(0,8\right) $
+    \end{enumerate}
+    \item Encuentre las coordenadas del ortocentro del triángulo con vértices:
+    \begin{enumerate}
+        \item $P=\left( 1,-3\right) ,\qquad Q=\left( 6,2\right) $ \ \ y \ \ $R=\left(3,8\right) $
+        \item $P=\left( -3,-2\right) ,\qquad Q=\left( 2,4\right) $ \ \ y \ \ $R=\left(2,10\right) $
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{Semejanza y trigonometría}
+
+\subsubsection{Figuras semejantes}
+
+Dos figuras geométricas semejantes tienen la misma forma, pero no necesariamente el mismo tamaño. Abreviamos \textquotedblleft es semejante a\textquotedblright\ con el símbolo $\sim $.
+
+\subsubsection{Polígonos semejantes}
+
+Dos polígonos son semejantes si sus ángulos miden igual y sus lados son proporcionales.
+
+En la figura \ref{fig:placeholder2.37}, los polígonos $ABCD$ y $EFGH$ son semejantes:\ \ 
+
+\begin{center}
+$ABCD\sim EFGH$
+\end{center}
+
+\begin{figure}[H]
+    \centering
+    \caption{Poligonos semejantes}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6E.png}
+    \label{fig:placeholder2.37}
+\end{figure}
+
+Esto implica que sus ángulos son congruentes, es decir, que miden igual:
+
+$\angle A\cong \angle E,\qquad \angle B\cong \angle F,\qquad \qquad \angle
+C\cong \angle G,\qquad \angle D\cong \angle H.$
+
+Y sus lados son proporcionales:
+
+$\frac{AB}{EF}=\frac{BC}{FG}=\frac{CD}{GH}=\frac{AD}{EH}$
+
+Esta razón igual de los correspondientes lados es llamado el factor de escala de la semejanza.
+
+Así que, en esta semejanza, el factor de escala $c$ es el valor correspondiente a cualquiera de los cocientes:
+
+$c=\frac{AB}{EF}=\frac{BC}{FG}=\frac{CD}{GH}=\frac{AD}{EH}$
+
+\begin{example}
+Pruebe que los polígonos de la figura \ref{fig:placeholder2.38} son semejantes y halle el factor de escala.
+\end{example}
+
+\begin{figure}[H]
+    \centering
+    \caption{Cuadriláteros semejantes}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6F.png}
+    \label{fig:placeholder2.38}
+\end{figure}
+
+\textbf{Solución}
+
+De las medidas del dibujo, se tiene:
+
+$\angle A\cong \angle E,\qquad \angle B\cong \angle F,\qquad \qquad \angle
+C\cong \angle G,\qquad \angle D\cong \angle H.$
+
+Los ángulos correspondientes a cada triángulo miden igual.
+
+$\underset{\frac{18}{54}}{\frac{AB}{EF}}=\underset{\frac{14}{42}}{\frac{BC}{%
+FG}}=\underset{\frac{8}{24}}{\frac{CD}{GH}}=\underset{\frac{16}{48}}{\frac{AD%
+}{EH}}$
+
+Asimismo, los lados son proporcionales. Por lo tanto, los polígonos son proporcionales: $ABCD\sim EFGH.$
+
+El factor de escala de la semejanza, cuando se compara del polígono pequeño al grande, es $\frac{1}{3}$.
+
+Si se compara del polígono grande al polígono pequeño, el factor de escala es $3$.
+
+\subsubsection{Postulado de semejanza de triángulos ángulo-ángulo (AA)}
+
+Si dos ángulos de un triángulo son congruentes a dos ángulos de otro triángulo, entonces los triángulos son semejantes.
+
+\begin{tabular}{|l|l|}
+\hline
+Si $\angle A\cong \angle D$ $\ $y $\angle B\cong \angle E$ & Entonces $%
+\triangle ABC\sim \triangle DEF$ \\ \hline
+\includegraphics[width=0.5\textwidth]{Images/SDY12T6G.png}
+ &
+\includegraphics[width=0.5\textwidth]{Images/SDY12T6H.png}
+\\ \hline
+\end{tabular}
+
+\subsubsection{Semejanza lado-ángulo-lado (LAL)}
+
+Si un ángulo de un triángulo es congruente a un ángulo de otro triángulo y los lados comprendidos por el ángulo del primer triángulo son proporcionales a los lados comprendidos por el ángulo del segundo triángulo, entonces los triángulos son semejantes.
+
+\begin{tabular}{|l|l|}
+\hline
+Si $\frac{AB}{DE}=\frac{AC}{DF}$ $\ $y $\angle A\cong \angle D$ & Entonces $%
+\triangle ABC\sim \triangle DEF$ \\ \hline
+\includegraphics[width=0.5\textwidth]{Images/SDY12T6I.png}
+&
+\includegraphics[width=0.5\textwidth]{Images/SDY12T6J.png}
+\\ \hline
+\end{tabular}
+
+\subsubsection{Semejanza lado-lado-lado (LLL)}
+
+Si los lados correspondientes de dos triángulos son proporcionales, entonces los triángulos son semejantes.
+
+\begin{tabular}{|l|l|}
+\hline
+Si $\frac{AB}{DE}=\frac{AC}{DF}=\frac{BC}{EF}$ & Entonces $\triangle ABC\sim
+\triangle DEF$ \\ \hline
+\includegraphics[width=0.5\textwidth]{Images/SDY12T6K.png}
+ &
+\includegraphics[width=0.5\textwidth]{Images/SDY12T6L.png}
+\\ \hline
+\end{tabular}
+
+\subsubsection{Altura a la hipotenusa de un triángulo rectángulo}
+
+La altura a la hipotenusa de un triángulo rectángulo divide el triángulo en dos triángulos semejantes al triángulo original.
+
+\begin{tabular}{|l|l|}
+\hline
+Si $\triangle ABC$ es un triángulo & Entonces $\ \ \ \ \triangle ABC\sim
+\triangle ADB,$ \\ 
+rectángulo, $m\angle ABC=90^{0}$ y $BD$& $\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\triangle ABC\sim \triangle BDC$ y \\ 
+es la altura a la hipotenusa. & $\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \triangle
+ADB\sim \triangle BDC$ \\ 
+\includegraphics[width=0.5\textwidth]{Images/SDY12T6M.png}
+&
+\includegraphics[width=0.5\textwidth]{Images/SDY12T6N.png}
+\\ \hline
+\end{tabular}
+
+\begin{example}
+\begin{enumerate}
+\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+        \item Pruebe que los triángulos T$_{1}$, con vértices $A=\left( 0,1\right) ,B=\left( 1,3\right) $ y $C=\left( 3,0\right) $, y T$_{2}$ con vértices $ P=\left( 6,-2\right) ,Q=\left( 10,6\right) $ y $R=\left( 18,-6\right) $ son semejantes.
+        \item Halle el factor de escala de la semejanza.
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+a) Calculamos los ángulos.
+
+$m\angle BAC=\cos ^{-1}\left( \frac{\overrightarrow{AB}\cdot \overrightarrow{%
+AC}}{\left\Vert \overrightarrow{AB}\right\Vert \left\Vert \overrightarrow{AC}%
+\right\Vert }\right) $
+
+$\qquad \qquad =\cos ^{-1}\left( \frac{\left( 1,2\right) \cdot \left(
+3,-1\right) }{\left\Vert \left( 1,2\right) \right\Vert \left\Vert \left(
+3,-1\right) \right\Vert }\right) $
+
+$\qquad \qquad =\cos ^{-1}\left( \frac{1}{10}\sqrt{2}\right) =81.\,870^{0}$
+
+$m\angle ACB=\cos ^{-1}\left( \frac{\overrightarrow{CA}\cdot \overrightarrow{%
+CB}}{\left\Vert \overrightarrow{CA}\right\Vert \left\Vert \overrightarrow{CB}%
+\right\Vert }\right) $
+
+$\qquad \qquad =\cos ^{-1}\left( \frac{\left( -3,1\right) \cdot \left(
+-2,3\right) }{\left\Vert \left( -3,1\right) \right\Vert \left\Vert \left(
+-2,3\right) \right\Vert }\right) $
+
+$\qquad \qquad =$ $\cos ^{-1}\left( \frac{9}{130}\sqrt{130}\right) =$ $%
+37.\,\allowbreak 875^{0}.$
+
+$m\angle QPR=\cos ^{-1}\left( \frac{\overrightarrow{PQ}\cdot \overrightarrow{%
+PR}}{\left\Vert \overrightarrow{PQ}\right\Vert \left\Vert \overrightarrow{PR}%
+\right\Vert }\right) $
+
+$\qquad \qquad =\cos ^{-1}\left( \frac{\left( 4,8\right) \cdot \left(
+12,-4\right) }{\left\Vert \left( 4,8\right) \right\Vert \left\Vert \left(
+12,-4\right) \right\Vert }\right) $
+
+$\qquad \qquad =\cos ^{-1}\left( \frac{1}{10}\sqrt{2}\right) =81.\,870^{0}$
+
+$m\angle PRQ=\cos ^{-1}\left( \frac{\overrightarrow{RP}\cdot \overrightarrow{%
+RQ}}{\left\Vert \overrightarrow{RP}\right\Vert \left\Vert \overrightarrow{RQ}%
+\right\Vert }\right) $
+
+$\qquad \qquad =\cos ^{-1}\left( \frac{\left( -12,4\right) \cdot \left(
+-8,12\right) }{\left\Vert \left( -12,4\right) \right\Vert \left\Vert \left(
+-8,12\right) \right\Vert }\right) $
+
+$\qquad \qquad =$ $\cos ^{-1}\left( \frac{9}{130}\sqrt{130}\right) =$ $%
+37.\,\allowbreak 875^{0}.$
+
+Así $\angle BAC\cong $ $\angle QPR$ \ y\ $\angle ACB\cong \angle PRQ$, por
+el postulado $AA$, se tiene que $\triangle ABC$ y \ $\triangle PQR$ son semejantes.
+
+b) El factor de escala es el cociente de dos lados correspondientes:
+
+$\frac{PQ}{AB}=\frac{\left\Vert \overrightarrow{PQ}\right\Vert }{\left\Vert 
+\overrightarrow{AB}\right\Vert }=\frac{\left\Vert \left( 4,8\right)
+\right\Vert }{\left\Vert \left( 1,2\right) \right\Vert }=\frac{4\left\Vert
+\left( 1,2\right) \right\Vert }{\left\Vert \left( 1,2\right) \right\Vert }%
+=4$
+
+En la figura \ref{fig:placeholder2.39} se dibujan estos dos triángulos semejantes.
+\begin{figure}[H]
+    \centering
+    \caption{Triángulos semejantes}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6O.png}
+    \label{fig:placeholder2.39}
+\end{figure}
+
+\subsection{Trigonometría}
+
+\subsubsection{Teorema de Pitágoras}
+
+En un triángulo rectángulo, la medida de la hipotenusa al cuadrado es igual a la suma de los cuadrados de los catetos.
+
+\textbf{Demostración del teorema de pitagoras}
+
+El teorema de Pitágoras tiene muchas demostraciones de   diversos tipos, pero una de las más claras gráficamente puede ser la siguiente.
+
+Veamos los dos cuadrados en la figura \ref{fig:placeholder2.40}:
+
+\begin{figure}[H]
+    \centering
+    \caption{Cuadrados para visualizar el Teorema de Pitágoras }
+    $%
+    \begin{array}{c}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6P.png}
+    
+    \end{array}%
+    \begin{array}{c}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6Q.png}
+    \end{array}%
+    $
+    \label{fig:placeholder2.40}
+\end{figure}
+
+Ambas son dos cuadrados de lado $a+b$ y, en las dos, se puede ver que aparecen cuatro triángulos rectángulos de lados $a$, $b$ y $c$, en colores rojo todos ellos.
+
+Eso quiere decir que las partes restantes en cada uno de los cuadrados de lado $a+b$ deben tener igual área, como se observa en la figura \ref{fig:placeholder2.41}. 
+
+\begin{figure}[H]
+    \centering
+    \caption{Cuadrados de igual área}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6R.png}
+    \label{fig:placeholder2.41}
+\end{figure}
+
+
+En el primero, la parte restante son los cuadrados de colores azul y verde de áreas b$^{2}$ y a$^{2}$ respectivamente; en el segundo, el cuadrado amarillo de área c$^{2}$. \ Esas áreas deben ser iguales, es decir:
+
+\begin{center}
+a$^{2}+$b$^{2}=$c$^{2}$
+\end{center}
+
+Ahora se presenta una prueba analítica con semejanza de triángulos.
+
+Consideremos el triángulo con vértices $ABC$.
+
+\begin{figure}[H]
+    \centering
+    \caption{Altura a la hipotenusa}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6S.png}
+    \label{fig:placeholder2.42}
+\end{figure}
+
+Como la altura a la hipotenusa $BD$, que se muestra en la figura \ref{fig:placeholder2.42}, divide el triángulo $ABC$ en dos triángulos semejantes a él, tenemos:
+
+$\triangle ADB\sim \triangle ABC$, así que sus correspondientes lados son proporcionales. Luego:
+
+$\frac{AB}{AD}=\frac{AC}{AB}$, entonces \thinspace $E_{1}:\left( AB\right)
+^{2}=\left( AC\right) \left( AD\right)$.
+
+$\triangle CDB\sim \triangle CBA$, por lo cual sus correspondientes lados son proporcionales. Luego:
+
+$\frac{BC}{DC}=\frac{AC}{BC}$, entonces $E_{2}:\left( BC\right) ^{2}=\left(
+AC\right) \left( DC\right) $.
+
+Al sumar las ecuaciones $E_{1}+E_{2}:\left( AB\right) ^{2}+\left( BC\right)
+^{2}=\left( AC\right) \left( AD\right) +\left( AC\right) \left( DC\right) $
+
+y $\left( AB\right) ^{2}+\left( BC\right) ^{2}=\left( AC\right) \left(
+AD+DC\right) $
+
+Por lo tanto, \ $\left( AB\right) ^{2}+\left( BC\right) ^{2}=\left( AC\right)
+^{2}$ y queda demostrado el teorema.
+
+\bigskip
+
+Una tripla pitagórica es una terna $(x,y,z)$ de números enteros positivos, tales que $x^{2}+y^{2}=z^{2}.$
+
+Las triplas pitagóricas son de la forma $(m^{2}-n^{2},2mn,m^{2}+n^{2})$, donde $m,n $ son enteros con $m>n$, pues se satisface la identidad pitagórica:
+
+$\left( m^{2}-n^{2}\right) ^{2}+\left( 2mn\right) ^{2}=\left(
+m^{2}+n^{2}\right) ^{2}$
+
+El recíproco del teorema de Pitágoras es válido:
+
+Sean $a,b,c$ los lados de un triángulo donde $c$ es el lado más grande, se cumple:
+\begin{enumerate}
+    \item Si $c^{2}=a^{2}+b^{2},$ el triángulo es rectángulo.
+    \item Si $c^{2}>a^{2}+b^{2},$ el triángulo es obtusángulo.
+    \item Si $c^{2}<a^{2}+b^{2},$ el triángulo es acutángulo.
+\end{enumerate}
+
+\subsection{Relaciones trigonométricas para un ángulo en un triángulo rectángulo}
+
+Al fijar un ángulo $\alpha $\ en un triángulo rectángulo, los catetos quedan clasificados en cateto opuesto \ $co$ \ y cateto adyacente $ca$, como se observa en la figura \ref{fig:placeholder2.43}. 
+
+\begin{figure}[H]
+    \centering
+    \caption{Triángulo rectángulo con un ángulo fijado}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6T.png}
+    \label{fig:placeholder2.43}
+\end{figure}
+
+Existen seis formas diferentes de establecer razones entre dos de los lados de un triángulo rectángulo. Estas son:
+
+$\sin \alpha =\frac{co}{h}$ $\ \ \ \qquad \cos \alpha =\frac{ca}{h}\qquad $\ 
+$\ \ \ \ \tan \alpha =\frac{co}{ca}\qquad $\ $\ \ \ $
+
+$\cot \alpha =\frac{ca}{co}\qquad $\ $\ \ \ \sec \alpha =\frac{h}{ca}\qquad $%
+\ $\ \ \ \csc \alpha =\frac{h}{co}$
+
+A partir de la definición de las relaciones trigonométricas, se obtienen las siguientes identidades:
+
+$\frac{\sin \alpha }{\cos \alpha }=\frac{\frac{co}{h}}{\frac{ca}{h}}=\frac{co%
+}{ca}=\tan \alpha .$
+
+$\frac{\cos \alpha }{\sin \alpha }=\frac{\frac{ca}{h}}{\frac{co}{h}}=\frac{ca%
+}{co}=\frac{1}{\tan \alpha }=\cot \alpha .a$
+
+$\frac{1}{\sin \alpha }=\frac{h}{co}=\csc \alpha $
+
+$\frac{1}{\cos \alpha }=\frac{h}{ca}=\sec \alpha $
+
+$\sin ^{2}\alpha +\cos ^{2}\alpha =\left( \frac{co}{h}\right) ^{2}+\left( 
+\frac{ca}{h}\right) ^{2}=\frac{\left( co\right) ^{2}+\left( ca\right) ^{2}}{%
+h^{2}}=\frac{h^{2}}{h^{2}}=1$
+
+\subsubsection{Valores de seno y coseno para algunos ángulos}
+
+A partir del triángulo de la figura \ref{fig:placeholder2.44}, se obtienen los valores de seno, coseno, tangente, cotangente secante y cosecante del ángulo de 45 grados.
+
+\begin{figure}[H]
+    \centering
+    \caption{Triángulo rectángulo isóceles}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6U.png}
+    \label{fig:placeholder2.44}
+\end{figure}
+
+$\sin 45^{0}=\frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2},$ $\cos 45^{0}=\frac{1}{%
+\sqrt{2}}=\frac{\sqrt{2}}{2},$
+
+$\tan 45^{0}=1=\cot 45^{0},$ $\sec 45^{0}=\sqrt{2}=\csc 45^{0}$
+\\
+Igualmente, del triángulo de la figura \ref{fig:placeholder2.45} se deduce:
+
+\begin{figure}[H]
+    \centering
+    \caption{Triángulo rectángulo con ángulos de 30 y 60 grados}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6V.png}
+    \label{fig:placeholder2.45}
+\end{figure}
+
+$\sen 30^{0}=\frac{1}{2},\cos 30^{0}=\frac{\sqrt{3}}{2},\tan 30^{0}=\frac{1}{%
+\sqrt{3}}=\frac{\sqrt{3}}{3},$
+
+$\cot 30^{0}=\sqrt{3},\sec 30^{0}=\frac{2\sqrt{3}}{3},\csc 30^{0}=2$
+
+$\cos 60^{0}=\frac{1}{2},\sen 60^{0}=\frac{\sqrt{3}}{2},\cot 60^{0}=\frac{1}{%
+\sqrt{3}}=\frac{\sqrt{3}}{3},$
+
+$\tan 60^{0}=\sqrt{3},\csc 60^{0}=\frac{2\sqrt{3}}{3},\sec 60^{0}=2$\\
+
+\subsubsection{Funciones trigonométricas de todos los ángulos}
+
+Para cualquier ángulo $\alpha ,$ medido en radianes, la pareja (cos$\alpha ,$sen$\alpha $) se encuentra exactamente en la intersección de la circunferencia unitaria $x^{2}+y^{2}=1$ con la semirrecta generada por el ángulo $\alpha $, como se ilustra en la figura \ref{fig:placeholder2.46}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Ángulo determinado por una semirrecta que parte del origen}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6W.png}
+    \label{fig:placeholder2.46}
+\end{figure}
+
+De esta forma, se establece una correspondencia biúnivoca entre los puntos de la circunferencia unitaria y el conjunto de puntos de la forma $(\cos \alpha
+,\sin \alpha )$ para $\alpha \in \lbrack 0,2\pi )$
+
+Así, para cada ángulo $\alpha $, el punto $(\cos \alpha ,\sin \alpha )$
+satisface $\cos ^{2}\alpha +\sin ^{2}\alpha =1.$
+
+\paragraph{Los signos de las funciones trigonométricas en los diferentes cuadrantes son:}
+
+\begin{center}
+$%
+\begin{array}{lcccc}
+& \text{I cuadrante} & \text{II cuadrante} & \text{III cuadrante} & \text{IV
+cuadrante} \\ 
+\text{seno} & + & + & - & - \\ 
+\text{coseno} & + & - & - & + \\ 
+\text{tangente} & + & - & + & - \\ 
+\text{cotangente} & + & - & + & - \\ 
+\text{secante} & + & - & - & + \\ 
+\text{cosecante} & + & + & - & -%
+\end{array}%
+$
+\end{center}
+
+\bigskip
+
+Para calcular las funciones trigonométricas de un ángulo de cualquier cuadrante, es suficiente conocer los valores del primer cuadrante y usar las transformaciones:
+
+\begin{center}
+$%
+\begin{array}{ll}
+\text{Si }\alpha \text{\ está en el segundo cuadrante,} & \text{cambiar }%
+\alpha \text{\ por }90^{0}-\alpha \text{ \ } \\ 
+\text{Si }\alpha \text{\ está en el tercer cuadrante, \ \ \ } & \text{cambiar 
+}\alpha \text{\ por }\alpha -180^{0} \\ 
+\text{Si }\alpha \text{\ está en el cuarto cuadrante, \ \ \ } & \text{cambiar 
+}\alpha \text{\ por }360^{0}-\alpha%
+\end{array}%
+$
+\end{center}
+
+Estas fórmulas se podrán verificar con las identidades de la suma para seno y coseno.
+
+En la la figura \ref{fig:placeholder2.47}, se ilustran las identidades por las cuales la función coseno es par y la función seno es impar:
+
+\begin{figure}[H]
+    \centering
+    \caption{Paridad para el coseno y el seno}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6X.png}
+    \label{fig:placeholder2.47}
+\end{figure}
+
+$\bigskip \sin (-\alpha )=-\sin \alpha \qquad \qquad \cos (-\alpha )=\cos
+\alpha $
+
+\paragraph{Teorema del seno}
+En cualquier triángulo,como el de la figura \ref{fig:placeholder2.48}, los lados y ángulos satisfacen:
+
+\begin{figure}[H]
+    \centering
+    \caption{Triangulo con lados $a,b$ y $c$}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6Y.png}
+    \label{fig:placeholder2.48}
+\end{figure}
+\begin{center}
+ $\frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}$   
+\end{center}
+
+\textbf{Demostración} \\
+Se verificará la primera igualdad, ya que las demás se obtienen al renombrar las variables.
+\begin{figure}[H]
+    \centering
+    \caption{Triángulo con la altura a la hipotenusa}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T6Z.png}
+    \label{fig:placeholder2.49}
+\end{figure}
+De la figura \ref{fig:placeholder2.49} se deduce:
+
+$\sin A=\frac{h}{b}\qquad \sin B=\frac{h}{a},$ \ \ \ luego \ $b\sin A=a\sin
+B $ \ \ \ y \ \ \ $\frac{\sin A}{a}=\frac{\sin B}{b}.$
+
+\bigskip
+
+\paragraph{Teorema del coseno}
+En cualquier triángulo, como el de la figura \ref{fig:placeholder2.50}, los lados y ángulos satisfacen:
+
+\begin{figure}[H]
+    \centering
+    \caption{Triángulo con lados $a,b$ y $c$}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T70.png}
+    \label{fig:placeholder2.50}
+\end{figure}
+
+$c^{2}=a^{2}+b^{2}-2ab\cos C$ \ $\ \ \ a^{2}=b^{2}+c^{2}-2bc\cos A\qquad
+b^{2}=a^{2}+c^{2}-2ac\cos B$
+
+\textbf{Demostración}
+
+Se verificará la tercera igualdad, ya que las demás se obtienen al renombrar las variables.
+
+\begin{figure}[H]
+    \centering
+    \caption{Triángulo con altura a la hipotenusa}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T71.png}
+    \label{fig:placeholder2.51}
+\end{figure}
+
+
+Si se aplica el teorema de Pitágoras en cada uno de los triángulos interiores de la figura \ref{fig:placeholder2.51}, se tiene:
+
+$a^{2}-c_{1}^{2}=h^{2}\qquad b^{2}-(c_{2})^{2}=h^{2}$
+
+Al reemplazar $c$ por $c-c_{1}$ e igualar $h^{2}$,resulta:
+
+$a^{2}-(c_{1})^{2}=b^{2}-(c-c_{1})^{2}$
+
+Si se simplifican los términos:
+
+$a^{2}-(c_{1})^{2}=b^{2}-c^{2}-c_{1}^{2}+2cc_{1}$
+
+Usando la relación del coseno en el triángulo rectángulo de la izquierda, dr tiene que $c_{1}=a\cos B$, y reemplazando, se obtiene:
+
+$a^{2}=b^{2}-c^{2}+2ca\cos B$
+
+Lo que equivale a:
+
+$b^{2}=a^{2}+c^{2}-2ac\cos B$
+
+
+\subsubsection{Identidades trigonométricas}
+
+\textbf{Identidades iniciales}
+
+$\tan \theta =\frac{sen\theta }{\cos \theta }\qquad \cot \theta =\frac{\cos
+\theta }{\sin \theta }=\frac{1}{\tan \theta }\qquad \sec \theta =\frac{1}{%
+\cos \theta }\qquad \csc \theta =\frac{1}{\sin \theta }$\\
+
+Las siguientes identidades se satisfacen para cada $x,y\in \mathbb{R}$:
+
+\begin{enumerate}
+    \item $\cos (x-y)=\cos x\cos y+\sin x\sin y$
+    \item $\ \cos (-x)=\cos x$
+    \item $\cos (\frac{\pi }{2}-x)=\sin x$
+    \item $\sin (\frac{\pi }{2}-x)=\cos x$
+    \item $\sin (x+y)=\sin x\cos y+\cos x\sin y=\sin x\cos y+\sin y\cos x$
+    \item $\cos (\pi -x)=-\cos x$
+    \item $\sin (-x)=-\sin (x)$
+    \item $\cos (x+y)=\cos x\cos y-\sin x\sin y$
+    \item $\sin (x-y)=\sin x\cos y-\sin y\cos x$
+    \item $\sin 2x=2\sin x\cos x.$
+    \item $\cos 2x=\cos ^{2}x-\sin ^{2}x.$
+    \item $\sin x=\sqrt{\frac{1-\cos \left( 2x\right) }{2}},$ si $0\leq x\leq \pi$
+    \item $\cos x=\sqrt{\frac{1+\cos \left( 2x\right) }{2}},$ si $-\frac{\pi }{2}\leq x\leq \frac{\pi }{2}$
+\end{enumerate}
+
+\textbf{Demostración}
+
+1.
+\begin{figure}[H]
+    \centering
+    \caption{coseno de una suma}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T72.png}
+    \label{fig:placeholder2.52}
+\end{figure}
+
+De la figura \ref{fig:placeholder2.52}, se tiene que:
+
+$d\left( P,Q\right) ^{2}=d\left( R,S\right) ^{2}$
+
+$d((\cos x,\sin x),(\cos y,\sin y))^{2}=d((\cos (x-y),\sin (x-y)),(1,0))^{2}$
+
+$(\cos x-\cos y)^{2}+(\sin x-\sin y)^{2}=(\cos (x-y)-1)^{2}+\sin ^{2}(x-y)$
+
+$%
+\begin{array}{c}
+\cos ^{2}x-2\cos x\cos y+\cos ^{2}y+\sin ^{2}x-2\sin x\sin y+\sin ^{2}y \\ 
+\text{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }=\cos ^{2}(x-y)-2\cos (x-y)+1+\sin
+^{2}(x-y)%
+\end{array}%
+$
+
+$2-2\cos x\cos y-2\sin x\sin y=2-2\cos (x-y)$
+
+$\cos (x-y)=\cos x\cos y+\sin x\sin y.$
+
+\bigskip
+
+2. $\ \cos (-x)=\cos (0-x)=\cos 0\cos x+\sin 0\sin x=\cos x$
+
+\bigskip
+
+3. $\cos (\frac{\pi }{2}-x)=\cos \frac{\pi }{2}\cos x+\sin \frac{\pi }{2}%
+\sin x=\sin x$
+
+\bigskip
+
+4.$\sin (\frac{\pi }{2}-x)=\cos (\frac{\pi }{2}-(\frac{\pi }{2}-x))=\cos x$
+
+\bigskip
+
+5.$\sin (x+y)=\cos ((\frac{\pi }{2}-x)-y$)
+
+$\qquad \qquad \qquad =\cos (\frac{\pi }{2}-x)\cos y+\sin (\frac{\pi }{2}%
+-x)\sin y$
+
+$\qquad \qquad \qquad =\sin x\cos y+\sin (\frac{\pi }{2}-x)\sin y$
+
+$\qquad \qquad \qquad =\sin x\cos y$+$\cos x\sin y$
+
+$\qquad \qquad \qquad =\sin x\cos y+\sin y\cos x$
+
+\bigskip
+
+6. $\cos (\pi -x)=\cos (x-\pi $)
+
+$\qquad \qquad \qquad =\cos x\cos \pi +\sin x\sin \pi $
+
+$\qquad \qquad \qquad =-\cos x$
+
+\bigskip
+
+7. $\sin (-x)=\cos (\frac{\pi }{2}+x)=\cos (\pi -(\frac{\pi }{2}-x))$
+
+$\qquad \qquad \qquad \qquad \qquad =-\cos (\frac{\pi }{2}-x)$
+
+$\qquad \qquad \qquad \qquad \qquad =-\sin (x)$
+
+\bigskip
+
+8. $\cos (x+y)=\cos (x-(-y))$
+
+$\qquad \qquad \qquad =\cos x\cos (-y)+\sin x\sin (-y)$
+
+$\qquad \qquad \qquad =\cos x\cos y-\sin x\sin y$
+
+$\bigskip $
+
+$9.\sin (x-y)=\sin (x+(-y))$
+
+$\qquad \qquad \qquad =\sin x\cos (-y)+\sin (-y)\cos x$
+
+$\qquad \qquad \qquad =\sin x\cos y-\sin y\cos x$
+
+$\bigskip $
+
+10.$\sin 2x=\sin (x+x)=2\sin x\cos x$
+
+$\bigskip $
+
+11.$\cos 2x=\cos (x+x)$
+
+$\qquad \qquad =\cos x\cos x-\sin x\sin x$
+
+$\qquad \qquad =\cos ^{2}x-\sin ^{2}x$
+
+\bigskip
+
+12. $\cos 2x=\cos ^{2}x-\sin ^{2}x$
+
+$\rightarrow \cos 2x=1-\sin ^{2}x-\sin ^{2}x$
+
+$\rightarrow 2\sin ^{2}x=1-\cos 2x$
+
+$\rightarrow \sin ^{2}x=\frac{1-\cos 2x}{2}$
+
+$\sin x=\sqrt{\frac{1-\cos \left( 2x\right) }{2}},$ si $0\leq x\leq \pi $
+
+\bigskip
+
+13. $\cos ^{2}x-\sin ^{2}x=\cos 2x$
+
+$\rightarrow \cos ^{2}x-\left( 1-\cos ^{2}x\right) =\cos 2x$
+
+$\rightarrow 2\cos ^{2}x=1+\cos 2x$
+
+$\rightarrow \cos ^{2}x=\frac{1+\cos 2x}{2}$
+
+$\cos x=\sqrt{\frac{1+\cos \left( 2x\right) }{2}},$ si $-\frac{\pi }{2}\leq
+x\leq \frac{\pi }{2}$
+
+\bigskip
+
+\subsection{Área de un triángulo a partir de las longitudes de sus lados}
+
+\subsubsection{Fórmula de Herón}
+
+Dado un triángulo $ABC$, con lados $a$,$b$ y $c$ dados, la fórmula usual para el área del triángulo, que es la mitad de la base por la altura, no permite calcular el área directamente a partir de las longitudes de los lados. 
+
+Sin embargo, existe una fórmula para calcular el área del triángulo usando únicamente las longitudes de los lados. Esta es la llamada fórmula de Herón, que probaremos a continuación.
+
+Llamemos $u$ a una parte de la base $b$ del triángulo, determinada por la intersección de esta con la altura, de forma que la otra parte será $b-u$, como en la siguiente imagen.
+
+\begin{figure}[H]
+    \centering
+    \caption{Triángulo con una altura}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T73.png}
+    \label{fig:placeholder2.53}
+\end{figure}
+
+Al aplicar el teorema de Pitágoras a los dos triángulos rectángulos determinados por la altura $h$, de la figura \ref{fig:placeholder2.53}, se obtiene:
+
+$h^{2}=c^{2}-u^{2}$ \ y \ $h^{2}=a^{2}-\left( b-u\right) ^{2}$ \ 
+
+Al igualar $h^{2}$:
+
+$a^{2}-\left( b-u\right) ^{2}=c^{2}-u^{2}$
+
+$a^{2}-b^{2}+2bu-u^{2}=c^{2}-u^{2}$
+
+$u=\frac{b^{2}+c^{2}-a^{2}}{2b}$
+
+Si se reemplaza en $h^{2}=c^{2}-u^{2}$, se obtiene:
+
+$h^{2}=c^{2}-\left( \frac{\left( b^{2}+c^{2}-a^{2}\right) ^{2}}{2b}\right)
+^{2}$
+
+$=\frac{4b^{2}c^{2}-\left( b^{2}+c^{2}-a^{2}\right) ^{2}}{4b^{2}}$
+
+$=\frac{\left( 2bc+b^{2}+c^{2}-a^{2}\right) \left(
+2bc-b^{2}-c^{2}+a^{2}\right) }{4b^{2}}$
+
+$=\frac{\left( \left( b+c\right) ^{2}-a^{2}\right) \left( a^{2}-\left(
+b-c\right) ^{2}\right) }{4b^{2}}$
+
+$h^{2}=\frac{\left( b+c+a\right) \left( b+c-a\right) \left( a+b-c\right)
+\left( a-b+c\right) }{4b^{2}}$
+
+De donde $\ h=\frac{\sqrt{\left( b+c+a\right) \left( b+c-a\right) \left(
+a+b-c\right) \left( a-b+c\right) }}{2b}$ y el área del triángulo es:
+
+$A=\frac{1}{2}bh=\frac{1}{2}b\frac{\sqrt{\left( b+c+a\right) \left(
+b+c-a\right) \left( a+b-c\right) \left( a-b+c\right) }}{2b}$
+
+$A=\sqrt{\frac{\left( a+b+c\right) }{2}\frac{\left( b+c-a\right) }{2}\frac{%
+\left( a+b-c\right) }{2}\frac{\left( a-b+c\right) }{2}}$
+
+$A=\sqrt{\frac{\left( a+b+c\right) }{2}\left( \frac{a+b+c}{2}-a\right)
+\left( \frac{a+b+c}{2}-b\right) \left( \frac{a+b+c}{2}-c\right) }$
+
+Si llamamos $s=\frac{a+b+c}{2}$ \ al semiperímetro del triángulo, tenemos:
+
+\begin{center}
+$A=\sqrt{s\left( s-a\right) \left( s-b\right) \left( s-c\right) }$
+\end{center}
+
+Esta es la conocida fórmula de Herón.
+
+\bigskip
+
+\begin{example}
+Halle el área del triángulo cuyos lados miden $5$, $12$ y $13$ centímetros.
+\end{example}
+
+\textbf{Solución}
+
+El perímetro es $P=5+12+13=30$ y el semiperímetro es $s=15$. El área del triángulo es
+
+\QTP{Body Math}
+$A=\sqrt{15\left( 15-5\right) \left( 15-12\right) \left( 15-13\right) }=30$
+cm$^{2}.$
+
+Por otro lado, note que este triángulo es rectángulo, ya que $13^{2}=12^{2}+5^{2}$. De esto se deduce que el área es la mitad de la base ($12$) por la altura ($5$), lo cual indica que el área del triángulo es $30$ cm$^{2}.$
+
+\subsection{Ejercicios}
+
+\begin{enumerate}
+\item Determine si $\triangle ABC$ es semejante a $\triangle DEF.$ Si los triángulos son semejantes, encuentre el factor de escala.
+
+\begin{enumerate}
+    \item $A=\left( 1,2\right), B=\left( 2,0\right), C=\left( 6,4\right), D=\left(17,16\right), E=\left( 14,10\right)$ y $F=\left( 2,22\right)$
+    \item $A=\left( 0,3\right), B=\left( 2,1\right), C=\left( 1,5\right), D=\left(10,9\right), E=\left( 4,3\right)$ y $F=\left( 9,15\right)$
+    \item $A=\left( 2,2\right), B=\left( 4,2\right), C=\left( 1,3\right), D=\left(7,5\right), E=\left( -1,5\right)$ y $F=\left( 11,9\right)$
+\end{enumerate}
+
+
+\item Halle $x$ en el triángulo.
+
+ \includegraphics[width=0.5\textwidth]{Images/SDY12T74.png}   
+
+\item Si $AC=6$, $BC=8$, $BE=18$, $m\angle A=m\angle E$, halle $DE$.
+
+ \includegraphics[width=0.5\textwidth]{Images/SDY12T75.png} 
+
+\item Halle $a$ en el siguiente triángulo.
+
+ \includegraphics[width=0.5\textwidth]{Images/SDY12T76.png} 
+\item Si el segmento $AB$ es paralelo al segmento $EC$, halle $x$ en la siguiente figura:
+
+ \includegraphics[width=0.5\textwidth]{Images/SDY12T77.png} 
+
+\item Para el siguiente triángulo rectángulo ($\gamma =90^{\circ }$), halle los lados y los ángulos incógnitos:
+\\
+ \includegraphics[width=0.8\textwidth]{Images/SDY12T78.png} \\
+
+\begin{enumerate}
+    \item Si \ $\alpha =40^{0}$ \ y \ $a=10$
+    \item Si \ $\alpha =50^{0}$ \ y \ $b=25$
+    \item Si \ $\alpha =75^{0}$ \ y \ $c=18$
+    \item Si \ $a=7$\ y \ $b=15$
+    \item Si \ $b=15$ \ y \ $\alpha =10^{0}$
+    \item Si \ $a=11$ \ y \ $c=13$
+\end{enumerate}
+
+\item Un guardabosques que está a 15 m de la base de un árbol observa que el ángulo entre el suelo y la cima del árbol es de 20$^{0}$, ¿cuál es la altura del árbol?
+
+\item Un observador sobre un edificio A mide un ángulo de depresión de 35$^{0}$ respecto a la base de otro edificioB y un ángulo de elevación de 15$^{0}$ hasta la cima de B. \ Si la altura del edificio A es 24 m, ¿cuál es la altura de B?
+
+\item La parte superior de una escalera de 3 metros está recostada contra el borde del techo de una casa. \ Si el ángulo entre la escalera y la horizontal es de 48$^{0}$, \ ¿cuál es la altura aproximada de la casa y qué tan lejos está el pie de la escalera de la base de la casa?
+
+\item Dos observadores ubicados en línea recta sobre la horizontal miden los  ángulos de elevación hasta la parte más alta de un edificio. \ Si el primero mide un ángulo de 40$^{0}$ \ y \ el segundo de 25$^{0}$, \ y \ la distancia entre ellos es de 800 metros, encuentre la altura del edificio.
+
+\item Para el triángulo (no rectángulo), halle los lados y ángulos incógnitos:
+
+ \includegraphics[width=0.5\textwidth]{Images/SDY12T79.png} 
+
+\begin{enumerate}
+    \item \ Si \ $A=40^{0}$ , \ $B=70^{0}$ \ y \ \ $a=20$
+    \item\ Si \ $a=4$ , \ $b=6$ \ y \ \ $C=110^{0}$
+    \item \ Si \ $A=30^{0}$ , \ $b=10$ \ y \ \ $a=8$
+    \item \ Si \ $a=40^{0}$ \ , \ $B=80^{0}$ \ y \ \ $a=11$
+    \item \ Si \ $A=40^{0}$ , \ $b=15$ \ y \ \ $c=13$
+    \item \ Si \ $C=130^{0}$, \ $b=17$ \ y \ \ $a=12$
+    \item \ Si \ $C=100^{0}$, \ $b=20$ \ y \ \ $a=19$
+    \item \ Si \ $a=20$, \ $b=30$ \ y \ \ $c=15$
+    \item \ Si \ $a=13$, \ $b=9$ \ y \ \ $c=8$ 
+\end{enumerate}
+
+
+\item Halle los datos que faltan:
+
+ \includegraphics[width=0.5\textwidth]{Images/SDY12T7A.png} 
+\item Cuando el ángulo de elevación del sol es de 50$^{0}$, un poste de teléfono inclinado a un ángulo de 85$^{0}$ con la horizontal, arroja una sombra de 5 metros. Calcule la longitud del poste.
+
+\item Halle los ángulos B y C , y el lado $x$ en el siguiente cuadrilátero.
+
+ \includegraphics[width=0.5\textwidth]{Images/SDY12T7B.png} 
+ 
+\item Un poste vertical de luz y un hombre de 170 cm de altura están alineados sobre un andén que se inclina hacia abajo en un ángulo constante $%
+\alpha $. \ Si la sombra del hombre sobre el andén mide 4 metros y el ángulo de depresión desde la cabeza del hombre hasta la punta de su sombra es de 32$^{0}$, encuentre el ángulo $\alpha$.
+
+\item Los ángulos de elevación de un aeroplano se miden desde lo más alto y desde la base de un edificio que mide 20 metros de alto. \ El ángulo de la cima del edificio es de 38$^{0}$ y el desde la base es de 40$^{0}$. \ Encuentre la altitud del aeroplano.
+
+\item Un rombo tiene lados de 12 cm de longitud. Si el ángulo de uno de los vértices es 55$^{0}$ , halle las longitudes de las diagonales.
+
+\item Dos estaciones de radar se sitúan a 6 \ km una de la otra. \ Un avión pasa directamente sobre la línea que une las dos estaciones. \ En ese instante, las distancias entre el avión y las estaciones son de 2.5 \ km \ y 4 km \
+Encuentre la altitud del avión.
+
+\item Halle las diagonales de un paralelogramo cuyos lados miden 3 y 5 metros y que tiene un ángulo interno de 60$^{\circ }$.
+
+\item Un árbol en una ladera proyecta una sombra de 215 pies. Si el ángulo de inclinación de la ladera es de 22º con la horizontal y el ángulo de elevación del sol es de 52º, ¿cuál es la altura del árbol?
+
+ \includegraphics[width=0.7\textwidth]{Images/SDY12T7C.png} 
+\\En cada caso, verifique la identidad trigonométrica.
+
+\item $(\sec t-\tan t)\sec t=\frac{1}{1+sent}\qquad \qquad \qquad $
+
+\item $\frac{\cot (-t)+\csc (-t)}{sen(-t)}=\frac{1}{1-\cos t}$
+
+\item $\sqrt{\frac{1-\cos \theta }{1+\cos \theta }}=\frac{1-\cos t}{|sent|}%
+\qquad \qquad \qquad \qquad \qquad $
+
+\item $\sqrt{\frac{1-sen\theta }{1+sen\theta }}=\frac{1-sen\theta }{|\cot
+\theta |}$
+
+\item $\frac{\tan ^{3}\beta -\cot ^{3}\beta }{\tan ^{2}\beta +\csc ^{2}\beta 
+}=\tan \beta -\cot \beta \qquad \qquad \qquad $
+
+\item $\frac{\cos \alpha }{1-\tan \alpha }+\frac{sen\alpha }{1-\cot \alpha }%
+=\cos +sen\alpha $
+
+\item $\frac{sent+\tan t}{1+\cos t}=\tan t\qquad \qquad \qquad \qquad \qquad
+\qquad $
+
+\item $\sec t-\frac{\cos t}{1+sent}=\tan t$
+
+\item $\frac{\tan z-\sec z}{\tan z+\sec z}$=$\frac{\sin z-1}{\sin z+1}\qquad
+\qquad \qquad \qquad \qquad \qquad $
+
+\item $\frac{\tan z-\cot z}{\tan z+\cot z}$=$-2\cos ^{2}z+1$
+
+\item $\frac{\tan \theta +\cot \theta }{\cos ^{2}\theta }-\sin \theta \sec
+^{3}\theta =\sec \theta \csc \theta \qquad \qquad $
+
+\item $\frac{\cos ^{3}x+\sin ^{3}x}{\cos x+\sin x}=1-\sin x\cos x$
+
+\item $\frac{sen\theta }{1-\cot \theta }+\frac{\cos \theta }{1-\tan \theta }%
+=\cos \theta +\sin \theta \qquad \qquad \qquad $
+
+\item $\frac{\tan x-\cot x}{senx\cos x}=\sec ^{2}x-\csc ^{2}x$
+
+\item $\frac{1}{1+sen\theta +\cos \theta }=-\csc 2\theta +\frac{1}{2}\sec
+\theta +\frac{1}{2}\csc \theta \qquad $
+
+\item $\frac{\cos t}{1-sent}=\sec t+\tan t$
+
+\item $\frac{sent}{1+\cos t}=\csc t-\cot t\qquad \qquad \qquad \qquad \qquad 
+$
+
+\item Calcule el área del triángulo con lados que miden:
+
+\begin{enumerate}
+    \item $a=4,b=8,c=9\qquad $
+    \item $a=10,b=12,c=15\qquad $
+    \item $a=9,b=11,c=17$
+\end{enumerate}
+
+\end{enumerate}
+
+\bigskip
+
+\section{Polígonos}
+
+Una figura es un polígono si cumple las siguientes condiciones:
+\begin{enumerate}
+    \item Es una figura plana formada por tres o más segmentos lineales llamado lados.
+    \item Los lados que tienen un punto final común son no colineales.
+    \item Cada lado interseca exactamente a otros dos lados, pero únicamente en los puntos finales.
+\end{enumerate}
+
+Un polígono es convexo si cada segmento que une dos puntos interiores está totalmente contenido en el polígono. Un polígono es cóncavo si no es convexo. Esto se ilustra en la figura \ref{fig:placeholder2.54}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Polígonos convexos y cóncavos}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7D.png}
+    \label{fig:placeholder2.54}
+\end{figure}
+
+\subsection{Cuadriláteros y paralelogramos}
+
+Un cuadrilátero es un polígono de cuatro lados.
+Un paralelogramo, como el de la figura \ref{fig:placeholder2.55}, es un cuadrilátero con ambos pares de lados opuestos paralelos.
+
+\begin{figure}[H]
+    \centering
+    \caption{Caption}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7E.png}
+    \label{fig:placeholder2.55}
+\end{figure}
+
+Los paralelogramos tienen propiedades especiales relacionadas con sus lados, ángulos y diagonales. \ 
+
+La condición de que un cuadrilátero sea un paralelogramo es equivalente a cada una de las siguientes:
+
+\begin{enumerate}
+    \item Sus lados opuestos son congruentes.
+    \item Sus ángulos opuestos son congruentes.
+    \item Sus ángulos consecutivos son suplementarios.
+    \item Sus diagonales se bisecan entre sí.
+\end{enumerate}
+
+\bigskip
+
+Un rombo, como el de la figura \ref{fig:placeholder2.56}, es un paralelogramo con sus cuatro lados congruentes.
+
+\begin{figure}[H]
+    \centering
+    \caption{Rombo}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7F.png}
+    \label{fig:placeholder2.56}
+\end{figure}
+
+Un rectángulo, como el de la figura \ref{fig:placeholder2.57}, es un paralelogramo con sus 4 ángulos internos rectos.
+
+\begin{figure}[H]
+    \centering
+    \caption{Rectángulo}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7G.png}
+    \label{fig:placeholder2.57}
+\end{figure}
+
+Un paralelogramo es un rombo si y solo si sus diagonales son perpendiculares.
+
+Un paralelogramo es un rombo si y solo si cada diagonal biseca un par de ángulos opuestos.
+
+Un paralelogramo es un rectángulo si y solo si sus diagonales son congruentes.
+
+\bigskip
+
+\subsubsection{Área en coordenadas de un paralelogramo}
+
+El área del paralelogramo $P$, de la figura \ref{fig:placeholder2.58}, generado por dos vectores no colineales $u,v\in \mathbb{R}^{2}$ es:
+
+$\acute{a}rea\left( P\right) =\left\vert \det \left[ u\text{ }v\right]
+\right\vert $
+
+\begin{figure}[H]
+    \centering
+    \caption{Paralelogramo generado por dos vectores}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7H.png}
+    \label{fig:placeholder2.58}
+\end{figure}
+
+En $\left\vert \det \left[ u\text{ }v\right] \right\vert $, los vectores $u$ y $v$ se escriben en columna.
+
+\bigskip
+
+\textbf{Demostración gráfica}
+
+Supongamos que\ $u=\left( a,b\right) $ y $v=\left( c,d\right) $
+
+\begin{figure}[H]
+    \centering
+    \caption{Rectángulo con paralelogramo interno}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7I.png}
+    \label{fig:placeholder2.59}
+\end{figure}
+
+A partir de la figura \ref{fig:placeholder2.59}, se obtiene:
+
+$\acute{a}rea\left( P\right) $
+
+$=%
+\begin{array}{c}
+\acute{a}rea\left( \text{Rectángulo}\right) -\acute{a}rea\left( T_{1}\right)
+-\acute{a}rea\left( T_{2}\right) -\acute{a}rea\left( T_{3}\right) -\acute{a}%
+rea\left( T_{4}\right) \\ 
+\text{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }-\acute{a}rea\left( R_{1}\right) -%
+\acute{a}rea\left( R_{2}\right)%
+\end{array}%
+$
+
+$=\left( a+c\right) \left( b+d\right) -\frac{1}{2}ab-\frac{1}{2}cd-\frac{1}{2%
+}ab-\frac{1}{2}cd-bc-bc$
+
+$=ab+ad+cb+cd-ab-cd-2bc$
+
+$=ad-bc.$
+
+$=\det \left( 
+\begin{array}{cc}
+a & c \\ 
+b & d%
+\end{array}%
+\right) $
+
+$=\left\vert \det \left[ u\text{ }v\right] \right\vert $
+
+\begin{example}
+Halle el área del paralelogramo generado por los vectores.
+
+
+\textbf{Solución}
+$u=\left( 
+\begin{array}{c}
+15 \\ 
+25%
+\end{array}%
+\right) $ y $v=\left( 
+\begin{array}{c}
+22 \\ 
+34%
+\end{array}%
+\right)$
+\end{example}
+
+área$\left( P\right) =\left\vert \det \left[ u\text{ }v\right] \right\vert
+=\left\vert \det \left( 
+\begin{array}{cc}
+15 & 22 \\ 
+25 & 34%
+\end{array}%
+\right) \right\vert =\left\vert 15\left( 34\right) -22\left( 25\right)
+\right\vert =$ $\left\vert -40\right\vert =40$
+
+Tres puntos no colineales generan dos vectores. \ 
+
+Si $P,Q,R$ son tres puntos del plano, estos generan los vectores dirigidos $\overrightarrow{PQ}=Q-P$ y $\overrightarrow{PR}=R-P.$
+
+\begin{example}
+Halle el área del triángulo con vértices $P=\left( 5,1\right), Q=\left(7,6\right)$ y $R=\left( 9,-1\right)$.
+\end{example}
+
+El área del triángulo $T$ con vértices $P,Q,R$ es la mitad del área del paralelogramo $\Gamma$ generado por los vectores $\overrightarrow{PQ}$ y $\overrightarrow{PR}$.
+
+\begin{center}
+$\acute{a}rea\left( T\right) =\frac{1}{2}\acute{a}rea\left( \Gamma \right) $
+\end{center}
+
+\begin{figure}[H]
+    \centering
+    \caption{Triángulo con vértices $P,Q$ y $R$}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7J.png}
+    \label{fig:placeholder2.60}
+\end{figure}
+
+A partir de la figura \ref{fig:placeholder2.60}, calculamos los vectores dirigidos.
+
+\ $\overrightarrow{PQ}=Q-P=\left( 2,5\right) $ \ \ \ $\overrightarrow{PR}=R-P=\left( 4,-2\right) $ \ \ 
+
+$\acute{a}rea\left( T\right) $
+
+$=\frac{1}{2}\acute{a}rea\left( paralelogramo\right) $ \ \ 
+
+$=\frac{1}{2}\left\vert \left[ \overrightarrow{PQ}\text{ \ }\overrightarrow{PR}\right] \right\vert $
+
+$=\frac{1}{2}\left\vert \left( 
+\begin{array}{cc}
+2 & 4 \\ 
+5 & -2%
+\end{array}%
+\right) \right\vert $
+
+$=\frac{1}{2}\left\vert -4-20\right\vert $
+
+$=12$ unidades cuadradas.
+
+\bigskip
+
+\subsection{Trapecios}
+
+Un trapecio, como el de la figura \ref{fig:placeholder2.61}, es un cuadrilátero con exactamente un par de lados paralelos, mientras que el otro par de lados no lo es. 
+
+Los lados paralelos de un trapecio se llaman bases. 
+
+Los dos ángulos que comparten una base de un trapecio se llaman ángulos de la base.
+
+Un trapecio tiene dos pares de ángulos en la base.
+
+\bigskip
+
+\begin{figure}[H]
+    \centering
+    \caption{Caption}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7K.png}
+    \label{fig:placeholder2.61}
+\end{figure}
+
+Un trapecio isósceles, como el de la figura \ref{fig:placeholder2.62}, es un trapecio con lados no paralelos que son congruentes. El trapecio $ABCD$ es isósceles.
+
+\begin{figure}[H]
+    \centering
+    \caption{Caption}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7L.png}
+    \label{fig:placeholder2.62}
+\end{figure}
+
+\subsubsection{Área de un trapecio}
+
+Sea $ABCD$ un trapecio.
+
+\bigskip 
+\begin{figure}[H]
+    \centering
+    \caption{Trapecio dividido}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7M.png}
+    \label{fig:placeholder2.63}
+\end{figure}
+
+Expresamos el área del trapecio como la suma de áreas de dos triángulos y un rectángulo , como se muestra en la figura \ref{fig:placeholder2.63}:
+
+área $(ABCD)$
+
+=área$\left( \triangle AED\right) +$área$\left( \triangle BCF\right) +$área$%
+\left( \boxdot ABFE\right) $ \ \ \ note que $AE=BF$
+
+=$\frac{1}{2}\left( DE\right) \left( AE\right) +\frac{1}{2}\left( FC\right)
+\left( BF\right) +\left( EF\right) \left( AE\right) $
+
+$=\frac{1}{2}\left( AE\right) \left( DE+2EF+FC\right) $
+
+$=\frac{1}{2}\left( AE\right) \left( EF+DE+EF+FC\right) $
+
+$=\frac{1}{2}\left( AE\right) \left( EF+DC\right) $ \ \ note que $EF=AB$
+
+$=\frac{1}{2}\left( AE\right) \left( AB+DC\right) $
+
+Por lo tanto, el área de un trapecio es la mitad de la altura por la suma de sus bases.
+
+\bigskip
+
+\subsubsection{Área de un triángulo a partir de las coordenadas de sus vértices}
+
+El área de un triángulo se puede expresar como la suma de las áreas de dos trapecios, restando el área de un tercer trapecio, como se ilustra en la figura \ref{fig:placeholder2.64}.
+
+Sean $A=\left( x_{1},y_{1}\right) ,$ $B=\left( x_{2},y_{2}\right),$ y $C=\left( x_{3},y_{3}\right) $ las coordenadas de un triángulo con ordenadas
+positivas, cuyos vértices están orientados en sentido positivo. Entonces, se tiene:
+
+\begin{figure}[H]
+    \centering
+    \caption{Triángulo dividido por trapecios}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7N.png}
+    \label{fig:placeholder2.64}
+\end{figure}
+
+$\acute{a}rea\left( \triangle ABC\right) $
+
+$=\acute{a}rea\left( ADEC\right) +\acute{a}rea\left( CEFB\right) -\acute{a}%
+rea\left( ADFB\right) $
+
+$=\frac{\left( y_{1}+y_{3}\right) \left( x_{3}-x_{1}\right) }{2}+\frac{%
+\left( y_{2}+y_{3}\right) \left( x_{2}-x_{3}\right) }{2}-\frac{\left(
+y_{1}+y_{2}\right) \left( x_{2}-x_{1}\right) }{2}$
+
+$=\frac{1}{2}\left(
+x_{1}y_{2}+x_{2}y_{3}+x_{3}y_{1}-x_{2}y_{1}-x_{3}y_{2}-x_{1}y_{3}\right) $ 
+
+$
+\begin{tabular}{ccc}
+$=\frac{1}{2}$ &
+\includegraphics[align=c,width=0.15\textwidth]{Images/SDY12T7O.png} 
+\end{tabular}
+$
+
+\subsubsection{Área de un polígono en términos de las coordenadas de sus vértices}
+
+\textbf{Área de un cuadrilátero}
+
+Sea $ABCD$ un cuadrilátero cuyos vértices están orientados en sentido positivo, como se establece en la figura \ref{fig:placeholder2.65}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Cuadrilátero dividido en trapecios}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7P.png}
+    \label{fig:placeholder2.65}
+\end{figure}
+
+El área del cuadrilátero se obtiene sumando y restando las áreas de distintos trapecios:
+
+$\acute{a}rea\left( ABCD\right) $
+
+$=\acute{a}rea\left( 
+\trapezoid
+AEGD\right) +\acute{a}rea\left( 
+\trapezoid
+DGHC\right) -\acute{a}rea\left(\trapezoid
+AEFB\right) -\acute{a}rea\left(\trapezoid  BFHC\right) $
+
+$=\dfrac{\left( y_{1}+y_{4}\right) \left( x_{4}-x_{1}\right) }{2}+\dfrac{%
+\left( y_{4}+y_{3}\right) \left( x_{3}-x_{4}\right) }{2}-\dfrac{\left(
+y_{1}+y_{2}\right) \left( x_{2}-x_{1}\right) }{2}-\dfrac{\left(
+y_{2}+y_{3}\right) \left( x_{3}-x_{2}\right) }{2}$
+
+$=\dfrac{1}{2}\left(
+x_{1}y_{2}+x_{2}y_{3}+x_{3}y_{4}+x_{4}y_{1}-x_{2}y_{1}-x_{3}y_{2}-x_{4}y_{3}-x_{1}y_{4}\right) 
+$
+
+$=\dfrac{1}{2}%
+\begin{array}{c}
+\includegraphics[width=0.15\textwidth]{Images/SDY12T7U.png} 
+\end{array}%
+$
+
+\textbf{Área de un pentágono}
+
+Sea $ABCDE$ un pentágono cuyos vértices están orientados en sentido positivo, como se establece en la figura \ref{fig:placeholder2.66}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Pentágono dividido en trapecios}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7V.png}
+    \label{fig:placeholder2.66}
+\end{figure}
+
+El área del pentágono se deduce por suma y resta de las áreas de los trapecios:
+
+$\acute{a}rea\left( ABCDE\right) $
+
+$=\acute{a}rea\left( AFJE\right) +\acute{a}rea\left( EJID\right) +\acute{a}%
+rea\left( DIHC\right) -\acute{a}rea\left( AFGB\right) -\acute{a}rea\left(
+BGHC\right) $
+
+$=\frac{\left( y_{1}+y_{5}\right) \left( x_{5}-x_{1}\right) }{2}+\frac{%
+\left( y_{5}+y_{4}\right) \left( x_{4}-x_{5}\right) }{2}+\frac{\left(
+y_{4}+y_{3}\right) \left( x_{3}-x_{4}\right) }{2}-\frac{\left(
+y_{1}+y_{2}\right) \left( x_{2}-x_{1}\right) }{2}-\frac{\left(
+y_{2}+y_{3}\right) \left( x_{3}-x_{2}\right) }{2}$
+
+$=\frac{1}{2}x_{1}y_{2}-\frac{1}{2}x_{2}y_{1}+\frac{1}{2}x_{2}y_{3}-\frac{1}{%
+2}x_{3}y_{2}-\frac{1}{2}x_{1}y_{5}+\allowbreak \frac{1}{2}y_{1}x_{5}+\frac{1%
+}{2}x_{3}y_{4}-\frac{1}{2}x_{4}y_{3}+\frac{1}{2}x_{4}y_{5}-\frac{1}{2}%
+x_{5}y_{4}$
+
+$=\frac{1}{2}\left(
+x_{1}y_{2}+x_{2}y_{3}+x_{3}y_{4}+x_{4}y_{5}+x_{5}y_{1}-x_{2}y_{1}-x_{3}y_{2}-x_{4}y_{3}-x_{5}y_{4}-x_{1}y_{5}\right) 
+$
+
+Esta fórmula se escribe de forma compacta:
+
+$\acute{a}rea\left( ABCDE\right) =\dfrac{1}{2}%
+\begin{array}{c}
+\includegraphics[width=0.15\textwidth]{Images/SDY12T7W.png} 
+\end{array}%
+$
+
+En general, sea $A_{1}A_{2}A_{3}A_{4}\cdots A_{n}$ un polígono con $n$ vértices, orientados en sentido positivo (antihorario), y cuyas ordenadas $y_{k}$ son positivas,  como se ilustra en la figura \ref{fig:placeholder2.67}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Polígono dividido en trapecios}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7X.png}
+    \label{fig:placeholder2.67}
+\end{figure}
+
+Siguiendo las fórmulas del triángulo y del pentágono probadas anteriormente, se puede establecer, por inducción, la siguiente fórmula para el área del polígono de $n$ lados:
+
+$\acute{a}rea\left( A_{1}A_{2}A_{3}A_{4}\cdots A_{n}\right)$
+
+$=\dfrac{1}{2}
+\begin{tabular}{ccc}
+\includegraphics[align=c,width=0.15\textwidth]{Images/SDY12T7Y.png} 
+\end{tabular}
+$
+
+$=\dfrac{1}{2}\left( x_{1}y_{2}+x_{2}y_{3}+x_{3}y_{4}+x_{4}y_{5}+\cdots
++x_{n}y_{1}-x_{2}y_{1}-x_{3}y_{2}-x_{4}y_{3}-x_{5}y_{4}-\cdots
+-x_{1}y_{n}\right) $
+
+\begin{example}
+Halle el área del polígono con vértices $A=\left( -2,3\right)$, $B=\left(
+-1,1\right)$, $C=\left( 4,2\right) ,$ $D=\left( 8,0\right)$, $E=\left(
+9,6\right)$ y $F=\left( 1,2\right)$.
+\end{example}
+
+\textbf{Solución}
+
+$\acute{a}rea(ABCDEF)$
+
+$=\frac{1}{2}\left\vert 
+\begin{array}{cc}
+-2 & 3 \\ 
+-1 & 1 \\ 
+4 & 2 \\ 
+8 & 0 \\ 
+9 & 6 \\ 
+1 & 2 \\ 
+-2 & 3%
+\end{array}%
+\right\vert $
+
+$=\frac{1}{2}\left( -2-2+0+48+18+3-\left( -3+4+16+0+6-4\right) \right) $
+
+$=23$
+En la figura \ref{fig:placeholder2.68} se dibuja el polígono y se muestra su área.
+\begin{figure}[H]
+    \centering
+    \caption{Polígono $ABCDEF$}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7Z.png}
+    \label{fig:placeholder2.68}
+\end{figure}
+
+\bigskip
+
+\subsubsection{Área de un polígono con coordenadas enteras}
+
+El teorema de Pick brinda una fórmula simple para calcular el área de un polígono cuyos vértices tienen coordenadas enteras. Fue demostrado por primera vez por Georg Alexander Pick en 1899 y es un resultado clásico de geometría. 
+
+Un punto interior es un punto de la red que está dentro del polígono, mientras que un punto de frontera es un punto de la red que se encuentra en el límite del polígono.
+
+\begin{center}
+\textbf{Teorema de Pick.} Sea $A$ el área de un polígono con vértices de coordenadas enteras, como el que se muestra en la figura \ref{fig:placeholder2.69}, $I$ el número de puntos de la red en su interior y $B$ el número de puntos en la frontera de la red, incluidos los vértices. Entonces: $A=I+\frac{1}{2}B-1$.
+\end{center}
+
+\begin{figure}[H]
+    \centering
+    \caption{Teorema de Pick}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T80.png}
+    \label{fig:placeholder2.69}
+\end{figure}
+
+A continuación, se presenta una demostración que utiliza un método de doble conteo basado en una triangulación del polígono. Para esto, contamos los ángulos dentro de los triángulos de dos maneras diferentes.
+
+Un triángulo elemental es un triángulo cuyos vértices tienen coordenadas enteras y que no contiene más puntos, ni en el borde ni en el interior. Estos triángulos son aquellos que tienen vértices de coordenadas enteras y un área mínima.
+
+Primero, enuncuamos algunos resultados previos.
+
+Un triángulo con coordenadas enteras es elemental si no tiene otros puntos con coordenadas enteras en su frontera, aparte de los vértices. Es decir, los triángulos elementales son aquellos con vértices enteros y área mínima.
+
+El área de cualquier triángulo elemental en la red $\mathbb{Z}^{2}$ es $\frac{1}{2}$, pues el área del triángulo que une los puntos con coordenadas
+enteras $O=\left( 0,0\right)$.
+
+$A=\left( a,b\right) ,B=\left( c,d\right) $ es $A=\frac{1}{2}\left\vert 
+\begin{array}{cc}
+a & c \\ 
+b & d%
+\end{array}%
+\right\vert =\frac{1}{2}\left( ad-bc\right) .~$
+
+Para que uno de estos triángulos tenga área mínima, se debe cumplir $ad-bc=1$. Luego, estos triángulos de área mínima tienen área $\frac{1}{2}$.
+
+Cualquier polígono con coordenadas enteras, como el de la figura \ref{fig:placeholder2.70}, puede ser triangulado por triángulos elementales.
+
+\begin{figure}[H]
+    \centering
+    \caption{Polígono triangulado}
+    $%
+    \begin{array}{c}
+    \begin{array}{c}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T81.png}
+    \end{array}%
+    \end{array}%
+    $ 
+    \label{fig:placeholder2.70}
+\end{figure}
+
+Como se ve en la figura \ref{fig:placeholder2.71}, la suma de los ángulos externos de un polígono es 360$^{0}=2\pi $ radianes.
+
+\begin{figure}[H]
+    \centering
+    \caption{Ángulos externos de un polígono}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T82.png}
+    \label{fig:placeholder2.71}
+\end{figure}
+
+En cada vértice del polígono, se cumple que la suma del ángulo interno con el externo es $\pi $ radianes.
+
+\bigskip
+
+\textbf{Demostración del teorema de Pick}
+
+Comenzamos por dividir el polígono $P$ en $N$ triángulos elementales. Ahora sumamos los ángulos internos de todos estos triángulos de dos maneras diferentes. Por un lado, la suma de los ángulos de cualquier triángulo es $
+\pi$, por lo que la suma de todos los ángulos es $S=N\pi$.
+
+Por otra parte, en cada punto interior $i$, los ángulos de los triángulos elementales que se encuentran en $i$ suman $2\pi$. En cada punto de la frontera $b$ que no es un vértice, los ángulos de los triángulos elementales
+que se encuentran en $b$ suman $\pi$. En los vértices, los ángulos no suman $\pi$, pero si sumamos los ángulos interiores en todos los vértices, obtenemos $k\pi -2\pi $, donde $k$ es el número de vértices, ya que la suma de los ángulos exteriores es $2\pi$. Este resultado se puede justificar observando que, al recorrer el perímetro del polígono, se completa una vuelta completa, es decir $2\pi $. Cabe señalar que algunos ángulos exteriores aportan un término positivo (en los vértices donde el polígono es convexo) y otros un término negativo (en los vértices donde el polígono es cóncavo).
+
+Sea $I$ el número de puntos interiores y $B$ el número de puntos en la frontera. En total, la suma de los ángulos en los puntos de la frontera es $B\pi -2\pi $, y la suma de los ángulos en los puntos internos es $I\left( 2\pi \right) $. Por lo tanto,
+
+$S=I\left( 2\pi \right) +B\pi -2\pi$.
+
+Concluimos que
+
+$N\pi =I\left( \ 2\pi \right) +B\pi -2\pi$,
+
+por lo que cancelando $\pi $ obtenemos
+
+$N=2I+B-2$.
+
+Como el área de cualquier triángulo elemental es $\frac{1}{2}$, tenemos $A=\frac{1}{2}N$ y por lo tanto
+
+\begin{center}
+$A=I+\frac{1}{2}B-1$.
+\end{center}
+
+\begin{example}
+Halle el área del polígono con vértices $A=\left( -3,7\right)$, $B=\left(
+-1,1\right)$, $C=\left( 1,3\right) ,$ $D=\left( 2,1\right)$, $E=\left(
+5,7\right)$ y $F=\left( 1,5\right)$, usando el teorema de Pick.
+\end{example}
+
+\textbf{Solución}
+
+Graficamos el polígono en la figura \ref{fig:placeholder2.72}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Polígono $ABCDEF$}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T83.png}
+    \label{fig:placeholder2.72}
+\end{figure}
+
+Contamos el número de puntos con coordenadas enteras. En el interior hay $I=17 $ y en la frontera hay $B=12$.
+
+Así que el área del polígono es \ $A=I+\frac{1}{2}B-1=17+\frac{1}{2}\left(
+12\right) -1=22$.
+
+\subsection{Ejercicios}
+
+\begin{enumerate}
+\item Pruebe que el cuadrilátero con vértices $A=\left( -2,-1\right), B=\left( -1,2\right)$,$C=\left( 4,1\right)$ y $D=\left( 3,-2\right)$ es un paralelogramo.
+\item Demuestre que el cuadrilátero con vértices $A=\left( 2,-2\right), B=\left( 0,1\right)$, $C=\left( 2,4\right)$ y $D=\left( 4,1\right)$ es un rombo.
+\item Pruebe que el cuadrilátero con vértices $A=\left( 7,-1\right), B=\left( 1,1\right), C=\left( 2,4\right)$ y $D=\left( 8,2\right) $ es un es un rectángulo.
+\item Verifique que el cuadrilátero con vértices $A=\left( 6,-3\right), B=\left(1,2\right)$, $C=\left( 4,2\right)$ y $D=\left( 6,0\right)$ es un trapecio isósceles.
+\item Halle el área del paralelogramo generado por los vectores $u=\left(7,3\right)$, $v=\left( 3,11\right)$.
+\item Determine el área del triángulo con vértices $A=\left( -2,-1\right)$, $B=\left( 3,1\right)$ y $C=\left( 4,8\right)$.
+\item Calcule el área del polígono con vértices $A=\left( -7.3,3\right)$, $B=\left( -3,1.1\right)$, $C=\left( 6,2.1\right)$, $D=\left( 9,0\right)$, $E=\left( 4,8.3\right)$ y $F=\left( -2,6.3\right)$.
+\item Halle el área del polígono con vértices $A=\left( -4.2,3\right)$, $B=\left( -2,1\right)$, $C=\left( 0,2\right)$, $D=\left( 7,3\right)$, $E=\left( 5,7\right)$ y $F=\left( 1,6\right)$.
+\item Encuentre el área del polígono con vértices $A=\left( -8.3,2.5\right)$, $B=\left( -4.4,0\right)$, $C=\left( 4.1,3.3\right)$, $D=\left(10,5\right)$, $E=\left( 7,8\right) $ y $F=\left( -2,9\right)$.
+\item Halle el área del polígono con vértices $A=\left( 1.1,2\right)$, $B=\left( 5.3,3\right)$,
+$C=\left( 9,1.6\right)$, $D=\left( 13,3.3\right)$, $E=\left( 4,8.8\right)$ y $F=\left( 2,7.5\right)$.
+\item Halle el área del polígono con vértices $A=\left( -1,3\right)$, $B=\left( 4,2\right)$,
+$C=\left( 9,1\right) ,$ $D=\left( 11,3\right)$, $E=\left( 4,8\right) $ y $F=\left( 2,9\right)$.
+\end{enumerate}
