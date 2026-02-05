@@ -1,62 +1,48 @@
 \documentclass{book}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{caption}
+\usepackage{pdfcomment}
+
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amstext}
 \usepackage{mathtools}
+\usepackage{graphbox}
+
+\captionsetup{labelfont=bf}
+
 \usepackage{tikz}
 \newcommand{\trapezoid}{
     \begin{tikzpicture}[scale=0.35,baseline=-0.5ex]
         \draw (0,0) -- (1,0) -- (0.8,0.5) -- (0.2,0.5) -- cycle;
     \end{tikzpicture}
     }
-\usepackage[spanish]{babel}
-\usepackage{titlesec}
-\usepackage{fancybox}
-\usepackage{fancyhdr}
-\usepackage{color}
-\usepackage{float}
-\usepackage{graphicx}
-\usepackage{graphbox}
-\usepackage{microtype}
-\usepackage{datetime}
-\usepackage{caption}
-\captionsetup{labelfont=bf}
-\setcounter{MaxMatrixCols}{10}
-\usepackage[spanish]{babel}
-\decimalpoint
+\usepackage[spanish,es-tabla]{babel}
+\decimalcomma
 
+\setcounter{MaxMatrixCols}{10}
 \newtheorem{theorem}{Teorema}
-\newtheorem{acknowledgement}[theorem]{Acknowledgement}
-\newtheorem{algorithm}[theorem]{Algorithm}
 \newtheorem{axiom}[theorem]{Axioma}
-\newtheorem{case}[theorem]{Case}
-\newtheorem{claim}[theorem]{Claim}
 \newtheorem{conclusion}[theorem]{Conclusión}
-\newtheorem{condition}[theorem]{Condition}
-\newtheorem{conjecture}[theorem]{Conjecture}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{criterion}[theorem]{Criterion}
 \newtheorem{definition}[theorem]{Definición}
 \newtheorem{example}[theorem]{Ejemplo}
 \newtheorem{exercise}[theorem]{Ejercicio}
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{notation}[theorem]{Notation}
-\newtheorem{problem}[theorem]{Problem}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{remark}[theorem]{Remark}
 \newtheorem{solution}[theorem]{Solución}
-\newtheorem{summary}[theorem]{Summary}
-\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
 \input{tcilatex}
+
 \begin{document}
 
 \frontmatter
 \title{Geometría analítica}
-\author{Edilberto Sarmiento Sarmiento \and Universidad Distrital Francisco
-José de Caldas}
-\date{\today}
+\author{Edilberto Sarmiento Sarmiento}
+\date{}
 \maketitle
 \tableofcontents
 \include{Capítulo_1}

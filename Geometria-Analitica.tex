@@ -1,0 +1,320 @@
+%% Plantilla LaTeX Espacios Editorial UD
+%% Autores: Editores UDFJC
+%% Versión:  v1.0 06MAY2025
+%% Notas y corrección (IMPERATIVO LEER la plantilla antes de utilizarla): 
+%%
+%%    -El libro tiene dos portadillas y se diseñaron dos comandos para realizarlas
+%%             \portadillauno{Titulo}{Subtitulo}, \portadillados{Titulo}{Subtitulo}
+%%    -Para libros que contengan Partes, se debe actualizar el nombre de los autores en
+%%            las cornisas con \def\loauthors asi:
+%%                     \def\loauthors{Nombre o nombres de la enecima-parte, separados por coma}
+%%    -Si el libro posee anexos, estos deben ir despues de imprimir la bibliografía y deben
+%%            ser secciones de un capitulo llamdo "Anexos" como se ejemplifica al final de esta
+%%            pauta.
+
+%%    -La referencia a un anexo se genera con \reftoanex{Letra del anexo}\label{app:ej}
+%%            y \nameref{app:ej}
+%%    -Para el orcid de los autores se utiliza \usepackage{academicons}
+%%    -Se incluye el capitulo de Referencias y Sobre los autores en el TOC
+%%    -Se incluye como citar en ambos resúmenes
+%%    -Para partir titulos largos de capitulos tanto en el texto como en el TOC, utilizar \brake o \\[?pt]
+%%
+%%              capitulos numerados:
+%%              \chapter[titulo en el TOC]{titulo en el texto}
+%%
+%%             Ejemplo: \chapter[Simulación por medio del KMC del comportamiento colectivo{\\[4pt]} de la reacción
+%%             $\mathsf{CO+H_2O \rightarrow CO_2+H_2}$ catalizada por $\mathsf{Pt/MoO_3}$]{Simulación por
+%%             medio del KMC del\\[4pt]
+%%             comportamiento colectivo de la reacción $\mathsf{CO+H_2O \rightarrow CO_2+H_2}$ catalizada
+%%             por $\mathsf{Pt/MoO_3}$}
+%%
+%%             capitulos NO numerados:
+%%             \chapter*{titulo en el texto}
+%%
+%%             Ejemplo:\chapter*{\lhseries Sobre los autores}
+%%             \addcontentsline{toc}{chapter}{Sobre los autores}
+%%    -Se corrige el signo de interrogación inicial en how to cite, porque en inglés es solo un signo.
+%%    -Se retira el colofón de la ultima página del libro. Para retirarlo solo hay que comentar la línea.
+%%    -El colofon se genera con el comando \esColofon{mes}{año}. Para que no aparezca simplemente comentar la línea
+%%
+%%    -Para corregir solo palabras cortadas en la ultima oración de la página o nombres propios cortados,
+%%            se utiliza \text{}
+%%            i.e: ma-nipulación --> \text{manipulación}
+%%    -El TOC ahora solo tien 1 nivel de profundidad: \setcounter{tocdepth}{1}
+%%    -Se corrigio el conteo de las notas de pie de página: \counterwithout{footnote}{chapter}
+%%    -Se modifican los resumenes para que solo queden en una hoja.
+%%
+%% Compilar el archivo principal con LuaLaTeX, i.e: lualatex main.tex
+%% Compilar la bibliografía con el backend "Biber", i.e: biber main
+%% Nota: Se recomienda compilar dos veces cada comando
+%%       Si usted esta utilizando eps, o ticks para gráficas u otros comandos externos, aveces no funciona con lualatex main.tex;
+%%       intente lualatex --shell-escape main.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt,twoside,spanish]{book}
+
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{graphicx}
+\graphicspath{{Images/}}
+\usepackage[]{caption} %labelsep=period
+\usepackage{float}
+
+\usepackage{csquotes}
+\usepackage[
+backend=biber,
+style=ieee,
+]{biblatex}
+
+\addbibresource{bibliografia.bib}
+\let\cite\parencite
+%%%%%%%%%%%%%%
+
+\usepackage{fontspec}
+\input{esConfigDir/esConfigFonts}
+
+\usepackage[letterspace=5]{microtype}
+
+\def\texttitulocorto{Geometría analítica}
+
+%Lista de autores
+\def\loauthors{Edilberto Sarmiento Sarmiento}
+
+% Configuración de estilo
+\input{esConfigDir/esEstilo}
+
+\usepackage[
+  paperheight=24.0cm,
+  paperwidth=17.0cm,
+  tmargin=2.5cm,
+  bmargin=2.5cm,
+  left=2.5cm,
+  right=2.0cm
+]{geometry}
+
+
+%Algunos paquetes para el usuario
+\decimalpoint
+\usepackage{lipsum}  
+\usepackage[pangram]{blindtext}
+%%%%%%%%%%%%%%
+
+% Referencias cruzadas e hipervínculos
+\usepackage[unicode,naturalnames,bookmarksopen,bookmarksdepth=2,breaklinks=true,hyperfootnotes=false]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=.,
+    filecolor=.,
+    urlcolor=.,
+    citecolor=.,
+}
+\usepackage{pdfcomment}
+\usepackage{etoolbox}
+\gappto{\UrlBreaks}{\UrlOrds}
+\usepackage{url}
+% Redefinir \url para usar fuente normal en lugar de monoespaciada
+\renewcommand{\UrlFont}{\normalfont}
+%%%%%%%%%%%%%%
+
+\usepackage{longtable}
+\usepackage{subcaption}
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+\usepackage{shapepar}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\newcommand{\trapezoid}{
+    \begin{tikzpicture}[scale=0.35,baseline=-0.5ex]
+        \draw (0,0) -- (1,0) -- (0.8,0.5) -- (0.2,0.5) -- cycle;
+    \end{tikzpicture}
+    }
+\usepackage[all]{nowidow}
+\usepackage{setspace}
+
+\definecolor{orcidlogocol}{HTML}{A6CE39}
+\definecolor{Gray}{gray}{0.95}
+
+% paquetes Geometría analítica
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amstext}
+\usepackage{mathtools}
+\usepackage{graphbox}
+\usepackage{tabularray}
+\usepackage{nameref}
+\usepackage{fontawesome}
+\usepackage{academicons}
+\usepackage{pifont}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage{booktabs}
+
+\setcounter{MaxMatrixCols}{10}
+\newtheorem{theorem}{Teorema}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axioma}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusión}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definición}
+\newtheorem{example}[theorem]{Ejemplo}
+\newtheorem{exercise}[theorem]{Ejercicio}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solución}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\input{tcilatex}
+ 
+% Macros propias
+\date{\today}
+\DeclareMathOperator{\sen}{sen}
+
+%% Para editar: comentar esta línea.
+%% Para produccion del libro: activar esta linea.
+%% Nota: Esta instrucción es para colocar lineas guia de corte (crop marks)
+%\usepackage[cam,width=190truemm,height=260truemm,lualatex,center]{crop}
+%%%%%%%%%%
+
+\newcommand{\autorinfo}[4]{
+  {\large\medseries\noindent #1}\par
+  \noindent#2\par
+  \faEnvelope~\url{#3}\par
+  \textcolor{orcidlogocol}{\aiOrcid}~\url{#4}\par\vspace{1em}
+}
+
+%%% Sin sangria al inicio de párrafos
+\setlength\parindent{0pt}
+\raggedbottom
+%%%
+
+\pagestyle{empty}
+\counterwithout{footnote}{chapter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%
+%%% Begin document
+%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\newpage
+\
+\newpage
+
+\newpage
+\
+\newpage
+
+%%%%%%%% EDITAR INICIO PORTADILLA 1 %%%%%%%%%%%%%%%
+\portadillauno{Geometría analítica}{Geometría analítica}
+%%%%%%%% FIN PORTADILLA 1 %%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\
+\newpage
+%%%%%%%% EDITAR INICIO PORTADILLA 2 %%%%%%%%%%%%%%%
+\portadillados{Geometría analítica}{Geometría analítica}
+\vspace*{5.5mm}
+\begin{flushleft}
+  \leftskip=2mm
+      {\color{MSBlack}\lsstyle \fontsize{12pt}{6.0mm} \exlseries Edilberto Sarmiento Sarmiento}
+\end{flushleft}
+
+\begin{center}
+  \vspace{3.5cm}
+  \includegraphics[scale=0.06]{esIcons/logoES.png}
+\end{center}
+%%%%%%%% FIN PORTADILLA 2 %%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+
+\mbox{}\vfill
+
+% Abstract y resumen
+\abstract{Resumen}{La geometría analítica es un componente fundamental de las matemáticas, ya que establece una correspondencia rigurosa entre las figuras geométricas y sus representaciones algebraicas. Este libro desarrolla una exposición sistemática basada en métodos vectoriales y matriciales para el estudio de lugares geométricos en el plano y en el espacio. Presenta formulaciones precisas para la determinación de puntos notables de triángulos, como el circuncentro, el incentro y el ortocentro, a partir de las coordenadas de sus vértices. Asimismo, aborda de forma unificada las principales transformaciones geométricas —traslaciones, rotaciones, reflexiones y dilataciones— junto con sus representaciones matriciales y reglas de composición. Esta obra también incluye procedimientos para el cálculo de áreas de polígonos y para la identificación de cónicas trasladadas y rotadas mediante cambios de coordenadas. Cada capítulo incorpora ejemplos y ejercicios que fortalecen la comprensión conceptual y fomentan la aplicación rigurosa de los métodos desarrollados. El libro está dirigido a estudiantes de tecnologías e ingenierías.}{Palabras clave}{geometría analítica, transformaciones lineales, métodos vectoriales, representaciones matriciales, cónicas y coordenadas}
+
+\rule{3cm}{0.5pt}\vspace{\parskip}
+
+\abstract{Abstract}{Analytical geometry is a fundamental component of mathematics, as it establishes a rigorous correspondence between geometric figures and their algebraic representations. This book develops a systematic exposition based on vector and matrix methods for the study of geometric loci in the plane and in space. It presents precise formulations for determining notable points of triangles, such as the circumcenter, incenter, and orthocenter, based on the coordinates of their vertices. It also provides a unified approach to the main geometric transformations—translations, rotations, reflections, and dilations—along with their matrix representations and composition rules. This work also includes procedures for calculating the areas of polygons and for identifying conics that have been translated and rotated by coordinate changes. Each chapter includes examples and exercises that strengthen conceptual understanding and encourage the rigorous application of the methods developed. The book is aimed at technology and engineering students.}{Keywords}{analytical geometry, linear transformations, vector methods, matrix representations, conic sections}
+
+\vspace{3\baselineskip}
+
+\begin{flushright}
+  \comocitar{Sarmiento Sarmiento, E. (2026). \emph{Geometría analítica.} Universidad Distrital Francisco José de Caldas-Editorial UD.}{10.16925/9789587604047}
+\end{flushright}
+
+\cleardoublepage
+
+\newpage\thispagestyle{empty}
+
+% Página legal
+[Página legal pendiente]
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% TABLA DE CONTENIDOS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Configuración de nombres y formato de la tabla de contenidos
+\renewcommand{\contentsname}{\lhseries Contenido}
+\renewcommand{\cftdot}{}
+\renewcommand*{\tablename}{\bf Tabla}
+\renewcommand*{\figurename}{\bf Figura}
+\renewcommand*{\bibname}{\fontschap Referencias}
+
+% Profundidad de la tabla de contenidos (solo capítulos)
+\setcounter{tocdepth}{1}
+\tableofcontents
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\addtocontents{toc}{\protect\enlargethispage{\baselineskip}}
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% FIN TABLA DE CONTENIDOS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{esstyle}
+
+\newpage\thispagestyle{empty}
+
+% Capitulos a incluir
+
+\include{Capítulo_1}
+
+\include{Capítulo_2y3}
+
+\include{Capítulos_3y4}
+
+\newpage\thispagestyle{empty}
+
+% Bibliografia
+\nocite{*}
+\printbibliography
+
+\newpage\thispagestyle{empty}
+
+%\addcontentsline{toc}{chapter}{Índice alfabético}
+%\printindex % para que ponga el índice aquí
+
+%% Editar Bio de autores %%
+\pagestyle{plain}
+
+\chapter*{\lhseries Sobre el autor}
+\addcontentsline{toc}{chapter}{Sobre el autor}
+
+\autorinfo{Julio César Ramos Fernández}{Obtuvo el doctorado en el Departamento de Análisis Matemático de la Universidad de La Laguna, Tenerife, España. Inició su labor docente en 1994 en la Universidad de Oriente, Venezuela, donde trabajó hasta 2016. Desde entonces se desempeña como Profesor de tiempo completo en la Universidad Distrital Francisco José de Caldas, en Bogotá, Colombia. A lo largo de su carrera ha impartido cursos de Análisis Matemático en pregrado, maestría y doctorado. Es autor de 76 artículos de investigación en revistas indexadas en áreas como análisis real y complejo, análisis funcional, armónico y de Fourier, teoría de operadores, funciones de variable compleja, geometría de funciones, ecuaciones diferenciales e integrales y análisis numérico. Es coautor del libro \emph{Soluciones para sistemas casilineales débilmente acoplados}. Ha sido conferencista invitado en 23 eventos internacionales, dirigido 45 trabajos de grado (pregrado, maestría y doctorado) y actúa como árbitro en múltiples revistas especializadas en matemáticas.}{julio.ramos@udistrital.edu.co}{https://orcid.org/0000-0002-7329-5263}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
