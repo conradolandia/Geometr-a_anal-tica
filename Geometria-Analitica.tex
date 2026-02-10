@@ -56,7 +56,7 @@
 \usepackage[spanish,es-tabla]{babel}
 \usepackage{graphicx}
 \graphicspath{{Images/}}
-\usepackage[]{caption} %labelsep=period
+\usepackage[tableposition=top,figureposition=top]{caption} %labelsep=period
 \usepackage{float}
 
 \usepackage{csquotes}
@@ -135,50 +135,32 @@ style=ieee,
 \definecolor{Gray}{gray}{0.95}
 
 % paquetes Geometría analítica
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{amstext}
+\usepackage[leqno]{amsmath}
 \usepackage{mathtools}
 \usepackage{graphbox}
 \usepackage{tabularray}
 \usepackage{nameref}
 \usepackage{fontawesome}
 \usepackage{academicons}
-\usepackage{pifont}
-\usepackage{enumitem}
+\usepackage[inline]{enumitem}
 \usepackage{multirow}
 \usepackage{booktabs}
 
-\setcounter{MaxMatrixCols}{10}
-\newtheorem{theorem}{Teorema}
-\newtheorem{acknowledgement}[theorem]{Acknowledgement}
-\newtheorem{algorithm}[theorem]{Algorithm}
-\newtheorem{axiom}[theorem]{Axioma}
-\newtheorem{case}[theorem]{Case}
-\newtheorem{claim}[theorem]{Claim}
-\newtheorem{conclusion}[theorem]{Conclusión}
-\newtheorem{condition}[theorem]{Condition}
-\newtheorem{conjecture}[theorem]{Conjecture}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{criterion}[theorem]{Criterion}
-\newtheorem{definition}[theorem]{Definición}
-\newtheorem{example}[theorem]{Ejemplo}
-\newtheorem{exercise}[theorem]{Ejercicio}
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{notation}[theorem]{Notation}
-\newtheorem{problem}[theorem]{Problem}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{remark}[theorem]{Remark}
-\newtheorem{solution}[theorem]{Solución}
-\newtheorem{summary}[theorem]{Summary}
-\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+% Ejemplos (sin usar amsthm)
+\newcounter{example}[chapter]
+\newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
+   \noindent \textbf{Ejemplo~\theexample}\ifx&#1&\else~(#1)\fi\par\nobreak\noindent\rmfamily}{\par\medskip}
 
-\input{tcilatex}
- 
 % Macros propias
+\input{tcilatex}
 \date{\today}
 \DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\Fil}{Fil}
+\DeclareMathOperator{\Col}{Col}
+\DeclareMathOperator{\Proy}{Proy}
+\let\oldsqrt\sqrt
+\let\sqrt\SQRT
+\setcounter{MaxMatrixCols}{10}
 
 %% Para editar: comentar esta línea.
 %% Para produccion del libro: activar esta linea.
@@ -218,13 +200,13 @@ style=ieee,
 \newpage
 
 %%%%%%%% EDITAR INICIO PORTADILLA 1 %%%%%%%%%%%%%%%
-\portadillauno{Geometría analítica}{Geometría analítica}
+\portadillauno{Geometría analítica}{(no hay subtítulo)}
 %%%%%%%% FIN PORTADILLA 1 %%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \
 \newpage
 %%%%%%%% EDITAR INICIO PORTADILLA 2 %%%%%%%%%%%%%%%
-\portadillados{Geometría analítica}{Geometría analítica}
+\portadillados{Geometría analítica}{(no hay subtitulo)}
 \vspace*{5.5mm}
 \begin{flushleft}
   \leftskip=2mm
@@ -248,9 +230,10 @@ style=ieee,
 
 \abstract{Abstract}{Analytical geometry is a fundamental component of mathematics, as it establishes a rigorous correspondence between geometric figures and their algebraic representations. This book develops a systematic exposition based on vector and matrix methods for the study of geometric loci in the plane and in space. It presents precise formulations for determining notable points of triangles, such as the circumcenter, incenter, and orthocenter, based on the coordinates of their vertices. It also provides a unified approach to the main geometric transformations—translations, rotations, reflections, and dilations—along with their matrix representations and composition rules. This work also includes procedures for calculating the areas of polygons and for identifying conics that have been translated and rotated by coordinate changes. Each chapter includes examples and exercises that strengthen conceptual understanding and encourage the rigorous application of the methods developed. The book is aimed at technology and engineering students.}{Keywords}{analytical geometry, linear transformations, vector methods, matrix representations, conic sections}
 
-\vspace{3\baselineskip}
+\vspace{2\baselineskip}
 
 \begin{flushright}
+  \pdfcomment{verificar DOI}
   \comocitar{Sarmiento Sarmiento, E. (2026). \emph{Geometría analítica.} Universidad Distrital Francisco José de Caldas-Editorial UD.}{10.16925/9789587604047}
 \end{flushright}
 
@@ -268,7 +251,8 @@ style=ieee,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Configuración de nombres y formato de la tabla de contenidos
-\renewcommand{\contentsname}{\lhseries Contenido}
+\renewcommand{\contentsname}{\regseries Contenido}
+\renewcommand{\listfigurename}{\regseries Índice de figuras}
 \renewcommand{\cftdot}{}
 \renewcommand*{\tablename}{\bf Tabla}
 \renewcommand*{\figurename}{\bf Figura}
@@ -279,7 +263,12 @@ style=ieee,
 \tableofcontents
 \addtocontents{toc}{\protect\thispagestyle{empty}}
 \addtocontents{toc}{\protect\enlargethispage{\baselineskip}}
-\newpage
+\newpage\thispagestyle{empty}
+
+\listoffigures
+\addtocontents{lof}{\protect\thispagestyle{empty}}
+\newpage\thispagestyle{empty}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% FIN TABLA DE CONTENIDOS

@@ -1,0 +1,381 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{boyer1987}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=a5779a21cc725a18cac494be83152303}{%
+           family={Boyer},
+           familyi={B\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Ed. Alianza}%
+      }
+      \strng{namehash}{a5779a21cc725a18cac494be83152303}
+      \strng{fullhash}{a5779a21cc725a18cac494be83152303}
+      \strng{fullhashraw}{a5779a21cc725a18cac494be83152303}
+      \strng{bibnamehash}{a5779a21cc725a18cac494be83152303}
+      \strng{authorbibnamehash}{a5779a21cc725a18cac494be83152303}
+      \strng{authornamehash}{a5779a21cc725a18cac494be83152303}
+      \strng{authorfullhash}{a5779a21cc725a18cac494be83152303}
+      \strng{authorfullhashraw}{a5779a21cc725a18cac494be83152303}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Historia de la matem\'{a}tica}
+      \field{year}{1987}
+      \true{nocite}
+    \endentry
+    \entry{braden1986}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=57d1e9c2f6a771a98c89851dbb889e07}{%
+           family={Braden},
+           familyi={B\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{57d1e9c2f6a771a98c89851dbb889e07}
+      \strng{fullhash}{57d1e9c2f6a771a98c89851dbb889e07}
+      \strng{fullhashraw}{57d1e9c2f6a771a98c89851dbb889e07}
+      \strng{bibnamehash}{57d1e9c2f6a771a98c89851dbb889e07}
+      \strng{authorbibnamehash}{57d1e9c2f6a771a98c89851dbb889e07}
+      \strng{authornamehash}{57d1e9c2f6a771a98c89851dbb889e07}
+      \strng{authorfullhash}{57d1e9c2f6a771a98c89851dbb889e07}
+      \strng{authorfullhashraw}{57d1e9c2f6a771a98c89851dbb889e07}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The College Mathematics Journal}
+      \field{number}{4}
+      \field{title}{The surveyor's area formula}
+      \field{volume}{17}
+      \field{year}{1986}
+      \true{nocite}
+      \field{pages}{326\bibrangedash 337}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1080/07468342.1986.11972974
+      \endverb
+    \endentry
+    \entry{asmar2009}{book}{}{}
+      \name{author}{4}{}{%
+        {{hash=fce218bad813ac695f9466072f833008}{%
+           family={Asmar\bibnamedelima Charris},
+           familyi={A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=93a9be3daaedda609ab700c31acd8459}{%
+           family={Restrepo\bibnamedelimb de\bibnamedelima Pel\'{a}ez},
+           familyi={R\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim P\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=801849ffbbe79fd24d722eba45639619}{%
+           family={Franco\bibnamedelima Arbel\'{a}ez},
+           familyi={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=197a34ba5ec9beebae0f0ade60f2da3c}{%
+           family={Vargas\bibnamedelima Hern\'{a}ndez},
+           familyi={V\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Universidad Nacional de Colombia, sede Medell\'{\i}n}%
+      }
+      \strng{namehash}{a6b5b2ab12eb973bd6370e4d5a1d07bf}
+      \strng{fullhash}{ea869c880feb205fe9038eaf54c0269f}
+      \strng{fullhashraw}{ea869c880feb205fe9038eaf54c0269f}
+      \strng{bibnamehash}{ea869c880feb205fe9038eaf54c0269f}
+      \strng{authorbibnamehash}{ea869c880feb205fe9038eaf54c0269f}
+      \strng{authornamehash}{a6b5b2ab12eb973bd6370e4d5a1d07bf}
+      \strng{authorfullhash}{ea869c880feb205fe9038eaf54c0269f}
+      \strng{authorfullhashraw}{ea869c880feb205fe9038eaf54c0269f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Geometr\'{\i}a vectorial y anal\'{\i}tica: Una introducci\'{o}n al \'{a}lgebra lineal}
+      \field{year}{2009}
+      \true{nocite}
+    \endentry
+    \entry{clemens2008}{book}{}{}
+      \name{author}{4}{}{%
+        {{hash=0feac50003baf823e160a95f13679f47}{%
+           family={Clemens},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+        {{hash=65ad09213f280d08bc7ff6c642b33af6}{%
+           family={O'Daffer},
+           familyi={O\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=290f0e39aeaff728570defc03208b21c}{%
+           family={Cooney},
+           familyi={C\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+        {{hash=56701a3dc23a2ad02a7dd6f8d315226d}{%
+           family={Sullivan},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Educaci\'{o}n}%
+      }
+      \strng{namehash}{d3f186de515e6c989806cb1e7983f750}
+      \strng{fullhash}{6c60cb44f0dbd21d8917979c3a34a0b3}
+      \strng{fullhashraw}{6c60cb44f0dbd21d8917979c3a34a0b3}
+      \strng{bibnamehash}{6c60cb44f0dbd21d8917979c3a34a0b3}
+      \strng{authorbibnamehash}{6c60cb44f0dbd21d8917979c3a34a0b3}
+      \strng{authornamehash}{d3f186de515e6c989806cb1e7983f750}
+      \strng{authorfullhash}{6c60cb44f0dbd21d8917979c3a34a0b3}
+      \strng{authorfullhashraw}{6c60cb44f0dbd21d8917979c3a34a0b3}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Geometr\'{\i}a y trigonometr\'{\i}a}
+      \field{year}{2008}
+      \true{nocite}
+    \endentry
+    \entry{johnston2021}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=76c4bded9449da0d10a967c1b5d081bf}{%
+           family={Johnston},
+           familyi={J\bibinitperiod},
+           given={Nathaniel},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{76c4bded9449da0d10a967c1b5d081bf}
+      \strng{fullhash}{76c4bded9449da0d10a967c1b5d081bf}
+      \strng{fullhashraw}{76c4bded9449da0d10a967c1b5d081bf}
+      \strng{bibnamehash}{76c4bded9449da0d10a967c1b5d081bf}
+      \strng{authorbibnamehash}{76c4bded9449da0d10a967c1b5d081bf}
+      \strng{authornamehash}{76c4bded9449da0d10a967c1b5d081bf}
+      \strng{authorfullhash}{76c4bded9449da0d10a967c1b5d081bf}
+      \strng{authorfullhashraw}{76c4bded9449da0d10a967c1b5d081bf}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to linear and matrix algebra}
+      \field{year}{2021}
+      \true{nocite}
+    \endentry
+    \entry{lehmann1989}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=1fd2432279ad8bbf62bc1972e9fe1417}{%
+           family={Lehmann},
+           familyi={L\bibinitperiod},
+           given={Ch.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Limusa}%
+      }
+      \strng{namehash}{1fd2432279ad8bbf62bc1972e9fe1417}
+      \strng{fullhash}{1fd2432279ad8bbf62bc1972e9fe1417}
+      \strng{fullhashraw}{1fd2432279ad8bbf62bc1972e9fe1417}
+      \strng{bibnamehash}{1fd2432279ad8bbf62bc1972e9fe1417}
+      \strng{authorbibnamehash}{1fd2432279ad8bbf62bc1972e9fe1417}
+      \strng{authornamehash}{1fd2432279ad8bbf62bc1972e9fe1417}
+      \strng{authorfullhash}{1fd2432279ad8bbf62bc1972e9fe1417}
+      \strng{authorfullhashraw}{1fd2432279ad8bbf62bc1972e9fe1417}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Geometr\'{\i}a Anal\'{\i}tica}
+      \field{year}{1989}
+      \true{nocite}
+    \endentry
+    \entry{martingay2016}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=65d095a46da0c1cde2acfe6e2e6718ef}{%
+           family={Martin\bibnamedelima Gay},
+           familyi={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Ed. Pearson}%
+      }
+      \strng{namehash}{65d095a46da0c1cde2acfe6e2e6718ef}
+      \strng{fullhash}{65d095a46da0c1cde2acfe6e2e6718ef}
+      \strng{fullhashraw}{65d095a46da0c1cde2acfe6e2e6718ef}
+      \strng{bibnamehash}{65d095a46da0c1cde2acfe6e2e6718ef}
+      \strng{authorbibnamehash}{65d095a46da0c1cde2acfe6e2e6718ef}
+      \strng{authornamehash}{65d095a46da0c1cde2acfe6e2e6718ef}
+      \strng{authorfullhash}{65d095a46da0c1cde2acfe6e2e6718ef}
+      \strng{authorfullhashraw}{65d095a46da0c1cde2acfe6e2e6718ef}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Geometry}
+      \field{year}{2016}
+      \true{nocite}
+    \endentry
+    \entry{raman2011}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=237621b0ef8e84cf977e975cc8ac9b63}{%
+           family={Raman},
+           familyi={R\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=6637396899793632e16d9364bad489c9}{%
+           family={\"{O}hman},
+           familyi={\"{O}\bibinitperiod},
+           given={L.\bibnamedelimi D.},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{198480a36493b8a33634478a710c118c}
+      \strng{fullhash}{198480a36493b8a33634478a710c118c}
+      \strng{fullhashraw}{198480a36493b8a33634478a710c118c}
+      \strng{bibnamehash}{198480a36493b8a33634478a710c118c}
+      \strng{authorbibnamehash}{198480a36493b8a33634478a710c118c}
+      \strng{authornamehash}{198480a36493b8a33634478a710c118c}
+      \strng{authorfullhash}{198480a36493b8a33634478a710c118c}
+      \strng{authorfullhashraw}{198480a36493b8a33634478a710c118c}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of Seventh Congress of European Research in Mathematics Education}
+      \field{title}{Two beautiful proofs of Pick's Theorem}
+      \field{volume}{1}
+      \field{year}{2011}
+      \true{nocite}
+      \field{pages}{10}
+      \range{pages}{1}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/277067066_Two_beautiful_proofs_of_Pick's_theorem
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/277067066_Two_beautiful_proofs_of_Pick's_theorem
+      \endverb
+    \endentry
+    \entry{stewart2012}{book}{}{}
+      \name{author}{3}{}{%
+        {{hash=14901013cd23b2c9018ab9628e1f0fac}{%
+           family={Stewart},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0aab434077888e7a536bb532b2b2eb94}{%
+           family={Redlin},
+           familyi={R\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8f5cb08729b925e6d9be46c7d21a67f3}{%
+           family={Watson},
+           familyi={W\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cengage Learning}%
+      }
+      \strng{namehash}{3e2d8f390e6456c1ea561b3decb35d19}
+      \strng{fullhash}{82201268346e98936f876139c660b1dd}
+      \strng{fullhashraw}{82201268346e98936f876139c660b1dd}
+      \strng{bibnamehash}{82201268346e98936f876139c660b1dd}
+      \strng{authorbibnamehash}{82201268346e98936f876139c660b1dd}
+      \strng{authornamehash}{3e2d8f390e6456c1ea561b3decb35d19}
+      \strng{authorfullhash}{82201268346e98936f876139c660b1dd}
+      \strng{authorfullhashraw}{82201268346e98936f876139c660b1dd}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Prec\'{a}lculo}
+      \field{year}{2012}
+      \true{nocite}
+    \endentry
+    \entry{sullivan1997}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=56701a3dc23a2ad02a7dd6f8d315226d}{%
+           family={Sullivan},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Educaci\'{o}n}%
+      }
+      \strng{namehash}{56701a3dc23a2ad02a7dd6f8d315226d}
+      \strng{fullhash}{56701a3dc23a2ad02a7dd6f8d315226d}
+      \strng{fullhashraw}{56701a3dc23a2ad02a7dd6f8d315226d}
+      \strng{bibnamehash}{56701a3dc23a2ad02a7dd6f8d315226d}
+      \strng{authorbibnamehash}{56701a3dc23a2ad02a7dd6f8d315226d}
+      \strng{authornamehash}{56701a3dc23a2ad02a7dd6f8d315226d}
+      \strng{authorfullhash}{56701a3dc23a2ad02a7dd6f8d315226d}
+      \strng{authorfullhashraw}{56701a3dc23a2ad02a7dd6f8d315226d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{title}{Prec\'{a}lculo}
+      \field{year}{1997}
+      \true{nocite}
+    \endentry
+    \entry{swokowski1987}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=dfc64d5b27053a195e502c9a66cb9f5a}{%
+           family={Swokowski},
+           familyi={S\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Grupo Editorial Iberoam\'{e}rica}%
+      }
+      \strng{namehash}{dfc64d5b27053a195e502c9a66cb9f5a}
+      \strng{fullhash}{dfc64d5b27053a195e502c9a66cb9f5a}
+      \strng{fullhashraw}{dfc64d5b27053a195e502c9a66cb9f5a}
+      \strng{bibnamehash}{dfc64d5b27053a195e502c9a66cb9f5a}
+      \strng{authorbibnamehash}{dfc64d5b27053a195e502c9a66cb9f5a}
+      \strng{authornamehash}{dfc64d5b27053a195e502c9a66cb9f5a}
+      \strng{authorfullhash}{dfc64d5b27053a195e502c9a66cb9f5a}
+      \strng{authorfullhashraw}{dfc64d5b27053a195e502c9a66cb9f5a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introducci\'{o}n al C\'{a}lculo con Geometr\'{\i}a Anal\'{\i}tica}
+      \field{year}{1987}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -6,11 +6,8 @@
 \usepackage{titlesec}
 \usepackage{titletoc}
 \usepackage[titles]{tocloft}
-
-%\setlength{\parindent}{1.25cm}
-%\setlength\parindent{0pt}
-
 \usepackage{xcolor}
+
 \definecolor{MSBlack}{rgb}{0.0, 0.0, 0.0}
 %\definecolor{MSBLack}{rgb}{.16,.16,.16}
 \definecolor{MSLightBlack}{rgb}{.10,.10,.10}
@@ -18,37 +15,38 @@
 \definecolor{MSCustomBlackT}{RGB}{20, 20, 20}
 \definecolor{MSCustomBlackST}{RGB}{58, 59, 66}
 
+%\setcounter{secnumdepth}{5} % establece el nivel de numeración (el valor predeterminado para "report" es 3). Con ''-1'' tampoco hay número para los capítulos
+%\setcounter{tocdepth}{5} % si quieres todos los niveles en tu tabla de contenidos
+
 \newcommand\fontstit{\medseries}
-\newcommand\fontschap{\medseries}
-\newcommand\fontssec{\medseries}
-\newcommand\fontssubsec{\medseries}
-\newcommand\fontssubsubsec{\lhseries}
-\newcommand\fontsparagraph{\lhseries\itshape}
+\newcommand\fontschap{\regseries}
+\newcommand\fontssec{\regseries}
+\newcommand\fontssubsec{\regseries}
+\newcommand\fontssubsubsec{\regseries}
+\newcommand\fontsparagraph{\regseries\itshape}
 
 % Small caps
 \newcommand{\smallcaps}[1]{\textls[25]{\textsc{\MakeLowercase{#1}}}}
 
-%para no colocar numeros en partes, secciones y subsecciones.
-%\renewcommand{\thepart}{}
-%\renewcommand{\thesection}{}
-%\renewcommand{\thesubsection}{}
-%\renewcommand{\thesubsubsection}{}
-
 %configuracion para titulos de partes, capitulos, secciones, subsecciones, subsubsecciones
-\newcommand{\chapterlabel}{\raggedright\color{MSCustomBlackST}\fontsize{12pt}{2mm}\selectfont\uppercase{\textls[50]{Capítulo~\thechapter}}}
+\newcommand{\chapterlabel}{\regseries Capítulo~\thechapter.}
+
+% \titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
 
 \titleformat{\part}[display]{\color{MSBlack}\fontsize{25pt}{2.0mm}\selectfont\fontstit}{\thepart}{12pt}{\raggedright}
-\titleformat{\chapter}[display]{\color{MSBlack}\fontsize{25pt}{2.5mm}\selectfont\fontschap}{\chapterlabel}{0pt}{\raggedright}
+\titleformat{\chapter}[block]{\color{MSBlack}\fontsize{25pt}{2.5mm}\selectfont\fontschap}{\chapterlabel}{0.3em}{\raggedright}
 \titleformat{\section}[block]{\color{MSBlack}\fontsize{16pt}{2.0mm}\selectfont\fontssec}{\thesection}{0.5em}{\raggedright}
 \titleformat{\subsection}[block]{\color{MSBlack}\fontsize{13pt}{2.0mm}\selectfont\fontssubsec}{\thesubsection}{0.5em}{\raggedright}
-\titleformat{\subsubsection}[block]{\color{black}\fontsize{13pt}{2.0mm}\selectfont\fontssubsubsec}{\thesubsubsection}{0.5em}{\raggedright}
-\titleformat{\paragraph}[block]{\color{black}\fontsize{13pt}{2.0mm}\selectfont\fontsparagraph}{\theparagraph}{0.5em}{\raggedright}
+\titleformat{\subsubsection}[block]{\color{black}\fontsize{12pt}{2.0mm}\selectfont\fontssubsubsec}{\thesubsubsection}{0.5em}{\raggedright}
+\titleformat{\paragraph}[block]{\color{black}\fontsize{12pt}{2.0mm}\selectfont\fontsparagraph}{\theparagraph}{0.5em}{\raggedright}
 
 %Espacios para titulos
+%\titlespacing{<command>}{<left>}{<before-sep>}{<after-sep>}[<right-sep>]
+
 \titlespacing{\part}{0cm}{10cm}{2.8cm}
 \titlespacing{\chapter}{0cm}{1cm}{2.8cm}
-\titlespacing{\section}{0cm}{5mm}{0mm}
-\titlespacing{\subsection}{0cm}{5mm}{0mm} %%parece que hay un error en la configuracion de latex en la identación de la subsection
+\titlespacing{\section}{0cm}{7mm}{2mm}
+\titlespacing{\subsection}{0cm}{5mm}{2mm} 
 \titlespacing{\subsubsection}{0cm}{5mm}{0mm}
 \titlespacing{\paragraph}{0cm}{5mm}{0mm}
 
@@ -60,7 +58,7 @@
 \makeatother
 
 %configuracion tabla de contenido
-\titlecontents{part}[-1.1em]
+\titlecontents{part}[0em]
 {\bf \sbseries\normalsize}%
 {}% numbered sections formatting
 {}% unnumbered sections formatting
@@ -68,19 +66,19 @@
 
 \titlecontents{chapter}[0em]
 {\vspace{1.5mm}\medseries\normalsize}%
-{\contentslabel[\thecontentslabel]{1.5em}}% numbered sections formatting
+{Capítulo~\thecontentslabel.\enspace}% numbered sections formatting
 {}% unnumbered sections formatting
 {\titlerule*[1pc]{}\footnotesize\lhseries\contentspage \vspace{1mm}}[]%
 
-\titlecontents{section}[1.85em]
+\titlecontents{section}[1.5em]
 {\small\lhseries}%
-{\contentslabel[\thecontentslabel]{2em}}% numbered sections formatting
+{}% numbered sections formatting
 {}% unnumbered sections formatting
 {\titlerule*[1pc]{}\footnotesize\lhseries\contentspage \vspace{0.5mm}}[]%
 
 \titlecontents{subsection}[3em]
 {\lhseries}%
-{\contentslabel[\thecontentslabel]{2.3em}}% numbered sections formatting
+{}% numbered sections formatting
 {}% unnumbered sections formatting
 {\titlerule*[1pc]{}\small\lhseries\contentspage \vspace{0.5mm}}[]%
 
@@ -292,7 +290,7 @@ Este libro fue editado y diagramado en} {\fontsize{13pt}{13pt}\selectfont\color{
   {\lhseries\fontsize{18pt}{18pt}\selectfont #1}\par
   \vspace{2\parskip}\par
   \begingroup
-  \fontsize{10pt}{12pt}\selectfont
+  \fontsize{9pt}{11pt}\selectfont
   #2\par
   \vspace{\parskip}\par
   \textbf{#3:}\enspace #4\par
@@ -302,7 +300,7 @@ Este libro fue editado y diagramado en} {\fontsize{13pt}{13pt}\selectfont\color{
 % Cite this book
 \newcommand{\comocitar}[2]{
   \begingroup
-  \fontsize{10pt}{12pt}\selectfont
+  \fontsize{9pt}{11pt}\selectfont
   \begin{tabular}{|r}
     \begin{minipage}{0.6\textwidth}\flushleft
       {\medseries ¿Cómo citar este libro? \lhseries / How to cite this book?}\par
