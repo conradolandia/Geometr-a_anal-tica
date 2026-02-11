@@ -123,6 +123,8 @@ style=ieee,
 \usepackage{shapepar}
 \usepackage[table]{xcolor}
 \usepackage{tikz}
+\usetikzlibrary{matrix,arrows.meta}
+\newsavebox{\crossprodbox}
 \newcommand{\trapezoid}{
     \begin{tikzpicture}[scale=0.35,baseline=-0.5ex]
         \draw (0,0) -- (1,0) -- (0.8,0.5) -- (0.2,0.5) -- cycle;
@@ -158,8 +160,10 @@ style=ieee,
 \DeclareMathOperator{\Fil}{Fil}
 \DeclareMathOperator{\Col}{Col}
 \DeclareMathOperator{\Proy}{Proy}
+\DeclareMathOperator{\Vol}{Vol}
 \let\oldsqrt\sqrt
 \let\sqrt\SQRT
+\let\sin\sen
 \setcounter{MaxMatrixCols}{10}
 
 %% Para editar: comentar esta línea.
@@ -282,9 +286,13 @@ style=ieee,
 
 \include{Capítulo_1}
 
-\include{Capítulo_2y3}
+\newpage\thispagestyle{empty}
 
-\include{Capítulos_3y4}
+\include{Capítulo_2}
+
+\include{Capítulo_3}
+
+\include{Capítulo_4}
 
 \newpage\thispagestyle{empty}
 

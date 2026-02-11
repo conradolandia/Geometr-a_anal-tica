@@ -1,0 +1,989 @@
+\chapter{Rectas y planos}
+
+Las rectas y los planos son conceptos geométricos fundamentales que permiten describir y analizar las formas y estructuras en el espacio tridimensional.
+
+Una recta es una línea infinita, sin principio ni fin, que puede representarse mediante dos puntos en un plano o a través de una ecuación algebraica que describe su posición en un sistema de coordenadas. Una recta tiene dos direcciones opuestas y es clave en la geometría analítica para describir y estudiar relaciones lineales, como ecuaciones y funciones lineales.
+
+Un plano, por otro lado, es una superficie plana que se extiende infinitamente en dos direcciones perpendiculares entre sí. Puede representarse mediante tres puntos no colineales en el espacio tridimensional o con una ecuación algebraica que describa su posición en un sistema de coordenadas tridimensionales. Los planos son fundamentales en áreas como la geometría analítica, la física y la arquitectura, donde se utilizan para describir superficies, como pisos, paredes y techos de edificios, así como para analizar relaciones geométricas más complejas, como ángulos, intersecciones y áreas.
+
+Las rectas y los planos son herramientas esenciales para el estudio y el análisis de objetos y estructuras en el espacio tridimensional. Se aplican en diversos campos, como el diseño y la construcción de edificios, la representación de objetos en modelos 3D en informática gráfica y en la descripción matemática de fenómenos físicos y geométricos en la ciencia y la ingeniería. Comprender sus características, propiedades y relaciones resulta fundamental para el estudio y aplicación de la geometría en distintas disciplinas y contextos.
+
+Este capítulo presenta los conceptos, propiedades y ejemplos de las rectas en el plano cartesiano, las rectas en el espacio y los planos en $\mathbb{R}^{3}$. Para las rectas en el plano y en el espacio, se muestra cómo encontrar sus ecuaciones, ángulos y puntos de intersección; también se explican los conceptos de paralelismo, perpendicularidad, distancia de un punto a recta, punto plano y entre dos rectas. Para los planos en el espacio, se determinan sus ecuaciones, el cálculo de ángulos entre planos, la intersección entre ellos y cómo hallar la distancia de un punto a un plano, entre dos planos, entre dos rectas y entre una recta y un plano.
+
+\section{Rectas en el plano}
+
+En el plano, una recta se representa analíticamente como la gráfica de una ecuación lineal o de primer grado en dos variables.
+
+Para determinar completamente una recta, es necesario conocer dos condiciones: como dos de sus puntos o un punto y su dirección (pendiente o coeficiente angular).
+
+\subsection{Ecuación general de la recta}
+
+La ecuación general de la recta es $Ax+By+C=0$ donde $A,B,C$ son números reales.
+
+Si $A=0,B\neq 0$, la recta toma la forma $y=c$ \ y es una recta horizontal.
+
+Si $A\neq 0,B=0$, la recta toma la forma $x=d$ \ y es una recta vertical.
+
+Si $P$ y $Q$ son dos puntos que pertenecen a una recta $L$, esta recta se denota por $\overleftrightarrow{PQ}$.
+
+El segmento de recta que une los dos puntos $P$ y $Q$ se denota por $\overline{PQ}$.
+
+La semirrecta que parte del punto $P$ contiene al punto $Q$, se denota por $\overrightarrow{PQ}$ y se ilustran en la figura~\ref{fig:placeholder2.1}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Segmento, semirrecta y recta que pasa por dos puntos}
+    \includegraphics[width=0.9\linewidth]{Images/SDY12S5A.png}
+    \label{fig:placeholder2.1}
+\end{figure}
+
+\bigskip
+
+La pendiente de una recta, denotada por $m$, mide su inclinación entre la recta y cualquier recta horizontal, en particular, el eje $X$, como se muestra en la figura~\ref{fig:placeholder2.2}. Más
+precisamente:
+\[m = \tan \theta\]
+Donde $\theta $ es el ángulo formado por la recta con el eje $X$.
+
+\begin{figure}[H]
+    \centering
+    \caption{Pendiente de una recta}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12S5B.png}
+    \label{fig:placeholder2.2}
+\end{figure}
+
+Fórmula para la pendiente de la recta que pasa por los puntos $P=\left(x_{1},y_{1}\right) $ y $Q=\left( x_{2},y_{2}\right)$.
+
+La pendiente de una recta es $m=\frac{\text{cambio en }y}{\text{cambio en }x}=\frac{\triangle y}{\triangle x}=\frac{y_{2}-y_{1}}{x_{2}-x_{1}}$.
+\begin{figure}[H]
+    \centering
+    \caption{Pendiente de la recta que pasa por dos puntos}
+    \includegraphics[width=0.7\linewidth]{Images/SDY12S5C.png}
+    \label{fig:placeholder2.3}
+\end{figure}
+
+Para probar esta fórmula, usamos el triángulo de la figura~\ref{fig:placeholder2.3} y la relación trigonométrica tangente.
+
+Si $\theta $ es el ángulo entre la horizontal y la recta,
+\begin{equation*}
+m=\tan \theta =\frac{\text{cateto opuesto}}{\text{cateto adyacente}}=\frac{%
+\triangle y}{\triangle x}=\frac{y_{2}-y_{1}}{x_{2}-x_{1}}
+\end{equation*}
+
+\subsubsection{Ecuación de la recta pendiente intercepto}
+
+La ecuación de la recta pendiente intercepto es $y=mx+b$, donde$\ \left(
+0,b\right) $ es el punto de corte con el eje $Y$ como se ve en la figura~\ref{fig:placeholder2.4}.
+\begin{figure}[H]
+    \centering
+    \caption{Recta pendiente-intercepto}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5D.png}
+    \label{fig:placeholder2.4}
+\end{figure}
+
+\subsubsection{Ecuación punto pendiente}
+
+Si $m$ es la pendiente de una recta y $\left( x_{1},y_{1}\right) $ es un
+punto sobre la recta, la ecuación punto pendiente es: 
+\begin{equation*}
+y=m\left( x-x_{1}\right) +y_{1}
+\end{equation*}
+
+\subsubsection{Ecuación simétrica de la recta}
+
+Sean $a\neq 0$ y $b\neq 0$, los segmentos de una recta determinada sobre los ejes $X$ y $Y$, es decir, sus intersecciones con los ejes coordenados son $(a,0) $ y $(0,b)$, la pendiente de esta recta es $m=-\frac{b}{a}$ y el corte con el eje $y$ es $(0,b)$; luego, la ecuación es:
+\begin{align*}
+y &= -\frac{b}{a}x+b \\
+\frac{b}{a}x+y &= b \quad \text{se divide entre $b$ cada término} \\
+\frac{x}{a}+\frac{y}{b} &= 1
+\end{align*}
+
+La ecuación simétrica de la recta que pasa por $(a,0)$ y $(0,b)$ es $\frac{x%
+}{a}+\frac{y}{b}=1$ como se ilustra en la figura~\ref{fig:placeholder2.5}.
+\begin{figure}[H]
+    \centering
+    \caption{Ecuación simétrica de la recta}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5E.png}
+    \label{fig:placeholder2.5}
+\end{figure}
+
+\subsubsection{Ángulo entre rectas}
+
+Si $L_{1}$ y $L_{2}$ son dos rectas con ecuaciones $L_{1}:y=m_{1}x+b_{1}$, $L_{2}:y=m_{2}x+b_{2},$ hay dos ángulos entre las rectas $\alpha $ y $\beta $ con la condición $\alpha +\beta =180\degree$ ($\alpha $ y $\beta $ son suplementarios) como se ve en la figura~\ref{fig:placeholder2.6}.
+\begin{figure}[H]
+    \centering
+    \caption{Ángulos entre dos rectas}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5F.png}
+    \label{fig:placeholder2.6}
+\end{figure}
+
+La pendiente de una recta es la tangente del ángulo formado por la recta y el eje $X$ o cualquier recta horizontal; luego, $\tan \theta _{1}=m_{1}$ y $\tan \theta _{2}=m_{2},$ de donde\ \ $\theta _{1}=\tan ^{-1}\left(m_{1}\right) $ y\ $\theta _{2}=\tan ^{-1}\left( m_{2}2\right) $, así el ángulo $\alpha $ entre $L_{1}$ y\ $L_{2}$ es:
+\begin{equation*}
+  \alpha =\theta _{2}-\theta _{1}=\tan ^{-1}\left( m_{2}\right) -\tan
+^{-1}\left( m_{1}\right) \quad \text{y} \quad \beta =180\degree-\alpha
+\end{equation*}
+Por otro lado, al aplicar la tangente en ambos miembros de $\alpha =\theta_{2}-\theta _{1}$, se obtiene:
+\begin{equation*}
+\tan \alpha =\tan \left( \theta _{2}-\theta _{1}\right)
+\end{equation*}
+Al usar la identidad para la tangente de una diferencia:
+\begin{equation*}
+\tan \alpha =\frac{\tan \theta _{2}-\tan \theta _{1}}{1+\tan \theta
+_{2}\tan \theta _{1}} 
+\end{equation*}
+Así que
+\begin{equation*}
+\tan \alpha =\frac{m_{2}-m_{1}}{1+m_{2}m_{1}}
+\end{equation*}
+Dos rectas con ecuaciones $y=m_{1}x+b_{1}$ y $y=m_{2}x+b_{2}$ son paralelas si el ángulo entre ellas es $0$, de manera que
+\begin{equation*}
+    \tan ^{-1}\left( m_{1}\right) -\tan ^{-1}\left( m_{1}\right) =0
+\end{equation*}
+Entonces,
+\begin{equation*}
+    \tan ^{-1}\left( m_{1}\right) =\tan ^{-1}\left( m_{2}\right) \quad \text{y} \quad m_{1}=m_{2}
+\end{equation*}
+Por lo tanto, dos rectas son paralelas si tienen igual pendiente.
+
+Dos rectas con ecuaciones $y=m_{1}x+b_{1}$ y $y=m_{2}x+b_{2}$ son
+perpendiculares si el ángulo entre ellas es $90\degree=\frac{\pi }{2}$ radianes.
+
+De $\tan \alpha =\frac{m_{2}-m_{1}}{1+m_{2}m_{1}}$, usando recíprocos, se
+tiene $\cot \alpha =\frac{1+m_{1}m_{2}}{m_{2}-m_{1}}$, de forma que si $L_{1}$ es perpendicular a $L_{2}$, entonces el ángulo entre ellas es $\alpha =\frac{\pi 
+}{2}$, por tanto $\frac{1+m_{1}m_{2}}{m_{2}-m_{1}}=\cot \frac{\pi }{2}=0$ y $m_{1}m_{2}=-1.$
+
+Así que las rectas con ecuaciones $y=m_{1}x+b_{1}$ y $y=m_{2}x+b_{2}$ son perpendiculares si el producto de sus pendientes es $-1$, es decir, si $m_{2}=-\frac{1}{m_{1}}$, donde $m_{1}\neq 0$.
+
+\begin{example}
+Halle el menor ángulo entre las rectas $L_{1}$, que pasa por (1,1) y (2,3), y $L_{2}$, que pasa por $(1,-2)$ y $(2,-5)$.
+\end{example}
+
+\pagebreak 
+
+\textbf{Solución}
+
+Sean $L_{1}$ la recta que pasa por $(1,1)$ y $(2,3)$, $L_{2}$ la recta que pasa por $(1,-2)$ y $(2,-5)$, la pendiente de la recta $L_{1}$ es $m=\frac{\triangle y}{\triangle x}=\frac{3-1}{2-1}=2$.
+
+Usando la ecuación punto pendiente, la ecuación de la recta $L$ es:
+\begin{align*}
+  y &= m\left( x-x_{1}\right) +y_{1} \\
+  y &= 2\left( x-1\right) +1 \\
+  y &= 2x-2+1 \\
+  L_{1}: y &= 2x-1
+\end{align*}
+
+La pendiente de la recta $L_{2}$ es $m=\frac{\triangle y}{\triangle x}=\frac{-5-\left( -2\right) }{2-1}=\frac{-3}{1}=-3$.
+
+Usando la ecuación punto pendiente, la ecuación de la recta $L_{2}$ es:
+\begin{align*}
+y &= m\left( x-x_{1}\right) +y_{1} \\
+y &= -3\left( x-1\right) -2 \\
+y &= -3x+3-2 \\
+L_{2}: y &= -3x+1
+\end{align*}
+
+El ángulo mayor entre las rectas $L_{1}$ y $L_{2}$\ es:
+\begin{equation*}
+\angle \left( L_{1},L_{2}\right) =\tan ^{-1}\left( 2\right) -\tan
+^{-1}\left( -3\right) =135\degree
+\end{equation*}
+Y el menor ángulo es $45\degree$. La figura~\ref{fig:placeholder2.7} muestra la gráfica de las rectas y sus ángulos.
+
+\begin{figure}[H]
+    \centering
+    \caption{Menor ángulo entre las rectas  $L_{1}$ y $L_{2}$}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5G.png}
+    \label{fig:placeholder2.7}
+\end{figure}
+
+\subsubsection{Punto de intersección de dos rectas}
+
+Para determinar analíticamente el punto de intersección de dos rectas, se resuelve el sistema formado por sus ecuaciones.
+
+\begin{example}
+Halle analíticamente el punto de corte de las rectas con ecuaciones $L_{1}$:$y=3x-2$\ y $L_{2}:y=-2x+5$.
+\end{example}
+
+\textbf{Solución}
+
+Se restan las ecuaciones de las rectas término a término:
+\begin{align*}
+L_{1}:y&=3x-2 \\ 
+L_{2}:y&=-2x+5\\
+L_{2}-L_{1}:0&=-5x+7
+\end{align*}
+Si se soluciona $x$, se obtiene $5x=7$, así que $x=\frac{7}{5}$. Si se reemplaza $x=\frac{7}{5}$ en $L_{1}$,\pdfcomment{Se juntaron dos párrafos muy cortos en uno solo para mejorar la lectura}
+\[L_{1}:y=3x-2=3\left( \frac{7}{5}\right) -2=\frac{21}{5}-2=\frac{11}{5}\]
+De esta forma, el punto de intersección es $\left( \frac{7}{5},\frac{11}{5}\right)$. En la figura~\ref{fig:placeholder2.8}, se muestran las rectas y el punto de intersección.\pdfcomment{Se juntaron dos párrafos muy cortos en uno solo para mejorar la lectura}
+
+\begin{figure}[H]
+    \centering
+    \caption{Punto de intersección de dos rectas}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12S5H.png}
+    \label{fig:placeholder2.8}
+\end{figure}
+
+\subsubsection{Distancia entre un punto y una recta}
+
+\begin{example}
+Halle la distancia entre el punto $P=\left( 1,2\right) $ y la recta $L$ con
+ecuación $y=2x-1.$
+\end{example}
+
+\textbf{Solución}
+
+\begin{enumerate}
+\item Se halla la ecuación de la recta $L_{\bot }$ perpendicular a $L$, que pasa por $P=\left( 1,2\right)$.
+
+La pendiente de la recta perpendicular a $L$ es $m=-\frac{1}{2}$.
+
+Usamos la ecuación punto pendiente y obtenemos la ecuación de $L_{\bot }$:
+\begin{align*}
+y=-\frac{1}{2}\left( x-1\right) +2 \\
+y=-\frac{1}{2}x+\frac{1}{2}+2 \\
+y=-\frac{1}{2}x+\frac{5}{2}
+\end{align*}
+Así, la ecuación de la recta perpendicular a $L$ es $L_{\bot }:y=-\frac{1}{2}x+\frac{5}{2}$.
+
+\item Se determina el punto de corte entre $L$ y $L_{\bot }$.
+\begin{align*}
+L:y&=2x-1 \\ 
+L_{\bot }:y&=-\frac{1}{2}x+\frac{5}{2}
+\end{align*}
+Se restan las ecuaciones de las rectas término a término:
+\[L_{\bot }-L:0=-\frac{5}{2}x+\frac{7}{2}\]
+Al solucionar para $x$, se obtiene $\frac{5}{2}x=\frac{7}{2}$, así que $x=\frac{7}{5}$. Y, al reemplazar $x=\frac{7}{5}$ en $L$ resulta que
+\[L_{1}:y=2x-1=2\left( \frac{7}{5}\right) -1=\frac{9}{5}\]
+De esta forma, se obtiene que el punto de intersección es $Y=\left( \frac{7}{5},\frac{9}{5}\right)$.
+
+\begin{figure}[H]
+    \centering
+    \caption{Distancia punto recta}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5I.png}
+    \label{fig:placeholder2.9}
+\end{figure}
+
+\item La distancia entre $P$ y $L$ es la distancia entre los puntos $P$ y $Y$.
+\begin{align*}
+d\left( P,Y\right) 
+  &= \sqrt{(\triangle x)^{2} + (\triangle y)^{2}} \\
+  &= \sqrt{\left( 1-\frac{7}{5} \right)^{2} + \left( 2-\frac{9}{5} \right)^{2}} \\
+  &= \frac{1}{5}\sqrt{5} \approx 0.44721
+\end{align*}
+La figura~\ref{fig:placeholder2.9} ilustra la distancia entre el punto $P$ y la recta $L$.
+\end{enumerate}
+
+\subsection{Ejercicios}
+
+\begin{enumerate}
+    \item Encuentre la ecuación punto - intercepto de la recta que pasa por (-1,-5) y (7,-2).
+    \item Encuentre la ecuación general de la recta que pasa por (2,5) y (1,-1).
+    \item Encuentre la ecuación simétrica de la recta que pasa por (-2,3) y (1,-2).
+    \item Encuentre la ecuación punto - intercepto de la recta que pasa por (8,7) y paralela a la recta $5x-3y=6$.
+    \item Encuentre la ecuación punto - intercepto de la recta que pasa por (-2,7) y paralela a la recta $-2x-y=4$.
+    \item Encuentre la ecuación punto - intercepto de la recta que pasa por (4,7) y perpendicular a la recta $8x+6y=6$.
+    \item Encuentre la ecuación punto - intercepto de la recta que corta perpendicularmente a la recta $2x-y=5$ en el punto (3,1).
+\end{enumerate}    
+    
+\bigskip
+    
+Para los ejercicios 7 a 9, tenga en cuenta lo siguiente: sea  $L$ la recta que pasa por (1,1) y (2,3), $M$ la recta que pasa por (1,-2) y (2,-5), y $N$ la recta que pasa por los puntos (-1,-4) y (-2,1). Además, considere los puntos $P$ =(1,2) y $Q$ =(3,3).
+    
+\bigskip
+
+\begin{enumerate}
+    \setcounter{enumi}{7}
+    \item Halle el punto de intersección entre las rectas dadas.
+    \begin{enumerate}
+        \item $L$ y $M$
+        \item $L$ y $N$
+        \item $M$ y $N$
+    \end{enumerate}
+    \item Halle los ángulos entre las rectas dadas. \
+    \begin{enumerate}
+        \item $L$ y $M$
+        \item $L$ y $N$
+        \item $M$ y $N$
+    \end{enumerate}
+    \item Halle las distancias entre el punto y la recta. \
+    \begin{enumerate}
+        \item $P$ y $L$
+        \item $Q$ y $M$
+        \item $P$ y $N$
+    \end{enumerate}
+\end{enumerate}
+    
+\bigskip
+    
+Sea $T$ el triángulo con vértices $A=\left( 2,3\right)$, $B=\left( 6,-4\right)$ y $C=\left( 8,5\right)$
+    
+\bigskip
+
+\begin{enumerate}
+    \setcounter{enumi}{10}
+    \item Halle la ecuación de la recta que pasa por $A=\left( 2,3\right) $ y por el punto medio de $\overline{BC}$.
+    \item Halle la ecuación general de la recta que pasa por $A=\left(2,3\right) $ y es perpendicular a $\overleftrightarrow{BC}$.
+    \item Halle la ecuación general de la recta que pasa por $B=\left(6,-4\right) $ y es perpendicular a $\overleftrightarrow{AC}$.
+    \item Halle la ecuación general de la recta que pasa por el punto medio del segmento $\overline{BC}$ y es perpendicular a $\overleftrightarrow{BC}$.
+\end{enumerate}
+
+
+\section{Rectas en el espacio \texorpdfstring{$\mathbb{R}^{3}$}{R a la potencia 3}}
+
+Para determinar una recta en el espacio, es necesario tener un punto por donde pasa la recta y un vector que indique la dirección de la recta.
+
+La ecuación vectorial de la recta que pasa por un punto $P$ y tiene como vector director $v$ es:
+\[X=tv+P, \quad -\infty <t<\infty\]
+
+\begin{figure}[H]
+    \centering
+    \caption{Ecuación vectorial de una recta}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12S5J.png}
+    \label{fig:placeholder2.10}
+\end{figure}
+
+La figura~\ref{fig:placeholder2.10} ilustra como se obtiene cada punto $X$ sobre la recta usando la ley del paralelogramo.
+
+Al escribir esta ecuación con las coordenadas $X=\left( x,y,z\right)$, $v=\left( a,b,c\right)$, $P=\left( x_{0},y_{0},z_{0}\right)$, tenemos:
+
+\begin{align*}
+    X &= tv + P \\
+    (x, y, z) &= t(a, b, c) + (x_0, y_0, z_0) \\
+    (x, y, z) &= (at + x_0,\, bt + y_0,\, ct + z_0)
+\end{align*}
+
+Al igualar las coordenadas, se obtienen las ecuaciones paramétricas de la recta:
+\[\left\{ 
+\begin{array}{c}
+x=at+x_{0} \\ 
+y=bt+y_{0} \\ 
+z=ct+z_{0}%
+\end{array}%
+\right. -\infty <t<\infty
+\]
+Si $a\neq 0,b\neq 0$ y $c\neq 0$, al despejar $t$ en cada ecuación y luego igualar, obtenemos las ecuaciones simétricas de la recta:
+\[\frac{x-x_{0}}{a}=\frac{y-y_{0}}{b}=\frac{z-z_{0}}{c}\]
+
+\begin{example}
+Halle las ecuaciones de la recta que pasan por los puntos $P=\left( 5,3,8\right) $ y $Q=\left( 8,5,11\right)$.
+\end{example}
+
+\textbf{Solución}
+\[\text{Punto} = P =\left( 
+\begin{array}{c}
+5 \\ 
+3 \\ 
+8%
+\end{array}%
+\right)\]
+De la figura~\ref{fig:placeholder2.11}, el vector director es
+\[v=\overrightarrow{PQ}=Q-P=\left( 
+\begin{array}{c}
+3 \\ 
+2 \\ 
+3%
+\end{array}%
+\right)\]
+
+\begin{figure}[H]
+    \centering
+    \caption{Ecuación de recta que contiene dos puntos}
+    \includegraphics[width=0.4\linewidth]{Images/SDY12S5K.png}
+    \label{fig:placeholder2.11}
+\end{figure}
+
+Ecuación vectorial 
+\[X=tv+P:\left( 
+\begin{array}{c}
+x \\ 
+y \\ 
+z%
+\end{array}%
+\right) =t\left( 
+\begin{array}{c}
+3 \\ 
+2 \\ 
+3%
+\end{array}%
+\right) +\left( 
+\begin{array}{c}
+5 \\ 
+3 \\ 
+8%
+\end{array}%
+\right)\]
+Ecuaciones paramétricas:
+\[L:\left\{ 
+\begin{array}{c}
+x=3t+5 \\ 
+y=2t+3 \\ 
+z=3t+8%
+\end{array}%
+\right. \quad t\in \mathbb{R}\]
+Las ecuaciones simétricas se obtienen al despejar $t$ en cada una de las ecuaciones paramétricas e igualarlas:
+\[\frac{x-5}{3}=\frac{y-3}{2}=\frac{z-8}{3}\]
+Para verificar fácilmente la pertenencia de puntos a una recta, se usan las ecuaciones simétricas.
+
+\begin{example}
+¿Cuáles de los siguientes puntos pertenecen a la recta $L$ del ejemplo anterior? 
+\begin{enumerate}[label=(\alph*)]
+        \item $\left( 17,11,20\right)$
+        \item $\left( -4,-3,-2\right)$
+        \item $\left( -10,-7,-7\right)$
+        \item $\left( 65,43,69\right)$
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+Se deben reemplazar las coordenadas $x,y,z$ del punto por las variables en las ecuaciones simétricas de la recta $L$: $\frac{x-5}{3}=\frac{y-3}{2}\frac{%
+z-8}{3}$.
+
+\begin{enumerate}[label=(\alph*)]
+        \item $\left( \underset{x}{17},\underset{y}{11},\underset{z}{20}\right) \rightarrow \frac{17-5}{3}=\frac{11-3}{2}=\frac{20-8}{3}\rightarrow 4=4=4$ \\ Como todas las igualdades se satisfacen, el punto pertenece a $L$.
+        \item $\left( \underset{x}{-4},\underset{y}{-3},\underset{z}{-2}\right) $ $\rightarrow \frac{-4-5}{3}=\frac{-3-3}{2}=\frac{-2-8}{3}\rightarrow-3=-3\neq -\frac{10}{3}$ \\Como no todas las igualdades se satisfacen, el punto no pertenece a $L$.
+        \item $\left( -10,-7,-7\right) \rightarrow \frac{-10-5}{3}=\frac{-7-3}{2}=\frac{-7-8}{3}\rightarrow -5=-5=-5$ \\ Como todas las igualdades se satisfacen, el punto pertenece a $L$.
+        \item $\left( 65,43,69\right) \rightarrow \frac{65-5}{3}=\frac{43-3}{2}=\frac{69-8}{3}\rightarrow 20=20\neq \frac{61}{3}$ \\ Como no todas las igualdades se satisfacen, el punto no pertenece a $L$.
+\end{enumerate}
+
+\begin{example}
+Intersección de rectas y ángulo
+\[\text{Sean }L_{1}:\left\{ 
+\begin{array}{c}
+x=2t+2 \\ 
+y=3t+1 \\ 
+z=t-1%
+\end{array}%
+\right. \quad \text{y} \quad L_{2}:\left\{ 
+\begin{array}{c}
+x=3t+10 \\ 
+y=2t+3 \\ 
+z=t+1
+\end{array}
+\right.\]
+\begin{enumerate}[label=(\alph*)]
+        \item Halle el punto de intersección de las rectas (si se cortan).
+        \item Halle el ángulo entre las rectas.
+\end{enumerate}
+\end{example}
+
+\textbf{Solución}
+
+\begin{enumerate}[label=(\alph*)]
+\item Cambiamos el parámetro $t$ por $s$ en alguna de las dos rectas (en $L_{2}$) e igualamos las coordenadas $x$,$y$ y $z$, y resolvemos el sistema:
+\[L_{1}:\left\{ 
+\begin{array}{c}
+x=2t+2 \\ 
+y=3t+1 \\ 
+z=t-1%
+\end{array}%
+\right. \qquad L_{2}:\left\{ 
+\begin{array}{c}
+x=3s+10 \\ 
+y=2s+3 \\ 
+z=s+1%
+\end{array}%
+\right.\]
+Se igualan las coordenadas correspondientes para obtener el siguiente sistema.
+\begin{align*}
+\left( E_{1}\right) &:3s+10=2t+2 \\ 
+\left( E_{2}\right) &:2s+3=3t+1 \\ 
+\left( E_{3}\right) &:s+1=t-1%
+\end{align*}
+$\left( E_{3}\right) :s=t-2$ se reemplaza en $E_{1}$ y $E_{2}$.
+\begin{align*}
+\left( E_{1}\right) &:3\left( t-2\right) +10=2t+2 \\ 
+\left( E_{2}\right) &:2\left( t-2\right) +3=3t+1 \\
+\left( E_{1}\right) &:t=-2 \\ 
+\left( E_{2}\right) &:t=-2%
+\end{align*}
+Al sustituir este valor de $t$ en $\left( E_{3}\right) $, resulta
+\[\left( E_{3}\right) :s=t-2=-2-2=-4\]
+Al reemplazar $t=-2$ en $L_{1}$, se obtiene el punto de intersección de las dos rectas: 
+\[\left\{ 
+\begin{array}{c}
+x=-2 \\ 
+y=-5 \\ 
+z=-3%
+\end{array}%
+\right.\]
+
+\item El ángulo entre 2 rectas es el ángulo entre sus vectores directores.
+\[
+d_{1}= \text{director de} L_{1}=\left( 
+\begin{array}{c}
+2 \\ 
+3 \\ 
+1%
+\end{array}%
+\right)\qquad d_{2}= \text{director de} L_{2}=\left( 
+\begin{array}{c}
+3 \\ 
+2 \\ 
+1%
+\end{array}%
+\right)
+\]
+\begin{align*}
+\angle \left( L_{1},L_{2}\right) &=\angle \left( d_{1},d_{2}\right)\\ 
+&=\cos^{-1}\left( \frac{d_{1}\cdot d_{2}}{\left\Vert d_{1}\right\Vert \left\Vert
+d_{2}\right\Vert }\right) \\
+&=\cos ^{-1}\left( \frac{13}{\sqrt{14}\sqrt{14}}\right) \\ 
+&=21.78\degree
+\end{align*}
+\end{enumerate}
+
+\begin{example}
+Ecuación de una recta perpendicular a dos vectores
+Halle las ecuaciones paramétricas de una recta que pasa por $A=\left(6,1,4\right) $ y es perpendicular a los vectores $u=\left( 1,-2,3\right) $ y $v=\left( 2,3,5\right)$.
+
+\textbf{Solución}
+
+\begin{figure}[t]
+    \centering
+    \caption{Recta perpendicular a dos vectores}
+    \includegraphics[width=0.4\linewidth]{Images/SDY12S5L.png}
+    \label{fig:placeholder2.12}
+\end{figure}
+
+Como se ilustra en la figura~\ref{fig:placeholder2.12}, el vector director $d$ de la recta debe ser perpendicular tanto a $u$ como a $v$, así que:
+\[d=u\times v=\left\vert 
+\begin{array}{cccccc}
+1 & -2 & 3 & 1 & -2 & 3 \\ 
+2 & 3 & 5 & 2 & 3 & 5%
+\end{array}%
+\right\vert =\left( -19,1,7\right) \]
+Con $d$ y el punto $A=\left( 6,1,4\right)$, determinamos las ecuaciones paramétricas de la recta buscada:
+\[\left\{ 
+\begin{array}{c}
+x=-19t+6 \\ 
+y=t+1 \\ 
+z=7t+4%
+\end{array}%
+\right. \qquad t\in \mathbb{R}
+\]
+\end{example}
+
+\subsubsection{Distancia entre un punto y una recta}
+
+\begin{figure}[t]
+    \centering
+    \caption{Distancia entre un punto y una recta}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12S5M.png}
+    \label{fig:placeholder2.13}
+\end{figure}
+
+Usando la figura  \ref{fig:placeholder2.13}, la distancia entre el punto $Q$ y la recta $L$ es:
+\[d\left( Q,L\right) =\left\Vert \overrightarrow{PQ}-\Proy_{d}%
+\overrightarrow{PQ}\right\Vert \]
+Donde $P$ es un punto cualquiera de $L$ y $d$ es el vector director de la recta $L$.
+
+\begin{example}
+Sea $L$ la recta con ecuaciones paramétricas
+\[L:\left\{ 
+\begin{array}{c}
+x=2t+2 \\ 
+y=3t+1 \\ 
+z=t+4%
+\end{array}%
+\right. \qquad t\in \mathbb{R}\]
+Halle la distancia entre el punto\ $Q=\left( 4,11,29\right) $ y la recta $L$.
+\end{example}
+
+\textbf{Solución}
+
+Datos: $Q=\left( 4,11,29\right)$, director $=d=\left( 2,3,1\right)$, punto de $L$: $P=\left( 0,-2,3\right)$.
+\begin{align*}
+    \overrightarrow{PQ}&=Q-P=\left( 4,13,26\right) \\
+    \Proy_{d}\overrightarrow{PQ}&=\frac{\overrightarrow{PQ}\cdot d}{\left\Vert
+    d\right\Vert ^{2}}d \\
+    &=\frac{73}{14}\left( 2,3,1\right) \\
+    &=\left( \frac{73}{7},\frac{219}{14},\frac{73}{14}\right)
+\end{align*}
+La distancia entre el punto $Q$ y la recta $L$ es:
+\begin{align*}
+d\left( Q,L\right) 
+    &= \left\Vert \overrightarrow{PQ}-\Proy_{d}\overrightarrow{PQ}\right\Vert \\
+    &= \left\Vert \left( 4,13,26\right) -\left( \frac{73}{7},\frac{219}{14},\frac{73}{14}\right) \right\Vert \\
+    &= \left\Vert \left( -\frac{45}{7},-\frac{37}{14},\frac{291}{14}\right) \right\Vert \\
+    &= \sqrt{\left( -\frac{45}{7}\right) ^{2}+\left( -\frac{37}{14}\right) ^{2}+\left( \frac{291}{14}\right) ^{2}} \\
+    &= \sqrt{\frac{6725}{14}}=21.917
+\end{align*}
+La fórmula de la distancia es independiente del punto $P$ de la recta que se use.
+
+Ahora, se hallará la distancia usando otro punto $P=\left( 2,1,4\right) $ de la recta $L$.
+
+Datos: $Q=\left( 4,11,29\right)$, director $=d=\left( 2,3,1\right)$, punto de $L$$_{1}$: $P=\left( 2,1,4\right)$.
+\begin{align*}
+\overrightarrow{PQ}&=Q-P=\left( 2,10,25\right) \\ 
+\Proy_{d}\overrightarrow{PQ}&=\frac{\overrightarrow{PQ}\cdot d}{\left\Vert
+d\right\Vert ^{2}}d =\frac{59}{14}\left( 2,3,1\right) \\ 
+&=\left( \frac{59}{7},\frac{177}{14},\frac{59}{14}\right) \\
+d\left( Q,L\right) &=\left\Vert \overrightarrow{PQ}-\Proy_{d}
+\overrightarrow{PQ}\right\Vert \\ 
+&=\left\Vert \left( 2,10,25\right) -\left( \frac{59}{7},\frac{177}{14},\frac{59}{14}\right) \right\Vert \\ 
+&=21.917
+\end{align*}
+Dos rectas son paralelas si sus vectores directores son paralelos, como se ilustra en la figura~\ref{fig:placeholder2.14}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Rectas paralelas}
+    \includegraphics[width=0.4\linewidth]{Images/SDY12S5N.png}
+    \label{fig:placeholder2.14}
+\end{figure}
+
+Dos rectas son ortogonales si sus vectores directores son ortogonales, como se muestra en la figura~\ref{fig:placeholder2.15}. 
+
+\begin{figure}[H]
+    \centering
+    \caption{Rectas ortogonales}
+    \includegraphics[width=0.4\linewidth]{Images/SDY12S5O.png}
+    \label{fig:placeholder2.15}
+\end{figure}
+
+\subsection{Ejercicios}
+
+\begin{enumerate}
+    \item Determine la ecuación vectorial, las paramétricas y simétricas de la recta que pasa por los puntos:
+    \begin{enumerate}
+        \item $\left( 1,1,3\right) $ y $\left( 2,-3,7\right) \qquad \qquad $
+        \item $\left(9,4,1\right) $ y $\left( 12,5,-10\right) \qquad \qquad $
+        \item $\left(-1,-2,2\right) $ y $\left( 3,7,9\right) $
+    \end{enumerate}
+    \item Encuentre la ecuación vectorial, las paramétricas y simétricas de la recta que pasa por $\left( 3,3,7\right) $ y es paralela a la recta con ecuaciones simétricas $\frac{x-2}{4}=\frac{y+1}{3}=\frac{z+4}{2}$.
+    \item Halle la ecuación vectorial, las paramétricas y simétricas de la recta que pasa por $\left( 1,1,2\right) $ y es perpendicular a los vectores $\left( -1,0,1\right) $ y $\left( 4,4,3\right) $
+    \item Sean $L_{1}:\left\{\begin{array} {c}x=4t+2 \\y=-3t+1 \\ z=t-1\end{array}\right. $ y $L_{2}:\left\{\begin{array} {c}x=2t+10 \\y=-2t+3 \\ z=2t-23\end{array}\right. $.
+    \begin{enumerate}
+        \item Halle el punto de intersección de las rectas (si se cortan)
+        \item Halle el ángulo entre las rectas.
+        \item ¿$L_{1}$ y $L_{2}$ son paralelas?
+        \item ¿$L_{1}$ y $L_{2}$ son perpendiculares?
+    \end{enumerate}
+    \item Sean $L_{1}:\left\{\begin{array}{c}x=t+2 \\ y=3t+1 \\ z=-t+4\end{array}\right. ,t\in \mathbb{R}$ y $L_{2}:\left\{ \begin{array}{c}x=5t-2 \\ y=-t-1 \\ z=2t+3\end{array}\right. ,t\in \mathbb{R}$.
+    \begin{enumerate}
+        \item Halle el ángulo entre $L_{1}$ y $L_{2}$.
+        \item ¿$L_{1}$ y $L_{2}$ son paralelas? \ \ \
+        \item Halle el punto de intersección de $L_{1}$ y $L_{2}$ si las rectas se cortan.
+    \end{enumerate}
+    \item Sean $L_{1}:\left\{\begin{array}{c}x=2t+2 \\ y=3t+1 \\ z=t+4\end{array}\right. ,t\in \mathbb{R}$ \ y $L_{2}:\left\{\begin{array}{c}x=3t-2 \\ y=2t \\ z=t+3\end{array}\right. ,t\in \mathbb{R}$.
+    \begin{enumerate}
+        \item ¿Cuáles de los siguientes puntos pertenecen a $L_{1}$ o $L_{2}$?
+        \begin{enumerate}
+            \item $\left( 4,4,5\right)$
+            \item $\left( 4,6,5\right)$
+            \item $\left(9,15,22\right)$
+            \item $\left( -9,-12,-14\right)$
+            \item $\left(-46,12,15\right)$
+        \end{enumerate}
+        \item Halle el ángulo entre $L_{1}$ y $L_{2}$ $\angle \left(L_{1},L_{2}\right)$.
+        \item Calcule el punto de intersección de $L_{1}$ y $L_{2}$ si las rectas se cortan.
+    \end{enumerate}
+    \item Sean $R_{1}$ la recta que contiene los puntos $\left( 1,2,3\right) $ y $\left( 3,4,5\right) $ y $R_{2}$ la recta que contiene los puntos $\left(2,-1,3\right) $ \ y \ $\left( -1,3,5\right)$.
+    \begin{enumerate}
+        \item Halle el ángulo entre las rectas $R_{1}$ y $R_{2}$
+        \item Halle el punto de intersección de $R_{1}$ y $R_{2}$ si las rectas se cortan.
+    \end{enumerate}
+    \item Encuentre la distancia entre el punto \ $Q=\left( 8,10,20\right) $ y la recta \[L_{2}:\left\{\begin{array}{c}x=3t-2 \\ y=2t \\ z=t+3\end{array}\right.\]
+    \item Determine la distancia entre el punto \ $Q=\left( 11,10,12\right) $ y la recta $L_{3}$ que pasa por $\left( 1,1,1\right) $ y $\left( 4,2,2\right)$.
+    \item Calcule la distancia entre el punto $Q=\left( 1,1,2\right) $ y la recta \[L_{1}:\left\{\begin{array}{c} x=2t+2 \\ y=3t+1 \\ z=t+4\end{array}\right.\]
+    \item Halle la distancia entre $Q=\left( 8,1,2\right) $ y la recta \[L_{2}:\left\{\begin{array}{c}x=3t-2 \\ y=2t \\ z=t+3\end{array}\right.\]
+    \item Halle la distancia entre $Q=\left( 1,7,2\right) $ y la recta $L_{3}$ que pasa por $\left( 1,1,1\right) $ y $\left( 4,2,2\right)$.
+\end{enumerate}
+
+\bigskip
+
+\section{Planos en \texorpdfstring{$\mathbb{R}^{3}$}{R a la potencia 3}}
+
+En geometría euclidiana, un postulado establece que por tres puntos no colineales hay un plano que los contiene. Por lo tanto, para determinar un plano en el espacio, se necesitan tres puntos no colineales o bien un punto y un vector normal, que es perpendicular a cualquier vector contenido en el plano.
+
+\subsection{Ecuaciones de un plano en el espacio}
+
+La ecuación del plano que pasa por $P=(x_{0},y_{0},z_{0})$ y es perpendicular al vector $n=(a,b,c)$ es $n\cdot (X-P)=0$, como se ve en la figura~\ref{fig:placeholder2.16}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Ecuación punto normal de un plano}
+    \includegraphics[width=0.8\linewidth]{Images/SDY12S5P.png}
+    \label{fig:placeholder2.16}
+\end{figure}
+
+\subsubsection{Ecuación punto normal y cartesiana de un plano}
+
+Si $X=\left( x,y,z\right) $ es un punto cualquiera de un plano $\pi$, $X-P$
+pertenece al plano $\pi $ y es perpendicular a $n$, así: $n\cdot \left( X-P\right) =0$, lo que equivale a $n\cdot X=n\cdot P$. 
+
+La ecuación punto normal del plano vectorialmente es: $n\cdot \left(X-P\right) =0$.
+
+Escribiendo las coordenadas de los vectores:
+\[\left( a,b,c\right) \cdot \left( \left( x,y,z\right) -\left(
+x_{0},y_{0},z_{0}\right) \right) =0\]
+Al efectuar las operaciones, se obtiene:
+\begin{align*}
+    \left( a,b,c\right) \cdot \left( x-x_{0},y-y_{0},z-z_{0}\right) &= 0 \\
+    a\left( x-x_{0}\right) +b\left( y-y_{0}\right) +c\left( z-z_{0}\right) &= 0
+\end{align*}
+Esta última ecuación es llamada la ecuación punto normal del plano.
+
+Si simplificamos:
+\begin{align*}
+    ax-ax_{0}+by-by_{0}+cz-cz_{0}&=0 \\
+    ax+by+cz&=ax_{0}+by_{0}+cz_{0}
+\end{align*}
+llegamos a la ecuación: $ax+by+cz=d$\!, donde $d=ax_{0}+by_{0}+cz_{0}$.
+
+\begin{example}
+Halle la ecuación cartesiana del plano que pasa por $P=\left( 2,1,3\right)$, $Q=\left( 3,-1,2\right)$ y $R=\left( 4,6,5\right)$.
+\end{example}
+
+\textbf{Solución}
+
+\begin{figure}[H]
+    \centering
+    \caption{Plano que contiene tres puntos}
+    \includegraphics[width=0.8\linewidth]{Images/SDY12S5Q.png}
+    \label{fig:placeholder2.17}
+\end{figure}
+
+Según la figura~\ref{fig:placeholder2.17}, un vector normal del plano es:
+\begin{align*}
+n &= \overrightarrow{PQ} \times \overrightarrow{PR} \\
+  &= (Q - P) \times (R - P) = (1, -2, -1) \times (2, 5, 2) \\
+  &= 
+  \left|
+  \begin{array}{cccccc}
+  1 & -2 & -1 & 1 & -2 & -1 \\
+  2 & 5 & 2 & 2 & 5 & 2
+  \end{array}
+  \right| \\
+  &= (1, -4, 9)
+\end{align*}
+Efectuamos $n\cdot X=n\cdot P$.
+\begin{align*}
+    \left(1,-4,9\right) \cdot \left(x, y, z\right) &= \left(1,-4,9\right) \cdot \left(2, 1, 3\right) \\
+    x - 4y + 9z &= 25
+\end{align*}
+La ecuación cartesiana del plano que contiene los puntos $P$, $Q$ y $R$ es $x-4y+9z=25$.
+
+\begin{example}
+Halle el punto de intersección entre la recta \[L_{1}:\left\{ 
+\begin{array}{l}
+x=-5t+4 \\ 
+y=t+2 \\ 
+z=t+5%
+\end{array}%
+\right.\quad t\in \mathbb{R} 
+\]
+y el plano $\pi$: $2x+3y+4z=20$.
+\end{example}
+
+\textbf{Solución}
+
+Se remplazan las coordenadas $x,y$ y $z$ de las ecuaciones paramétricas de $%
+L_{1} $ en la ecuación cartesiana del plano.
+\begin{align*}
+2x + 3y + 4z &= 20 \\
+2(-5t + 4) + 3(t + 2) + 4(t + 5) &= 20
+\end{align*}
+Resolvemos para $t$: $t=\frac{14}{3}$.
+
+Luego, reemplazamos el parámetro $t$ de $L_{1}$ por $\frac{14}{3}$.
+\[\left\{ 
+\begin{array}{l}
+x=-5\left( \frac{14}{3}\right) +4 \\ 
+y=\frac{14}{3}+2 \\ 
+z=\frac{14}{3}+5%
+\end{array}%
+\right. \]
+El punto intersección es $\left( -\frac{58}{3},\frac{20}{3},\frac{29}{3}\right)$.
+
+\subsubsection{Distancia entre un punto y un plano}
+
+Para hallar la distancia entre un punto $R$ y un plano $\pi$, usamos la
+figura~\ref{fig:placeholder2.18}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Distancia de un punto a un plano}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12S5R.png}
+    \label{fig:placeholder2.18}
+\end{figure}
+
+Sea $P$ un punto del plano $\pi$, $n$ es un vector normal del plano. Usando la figura~\ref{fig:placeholder2.18}, la distancia entre el punto $P$ y el plano $\pi$ es:
+\[
+d(R,\pi )=\left\Vert \text{Proy}_{n}\overrightarrow{PR}\right\Vert
+=\left\Vert \frac{n\cdot \overrightarrow{PR}}{n\cdot n}n\right\Vert =\frac{%
+\left\vert n\cdot \overrightarrow{PR}\right\vert }{\left\Vert n\right\Vert
+^{2}}\left\Vert n\right\Vert =\frac{\left\vert n\cdot \overrightarrow{PR}%
+\right\vert }{\left\Vert n\right\Vert }
+\]
+
+\begin{example}
+Halle la distancia entre el punto $R=\left( 4,6,9\right) $ y el plano $\pi:2x+3y+6z=4$.
+\end{example}
+
+\textbf{Solución}
+
+Encontramos un punto del plano $\pi$, por ejemplo $P=\left( 2,0,0\right)$.
+Un vector normal es $n=\left( 2,3,6\right)$.
+\begin{align*}
+\overrightarrow{PR} &= R - P = (2, 6, 9) \\
+n \cdot \overrightarrow{PR} &= (2, 3, 6) \cdot (2, 6, 9) = 76 \\
+\left\Vert n \right\Vert &= \sqrt{2^2 + 3^2 + 6^2} = 7
+\end{align*}
+La distancia entre $R$ y $\pi $ es
+\[d(R,\pi )=\frac{\left\vert n\cdot \overrightarrow{PR}\right\vert }{%
+\left\Vert n\right\Vert }=\frac{76}{7}\]
+
+\begin{example}
+Halle las ecuaciones paramétricas de la recta intersección de los planos \ $\pi _{1}:2x+y-z=2$ y el plano $\pi _{2}$ \ que contiene los puntos $A=\left( 1,1,1\right)
+,B=\left( 1,6,1\right) ,C=\left( 3,-1,4\right)$.
+\end{example}
+
+\textbf{Solución}
+
+\begin{enumerate}
+\item Ecuación del plano $\pi_2$ que contiene $A$, $B$, $C$.
+
+Tomamos los vectores
+\[
+\overrightarrow{AB}=B-A=(0,5,0),\qquad 
+\overrightarrow{AC}=C-A=(2,-2,3).
+\]
+
+El vector normal a \(\pi_2\) es
+\[
+\mathbf{n}_2=\overrightarrow{AB}\times\overrightarrow{AC}
+=\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k}\\[4pt]
+0 & 5 & 0\\[4pt]
+2 & -2 & 3
+\end{vmatrix}
+=(15,0,-10)=5(3,0,-2).
+\]
+Tomamos \(\mathbf{n}_2=(3,0,-2)\). Usando el punto \(A=(1,1,1)\),
+\[
+\mathbf{n}_2\cdot (x-1,y-1,z-1)=0
+\quad\Longrightarrow\quad 3(x-1)-2(z-1)=0,
+\]
+por lo tanto la ecuación cartesiana de \(\pi_2\) es
+\[
+3x-2z=1
+\]
+
+\item Intersección $\pi_1\cap\pi_2$ 
+
+Tenemos el sistema de dos ecuaciones lineales:
+\[
+\begin{cases}
+2x+y-z=2\\[4pt]
+3x-2z=1
+\end{cases}
+\]
+
+De la segunda ecuación despejamos \(z\) en términos de \(x\):
+\[
+3x-2z=1 \;\Longrightarrow\; z=\dfrac{3x-1}{2}
+\]
+
+Sustituimos en la primera para hallar \(y\):
+\[
+2x+y-\dfrac{3x-1}{2}=2
+\quad\Longrightarrow\quad
+y=2-2x+\dfrac{3x-1}{2}
+\]
+Simplificando:
+\[
+y=\dfrac{4-4x+3x-1}{2}=\dfrac{3-x}{2}
+\]
+
+Y las ecuaciones paramétricas son:
+\[
+x=t,\qquad y=\dfrac{3-t}{2},\qquad z=\dfrac{3t-1}{2},\qquad t\in\mathbb{R}
+\]
+\end{enumerate}
+
+\subsubsection{Distancia entre dos rectas alabeadas}
+
+Dos rectas $L_{1}$ y $L_{2}$ son alabeadas si no son paralelas y  no se cortan en el espacio.
+
+\begin{figure}[H]
+    \centering
+    \caption{Distancia entre dos rectas alabeadas}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12S5S.png}
+    \label{fig:placeholder2.19}
+\end{figure}
+
+Sean $Q$ un punto de $\ L_{1}$, y $\pi $ el plano con vector normal $n=d_{1}\times d_{2}$ que pasa por un punto $P$ de $L_{2}$. Según la figura~\ref{fig:placeholder2.19}, la distancia
+entre las rectas $L_{1}$ y $L_{2}$ es la distancia entre el punto $Q$ y el
+plano $\pi$:
+\[
+d\left( L_{1},L_{2}\right) =d(Q,\pi )=\left\Vert \text{Proy}_{n}
+\overrightarrow{PQ}\right\Vert =\frac{\left\vert n\cdot \overrightarrow{PQ}
+\right\vert }{\left\Vert n\right\Vert }
+\]
+
+\begin{example}
+Halle la distancia mínima entre las rectas: \[L_{1}:\left\{ 
+\begin{array}{c}
+x=t+1 \\ 
+y=2t+2 \\ 
+z=t+5
+\end{array}
+\right. \quad \text{y} \quad L_{2}:\left\{ 
+\begin{array}{c}
+x=-2t+1 \\ 
+y=t+3 \\ 
+z=2t-6
+\end{array}
+\right.\]
+\end{example}
+
+\textbf{Solución}
+
+Calculamos el producto cruz de los vectores directores $d_{1}=\left(
+1,2,1\right)$ y $d_{2}=\left( -2,1,2\right)$.
+\begin{align*}
+n &= d_{1}\times d_{2} \\
+  &= \left( 1,2,1\right) \times \left( -2,1,2\right) \\
+  &= \begin{vmatrix}
+      \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+      1 & 2 & 1 \\
+      -2 & 1 & 2
+    \end{vmatrix} \\
+  &= (3, -4, 5)
+\end{align*}
+
+Elegimos los puntos $Q=\left( 1,2,5\right) $ de $L_{1}$, y $P=\left( 1,3,6\right) $ de $L_{2}$.
+\begin{align*}
+\overrightarrow{PQ} &= Q - P = (0, 1, 1) \\
+n \cdot \overrightarrow{PQ} &= 1 \\
+\left\Vert n \right\Vert &= \sqrt{3^2 + 4^2 + 5^2} = 5\sqrt{2}
+\end{align*}
+Por lo tanto, la distancia entre las rectas es
+\[d\left( L_{1},L_{2}\right) =\frac{\left\vert n\cdot \overrightarrow{PQ}
+\right\vert }{\left\Vert n\right\Vert }=\frac{1}{5\sqrt{2}}\approx
+0.14142\]
+
+\subsection{Ejercicios}
+
+\begin{enumerate}
+    \item Halle una ecuación cartesiana del plano que contiene el punto $P=\left(1,2,3\right) $ con vector normal $v=\left(3,4,2\right)$.
+    \item Determine una ecuación cartesiana del plano que contiene los puntos \\$P=\left(1,2,3\right) ,Q=\left(-2,1,-3\right) $ y $R=\left(4,6,1\right)$.
+    \item Encuentre una ecuación cartesiana del plano que contiene los puntos \\$P=\left(1,0,-2\right) ,Q=\left(2,-1,0\right) $ y $R=\left(4,6,1\right)$.
+    \item Encuentre una ecuación cartesiana del plano que contiene el punto \\ $P=\left( 1,1,-4\right) $ y es paralelo al plano con ecuación $3x+4y+5z=12$.
+    \item Halle las ecuaciones paramétricas de la recta intersección de los
+    planos con ecuaciones $2x+3y+z=6$ y $4x+7y+4z=15$.
+    \item Halle las ecuaciones paramétricas de la recta intersección de los planos con ecuaciones $x+y+z=4$ y $3x+4y+4z=15$.
+    \item Encuentre el punto de intersección entre la recta que pasa por los puntos $\left( 1,1,1\right) $, $\left( 2,2,3\right) $ \ y el plano con ecuación $x+y+2z=10$.
+    \item Determine el punto de intersección entre la recta que pasa por los puntos $\left( 2,-3,1\right) $, $\left( 4,5,6\right) $ \ y el plano con ecuación $2x+8y+5z=15$.
+    \item Calcule la distancia entre el punto $\left( 1,2,10\right) $ y el plano con ecuación $4x+6y+7z=20$.
+    \item Halle la distancia entre el punto $\left( 4,20,10\right) $ y el plano que contiene los puntos $\left( 1,1,1\right) ,\left( -1,-1,2\right) $ y $ \left( 2,2,3\right)$.
+    \item Halle la distancia entre la recta que pasa por los puntos $\left(1,2,2\right) $, $\left( 2,4,5\right) $ \ y el plano con ecuación $3x+3y-3z=12$.
+    \item Sean $\pi _{1}$ y $\pi _{2}$ los planos con ecuaciones cartesianas $ 2x+3y-5z=6$ y $-4x-6y+10z=30$, calcule la distancia entre los planos.
+    \item Sean \[L_{1}:\left\{\begin{array}{c}x=2t+2 \\ y=3t+1 \\ z=t+4\end{array}\right. \quad t\in \mathbb{R} \quad \text{y} \quad L_{2}:\left\{ \begin{array}{c}x=3t-2 \\ y=2t+4 \\ z=t+3\end{array}\right. t\in \mathbb{R}\]
+    \begin{enumerate}
+        \item Pruebe que $L_{1}$ y $L_{2}$ no se cortan.
+        \item Calcule la distancia entre las rectas.
+    \end{enumerate}
+\end{enumerate}
+

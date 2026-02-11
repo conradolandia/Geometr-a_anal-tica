@@ -1617,22 +1617,23 @@ Sean $A,B,C$ matrices de tamaño $2\times 2$ o $3\times 3$ y $\alpha ,\beta$ nú
      0 & 0 & 0%
      \end{array}%
     \right) \]
+    La matriz opuesta de la matriz 
+    \[A=\left( 
+    \begin{array}{ccc}
+    a_{11} & a_{12} & a_{13} \\ 
+    a_{21} & a_{22} & a_{23} \\ 
+    a_{31} & a_{32} & a_{33}%
+    \end{array}%
+    \right) \] 
+    es
+    \[-A=\left( 
+    \begin{array}{ccc}
+    -a_{11} & -a_{12} & -a_{13} \\ 
+    -a_{21} & -a_{22} & -a_{23} \\ 
+    -a_{31} & -a_{32} & -a_{33}%
+    \end{array}%
+    \right) \]
 \end{enumerate}
-
-La matriz opuesta de la matriz $A=\left( 
-\begin{array}{ccc}
-a_{11} & a_{12} & a_{13} \\ 
-a_{21} & a_{22} & a_{23} \\ 
-a_{31} & a_{32} & a_{33}%
-\end{array}%
-\right)$ es
-\[-A=\left( 
-\begin{array}{ccc}
--a_{11} & -a_{12} & -a_{13} \\ 
--a_{21} & -a_{22} & -a_{23} \\ 
--a_{31} & -a_{32} & -a_{33}%
-\end{array}%
-\right) \]
 
 \textbf{Implicaciones de las propiedades}
 
@@ -1666,14 +1667,14 @@ Primero, se debe simplificar usando las propiedades:
 & 4\left( A-3\left( A+\underbrace{3\left( \frac{1}{3}A-\frac{1}{3}B\right) } \right) \right) \qquad \text{Propiedad distributiva}\\
 & =4\left( A-3\left( A+3\left( \frac{1}{3}A\right) -3\left( \frac{1}{3} B\right) \right) \right) \qquad \text{Propiedades 5 y 8}\\
 & =4\left( A-3\left( A+A-B\right) \right) \qquad \text{Propiedad 7 (suma de semejantes)}\\
-& =4\left( A-\underbrace{3\left( 2A-B\right) }\right) \qquad \text{Propiedad 6 (distributiva) y 5 (ley de signos)}\\
+& =4\left( A-\underbrace{3\left( 2A-B\right) }\right) \qquad \text{Propiedad 6 (distributiva) y ley de signos}\\
 & =4\left( A-6A+3B\right) \qquad \qquad\text{Suma de términos semejantes}\\
 & =4\left( -5A+3B\right) \qquad \text{Propiedad distributiva}\\
 & =-20A+12B 
 \end{align*}
 Luego, se reemplazan por las matrices y se realizan las operaciones:
-
-$=-20\left( 
+\begin{align*}
+& =-20\left( 
 \begin{array}{ccc}
 1 & 1 & -1 \\ 
 -1 & 2 & 3 \\ 
@@ -1685,9 +1686,8 @@ $=-20\left(
 1 & -2 & -2 \\ 
 2 & 3 & 5%
 \end{array}%
-\right) $
-
-$=\left( 
+\right) \\
+& = \left( 
 \begin{array}{ccc}
 -20 & -20 & 20 \\ 
 20 & -40 & -60 \\ 
@@ -1699,21 +1699,34 @@ $=\left(
 12 & -24 & -24 \\ 
 24 & 36 & 60%
 \end{array}%
-\right) $
-
-$=\left( 
+\right) \\
+& =\left( 
+\begin{array}{ccc}
+-20 & -20 & 20 \\ 
+20 & -40 & -60 \\ 
+-40 & -80 & 0%
+\end{array}%
+\right) +\left( 
+\begin{array}{ccc}
+36 & 24 & 36 \\ 
+12 & -24 & -24 \\ 
+24 & 36 & 60%
+\end{array}%
+\right) \\
+& =\left( 
 \begin{array}{ccc}
 16 & 4 & 56 \\ 
 32 & -64 & -84 \\ 
 -16 & -44 & 60%
 \end{array}%
-\right) $
+\right) 
+\end{align*}
 
-\bigskip
+\clearpage
 
 \subsection{Producto de matrices}
 
-\textbf{Producto fila por columna}
+\subsubsection{Producto fila por columna}
 
 El producto de una fila por una columna de longitud 2 es:
 
@@ -1760,8 +1773,8 @@ Halle:
 \end{enumerate}
 
 Sean $A$ y $B$ matrices $2\times 2$, el producto de $A$ y $B$ es:
-
-$AB=\left( 
+\begin{align*}
+AB&=\left( 
 \begin{array}{cc}
 a_{11} & a_{12} \\ 
 a_{21} & a_{22}%
@@ -1771,27 +1784,25 @@ a_{21} & a_{22}%
 b_{11} & b_{12} \\ 
 b_{21} & b_{22}%
 \end{array}%
-\right) $
-
-$\qquad =\left( 
+\right) \\
+& =\left( 
 \begin{array}{cc}
-Fil_{1}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{1}\left(
+\Fil_{1}\left( A\right) \cdot \func{col}_{1}\left( B\right) & \Fil_{1}\left(
 A\right) \cdot \func{col}_{2}\left( B\right) \\ 
-Fil_{2}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{2}\left(
+\Fil_{2}\left( A\right) \cdot \func{col}_{1}\left( B\right) & \Fil_{2}\left(
 A\right) \cdot \func{col}_{2}\left( B\right)%
 \end{array}%
-\right) $
-
-$\qquad =\left( 
+\right) \\
+& =\left( 
 \begin{array}{cc}
 a_{11}b_{11}+a_{12}b_{21} & a_{11}b_{12}+a_{12}b_{22} \\ 
 a_{21}b_{11}+a_{22}b_{21} & a_{21}b_{12}+a_{22}b_{22}%
 \end{array}%
-\right) $
-
+\right)
+\end{align*}
 Sean $A$ y $B$ matrices $3\times 3$, el producto de $A$ y $B$ es:
-
-$AB=\left( 
+\begin{align*}
+AB&=\left( 
 \begin{array}{ccc}
 a_{11} & a_{12} & a_{13} \\ 
 a_{21} & a_{22} & a_{23} \\ 
@@ -1803,23 +1814,22 @@ b_{11} & b_{12} & b_{13} \\
 b_{21} & b_{22} & b_{23} \\ 
 b_{31} & b_{32} & b_{33}%
 \end{array}%
-\right) $
-
-$=\left( 
+\right)\\ 
+& =\left( 
 \begin{array}{ccc}
-Fil_{1}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{1}\left(
-A\right) \cdot \func{col}_{2}\left( B\right) & Fil_{1}\left( A\right) \cdot 
+\Fil_{1}\left( A\right) \cdot \func{col}_{1}\left( B\right) & \Fil_{1}\left(
+A\right) \cdot \func{col}_{2}\left( B\right) & \Fil_{1}\left( A\right) \cdot 
 \func{col}_{3}\left( B\right) \\ 
-Fil_{2}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{2}\left(
-A\right) \cdot \func{col}_{2}\left( B\right) & Fil_{2}\left( A\right) \cdot 
+\Fil_{2}\left( A\right) \cdot \func{col}_{1}\left( B\right) & \Fil_{2}\left(
+A\right) \cdot \func{col}_{2}\left( B\right) & \Fil_{2}\left( A\right) \cdot 
 \func{col}_{3}\left( B\right) \\ 
-Fil_{3}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{3}\left(
-A\right) \cdot \func{col}_{2}\left( B\right) & Fil_{3}\left( A\right) \cdot 
+\Fil_{3}\left( A\right) \cdot \func{col}_{1}\left( B\right) & \Fil_{3}\left(
+A\right) \cdot \func{col}_{2}\left( B\right) & \Fil_{3}\left( A\right) \cdot 
 \func{col}_{3}\left( B\right)%
 \end{array}%
-\right) $
-
-$=\left( 
+\right)\\
+& =\left(   
+\scalebox{0.75}{$
 \begin{array}{ccc}
 a_{11}b_{11}+a_{12}b_{21}+a_{13}b_{31} & 
 a_{11}b_{12}+a_{12}b_{22}+a_{13}b_{32} & 
@@ -1831,66 +1841,65 @@ a_{31}b_{11}+a_{32}b_{21}+a_{33}b_{31} &
 a_{31}b_{12}+a_{32}b_{22}+a_{33}b_{32} & 
 a_{31}b_{13}+a_{32}b_{23}+a_{33}b_{33}%
 \end{array}%
-\right)$
+$}
+\right)
+\end{align*}
 
 \begin{example}
-Sean $A=\left( 
+Sean \[A=\left( 
 \begin{array}{ccc}
 1 & 1 & 3 \\ 
 0 & 2 & 3 \\ 
 2 & 4 & 5%
 \end{array}%
-\right) ,B=\left( 
+\right) \quad \text{y} \quad B=\left( 
 \begin{array}{ccc}
 1 & 2 & 1 \\ 
 4 & -1 & 2 \\ 
 2 & 0 & 4%
 \end{array}%
-\right) $,\ halle $AB.$
+\right)\] Halle $AB$.
 \end{example}
 
 \textbf{Solución}
-
-$AB=\left( 
-\begin{array}{ccc}
-1 & 1 & 3 \\ 
-0 & 2 & 3 \\ 
-2 & 4 & 5%
-\end{array}%
-\right) \left( 
-\begin{array}{ccc}
-1 & 2 & 1 \\ 
-4 & -1 & 2 \\ 
-2 & 0 & 4%
-\end{array}%
-\right) $
-
-$\qquad =\left( 
-\begin{array}{ccc}
-Fil_{1}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{1}\left(
-A\right) \cdot \func{col}_{2}\left( B\right) & Fil_{1}\left( A\right) \cdot 
-\func{col}_{3}\left( B\right) \\ 
-Fil_{2}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{2}\left(
-A\right) \cdot \func{col}_{2}\left( B\right) & Fil_{2}\left( A\right) \cdot 
-\func{col}_{3}\left( B\right) \\ 
-Fil_{3}\left( A\right) \cdot \func{col}_{1}\left( B\right) & Fil_{3}\left(
-A\right) \cdot \func{col}_{2}\left( B\right) & Fil_{3}\left( A\right) \cdot 
-\func{col}_{3}\left( B\right)%
-\end{array}%
-\right) $
-
-$\qquad =\left( 
-\begin{array}{ccc}
-11 & 1 & 15 \\ 
-14 & -2 & 16 \\ 
-28 & 0 & 30%
-\end{array}%
-\right)$
-
-Si $A$ es una matriz $2\times 2$ o $3\times 3,$ las potencias de $A$ se
+\begin{align*}
+    AB & = \left( 
+    \begin{array}{ccc}
+    1 & 1 & 3 \\ 
+    0 & 2 & 3 \\ 
+    2 & 4 & 5%
+    \end{array}%
+    \right) \left( 
+    \begin{array}{ccc}
+    1 & 2 & 1 \\ 
+    4 & -1 & 2 \\ 
+    2 & 0 & 4%
+    \end{array}%
+    \right) \\
+    & =\left( 
+    \begin{array}{ccc}
+    \Fil_{1}\left( A\right) \cdot \func{col}_{1}\left( B\right) & \Fil_{1}\left(
+    A\right) \cdot \func{col}_{2}\left( B\right) & \Fil_{1}\left( A\right) \cdot 
+    \func{col}_{3}\left( B\right) \\ 
+    \Fil_{2}\left( A\right) \cdot \func{col}_{1}\left( B\right) & \Fil_{2}\left(
+    A\right) \cdot \func{col}_{2}\left( B\right) & \Fil_{2}\left( A\right) \cdot 
+    \func{col}_{3}\left( B\right) \\ 
+    \Fil_{3}\left( A\right) \cdot \func{col}_{1}\left( B\right) & \Fil_{3}\left(
+    A\right) \cdot \func{col}_{2}\left( B\right) & \Fil_{3}\left( A\right) \cdot 
+    \func{col}_{3}\left( B\right)%
+    \end{array}%
+    \right) \\
+    & =\left( 
+    \begin{array}{ccc}
+    11 & 1 & 15 \\ 
+    14 & -2 & 16 \\ 
+    28 & 0 & 30%
+    \end{array}%
+    \right)
+\end{align*}
+Si $A$ es una matriz $2\times 2$ o $3\times 3$, las potencias de $A$ se
 definen de manera inductiva:
-
-$A^{1}=A,\qquad A^{2}=AA,\qquad A^{3}=A^{2}A,\qquad \cdots, A^{n+1}=A^{n}A.$
+\[A^{1}=A,\quad A^{2}=AA,\quad A^{3}=A^{2}A, \quad \ldots \quad A^{n+1}=A^{n}A\]
 
 \subsubsection{Propiedades del producto de matrices}
 
@@ -1930,9 +1939,8 @@ c & d%
 x \\ 
 y%
 \end{array}%
-\right) ,$ el producto $AX$ es el vector columna:
-
-$AX=\left( 
+\right)$, el producto $AX$ es el vector columna:
+\[AX=\left( 
 \begin{array}{cc}
 a & b \\ 
 c & d%
@@ -1947,7 +1955,7 @@ y%
 ax+by \\ 
 cx+dy%
 \end{array}%
-\right) $
+\right)\]
 
 Si $A=\left( 
 \begin{array}{ccc}
@@ -1961,9 +1969,8 @@ x \\
 y \\ 
 z%
 \end{array}%
-\right) ,$ el producto $AX$ es el vector columna:
-
-$AX=\left( 
+\right)$, el producto $AX$ es el vector columna:
+\[AX=\left( 
 \begin{array}{ccc}
 a_{11} & a_{12} & a_{13} \\ 
 a_{21} & a_{22} & a_{23} \\ 
@@ -1981,21 +1988,22 @@ a_{11}x+a_{12}y+a_{13}z \\
 a_{21}x+a_{22}y+a_{23}z \\ 
 a_{31}x+a_{32}y+a_{33}z%
 \end{array}%
-\right) $
+\right)\]
 
 \subsection{Ejercicios}
 
-Si $A=\left( 
+Sean \[A=\left( 
 \begin{array}{cc}
 2 & 1 \\ 
 5 & 2%
 \end{array}%
-\right) \qquad B=\left( 
+\right) \quad \text{y} \quad B=\left( 
 \begin{array}{cc}
 3 & 1 \\ 
 2 & 4%
 \end{array}%
-\right) $, calcule:
+\right)\] 
+Calcule:
 
 \begin{enumerate}
     \item 
@@ -2021,9 +2029,14 @@ Si $A=\left(
         \item  $\left( A-B\right) \left( A^{2}+AB+B^{2}\right) \qquad$
         \item $A^{3}-B^{3}$
     \end{enumerate}
-    \begin{center}
-    \item Si $A=\left(\begin{array}{ccc}1 & 1 & -1 \\ -1 & 2 & 1 \\ 2 & 4 & 0\end{array}\right) \qquad B=\left( \begin{array}{ccc}3 & 2 & 1 \\ 1 & 1 & -2 \\ 2 & 0 & 1\end{array}\right) $, calcule:
-    \end{center}
+\end{enumerate}
+
+Sean
+\[A=\left(\begin{array}{ccc}1 & 1 & -1 \\ -1 & 2 & 1 \\ 2 & 4 & 0\end{array}\right) \quad \text{y} \quad B=\left( \begin{array}{ccc}3 & 2 & 1 \\ 1 & 1 & -2 \\ 2 & 0 & 1\end{array}\right) \]
+Calcule:
+
+\begin{enumerate}
+\setcounter{enumi}{5}
     \item 
     \begin{enumerate}
         \item $A+B\qquad$
@@ -2070,9 +2083,8 @@ $\det \left( A\right) $ o $\left\vert A\right\vert$.
 \subsubsection{Determinantes de matrices $2\times 2$}
 
 El determinante de una matriz $2\times 2$ se calcula por la fórmula:
-
-\begin{center}
-$\det \left( 
+\begin{equation*}
+\det \left( 
 \begin{array}{cc}
 a & b \\ 
 c & d%
@@ -2082,48 +2094,46 @@ c & d%
 a & b \\ 
 c & d%
 \end{array}%
-\right\vert =ad-bc$
-\end{center}
+\right\vert =ad-bc
+\end{equation*}
 
 \begin{example}
-Halle $\left\vert 
+Halle \[\left\vert 
 \begin{array}{cc}
 25 & 11 \\ 
 33 & 20%
 \end{array}%
-\right\vert$
+\right\vert\]
 \end{example}
 
 \textbf{Solución}
-
-$\left\vert 
+\[\left\vert 
 \begin{array}{cc}
 25 & 11 \\ 
 33 & 20%
 \end{array}%
-\right\vert =25\ast 20-33\ast 11=500-363=137$
-
-
+\right\vert =25\ast 20-33\ast 11=500-363=137\]
 
 \subsubsection{Determinantes de matrices $3\times 3$}
 
 Esta primera forma de calcular el determinante se llama "desarrollo por la primera fila".
-
-$\det \left( 
+\bgroup
+\small
+\begin{align*}
+\det \left( 
 \begin{array}{ccc}
 a_{11} & a_{12} & a_{13} \\ 
 a_{21} & a_{22} & a_{23} \\ 
 a_{31} & a_{32} & a_{33}
 \end{array}
-\right) =\left\vert 
+\right) & =\left\vert 
 \begin{array}{ccc}
 a_{11} & a_{12} & a_{13} \\ 
 a_{21} & a_{22} & a_{23} \\ 
 a_{31} & a_{32} & a_{33}
 \end{array}
-\right\vert $
-
-$\qquad \qquad \qquad \qquad \qquad =a_{11}\left\vert 
+\right\vert \\
+& =a_{11}\left\vert 
 \begin{array}{cc}
 a_{22} & a_{23} \\ 
 a_{32} & a_{33}
@@ -2138,17 +2148,19 @@ a_{31} & a_{33}%
 a_{21} & a_{22} \\ 
 a_{31} & a_{32}%
 \end{array}%
-\right\vert $
+\right\vert
+\end{align*}
+\egroup
 
 \textbf{Ejemplo:}
-
-$\left\vert 
+\begin{align*}
+\left\vert 
 \begin{array}{ccc}
 2 & 4 & 5 \\ 
 8 & 9 & -4 \\ 
 4 & 3 & 10%
 \end{array}%
-\right\vert =2\left\vert 
+\right\vert & =2\left\vert 
 \begin{array}{cc}
 9 & -4 \\ 
 3 & 10%
@@ -2163,31 +2175,50 @@ $\left\vert
 8 & 9 \\ 
 4 & 3%
 \end{array}%
-\right\vert $
-
-$\qquad \qquad \qquad =2\left( 90-\left( -12\right) \right) -4\left(
-80-\left( -16\right) \right) +5\left( 24-36\right) $
-
-$\qquad \qquad \qquad =2\left( 102\right) -4\left( 96\right) +5\left(
--12\right) =-240$
-
-
+\right\vert \\
+& =2\left( 90-\left( -12\right) \right) -4\left( 80-\left( -16\right) \right) +5\left( 24-36\right) \\
+& =2\left( 102\right) -4\left( 96\right) +5\left( -12\right) \\
+& =-240
+\end{align*}
 Esta segunda forma de calcular el determinante se llama regla de Sarrus. Consiste en repetir las dos primeras filas de la matriz debajo de ella, de manera que se formen cinco filas; después, se suman los productos de las diagonales descendentes y se restan los productos de las diagonales ascendentes:
+\shorthandoff{<>}
+\[\det \left( 
+    \begin{array}{ccc}
+        a_{11} & a_{12} & a_{13} \\ 
+        a_{21} & a_{22} & a_{23} \\ 
+        a_{31} & a_{32} & a_{33}
+    \end{array}
+    \right) =
+\begin{tikzpicture}[
+  >=Stealth,
+  every node/.style={inner sep=2pt},
+  baseline=(current bounding box.center)
+]
 
-$\det \left( 
-\begin{array}{ccc}
-a_{11} & a_{12} & a_{13} \\ 
-a_{21} & a_{22} & a_{23} \\ 
-a_{31} & a_{32} & a_{33}
-\end{array}
-\right) =$
+\matrix (M) [matrix of math nodes,
+             left delimiter=(,
+             right delimiter=),
+             row sep=1mm,
+             column sep=4mm] {
+  a_{11} & a_{12} & a_{13} \\
+  a_{21} & a_{22} & a_{23} \\
+  a_{31} & a_{32} & a_{33} \\
+  a_{11} & a_{12} & a_{13} \\
+  a_{21} & a_{22} & a_{23} \\
+};
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\linewidth]{Images/SDY12S54.png}
-\end{figure}
+\draw[->] (M-1-1) -- (M-3-3);
+\draw[->] (M-2-1) -- (M-4-3);
+\draw[->] (M-3-1) -- (M-5-3);
 
-$=a_{11}a_{22}a_{33}+a_{21}a_{32}a_{13}+a_{31}a_{12}a_{23}-a_{13}a_{22}a_{31}+a_{23}a_{32}a_{11}+a_{33}a_{12}a_{21} $
+\draw[->, densely dotted] (M-1-3) -- (M-3-1);
+\draw[->, densely dotted] (M-2-3) -- (M-4-1);
+\draw[->, densely dotted] (M-3-3) -- (M-5-1);
+\end{tikzpicture}
+\]
+\shorthandon{<>}
+\vspace*{-\abovedisplayskip}
+\[=a_{11}a_{22}a_{33}+a_{21}a_{32}a_{13}+a_{31}a_{12}a_{23}-a_{13}a_{22}a_{31}+a_{23}a_{32}a_{11}+a_{33}a_{12}a_{21}\]
 
 \begin{example}
 Calcule con la regla de Sarrus el determinante $\left\vert 
@@ -2200,16 +2231,14 @@ Calcule con la regla de Sarrus el determinante $\left\vert
 \end{example}
 
 \textbf{Solución}
-
-$\left\vert 
+\begin{align*}
+\left\vert 
 \begin{array}{ccc}
 9 & 5 & 3 \\ 
 1 & 11 & 2 \\ 
 4 & 6 & 7
 \end{array}
-\right\vert $
-
-$=\left\vert 
+\right\vert & =\left\vert 
 \begin{array}{ccc}
 9 & 5 & 3 \\ 
 1 & 11 & 2 \\ 
@@ -2217,13 +2246,12 @@ $=\left\vert
 9 & 5 & 3 \\ 
 1 & 11 & 2%
 \end{array}%
-\right\vert $
-
-$=9\left( 11\right) \left( 7\right) +1\left( 6\right) \left( 3\right)
+\right\vert \\
+& =9\left( 11\right) \left( 7\right) +1\left( 6\right) \left( 3\right)
 +4\left( 5\right) \left( 2\right) -3\left( 11\right) \left( 4\right)
--2\left( 6\right) \left( 9\right) -7\left( 5\right) \left( 1\right) $
-
-$=476$
+-2\left( 6\right) \left( 9\right) -7\left( 5\right) \left( 1\right) \\
+& =476
+\end{align*}
 
 \subsection{Ejercicios}
 
@@ -2305,9 +2333,8 @@ La inversa de una matriz $A$, cuando existe, es única y se denota $A^{-1}$.
 Cuando $A$ tiene inversa, se cumplen las ecuaciones $AA^{-1}=I$ y $A^{-1}A=I$.
 
 Una fórmula para la inversa de una matriz $2\times 2$ es:
-
-\begin{center}
-$\left( 
+\begin{align*}
+\left( 
 \begin{array}{cc}
 a & b \\ 
 c & d
@@ -2317,8 +2344,8 @@ c & d
 d & -b \\ 
 -c & a
 \end{array}
-\right) ,$ $\ \ si$ $ad-bc\neq 0$
-\end{center}
+\right), \quad \text{si} \quad ad-bc\neq 0
+\end{align*}
 
 Si $ad-bc=0$ la matriz $\left( 
 \begin{array}{cc}
@@ -2336,73 +2363,73 @@ a_{21} & a_{22} & a_{23} \\
 a_{31} & a_{32} & a_{33}%
 \end{array}%
 \right) $, supongamos que $\det \left( A\right) \neq 0$, entonces
-
-$\left( 
-\begin{array}{ccc}
-a_{11} & a_{12} & a_{13} \\ 
-a_{21} & a_{22} & a_{23} \\ 
-a_{31} & a_{32} & a_{33}%
-\end{array}%
-\right) ^{-1}$.
-
-$=\frac{1}{\det \left( A\right) }\left( 
-\begin{array}{ccc}
-\left\vert 
-\begin{array}{cc}
-a_{22} & a_{23} \\ 
-a_{32} & a_{33}%
-\end{array}%
-\right\vert & -\left\vert 
-\begin{array}{cc}
-a_{12} & a_{13} \\ 
-a_{32} & a_{33}%
-\end{array}%
-\right\vert & \left\vert 
-\begin{array}{cc}
-a_{12} & a_{13} \\ 
-a_{22} & a_{23}%
-\end{array}%
-\right\vert \\ 
--\left\vert 
-\begin{array}{cc}
-a_{21} & a_{23} \\ 
-a_{31} & a_{33}%
-\end{array}%
-\right\vert & \left\vert 
-\begin{array}{cc}
-a_{11} & a_{13} \\ 
-a_{31} & a_{33}%
-\end{array}%
-\right\vert & -\left\vert 
-\begin{array}{cc}
-a_{11} & a_{13} \\ 
-a_{21} & a_{23}%
-\end{array}%
-\right\vert \\ 
-\left\vert 
-\begin{array}{cc}
-a_{21} & a_{22} \\ 
-a_{31} & a_{32}%
-\end{array}%
-\right\vert & -\left\vert 
-\begin{array}{cc}
-a_{11} & a_{12} \\ 
-a_{31} & a_{32}%
-\end{array}%
-\right\vert & \left\vert 
-\begin{array}{cc}
-a_{11} & a_{12} \\ 
-a_{21} & a_{22}%
-\end{array}%
-\right\vert%
-\end{array}%
-\right) $
-
+\bgroup
+\fontsize{8pt}{10pt}\selectfont
+\begin{align*}
+    \left( 
+    \begin{array}{ccc}
+    a_{11} & a_{12} & a_{13} \\ 
+    a_{21} & a_{22} & a_{23} \\ 
+    a_{31} & a_{32} & a_{33}%
+    \end{array}%
+    \right) ^{-1} & =\frac{1}{\det \left( A\right) }\left( 
+        \begin{array}{ccc}
+        \phantom{-}\left\vert 
+        \begin{array}{cc}
+        a_{22} & a_{23} \\ 
+        a_{32} & a_{33}%
+        \end{array}%
+        \right\vert & -\left\vert 
+        \begin{array}{cc}
+        a_{12} & a_{13} \\ 
+        a_{32} & a_{33}%
+        \end{array}%
+        \right\vert & \phantom{-}\left\vert 
+        \begin{array}{cc}
+        a_{12} & a_{13} \\ 
+        a_{22} & a_{23}%
+        \end{array}%
+        \right\vert \\[12pt]
+        -\left\vert 
+        \begin{array}{cc}
+        a_{21} & a_{23} \\ 
+        a_{31} & a_{33}%
+        \end{array}%
+        \right\vert & \phantom{-}\left\vert 
+        \begin{array}{cc}
+        a_{11} & a_{13} \\ 
+        a_{31} & a_{33}%
+        \end{array}%
+        \right\vert & -\left\vert 
+        \begin{array}{cc}
+        a_{11} & a_{13} \\ 
+        a_{21} & a_{23}%
+        \end{array}%
+        \right\vert \\[12pt]
+        \phantom{-}\left\vert 
+        \begin{array}{cc}
+        a_{21} & a_{22} \\ 
+        a_{31} & a_{32}%
+        \end{array}%
+        \right\vert & -\left\vert 
+        \begin{array}{cc}
+        a_{11} & a_{12} \\ 
+        a_{31} & a_{32}%
+        \end{array}%
+        \right\vert & \phantom{-}\left\vert 
+        \begin{array}{cc}
+        a_{11} & a_{12} \\ 
+        a_{21} & a_{22}%
+        \end{array}%
+    \right\vert%
+    \end{array}%
+    \right) 
+\end{align*}
+\egroup
 Si $\det \left( A\right) =0$, entonces $A$ no tiene inversa.
 
 \begin{example}
-\begin{enumerate}
-\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+\begin{enumerate}[label=(\alph*)]
         \item Halle la inversa de $A=\left( \begin{array}{cc} 5 & 9 \\  2 & 4\end{array}\right)$
         \item Halle la inversa de $B=\left(\begin{array}{ccc} 1 & 1 & 2 \\ 2 & 3 & 5 \\ 3 & 3 & 8 \end{array} \right)$
 \end{enumerate}
@@ -2410,93 +2437,102 @@ Si $\det \left( A\right) =0$, entonces $A$ no tiene inversa.
 
 \textbf{Solución}
 
-\begin{enumerate}
-\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
-        \item Usamos \ $\left(\begin{array}{cc} a & b \\ c & d \end{array} \right) ^{-1}=\frac{1}{ad-bc}\left(\begin{array}{cc} d & -b \\  -c & a \end{array} \right) $ \\$\left( \begin{array}{cc} 5 & 9 \\ 2 & 4\end{array} \right) ^{-1}=\frac{1}{20-18}\left(  \begin{array}{cc} 4 & -9 \\  -2 & 5 \end{array} \right) =\left(  \begin{array}{cc} 2 & -\frac{9}{2} \\  -1 & \frac{5}{2} \end{array} \right)$ \\ Prueba de la inversa \\ $AA^{-1}=\left(\begin{array}{cc} 5 & 9 \\ 2 & 4\end{array} \right) \left(\begin{array}{cc} 2 & -\frac{9}{2} \\ -1 & \frac{5}{2}\end{array} \right) =\left(\begin{array}{cc}1 & 0 \\ 0 & 1\end{array} \right)$
+\begin{enumerate}[label=(\alph*)]
+        \item Usamos $\left(\begin{array}{cc} a & b \\ c & d \end{array} \right) ^{-1}=\frac{1}{ad-bc}\left(\begin{array}{cc} d & -b \\  -c & a \end{array} \right)$ 
+        \[\left( \begin{array}{cc} 5 & 9 \\ 2 & 4\end{array} \right) ^{-1}=\frac{1}{20-18}\left(  \begin{array}{cc} 4 & -9 \\  -2 & 5 \end{array} \right) =\left(  \begin{array}{cc} 2 & -\frac{9}{2} \\  -1 & \frac{5}{2} \end{array} \right)\]
+        Prueba de la inversa 
+        \[AA^{-1}=\left(\begin{array}{cc} 5 & 9 \\ 2 & 4\end{array} \right) \left(\begin{array}{cc} 2 & -\frac{9}{2} \\ -1 & \frac{5}{2}\end{array} \right) =\left(\begin{array}{cc}1 & 0 \\ 0 & 1\end{array} \right)\]
         \item Usamos la fórmula
+        \bgroup
+        \fontsize{8pt}{10pt}\selectfont
+        \[
+        \left( 
+        \begin{array}{ccc}
+        b_{11} & b_{12} & b_{13} \\ 
+        b_{21} & b_{22} & b_{23} \\ 
+        b_{31} & b_{32} & b_{33}%
+        \end{array}%
+        \right) ^{-1}
+        =\frac{1}{\det \left( B\right) }\left( 
+        \begin{array}{ccc}
+        \phantom{-}\left\vert 
+        \begin{array}{cc}
+        b_{22} & b_{23} \\ 
+        b_{32} & b_{33}%
+        \end{array}%
+        \right\vert & -\left\vert 
+        \begin{array}{cc}
+        b_{12} & b_{13} \\ 
+        b_{32} & b_{33}%
+        \end{array}%
+        \right\vert & \phantom{-}\left\vert 
+        \begin{array}{cc}
+        b_{12} & b_{13} \\ 
+        b_{22} & b_{23}%
+        \end{array}%
+        \right\vert \\[12pt]
+        -\left\vert 
+        \begin{array}{cc}
+        b_{21} & b_{23} \\ 
+        b_{31} & b_{33}%
+        \end{array}%
+        \right\vert & \phantom{-}\left\vert 
+        \begin{array}{cc}
+        b_{11} & b_{13} \\ 
+        b_{31} & b_{33}%
+        \end{array}%
+        \right\vert & -\left\vert 
+        \begin{array}{cc}
+        b_{11} & b_{13} \\ 
+        b_{21} & b_{23}%
+        \end{array}%
+        \right\vert \\[12pt]
+        \phantom{-}\left\vert 
+        \begin{array}{cc}
+        b_{21} & b_{22} \\ 
+        b_{31} & b_{32}%
+        \end{array}%
+        \right\vert & -\left\vert 
+        \begin{array}{cc}
+        b_{11} & b_{12} \\ 
+        b_{31} & b_{32}%
+        \end{array}%
+        \right\vert & \phantom{-}\left\vert 
+        \begin{array}{cc}
+        b_{11} & b_{12} \\ 
+        b_{21} & b_{22}%
+        \end{array}%
+        \right\vert%
+        \end{array}%
+        \right)
+        \]
+        \egroup
 \end{enumerate}
-$\left( 
-\begin{array}{ccc}
-b_{11} & b_{12} & b_{13} \\ 
-b_{21} & b_{22} & b_{23} \\ 
-b_{31} & b_{32} & b_{33}%
-\end{array}%
-\right) ^{-1}$
 
-$=\frac{1}{\det \left( B\right) }\left( 
-\begin{array}{ccc}
-\left\vert 
-\begin{array}{cc}
-b_{22} & b_{23} \\ 
-b_{32} & b_{33}%
-\end{array}%
-\right\vert & -\left\vert 
-\begin{array}{cc}
-b_{12} & b_{13} \\ 
-b_{32} & b_{33}%
-\end{array}%
-\right\vert & \left\vert 
-\begin{array}{cc}
-b_{12} & b_{13} \\ 
-b_{22} & b_{23}%
-\end{array}%
-\right\vert \\ 
--\left\vert 
-\begin{array}{cc}
-b_{21} & b_{23} \\ 
-b_{31} & b_{33}%
-\end{array}%
-\right\vert & \left\vert 
-\begin{array}{cc}
-b_{11} & b_{13} \\ 
-b_{31} & b_{33}%
-\end{array}%
-\right\vert & -\left\vert 
-\begin{array}{cc}
-b_{11} & b_{13} \\ 
-b_{21} & b_{23}%
-\end{array}%
-\right\vert \\ 
-\left\vert 
-\begin{array}{cc}
-b_{21} & b_{22} \\ 
-b_{31} & b_{32}%
-\end{array}%
-\right\vert & -\left\vert 
-\begin{array}{cc}
-b_{11} & b_{12} \\ 
-b_{31} & b_{32}%
-\end{array}%
-\right\vert & \left\vert 
-\begin{array}{cc}
-b_{11} & b_{12} \\ 
-b_{21} & b_{22}%
-\end{array}%
-\right\vert%
-\end{array}%
-\right) $
+\enlargethispage{1.5\baselineskip}
 
 El siguiente sería el procedimiento usando la regla de Sarrus:
-
-$\det \left( B\right) =\left\vert 
+\[\det \left( B\right) =\left\vert 
 \begin{array}{ccccc}
 1 & 1 & 2 & 1 & 1 \\ 
 2 & 3 & 5 & 2 & 3 \\ 
 3 & 3 & 8 & 3 & 3%
 \end{array}%
-\right\vert =24+15+12-18-15-16=2$ y
-
-$\left( 
+\right\vert =24+15+12-18-15-16=2\]
+y
+\begin{align*}
+\left( 
 \begin{array}{ccc}
 1 & 1 & 2 \\ 
 2 & 3 & 5 \\ 
 3 & 3 & 8%
 \end{array}%
-\right) ^{-1}$
-
-$=\frac{1}{2}\left( 
+\right) ^{-1} 
+&=\frac{1}{2}\left( 
+\bgroup
+\fontsize{8pt}{10pt}\selectfont
 \begin{array}{ccc}
-\left\vert 
+\phantom{-}\left\vert 
 \begin{array}{cc}
 3 & 5 \\ 
 3 & 8%
@@ -2506,18 +2542,18 @@ $=\frac{1}{2}\left(
 1 & 2 \\ 
 3 & 8%
 \end{array}%
-\right\vert & \left\vert 
+\right\vert & \phantom{-}\left\vert 
 \begin{array}{cc}
 1 & 2 \\ 
 3 & 5%
 \end{array}%
-\right\vert \\ 
+\right\vert \\[12pt]
 -\left\vert 
 \begin{array}{cc}
 2 & 5 \\ 
 3 & 8%
 \end{array}%
-\right\vert & \left\vert 
+\right\vert & \phantom{-}\left\vert 
 \begin{array}{cc}
 1 & 2 \\ 
 3 & 8%
@@ -2527,8 +2563,8 @@ $=\frac{1}{2}\left(
 1 & 2 \\ 
 2 & 5%
 \end{array}%
-\right\vert \\ 
-\left\vert 
+\right\vert \\[12pt] 
+\phantom{-}\left\vert 
 \begin{array}{cc}
 2 & 3 \\ 
 3 & 3%
@@ -2538,26 +2574,26 @@ $=\frac{1}{2}\left(
 1 & 1 \\ 
 3 & 3%
 \end{array}%
-\right\vert & \left\vert 
+\right\vert & \phantom{-}\left\vert 
 \begin{array}{cc}
 1 & 2 \\ 
 2 & 5%
 \end{array}%
 \right\vert%
 \end{array}%
-\right) $
-
-$=\frac{1}{2}\left( 
+\egroup
+\right)\\
+&=\frac{1}{2}\left( 
 \begin{array}{ccc}
 9 & -2 & -1 \\ 
 -1 & 2 & -1 \\ 
 -3 & 0 & 1%
 \end{array}%
-\right)$
+\right)
+\end{align*}
 
 Prueba de la inversa
-
-$BB^{-1}=\left( 
+\[BB^{-1}=\left( 
 \begin{array}{ccc}
 1 & 1 & 2 \\ 
 2 & 3 & 5 \\ 
@@ -2575,16 +2611,13 @@ $BB^{-1}=\left(
 0 & 1 & 0 \\ 
 0 & 0 & 1%
 \end{array}%
-\right)$
-
-\begin{center}
-\bigskip
-\end{center}
+\right)
+\]
 
 \subsection{Ejercicios}
-Halle la inversa de cada matriz.
 \begin{enumerate}
-
+\item Halle la inversa de cada matriz.
+\begin{enumerate}
 \item $\left( 
 \begin{array}{cc}
 4 & 5 \\ 
@@ -2622,9 +2655,9 @@ Halle la inversa de cada matriz.
 3 & 1 & 4%
 \end{array}%
 \right) $
+\end{enumerate}
 
 \item Halle una matriz $X$ de tamaño $2\times 2$ que cumpla:
-
 \begin{equation*}
    \left( 
 \begin{array}{cc}
@@ -2639,9 +2672,7 @@ Halle la inversa de cada matriz.
 \right) 
 \end{equation*}
 
-
 \item Halle una matriz $X$ de tamaño $2\times 2$ que cumpla:
-
 \begin{equation*}
     X\left( 
 \begin{array}{cc}
@@ -2656,9 +2687,7 @@ Halle la inversa de cada matriz.
 \right)
 \end{equation*}
 
-
 \item Halle una matriz $X$ de tamaño $3\times 3$ que cumpla:
-
 \begin{equation*}
     \left( 
 \begin{array}{ccc}
@@ -2676,7 +2705,6 @@ Halle la inversa de cada matriz.
 \end{equation*}
 
 \item Halle una matriz $X$ de tamaño $3\times 3$ que cumpla:
-
 \begin{equation*}
     X\left( 
 \begin{array}{ccc}
@@ -2696,16 +2724,18 @@ Halle la inversa de cada matriz.
 
 \subsection{Producto cruz}
 
-El producto cruz es una operación vectorial definida únicamente en el espacio $\mathbb{R}^{3}.$
+El producto cruz es una operación vectorial definida únicamente en el espacio $\mathbb{R}^{3}$.
 
 El producto cruz resuelve el problema de dados dos vectores $u$ y $v$ de $\mathbb{R}^{3}$ como conseguir un vector $w$ perpendicular a $u$ y a $v$, como se ilustra en la figura~\ref{fig:placeholder30}.
 
 \begin{figure}[H]
     \centering
     \caption{Producto cruz de dos vectores}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12S55.png}
+    \includegraphics[width=0.4\linewidth]{Images/SDY12S55.png}
     \label{fig:placeholder30}
 \end{figure}
+
+\clearpage
 
 \subsubsection{Fórmulas para calcular el producto cruz}
 
@@ -2719,16 +2749,14 @@ Y=\left( y_{1},y_{2},y_{3}\right) =y_{1}i+y_{2}j+y_{3}k$ vectores de $%
 \mathbb{R}^{3}$.
 
 Se puede definir la operación producto cruz de la siguiente forma:
-
-$X\times Y=\left\vert 
+\begin{align*}
+X\times Y & = \left\vert 
 \begin{array}{ccc}
 i & j & k \\ 
 x_{1} & x_{2} & x_{3} \\ 
 y_{1} & y_{2} & y_{3}%
 \end{array}%
-\right\vert $
-
-$\qquad =\left\vert 
+\right\vert = \left\vert 
 \begin{array}{cc}
 x_{2} & x_{3} \\ 
 y_{2} & y_{3}%
@@ -2743,45 +2771,77 @@ y_{1} & y_{3}%
 x_{1} & x_{2} \\ 
 y_{1} & y_{2}%
 \end{array}%
-\right\vert k$
-
-$\qquad =\left( x_{2}y_{3}-x_{3}y_{2},-\left( x_{1}y_{3}-x_{3}y_{1}\right)
-,x_{1}y_{2}-x_{2}y_{1}\right) $
+\right\vert k \\
+& =\left( x_{2}y_{3}-x_{3}y_{2},-\left( x_{1}y_{3}-x_{3}y_{1}\right)
+,x_{1}y_{2}-x_{2}y_{1}\right)
+\end{align*}
 
 \textbf{Segunda manera. Como determinantes dos por dos consecutivos}
 
 Para calcular el producto cruz de esta forma, se escribe el primer vector en la primera fila y se repite a continuación. En la segunda fila, se escribe
 el segundo vector y también se repite. Luego, se marcan las flechas como se indica.
+\[
+\shorthandoff{<>}
+\begin{tikzpicture}[
+  >=Stealth,
+  every node/.style={inner sep=2pt},
+  baseline=(current bounding box.center)
+]
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\linewidth]{Images/SDY12S56.png}
-\end{figure}
+\matrix (M) [matrix of math nodes,
+             left delimiter=|,
+             right delimiter=|,
+             row sep=3mm,
+             column sep=5mm] {
+  x_{1} & x_{2} & x_{3} & x_{1} & x_{2} & x_{3} \\
+  y_{1} & y_{2} & y_{3} & y_{1} & y_{2} & y_{3} \\
+};
 
+\draw[->] (M-1-2) -- (M-2-3);
+\draw[->] (M-1-3) -- (M-2-4);
+\draw[->] (M-1-4) -- (M-2-5);
+
+% Dotted arrows: third column (rows 1–3) -> first column (rows 3–5)
+\draw[->, dotted] (M-2-2) -- (M-1-3);
+\draw[->, dotted] (M-2-3) -- (M-1-4);
+\draw[->, dotted] (M-2-4) -- (M-1-5);
+
+\end{tikzpicture}
+\shorthandon{<>}
+\]
 La primera coordenada del producto cruz se obtiene restando el producto de los elementos que une la primera flecha descendente con los de la primera flecha ascendente. 
 
 La segunda coordenada del producto cruz es la resta del producto de los elementos que unen la segunda flecha descendente y los de la segunda flecha ascendente.
 
+\enlargethispage{\baselineskip}
+
 Por último, la tercera coordenada del producto cruz es el producto de los elementos que une la tercera flecha descendente menos los de la tercera flecha ascendente:
-
-$X\times Y=\left( x_{1},x_{2},x_{3}\right) \times \left(
-x_{1},x_{2},x_{3}\right) $
-
-$
-\begin{tabular}{ccc}
-\qquad= &
-\includegraphics[width=0.5\textwidth, align=c]{Images/SDY12S57.png}
-
-\end{tabular} 
-$
-
-\qquad $=\left(
-x_{2}y_{3}-x_{3}y_{2},x_{3}y_{1}-x_{1}y_{3},x_{1}y_{2}-x_{2}y_{1}\right) $
+\begin{lrbox}{\crossprodbox}
+\shorthandoff{<>}
+\begin{tikzpicture}[>=Stealth, every node/.style={inner sep=2pt}, baseline=(current bounding box.center)]
+\matrix (M) [matrix of math nodes, left delimiter=|, right delimiter=|, row sep=3mm, column sep=5mm] {
+  x_{1} & x_{2} & x_{3} & x_{1} & x_{2} & x_{3} \\
+  y_{1} & y_{2} & y_{3} & y_{1} & y_{2} & y_{3} \\
+};
+\draw[->] (M-1-2) -- (M-2-3);
+\draw[->] (M-1-3) -- (M-2-4);
+\draw[->] (M-1-4) -- (M-2-5);
+\draw[->, dotted] (M-2-2) -- (M-1-3);
+\draw[->, dotted] (M-2-3) -- (M-1-4);
+\draw[->, dotted] (M-2-4) -- (M-1-5);
+\end{tikzpicture}
+\end{lrbox}
+\begin{align*}
+X\times Y&=\left( x_{1},x_{2},x_{3}\right) \times \left(
+x_{1},x_{2},x_{3}\right) \\ 
+& = \usebox{\crossprodbox} \\
+& =\left(
+x_{2}y_{3}-x_{3}y_{2},x_{3}y_{1}-x_{1}y_{3},x_{1}y_{2}-x_{2}y_{1}\right)
+\end{align*}
 
 \begin{example}
 Si $X=\left( 1,3,5\right) ,Y=\left( 2,1,6\right) ,Z=\left( 3,1,-2\right) $,\ halle:
-\begin{enumerate}
-\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+\begin{enumerate}[label=(\alph*)]
             \item $X\times Y$
             \item $X\times Z$
             \item $Y\times Z$
@@ -2789,100 +2849,94 @@ Si $X=\left( 1,3,5\right) ,Y=\left( 2,1,6\right) ,Z=\left( 3,1,-2\right) $,\ hal
 \end{example}
 
 \textbf{Solución}
+\begin{subequations}
+    \renewcommand{\theequation}{\alph{equation}}
+    \begin{align}
+        X\times Y & = \left\vert 
+        \begin{array}{ccc}
+        i & j & k \\ 
+        1 & 3 & 5 \\ 
+        2 & 1 & 6%
+        \end{array}%
+        \right\vert\\
+        \notag & =\left\vert 
+        \begin{array}{cc}
+        3 & 5 \\ 
+        1 & 6%
+        \end{array}%
+        \right\vert i-\left\vert 
+        \begin{array}{cc}
+        1 & 5 \\ 
+        2 & 6%
+        \end{array}%
+        \right\vert j+\left\vert 
+        \begin{array}{cc}
+        1 & 3 \\ 
+        2 & 1%
+        \end{array}%
+        \right\vert k \\
+        \notag & =13i-\left( -4\right) j+\left( -5\right) k=\left(13,4,-5\right) \\
+        X\times Z & = \left\vert 
+        \begin{array}{ccc}
+        i & j & k \\ 
+        1 & 3 & 5 \\ 
+        3 & 1 & -2%
+        \end{array}%
+        \right\vert \\
+        \notag & =\left\vert 
+        \begin{array}{cc}
+        3 & 5 \\ 
+        1 & -2%
+        \end{array}%
+        \right\vert i-\left\vert 
+        \begin{array}{cc}
+        1 & 5 \\ 
+        3 & -2%
+        \end{array}%
+        \right\vert j+\left\vert 
+        \begin{array}{cc}
+        1 & 3 \\ 
+        3 & 1%
+        \end{array}%
+        \right\vert k \\
+        \notag & =-11i-\left( -17\right) j+\left( -8\right) k=\left(-11,17,-8\right) \\
+        Y\times Z & = \left\vert 
+        \begin{array}{ccc}
+        i & j & k \\ 
+        2 & 1 & 6 \\ 
+        3 & 1 & -2%
+        \end{array}%
+        \right\vert \\
+        \notag & =\left\vert 
+        \begin{array}{cc}
+        1 & 6 \\ 
+        1 & -2%
+        \end{array}%
+        \right\vert i-\left\vert 
+        \begin{array}{cc}
+        2 & 6 \\ 
+        3 & -2%
+        \end{array}%
+        \right\vert j+\left\vert 
+        \begin{array}{cc}
+        2 & 1 \\ 
+        3 & 1%
+        \end{array}%
+        \right\vert k \\
+        \notag & =-8i-\left( -22\right) j+\left( -1\right) k=\left(
+        -8,22,-1\right)
+    \end{align}
+\end{subequations}
 
-a) $X\times Y=\left\vert 
-\begin{array}{ccc}
-i & j & k \\ 
-1 & 3 & 5 \\ 
-2 & 1 & 6%
-\end{array}%
-\right\vert $
 
-$\qquad \qquad =\left\vert 
-\begin{array}{cc}
-3 & 5 \\ 
-1 & 6%
-\end{array}%
-\right\vert i-\left\vert 
-\begin{array}{cc}
-1 & 5 \\ 
-2 & 6%
-\end{array}%
-\right\vert j+\left\vert 
-\begin{array}{cc}
-1 & 3 \\ 
-2 & 1%
-\end{array}%
-\right\vert k$
-
-$\qquad \qquad =13i-\left( -4\right) j+\left( -5\right) k=\left(
-13,4,-5\right) $
-
-b) $X\times Z=\left\vert 
-\begin{array}{ccc}
-i & j & k \\ 
-1 & 3 & 5 \\ 
-3 & 1 & -2%
-\end{array}%
-\right\vert $
-
-$\qquad \qquad =\left\vert 
-\begin{array}{cc}
-3 & 5 \\ 
-1 & -2%
-\end{array}%
-\right\vert i-\left\vert 
-\begin{array}{cc}
-1 & 5 \\ 
-3 & -2%
-\end{array}%
-\right\vert j+\left\vert 
-\begin{array}{cc}
-1 & 3 \\ 
-3 & 1%
-\end{array}%
-\right\vert k$
-
-$\qquad \qquad =-11i-\left( -17\right) j+\left( -8\right) k=\left(
--11,17,-8\right) $
-
-c) $Y\times Z=\left\vert 
-\begin{array}{ccc}
-i & j & k \\ 
-2 & 1 & 6 \\ 
-3 & 1 & -2%
-\end{array}%
-\right\vert $
-
-$\qquad \qquad =\left\vert 
-\begin{array}{cc}
-1 & 6 \\ 
-1 & -2%
-\end{array}%
-\right\vert i-\left\vert 
-\begin{array}{cc}
-2 & 6 \\ 
-3 & -2%
-\end{array}%
-\right\vert j+\left\vert 
-\begin{array}{cc}
-2 & 1 \\ 
-3 & 1%
-\end{array}%
-\right\vert k$
-
-$\qquad \qquad =-8i-\left( -22\right) j+\left( -1\right) k=\left(
--8,22,-1\right)$
-
-\bigskip
-
-\textbf{Propiedades del producto cruz}
+\subsubsection{Propiedades del producto cruz}
 
 Sean $X,Y,Z$ vectores de $\mathbb{R}^{3}$ y $\alpha $ un escalar:
 
 \begin{enumerate}
     \item $X\times 0=0$
-    \item $X\times Y$ es perpendicular a $X$ y a $Y$, es decir: \begin{center} $X\cdot \left( X\times Y\right) =0=Y\cdot \left( X\times Y\right) $\end{center}
+    \item $X\times Y$ es perpendicular a $X$ y a $Y$, es decir: 
+    \[X\cdot \left( X\times Y\right) =0=Y\cdot \left( X\times Y\right) \]
     \item $\left( \alpha X\right) \times Y=X\times \left( \alpha Y\right) =\alpha \left( X\times Y\right)$
     \item $X\times Y=-Y\times X$
     \item $X\times \left( Y\pm Z\right) =X\times Y\pm X\times Z$
@@ -2897,22 +2951,11 @@ Sean $X,Y,Z$ vectores de $\mathbb{R}^{3}$ y $\alpha $ un escalar:
 
 \textbf{Prueba de las propiedades}
 \begin{enumerate}
-\item
-\begin{align*}
-X\times 0=\left( x_{2}0-x_{3}0,x_{3}0-x_{1}0,x_{1}0-x_{2}0\right)\\&=\left( 0,0,0\right)\\&=0\in \mathbb{R}^{3}
-\end{align*}
+\item $X\times 0=\left( x_{2}0-x_{3}0,x_{3}0-x_{1}0,x_{1}0-x_{2}0\right)=\left( 0,0,0\right)=0\in \mathbb{R}^{3}$
 
 \item
-\begin{equation*}
-\begin{split}
-X\cdot \left( X\times Y\right)
-=\left( x_{1},x_{2},x_{3}\right) \cdot
-\left(
-x_{2}y_{3}-x_{3}y_{2},x_{3}y_{1}-x_{1}y_{3},x_{1}y_{2}-x_{2}y_{1}\right)
-=x_{1}x_{2}y_{3}-x_{1}x_{3}y_{2}+x_{2}x_{3}y_{1}-x_{2}x_{1}y_{3}+x_{3}x_{1}y_{2}-x_{3}x_{2}y_{1} 
-&=0
-\end{split}
-\end{equation*}
+$X\cdot \left( X\times Y\right) =\left( x_{1},x_{2},x_{3}\right) \cdot \left( x_{2}y_{3}-x_{3}y_{2},x_{3}y_{1}-x_{1}y_{3},x_{1}y_{2}-x_{2}y_{1}\right) =x_{1}x_{2}y_{3}-x_{1}x_{3}y_{2}+x_{2}x_{3}y_{1}-x_{2}x_{1}y_{3}+x_{3}x_{1}y_{2}-x_{3}x_{2}y_{1} =0$.
+
 De forma análoga se prueba que $Y\cdot \left( X\times Y\right) =0$.
 
 \item
@@ -2924,7 +2967,7 @@ y_{1} & y_{2} & y_{3}%
 \end{array}%
 \right\vert $
 
-$\qquad \qquad =\alpha \left\vert 
+$\phantom{\left( \alpha X\right) \times Y} =\alpha \left\vert 
 \begin{array}{ccc}
 i & j & k \\ 
 x_{1} & x_{2} & x_{3} \\ 
@@ -2932,7 +2975,7 @@ y_{1} & y_{2} & y_{3}%
 \end{array}%
 \right\vert $
 
-$\qquad \qquad =\left\vert 
+$\phantom{\left( \alpha X\right) \times Y} =\left\vert 
 \begin{array}{ccc}
 i & j & k \\ 
 x_{1} & x_{2} & x_{3} \\ 
@@ -2949,7 +2992,7 @@ y_{1} & y_{2} & y_{3}%
 \end{array}%
 \right\vert $
 
-$\qquad \qquad =-\left\vert 
+$\phantom{X\times Y} =-\left\vert 
 \begin{array}{ccc}
 i & j & k \\ 
 y_{1} & y_{2} & y_{3} \\ 
@@ -2957,7 +3000,7 @@ x_{1} & x_{2} & x_{3}%
 \end{array}%
 \right\vert $
 
-$\qquad \qquad =-Y\times X$
+$\phantom{X\times Y} =-Y\times X$
 
 \item
 $X\times \left( Y\pm Z\right) =\left\vert 
@@ -2968,7 +3011,7 @@ y_{1}\pm z_{1} & y_{2}\pm z_{2} & y_{3}\pm z_{3}%
 \end{array}%
 \right\vert $
 
-$\qquad \qquad =\left\vert 
+$\phantom{X\times \left( Y\pm Z\right)} =\left\vert 
 \begin{array}{ccc}
 i & j & k \\ 
 x_{1} & x_{2} & x_{3} \\ 
@@ -2982,7 +3025,7 @@ z_{1} & z_{2} & z_{3}%
 \end{array}%
 \right\vert $
 
-$\qquad \qquad =X\times Y\pm X\times Z$
+$\phantom{X\times \left( Y\pm Z\right)} =X\times Y\pm X\times Z$
 
 \item
 $\left( X\times Y\right) \cdot Z=\left\vert 
@@ -2992,15 +3035,15 @@ y_{1} & y_{2} & y_{3} & y_{1} & y_{2} & y_{3}%
 \end{array}%
 \right\vert \cdot Z$
 
-$\qquad \qquad \qquad =\left(
+$\phantom{\left( X\times Y\right) \cdot Z} =\left(
 x_{2}y_{3}-x_{3}y_{2},x_{3}y_{1}-x_{1}y_{3},x_{1}y_{2}-x_{2}y_{1}\right)
 \cdot \left( z_{1},z_{2},z_{3}\right) $
 
-$\qquad \qquad \qquad
+$\phantom{\left( X\times Y\right) \cdot Z}
 =x_{2}y_{3}z_{1}-x_{3}y_{2}z_{1}+x_{3}y_{1}z_{2}-x_{1}y_{3}z_{2}+x_{1}y_{2}z_{3}-x_{2}y_{1}z_{3} 
 $
 
-$\qquad \qquad \qquad =\left\vert 
+$\phantom{\left( X\times Y\right) \cdot Z} =\left\vert 
 \begin{array}{ccccc}
 x_{1} & x_{2} & x_{3} & x_{1} & x_{2} \\ 
 y_{1} & y_{2} & y_{3} & y_{1} & y_{2} \\ 
@@ -3014,126 +3057,103 @@ z_{1} & z_{2} & z_{3}%
 \end{array}%
 \right) $
 
-$\qquad \qquad \qquad =x_{1}\left( y_{2}z_{3}-y_{3}z_{2}\right) +x_{2}\left(
+$\phantom{\left( X\times Y\right) \cdot Z} =x_{1}\left( y_{2}z_{3}-y_{3}z_{2}\right) +x_{2}\left(
 y_{3}z_{1}-y_{1}z_{3}\right) +x_{3}\left( y_{1}z_{2}-y_{2}z_{1}\right) $
 
-$\qquad \qquad \qquad =\left( x_{1},x_{2},x_{3}\right) \cdot \left(
+$\phantom{\left( X\times Y\right) \cdot Z} =\left( x_{1},x_{2},x_{3}\right) \cdot \left(
 y_{2}z_{3}-y_{3}z_{2},y_{3}z_{1}-y_{1}z_{3},y_{1}z_{2}-y_{2}z_{1}\right) $
 
-$\qquad \qquad \qquad =\left( x_{1},x_{2},x_{3}\right) \cdot \left\vert 
+$\phantom{\left( X\times Y\right) \cdot Z} =\left( x_{1},x_{2},x_{3}\right) \cdot \left\vert 
 \begin{array}{cccccc}
 y_{1} & y_{2} & y_{3} & y_{1} & y_{2} & y_{3} \\ 
 z_{1} & z_{2} & z_{3} & z_{1} & z_{2} & z_{3}%
 \end{array}%
 \right\vert $
 
-$\qquad \qquad \qquad =X\cdot \left( Y\times Z\right) $
+$\phantom{\left( X\times Y\right) \cdot Z} =X\cdot \left( Y\times Z\right) $
 
 \item
 $X\times \left( Y\times Z\right) =\left( X\cdot Z\right) Y-\left( X\cdot
 Y\right) Z$
 
 Desarrollamos los productos de ambos miembros por separado y vemos que producen el mismo vector.
+\begingroup
+\fontsize{8pt}{10pt}\selectfont
+    \begin{align*}
+    & X \times \left( Y\times Z\right) =\left( x_{1},x_{2},x_{3}\right) \times \left(
+    y_{2}z_{3}-y_{3}z_{2},y_{3}z_{1}-_{2}y_{1}z_{3},y_{1}z_{2}-y_{2}z_{1}\right) \\
+    & =\left\vert 
+        \bgroup\setlength{\arraycolsep}{3pt}
+        \begin{array}{cccccc}
+        x_{1} & x_{2} & x_{3} & x_{1} & x_{2} & x_{3} \\ 
+        y_{2}z_{3}-y_{3}z_{2} & y_{3}z_{1}-y_{1}z_{3} & y_{1}z_{2}-y_{2}z_{1} & 
+        y_{2}z_{3}-y_{3}z_{2} & y_{3}z_{1}-y_{1}z_{3} & y_{1}z_{2}-y_{2}z_{1}%
+        \end{array}
+        \egroup \right\vert \\
+        & =\left( 
+        \begin{array}{r}
+        x_{2}\left( y_{1}z_{2}-y_{2}z\right) -x_{3}\left(
+        y_{3}z_{1}-y_{1}z_{3}\right), \quad x_{3}\left( y_{2}z_{3}-y_{3}z_{2}\right) -x_{1}\left( y_{1}z_{2}-y_{2}z_{1}\right), \\ 
+        x_{1}\left( y_{3}z_{1}-y_{1}z_{3}\right) -x_{2}\left(
+        y_{2}z_{3}-y_{3}z_{2}\right)\phantom{,}%
+        \end{array}%
+        \right) \\
+        & =\left( 
+        \begin{array}{r}
+        x_{2}y_{1}z_{2}-x_{2}y_{2}z_{1}+x_{3}y_{1}z_{3}-x_{3}y_{3}z_{1},\quad x_{1}y_{2}z_{1}-x_{1}y_{1}z_{2}+x_{3}y_{2}z_{3}-x_{3}y_{3}z_{2},\\ 
+        x_{1}y_{3}z_{1}-x_{1}y_{1}z_{3}-x_{2}y_{2}z_{3}+x_{2}y_{3}z_{2}\phantom{,}%
+        \end{array}%
+        \right) 
+    \end{align*}
+\endgroup
 
-$X\times \left( Y\times Z\right) $
+\vspace*{-\baselineskip}
 
-$=\left( x_{1},x_{2},x_{3}\right) \times \left(
-y_{2}z_{3}-y_{3}z_{2},y_{3}z_{1}-_{2}y_{1}z_{3},y_{1}z_{2}-y_{2}z_{1}\right) 
-$
-
-$=\left\vert 
-\begin{array}{cccccc}
-x_{1} & x_{2} & x_{3} & x_{1} & x_{2} & x_{3} \\ 
-y_{2}z_{3}-y_{3}z_{2} & y_{3}z_{1}-y_{1}z_{3} & y_{1}z_{2}-y_{2}z_{1} & 
-y_{2}z_{3}-y_{3}z_{2} & y_{3}z_{1}-y_{1}z_{3} & y_{1}z_{2}-y_{2}z_{1}%
-\end{array}%
-\right\vert $
-
-$=\left( 
-\begin{array}{c}
-x_{2}\left( y_{1}z_{2}-y_{2}z\right) -x_{3}\left(
-y_{3}z_{1}-y_{1}z_{3}\right) ,x_{3}\left( y_{2}z_{3}-y_{3}z_{2}\right)
--x_{1}\left( y_{1}z_{2}-y_{2}z_{1}\right) , \\ 
-\text{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
-\ \ \ \ \ \ \ \ \ }x_{1}\left( y_{3}z_{1}-y_{1}z_{3}\right) -x_{2}\left(
-y_{2}z_{3}-y_{3}z_{2}\right)%
-\end{array}%
-\right) $
-
-$=\left( 
-\begin{array}{c}
-x_{2}y_{1}z_{2}-x_{2}y_{2}z_{1}+x_{3}y_{1}z_{3}-x_{3}y_{3}z_{1},x_{1}y_{2}z_{1}-x_{1}y_{1}z_{2}+x_{3}y_{2}z_{3}-x_{3}y_{3}z_{2},
-\\ 
-\text{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
-\ \ \ \ \ \ \ \ \ }%
-x_{1}y_{3}z_{1}-x_{1}y_{1}z_{3}-x_{2}y_{2}z_{3}+x_{2}y_{3}z_{2}%
-\end{array}%
-\right) $
-
-$\left( X\cdot Z\right) Y-\left( X\cdot Y\right) Z=\left(
-x_{1}z_{1}+x_{2}z_{2}+x_{3}z_{3}\right) \left( y_{1},y_{2},y_{3}\right)
--\left( x_{1}y_{1}+x_{2}y_{2}+x_{3}y_{3}\right) \left(
-z_{1},z_{2},z_{3}\right) $
-
-$=\left( x_{1}z_{1}+x_{2}z_{2}+x_{3}z_{3}\right) \left(
-y_{1},y_{2},y_{3}\right) -\left( x_{1}y_{1}+x_{2}y_{2}+x_{3}y_{3}\right)
-\left( z_{1},z_{2},z_{3}\right) $
-
-$=\left( 
-\begin{array}{c}
-x_{2}y_{1}z_{2}-x_{2}y_{2}z_{1}+x_{3}y_{1}z_{3}-x_{3}y_{3}z_{1},x_{1}y_{2}z_{1}-x_{1}y_{1}z_{2}+x_{3}y_{2}z_{3}-x_{3}y_{3}z_{2},
-\\ 
-\text{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
-\ \ \ \ \ \ \ \ \ }%
-x_{1}y_{3}z_{1}-x_{1}y_{1}z_{3}-x_{2}y_{2}z_{3}+x_{2}y_{3}z_{2}%
-\end{array}%
-\right) \allowbreak $
+\begingroup
+\fontsize{8pt}{10pt}\selectfont
+\begin{align*}
+    & \left( X\cdot Z\right) Y -\left( X\cdot Y\right) Z = \left(
+    x_{1}z_{1}+x_{2}z_{2}+x_{3}z_{3}\right) \left( y_{1},y_{2},y_{3}\right) \\
+    & \hspace*{12em} -\left( x_{1}y_{1}+x_{2}y_{2}+x_{3}y_{3}\right) \left(
+    z_{1},z_{2},z_{3}\right) \\
+    &=\left( 
+    \begin{array}{r}
+    x_{2}y_{1}z_{2}-x_{2}y_{2}z_{1}+x_{3}y_{1}z_{3}-x_{3}y_{3}z_{1},\quad
+    x_{1}y_{2}z_{1}-x_{1}y_{1}z_{2}+x_{3}y_{2}z_{3}-x_{3}y_{3}z_{2},\\ 
+    x_{1}y_{3}z_{1}-x_{1}y_{1}z_{3}-x_{2}y_{2}z_{3}+x_{2}y_{3}z_{2}\phantom{,}%
+    \end{array}%
+    \right) 
+\end{align*}
+\endgroup
 
 \item
 $\left\Vert X\times Y\right\Vert =\left\Vert X\right\Vert \left\Vert
-Y\right\Vert \sin \theta ,$ donde $\theta $ es el ángulo entre $X$ y $Y.$
-
-$\left\Vert X\times Y\right\Vert ^{2}=\left( X\times Y\right) \cdot \left(
-X\times Y\right) $
-
-$=X\cdot \left( Y\times \left( X\times Y\right) \right) =X\cdot \left(
-\left( Y\cdot Y\right) X-\left( Y\cdot X\right) Y\right) $
-
-$=\left( Y\cdot Y\right) \left( X\cdot X\right) -\left( Y\cdot X\right)
-\left( X\cdot Y\right) $
-
-$=\left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}-\left( X\cdot
-Y\right) ^{2}$
-
-$=\left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}-\left\Vert
-X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}\frac{\left( X\cdot Y\right)
-^{2}}{\left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}}$
-
-$=\left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}\left( 1-\cos
-^{2}\theta \right) $, donde $\theta $ es el ángulo entre $X$ y $Y$.
-
-$=\left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}\sin ^{2}\theta $
-
+Y\right\Vert \sin \theta$, donde $\theta $ es el ángulo entre $X$ y $Y$.
+\begin{align*}
+\left\Vert X\times Y\right\Vert ^{2} &= \left( X\times Y\right) \cdot \left( X\times Y\right) \\
+&= X\cdot \left( Y\times \left( X\times Y\right) \right) \\
+&= X\cdot \left( \left( Y\cdot Y\right) X-\left( Y\cdot X\right) Y\right) \\
+&= \left( Y\cdot Y\right) \left( X\cdot X\right) - \left( Y\cdot X\right)\left( X\cdot Y\right) \\
+&= \left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}-\left( X\cdot Y\right) ^{2} \\
+&= \left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}-\left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}\frac{\left( X\cdot Y\right) ^{2}}{\left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}} \\
+&= \left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}\left( 1-\cos ^{2}\theta \right) ,  \ \text{donde $\theta $ es el ángulo entre $X$ y $Y$} \\
+&= \left\Vert X\right\Vert ^{2}\left\Vert Y\right\Vert ^{2}\sin ^{2}\theta
+\end{align*}
 De aquí se tiene que
-
-$\left\Vert X\times Y\right\Vert =\left\Vert X\right\Vert \left\Vert
-Y\right\Vert \sin \theta $
-
-\item
-$\left\Vert X\times Y\right\Vert $ es el área del paralelogramo generado
-por $X,Y.$
+\[\left\Vert X\times Y\right\Vert =\left\Vert X\right\Vert \left\Vert
+Y\right\Vert \sin \theta\]
+\item $\left\Vert X\times Y\right\Vert $ es el área del paralelogramo generado
+por $X,Y$.
 
 \begin{figure}[H]
     \centering
     \caption{Área del paralelogramo generado por dos vectores}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12S58.png}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12S58.png}
     \label{fig:placeholder31}
 \end{figure}
 
 De la figura~\ref{fig:placeholder31}, se cumple que el área del paralelogramo es:
-
-$A=bh=\left\Vert X\right\Vert \left\Vert Y\right\Vert \sin \theta
-=\left\Vert X\times Y\right\Vert $
+\[A=bh=\left\Vert X\right\Vert \left\Vert Y\right\Vert \sin \theta =\left\Vert X\times Y\right\Vert \]
 
 \item
 $\left\vert X\cdot \left( Y\times Z\right) \right\vert =\left\vert \det %
@@ -3141,33 +3161,24 @@ $\left\vert X\cdot \left( Y\times Z\right) \right\vert =\left\vert \det %
 
 El valor de $\left\vert X\cdot \left( Y\times Z\right) \right\vert $ es el volumen del paralelepípedo generado por los vectores $X,Y$ y $Z.$
 
-La prueba de este resultado la comenzamos con la siguiente figura:
+La prueba de este resultado la comenzamos con la figura~\ref{fig:placeholder32}.
 
 \begin{figure}[H]
     \centering
     \caption{Volumen del paralelepípedo generado por tres vectores}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12S59.png}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12S59.png}
     \label{fig:placeholder32}
 \end{figure}
 
-
 El volumen de un paralelepípedo que se muestra en la figura~\ref{fig:placeholder32}, es el área de su base por la altura.
-
-$Vol=A_{b}h$
-
-$=\left\Vert X\times Y\right\Vert h$
-
-$=\left\Vert X\times Y\right\Vert \left\Vert \Pr oy_{X\times Y}Z\right\Vert $
-
-$=\left\Vert X\times Y\right\Vert \left\Vert \frac{\left( X\times Y\right)
-\cdot Z}{\left\Vert X\times Y\right\Vert ^{2}}\left( X\times Y\right)
-\right\Vert $
-
-$=\left\Vert X\times Y\right\Vert \frac{\left\vert \left( X\times Y\right)
-\cdot Z\right\vert }{\left\Vert X\times Y\right\Vert ^{2}}\left\Vert \left(
-X\times Y\right) \right\Vert $
-
-$=\left\vert X\cdot \left( Y\times Z\right) \right\vert $
+\begin{align*}
+\Vol &= A_{b}h \\
+    &= \left\Vert X\times Y\right\Vert h \\
+    &= \left\Vert X\times Y\right\Vert \left\Vert \Proy_{X\times Y}Z\right\Vert \\
+    &= \left\Vert X\times Y\right\Vert \left\Vert \frac{\left( X\times Y\right) \cdot Z}{\left\Vert X\times Y\right\Vert ^{2}}\left( X\times Y\right) \right\Vert \\
+    &= \left\Vert X\times Y\right\Vert \frac{\left\vert \left( X\times Y\right) \cdot Z\right\vert }{\left\Vert X\times Y\right\Vert ^{2}}\left\Vert \left( X\times Y\right) \right\Vert \\
+    &= \left\vert X\cdot \left( Y\times Z\right) \right\vert
+\end{align*}
 \end{enumerate}
 
 \subsection{Ejercicios}
@@ -3195,3 +3206,4 @@ $=\left\vert X\cdot \left( Y\times Z\right) \right\vert $
     \item Encuentre un vector perpendicular a los vectores $\left( 2,1,3\right) $ y $\left( -1,2,4\right)$.
     \item Halle dos vectores unitarios y de distinta dirección perpendiculares a $\left( -1,2,6\right) $ y $\left( 3,4,7\right)$.
 \end{enumerate}
+
