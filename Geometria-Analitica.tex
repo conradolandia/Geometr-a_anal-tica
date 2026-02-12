@@ -163,10 +163,11 @@ style=ieee,
 \DeclareMathOperator{\Vol}{Vol}
 \DeclareMathOperator{\area}{Área}
 \DeclareMathOperator{\volumen}{Volumen}
-
+\let\sin\sen
 \let\oldsqrt\sqrt
 \let\sqrt\SQRT
-\let\sin\sen
+\let\underbrace\undercbrace 
+\let\overbrace\overcbrace 
 \setcounter{MaxMatrixCols}{10}
 \newsavebox{\crossprodbox}
 \newsavebox{\smcrossprodboxa}
@@ -305,6 +306,8 @@ style=ieee,
 \newpage\thispagestyle{empty}
 
 \include{Capítulo_3}
+
+\newpage\thispagestyle{empty}
 
 \include{Capítulo_4}
 

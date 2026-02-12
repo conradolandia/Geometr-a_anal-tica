@@ -2445,7 +2445,7 @@ y
 
 \bigskip
 
-\textbf{Reflexión respecto a la recta $y=x$}
+\textbf{Reflexión respecto a la recta \boldmath{$y=x$}}
 
 En este caso, la pendiente de la recta es $m=1$ y la reflexión es:
 \begin{align*}
@@ -2552,13 +2552,10 @@ En la figura~\ref{fig:placeholder3.17} se dibujan la curva $y=\sqrt{x}$ y su ref
     \label{fig:placeholder3.17}
 \end{figure}
 
-\bigskip
-
 \textbf{Composición de una reflexión y una traslación}
 
 Sean $T_{m}$ la reflexión respecto a la recta $y=mx$ y $T$ la traslación
-
-$T\left( 
+\[T\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -2568,12 +2565,9 @@ y%
 x+a \\ 
 y+b%
 \end{array}%
-\right)$.
-
+\right)\]
 La compuesta de la reflexión $T_{m}$ y la traslación $T$ es:
-
-\begin{center}
-$T_{m}\left( T\left( 
+\[T_{m}\left( T\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -2588,161 +2582,174 @@ y%
 x+a \\ 
 y+b%
 \end{array}%
-\right) $
-\end{center}
+\right) \]
 
 \textbf{Composición de dos reflexiones}
 
 Sean $T_{m}$ la reflexión respecto a la recta $y=mx$ y $T_{n}$ la reflexión
 respecto a la recta $y=nx,$ la composición de estas dos reflexiones es:
-
-$T_{n}\left( T_{m}\left( 
+\begingroup\fontsize{10.5pt}{13pt}\selectfont
+\begin{align*}
+T_{n}&\left( T_{m}\left( 
 \begin{array}{c}
 x \\ 
-y%
-\end{array}%
-\right) \right) $
-
-$=T_{n}\left( \frac{1}{m^{2}+1}\left( 
+y
+\end{array}
+\right) \right) 
+= T_{n}\left( \frac{1}{m^{2}+1}
+\left(
 \begin{array}{cc}
 1-m^{2} & 2m \\ 
-2m & m^{2}-1%
-\end{array}%
-\right) \left( 
+2m & m^{2}-1
+\end{array}
+\right)
+\left(
 \begin{array}{c}
 x \\ 
-y%
-\end{array}%
-\right) \right) $
-
-$=\frac{1}{n^{2}+1}\left( 
+y
+\end{array}
+\right) \right) \\
+&= \frac{1}{n^{2}+1}
+\left(
 \begin{array}{cc}
 1-n^{2} & 2n \\ 
-2n & n^{2}-1%
-\end{array}%
-\right) \frac{1}{m^{2}+1}\left( 
+2n & n^{2}-1
+\end{array}
+\right)
+\frac{1}{m^{2}+1}
+\left(
 \begin{array}{cc}
 1-m^{2} & 2m \\ 
-2m & m^{2}-1%
-\end{array}%
-\right) \left( 
+2m & m^{2}-1
+\end{array}
+\right)
+\left(
 \begin{array}{c}
 x \\ 
-y%
-\end{array}%
-\right) $
-
-$=\frac{1}{\left( n^{2}+1\right) \left( m^{2}+1\right) }\left( 
+y
+\end{array}
+\right) \\
+&= \frac{1}{(n^{2}+1)(m^{2}+1)}
+\left(
 \begin{array}{cc}
 1-n^{2} & 2n \\ 
-2n & n^{2}-1%
-\end{array}%
-\right) \left( 
+2n & n^{2}-1
+\end{array}
+\right)
+\left(
 \begin{array}{cc}
 1-m^{2} & 2m \\ 
-2m & m^{2}-1%
-\end{array}%
-\right) \left( 
+2m & m^{2}-1
+\end{array}
+\right)
+\left(
 \begin{array}{c}
 x \\ 
-y%
-\end{array}%
-\right) $
-
-$=\left( 
+y
+\end{array}
+\right) \\
+&= 
+\left(
 \begin{array}{cc}
-\frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( n^{2}+1\right) \left(
-m^{2}+1\right) } & \frac{2m^{2}n-2mn^{2}+2m-2n}{\left( n^{2}+1\right) \left(
-m^{2}+1\right) } \\ 
-\frac{-2m^{2}n+2mn^{2}-2m+2n}{\left( n^{2}+1\right) \left( m^{2}+1\right) }
-& \frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( n^{2}+1\right) \left(
-m^{2}+1\right) }%
-\end{array}%
-\right) \left( 
+\dfrac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{(n^{2}+1)(m^{2}+1)} & \dfrac{2m^{2}n-2mn^{2}+2m-2n}{(n^{2}+1)(m^{2}+1)} \\[2ex]
+\dfrac{-2m^{2}n+2mn^{2}-2m+2n}{(n^{2}+1)(m^{2}+1)} & \dfrac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{(n^{2}+1)(m^{2}+1)}
+\end{array}
+\right)
+\left(
 \begin{array}{c}
 x \\ 
-y%
-\end{array}%
-\right) $
-
+y
+\end{array}
+\right)
+\end{align*}
+\endgroup
 Ahora, se calcula la compuesta en el orden contrario:
-
-$T_{m}\left( T_{n}\left( 
+\begingroup\fontsize{10.5pt}{12pt}\selectfont
+\begin{align*}
+T_{m}&\left( T_{n}
+\left(
 \begin{array}{c}
 x \\ 
-y%
-\end{array}%
-\right) \right) $
-
-$=T_{m}\left( \frac{1}{n^{2}+1}\left( 
+y
+\end{array}
+\right)
+\right) 
+= T_{m}\left( \frac{1}{n^{2}+1}
+\left(
 \begin{array}{cc}
-1-n^{2} & 2n \\ 
-2n & n^{2}-1%
-\end{array}%
-\right) \left( 
+1-n^{2} & 2n \\
+2n & n^{2}-1
+\end{array}
+\right)
+\left(
 \begin{array}{c}
-x \\ 
-y%
-\end{array}%
-\right) \right) $
-
-$=\frac{1}{m^{2}+1}\left( 
+x \\
+y
+\end{array}
+\right)
+\right) \\
+&= \frac{1}{m^{2}+1}
+\left(
 \begin{array}{cc}
-1-m^{2} & 2m \\ 
-2m & m^{2}-1%
-\end{array}%
-\right) \frac{1}{n^{2}+1}\left( 
+1-m^{2} & 2m \\
+2m & m^{2}-1
+\end{array}
+\right)
+\frac{1}{n^{2}+1}
+\left(
 \begin{array}{cc}
-1-n^{2} & 2n \\ 
-2n & n^{2}-1%
-\end{array}%
-\right) \left( 
+1-n^{2} & 2n \\
+2n & n^{2}-1
+\end{array}
+\right)
+\left(
 \begin{array}{c}
-x \\ 
-y%
-\end{array}%
-\right) $
-
-$=\frac{1}{\left( m^{2}+1\right) \left( n^{2}+1\right) }\left( 
+x \\
+y
+\end{array}
+\right) \\
+&= \frac{1}{(m^{2}+1)(n^{2}+1)}
+\left(
 \begin{array}{cc}
-1-m^{2} & 2m \\ 
-2m & m^{2}-1%
-\end{array}%
-\right) \left( 
+1-m^{2} & 2m \\
+2m & m^{2}-1
+\end{array}
+\right)
+\left(
 \begin{array}{cc}
-1-n^{2} & 2n \\ 
-2n & n^{2}-1%
-\end{array}%
-\right) \left( 
+1-n^{2} & 2n \\
+2n & n^{2}-1
+\end{array}
+\right)
+\left(
 \begin{array}{c}
-x \\ 
-y%
-\end{array}%
-\right) $
-
-$=\left( 
+x \\
+y
+\end{array}
+\right) \\
+&= 
+\left(
 \begin{array}{cc}
-\frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( m^{2}+1\right) \left(
-n^{2}+1\right) } & \frac{-2m^{2}n+2mn^{2}-2m+2n}{\left( m^{2}+1\right)
-\left( n^{2}+1\right) } \\ 
-\frac{2m^{2}n-2mn^{2}+2m-2n}{\left( m^{2}+1\right) \left( n^{2}+1\right) } & 
-\frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( m^{2}+1\right) \left(
-n^{2}+1\right) }%
-\end{array}%
-\right) \left( 
+\dfrac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{(m^{2}+1)(n^{2}+1)} & \dfrac{-2m^{2}n+2mn^{2}-2m+2n}{(m^{2}+1)(n^{2}+1)} \\[2ex]
+\dfrac{2m^{2}n-2mn^{2}+2m-2n}{(m^{2}+1)(n^{2}+1)} & \dfrac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{(m^{2}+1)(n^{2}+1)}
+\end{array}
+\right)
+\left(
 \begin{array}{c}
-x \\ 
-y%
-\end{array}%
-\right)$
-
+x \\
+y
+\end{array}
+\right)
+\end{align*}
+\endgroup
 Tenemos que la matriz de $T_{n}\circ T_{m}$ es la transpuesta de la matriz de $T_{m}\circ T_{n}$.
-
 \bigskip
 
 \subsubsection{Rotaciones}
 
-\textbf{Rotaciones alrededor de un punto}
+\vspace{\parskip}
+
+\paragraph{Rotaciones alrededor de un punto}
 
 Una rotación de un ángulo $\alpha $ alrededor de un punto $R$ (llamado el \emph{centro de la rotación}) es una transformación que satisface las condiciones:
 \begin{enumerate}
@@ -2755,117 +2762,103 @@ En la figura~\ref{fig:placeholder3.18}, se ilustra la rotación y sus propiedade
 \begin{figure}[H]
     \centering
     \caption{Rotación centrada en $R$}
-
-\includegraphics[width=0.7\textwidth]{Images/SDY12T8L.png}
+    \includegraphics[width=0.4\textwidth]{Images/SDY12T8L.png}
     \label{fig:placeholder3.18}
 \end{figure}
 
-\textbf{Rotaciones centradas en el origen}
+\paragraph{Rotaciones centradas en el origen}
 
 Una rotación alrededor de un punto es una isometría.
-
-\bigskip
 
 Transformación de rotación de un ángulo $\phi $ en sentido antihorario centrada en el origen.
 
 \begin{figure}[H]
     \centering
     \caption{Rotación centrada en el origen}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12T8M.png}
+    \includegraphics[width=0.4\textwidth]{Images/SDY12T8M.png}
     \label{fig:placeholder3.19}
 \end{figure}
 
 De  la figura~\ref{fig:placeholder3.19} tenemos:
-
-\begin{tabular}{l}
-$T\left( P\right) =P^{\prime},$ \ $P=\left( x,y\right) ,P^{\prime}=\left(
-x^{\prime},y^{\prime}\right) $ \ $x=r\cos \theta ,y=r\sin \theta $ \\ 
-$x^{\prime}=r\cos \left( \theta +\phi \right) =r\cos \theta \cos \phi -r\sin
-\theta \sin \phi $ \ \  \\ 
-$y^{\prime}=r\sin \left( \theta +\phi \right) =r\sin \theta \cos \phi +r\cos
-\theta \sin \phi $ \ \  \\ 
-$x^{\prime}=x\cos \phi -y\sin \phi $ \ \  \\ 
-$y^{\prime}=y\cos \phi +x\sin \phi $ \ \ 
-\end{tabular}
-
-$T\left( P\right) =T\left( 
-\begin{array}{c}
-x \\ 
-y%
-\end{array}%
-\right) $
-
-$\qquad =\left( 
-\begin{array}{c}
-x^{\prime} \\ 
-y^{\prime}%
-\end{array}%
-\right) $
-
-$\qquad =\left( 
-\begin{array}{c}
-x\cos \phi -y\sin \phi \\ 
-x\sin \phi +y\cos \phi%
-\end{array}%
-\right) $
-
-$\qquad =\left( 
-\begin{array}{cc}
-\cos \phi & -\sin \phi \\ 
-\sin \phi & \cos \phi%
-\end{array}%
-\right) \left( 
-\begin{array}{c}
-x \\ 
-y%
-\end{array}%
-\right) $
-
+\begin{align*}
+    T\left( P \right) &= P', \quad P = (x, y), \quad P' = (x', y') \\ 
+        x &= r \cos \theta, \quad y = r \sin \theta \\
+        x' &= r \cos(\theta + \phi) = r \cos \theta \cos \phi - r \sin \theta \sin \phi \\
+        y' &= r \sin(\theta + \phi) = r \sin \theta \cos \phi + r \cos \theta \sin \phi \\
+        x' &= x \cos \phi - y \sin \phi \\
+        y' &= y \cos \phi + x \sin \phi \\[1ex]
+    T\left( P \right) &= T\left( 
+        \begin{array}{c}
+            x \\
+            y
+        \end{array}
+    \right) = \left(
+        \begin{array}{c}
+            x' \\
+            y'
+        \end{array}
+    \right) \\
+    &= \left(
+        \begin{array}{c}
+            x \cos \phi - y \sin \phi \\
+            x \sin \phi + y \cos \phi
+        \end{array}
+    \right) \\
+    &= 
+    \left(
+        \begin{array}{cc}
+            \cos \phi & -\sin \phi \\
+            \sin \phi & \cos \phi
+        \end{array}
+    \right)
+    \left(
+        \begin{array}{c}
+            x \\
+            y
+        \end{array}
+    \right)
+\end{align*}
 El determinante de la matriz de rotación es:
-
-$\det \left( 
+\[\det \left( 
 \begin{array}{cc}
 \cos \phi & -\sin \phi \\ 
 \sin \phi & \cos \phi%
 \end{array}%
-\right) =\cos ^{2}\phi -\left( -\sin ^{2}\phi \right) =1$
-
+\right) =\cos ^{2}\phi -\left( -\sin ^{2}\phi \right) =1\]
 La inversa de la matriz de rotación es:
-
-$\left( 
+\begin{align*}
+\left(
 \begin{array}{cc}
-\cos \phi & -\sin \phi \\ 
-\sin \phi & \cos \phi%
-\end{array}%
-\right) ^{-1}$
-
-$=\frac{1}{\det \left( 
+\cos \phi & -\sin \phi \\
+\sin \phi & \cos \phi
+\end{array}
+\right)^{-1}
+&= \frac{1}{\det \left(
 \begin{array}{cc}
-\cos \phi & -\sin \phi \\ 
-\sin \phi & \cos \phi%
-\end{array}%
-\right) }\left( 
+\cos \phi & -\sin \phi \\
+\sin \phi & \cos \phi
+\end{array}
+\right)}
+\left(
 \begin{array}{cc}
-\cos \phi & \sin \phi \\ 
--\sin \phi & \cos \phi%
-\end{array}%
-\right) $
-
-$=\left( 
+\cos \phi & \sin \phi \\
+-\sin \phi & \cos \phi
+\end{array}
+\right) \\
+&= \left(
 \begin{array}{cc}
-\cos \phi & \sin \phi \\ 
--\sin \phi & \cos \phi%
-\end{array}%
-\right) $
-
+\cos \phi & \sin \phi \\
+-\sin \phi & \cos \phi
+\end{array}
+\right)
+\end{align*}
 De manera que, al despejar $\left( 
 \begin{array}{c}
 x \\ 
 y%
 \end{array}%
-\right) $ con la matriz inversa, tenemos:$\ $
-
-$\left( 
+\right) $ con la matriz inversa, tenemos:
+\[\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -2880,9 +2873,7 @@ y%
 x^{\prime} \\ 
 y^{\prime}%
 \end{array}%
-\right) $
-
-$\qquad =\left( 
+\right) =\left( 
 \begin{array}{cc}
 \cos \phi & \sin \phi \\ 
 -\sin \phi & \cos \phi%
@@ -2892,14 +2883,11 @@ $\qquad =\left(
 x^{\prime} \\ 
 y^{\prime}%
 \end{array}%
-\right)$
-
-\bigskip
+\right)\]
 
 \begin{example}
 Halle la imagen bajo la rotación de un ángulo de $\frac{\pi }{3}$, con centro en el origen de cada uno de los siguientes puntos:
-\begin{enumerate}
- \renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+\begin{enumerate}[label=(\alph*)]
         \item $A=\left( 2,5\right)$
         \item $B=\left( 4,1\right)$
         \item $C=\left(-1,4\right) $
@@ -2909,8 +2897,7 @@ Halle la imagen bajo la rotación de un ángulo de $\frac{\pi }{3}$, con centro 
 \textbf{Solución}
 
 Para rotar cada punto, lo escribimos como vector columna y multiplicamos usando la matriz de rotación de ángulo $\phi =\frac{\pi }{3}$.
-
-$T\left( 
+\[T\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -2935,82 +2922,79 @@ y%
 x \\ 
 y%
 \end{array}%
-\right) $
-
+\right) \]
 Así, la imagen rotada de cada punto es:
-
-(a) $A^{\prime}=T\left( A\right) =\left( 
-\begin{array}{cc}
-\frac{1}{2} & -\frac{1}{2}\sqrt{3} \\ 
-\frac{1}{2}\sqrt{3} & \frac{1}{2}%
-\end{array}%
-\right) \left( 
-\begin{array}{c}
-2 \\ 
-5%
-\end{array}%
-\right) $
-
-$\qquad \qquad \qquad =\left( 
-\begin{array}{c}
-1-\frac{5}{2}\sqrt{3} \\ 
-\sqrt{3}+\frac{5}{2}%
-\end{array}%
-\right) \approx \left( 
-\begin{array}{c}
--3.330\,1 \\ 
-4.232\,1%
-\end{array}%
-\right)$
-
-(b) $B^{\prime}=T\left( B\right) =\left( 
-\begin{array}{cc}
-\frac{1}{2} & -\frac{1}{2}\sqrt{3} \\ 
-\frac{1}{2}\sqrt{3} & \frac{1}{2}%
-\end{array}%
-\right) \left( 
-\begin{array}{c}
-4 \\ 
-1%
-\end{array}%
-\right) $
-
-$\qquad \qquad \qquad =\left( 
-\begin{array}{c}
-2-\frac{1}{2}\sqrt{3} \\ 
-2\sqrt{3}+\frac{1}{2}%
-\end{array}%
-\right) \approx \left( 
-\begin{array}{c}
-1.\,\allowbreak 134\,0 \\ 
-3.\,\allowbreak 964\,1%
-\end{array}%
-\right)$
-
-(c) $C^{\prime}=T\left( C\right) =\left( 
-\begin{array}{cc}
-\frac{1}{2} & -\frac{1}{2}\sqrt{3} \\ 
-\frac{1}{2}\sqrt{3} & \frac{1}{2}%
-\end{array}%
-\right) \left( 
-\begin{array}{c}
--1 \\ 
-4%
-\end{array}%
-\right) $
-
-$\qquad \qquad \qquad =\left( 
-\begin{array}{c}
--2\sqrt{3}-\frac{1}{2} \\ 
-2-\frac{1}{2}\sqrt{3}%
-\end{array}%
-\right) \approx \left( 
-\begin{array}{c}
--3.964\,1 \\ 
-1.134\,0%
-\end{array}%
-\right)$
-
+\begin{subequations}
+    \renewcommand{\theequation}{\alph{equation}}
+    \begin{align}
+    A^{\prime}=T\left( A\right) & =\left( 
+        \begin{array}{cc}
+        \frac{1}{2} & -\frac{1}{2}\sqrt{3} \\ 
+        \frac{1}{2}\sqrt{3} & \frac{1}{2}%
+        \end{array}%
+        \right) \left( 
+        \begin{array}{c}
+        2 \\ 
+        5%
+        \end{array}%
+    \right) \\
+    \notag &= \left( 
+        \begin{array}{c}
+        1-\frac{5}{2}\sqrt{3} \\ 
+        \sqrt{3}+\frac{5}{2}%
+        \end{array}%
+    \right) \approx \left( 
+        \begin{array}{c}
+        -3.3301 \\ 
+        4.2321%
+        \end{array}%
+    \right) \\[1em]
+    B^{\prime}=T\left( B\right) & =\left( 
+        \begin{array}{cc}
+        \frac{1}{2} & -\frac{1}{2}\sqrt{3} \\ 
+        \frac{1}{2}\sqrt{3} & \frac{1}{2}%
+        \end{array}%
+        \right) \left( 
+        \begin{array}{c}
+        4 \\ 
+        1%
+        \end{array}%
+        \right) \\
+        \notag &= \left( 
+        \begin{array}{c}
+        2-\frac{1}{2}\sqrt{3} \\ 
+        2\sqrt{3}+\frac{1}{2}%
+        \end{array}%
+        \right) \approx \left( 
+        \begin{array}{c}
+        1.1340 \\ 
+        3.9641%
+        \end{array}%
+    \right) \\[1em]
+    C^{\prime}=T\left( C\right) & =\left( 
+        \begin{array}{cc}
+        \frac{1}{2} & -\frac{1}{2}\sqrt{3} \\ 
+        \frac{1}{2}\sqrt{3} & \frac{1}{2}%
+        \end{array}%
+        \right) \left( 
+        \begin{array}{c}
+        -1 \\ 
+        4%
+        \end{array}%
+        \right) \\
+        \notag &= \left( 
+        \begin{array}{c}
+        -2\sqrt{3}-\frac{1}{2} \\ 
+        2-\frac{1}{2}\sqrt{3}%
+        \end{array}%
+        \right) \approx \left( 
+        \begin{array}{c}
+        -3.9641 \\ 
+        1.1340%
+        \end{array}%
+    \right)
+    \end{align}
+\end{subequations}
 En la figura~\ref{fig:placeholder3.20}, se dibujan los puntos y sus imagenes por la rotación. 
 
 \begin{figure}[H]
@@ -3027,7 +3011,7 @@ $ radianes de la recta con ecuación $2x+3y=5$.
 
 \textbf{Solución}
 
-La matriz de rotación de un ángulo de $\frac{\pi }{4}$ es $\left( 
+La matriz de rotación de un ángulo de $\frac{\pi }{4}$ es \[\left( 
 \begin{array}{cc}
 \cos \frac{\pi }{4} & -\sin \frac{\pi }{4} \\ 
 \sin \frac{\pi }{4} & \cos \frac{\pi }{4}%
@@ -3037,23 +3021,21 @@ La matriz de rotación de un ángulo de $\frac{\pi }{4}$ es $\left(
 \frac{1}{2}\sqrt{2} & -\frac{1}{2}\sqrt{2} \\ 
 \frac{1}{2}\sqrt{2} & \frac{1}{2}\sqrt{2}%
 \end{array}%
-\right) $.
-
+\right) \]
 Así que:
-
-$\left( 
+\begin{align*}
+\left( 
 \begin{array}{c}
 x^{\prime} \\ 
 y^{\prime}%
 \end{array}%
-\right) =T\left( 
+\right) & =T\left( 
 \begin{array}{c}
 x \\ 
 y%
 \end{array}%
-\right) $
-
-$\qquad \qquad =\left( 
+\right) \\
+&= \left( 
 \begin{array}{cc}
 \cos \frac{\pi }{4} & -\sin \frac{\pi }{4} \\ 
 \sin \frac{\pi }{4} & \cos \frac{\pi }{4}%
@@ -3063,23 +3045,21 @@ $\qquad \qquad =\left(
 x \\ 
 y%
 \end{array}%
-\right) $
-
-$T\left( 
+\right) \\
+T\left( 
 \begin{array}{c}
 x \\ 
 y%
 \end{array}%
-\right) =\left( 
+\right) & =\left( 
 \begin{array}{c}
 \sqrt{2}\left( \frac{1}{2}x-\frac{1}{2}y\right) \\ 
 \sqrt{2}\left( \frac{1}{2}x+\frac{1}{2}y\right)%
 \end{array}%
-\right) $
-
+\right)
+\end{align*}
 Al usar la matriz de rotación inversa, tenemos:
-
-$\left( 
+\[\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -3099,23 +3079,15 @@ y^{\prime}%
 \sqrt{2}\left( \frac{1}{2}x^{\prime}+\frac{1}{2}y^{\prime}\right) \\ 
 -\sqrt{2}\left( \frac{1}{2}x^{\prime}-\frac{1}{2}y^{\prime}\right)%
 \end{array}%
-\right) $
-
+\right) \]
 La recta rotada $\frac{\pi }{4}$ con centro en el origen se obtiene al reemplazar $x,y$ en la curva a rotar. Para esto, en $2x+3y=5$, reemplazamos $x,y$:
-
-$2\sqrt{2}\left( \sqrt{2}\left( \frac{1}{2}x^{\prime}+\frac{1}{2}y^{\prime}\right)
+\[2\sqrt{2}\left( \sqrt{2}\left( \frac{1}{2}x^{\prime}+\frac{1}{2}y^{\prime}\right)
 \right) +3\sqrt{2}\left( -\sqrt{2}\left( \frac{1}{2}x^{\prime}-\frac{1}{2}%
-y^{\prime}\right) \right) =5$ \ \ 
-
+y^{\prime}\right) \right) =5\]
 Se simplifica.
-
-$-\sqrt{2}\left( \frac{1}{2}x^{\prime}-\frac{5}{2}y^{\prime}\right) =5$ \
-
-
+\[-\sqrt{2}\left( \frac{1}{2}x^{\prime}-\frac{5}{2}y^{\prime}\right) =5\]
 Se multiplica por $2$.
-
-$\sqrt{2}\left( -x^{\prime}+5y^{\prime}\right) =10$
-
+\[\sqrt{2}\left( -x^{\prime}+5y^{\prime}\right) =10\]
 Reemplazamos $x$ por $x^{\prime}$ y $y$ por $y^{\prime}$ para graficar la ecuación de la recta y de la recta rotada en el mismo sistema de coordenadas $\sqrt{2}%
 \left( -x+5y\right) =10$.
 
@@ -3128,11 +3100,11 @@ En la figura~\ref{fig:placeholder3.21}, se dibuja la recta y su imagen por la ro
     \label{fig:placeholder3.21}
 \end{figure}
 
-\textbf{Composición de dos rotaciones}
+\paragraph{Composición de dos rotaciones}
 
 A continuación, probaremos que la composición de dos rotaciones centradas en el origen es una rotación centrada en el origen.
 
-Sean $R_{\phi }\left( 
+Sean \[R_{\phi }\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -3147,7 +3119,7 @@ y%
 x \\ 
 y%
 \end{array}%
-\right) $ la rotación de un ángulo $\phi ,$ y $R_{\theta }\left( 
+\right)\] la rotación de un ángulo $\phi$, y \[R_{\theta }\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -3162,16 +3134,15 @@ y%
 x \\ 
 y%
 \end{array}%
-\right) $ la rotación de un ángulo $\theta $, la composición de estas dos rotaciones es:
-
-$R_{\phi }\left( R_{\theta }\left( 
+\right)\] la rotación de un ángulo $\theta$, la composición de estas dos rotaciones es:
+\begin{align*}
+R_{\phi }&\left( R_{\theta }\left( 
 \begin{array}{c}
 x \\ 
 y%
 \end{array}%
-\right) \right) $
-
-$=$ $R_{\phi }\left( \left( 
+\right) \right) \\
+&= R_{\phi }\left( \left( 
 \begin{array}{cc}
 \cos \theta & -\sin \theta \\ 
 \sin \theta & \cos \theta%
@@ -3181,9 +3152,8 @@ $=$ $R_{\phi }\left( \left(
 x \\ 
 y%
 \end{array}%
-\right) \right) $
-
-$=\left( 
+\right) \right) \\
+&= \left( 
 \begin{array}{cc}
 \cos \phi & -\sin \phi \\ 
 \sin \phi & \cos \phi%
@@ -3198,9 +3168,8 @@ $=\left(
 x \\ 
 y%
 \end{array}%
-\right)$
-
-$=\left( 
+\right) \\
+&= \left( 
 \begin{array}{cc}
 \cos \phi \cos \theta -\sin \phi \sin \theta & -\sin \theta \cos \phi -\sin
 \phi \cos \theta \\ 
@@ -3212,26 +3181,24 @@ $=\left(
 x \\ 
 y%
 \end{array}%
-\right) $
-
+\right)
+\end{align*}
 Al usar las identidades de la suma para el seno y el coseno, se tiene:
-
-$=\left( 
+\begin{align*}
+&=\left( 
 \begin{array}{cc}
 \cos \left( \theta +\phi \right) & -\sin \left( \theta +\phi \right) \\ 
 \sin \left( \theta +\phi \right) & \cos \left( \theta +\phi \right)%
 \end{array}%
-\right) $
-
-$=R_{\theta +\phi }$
-
-$=R_{\theta }\left( R_{\phi }\left( 
+\right) \\
+&=R_{\theta +\phi } \\
+&=R_{\theta }\left( R_{\phi }\left( 
 \begin{array}{c}
 x \\ 
 y%
 \end{array}%
-\right) \right)$
-
+\right) \right)
+\end{align*}
 Así que la composición de rotaciones centradas en el origen es equivalente a una única rotación centrada en el origen, correspondiente a la suma de los dos ángulos de rotación.
 
 Las matrices de la forma $\left( 
@@ -3252,8 +3219,7 @@ x \\
 y%
 \end{array}%
 \right) $, ya que
-
-$\left( 
+\[\left( 
 \begin{array}{cc}
 \cos \theta & -\sin \theta \\ 
 \sin \theta & \cos \theta%
@@ -3268,8 +3234,7 @@ $\left(
 1 & 0 \\ 
 0 & 1%
 \end{array}%
-\right)$.
-
+\right)\]
 El conjunto $\left\{ \left( 
 \begin{array}{cc}
 \cos \theta & -\sin \theta \\ 
@@ -3277,153 +3242,121 @@ El conjunto $\left\{ \left(
 \end{array}
 \right) \right\} $ es un grupo conmutativo con el producto de matrices.
 
-\bigskip
+\paragraph{La composición de dos reflexiones es una rotación}
 
-\textbf{La composición de dos reflexiones es una rotación}
-
-Sea $\alpha $ el ángulo entre las rectas $y=mx$ y $y=nx.$
-
-$\alpha =\angle \left( \left( 1,m\right) ,\left( 1,n\right) \right)$
-
-$\cos \alpha =\frac{1+mn}{\sqrt{m^{2}+1}\sqrt{n^{2}+1}}$
-
-$\cos ^{2}\alpha =\frac{\left( 1+mn\right) ^{2}}{\left( m^{2}+1\right)
-\left( n^{2}+1\right) }$
-
-$\sin ^{2}\alpha =\frac{\left( m^{2}+1\right) \left( n^{2}+1\right) -\left(
-1+mn\right) ^{2}}{\left( m^{2}+1\right) \left( n^{2}+1\right) }=\frac{\left(
-m-n\right) ^{2}}{\left( m^{2}+1\right) \left( n^{2}+1\right) }$
-
-$\cos 2\alpha =\cos ^{2}\alpha -\sin ^{2}\alpha $
-
-$=\frac{\left( 1+mn\right) ^{2}}{\left( m^{2}+1\right) \left( n^{2}+1\right) 
-}-\frac{\left( m-n\right) ^{2}}{\left( m^{2}+1\right) \left( n^{2}+1\right) }
-$
-
-$=\frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( m^{2}+1\right) \left(
-n^{2}+1\right) }$
-
-$=\frac{\left( m-n+mn+1\right) \left( -m+n+mn+1\right) }{\left(
-m^{2}+1\right) \left( n^{2}+1\right) }$
-
-$\sin 2\alpha =2\sin \alpha \cos \alpha $
-
-$=2\sqrt{\frac{\left( m-n\right) ^{2}}{\left( m^{2}+1\right) \left(
-n^{2}+1\right) }\frac{\left( 1+mn\right) ^{2}}{\left( m^{2}+1\right) \left(
-n^{2}+1\right) }}$
-
-$=2\frac{\left( m-n\right) \left( mn+1\right) }{\left( m^{2}+1\right) \left(
-n^{2}+1\right) }$
+Sea $\alpha $ el ángulo entre las rectas $y=mx$ y $y=nx$.
+\begin{align*}
+\alpha &= \angle \left( (1, m), (1, n) \right) \\[1ex]
+\cos \alpha &= \frac{1 + m n}{\sqrt{m^2 + 1} \sqrt{n^2 + 1}} \\[1ex]
+\cos^2 \alpha &= \frac{(1 + m n)^2}{(m^2 + 1)(n^2 + 1)} \\[1ex]
+\sin^2 \alpha &= \frac{(m^2 + 1)(n^2 + 1) - (1 + m n)^2}{(m^2+1)(n^2+1)}
+= \frac{(m-n)^2}{(m^2 + 1)(n^2 + 1)} \\[1ex]
+\cos 2\alpha &= \cos^2\alpha - \sin^2\alpha \\
+&= \frac{(1+mn)^2}{(m^2+1)(n^2+1)} - \frac{(m-n)^2}{(m^2+1)(n^2+1)} \\
+&= \frac{m^2 n^2 - m^2 + 4mn - n^2 + 1}{(m^2+1)(n^2+1)} \\
+&= \frac{(m-n+mn+1)(-m+n+mn+1)}{(m^2+1)(n^2+1)} \\[1ex]
+\sin 2\alpha &= 2\sin\alpha \cos\alpha \\
+&= 2 \sqrt{ \frac{(m-n)^2}{(m^2+1)(n^2+1)} \cdot \frac{(1+mn)^2}{(m^2+1)(n^2+1)} } \\
+&= 2 \frac{ (m-n)(mn+1) }{ (m^2+1)(n^2+1) }
+\end{align*}
 
 Así que:
-
-$T_{m}\left( T_{n}\left( 
+\begin{align*}
+T_{m}&\left( T_{n}\left( 
 \begin{array}{c}
 x \\ 
 y%
-\end{array}%
-\right) \right) $
-
-$=\left( 
+\end{array}
+\right) \right) = \left( 
 \begin{array}{cc}
-\frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( m^{2}+1\right) \left(
-n^{2}+1\right) } & \frac{-2m^{2}n+2mn^{2}-2m+2n}{\left( m^{2}+1\right)
-\left( n^{2}+1\right) } \\ 
-\frac{2m^{2}n-2mn^{2}+2m-2n}{\left( m^{2}+1\right) \left( n^{2}+1\right) } & 
-\frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( m^{2}+1\right) \left(
-n^{2}+1\right) }%
-\end{array}%
-\right) \left( 
-\begin{array}{c}
+\frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( m^{2}+1 \right)\left( n^{2}+1 \right)} & 
+\frac{-2m^{2}n + 2mn^{2} - 2m + 2n}{\left( m^{2}+1 \right)\left( n^{2}+1 \right)} \\[2ex]
+\frac{2m^{2}n - 2mn^{2} + 2m - 2n}{\left( m^{2}+1 \right)\left( n^{2}+1 \right)} & 
+\frac{m^{2}n^{2}-m^{2}+4mn-n^{2}+1}{\left( m^{2}+1 \right)\left( n^{2}+1 \right)}
+\end{array}
+\right)
+\begin{pmatrix}
 x \\ 
-y%
-\end{array}%
-\right)$
-
-$=\left( 
+y
+\end{pmatrix} \\[2ex]
+&= \left( 
 \begin{array}{cc}
-\frac{\left( m-n+mn+1\right) \left( -m+n+mn+1\right) }{\left( n^{2}+1\right)
-\left( m^{2}+1\right) } & \frac{-2\left( m-n\right) \left( mn+1\right) }{%
-\left( n^{2}+1\right) \left( m^{2}+1\right) } \\ 
-\frac{2\left( m-n\right) \left( mn+1\right) }{\left( n^{2}+1\right) \left(
-m^{2}+1\right) } & \frac{\left( m-n+mn+1\right) \left( -m+n+mn+1\right) }{%
-\left( n^{2}+1\right) \left( m^{2}+1\right) }%
-\end{array}%
-\right) \left( 
-\begin{array}{c}
-x \\ 
-y%
-\end{array}%
-\right) $
-
-$=\left( 
+\frac{(m-n+mn+1)(-m+n+mn+1)}{(n^{2}+1)(m^{2}+1)} & 
+\frac{-2(m-n)(mn+1)}{(n^{2}+1)(m^{2}+1)} \\[2ex]
+\frac{2(m-n)(mn+1)}{(n^{2}+1)(m^{2}+1)} & 
+\frac{(m-n+mn+1)(-m+n+mn+1)}{(n^{2}+1)(m^{2}+1)}
+\end{array}
+\right)
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix} \\[2ex]
+&= \left( 
 \begin{array}{cc}
 \cos 2\alpha & -\sin 2\alpha \\ 
-\sin 2\alpha & \cos 2\alpha%
-\end{array}%
-\right) \left( 
-\begin{array}{c}
-x \\ 
-y%
-\end{array}%
-\right) $
-
-$=R_{2\alpha }\left( 
-\begin{array}{c}
-x \\ 
-y%
-\end{array}%
-\right)$
-
+\sin 2\alpha & \cos 2\alpha
+\end{array}
+\right)
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix} \\
+&= R_{2\alpha}
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix}
+\end{align*}
 En conclusión, la composición de dos reflexiones es una rotación de ángulo $2\alpha $, donde $\alpha$ es el ángulo formado por las rectas de reflexión.
 
-\bigskip
+\paragraph{La inversa de una reflexión es ella misma}
 
-\textbf{La inversa de una reflexión es ella misma}
-
-La inversa de la reflexión respecto a la recta $y=mx,$ $T_{m}$ es ella misma, pues al componerlas nos da la identidad:
-
-$\left( T_{m}\circ T_{m}\right) \left( 
+La inversa de la reflexión respecto a la recta $y=mx$, $T_{m}$ es ella misma, pues al componerlas nos da la identidad:
+\begin{align*}
+(T_{m} & \circ T_{m}) \left( 
 \begin{array}{c}
 x \\ 
 y%
-\end{array}%
-\right) $
-
-$=\left( \frac{1}{m^{2}+1}\left( 
+\end{array}
+\right) \\
+&= \left( \frac{1}{m^{2}+1}
 \begin{array}{cc}
 1-m^{2} & 2m \\ 
-2m & m^{2}-1%
-\end{array}%
-\right) \frac{1}{m^{2}+1}\left( 
+2m & m^{2}-1
+\end{array}
+\frac{1}{m^{2}+1}
 \begin{array}{cc}
 1-m^{2} & 2m \\ 
-2m & m^{2}-1%
-\end{array}%
-\right) \right) \left( 
+2m & m^{2}-1
+\end{array}
+\right)
+\left(
 \begin{array}{c}
-x \\ 
-y%
-\end{array}%
-\right) $
-
-$=\left( 
+x \\
+y
+\end{array}
+\right) \\
+&= 
+\left(
 \begin{array}{cc}
-1 & 0 \\ 
-0 & 1%
-\end{array}%
-\right) \left( 
+1 & 0 \\
+0 & 1
+\end{array}
+\right)
+\left(
 \begin{array}{c}
-x \\ 
-y%
-\end{array}%
-\right) =\left( 
+x \\
+y
+\end{array}
+\right)
+= 
+\left(
 \begin{array}{c}
-x \\ 
-y%
-\end{array}%
-\right) $
-
+x \\
+y
+\end{array}
+\right)
+\end{align*}
 
 \begin{example}
 \begin{enumerate}
@@ -3435,7 +3368,8 @@ y%
 
 \textbf{Solución}
 
-(a) Al reflejar la curva respecto al eje $x$, reemplazamos $y$ por $-y$ en $y=-x^{2}$ y obtenemos $y=x^{2}$. Luego, al reflejar la curva respecto a la recta $y=x$, intercambiamos las variables $x$ y $y$ en $y=x^{2}$, obteniendo la ecuación $x=y^{2}$.
+\begin{enumerate}[label=(\alph*)]
+\item Al reflejar la curva respecto al eje $x$, reemplazamos $y$ por $-y$ en $y=-x^{2}$ y obtenemos $y=x^{2}$. Luego, al reflejar la curva respecto a la recta $y=x$, intercambiamos las variables $x$ y $y$ en $y=x^{2}$, obteniendo la ecuación $x=y^{2}$.
 
 En la figura~\ref{fig:placeholder3.22} se dibuja la imagen de  $y=-x^{2}$ bajo las dos reflexiones.
 
@@ -3450,9 +3384,9 @@ El ángulo entre las rectas de reflexión $y=0$ y $y=x$ es $\theta =\tan^{-1}\le
 
 Luego, la compuesta de estas dos reflexiones equivale a una rotación de $\frac{\pi }{2}$ con centro en el origen.
 
-(b) Al rotar un ángulo de $\frac{\pi }{2}$, usamos la matriz de rotación inversa:
-
-$\left( 
+\item Al rotar un ángulo de $\frac{\pi }{2}$, usamos la matriz de rotación inversa:
+\begingroup\fontsize{10pt}{12pt}\selectfont
+\[\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -3482,18 +3416,17 @@ y^{\prime}%
 y^{\prime} \\ 
 -x^{\prime}%
 \end{array}%
-\right)$
-
+\right)\]
+\endgroup
 Para graficar en un mismo sistema la curva y su imagen rotada, reemplazamos $x$ por $y$, y $y$ por $-x$ en $y=-x^{2}\,$, así la curva rotada es $-x=-y^{2}$ que equivale a $x=y^{2}$, como se ve enla figura~\ref{fig:placeholder3.23}.
+\end{enumerate}
 
 \begin{figure}[H]
     \centering
     \caption{Rotación de ángulo $\frac{\protect\pi}{2}$ de la parábola}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12T8Q.png}
+    \includegraphics[width=0.6\textwidth]{Images/SDY12T8Q.png}
     \label{fig:placeholder3.23}
 \end{figure}
-
-\bigskip
 
 \subsubsection{Dilataciones}
 
@@ -3506,16 +3439,16 @@ Una dilatación con centro en $O$ y factor de escala $c>0$ es una transformació
     \item Para cada punto $A\neq O$, $A^{\prime }$ está sobre el segmento de recta que une $O$ con $A$ y cumple que $OA^{\prime }=cOA,$ $\ d\left( 0,T\left( A\right) \right) =cd\left(O,A\right)$.
 \end{enumerate}
 
+\enlargethispage*{\baselineskip}
+
 Así que el factor de escala de la dilatación es: 
-
-$c=\frac{OA^{\prime }}{OA}$
-
+\[c=\frac{OA^{\prime }}{OA}\]
 Y la imagen de una figura bajo una dilatación es semejante a la preimagen (figura~\ref{fig:placeholder3.24}).
 
 \begin{figure}[H]
     \centering
     \caption{Dilatación con centro en $O$}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12T8R.png}
+    \includegraphics[width=0.6\textwidth]{Images/SDY12T8R.png}
     \label{fig:placeholder3.24}
 \end{figure}
 
@@ -3524,13 +3457,12 @@ Una dilatación es un agrandamiento (figura~\ref{fig:placeholder3.25}) si el fac
 \begin{figure}[H]
     \centering
     \caption{Dilatación con factor de escala maypr que 1}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12T8S.png}
+    \includegraphics[width=0.6\textwidth]{Images/SDY12T8S.png}
     \label{fig:placeholder3.25}
 \end{figure}
 
 La transformación de dilatación centrada en el origen y con factor de escala $c>0$, matricialmente tiene la forma:
-
-$\left( 
+\[\left( 
 \begin{array}{c}
 x^{\prime} \\ 
 y^{\prime}%
@@ -3555,11 +3487,9 @@ c & 0 \\
 x \\ 
 y%
 \end{array}%
-\right)$
-
-La transformación $T$ tiene inversa, por lo que se puede despejar $x$ y $y$ en términos de $x^{\prime},y^{\prime}$:
-
-$\left( 
+\right)\]
+La transformación $T$ tiene inversa, por lo que se puede despejar $x$ y $y$ en términos de $x^{\prime}$, $y^{\prime}$:
+\[\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -3569,7 +3499,7 @@ y%
 \frac{1}{c}x^{\prime} \\ 
 \frac{1}{c}y^{\prime}%
 \end{array}%
-\right) $
+\right) \]
 
 \begin{example}
 Halle la imagen de la curva $x^{2}+y^{2}=1$ por una dilatación de factor de escala $c=4$.
@@ -3579,40 +3509,33 @@ Halle la imagen de la curva $x^{2}+y^{2}=1$ por una dilatación de factor de esc
 
 Reemplazamos en la ecuación de la curva $x,y$ por $\frac{1}{4}x^{\prime},\frac{1}{%
 4}y^{\prime}$.
-
-$x^{2}+y^{2}=1$
-
-$\left( \frac{x^{\prime}}{4}\right) ^{2}+\left( \frac{y^{\prime}}{4}\right) ^{2}=1$ \
-
+\begin{align*}
+x^{2}+y^{2}&=1\\
+\left( \frac{x^{\prime}}{4}\right) ^{2}+\left( \frac{y^{\prime}}{4}\right) ^{2}&=1 \end{align*}
 Multiplicamos por $16$.
-
-$\left( x^{\prime}\right) ^{2}+\left( y^{\prime}\right) ^{2}=16$
-
+\[\left( x^{\prime}\right) ^{2}+\left( y^{\prime}\right) ^{2}=16\]
 En la figura~\ref{fig:placeholder3.26}, se dibuja la circunferencia y su imagen dilatada.
 
 \begin{figure}[H]
     \centering
     \caption{Dilatación de una circunferencia}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12T8T.png}
+    \includegraphics[width=0.6\textwidth]{Images/SDY12T8T.png}
     \label{fig:placeholder3.26}
 \end{figure}
 
 \paragraph{Toda dilatación preserva ángulos}
 
 Sea T$\left( x,y\right) =c\left( x,y\right) $ una dilatación de factor de escala $c>0.$
-
-cos$\angle \left( T\left( u\right) ,T\left( v\right) \right) =\frac{T\left(
+\begin{align*}
+\cos\angle \left( T\left( u\right) ,T\left( v\right) \right) &=\frac{T\left(
 u\right) \cdot T\left( v\right) }{\left\Vert T\left( u\right) \right\Vert
-\left\Vert T\left( v\right) \right\Vert }=\frac{cu\cdot cv}{\left\Vert
-cu\right\Vert \left\Vert cv\right\Vert }=\frac{c^{2}\left( u\cdot v\right) }{%
-c^{2}\left\Vert u\right\Vert \left\Vert v\right\Vert }=\frac{\left( u\cdot
-v\right) }{\left\Vert u\right\Vert \left\Vert v\right\Vert }=$cos$\angle
-\left( T\left( u\right) ,T\left( v\right) \right) $
-
+\left\Vert T\left( v\right) \right\Vert } \\ 
+&= \frac{cu\cdot cv}{\left\Vert cu\right\Vert \left\Vert cv\right\Vert } \\ 
+&= \frac{c^{2}\left( u\cdot v\right) }{c^{2}\left\Vert u\right\Vert \left\Vert v\right\Vert }=\frac{\left( u\cdot v\right) }{\left\Vert u\right\Vert \left\Vert v\right\Vert } \\ 
+&=\cos\angle\left( T\left( u\right) ,T\left( v\right) \right)
+\end{align*}
 Por tanto $\angle \left( Ta\left( u\right) ,T\left( v\right) \right) =\angle
 \left( u,v\right) $
-
-\bigskip
 
 \subsection{Ejercicios}
 
