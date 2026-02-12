@@ -8,10 +8,10 @@ Desde un punto de vista analítico, se muestran las transformaciones geométrica
 
 Un triángulo, como el de la figura~\ref{fig:placeholder2.20}, está formado por tres puntos no colineales conectados por segmentos. Estos puntos no colineales se denominan vértices, y los segmentos que los unen se llaman lados.
 
-\begin{figure}[H]
+\begin{figure}[t]
     \centering
     \caption{Triángulo}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12S5T.png}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12S5T.png}
     \label{fig:placeholder2.20}
 \end{figure}
 
@@ -27,7 +27,7 @@ Una mediana de un triángulo, como la mostrada en la figura~\ref{fig:placeholder
 \begin{figure}[H]
     \centering
     \caption{Mediana de un triángulo}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12S5U.png}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12S5U.png}
     \label{fig:placeholder2.21}
 \end{figure}
 
@@ -36,11 +36,9 @@ Las medianas de un triángulo son concurrentes en un punto ubicado a dos tercios
 \begin{figure}[H]
     \centering
     \caption{Concurrencia de las medianas}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12S5V.png}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12S5V.png}
     \label{fig:placeholder2.22}
 \end{figure}
-
-\bigskip
 
 \subsection{Coordenadas del baricentro}
 
@@ -50,72 +48,75 @@ b_{1},b_{2}\right) $ y $C=\left( c_{1},c_{2}\right)$, como se muestra en la figu
 \begin{figure}[H]
     \centering
     \caption{Baricentro}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12S5W.png}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12S5W.png}
     \label{fig:placeholder2.23}
 \end{figure}
 
 Sea $L_{1}$ la mediana que pasa por $A=\left( a_{1},a_{2}\right)$ y $E=\left( \frac{b_{1}+c_{1}}{2},\frac{b_{2}+c_{2}}{2}\right)$, la pendiente
 de $L_{1}$ es:
-
-\begin{center}
-$m=\frac{\frac{b_{2}+c_{2}-2a_{2}}{2}}{\frac{b_{1}+c_{1}-2a_{1}}{2}}=\frac{%
-b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}$
-\end{center}
-
-Por lo tanto, la ecuación de la recta $L_{1}$ es $\ y=\frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}\left( x-a_{1}\right) +a_{2}$.
+\[
+m=\frac{\frac{b_{2}+c_{2}-2a_{2}}{2}}{\frac{b_{1}+c_{1}-2a_{1}}{2}}=\frac{%
+b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}
+\]
+Por lo tanto, la ecuación de la recta $L_{1}$ es $y=\frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}\left( x-a_{1}\right) +a_{2}$.
 
 Sea $L_{2}$ la mediana que pasa por $B=\left( b_{1},b_{2}\right) $ y $F=\left( \frac{a_{1}+c_{1}}{2},\frac{a_{2}+c_{2}}{2}\right)$, la pendiente
 de $L_{2}$ es:
-
-$m=\frac{\frac{a_{2}+c_{2}-2b_{2}}{2}}{\frac{b_{1}+c_{1}-2a_{1}}{2}}=\frac{%
-a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}}$ \ 
-
+\[m=\frac{\frac{a_{2}+c_{2}-2b_{2}}{2}}{\frac{b_{1}+c_{1}-2a_{1}}{2}}=\frac{%
+a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}}\]
 De esto que la ecuación de la recta de $L_{2}$ es$y=\frac{a_{2}+c_{2}-2b_{2}}{%
-a_{1}+c_{1}-2b_{1}}\left( x-b_{1}\right) +b_{2}$. \ 
+a_{1}+c_{1}-2b_{1}}\left( x-b_{1}\right) +b_{2}$.
 
 El punto de intersección de las dos medianas ($L_{1}$ y $L_{2}$) se obtiene de la siguiente manera:
-
-\begin{center}
-$\frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}\left( x-a_{1}\right) +a_{2}=%
-\frac{a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}}\left( x-b_{1}\right) +b_{2}$
-\end{center}
-
-$\left( \frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}-\frac{%
-a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}}\right) x=\frac{b_{2}+c_{2}-2a_{2}}{%
-b_{1}+c_{1}-2a_{1}}a_{1}-\frac{a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}}%
-b_{1}+b_{2}-a_{2}$
-
+\begin{align*}
+    &\frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}\left( x-a_{1}\right) +a_{2}
+    = \frac{a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}}\left( x-b_{1}\right) +b_{2} \\
+    &\left( \frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}
+    - \frac{a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}} \right) x \\
+    &\hspace{3em} =
+    \frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}} a_{1}
+    - \frac{a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}} b_{1}
+    + b_{2} - a_{2}
+\end{align*}
 Se resuelve para $x$:
-
-$x=\frac{\frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}a_{1}-\frac{%
-a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}}b_{1}+b_{2}-a_{2}}{\frac{%
-b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}-\frac{a_{2}+c_{2}-2b_{2}}{%
-a_{1}+c_{1}-2b_{1}}}$
-
-$=\frac{\left( a_{1}+b_{1}+c_{1}\right) \frac{%
-a_{1}b_{2}-a_{2}b_{1}-a_{1}c_{2}+a_{2}c_{1}+b_{1}c_{2}-b_{2}c_{1}}{%
-2a_{1}^{2}-5a_{1}b_{1}+a_{1}c_{1}+2b_{1}^{2}+b_{1}c_{1}-c_{1}^{2}}}{3\frac{%
-a_{1}b_{2}-a_{2}b_{1}-a_{1}c_{2}+a_{2}c_{1}+b_{1}c_{2}-b_{2}c_{1}}{%
-2a_{1}^{2}-5a_{1}b_{1}+a_{1}c_{1}+2b_{1}^{2}+b_{1}c_{1}-c_{1}^{2}}}$
-
-$=\frac{a_{1}+b_{1}+c_{1}}{3}.$
-
+\begin{align*}
+    x &= \frac{
+        \frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}a_{1} 
+        - \frac{a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}}b_{1} 
+        + b_{2} - a_{2}
+    }{
+        \frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}} 
+        - \frac{a_{2}+c_{2}-2b_{2}}{a_{1}+c_{1}-2b_{1}}
+    } \\[2ex]
+    &= \frac{
+        \left( a_{1}+b_{1}+c_{1}\right) 
+        \dfrac{
+            a_{1}b_{2} - a_{2}b_{1} - a_{1}c_{2} + a_{2}c_{1} + b_{1}c_{2} - b_{2}c_{1}
+        }{
+            2a_{1}^{2} - 5a_{1}b_{1} + a_{1}c_{1} + 2b_{1}^{2} + b_{1}c_{1} - c_{1}^{2}
+        }
+    }{
+        3 \dfrac{
+            a_{1}b_{2} - a_{2}b_{1} - a_{1}c_{2} + a_{2}c_{1} + b_{1}c_{2} - b_{2}c_{1}
+        }{
+            2a_{1}^{2} - 5a_{1}b_{1} + a_{1}c_{1} + 2b_{1}^{2} + b_{1}c_{1} - c_{1}^{2}
+        }
+    } \\[2ex]
+    &= \frac{a_{1}+b_{1}+c_{1}}{3}
+\end{align*}
 Para obtener la coordenada $y$, reemplazamos $x=\frac{a_{1}+b_{1}+c_{1}}{3}$ en la ecuación de $L_{1}$:
-
-$y=\frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}\left( \frac{a_{1}+b_{1}+c_{1}}{3}-a_{1}\right) +a_{2}$
-
-$=\frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}\left( \frac{b_{1}-2a_{1}+c_{1}}{3}\right) +a_{2}$
-
-$=\frac{b_{2}+c_{2}-2a_{2}}{3}+a_{2}$
-
-$=\frac{a_{2}+b_{2}+c_{2}}{3}$.
+\begin{align*}
+y &= \frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}\left( \frac{a_{1}+b_{1}+c_{1}}{3}-a_{1}\right) +a_{2} \\
+  &= \frac{b_{2}+c_{2}-2a_{2}}{b_{1}+c_{1}-2a_{1}}\left( \frac{b_{1}-2a_{1}+c_{1}}{3}\right) +a_{2} \\
+  &= \frac{b_{2}+c_{2}-2a_{2}}{3}+a_{2} \\
+  &= \frac{a_{2}+b_{2}+c_{2}}{3}.
+\end{align*}
 
 Así que las coordenadas del baricentro son:
-
-\begin{center}
-$\left( \overline{x},\overline{y}\right) =\left( \frac{a_{1}+b_{1}+c_{1}}{3},%
-\frac{a_{2}+b_{2}+c_{2}}{3}\right) $
-\end{center}
+\[
+\left( \overline{x},\overline{y}\right) =\left( \frac{a_{1}+b_{1}+c_{1}}{3},%
+\frac{a_{2}+b_{2}+c_{2}}{3}\right)
+\]
 
 \subsection{Mediatrices de un triángulo}
 
@@ -124,7 +125,7 @@ Una mediatriz de un triángulo es una recta (o un segmento, rayo o plano) perpen
 \begin{figure}[H]
     \centering
     \caption{Mediatriz de un triángulo}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12S5X.png}
+    \includegraphics[width=0.4\linewidth]{Images/SDY12S5X.png}
     \label{fig:placeholder2.24}
 \end{figure}
 
@@ -133,7 +134,7 @@ Las mediatrices de los lados de un triángulo son concurrentes en un punto llama
 \begin{figure}[H]
     \centering
     \caption{Concurrencia de las mediatrices}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12S5Y.png}
+    \includegraphics[width=0.4\linewidth]{Images/SDY12S5Y.png}
     \label{fig:placeholder2.25}
 \end{figure}
 \bigskip
@@ -146,39 +147,28 @@ b_{1},b_{2}\right) $ y $C=\left( c_{1},c_{2}\right)$, que se ilustra en la figur
 \begin{figure}[H]
     \centering
     \caption{Circuncentro}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12S5Z.png}
+    \includegraphics[width=0.4\linewidth]{Images/SDY12S5Z.png}
     \label{fig:placeholder2.26}
 \end{figure}
 
 De las propiedades del circuncentro y la figura anterior, tenemos:
-
-$\overrightarrow{DG}+\overrightarrow{GF}=\overrightarrow{DF},$ $\ \ 
-\overrightarrow{DG}\cdot \overrightarrow{AB}=0,$ $\ \ \overrightarrow{GF}%
-\cdot \overrightarrow{AC}=0$
-
+\[\overrightarrow{DG}+\overrightarrow{GF}=\overrightarrow{DF}, \quad \overrightarrow{DG}\cdot \overrightarrow{AB}=0, \quad \overrightarrow{GF}\cdot \overrightarrow{AC}=0\]
 Como $\overrightarrow{DG}$ es perpendicular a $\overrightarrow{AB}$, $\overrightarrow{DG}=\alpha v$, donde $v$ es perpendicular a $\overrightarrow{AB}$
-
-$\overrightarrow{GF}\cdot \overrightarrow{AC}=0.$
-
-$\left( \overrightarrow{DF}-\overrightarrow{DG}\right) \cdot \overrightarrow{AC}=0$
-
-$\left( \overrightarrow{DF}-\alpha v\right) \cdot \overrightarrow{AC}=0$
-
-$\overrightarrow{DF}\cdot \overrightarrow{AC}-\alpha v\cdot \overrightarrow{AC}=0$, al resolver para $\alpha $ tenemos
-
-$\alpha =\frac{\overrightarrow{DF}\cdot \overrightarrow{AC}}{v\cdot 
-\overrightarrow{AC}}$ \ y
-
-$G=\overrightarrow{OG}=\overrightarrow{OD}+\overrightarrow{DG}=D+\frac{%
-\overrightarrow{DF}\cdot \overrightarrow{AC}}{v\cdot \overrightarrow{AC}}v$.
+\begin{align*}
+    \overrightarrow{GF}\cdot \overrightarrow{AC}&=0 \\
+    \left( \overrightarrow{DF}-\overrightarrow{DG}\right) \cdot \overrightarrow{AC}&=0 \\
+    \left( \overrightarrow{DF}-\alpha v\right) \cdot \overrightarrow{AC}&=0 \\
+    \overrightarrow{DF}\cdot \overrightarrow{AC}-\alpha v\cdot \overrightarrow{AC}&=0 
+\end{align*}
+Al resolver para $\alpha$ tenemos:
+\begin{align*}
+    \alpha &=\frac{\overrightarrow{DF}\cdot \overrightarrow{AC}}{v\cdot \overrightarrow{AC}} \quad \text{y} \quad G=\overrightarrow{OG} \\ 
+    &=\overrightarrow{OD}+\overrightarrow{DG} \\ 
+    &=D+\frac{\overrightarrow{DF}\cdot \overrightarrow{AC}}{v\cdot \overrightarrow{AC}}v
+\end{align*}
 
 \textbf{Fórmula para calcular el circuncentro}
-
-\begin{center}
-$G=D+\frac{\overrightarrow{DF}\cdot \overrightarrow{AC}}{v\cdot 
-\overrightarrow{AC}}v$
-\end{center}
-
+\[G=D+\frac{\overrightarrow{DF}\cdot \overrightarrow{AC}}{v\cdot \overrightarrow{AC}}v\]
 Donde $D=\frac{1}{2}\left( A+B\right) ,E=\frac{1}{2}\left( B+C\right) ,F=%
 \frac{1}{2}\left( A+C\right) $ y $v$ es perpendicular a $\overrightarrow{AB}$.
 
@@ -186,34 +176,35 @@ Donde $D=\frac{1}{2}\left( A+B\right) ,E=\frac{1}{2}\left( B+C\right) ,F=%
 Halle el circuncentro del triángulo con vértices $A=\left( -2,2\right)$, $B=\left( 6,0\right) $ y $C=\left( 4,8\right)$.
 \end{example}
 
+\enlargethispage{\baselineskip}
+
 \textbf{Solución}
 
-Se hallan los puntos medios de $D=\left( 2,1\right) ,E=\left( 5,4\right)$ y $F=\left( 1,5\right) $
-
-$\overrightarrow{DF}=\left( -1,4\right) \qquad \overrightarrow{AC}=\left(
-6,6\right) ,$ $\overrightarrow{AB}=\left( 8,-2\right) ,v=\left( 2,8\right) $
-perpendicular a $\overrightarrow{AB}.$
-
-$G=D+\frac{\overrightarrow{DF}\cdot \overrightarrow{AC}}{v\cdot 
-\overrightarrow{AC}}v$
-
-$=\left( 2,1\right) +\frac{-6+24}{12+48}\left( 2,8\right) $
-
-$=\left( 2,1\right) +\frac{3}{10}\left( 2,8\right) $
-
-$=\left( \frac{13}{5},\frac{17}{5}\right) $
-
-$=(2.6,3.4) $.
-
+Se hallan los puntos medios de $D=\left( 2,1\right)$, $E=\left( 5,4\right)$ y $F=\left( 1,5\right)$
+\[
+    \overrightarrow{DF}=\left( -1,4\right) \quad
+    \overrightarrow{AC}=\left( 6,6\right) \quad
+    \overrightarrow{AB}=\left( 8,-2\right) \quad
+    v=\left( 2,8\right)\!\text{, perpendicular a } \overrightarrow{AB}
+\]
+\begin{align*}
+G &= D+\frac{\overrightarrow{DF}\cdot \overrightarrow{AC}}{v\cdot \overrightarrow{AC}}v \\
+  &= \left( 2,1\right) +\frac{-6+24}{12+48}\left( 2,8\right) \\
+  &= \left( 2,1\right) +\frac{3}{10}\left( 2,8\right) \\
+  &= \left( \frac{13}{5},\frac{17}{5}\right) \\
+  &= (2.6,3.4)
+\end{align*}
 La gráfica del triángulo y su circuncentro se muestran en la figura~\ref{fig:placeholder2.27}.
+
 \begin{figure}[H]
     \centering
     \caption{Circuncentro del triángulo $ABC$}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12S60.png}
+    \includegraphics[width=0.4\linewidth]{Images/SDY12S60.png}
     \label{fig:placeholder2.27}
 \end{figure}
 
 \subsection{Altura de un triángulo}
+
 Una altura de un triángulo es el segmento perpendicular desde un vértice del triángulo a la recta que contiene el lado opuesto. Una altura de un triángulo puede estar dentro o fuera del triángulo, o puede ser un lado del triángulo.
 
 Tenga cuidado al construir o identificar una altura. 
@@ -229,13 +220,13 @@ En la figura~\ref{fig:placeholder2.28} se ilustran las alturas para los distinto
     \includegraphics[width=0.5\textwidth]{Images/SDY12S61.png}
     \end{array}%
     \begin{array}{c}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12S62.png}
+    \includegraphics[width=0.4\textwidth]{Images/SDY12S62.png}
     \end{array}%
     $
     
     $%
     \begin{array}{c}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12S63.png}
+    \includegraphics[width=0.35\textwidth]{Images/SDY12S63.png}
     \end{array}%
     $
     \label{fig:placeholder2.28}
@@ -252,22 +243,20 @@ Las tres rectas que contienen las alturas son concurrentes en un punto llamado e
     \caption{Ortocentro de triángulos}
     $%
     \begin{array}{c}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12S64.png}
+    \includegraphics[width=0.4\textwidth]{Images/SDY12S64.png}
     \end{array}%
     \begin{array}{c}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12S65.png}
+    \includegraphics[width=0.3\textwidth]{Images/SDY12S65.png}
     \end{array}%
     $
     
     $%
     \begin{array}{c}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12S66.png}
+    \includegraphics[width=0.35\textwidth]{Images/SDY12S66.png}
     \end{array}%
     $
     \label{fig:placeholder2.29}
 \end{figure}
-
-
 
 \subsubsection{Coordenadas del ortocentro vectorialmente}
 
@@ -276,7 +265,7 @@ Para el triángulo con vértices $A$, $B$ y $C$, que se muesta en la figura~\ref
 \begin{figure}[H]
     \centering
     \caption{Ortocentro del triángulo $ABC$}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12S67.png}
+    \includegraphics[width=0.4\textwidth]{Images/SDY12S67.png}
     \label{fig:placeholder2.30}
 \end{figure}
 
@@ -288,62 +277,46 @@ De las propiedades del ortocentro:
 Si $v$ es un vector perpendicular a $\overrightarrow{BC},$ como también $%
 \overrightarrow{AP}$ es perpendicular a $\overrightarrow{BC},$ entonces $%
 \overrightarrow{AP}=cv$.
+\begin{align*}
+\overrightarrow{PC} \cdot \overrightarrow{AB} &= 0 \\
+\left( \overrightarrow{AC} - \overrightarrow{AP} \right) \cdot \overrightarrow{AB} &= 0 \\
+\left( \overrightarrow{AC} - c v \right) \cdot \overrightarrow{AB} &= 0 \\
+\overrightarrow{AC} \cdot \overrightarrow{AB} - c v \cdot \overrightarrow{AB} &= 0 \\
+c v \cdot \overrightarrow{AB} &= \overrightarrow{AC} \cdot \overrightarrow{AB} \\
+c &= \frac{\overrightarrow{AC} \cdot \overrightarrow{AB}}{v \cdot \overrightarrow{AB}} \\
+P = \overrightarrow{OP} = \overrightarrow{OA} + \overrightarrow{AP} &= A + c v = A + \frac{\overrightarrow{AC} \cdot \overrightarrow{AB}}{v \cdot \overrightarrow{AB}} v
+\end{align*}
 
-$\overrightarrow{PC}\cdot \overrightarrow{AB}=0$
-
-$\left( \overrightarrow{AC}-\overrightarrow{AP}\right) \cdot \overrightarrow{%
-AB}=0$
-
-$\left( \overrightarrow{AC}-cv\right) \cdot \overrightarrow{AB}=0$
-
-$\overrightarrow{AC}\cdot \overrightarrow{AB}-cv\cdot \overrightarrow{AB}=0$
-
-$cv\cdot \overrightarrow{AB}=\overrightarrow{AC}\cdot \overrightarrow{AB}$
-
-$c=\frac{\overrightarrow{AC}\cdot \overrightarrow{AB}}{v\cdot 
-\overrightarrow{AB}}.$
-
-$P=\overrightarrow{OP}=\overrightarrow{OA}+\overrightarrow{AP}=A+cv=A+\frac{%
-\overrightarrow{AC}\cdot \overrightarrow{AB}}{v\cdot \overrightarrow{AB}}v$
+\enlargethispage{\baselineskip}
 
 \textbf{Fórmula para el ortocentro}
-
-\begin{center}
-$P=A+\frac{\overrightarrow{AC}\cdot \overrightarrow{AB}}{v\cdot 
-\overrightarrow{AB}}v,$ donde $v$ un vector perpendicular a $\overrightarrow{%
-BC}$
-\end{center}
-
+\[P=A+\frac{\overrightarrow{AC}\cdot \overrightarrow{AB}}{v\cdot 
+\overrightarrow{AB}}v,\quad \text{donde } v \text{ es un vector perpendicular a } \overrightarrow{BC}
+\]
 Esta fórmula para el ortocentro en coordenadas queda así:
 
 Si $A=\left( a_{1},a_{2}\right) ,B=\left( b_{1},b_{2}\right) $ y $C=\left(
-c_{1},c_{2}\right)$, tenemos que un vector perpendicular a $\overrightarrow{BC}=\left(
-c_{1}-b_{1},c_{2}-b_{2}\right) $ es $v=\left( c_{2}-b_{2},-\left(
-c_{1}-b_{1}\right) \right) $
-
-$\overrightarrow{AC}=\left( c_{1}-a_{1},c_{2}-a_{2}\right) $
-
-$\overrightarrow{AB}=\left( b_{1}-a_{1},b_{2}-a_{2}\right) $
-
-$\overrightarrow{AC}\cdot \overrightarrow{AB}=\left(
-c_{1}-a_{1},c_{2}-a_{2}\right) \cdot \left( b_{1}-a_{1},b_{2}-a_{2}\right)
-=\left( c_{1}-a_{1}\right) \left( b_{1}-a_{1}\right) +\left(
-c_{2}-a_{2}\right) \left( b_{2}-a_{2}\right) $
-
-$v\cdot \overrightarrow{AB}=\left( c_{2}-b_{2},-\left( c_{1}-b_{1}\right)
-\right) \cdot \left( b_{1}-a_{1},b_{2}-a_{2}\right) $
-
-$\qquad =\left( c_{2}-b_{2}\right) \left( b_{1}-a_{1}\right) -\left(
-c_{1}-b_{1}\right) \left( b_{2}-a_{2}\right) $
-
-$P=A+\frac{\overrightarrow{AC}\cdot \overrightarrow{AB}}{v\cdot 
-\overrightarrow{AB}}v$
-
-$=\left( a_{1},a_{2}\right) +\frac{\left( c_{1}-a_{1}\right) \left(
-b_{1}-a_{1}\right) +\left( c_{2}-a_{2}\right) \left( b_{2}-a_{2}\right) }{%
-\left( c_{2}-b_{2}\right) \left( b_{1}-a_{1}\right) -\left(
-c_{1}-b_{1}\right) \left( b_{2}-a_{2}\right) }\left( c_{2}-b_{2},-\left(
-c_{1}-b_{1}\right) \right)$
+c_{1},c_{2}\right)$, tenemos que un vector perpendicular a $\overrightarrow{BC}=\left(c_{1}-b_{1},c_{2}-b_{2}\right) $ es $v=\left( c_{2}-b_{2},-\left(
+c_{1}-b_{1}\right) \right)$.
+\begingroup\fontsize{10pt}{12pt}\selectfont
+\begin{align*}
+\overrightarrow{AC} &= \left( c_{1} - a_{1},\ c_{2} - a_{2} \right) \\
+\overrightarrow{AB} &= \left( b_{1} - a_{1},\ b_{2} - a_{2} \right) \\
+\overrightarrow{AC} \cdot \overrightarrow{AB} 
+  &= \left( c_{1} - a_{1},\ c_{2} - a_{2} \right) \cdot \left( b_{1} - a_{1},\ b_{2} - a_{2} \right) \\
+  &= \left( c_{1} - a_{1} \right) \left( b_{1} - a_{1} \right) + \left( c_{2} - a_{2} \right)\left( b_{2} - a_{2} \right) \\
+v \cdot \overrightarrow{AB} 
+  &= \left( c_{2} - b_{2},\ -\left( c_{1} - b_{1} \right) \right) \cdot \left( b_{1} - a_{1},\ b_{2} - a_{2} \right) \\
+  &= \left( c_{2} - b_{2} \right) \left( b_{1} - a_{1} \right) - \left( c_{1} - b_{1} \right) \left( b_{2} - a_{2} \right) \\
+P &= A + \frac{ \overrightarrow{AC} \cdot \overrightarrow{AB} }{ v \cdot \overrightarrow{AB} }\, v \\
+  &= \left( a_{1}, a_{2} \right)
+    + \frac{ \left( c_{1} - a_{1} \right) \left( b_{1} - a_{1} \right)
+    + \left( c_{2} - a_{2} \right) \left( b_{2} - a_{2} \right) }
+    { \left( c_{2} - b_{2} \right) \left( b_{1} - a_{1} \right)
+    - \left( c_{1} - b_{1} \right) \left( b_{2} - a_{2} \right) }
+    \left( c_{2} - b_{2},\, -\left( c_{1} - b_{1} \right) \right)
+\end{align*}
+\endgroup
 
 \begin{example}
 Halle el ortocentro del triángulo con vértices $A=\left( -1,-1\right)$, $B=\left( 6,0\right) $ y $C=\left( 3,5\right)$.
@@ -352,19 +325,16 @@ Halle el ortocentro del triángulo con vértices $A=\left( -1,-1\right)$, $B=\le
 \textbf{Solución}
 
 Aplicamos la fórmula para el ortocentro.
-
-$\overrightarrow{BC}=\left( -3,5\right) $ \ $v=\left( 5,3\right) $
-perpendicular a $\overrightarrow{BC}$.
-
-$\overrightarrow{AC}=\left( 4,6\right) ,\overrightarrow{AB}=\left(
-7,1\right) $
-
-$P=A+\frac{\overrightarrow{AC}\cdot \overrightarrow{AB}}{v\cdot 
-\overrightarrow{AB}}v=\left( -1,-1\right) +\frac{28+6}{38}\left( 5,3\right)
-=\left( \frac{66}{19},\frac{32}{19}\right) \approx \left(
-3.4737,1.684\,2\right) $
-
+\begin{align*}
+\overrightarrow{BC} &= \left( -3,5 \right) \\
+v &= \left( 5,3 \right) \ \text{perpendicular a } \overrightarrow{BC}. \\
+\overrightarrow{AC} &= \left( 4,6 \right), \quad \overrightarrow{AB} = \left( 7,1 \right) \\
+P &= A + \frac{\overrightarrow{AC}\cdot \overrightarrow{AB}}{v\cdot \overrightarrow{AB}} v \\
+  &= \left( -1,-1 \right) + \frac{28+6}{38} \left( 5,3 \right) \\
+  &= \left( \frac{66}{19},\, \frac{32}{19} \right) \approx \left( 3.4737,\, 1.6842 \right)
+\end{align*}
 En la figura~\ref{fig:placeholder2.31} se dibuja el triángulo y su ortocentro.
+
 \begin{figure}[H]
     \centering
     \caption{Ortocentro del ejemplo}
@@ -395,14 +365,10 @@ El incentro $I$ es el centro de la circunferencia que está inscrita en el triá
     \includegraphics[width=0.5\textwidth]{Images/SDY12T6A.png}
     \label{fig:placeholder2.33}
 \end{figure}
-\begin{center}
-$%
-\begin{array}{c}
-ID=IF=IE,\text{ }AB\bot ID,AC\bot IF\text{ y }CD\bot IE.%
-\end{array}%
-$
-
-\end{center}
+\vspace{-\baselineskip}
+\[
+ID=IF=IE,\ AB\bot ID,AC\bot IF\text{ y }CD\bot IE.
+\]
 
 \textbf{Área de un triángulo usando el incentro}
 
@@ -416,36 +382,26 @@ $
 Sea $ABC$ el triángulo con lados $a=BC,b=AC$ y $c=AB$, como se observa en la figura~\ref{fig:placeholder2.34}.
 
 Sabemos que $CF=CE,AF=AD,BD=BE$ \ y \ $ID=IE=IF=r$
-
-$\acute{a}rea\left( \triangle ABC\right) $
-
-$=2\acute{a}rea\left( \triangle ADI\right) +2\acute{a}rea\left( \triangle
-BDI\right) +2\acute{a}rea\left( \triangle CEI\right) $
-
-$=\frac{1}{2}\left( 2rAD+2rDB+2rEC\right) $
-
-$=\frac{r}{2}\left( AD+AF+DB+BE+EC+CF\right) $
-
-$=\frac{r\left( a+b+c\right) }{2}.$
-
-Por otro lado, si $h$ es la altura perpendicular al lado $\overline{AB},$ se tiene que
-
-$\sin A=\frac{h}{AC},$ así que:
-
-\begin{center}
-$\acute{a}rea\left( \triangle ABC\right) =\frac{1}{2}AB\ast h=\frac{1}{2}%
-\left( AB\right) \left( AC\right) \sin A=\frac{bc\sin A}{2}$
-\end{center}
-
-Luego, se cumple que: \ 
-
-\begin{center}
-$\frac{r\left( a+b+c\right) }{2}=\frac{bc\sin A}{2}.$
-\end{center}
+\begin{align*}
+\text{área}\left( \triangle ABC\right) 
+    &= 2\,\text{área}\left( \triangle ADI\right) + 2\,\text{área}\left( \triangle BDI\right) + 2\,\text{área}\left( \triangle CEI\right) \\
+    &= \frac{1}{2}\left( 2rAD + 2rDB + 2rEC \right) \\
+    &= \frac{r}{2}\left( AD + AF + DB + BE + EC + CF \right) \\
+    &= \frac{r\left( a + b + c \right) }{2}
+\end{align*}
+Por otro lado, si $h$ es la altura perpendicular al lado $\overline{AB},$ se tiene que $\sin A=\frac{h}{AC}$, así que:\pdfcomment{se unieron dos párrafos cortos para facilitar la lectura}
+\[
+\text{área}\left( \triangle ABC\right) =\frac{1}{2}AB\ast h=\frac{1}{2}%
+\left( AB\right) \left( AC\right) \sin A=\frac{bc\sin A}{2}
+\]
+Luego, se cumple que:
+\[
+\frac{r\left( a+b+c\right) }{2}=\frac{bc\sin A}{2}
+\]
 
 \textbf{Coordenadas del incentro}
 
-Sea $ABC$ el triángulo con lados $a=BC=\left\Vert \overrightarrow{BC}\right\Vert ,b=AC=\left\Vert \overrightarrow{AC}\right\Vert $ y $c=AB=\left\Vert \overrightarrow{AB}\right\Vert ,$ $P$ un punto sobre el segmento $\overline{AB}$, y $Q$ un punto sobre el segmento $\overline{AC}$, tales que $\overline{PI}$ sea paralelo a $\overline{AC}$ y $\overline{QI}$ sea paralelo a $\overline{AB}$, como se observa en la figura~\ref{fig:placeholder2.35}. \ Como $I$ es el incentro y está sobre la bisectriz del ángulo $A$, el paralelogramo $APIQ$ es un rombo. Sea $m$ la medida del lado de este rombo. El ángulo $IPD$ mide igual que el ángulo $\angle A$, así, en el triángulo rectángulo $IDP$, tenemos que $\sin A=\frac{r}{m}$.
+Sea $ABC$ el triángulo con lados $a=BC=\left\Vert \overrightarrow{BC}\right\Vert$, $b=AC=\left\Vert \overrightarrow{AC}\right\Vert$ y $c=AB=\left\Vert \overrightarrow{AB}\right\Vert$, $P$ un punto sobre el segmento $\overline{AB}$, y $Q$ un punto sobre el segmento $\overline{AC}$, tales que $\overline{PI}$ sea paralelo a $\overline{AC}$ y $\overline{QI}$ sea paralelo a $\overline{AB}$, como se observa en la figura~\ref{fig:placeholder2.35}. Como $I$ es el incentro y está sobre la bisectriz del ángulo $A$, el paralelogramo $APIQ$ es un rombo. Sea $m$ la medida del lado de este rombo. El ángulo $IPD$ mide igual que el ángulo $\angle A$, así, en el triángulo rectángulo $IDP$, tenemos que $\sin A=\frac{r}{m}$.
 
 \begin{figure}[H]
     \centering
@@ -454,45 +410,32 @@ Sea $ABC$ el triángulo con lados $a=BC=\left\Vert \overrightarrow{BC}\right\Ver
     \label{fig:placeholder2.35}
 \end{figure}
 
-Por otro lado, del área de $\triangle ABC$ se obtiene de la igualdad $\frac{r\left( a+b+c\right) }{2}=\frac{bc\sin A}{2}$.
+\enlargethispage*{\baselineskip}
 
-Reemplazando $\sin A=\frac{r}{m}$, se tiene:
-
-$r\left( a+b+c\right) =bc\frac{r}{m}$ \ y $m=\frac{bc}{a+b+c}$
-
-Consideremos los vectores unitarios en dirección de $\overrightarrow{AB}$ y $\overrightarrow{AC}$, estos son$\frac{\overrightarrow{AB}}{\left\Vert \overrightarrow{AB}\right\Vert }$ y $\frac{\overrightarrow{AC}}{\left\Vert \overrightarrow{AC}\right\Vert }$, así que:
-
-$\overrightarrow{AI}=\overrightarrow{AP}+\overrightarrow{AQ}$
-
-$=m\frac{\overrightarrow{AB}}{\left\Vert \overrightarrow{AB}\right\Vert }+m%
-\frac{\overrightarrow{AC}}{\left\Vert \overrightarrow{AC}\right\Vert }$
-
-$=m\left( \frac{\overrightarrow{AB}}{c}+\frac{\overrightarrow{AC}}{b}\right) 
-$
-
-$=\frac{bc}{a+b+c}\left( \frac{\overrightarrow{AB}}{c}+\frac{\overrightarrow{%
-AC}}{b}\right) $
-
-$=\frac{1}{a+b+c}\left( b\overrightarrow{AB}+c\overrightarrow{AC}\right) $
+Por otro lado, del área de $\triangle ABC$ se obtiene de la igualdad $\frac{r\left( a+b+c\right) }{2}=\frac{bc\sin A}{2}$. Reemplazando $\sin A=\frac{r}{m}$, se tiene:
+\[r\left( a+b+c\right) =bc\frac{r}{m} \quad \text{y} \quad m=\frac{bc}{a+b+c}\]
+Consideremos los vectores unitarios en dirección de $\overrightarrow{AB}$ y $\overrightarrow{AC}$, estos son $\frac{\overrightarrow{AB}}{\left\Vert \overrightarrow{AB}\right\Vert }$ y $\frac{\overrightarrow{AC}}{\left\Vert \overrightarrow{AC}\right\Vert }$, así que:
+\begin{align*}
+\overrightarrow{AI} 
+    &= \overrightarrow{AP}+\overrightarrow{AQ} \\ 
+    &= m\frac{\overrightarrow{AB}}{\left\Vert \overrightarrow{AB}\right\Vert }+m\frac{\overrightarrow{AC}}{\left\Vert \overrightarrow{AC}\right\Vert } = m\left( \frac{\overrightarrow{AB}}{c}+\frac{\overrightarrow{AC}}{b}\right) \\
+    &= \frac{bc}{a+b+c}\left( \frac{\overrightarrow{AB}}{c}+\frac{\overrightarrow{AC}}{b}\right) \\
+    &= \frac{1}{a+b+c}\left( b\overrightarrow{AB}+c\overrightarrow{AC}\right)
+\end{align*}
 
 Por lo tanto, las coordenadas del incentro son:
-
-$I=\overrightarrow{OI}$
-
-$=\overrightarrow{OA}+\overrightarrow{AI}$
-
-$=A+\frac{1}{a+b+c}\left( b\left( B-A\right) +c\left( C-A\right) \right) $
-
-$=\frac{aA+bA+cA+bB-bA+cC-cA}{a+b+c}$
-
-$=\frac{aA+bB+cC}{a+b+c}$
-
+\begin{align*}
+I &= \overrightarrow{OI} \\
+  &= \overrightarrow{OA} + \overrightarrow{AI} \\
+  &= A + \frac{1}{a+b+c} \left( b(B-A) + c(C-A) \right) \\
+  &= \frac{aA + bA + cA + bB - bA + cC - cA}{a+b+c} \\
+  &= \frac{aA + bB + cC}{a+b+c}
+\end{align*}
 
 \textbf{Fórmula para las coordenadas del incentro}
-
-\begin{center}
-$I=\frac{aA+bB+cC}{a+b+c}$
-\end{center}
+\[
+I=\frac{aA+bB+cC}{a+b+c}
+\]
 
 \begin{example}
 Encuentre las coordenadas del incentro del triángulo con vértices $A=\left(-1,0\right)$, $B=\left( 2,3\right)$ y $C=\left( -3,4\right)$.
@@ -501,22 +444,15 @@ Encuentre las coordenadas del incentro del triángulo con vértices $A=\left(-1,
 \textbf{Solución}
 
 Aplicamos la fórmula para el incentro $I$.
-
-$a=\left\Vert \overrightarrow{BC}\right\Vert =\left\Vert C-B\right\Vert
-=\left\Vert \left( -5,1\right) \right\Vert =\sqrt{26}$
-
-$b=\left\Vert \overrightarrow{AC}\right\Vert =\left\Vert C-A\right\Vert
-=\left\Vert \left( 2,4\right) \right\Vert =2\sqrt{5}$
-
-$c=\left\Vert \overrightarrow{AB}\right\Vert =\left\Vert B-A\right\Vert
-=\left\Vert \left( 3,3\right) \right\Vert =3\sqrt{2}$
-
-$I=\frac{aA+bB+cC}{a+b+c}$
-
-$=\frac{1}{\sqrt{26}+2\sqrt{5}+3\sqrt{2}}\left( \sqrt{26}\left( -1,0\right)
-+2\sqrt{5}\left( 2,3\right) +3\sqrt{2}\left( -3,4\right) \right) $
-
-$\approx \left( -0.64303,2.1998\right)$
+\begin{align*}
+a &= \left\Vert \overrightarrow{BC}\right\Vert = \left\Vert C-B\right\Vert = \left\Vert \left( -5,1\right) \right\Vert = \sqrt{26} \\
+b &= \left\Vert \overrightarrow{AC}\right\Vert = \left\Vert C-A\right\Vert = \left\Vert \left( 2,4\right) \right\Vert = 2\sqrt{5} \\
+c &= \left\Vert \overrightarrow{AB}\right\Vert = \left\Vert B-A\right\Vert = \left\Vert \left( 3,3\right) \right\Vert = 3\sqrt{2} \\
+I &= \frac{aA+bB+cC}{a+b+c} \\
+  &= \frac{1}{\sqrt{26}+2\sqrt{5}+3\sqrt{2}}\left( \sqrt{26}\left( -1,0\right)
+    +2\sqrt{5}\left( 2,3\right) +3\sqrt{2}\left( -3,4\right) \right) \\
+  &\approx \left( -0.64303,2.1998\right)
+\end{align*}
 
 En la figura~\ref{fig:placeholder2.36} se dibuja el triángulo y su incentro.
 \begin{figure}[H]
@@ -556,6 +492,8 @@ En la figura~\ref{fig:placeholder2.36} se dibuja el triángulo y su incentro.
     \end{enumerate}
 \end{enumerate}
 
+\clearpage
+
 \subsection{Semejanza y trigonometría}
 
 \subsubsection{Figuras semejantes}
@@ -564,14 +502,10 @@ Dos figuras geométricas semejantes tienen la misma forma, pero no necesariament
 
 \subsubsection{Polígonos semejantes}
 
-Dos polígonos son semejantes si sus ángulos miden igual y sus lados son proporcionales.
-
-En la figura~\ref{fig:placeholder2.37}, los polígonos $ABCD$ y $EFGH$ son semejantes:\ \ 
-
-\begin{center}
-$ABCD\sim EFGH$
-\end{center}
-
+Dos polígonos son semejantes si sus ángulos miden igual y sus lados son proporcionales. En la figura~\ref{fig:placeholder2.37}, los polígonos $ABCD$ y $EFGH$ son semejantes: \pdfcomment{se unieron dos párrafos cortos para facilitar la lectura}
+\[
+ABCD\sim EFGH
+\]
 \begin{figure}[H]
     \centering
     \caption{Poligonos semejantes}
@@ -580,19 +514,17 @@ $ABCD\sim EFGH$
 \end{figure}
 
 Esto implica que sus ángulos son congruentes, es decir, que miden igual:
-
-$\angle A\cong \angle E,\qquad \angle B\cong \angle F,\qquad \qquad \angle
-C\cong \angle G,\qquad \angle D\cong \angle H.$
-
+\[
+\angle A\cong \angle E,\qquad \angle B\cong \angle F,\qquad \angle
+C\cong \angle G,\qquad \angle D\cong \angle H\]
 Y sus lados son proporcionales:
-
-$\frac{AB}{EF}=\frac{BC}{FG}=\frac{CD}{GH}=\frac{AD}{EH}$
-
-Esta razón igual de los correspondientes lados es llamado el factor de escala de la semejanza.
-
-Así que, en esta semejanza, el factor de escala $c$ es el valor correspondiente a cualquiera de los cocientes:
-
-$c=\frac{AB}{EF}=\frac{BC}{FG}=\frac{CD}{GH}=\frac{AD}{EH}$
+\[
+\frac{AB}{EF}=\frac{BC}{FG}=\frac{CD}{GH}=\frac{AD}{EH}
+\]
+Esta razón igual de los correspondientes lados es llamado el factor de escala de la semejanza. Así que, en esta semejanza, el factor de escala $c$ es el valor correspondiente a cualquiera de los cocientes:\pdfcomment{se unieron dos párrafos cortos para facilitar la lectura}
+\[
+c=\frac{AB}{EF}=\frac{BC}{FG}=\frac{CD}{GH}=\frac{AD}{EH}
+\]
 
 \begin{example}
 Pruebe que los polígonos de la figura~\ref{fig:placeholder2.38} son semejantes y halle el factor de escala.
@@ -608,17 +540,11 @@ Pruebe que los polígonos de la figura~\ref{fig:placeholder2.38} son semejantes 
 \textbf{Solución}
 
 De las medidas del dibujo, se tiene:
-
-$\angle A\cong \angle E,\qquad \angle B\cong \angle F,\qquad \qquad \angle
-C\cong \angle G,\qquad \angle D\cong \angle H.$
-
+\[\angle A\cong \angle E,\qquad \angle B\cong \angle F,\qquad  \angle
+C\cong \angle G,\qquad \angle D\cong \angle H\]
 Los ángulos correspondientes a cada triángulo miden igual.
-
-$\underset{\frac{18}{54}}{\frac{AB}{EF}}=\underset{\frac{14}{42}}{\frac{BC}{%
-FG}}=\underset{\frac{8}{24}}{\frac{CD}{GH}}=\underset{\frac{16}{48}}{\frac{AD%
-}{EH}}$
-
-Asimismo, los lados son proporcionales. Por lo tanto, los polígonos son proporcionales: $ABCD\sim EFGH.$
+\[\underset{\frac{18}{54}}{\frac{AB}{EF}}=\underset{\frac{14}{42}}{\frac{BC}{FG}}=\underset{\frac{8}{24}}{\frac{CD}{GH}}=\underset{\frac{16}{48}}{\frac{AD}{EH}}\]
+Asimismo, los lados son proporcionales. Por lo tanto, los polígonos son proporcionales: $ABCD\sim EFGH$.
 
 El factor de escala de la semejanza cuando se compara del polígono pequeño al grande es $\frac{1}{3}$.
 
@@ -672,17 +598,17 @@ La altura a la hipotenusa de un triángulo rectángulo divide el triángulo en d
 
 \begin{tabular}{|l|l|}
 \hline
-Si $\triangle ABC$ es un triángulo & Entonces $\ \ \ \ \triangle ABC\sim
-\triangle ADB,$ \\ 
-rectángulo, $m\angle ABC=90\degree$ y $BD$& $\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
-\triangle ABC\sim \triangle BDC$ y \\ 
-es la altura a la hipotenusa. & $\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \triangle
-ADB\sim \triangle BDC$ \\ 
-\includegraphics[width=0.5\textwidth]{Images/SDY12T6M.png}
-&
-\includegraphics[width=0.5\textwidth]{Images/SDY12T6N.png}
-\\ \hline
+Si $\triangle ABC$ es un triángulo rectángulo, & Entonces $\triangle ABC\sim
+\triangle ADB$, \\ 
+$m\angle ABC=90\degree$ y $BD$& $\triangle ABC\sim \triangle BDC$ y \\ 
+es la altura a la hipotenusa. & $\triangle ADB\sim \triangle BDC$ \\ 
+\hline
+\includegraphics[width=0.5\textwidth]{Images/SDY12T6M.png} &
+\includegraphics[width=0.45\textwidth]{Images/SDY12T6N.png} \\ 
+\hline
 \end{tabular}
+
+\enlargethispage*{\baselineskip}
 
 \begin{example}
 \begin{enumerate}
@@ -694,62 +620,48 @@ ADB\sim \triangle BDC$ \\
 
 \textbf{Solución}
 
-(a) Calculamos los ángulos.
+\begin{enumerate}[label=(\alph*)]
+    \item Calculamos los ángulos.
+    \begin{align*}
+    m\angle BAC &= \cos ^{-1}\left( \frac{\overrightarrow{AB}\cdot \overrightarrow{%
+    AC}}{\left\Vert \overrightarrow{AB}\right\Vert \left\Vert \overrightarrow{AC}\right\Vert }\right) \\
+    &= \cos ^{-1}\left( \frac{\left( 1,2\right) \cdot \left(
+    3,-1\right) }{\left\Vert \left( 1,2\right) \right\Vert \left\Vert \left(
+    3,-1\right) \right\Vert }\right) \\
+    &= \cos ^{-1}\left( \frac{1}{10}\sqrt{2}\right) =81.870\degree
+    \end{align*}\vspace*{-\abovedisplayskip}
+    \begin{align*}
+    m\angle ACB &= \cos ^{-1}\left( \frac{\overrightarrow{CA}\cdot \overrightarrow{CB}}{\left\Vert \overrightarrow{CA}\right\Vert \left\Vert \overrightarrow{CB}\right\Vert }\right) \\
+    &= \cos ^{-1}\left( \frac{\left( -3,1\right) \cdot \left(-2,3\right) }{\left\Vert \left( -3,1\right) \right\Vert \left\Vert \left(-2,3\right) \right\Vert }\right) \\
+    &= \cos ^{-1}\left( \frac{9}{130}\sqrt{130}\right) = 37.875\degree.
+    \end{align*}
+    \begin{align*}
+    m\angle QPR &= \cos ^{-1}\left( \frac{\overrightarrow{PQ}\cdot \overrightarrow{PR}}{\left\Vert \overrightarrow{PQ}\right\Vert \left\Vert \overrightarrow{PR}\right\Vert }\right) \\
+    &= \cos ^{-1}\left( \frac{\left( 4,8\right) \cdot \left(12,-4\right) }{\left\Vert \left( 4,8\right) \right\Vert \left\Vert \left(12,-4\right) \right\Vert }\right) \\
+    &= \cos ^{-1}\left( \frac{1}{10}\sqrt{2}\right) =81.870\degree
+    \end{align*}\vspace*{-\abovedisplayskip}
+    \begin{align*}
+    m\angle PRQ &= \cos ^{-1}\left( \frac{\overrightarrow{RP}\cdot \overrightarrow{%
+    RQ}}{\left\Vert \overrightarrow{RP}\right\Vert \left\Vert \overrightarrow{RQ}%
+    \right\Vert }\right) \\
+    &= \cos ^{-1}\left( \frac{\left( -12,4\right) \cdot \left(
+    -8,12\right) }{\left\Vert \left( -12,4\right) \right\Vert \left\Vert \left(
+    -8,12\right) \right\Vert }\right) \\
+    &= \cos ^{-1}\left( \frac{9}{130}\sqrt{130}\right) =
+    37.875\degree.
+    \end{align*}
+    Así $\angle BAC\cong $ $\angle QPR$ \ y\ $\angle ACB\cong \angle PRQ$, por
+    el postulado $AA$, se tiene que $\triangle ABC$ y \ $\triangle PQR$ son semejantes.
 
-$m\angle BAC=\cos ^{-1}\left( \frac{\overrightarrow{AB}\cdot \overrightarrow{%
-AC}}{\left\Vert \overrightarrow{AB}\right\Vert \left\Vert \overrightarrow{AC}%
-\right\Vert }\right) $
+    \item El factor de escala es el cociente de dos lados correspondientes:
+    \[\frac{PQ}{AB}=\frac{\left\Vert \overrightarrow{PQ}\right\Vert }{\left\Vert 
+    \overrightarrow{AB}\right\Vert }=\frac{\left\Vert \left( 4,8\right)
+    \right\Vert }{\left\Vert \left( 1,2\right) \right\Vert }=\frac{4\left\Vert
+    \left( 1,2\right) \right\Vert }{\left\Vert \left( 1,2\right) \right\Vert }%
+    =4\]
+    En la figura~\ref{fig:placeholder2.39} se dibujan estos dos triángulos semejantes.
+\end{enumerate}
 
-$\qquad \qquad =\cos ^{-1}\left( \frac{\left( 1,2\right) \cdot \left(
-3,-1\right) }{\left\Vert \left( 1,2\right) \right\Vert \left\Vert \left(
-3,-1\right) \right\Vert }\right) $
-
-$\qquad \qquad =\cos ^{-1}\left( \frac{1}{10}\sqrt{2}\right) =81.\,870\degree$
-
-$m\angle ACB=\cos ^{-1}\left( \frac{\overrightarrow{CA}\cdot \overrightarrow{%
-CB}}{\left\Vert \overrightarrow{CA}\right\Vert \left\Vert \overrightarrow{CB}%
-\right\Vert }\right) $
-
-$\qquad \qquad =\cos ^{-1}\left( \frac{\left( -3,1\right) \cdot \left(
--2,3\right) }{\left\Vert \left( -3,1\right) \right\Vert \left\Vert \left(
--2,3\right) \right\Vert }\right) $
-
-$\qquad \qquad =$ $\cos ^{-1}\left( \frac{9}{130}\sqrt{130}\right) =$ $%
-37.\,\allowbreak 875\degree.$
-
-$m\angle QPR=\cos ^{-1}\left( \frac{\overrightarrow{PQ}\cdot \overrightarrow{%
-PR}}{\left\Vert \overrightarrow{PQ}\right\Vert \left\Vert \overrightarrow{PR}%
-\right\Vert }\right) $
-
-$\qquad \qquad =\cos ^{-1}\left( \frac{\left( 4,8\right) \cdot \left(
-12,-4\right) }{\left\Vert \left( 4,8\right) \right\Vert \left\Vert \left(
-12,-4\right) \right\Vert }\right) $
-
-$\qquad \qquad =\cos ^{-1}\left( \frac{1}{10}\sqrt{2}\right) =81.\,870\degree$
-
-$m\angle PRQ=\cos ^{-1}\left( \frac{\overrightarrow{RP}\cdot \overrightarrow{%
-RQ}}{\left\Vert \overrightarrow{RP}\right\Vert \left\Vert \overrightarrow{RQ}%
-\right\Vert }\right) $
-
-$\qquad \qquad =\cos ^{-1}\left( \frac{\left( -12,4\right) \cdot \left(
--8,12\right) }{\left\Vert \left( -12,4\right) \right\Vert \left\Vert \left(
--8,12\right) \right\Vert }\right) $
-
-$\qquad \qquad =$ $\cos ^{-1}\left( \frac{9}{130}\sqrt{130}\right) =$ $%
-37.\,\allowbreak 875\degree.$
-
-Así $\angle BAC\cong $ $\angle QPR$ \ y\ $\angle ACB\cong \angle PRQ$, por
-el postulado $AA$, se tiene que $\triangle ABC$ y \ $\triangle PQR$ son semejantes.
-
-(b) El factor de escala es el cociente de dos lados correspondientes:
-
-$\frac{PQ}{AB}=\frac{\left\Vert \overrightarrow{PQ}\right\Vert }{\left\Vert 
-\overrightarrow{AB}\right\Vert }=\frac{\left\Vert \left( 4,8\right)
-\right\Vert }{\left\Vert \left( 1,2\right) \right\Vert }=\frac{4\left\Vert
-\left( 1,2\right) \right\Vert }{\left\Vert \left( 1,2\right) \right\Vert }%
-=4$
-
-En la figura~\ref{fig:placeholder2.39} se dibujan estos dos triángulos semejantes.
 \begin{figure}[H]
     \centering
     \caption{Triángulos semejantes}
@@ -789,11 +701,9 @@ Eso quiere decir que las partes restantes en cada uno de los cuadrados de lado $
 \end{figure}
 
 En el primero, la parte restante son los cuadrados de colores azul y verde de áreas b$^{2}$ y a$^{2}$ respectivamente; en el segundo, el cuadrado amarillo de área c$^{2}$. \ Esas áreas deben ser iguales, es decir:
-
-\begin{center}
-a$^{2}+$b$^{2}=$c$^{2}$
-\end{center}
-
+\[
+\mathrm{a}^{2}+\mathrm{b}^{2}=\mathrm{c}^{2}
+\]
 Ahora se presenta una prueba analítica con semejanza de triángulos.
 
 Consideremos el triángulo con vértices $ABC$.
@@ -801,7 +711,7 @@ Consideremos el triángulo con vértices $ABC$.
 \begin{figure}[H]
     \centering
     \caption{Altura a la hipotenusa}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12T6S.png}
+    \includegraphics[width=0.4\textwidth]{Images/SDY12T6S.png}
     \label{fig:placeholder2.42}
 \end{figure}
 
@@ -831,13 +741,9 @@ Por lo tanto, \ $\left( AB\right) ^{2}+\left( BC\right) ^{2}=\left( AC\right)
 Una tripla pitagórica es una terna $(x,y,z)$ de números enteros positivos, tales que $x^{2}+y^{2}=z^{2}.$
 
 Las triplas pitagóricas son de la forma $(m^{2}-n^{2},2mn,m^{2}+n^{2})$, donde $m,n $ son enteros con $m>n$, pues se satisface la identidad pitagórica:
-
-$\left( m^{2}-n^{2}\right) ^{2}+\left( 2mn\right) ^{2}=\left(
-m^{2}+n^{2}\right) ^{2}$
-
-El recíproco del teorema de Pitágoras es válido:
-
-Sean $a,b,c$ los lados de un triángulo donde $c$ es el lado más grande, se cumple:
+\[\left( m^{2}-n^{2}\right) ^{2}+\left( 2mn\right) ^{2}=\left(
+m^{2}+n^{2}\right) ^{2}\]
+El recíproco del teorema de Pitágoras es válido. Sean $a,b,c$ los lados de un triángulo donde $c$ es el lado más grande, se cumple:\pdfcomment{Se juntaron dos párrafos cortos en uno.}
 \begin{enumerate}
     \item Si $c^{2}=a^{2}+b^{2},$ el triángulo es rectángulo.
     \item Si $c^{2}>a^{2}+b^{2},$ el triángulo es obtusángulo.
@@ -845,6 +751,8 @@ Sean $a,b,c$ los lados de un triángulo donde $c$ es el lado más grande, se cum
 \end{enumerate}
 
 \subsection{Relaciones trigonométricas para un ángulo en un triángulo rectángulo}
+
+\enlargethispage*{\baselineskip}
 
 Al fijar un ángulo $\alpha $\ en un triángulo rectángulo, los catetos quedan clasificados en cateto opuesto \ $co$ \ y cateto adyacente $ca$, como se observa en la figura~\ref{fig:placeholder2.43}. 
 
@@ -856,63 +764,48 @@ Al fijar un ángulo $\alpha $\ en un triángulo rectángulo, los catetos quedan 
 \end{figure}
 
 Existen seis formas diferentes de establecer razones entre dos de los lados de un triángulo rectángulo. Estas son:
-
-$\sin \alpha =\frac{co}{h}$ $\ \ \ \qquad \cos \alpha =\frac{ca}{h}\qquad $\ 
-$\ \ \ \ \tan \alpha =\frac{co}{ca}\qquad $\ $\ \ \ $
-
-$\cot \alpha =\frac{ca}{co}\qquad $\ $\ \ \ \sec \alpha =\frac{h}{ca}\qquad $%
-\ $\ \ \ \csc \alpha =\frac{h}{co}$
-
-A partir de la definición de las relaciones trigonométricas, se obtienen las siguientes identidades:
-
-$\frac{\sin \alpha }{\cos \alpha }=\frac{\frac{co}{h}}{\frac{ca}{h}}=\frac{co%
-}{ca}=\tan \alpha .$
-
-$\frac{\cos \alpha }{\sin \alpha }=\frac{\frac{ca}{h}}{\frac{co}{h}}=\frac{ca%
-}{co}=\frac{1}{\tan \alpha }=\cot \alpha .a$
-
-$\frac{1}{\sin \alpha }=\frac{h}{co}=\csc \alpha $
-
-$\frac{1}{\cos \alpha }=\frac{h}{ca}=\sec \alpha $
-
-$\sin ^{2}\alpha +\cos ^{2}\alpha =\left( \frac{co}{h}\right) ^{2}+\left( 
-\frac{ca}{h}\right) ^{2}=\frac{\left( co\right) ^{2}+\left( ca\right) ^{2}}{%
-h^{2}}=\frac{h^{2}}{h^{2}}=1$
+\begin{align*}
+    \sin \alpha =\frac{co}{h}   \hspace{2cm} & \cos \alpha =\frac{ca}{h}   \hspace{2cm} & \tan \alpha =\frac{co}{ca} \\
+    \cot \alpha =\frac{ca}{co}  \hspace{2cm} & \sec \alpha =\frac{h}{ca}   \hspace{2cm} & \csc \alpha =\frac{h}{co}
+\end{align*}
+A partir de la definición de las relaciones trigonométricas, se obtienen las siguientes identidades:\pdfcomment{Revisar la ecuación de la segunda identidad. `cot α.a`? parece incorrecto. Creo que es `α·a` no `α.a`}
+\begin{align*}
+\frac{\sin \alpha }{\cos \alpha } &= \frac{\frac{co}{h}}{\frac{ca}{h}} = \frac{co}{ca} = \tan \alpha . \\
+\frac{\cos \alpha }{\sin \alpha } &= \frac{\frac{ca}{h}}{\frac{co}{h}} = \frac{ca}{co} = \frac{1}{\tan \alpha } = \cot \alpha .a \\
+\frac{1}{\sin \alpha } &= \frac{h}{co} = \csc \alpha \\
+\frac{1}{\cos \alpha } &= \frac{h}{ca} = \sec \alpha 
+\end{align*}
+\[\sin ^{2}\alpha + \cos ^{2}\alpha = \left( \frac{co}{h}\right) ^{2} + \left( \frac{ca}{h}\right) ^{2} = \frac{\left( co\right) ^{2}+\left( ca\right) ^{2}}{h^{2}} = \frac{h^{2}}{h^{2}} = 1\]
 
 \subsubsection{Valores de seno y coseno para algunos ángulos}
 
-A partir del triángulo de la figura~\ref{fig:placeholder2.44}, se obtienen los valores de seno, coseno, tangente, cotangente secante y cosecante del ángulo de 45 grados.
+\enlargethispage*{\baselineskip}
 
+A partir del triángulo de la figura~\ref{fig:placeholder2.44}, se obtienen los valores de seno, coseno, tangente, cotangente secante y cosecante del ángulo de 45 grados.
 \begin{figure}[H]
     \centering
     \caption{Triángulo rectángulo isóceles}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12T6U.png}
+    \includegraphics[width=0.4\textwidth]{Images/SDY12T6U.png}
     \label{fig:placeholder2.44}
 \end{figure}
-
-$\sin 45\degree=\frac{1}{\sqrt{2}}=\frac{\sqrt{2}}{2},$ $\cos 45\degree=\frac{1}{%
-\sqrt{2}}=\frac{\sqrt{2}}{2},$
-
-$\tan 45\degree=1=\cot 45\degree,$ $\sec 45\degree=\sqrt{2}=\csc 45\degree$
-\\
+\vspace*{-1.5cm}
+\begin{align*}
+    \sin 45\degree  & = \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2}  &  \cos 45\degree  & = \frac{1}{\sqrt{2}} = \frac{\sqrt{2}}{2} \\
+    \tan 45\degree  & = 1 = \cot 45\degree                       &  \sec 45\degree  & = \sqrt{2} = \csc 45\degree
+\end{align*}
 Igualmente, del triángulo de la figura~\ref{fig:placeholder2.45} se deduce:
-
+\begin{align*}
+\sen 30\degree   &= \frac{1}{2}                & \cos 30\degree   &= \frac{\sqrt{3}}{2}             & \tan 30\degree   &= \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3} \\
+\cot 30\degree   &= \sqrt{3}                   & \sec 30\degree   &= \frac{2\sqrt{3}}{3}            & \csc 30\degree   &= 2 \\
+\cos 60\degree   &= \frac{1}{2}                & \sen 60\degree   &= \frac{\sqrt{3}}{2}             & \cot 60\degree   &= \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3} \\
+\tan 60\degree   &= \sqrt{3}                   & \csc 60\degree   &= \frac{2\sqrt{3}}{3}            & \sec 60\degree   &= 2
+\end{align*}
 \begin{figure}[H]
     \centering
     \caption{Triángulo rectángulo con ángulos de 30 y 60 grados}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12T6V.png}
+    \includegraphics[width=0.4\textwidth]{Images/SDY12T6V.png}
     \label{fig:placeholder2.45}
 \end{figure}
-
-$\sen 30\degree=\frac{1}{2},\cos 30\degree=\frac{\sqrt{3}}{2},\tan 30\degree=\frac{1}{%
-\sqrt{3}}=\frac{\sqrt{3}}{3},$
-
-$\cot 30\degree=\sqrt{3},\sec 30\degree=\frac{2\sqrt{3}}{3},\csc 30\degree=2$
-
-$\cos 60\degree=\frac{1}{2},\sen 60\degree=\frac{\sqrt{3}}{2},\cot 60\degree=\frac{1}{%
-\sqrt{3}}=\frac{\sqrt{3}}{3},$
-
-$\tan 60\degree=\sqrt{3},\csc 60\degree=\frac{2\sqrt{3}}{3},\sec 60\degree=2$\\
 
 \subsubsection{Funciones trigonométricas de todos los ángulos}
 
@@ -925,16 +818,12 @@ Para cualquier ángulo $\alpha ,$ medido en radianes, la pareja (cos$\alpha ,$se
     \label{fig:placeholder2.46}
 \end{figure}
 
-De esta forma, se establece una correspondencia biúnivoca entre los puntos de la circunferencia unitaria y el conjunto de puntos de la forma $(\cos \alpha
-,\sin \alpha )$ para $\alpha \in \lbrack 0,2\pi)$.
+De esta forma, se establece una correspondencia biúnivoca entre los puntos de la circunferencia unitaria y el conjunto de puntos de la forma $(\cos \alpha,\sin \alpha )$ para $\alpha \in [0,2\pi)$. 
 
-Así, para cada ángulo $\alpha $, el punto $(\cos \alpha ,\sin \alpha )$
-satisface $\cos ^{2}\alpha +\sin ^{2}\alpha =1.$
+Así, para cada ángulo $\alpha $, el punto $(\cos \alpha ,\sin \alpha )$ satisface $\cos ^{2}\alpha +\sin ^{2}\alpha =1$.
 
-\paragraph{Los signos de las funciones trigonométricas en los diferentes cuadrantes son:}
-
-\begin{center}
-$%
+Los signos de las funciones trigonométricas en los diferentes cuadrantes son:
+\[
 \begin{array}{lcccc}
 & \text{I cuadrante} & \text{II cuadrante} & \text{III cuadrante} & \text{IV
 cuadrante} \\ 
@@ -945,26 +834,18 @@ cuadrante} \\
 \text{secante} & + & - & - & + \\ 
 \text{cosecante} & + & + & - & -%
 \end{array}%
-$
-\end{center}
-
-\bigskip
-
+\]
 Para calcular las funciones trigonométricas de un ángulo de cualquier cuadrante, es suficiente conocer los valores del primer cuadrante y usar las transformaciones:
-
-\begin{center}
-$%
+\[
 \begin{array}{ll}
 \text{Si }\alpha \text{\ está en el segundo cuadrante,} & \text{cambiar }%
-\alpha \text{\ por }90\degree-\alpha \text{ \ } \\ 
-\text{Si }\alpha \text{\ está en el tercer cuadrante, \ \ \ } & \text{cambiar 
+\alpha \text{\ por }90\degree-\alpha \\ 
+\text{Si }\alpha \text{\ está en el tercer cuadrante,} & \text{cambiar 
 }\alpha \text{\ por }\alpha -180\degree \\ 
-\text{Si }\alpha \text{\ está en el cuarto cuadrante, \ \ \ } & \text{cambiar 
-}\alpha \text{\ por }360\degree-\alpha%
+\text{Si }\alpha \text{\ está en el cuarto cuadrante,} & \text{cambiar 
+}\alpha \text{ por }360\degree-\alpha%
 \end{array}%
-$
-\end{center}
-
+\]
 Estas fórmulas se podrán verificar con las identidades de la suma para seno y coseno.
 
 En la la figura~\ref{fig:placeholder2.47}, se ilustran las identidades por las cuales la función coseno es par y la función seno es impar:
@@ -976,11 +857,12 @@ En la la figura~\ref{fig:placeholder2.47}, se ilustran las identidades por las c
     \label{fig:placeholder2.47}
 \end{figure}
 
-$\bigskip \sin (-\alpha )=-\sin \alpha \qquad \qquad \cos (-\alpha )=\cos
-\alpha $
+\[\sin (-\alpha )=-\sin \alpha \quad \cos (-\alpha )=\cos\alpha \]
 
 \paragraph{Teorema del seno}
+
 En cualquier triángulo,como el de la figura~\ref{fig:placeholder2.48}, los lados y ángulos satisfacen:
+\[\frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}\]
 
 \begin{figure}[H]
     \centering
@@ -988,11 +870,9 @@ En cualquier triángulo,como el de la figura~\ref{fig:placeholder2.48}, los lado
     \includegraphics[width=0.5\textwidth]{Images/SDY12T6Y.png}
     \label{fig:placeholder2.48}
 \end{figure}
-\begin{center}
- $\frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}$   
-\end{center}
 
-\textbf{Demostración} \\
+\textbf{Demostración}
+
 Se verificará la primera igualdad, ya que las demás se obtienen al renombrar las variables.
 \begin{figure}[H]
     \centering
@@ -1001,14 +881,12 @@ Se verificará la primera igualdad, ya que las demás se obtienen al renombrar l
     \label{fig:placeholder2.49}
 \end{figure}
 De la figura~\ref{fig:placeholder2.49} se deduce:
-
-$\sin A=\frac{h}{b}\qquad \sin B=\frac{h}{a},$ \ \ \ luego \ $b\sin A=a\sin
-B $ \ \ \ y \ \ \ $\frac{\sin A}{a}=\frac{\sin B}{b}.$
-
-\bigskip
+\[\sin A=\frac{h}{b}\quad \sin B=\frac{h}{a}, \quad \text{luego} \quad b\sin A=a\sin B \quad \text{y} \quad \frac{\sin A}{a}=\frac{\sin B}{b}\]
 
 \paragraph{Teorema del coseno}
+
 En cualquier triángulo, como el de la figura~\ref{fig:placeholder2.50}, los lados y ángulos satisfacen:
+\[c^{2}=a^{2}+b^{2}-2ab\cos C \quad a^{2}=b^{2}+c^{2}-2bc\cos A \quad b^{2}=a^{2}+c^{2}-2ac\cos B\]
 
 \begin{figure}[H]
     \centering
@@ -1016,9 +894,6 @@ En cualquier triángulo, como el de la figura~\ref{fig:placeholder2.50}, los lad
     \includegraphics[width=0.5\textwidth]{Images/SDY12T70.png}
     \label{fig:placeholder2.50}
 \end{figure}
-
-$c^{2}=a^{2}+b^{2}-2ab\cos C$ \ $\ \ \ a^{2}=b^{2}+c^{2}-2bc\cos A\qquad
-b^{2}=a^{2}+c^{2}-2ac\cos B$
 
 \textbf{Demostración}
 
@@ -1031,35 +906,28 @@ Se verificará la tercera igualdad, ya que las demás se obtienen al renombrar l
     \label{fig:placeholder2.51}
 \end{figure}
 
-
 Si se aplica el teorema de Pitágoras en cada uno de los triángulos interiores de la figura~\ref{fig:placeholder2.51}, se tiene:
-
-$a^{2}-c_{1}^{2}=h^{2}\qquad b^{2}-(c_{2})^{2}=h^{2}$
-
-Al reemplazar $c$ por $c-c_{1}$ e igualar $h^{2}$,resulta:
-
-$a^{2}-(c_{1})^{2}=b^{2}-(c-c_{1})^{2}$
-
+\[a^{2}-c_{1}^{2}=h^{2} \quad b^{2}-(c_{2})^{2}=h^{2}\]
+Al reemplazar $c$ por $c-c_{1}$ e igualar $h^{2}$, resulta:
+\[a^{2}-(c_{1})^{2}=b^{2}-(c-c_{1})^{2}\]
 Si se simplifican los términos:
-
-$a^{2}-(c_{1})^{2}=b^{2}-c^{2}-c_{1}^{2}+2cc_{1}$
-
+\[a^{2}-(c_{1})^{2}=b^{2}-c^{2}-c_{1}^{2}+2cc_{1}\]
 Usando la relación del coseno en el triángulo rectángulo de la izquierda, se tiene que $c_{1}=a\cos B$, y reemplazando, se obtiene:
-
-$a^{2}=b^{2}-c^{2}+2ca\cos B$
-
+\[a^{2}=b^{2}-c^{2}+2ca\cos B\]
 Lo que equivale a:
-
-$b^{2}=a^{2}+c^{2}-2ac\cos B$
-
+\[b^{2}=a^{2}+c^{2}-2ac\cos B\]
 
 \subsubsection{Identidades trigonométricas}
 
-\textbf{Identidades iniciales}
+\vspace{\baselineskip}
 
-$\tan \theta =\frac{sen\theta }{\cos \theta }\qquad \cot \theta =\frac{\cos
-\theta }{\sin \theta }=\frac{1}{\tan \theta }\qquad \sec \theta =\frac{1}{%
-\cos \theta }\qquad \csc \theta =\frac{1}{\sin \theta }$\\
+\paragraph{Identidades iniciales}
+
+\vspace*{-\baselineskip}
+
+\[\tan \theta =\frac{sen\theta }{\cos \theta } \quad \cot \theta =\frac{\cos
+\theta }{\sin \theta }=\frac{1}{\tan \theta } \quad \sec \theta =\frac{1}{
+\cos \theta } \quad \csc \theta =\frac{1}{\sin \theta }\]
 
 Las siguientes identidades se satisfacen para cada $x,y\in \mathbb{R}$:
 
@@ -1079,9 +947,10 @@ Las siguientes identidades se satisfacen para cada $x,y\in \mathbb{R}$:
     \item $\cos x=\sqrt{\frac{1+\cos \left( 2x\right) }{2}},$ si $-\frac{\pi }{2}\leq x\leq \frac{\pi }{2}$
 \end{enumerate}
 
+\bigskip
+
 \textbf{Demostración}
 
-1.
 \begin{figure}[H]
     \centering
     \caption{coseno de una suma}
@@ -1089,132 +958,102 @@ Las siguientes identidades se satisfacen para cada $x,y\in \mathbb{R}$:
     \label{fig:placeholder2.52}
 \end{figure}
 
-De la figura~\ref{fig:placeholder2.52}, se tiene que:
+\begin{enumerate}
+\setlength\itemsep{1.1em}
+\item De la figura~\ref{fig:placeholder2.52}, se tiene que:
+\begin{align*}
+&d\left( P,Q\right) ^{2}=d\left( R,S\right) ^{2} \\
+&d((\cos x,\sin x),(\cos y,\sin y))^{2}=d((\cos (x-y),\sin (x-y)),(1,0))^{2} \\
+&(\cos x-\cos y)^{2}+(\sin x-\sin y)^{2}=(\cos (x-y)-1)^{2}+\sin ^{2}(x-y) \\
+&\cos ^{2}x-2\cos x\cos y+\cos ^{2}y+\sin ^{2}x-2\sin x\sin y+\sin ^{2}y \\
+&\hspace{2.8cm} =\cos ^{2}(x-y)-2\cos (x-y)+1+\sin ^{2}(x-y) \\
+&2-2\cos x\cos y-2\sin x\sin y=2-2\cos (x-y) \\
+&\cos (x-y)=\cos x\cos y+\sin x\sin y
+\end{align*}
 
-$d\left( P,Q\right) ^{2}=d\left( R,S\right) ^{2}$
+\item $\cos (-x)=\cos (0-x)=\cos 0\cos x+\sin 0\sin x=\cos x$
 
-$d((\cos x,\sin x),(\cos y,\sin y))^{2}=d((\cos (x-y),\sin (x-y)),(1,0))^{2}$
-
-$(\cos x-\cos y)^{2}+(\sin x-\sin y)^{2}=(\cos (x-y)-1)^{2}+\sin ^{2}(x-y)$
-
-$%
-\begin{array}{c}
-\cos ^{2}x-2\cos x\cos y+\cos ^{2}y+\sin ^{2}x-2\sin x\sin y+\sin ^{2}y \\ 
-\text{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }=\cos ^{2}(x-y)-2\cos (x-y)+1+\sin
-^{2}(x-y)%
-\end{array}%
-$
-
-$2-2\cos x\cos y-2\sin x\sin y=2-2\cos (x-y)$
-
-$\cos (x-y)=\cos x\cos y+\sin x\sin y.$
-
-\bigskip
-
-2. $\ \cos (-x)=\cos (0-x)=\cos 0\cos x+\sin 0\sin x=\cos x$
-
-\bigskip
-
-3. $\cos (\frac{\pi }{2}-x)=\cos \frac{\pi }{2}\cos x+\sin \frac{\pi }{2}%
+\item $\cos (\frac{\pi }{2}-x)=\cos \frac{\pi }{2}\cos x+\sin \frac{\pi }{2}%
 \sin x=\sin x$
 
-\bigskip
+\item $\sin (\frac{\pi }{2}-x)=\cos (\frac{\pi }{2}-(\frac{\pi }{2}-x))=\cos x$
 
-4. $\sin (\frac{\pi }{2}-x)=\cos (\frac{\pi }{2}-(\frac{\pi }{2}-x))=\cos x$
+\item $\sin (x+y)=\cos ((\frac{\pi }{2}-x)-y$)
 
-\bigskip
-
-5. $\sin (x+y)=\cos ((\frac{\pi }{2}-x)-y$)
-
-$\qquad \qquad \qquad =\cos (\frac{\pi }{2}-x)\cos y+\sin (\frac{\pi }{2}%
+$\phantom{\sin (x+y)} =\cos (\frac{\pi }{2}-x)\cos y+\sin (\frac{\pi }{2}%
 -x)\sin y$
 
-$\qquad \qquad \qquad =\sin x\cos y+\sin (\frac{\pi }{2}-x)\sin y$
+$\phantom{\sin (x+y)} =\sin x\cos y+\sin (\frac{\pi }{2}-x)\sin y$
 
-$\qquad \qquad \qquad =\sin x\cos y$+$\cos x\sin y$
+$\phantom{\sin (x+y)} =\sin x\cos y+\cos x\sin y$
 
-$\qquad \qquad \qquad =\sin x\cos y+\sin y\cos x$
+$\phantom{\sin (x+y)} =\sin x\cos y+\sin y\cos x$
 
-\bigskip
+\item $\cos (\pi -x)=\cos (x-\pi $)
 
-6. $\cos (\pi -x)=\cos (x-\pi $)
+$\phantom{\cos (\pi -x)} =\cos x\cos \pi +\sin x\sin \pi $
 
-$\qquad \qquad \qquad =\cos x\cos \pi +\sin x\sin \pi $
+$\phantom{\cos (\pi -x)} =-\cos x$
 
-$\qquad \qquad \qquad =-\cos x$
+\item $\sin (-x)=\cos (\frac{\pi }{2}+x)=\cos (\pi -(\frac{\pi }{2}-x))$
 
-\bigskip
+$\phantom{\sin (-x)} =-\cos (\frac{\pi }{2}-x)$
 
-7. $\sin (-x)=\cos (\frac{\pi }{2}+x)=\cos (\pi -(\frac{\pi }{2}-x))$
+$\phantom{\sin (-x)} =-\sin (x)$
 
-$\qquad \qquad \qquad \qquad \qquad =-\cos (\frac{\pi }{2}-x)$
+\item $\cos (x+y)=\cos (x-(-y))$
 
-$\qquad \qquad \qquad \qquad \qquad =-\sin (x)$
+$\phantom{\cos (x+y)} =\cos x\cos (-y)+\sin x\sin (-y)$
 
-\bigskip
+$\phantom{\cos (x+y)} =\cos x\cos y-\sin x\sin y$
 
-8. $\cos (x+y)=\cos (x-(-y))$
+\item $\sin (x-y)=\sin (x+(-y))$
 
-$\qquad \qquad \qquad =\cos x\cos (-y)+\sin x\sin (-y)$
+$\phantom{\sin (x-y)} =\sin x\cos (-y)+\sin (-y)\cos x$
 
-$\qquad \qquad \qquad =\cos x\cos y-\sin x\sin y$
+$\phantom{\sin (x-y)} =\sin x\cos y-\sin y\cos x$
 
-$\bigskip $
+\item $\sin 2x=\sin (x+x)=2\sin x\cos x$
 
-9. $\sin (x-y)=\sin (x+(-y))$
+\item $\cos 2x=\cos (x+x)$
 
-$\qquad \qquad \qquad =\sin x\cos (-y)+\sin (-y)\cos x$
+$\phantom{\cos 2x} =\cos x\cos x-\sin x\sin x$
 
-$\qquad \qquad \qquad =\sin x\cos y-\sin y\cos x$
+$\phantom{\cos 2x} =\cos ^{2}x-\sin ^{2}x$
 
-$\bigskip $
+\item $\cos 2x=\cos ^{2}x-\sin ^{2}x$
 
-10. $\sin 2x=\sin (x+x)=2\sin x\cos x$
+$\phantom{\cos 2x}\rightarrow \cos 2x=1-\sin ^{2}x-\sin ^{2}x$
 
-$\bigskip $
+$\phantom{\cos 2x}\rightarrow 2\sin ^{2}x=1-\cos 2x$
 
-11. $\cos 2x=\cos (x+x)$
+$\phantom{\cos 2x}\rightarrow \sin ^{2}x=\frac{1-\cos 2x}{2}$
 
-$\qquad \qquad =\cos x\cos x-\sin x\sin x$
+$\sin x=\sqrt{\frac{1-\cos \left( 2x\right) }{2}}$, si $0\leq x\leq \pi$
 
-$\qquad \qquad =\cos ^{2}x-\sin ^{2}x$
+\item $\cos ^{2}x-\sin ^{2}x=\cos 2x$
 
-\bigskip
+$\phantom{\cos ^{2}x-\sin ^{2}x}\rightarrow \cos ^{2}x-\left( 1-\cos ^{2}x\right) =\cos 2x$
 
-12. $\cos 2x=\cos ^{2}x-\sin ^{2}x$
+$\phantom{\cos ^{2}x-\sin ^{2}x}\rightarrow 2\cos ^{2}x=1+\cos 2x$
 
-$\rightarrow \cos 2x=1-\sin ^{2}x-\sin ^{2}x$
-
-$\rightarrow 2\sin ^{2}x=1-\cos 2x$
-
-$\rightarrow \sin ^{2}x=\frac{1-\cos 2x}{2}$
-
-$\sin x=\sqrt{\frac{1-\cos \left( 2x\right) }{2}},$ si $0\leq x\leq \pi $
-
-\bigskip
-
-13. $\cos ^{2}x-\sin ^{2}x=\cos 2x$
-
-$\rightarrow \cos ^{2}x-\left( 1-\cos ^{2}x\right) =\cos 2x$
-
-$\rightarrow 2\cos ^{2}x=1+\cos 2x$
-
-$\rightarrow \cos ^{2}x=\frac{1+\cos 2x}{2}$
+$\phantom{\cos ^{2}x-\sin ^{2}x}\rightarrow \cos ^{2}x=\frac{1+\cos 2x}{2}$
 
 $\cos x=\sqrt{\frac{1+\cos \left( 2x\right) }{2}},$ si $-\frac{\pi }{2}\leq
 x\leq \frac{\pi }{2}$
-
-\bigskip
+\end{enumerate}
 
 \subsection{Área de un triángulo a partir de las longitudes de sus lados}
 
 \subsubsection{Fórmula de Herón}
 
+\enlargethispage*{\baselineskip}
+
 Dado un triángulo $ABC$, con lados $a$,$b$ y $c$ dados, la fórmula usual para el área del triángulo, que es la mitad de la base por la altura, no permite calcular el área directamente a partir de las longitudes de los lados. 
 
 Sin embargo, existe una fórmula para calcular el área del triángulo usando únicamente las longitudes de los lados. Esta es la llamada fórmula de Herón, que probaremos a continuación.
 
-Llamemos $u$ a una parte de la base $b$ del triángulo, determinada por la intersección de esta con la altura, de forma que la otra parte será $b-u$, como en la siguiente imagen.
+Llamemos $u$ a una parte de la base $b$ del triángulo, determinada por la intersección de esta con la altura, de forma que la otra parte será $b-u$, como en la figura~\ref{fig:placeholder2.53}.
 
 \begin{figure}[H]
     \centering
@@ -1224,54 +1063,36 @@ Llamemos $u$ a una parte de la base $b$ del triángulo, determinada por la inter
 \end{figure}
 
 Al aplicar el teorema de Pitágoras a los dos triángulos rectángulos determinados por la altura $h$, de la figura~\ref{fig:placeholder2.53}, se obtiene:
-
-$h^{2}=c^{2}-u^{2}$ \ y \ $h^{2}=a^{2}-\left( b-u\right) ^{2}$ \ 
-
+\[h^{2}=c^{2}-u^{2} \quad \text{y} \quad h^{2}=a^{2}-\left( b-u\right) ^{2}\]
 Al igualar $h^{2}$:
-
-$a^{2}-\left( b-u\right) ^{2}=c^{2}-u^{2}$
-
-$a^{2}-b^{2}+2bu-u^{2}=c^{2}-u^{2}$
-
-$u=\frac{b^{2}+c^{2}-a^{2}}{2b}$
-
+\begin{align*}
+a^{2}-\left( b-u\right) ^{2} &= c^{2}-u^{2} \\
+a^{2}-b^{2}+2bu-u^{2} &= c^{2}-u^{2} \\
+u &= \frac{b^{2}+c^{2}-a^{2}}{2b}
+\end{align*}
 Si se reemplaza en $h^{2}=c^{2}-u^{2}$, se obtiene:
-
-$h^{2}=c^{2}-\left( \frac{\left( b^{2}+c^{2}-a^{2}\right) ^{2}}{2b}\right)
-^{2}$
-
-$=\frac{4b^{2}c^{2}-\left( b^{2}+c^{2}-a^{2}\right) ^{2}}{4b^{2}}$
-
-$=\frac{\left( 2bc+b^{2}+c^{2}-a^{2}\right) \left(
-2bc-b^{2}-c^{2}+a^{2}\right) }{4b^{2}}$
-
-$=\frac{\left( \left( b+c\right) ^{2}-a^{2}\right) \left( a^{2}-\left(
-b-c\right) ^{2}\right) }{4b^{2}}$
-
-$h^{2}=\frac{\left( b+c+a\right) \left( b+c-a\right) \left( a+b-c\right)
-\left( a-b+c\right) }{4b^{2}}$
-
-De donde $\ h=\frac{\sqrt{\left( b+c+a\right) \left( b+c-a\right) \left(
+\begin{align*}
+h^{2} 
+&= c^{2} - \left( \frac{(b^{2} + c^{2} - a^{2})^{2}}{2b} \right)^{2} \\
+&= \frac{4b^{2}c^{2} - (b^{2} + c^{2} - a^{2})^{2}}{4b^{2}} \\
+&= \frac{(2bc + b^{2} + c^{2} - a^{2}) (2bc - b^{2} - c^{2} + a^{2})}{4b^{2}} \\
+&= \frac{((b+c)^{2} - a^{2})(a^{2} - (b-c)^{2})}{4b^{2}} \\
+&= \frac{(b+c+a)(b+c-a)(a+b-c)(a-b+c)}{4b^{2}}
+\end{align*}
+De donde $h=\frac{\sqrt{\left( b+c+a\right) \left( b+c-a\right) \left(
 a+b-c\right) \left( a-b+c\right) }}{2b}$ y el área del triángulo es:
-
-$A=\frac{1}{2}bh=\frac{1}{2}b\frac{\sqrt{\left( b+c+a\right) \left(
-b+c-a\right) \left( a+b-c\right) \left( a-b+c\right) }}{2b}$
-
-$A=\sqrt{\frac{\left( a+b+c\right) }{2}\frac{\left( b+c-a\right) }{2}\frac{%
-\left( a+b-c\right) }{2}\frac{\left( a-b+c\right) }{2}}$
-
-$A=\sqrt{\frac{\left( a+b+c\right) }{2}\left( \frac{a+b+c}{2}-a\right)
-\left( \frac{a+b+c}{2}-b\right) \left( \frac{a+b+c}{2}-c\right) }$
-
+\begin{align*}
+A &= \frac{1}{2}bh = \frac{1}{2}b\frac{\sqrt{(b+c+a)(b+c-a)(a+b-c)(a-b+c)}}{2b} \\[1em]
+A &= \sqrt{\frac{(a+b+c)}{2}\frac{(b+c-a)}{2}\frac{(a+b-c)}{2}\frac{(a-b+c)}{2}} \\[1em]
+A &= \sqrt{\frac{(a+b+c)}{2} \left( \frac{a+b+c}{2} - a \right)
+      \left( \frac{a+b+c}{2} - b \right)
+      \left( \frac{a+b+c}{2} - c \right) }
+\end{align*}
 Si llamamos $s=\frac{a+b+c}{2}$ \ al semiperímetro del triángulo, tenemos:
-
-\begin{center}
-$A=\sqrt{s\left( s-a\right) \left( s-b\right) \left( s-c\right) }$
-\end{center}
-
+\[
+A=\sqrt{s\left( s-a\right) \left( s-b\right) \left( s-c\right) }
+\]
 Esta es la conocida fórmula de Herón.
-
-\bigskip
 
 \begin{example}
 Halle el área del triángulo cuyos lados miden $5$, $12$ y $13$ centímetros.
@@ -1280,11 +1101,7 @@ Halle el área del triángulo cuyos lados miden $5$, $12$ y $13$ centímetros.
 \textbf{Solución}
 
 El perímetro es $P=5+12+13=30$ y el semiperímetro es $s=15$. El área del triángulo es
-
-
-$A=\sqrt{15\left( 15-5\right) \left( 15-12\right) \left( 15-13\right) }=30$
-cm$^{2}.$
-
+\[A=\sqrt{15\left( 15-5\right) \left( 15-12\right) \left( 15-13\right) }=30\,\text{cm}^{2}\]
 Por otro lado, note que este triángulo es rectángulo, ya que $13^{2}=12^{2}+5^{2}$. De esto se deduce que el área es la mitad de la base ($12$) por la altura ($5$), lo cual indica que el área del triángulo es $30$ cm$^{2}.$
 
 \subsection{Ejercicios}
@@ -1298,25 +1115,40 @@ Por otro lado, note que este triángulo es rectángulo, ya que $13^{2}=12^{2}+5^
     \item $A=\left( 2,2\right), B=\left( 4,2\right), C=\left( 1,3\right), D=\left(7,5\right), E=\left( -1,5\right)$ y $F=\left( 11,9\right)$
 \end{enumerate}
 
-
 \item Halle $x$ en el triángulo.
 
- \includegraphics[width=0.5\textwidth]{Images/SDY12T74.png}   
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T74.png}
+\end{figure}
 
 \item Si $AC=6$, $BC=8$, $BE=18$, $m\angle A=m\angle E$, halle $DE$.
 
- \includegraphics[width=0.5\textwidth]{Images/SDY12T75.png} 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Images/SDY12T75.png}
+\end{figure}
 
 \item Halle $a$ en el siguiente triángulo.
 
- \includegraphics[width=0.5\textwidth]{Images/SDY12T76.png} 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T76.png}
+\end{figure}
+
 \item Si el segmento $AB$ es paralelo al segmento $EC$, halle $x$ en la siguiente figura:
 
- \includegraphics[width=0.5\textwidth]{Images/SDY12T77.png} 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Images/SDY12T77.png}
+\end{figure}
 
 \item Para el siguiente triángulo rectángulo ($\gamma =90^{\circ }$), halle los lados y los ángulos incógnitos:
-\\
- \includegraphics[width=0.8\textwidth]{Images/SDY12T78.png} \\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Images/SDY12T78.png}
+\end{figure}
 
 \begin{enumerate}
     \item Si \ $\alpha =40\degree$ \ y \ $a=10$
@@ -1337,29 +1169,39 @@ Por otro lado, note que este triángulo es rectángulo, ya que $13^{2}=12^{2}+5^
 
 \item Para el triángulo (no rectángulo), halle los lados y ángulos incógnitos:
 
- \includegraphics[width=0.5\textwidth]{Images/SDY12T79.png} 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T79.png}
+\end{figure}
 
 \begin{enumerate}
-    \item \ Si \ $A=40\degree$, \ $B=70\degree$ \ y \ $a=20$
-    \item\ Si \ $a=4$, \ $b=6$ \ y \ $C=110\degree$
-    \item \ Si \ $A=30\degree$, \ $b=10$ \ y \ $a=8$
-    \item \ Si \ $a=40\degree$, \ $B=80\degree$ \ y \ $a=11$
-    \item \ Si \ $A=40\degree$, \ $b=15$ \ y \ $c=13$
-    \item \ Si \ $C=130\degree$, \ $b=17$ \ y \ $a=12$
-    \item \ Si \ $C=100\degree$, \ $b=20$ \ y \ $a=19$
-    \item \ Si \ $a=20$, \ $b=30$ \ y \ $c=15$
-    \item \ Si \ $a=13$, \ $b=9$ \ y \ $c=8$ 
+    \item Si \ $A=40\degree$, \ $B=70\degree$ \ y \ $a=20$
+    \item Si \ $a=4$, \ $b=6$ \ y \ $C=110\degree$
+    \item Si \ $A=30\degree$, \ $b=10$ \ y \ $a=8$
+    \item Si \ $a=40\degree$, \ $B=80\degree$ \ y \ $a=11$
+    \item Si \ $A=40\degree$, \ $b=15$ \ y \ $c=13$
+    \item Si \ $C=130\degree$, \ $b=17$ \ y \ $a=12$
+    \item Si \ $C=100\degree$, \ $b=20$ \ y \ $a=19$
+    \item Si \ $a=20$, \ $b=30$ \ y \ $c=15$
+    \item Si \ $a=13$, \ $b=9$ \ y \ $c=8$ 
 \end{enumerate}
 
 
 \item Halle los datos que faltan:
 
- \includegraphics[width=0.5\textwidth]{Images/SDY12T7A.png} 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T7A.png}
+\end{figure}
+
 \item Cuando el ángulo de elevación del sol es de 50$\degree$, un poste de teléfono inclinado a un ángulo de 85$\degree$ con la horizontal, arroja una sombra de 5 metros. Calcule la longitud del poste.
 
 \item Halle los ángulos B y C, y el lado $x$ en el siguiente cuadrilátero.
 
- \includegraphics[width=0.5\textwidth]{Images/SDY12T7B.png} 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T7B.png}
+\end{figure}
  
 \item Un poste vertical de luz y un hombre de 170 cm de altura están alineados sobre un andén que se inclina hacia abajo en un ángulo constante $\alpha $. Si la sombra del hombre sobre el andén mide 4 metros y el ángulo de depresión desde la cabeza del hombre hasta la punta de su sombra es de 32$\degree$, encuentre el ángulo $\alpha$.
 
@@ -1374,7 +1216,10 @@ Encuentre la altitud del avión.
 
 \item Un árbol en una ladera proyecta una sombra de 215 pies. Si el ángulo de inclinación de la ladera es de 22$\degree$ con la horizontal y el ángulo de elevación del sol es de 52$\degree$, ¿cuál es la altura del árbol?
 
-\includegraphics[width=0.7\textwidth]{Images/SDY12T7C.png} 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Images/SDY12T7C.png}
+\end{figure}
 
 En cada caso, verifique la identidad trigonométrica.
 
@@ -1432,8 +1277,6 @@ $
 
 \end{enumerate}
 
-\bigskip
-
 \section{Polígonos}
 
 Una figura es un polígono si cumple las siguientes condiciones:
@@ -1448,7 +1291,7 @@ Un polígono es convexo si cada segmento que une dos puntos interiores está tot
 \begin{figure}[H]
     \centering
     \caption{Polígonos convexos y cóncavos}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T7D.png}
+    \includegraphics[width=0.7\linewidth]{Images/SDY12T7D.png}
     \label{fig:placeholder2.54}
 \end{figure}
 
@@ -1459,12 +1302,12 @@ Un paralelogramo, como el de la figura~\ref{fig:placeholder2.55}, es un cuadril�
 
 \begin{figure}[H]
     \centering
-    \caption{Caption}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T7E.png}
+    \caption{Paralelogramo}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7E.png}
     \label{fig:placeholder2.55}
 \end{figure}
 
-Los paralelogramos tienen propiedades especiales relacionadas con sus lados, ángulos y diagonales. \ 
+Los paralelogramos tienen propiedades especiales relacionadas con sus lados, ángulos y diagonales.
 
 La condición de que un cuadrilátero sea un paralelogramo es equivalente a cada una de las siguientes:
 
@@ -1482,7 +1325,7 @@ Un rombo, como el de la figura~\ref{fig:placeholder2.56}, es un paralelogramo co
 \begin{figure}[H]
     \centering
     \caption{Rombo}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T7F.png}
+    \includegraphics[width=0.3\linewidth]{Images/SDY12T7F.png}
     \label{fig:placeholder2.56}
 \end{figure}
 
@@ -1491,7 +1334,7 @@ Un rectángulo, como el de la figura~\ref{fig:placeholder2.57}, es un paralelogr
 \begin{figure}[H]
     \centering
     \caption{Rectángulo}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T7G.png}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7G.png}
     \label{fig:placeholder2.57}
 \end{figure}
 
@@ -1501,25 +1344,20 @@ Un paralelogramo es un rombo si y solo si cada diagonal biseca un par de ángulo
 
 Un paralelogramo es un rectángulo si y solo si sus diagonales son congruentes.
 
-\bigskip
-
 \subsubsection{Área en coordenadas de un paralelogramo}
 
 El área del paralelogramo $P$, de la figura~\ref{fig:placeholder2.58}, generado por dos vectores no colineales $u,v\in \mathbb{R}^{2}$ es:
-
-$\acute{a}rea\left( P\right) =\left\vert \det \left[ u\text{ }v\right]
-\right\vert $
+\[\text{Área}(P) =\left\vert \det \left[ u\text{ }v\right]
+\right\vert \]
 
 \begin{figure}[H]
     \centering
     \caption{Paralelogramo generado por dos vectores}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T7H.png}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7H.png}
     \label{fig:placeholder2.58}
 \end{figure}
 
 En $\left\vert \det \left[ u\text{ }v\right] \right\vert $, los vectores $u$ y $v$ se escriben en columna.
-
-\bigskip
 
 \textbf{Demostración gráfica}
 
@@ -1528,81 +1366,69 @@ Supongamos que\ $u=\left( a,b\right) $ y $v=\left( c,d\right) $
 \begin{figure}[H]
     \centering
     \caption{Rectángulo con paralelogramo interno}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T7I.png}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7I.png}
     \label{fig:placeholder2.59}
 \end{figure}
 
 A partir de la figura~\ref{fig:placeholder2.59}, se obtiene:
-
-$\acute{a}rea\left( P\right) $
-
-$=%
-\begin{array}{c}
-\acute{a}rea\left( \text{Rectángulo}\right) -\acute{a}rea\left( T_{1}\right)
--\acute{a}rea\left( T_{2}\right) -\acute{a}rea\left( T_{3}\right) -\acute{a}%
-rea\left( T_{4}\right) \\ 
-\text{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
-\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }-\acute{a}rea\left( R_{1}\right) -%
-\acute{a}rea\left( R_{2}\right)%
-\end{array}%
-$
-
-$=\left( a+c\right) \left( b+d\right) -\frac{1}{2}ab-\frac{1}{2}cd-\frac{1}{2%
-}ab-\frac{1}{2}cd-bc-bc$
-
-$=ab+ad+cb+cd-ab-cd-2bc$
-
-$=ad-bc.$
-
-$=\det \left( 
-\begin{array}{cc}
-a & c \\ 
-b & d%
-\end{array}%
-\right) $
-
-$=\left\vert \det \left[ u\text{ }v\right] \right\vert $
+\begin{align*}
+\area\left(P\right) 
+    &= \area\left(\text{Rectángulo}\right)
+      - \area\left(T_1\right) - \area\left(T_2\right)
+      - \area\left(T_3\right) - \area\left(T_4\right) \\
+      & \quad - \area\left(R_1\right) - \area\left(R_2\right) \\
+    &= (a + c)(b + d)
+       - \frac{1}{2}ab - \frac{1}{2}cd
+       - \frac{1}{2}ab - \frac{1}{2}cd
+       - bc - bc \\
+    &= ab + ad + cb + cd - ab - cd - 2bc \\
+    &= ad - bc \\
+    &= \det\begin{pmatrix}
+        a & c \\
+        b & d
+      \end{pmatrix} \\
+    &= \left| \det \left[ u\; v\right] \right| \\
+\end{align*}
 
 \begin{example}
 Halle el área del paralelogramo generado por los vectores.
-
+\end{example}
 
 \textbf{Solución}
-$u=\left( 
+\[u=\left( 
 \begin{array}{c}
 15 \\ 
 25%
 \end{array}%
-\right) $ y $v=\left( 
+\right) \quad \text{y} \quad v=\left( 
 \begin{array}{c}
 22 \\ 
 34%
 \end{array}%
-\right)$
-\end{example}
-
-área$\left( P\right) =\left\vert \det \left[ u\text{ }v\right] \right\vert
-=\left\vert \det \left( 
+\right)\]
+\begin{align*}
+\area\left( P\right) &= \left\vert \det \left[ u\text{ }v\right] \right\vert \\
+&= \left\vert \det \left( 
 \begin{array}{cc}
 15 & 22 \\ 
-25 & 34%
-\end{array}%
-\right) \right\vert =\left\vert 15\left( 34\right) -22\left( 25\right)
-\right\vert =$ $\left\vert -40\right\vert =40$
+25 & 34
+\end{array}
+\right) \right\vert \\ 
+&= \left\vert 15\left( 34\right) -22\left( 25\right)
+\right\vert \\
+&= \left\vert -40\right\vert = 40
+\end{align*}
 
-Tres puntos no colineales generan dos vectores. \ 
+\subsubsection{Tres puntos no colineales generan dos vectores}
 
-Si $P,Q,R$ son tres puntos del plano, estos generan los vectores dirigidos $\overrightarrow{PQ}=Q-P$ y $\overrightarrow{PR}=R-P.$
+Si $P,Q,R$ son tres puntos del plano, estos generan los vectores dirigidos $\overrightarrow{PQ}=Q-P$ y $\overrightarrow{PR}=R-P$.
 
 \begin{example}
 Halle el área del triángulo con vértices $P=\left( 5,1\right), Q=\left(7,6\right)$ y $R=\left( 9,-1\right)$.
 \end{example}
 
-El área del triángulo $T$ con vértices $P,Q,R$ es la mitad del área del paralelogramo $\Gamma$ generado por los vectores $\overrightarrow{PQ}$ y $\overrightarrow{PR}$.
-
-\begin{center}
-$\acute{a}rea\left( T\right) =\frac{1}{2}\acute{a}rea\left( \Gamma \right) $
-\end{center}
+El área del triángulo $T$ con vértices $P$, $Q$ y $R$ es la mitad del área del paralelogramo $\Gamma$ generado por los vectores $\overrightarrow{PQ}$ y $\overrightarrow{PR}$.
+\[\area\left( T\right) =\frac{1}{2}\area\left( \Gamma \right) \]
 
 \begin{figure}[H]
     \centering
@@ -1612,27 +1438,23 @@ $\acute{a}rea\left( T\right) =\frac{1}{2}\acute{a}rea\left( \Gamma \right) $
 \end{figure}
 
 A partir de la figura~\ref{fig:placeholder2.60}, calculamos los vectores dirigidos.
+\[\overrightarrow{PQ}=Q-P=\left( 2,5\right) \quad \text{y} \quad \overrightarrow{PR}=R-P=\left( 4,-2\right) \]
 
-\ $\overrightarrow{PQ}=Q-P=\left( 2,5\right) $ \ \ \ $\overrightarrow{PR}=R-P=\left( 4,-2\right) $ \ \ 
-
-$\acute{a}rea\left( T\right) $
-
-$=\frac{1}{2}\acute{a}rea\left( paralelogramo\right) $ \ \ 
-
-$=\frac{1}{2}\left\vert \left[ \overrightarrow{PQ}\text{ \ }\overrightarrow{PR}\right] \right\vert $
-
-$=\frac{1}{2}\left\vert \left( 
-\begin{array}{cc}
-2 & 4 \\ 
-5 & -2%
-\end{array}%
-\right) \right\vert $
-
-$=\frac{1}{2}\left\vert -4-20\right\vert $
-
-$=12$ unidades cuadradas.
-
-\bigskip
+\begin{align*}
+\area\left( T\right) 
+    &= \frac{1}{2}\area\left( \text{paralelogramo}\right) \\
+    &= \frac{1}{2}\left\vert \left[ \overrightarrow{PQ}\;\overrightarrow{PR}\right] \right\vert \\
+    &= \frac{1}{2}\left\vert 
+        \left( 
+            \begin{array}{cc}
+              2 & 4 \\ 
+              5 & -2%
+            \end{array}%
+        \right) 
+      \right\vert \\
+    &= \frac{1}{2}\left\vert -4-20\right\vert \\
+    &= 12 \text{ unidades cuadradas.}
+\end{align*}
 
 \subsection{Trapecios}
 
@@ -1644,11 +1466,9 @@ Los dos ángulos que comparten una base de un trapecio se llaman ángulos de la 
 
 Un trapecio tiene dos pares de ángulos en la base.
 
-\bigskip
-
 \begin{figure}[H]
     \centering
-    \caption{Caption}
+    \caption{Ángulos en la base de un trapecio}
     \includegraphics[width=0.8\linewidth]{Images/SDY12T7K.png}
     \label{fig:placeholder2.61}
 \end{figure}
@@ -1657,8 +1477,8 @@ Un trapecio isósceles, como el de la figura~\ref{fig:placeholder2.62}, es un tr
 
 \begin{figure}[H]
     \centering
-    \caption{Caption}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T7L.png}
+    \caption{Trapecio isósceles}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12T7L.png}
     \label{fig:placeholder2.62}
 \end{figure}
 
@@ -1666,35 +1486,28 @@ Un trapecio isósceles, como el de la figura~\ref{fig:placeholder2.62}, es un tr
 
 Sea $ABCD$ un trapecio.
 
-\bigskip 
 \begin{figure}[H]
     \centering
     \caption{Trapecio dividido}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T7M.png}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12T7M.png}
     \label{fig:placeholder2.63}
 \end{figure}
 
-Expresamos el área del trapecio como la suma de áreas de dos triángulos y un rectángulo , como se muestra en la figura~\ref{fig:placeholder2.63}:
-
-área $(ABCD)$
-
-=área$\left( \triangle AED\right) +$área$\left( \triangle BCF\right) +$área$%
-\left( \boxdot ABFE\right) $ \ \ \ note que $AE=BF$
-
-=$\frac{1}{2}\left( DE\right) \left( AE\right) +\frac{1}{2}\left( FC\right)
-\left( BF\right) +\left( EF\right) \left( AE\right) $
-
-$=\frac{1}{2}\left( AE\right) \left( DE+2EF+FC\right) $
-
-$=\frac{1}{2}\left( AE\right) \left( EF+DE+EF+FC\right) $
-
-$=\frac{1}{2}\left( AE\right) \left( EF+DC\right) $ \ \ note que $EF=AB$
-
-$=\frac{1}{2}\left( AE\right) \left( AB+DC\right) $
-
+Expresamos el área del trapecio como la suma de áreas de dos triángulos y un rectángulo, como se muestra en la figura~\ref{fig:placeholder2.63}:
+\begin{align*}
+\area\left(ABCD\right) 
+    &= \area\left( \triangle AED\right) 
+      + \area\left( \triangle BCF\right)
+      + \area\left( \square ABFE \right) \\
+        &\quad\enspace \text{\small note que $AE = BF$} \\
+    &= \frac{1}{2}(DE)(AE) + \frac{1}{2}(FC)(BF) + (EF)(AE) \\
+    &= \frac{1}{2}(AE)\left( DE + 2EF + FC \right) \\
+    &= \frac{1}{2}(AE)\left( EF + DE + EF + FC \right) \\
+    &= \frac{1}{2}(AE)\left( EF + DC \right)
+       \quad \text{\small note que $EF = AB$} \\
+    &= \frac{1}{2}(AE)\left( AB + DC \right)
+\end{align*}
 Por lo tanto, el área de un trapecio es la mitad de la altura por la suma de sus bases.
-
-\bigskip
 
 \subsubsection{Área de un triángulo a partir de las coordenadas de sus vértices}
 
@@ -1706,28 +1519,43 @@ positivas, cuyos vértices están orientados en sentido positivo. Entonces, se t
 \begin{figure}[H]
     \centering
     \caption{Triángulo dividido por trapecios}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T7N.png}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12T7N.png}
     \label{fig:placeholder2.64}
 \end{figure}
 
-$\acute{a}rea\left( \triangle ABC\right) $
+\begin{lrbox}{\smcrossprodboxa}
+    \shorthandoff{<>}
+    \begin{tikzpicture}[>=Stealth, every node/.style={inner sep=2pt}, baseline=(current bounding box.center)]
+    \matrix (M) [matrix of math nodes, left delimiter=|, right delimiter=|, row sep=3mm, column sep=5mm] {
+      x_{1} & y_{1} \\
+      x_{2} & y_{2} \\
+      x_{3} & y_{3} \\
+      x_{1} & y_{2} \\
+    };
+    \draw[->] (M-1-1) -- (M-2-2);
+    \draw[->] (M-2-1) -- (M-3-2);
+    \draw[->] (M-3-1) -- (M-4-2);
+    \draw[->, dotted] (M-1-2) -- (M-2-1);
+    \draw[->, dotted] (M-2-2) -- (M-3-1);
+    \draw[->, dotted] (M-3-2) -- (M-4-1);
+    \end{tikzpicture}
+    \shorthandon{<>}
+\end{lrbox}
 
-$=\acute{a}rea\left( ADEC\right) +\acute{a}rea\left( CEFB\right) -\acute{a}%
-rea\left( ADFB\right) $
-
-$=\frac{\left( y_{1}+y_{3}\right) \left( x_{3}-x_{1}\right) }{2}+\frac{%
-\left( y_{2}+y_{3}\right) \left( x_{2}-x_{3}\right) }{2}-\frac{\left(
-y_{1}+y_{2}\right) \left( x_{2}-x_{1}\right) }{2}$
-
-$=\frac{1}{2}\left(
-x_{1}y_{2}+x_{2}y_{3}+x_{3}y_{1}-x_{2}y_{1}-x_{3}y_{2}-x_{1}y_{3}\right) $ 
-
-$
-\begin{tabular}{ccc}
-$=\frac{1}{2}$ &
-\includegraphics[align=c,width=0.15\textwidth]{Images/SDY12T7O.png} 
-\end{tabular}
-$
+\begingroup\fontsize{10pt}{12pt}\selectfont
+\begin{align*}
+\area\left( \triangle ABC\right) 
+    &= \area\left( ADEC\right) + \area\left( CEFB\right) - \area\left( ADFB\right) \\
+    &= \frac{ \left( y_{1} + y_{3} \right) \left( x_{3} - x_{1} \right) }{2}
+     + \frac{ \left( y_{2} + y_{3} \right) \left( x_{2} - x_{3} \right) }{2}
+     - \frac{ \left( y_{1} + y_{2} \right) \left( x_{2} - x_{1} \right) }{2} \\
+    &= \frac{1}{2} \left(
+      x_{1}y_{2} + x_{2}y_{3} + x_{3}y_{1} 
+      - x_{2}y_{1} - x_{3}y_{2} - x_{1}y_{3}
+    \right) \\
+    &= \frac{1}{2} \usebox{\smcrossprodboxa}
+\end{align*}
+\endgroup
 
 \subsubsection{Área de un polígono en términos de las coordenadas de sus vértices}
 
@@ -1738,35 +1566,73 @@ Sea $ABCD$ un cuadrilátero cuyos vértices están orientados en sentido positiv
 \begin{figure}[H]
     \centering
     \caption{Cuadrilátero dividido en trapecios}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T7P.png}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12T7P.png}
     \label{fig:placeholder2.65}
 \end{figure}
 
 El área del cuadrilátero se obtiene sumando y restando las áreas de distintos trapecios:
+\begin{lrbox}{\smcrossprodboxb}
+    \shorthandoff{<>}
+    \begin{tikzpicture}[>=Stealth, every node/.style={inner sep=2pt}, baseline=(current bounding box.center)]
+    \matrix (M) [matrix of math nodes, left delimiter=|, right delimiter=|, row sep=3mm, column sep=5mm] {
+      x_{1} & y_{1} \\
+      x_{2} & y_{2} \\
+      x_{3} & y_{3} \\
+      x_{4} & y_{4} \\
+      x_{1} & y_{1} \\
+    };
+    \draw[->] (M-1-1) -- (M-2-2);
+    \draw[->] (M-2-1) -- (M-3-2);
+    \draw[->] (M-3-1) -- (M-4-2);
+    \draw[->] (M-4-1) -- (M-5-2);
+    \draw[->, dotted] (M-1-2) -- (M-2-1);
+    \draw[->, dotted] (M-2-2) -- (M-3-1);
+    \draw[->, dotted] (M-3-2) -- (M-4-1);
+    \draw[->, dotted] (M-4-2) -- (M-5-1);
+    \end{tikzpicture}
+    \shorthandon{<>}
+\end{lrbox}
+\begingroup\fontsize{10pt}{12pt}\selectfont
+\begin{align*}
+\area\left( ABCD\right) 
+    &= \area\left(
+        \trapezoid
+        AEGD
+    \right)
+    + \area\left(
+        \trapezoid
+        DGHC
+    \right) \\
+    & \quad - \area\left(
+        \trapezoid
+        AEFB
+    \right)
+    - \area\left(
+        \trapezoid
+        BFHC
+    \right)
+    \\
+    &=       \dfrac{ (y_{1} + y_{4})(x_{4} - x_{1}) }{2}
+           + \dfrac{ (y_{4} + y_{3})(x_{3} - x_{4}) }{2} \\
+    &\quad - \dfrac{ (y_{1} + y_{2})(x_{2} - x_{1}) }{2}
+           - \dfrac{ (y_{2} + y_{3})(x_{3} - x_{2}) }{2}
+    \\
+    &= \dfrac{1}{2} \left(
+         x_{1} y_{2}
+       + x_{2} y_{3}
+       + x_{3} y_{4}
+       + x_{4} y_{1}
+       - x_{2} y_{1}
+       - x_{3} y_{2}
+       - x_{4} y_{3}
+       - x_{1} y_{4}
+     \right) 
+     \\
+     &= \frac{1}{2} \usebox{\smcrossprodboxb}
+\end{align*}
+\endgroup
 
-$\acute{a}rea\left( ABCD\right) $
-
-$=\acute{a}rea\left( 
-\trapezoid
-AEGD\right) +\acute{a}rea\left( 
-\trapezoid
-DGHC\right) -\acute{a}rea\left(\trapezoid
-AEFB\right) -\acute{a}rea\left(\trapezoid  BFHC\right) $
-
-$=\dfrac{\left( y_{1}+y_{4}\right) \left( x_{4}-x_{1}\right) }{2}+\dfrac{%
-\left( y_{4}+y_{3}\right) \left( x_{3}-x_{4}\right) }{2}-\dfrac{\left(
-y_{1}+y_{2}\right) \left( x_{2}-x_{1}\right) }{2}-\dfrac{\left(
-y_{2}+y_{3}\right) \left( x_{3}-x_{2}\right) }{2}$
-
-$=\dfrac{1}{2}\left(
-x_{1}y_{2}+x_{2}y_{3}+x_{3}y_{4}+x_{4}y_{1}-x_{2}y_{1}-x_{3}y_{2}-x_{4}y_{3}-x_{1}y_{4}\right) 
-$
-
-$=\dfrac{1}{2}%
-\begin{array}{c}
-\includegraphics[width=0.15\textwidth]{Images/SDY12T7U.png} 
-\end{array}%
-$
+\clearpage
 
 \textbf{Área de un pentágono}
 
@@ -1775,42 +1641,73 @@ Sea $ABCDE$ un pentágono cuyos vértices están orientados en sentido positivo,
 \begin{figure}[H]
     \centering
     \caption{Pentágono dividido en trapecios}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T7V.png}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T7V.png}
     \label{fig:placeholder2.66}
 \end{figure}
 
+\enlargethispage*{\baselineskip}
+
 El área del pentágono se deduce por suma y resta de las áreas de los trapecios:
-
-$\acute{a}rea\left( ABCDE\right) $
-
-$=\acute{a}rea\left( AFJE\right) +\acute{a}rea\left( EJID\right) +\acute{a}%
-rea\left( DIHC\right) -\acute{a}rea\left( AFGB\right) -\acute{a}rea\left(
-BGHC\right) $
-
-$=\frac{\left( y_{1}+y_{5}\right) \left( x_{5}-x_{1}\right) }{2}+\frac{%
-\left( y_{5}+y_{4}\right) \left( x_{4}-x_{5}\right) }{2}+\frac{\left(
-y_{4}+y_{3}\right) \left( x_{3}-x_{4}\right) }{2}-\frac{\left(
-y_{1}+y_{2}\right) \left( x_{2}-x_{1}\right) }{2}-\frac{\left(
-y_{2}+y_{3}\right) \left( x_{3}-x_{2}\right) }{2}$
-
-$=\frac{1}{2}x_{1}y_{2}-\frac{1}{2}x_{2}y_{1}+\frac{1}{2}x_{2}y_{3}-\frac{1}{%
-2}x_{3}y_{2}-\frac{1}{2}x_{1}y_{5}+\allowbreak \frac{1}{2}y_{1}x_{5}+\frac{1%
-}{2}x_{3}y_{4}-\frac{1}{2}x_{4}y_{3}+\frac{1}{2}x_{4}y_{5}-\frac{1}{2}%
-x_{5}y_{4}$
-
-$=\frac{1}{2}\left(
-x_{1}y_{2}+x_{2}y_{3}+x_{3}y_{4}+x_{4}y_{5}+x_{5}y_{1}-x_{2}y_{1}-x_{3}y_{2}-x_{4}y_{3}-x_{5}y_{4}-x_{1}y_{5}\right) 
-$
-
+\begingroup\fontsize{10pt}{12pt}\selectfont
+\begin{align*}
+\area(ABCDE)
+    &= \area(AFJE) + \area(EJID) + \area(DIHC) \\ 
+    &\quad 
+     - \area(AFGB) - \area(BGHC) \\
+    &= \frac{(y_{1}+y_{5})(x_{5}-x_{1})}{2}
+     + \frac{(y_{5}+y_{4})(x_{4}-x_{5})}{2}
+     + \frac{(y_{4}+y_{3})(x_{3}-x_{4})}{2} \\
+    &\quad
+     - \frac{(y_{1}+y_{2})(x_{2}-x_{1})}{2}
+     - \frac{(y_{2}+y_{3})(x_{3}-x_{2})}{2} \\
+    &= \frac{1}{2}x_{1}y_{2}
+     - \frac{1}{2}x_{2}y_{1}
+     + \frac{1}{2}x_{2}y_{3}
+     - \frac{1}{2}x_{3}y_{2}
+     - \frac{1}{2}x_{1}y_{5} \\
+    &\quad
+     + \frac{1}{2}y_{1}x_{5}
+     + \frac{1}{2}x_{3}y_{4}
+     - \frac{1}{2}x_{4}y_{3}
+     + \frac{1}{2}x_{4}y_{5}
+     - \frac{1}{2}x_{5}y_{4} \\
+    &= \frac{1}{2} (
+        x_{1}y_{2} + x_{2}y_{3} + x_{3}y_{4} + x_{4}y_{5} + x_{5}y_{1} \\
+        & \qquad - x_{2}y_{1} - x_{3}y_{2} - x_{4}y_{3} - x_{5}y_{4} - x_{1}y_{5}
+    )
+\end{align*}
+\endgroup
 Esta fórmula se escribe de forma compacta:
-
-$\acute{a}rea\left( ABCDE\right) =\dfrac{1}{2}%
-\begin{array}{c}
-\includegraphics[width=0.15\textwidth]{Images/SDY12T7W.png} 
-\end{array}%
-$
-
-En general, sea $A_{1}A_{2}A_{3}A_{4}\cdots A_{n}$ un polígono con $n$ vértices, orientados en sentido positivo (antihorario), y cuyas ordenadas $y_{k}$ son positivas,  como se ilustra en la figura~\ref{fig:placeholder2.67}.
+\begin{lrbox}{\smcrossprodboxc}
+    \shorthandoff{<>}
+    \begin{tikzpicture}[>=Stealth, every node/.style={inner sep=2pt}, baseline=(current bounding box.center)]
+    \fontsize{9pt}{10pt}\selectfont
+    \matrix (M) [matrix of math nodes, left delimiter=|, right delimiter=|, row sep=3mm, column sep=5mm] {
+      x_{1} & y_{1} \\
+      x_{2} & y_{2} \\
+      x_{3} & y_{3} \\
+      x_{4} & y_{4} \\
+      x_{5} & y_{5} \\
+      x_{1} & y_{1} \\
+    };
+    \draw[->] (M-1-1) -- (M-2-2);
+    \draw[->] (M-2-1) -- (M-3-2);
+    \draw[->] (M-3-1) -- (M-4-2);
+    \draw[->] (M-4-1) -- (M-5-2);
+    \draw[->] (M-5-1) -- (M-6-2);
+    \draw[->, dotted] (M-1-2) -- (M-2-1);
+    \draw[->, dotted] (M-2-2) -- (M-3-1);
+    \draw[->, dotted] (M-3-2) -- (M-4-1);
+    \draw[->, dotted] (M-4-2) -- (M-5-1);
+    \draw[->, dotted] (M-5-2) -- (M-6-1);
+    \end{tikzpicture}
+    \shorthandon{<>}
+\end{lrbox}
+\begin{align*}
+\area\left( ABCDE\right) 
+    &= \frac{1}{2} \usebox{\smcrossprodboxc}
+\end{align*}
+En general, sea $A_{1}A_{2}A_{3}A_{4}\ldots A_{n}$ un polígono con $n$ vértices, orientados en sentido positivo (antihorario), y cuyas ordenadas $y_{k}$ son positivas,  como se ilustra en la figura~\ref{fig:placeholder2.67}.
 
 \begin{figure}[H]
     \centering
@@ -1820,18 +1717,37 @@ En general, sea $A_{1}A_{2}A_{3}A_{4}\cdots A_{n}$ un polígono con $n$ vértice
 \end{figure}
 
 Siguiendo las fórmulas del triángulo y del pentágono probadas anteriormente, se puede establecer, por inducción, la siguiente fórmula para el área del polígono de $n$ lados:
-
-$\acute{a}rea\left( A_{1}A_{2}A_{3}A_{4}\cdots A_{n}\right)$
-
-$=\dfrac{1}{2}
-\begin{tabular}{ccc}
-\includegraphics[align=c,width=0.15\textwidth]{Images/SDY12T7Y.png} 
-\end{tabular}
-$
-
-$=\dfrac{1}{2}\left( x_{1}y_{2}+x_{2}y_{3}+x_{3}y_{4}+x_{4}y_{5}+\cdots
-+x_{n}y_{1}-x_{2}y_{1}-x_{3}y_{2}-x_{4}y_{3}-x_{5}y_{4}-\cdots
--x_{1}y_{n}\right) $
+\begin{lrbox}{\smcrossprodboxd}
+    \shorthandoff{<>}
+    \begin{tikzpicture}[>=Stealth, every node/.style={inner sep=2pt}, baseline=(current bounding box.center)]
+    \matrix (M) [matrix of math nodes, left delimiter=|, right delimiter=|, row sep=3mm, column sep=5mm] {
+      x_{1} & y_{1} \\
+      x_{2} & y_{2} \\
+      x_{3} & y_{3} \\
+      x_{4} & y_{4} \\
+      x_{5} & y_{5} \\
+      x_{1} & y_{1} \\
+    };
+    \draw[->] (M-1-1) -- (M-2-2);
+    \draw[->] (M-2-1) -- (M-3-2);
+    \draw[->] (M-3-1) -- (M-4-2);
+    \draw[->] (M-4-1) -- (M-5-2);
+    \draw[->] (M-5-1) -- (M-6-2);
+    \draw[->, dotted] (M-1-2) -- (M-2-1);
+    \draw[->, dotted] (M-2-2) -- (M-3-1);
+    \draw[->, dotted] (M-3-2) -- (M-4-1);
+    \draw[->, dotted] (M-4-2) -- (M-5-1);
+    \draw[->, dotted] (M-5-2) -- (M-6-1);
+    \end{tikzpicture}
+    \shorthandon{<>}
+\end{lrbox}
+\begin{align*}
+\area\left( A_{1}A_{2}A_{3}A_{4}\cdots A_{n}\right)
+& =\dfrac{1}{2} \usebox{\smcrossprodboxd} \\
+& =\dfrac{1}{2}( x_{1}y_{2}+x_{2}y_{3}+x_{3}y_{4}+x_{4}y_{5}+\cdots \\
+& \phantom{=\dfrac{1}{2}(} +x_{n}y_{1}-x_{2}y_{1}-x_{3}y_{2}-x_{4}y_{3}-x_{5}y_{4}-\cdots \\
+& \phantom{=\dfrac{1}{2}(} -x_{1}y_{n})
+\end{align*}
 
 \begin{example}
 Halle el área del polígono con vértices $A=\left( -2,3\right)$, $B=\left(
@@ -1840,10 +1756,9 @@ Halle el área del polígono con vértices $A=\left( -2,3\right)$, $B=\left(
 \end{example}
 
 \textbf{Solución}
-
-$\acute{a}rea(ABCDEF)$
-
-$=\frac{1}{2}\left\vert 
+\begin{align*}
+\area\left( ABCDEF\right)
+& =\frac{1}{2}\left\vert 
 \begin{array}{cc}
 -2 & 3 \\ 
 -1 & 1 \\ 
@@ -1853,11 +1768,11 @@ $=\frac{1}{2}\left\vert
 1 & 2 \\ 
 -2 & 3%
 \end{array}%
-\right\vert $
+\right\vert \\
+& =\frac{1}{2}\left( -2-2+0+48+18+3-\left( -3+4+16+0+6-4\right) \right) \\
+& =23
+\end{align*}
 
-$=\frac{1}{2}\left( -2-2+0+48+18+3-\left( -3+4+16+0+6-4\right) \right) $
-
-$=23$
 En la figura~\ref{fig:placeholder2.68} se dibuja el polígono y se muestra su área.
 \begin{figure}[H]
     \centering
@@ -1866,22 +1781,20 @@ En la figura~\ref{fig:placeholder2.68} se dibuja el polígono y se muestra su á
     \label{fig:placeholder2.68}
 \end{figure}
 
-\bigskip
-
 \subsubsection{Área de un polígono con coordenadas enteras}
 
 El teorema de Pick brinda una fórmula simple para calcular el área de un polígono cuyos vértices tienen coordenadas enteras. Fue demostrado por primera vez por Georg Alexander Pick en 1899 y es un resultado clásico de geometría. 
 
 Un punto interior es un punto de la red que está dentro del polígono, mientras que un punto de frontera es un punto de la red que se encuentra en el límite del polígono.
 
-\begin{center}
-\textbf{Teorema de Pick.} Sea $A$ el área de un polígono con vértices de coordenadas enteras, como el que se muestra en la figura~\ref{fig:placeholder2.69}, $I$ el número de puntos de la red en su interior y $B$ el número de puntos en la frontera de la red, incluidos los vértices. Entonces: $A=I+\frac{1}{2}B-1$.
-\end{center}
+\textbf{Teorema de Pick} 
+
+Sea $A$ el área de un polígono con vértices de coordenadas enteras, como el que se muestra en la figura~\ref{fig:placeholder2.69}, $I$ el número de puntos de la red en su interior y $B$ el número de puntos en la frontera de la red, incluidos los vértices. Entonces: $A=I+\frac{1}{2}B-1$.
 
 \begin{figure}[H]
     \centering
     \caption{Teorema de Pick}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T80.png}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12T80.png}
     \label{fig:placeholder2.69}
 \end{figure}
 
@@ -1895,14 +1808,14 @@ Un triángulo con coordenadas enteras es elemental si no tiene otros puntos con 
 
 El área de cualquier triángulo elemental en la red $\mathbb{Z}^{2}$ es $\frac{1}{2}$, pues el área del triángulo que une los puntos con coordenadas
 enteras $O=\left( 0,0\right)$.
-
-$A=\left( a,b\right) ,B=\left( c,d\right) $ es $A=\frac{1}{2}\left\vert 
+\[A=\left( a,b\right),\; B=\left( c,d\right) 
+\quad \text{es} \quad A=\frac{1}{2}\left\vert 
 \begin{array}{cc}
 a & c \\ 
 b & d%
-\end{array}%
-\right\vert =\frac{1}{2}\left( ad-bc\right) .~$
-
+\end{array}
+\right\vert =\frac{1}{2}\left( ad-bc\right)
+\]
 Para que uno de estos triángulos tenga área mínima, se debe cumplir $ad-bc=1$. Luego, estos triángulos de área mínima tienen área $\frac{1}{2}$.
 
 Cualquier polígono con coordenadas enteras, como el de la figura~\ref{fig:placeholder2.70}, puede ser triangulado por triángulos elementales.
@@ -1910,13 +1823,7 @@ Cualquier polígono con coordenadas enteras, como el de la figura~\ref{fig:place
 \begin{figure}[H]
     \centering
     \caption{Polígono triangulado}
-    $%
-    \begin{array}{c}
-    \begin{array}{c}
     \includegraphics[width=0.5\textwidth]{Images/SDY12T81.png}
-    \end{array}%
-    \end{array}%
-    $ 
     \label{fig:placeholder2.70}
 \end{figure}
 
@@ -1925,7 +1832,7 @@ Como se ve en la figura~\ref{fig:placeholder2.71}, la suma de los ángulos exter
 \begin{figure}[H]
     \centering
     \caption{Ángulos externos de un polígono}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12T82.png}
+    \includegraphics[width=0.6\textwidth]{Images/SDY12T82.png}
     \label{fig:placeholder2.71}
 \end{figure}
 
@@ -1941,22 +1848,21 @@ Por otra parte, en cada punto interior $i$, los ángulos de los triángulos elem
 que se encuentran en $b$ suman $\pi$. En los vértices, los ángulos no suman $\pi$, pero si sumamos los ángulos interiores en todos los vértices, obtenemos $k\pi -2\pi $, donde $k$ es el número de vértices, ya que la suma de los ángulos exteriores es $2\pi$. Este resultado se puede justificar observando que, al recorrer el perímetro del polígono, se completa una vuelta completa, es decir $2\pi $. Cabe señalar que algunos ángulos exteriores aportan un término positivo (en los vértices donde el polígono es convexo) y otros un término negativo (en los vértices donde el polígono es cóncavo).
 
 Sea $I$ el número de puntos interiores y $B$ el número de puntos en la frontera. En total, la suma de los ángulos en los puntos de la frontera es $B\pi -2\pi $, y la suma de los ángulos en los puntos internos es $I\left( 2\pi \right) $. Por lo tanto,
-
-$S=I\left( 2\pi \right) +B\pi -2\pi$
-
+\begin{equation*}
+S=I\left( 2\pi \right) +B\pi -2\pi
+\end{equation*}
 Concluimos que
-
-$N\pi =I\left( \ 2\pi \right) +B\pi -2\pi$
-
-por lo que cancelando $\pi $ obtenemos
-
-$N=2I+B-2$
-
+\begin{equation*}
+N\pi =I\left( 2\pi \right) +B\pi -2\pi
+\end{equation*}
+Por lo que cancelando $\pi $ obtenemos
+\begin{equation*}
+N=2I+B-2
+\end{equation*}
 Como el área de cualquier triángulo elemental es $\frac{1}{2}$, tenemos $A=\frac{1}{2}N$ y por lo tanto
-
-\begin{center}
-$A=I+\frac{1}{2}B-1$
-\end{center}
+\begin{equation*}
+A=I+\frac{1}{2}B-1
+\end{equation*}
 
 \begin{example}
 Halle el área del polígono con vértices $A=\left( -3,7\right)$, $B=\left(
@@ -1971,7 +1877,7 @@ Graficamos el polígono en la figura~\ref{fig:placeholder2.72}.
 \begin{figure}[H]
     \centering
     \caption{Polígono $ABCDEF$}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T83.png}
+    \includegraphics[width=0.6\linewidth]{Images/SDY12T83.png}
     \label{fig:placeholder2.72}
 \end{figure}
 
@@ -1996,6 +1902,8 @@ Así que el área del polígono es \ $A=I+\frac{1}{2}B-1=17+\frac{1}{2}\left(
 \item Halle el área del polígono con vértices $A=\left( -1,3\right)$, $B=\left( 4,2\right)$, $C=\left( 9,1\right)$, $D=\left( 11,3\right)$, $E=\left( 4,8\right) $ y $F=\left( 2,9\right)$.
 \end{enumerate}
 
+\clearpage
+
 \section{Paralelogramos, triángulos, paralelepípedos y tetraedros en el espacio}
 
 \subsection{Áreas de paralelogramos y triángulos en el espacio}
@@ -2005,7 +1913,7 @@ De la sección de producto cruz, sabemos que el área del paralelogramo generado
 \begin{figure}[H]
     \centering
     \caption{Área de paralelogramo generado por dos vectores}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T84.png}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T84.png}
     \label{fig:placeholder3.1}
 \end{figure}
 
@@ -2014,7 +1922,7 @@ El área del paralelogramo generado por tres puntos no colineales $P$, $Q$ y $R$
 \begin{figure}[H]
     \centering
     \caption{Área del paralelogramo generado por tres puntos}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T85.png}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T85.png}
     \label{fig:placeholder3.2}
 \end{figure}
 
@@ -2024,7 +1932,7 @@ El área del triángulo con vértices $P$, $Q$ y $R$ es $\frac{1}{2}\left\Vert
 \begin{figure}[H]
     \centering
     \caption{Área de un triángulo en el espacio}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T86.png}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T86.png}
     \label{fig:placeholder3.3}
 \end{figure}
 
@@ -2033,33 +1941,27 @@ Sean $P=\left( 1,4,1\right), Q=\left( 3,1,1\right)$ y $R=\left(2,1,5\right)$ tre
 \end{example}
 
 \textbf{Solución}
-
-$X=\overrightarrow{PQ}=Q-P=\left( 2,-3,0\right)$
-
-$Y=\overrightarrow{PR}=R-P=\left( 1,-3,4\right)$
-
-$\acute{a}rea(T)=\frac{1}{2}\acute{a}rea\left( \text{paralelogramo}\right) $
-
-$\qquad =\frac{1}{2}\left\Vert X\times Y\right\Vert $
-
-$\qquad =\frac{1}{2}\left\Vert \left\vert 
-\begin{array}{cccccc}
-2 & -3 & 0 & 2 & -3 & 0 \\ 
-1 & -3 & 4 & 1 & -3 & 4%
-\end{array}%
-\right\vert \right\Vert $
-
-$\qquad =\frac{1}{2}\left\Vert \left( -12,-8,-3\right) \right\Vert $
-
-$\qquad =\frac{1}{2}\sqrt{12^{2}+8^{2}+6^{2}}$
-
-$\qquad =\sqrt{61}\approx 7.810\,2$
-
+\begin{align*}
+X &= \overrightarrow{PQ} = Q - P = (2, -3, 0) \\
+Y &= \overrightarrow{PR} = R - P = (1, -3, 4) \\[1em]
+\area\left(T\right) &= \frac{1}{2} \area\left(\text{paralelogramo}\right) \\
+         &= \frac{1}{2} \left\Vert X \times Y \right\Vert \\
+         &= \frac{1}{2} \left\Vert
+            \begin{vmatrix}
+            2 & -3 & 0 \\
+            1 & -3 & 4
+            \end{vmatrix}
+           \right\Vert \\
+         &= \frac{1}{2} \left\Vert (-12, -8, -3) \right\Vert \\
+         &= \frac{1}{2} \sqrt{12^2 + 8^2 + 6^2} \\
+         &= \sqrt{61} \approx 7.8102
+\end{align*}
 En la figura~\ref{fig:placeholder3.4} se dibuja el triángulo en el espacio.
+
 \begin{figure}[H]
     \centering
     \caption{Área del triángulo $T$ }
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T87.png}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T87.png}
     \label{fig:placeholder3.4}
 \end{figure}
 
@@ -2074,7 +1976,7 @@ Recuerde de la sección sobre el producto cruz de vectores que el valor de $\lef
 \begin{figure}[H]
     \centering
     \caption{Paralelepípedo generado por tres vectores}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T88.png}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T88.png}
     \label{fig:placeholder3.5}
 \end{figure}
 
@@ -2083,42 +1985,32 @@ Halle el volumen del paralelepípedo generado por los vectores $u=\left( 10,5,8\
 \end{example}
 
 \textbf{Solución}
-
-Volumen$\left( P\right) $
-
-$=\left\vert \det \left[ u\text{ }v\text{ }w\right] \right\vert $
-
-$=\left\vert \det \left( 
-\begin{array}{ccc}
-10 & 3 & 4 \\ 
-5 & 9 & -3 \\ 
-8 & 11 & 7%
-\end{array}%
-\right) \right\vert $
-
-$=\left\vert 10\left\vert 
-\begin{array}{cc}
-9 & -3 \\ 
-11 & 7%
-\end{array}%
-\right\vert -3\left\vert 
-\begin{array}{cc}
-5 & -3 \\ 
-8 & 7%
-\end{array}%
-\right\vert +4\left\vert 
-\begin{array}{cc}
-5 & 9 \\ 
-8 & 11%
-\end{array}%
-\right\vert \right\vert$
-
-$=\left\vert 10\left( 63+33\right) -3\left( 35+24\right) +4\left(
-55-72\right) \right\vert$
-
-$=\left\vert 960-177-68\right\vert =715$ unidades cúbicas
-
+\begin{align*}
+\volumen\left( P \right)
+    &= \left| \det \left[ u \ v \ w \right] \right| \\
+    &= \left| \det \begin{pmatrix}
+        10 & 3 & 4 \\
+        5 & 9 & -3 \\
+        8 & 11 & 7
+    \end{pmatrix} \right| \\
+    &= \left| 10 \begin{vmatrix}
+            9 & -3 \\
+            11 & 7
+        \end{vmatrix}
+        - 3 \begin{vmatrix}
+            5 & -3 \\
+            8 & 7
+        \end{vmatrix}
+        + 4 \begin{vmatrix}
+            5 & 9 \\
+            8 & 11
+        \end{vmatrix}
+      \right| \\
+    &= \left| 10(63 + 33) - 3(35 + 24) + 4(55 - 72) \right| \\
+    &= \left| 960 - 177 - 68 \right| = 715 \text{ unidades cúbicas}
+\end{align*}
 En la figura~\ref{fig:placeholder3.6}, se dibuja el paralelepípedo en el espacio. 
+
 \begin{figure}[H]
     \centering
     \caption{Paralelepípedo generado por los vectores $u,v$ y $w$}
@@ -2129,7 +2021,6 @@ En la figura~\ref{fig:placeholder3.6}, se dibuja el paralelepípedo en el espaci
 El volumen del tetraedro es una sexta parte del volumen del paralelepípedo generado por los tres vectores.
 
 El volumen $V$ de un tetraedro, que es una pirámide de base triangular, es igual a la tercera parte del área de la base multiplicada por la altura:
-
 \begin{equation*}
     V=\frac{1}{3}A_{b}h
 \end{equation*}
@@ -2137,36 +2028,30 @@ El volumen $V$ de un tetraedro, que es una pirámide de base triangular, es igua
 \begin{figure}[H]
     \centering
     \caption{Tetraedro generado por tres vectores}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T8A.png}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T8A.png}
     \label{fig:placeholder3.7}
 \end{figure}
 
 A partir de la figura~\ref{fig:placeholder3.7}, se deduce:
-
-$V=\frac{1}{3}\left( \frac{1}{2}\left\Vert X\times Y\right\Vert \left\Vert 
-\text{Proy}_{X\times Y}Z\right\Vert \right) $
-
-$=\frac{1}{6}\left( \left\Vert X\times Y\right\Vert \left\Vert \frac{\left(
-X\times Y\right) \cdot Z}{\left\Vert X\times Y\right\Vert ^{2}}X\times
-Y\right\Vert \right) $
-
-$=\frac{1}{6}\left\vert \left( X\times Y\right) \cdot Z\right\vert $
-
-$=\frac{1}{6}\left\vert \det \left[ 
-\begin{array}{c}
-X \\ 
-Y \\ 
-Z%
-\end{array}%
-\right] \right\vert $
-
-$=\frac{1}{6}\left\vert \det \left( 
-\begin{array}{ccc}
-x_{1} & x_{2} & x_{3} \\ 
-y_{1} & y_{2} & y_{3} \\ 
-z_{1} & z_{2} & z_{3}%
-\end{array}%
-\right) \right\vert $
+\begin{align*}
+V &= \frac{1}{3}\left( \frac{1}{2}\left\Vert X\times Y\right\Vert \left\Vert \text{Proy}_{X\times Y}Z\right\Vert \right) \\
+  &= \frac{1}{6}\left( \left\Vert X\times Y\right\Vert \left\Vert \frac{\left( X\times Y\right) \cdot Z}{\left\Vert X\times Y\right\Vert ^{2}}X\times Y\right\Vert \right) \\
+  &= \frac{1}{6}\left\vert \left( X\times Y\right) \cdot Z\right\vert \\
+  &= \frac{1}{6}\left\vert \det \left[ 
+      \begin{array}{c}
+        X \\ 
+        Y \\ 
+        Z
+      \end{array}
+    \right] \right\vert \\
+  &= \frac{1}{6}\left\vert \det \left( 
+      \begin{array}{ccc}
+        x_{1} & x_{2} & x_{3} \\ 
+        y_{1} & y_{2} & y_{3} \\ 
+        z_{1} & z_{2} & z_{3}
+      \end{array}
+    \right) \right\vert
+\end{align*}
 
 \begin{example}
 Halle el volumen del tetraedro generado por los vectores
@@ -2176,37 +2061,31 @@ $u=\left( 10,8,3\right)$, $v=\left( 5,6,4\right)$ y $w=\left( 7,5,9\right)$.
 \textbf{Solución}
 
 El volumen de este tetraedro es:
-
-$V=\frac{1}{6}\left\vert \left( u\times v\right) \cdot w\right\vert $
-
-$=\frac{1}{6}\left\vert \det \left( 
-\begin{array}{ccc}
-10 & 8 & 3 \\ 
-5 & 6 & 4 \\ 
-7 & 5 & 9%
-\end{array}%
-\right) \right\vert $
-
-$=\frac{1}{6}\left\vert 
-\begin{array}{ccccc}
-10 & 8 & 3 & 10 & 8 \\ 
-5 & 6 & 4 & 5 & 6 \\ 
-7 & 5 & 9 & 7 & 5%
-\end{array}%
-\right\vert $
-
-$=\frac{1}{6}\left( 540+224+75-126-200-360\right) $
-
+\begin{align*}
+V &= \frac{1}{6}\left\vert \left( u\times v \right) \cdot w \right\vert \\
+  &= \frac{1}{6} \left\vert \det \left( 
+    \begin{array}{ccc}
+      10 & 8 & 3 \\
+      5 & 6 & 4 \\
+      7 & 5 & 9
+    \end{array}
+    \right) \right\vert \\
+  &= \frac{1}{6} \left\vert
+    \begin{array}{ccccc}
+      10 & 8 & 3 & 10 & 8 \\
+      5 & 6 & 4 & 5 & 6 \\
+      7 & 5 & 9 & 7 & 5
+    \end{array}
+    \right\vert \\
+  &= \frac{1}{6}\left( 540 + 224 + 75 - 126 - 200 - 360 \right) \\
+  &= \frac{51}{2} = 25.5 \text{ unidades cúbicas}
+\end{align*}
 En la figura~\ref{fig:placeholder3.8}, se dibuja el tetraedro generado por los vectores $u,v$ y $w$.
-
-$=\frac{51}{2}=25.5$ unidades cúbicas
-
-En la figura~\ref{fig:placeholder3.8} se dibuja el tetraedro.  .
 
 \begin{figure}[H]
     \centering
     \caption{Tetraedro generado por los vectores $u,v$ y $w$}
-    \includegraphics[width=0.8\linewidth]{Images/SDY12T8B.png}
+    \includegraphics[width=0.5\linewidth]{Images/SDY12T8B.png}
     \label{fig:placeholder3.8}
 \end{figure}
 
@@ -2312,28 +2191,21 @@ La preimagen es el triángulo $ABC$, y la imagen, tras la traslación, es el tri
 \end{figure}
 
 Analíticamente una traslación es una transformación $T:\mathbb{R}^{2}\rightarrow \mathbb{R}^{2}$ que mueve cada punto del plano $u$ según un vector dado $v$, llamado el vector de traslación.
-
-$T\left( u\right) =u+v\qquad $
-
+\[T\left( u\right) =u+v\]
 En coordenadas, si $u=\left( x,y\right) $ y $v=\left( a,b\right) $, entonces
-
-$T\left( x,y\right) =\left( x,y\right) +\left( a,b\right) =\left(
-x+a,y+b\right)$.
-
+\[T\left( x,y\right) =\left( x,y\right) +\left( a,b\right) =\left(
+x+a,y+b\right)\]
 Se cumple que las distancias entre cada punto de la imagen y su correspondiente punto en la imagen miden igual:
-
-\begin{center}
-$d\left( A,A^{\prime }\right) =d\left( B,B^{\prime }\right)$
-\end{center}
-
+\begin{equation*}
+d\left( A,A^{\prime }\right) =d\left( B,B^{\prime }\right)
+\end{equation*}
 Sean $A=\left( x_{1},y_{1}\right)$, $B=\left( x_{2},y_{2}\right)$
-
-$d\left( A,A\prime \right) =d\left( \left( x_{1},y_{1}\right)\!,\left(
-x_{1}+a,y_{1}+b\right) \right) =\sqrt{a^{2}+b^{2}}$
-
-$d\left( B,B\prime \right) =d\left( \left( x_{2},y_{2}\right)\!,\left(
-x_{2}+a,y_{2}+b\right) \right) =\sqrt{a^{2}+b^{2}}$
-
+\begin{align*} 
+    d\left( A,A^{\prime} \right) &=d\left( \left( x_{1},y_{1}\right)\!,\left(
+    x_{1}+a,y_{1}+b\right) \right) =\sqrt{a^{2}+b^{2}} \\
+    d\left( B,B^{\prime} \right) &=d\left( \left( x_{2},y_{2}\right)\!,\left(
+    x_{2}+a,y_{2}+b\right) \right) =\sqrt{a^{2}+b^{2}}
+\end{align*}
 Por tanto $d\left( A,A^{\prime }\right) =d\left( B,B^{\prime }\right)$.
 
 Las traslaciones son isometrías:
@@ -2341,16 +2213,13 @@ Las traslaciones son isometrías:
 Sea $T$ la traslación $T\left( x,y\right) =\left( x,y\right) +\left(
 a,b\right)$
 
-$T$ preserva longitudes:
-
-$d\left( T\left( x_{1},y_{1}\right)\!,T\left( x_{2},y_{2}\right) \right)
-=d\left( \left( x_{1}+a,y_{1}+b\right) ,\left( x_{2}+a,y_{2}+b\right)
-\right) $
-
-$=\left( x_{1}-x_{2}\right) ^{2}+\left( y_{1}-y_{2}\right) ^{2}$
-
-$=d\left( \left( x_{1},y_{1}\right)\!,\left( x_{2},y_{2}\right) \right) ^{2}$.
-
+$T$ preserva longitudes:\pdfcomment{Esta ecuación no tenía el signo de raiz cuadrada en la segunda línea, pero por contexto parece que faltaba}
+\begin{align*}
+d\left( T\left( x_{1},y_{1}\right),\, T\left( x_{2},y_{2}\right) \right) 
+  &= d\left( \left( x_{1}+a,\, y_{1}+b \right),\; \left( x_{2}+a,\, y_{2}+b \right) \right) \\
+  &= \sqrt{(x_{1}-x_{2})^2 + (y_{1}-y_{2})^2} \\
+  &= d\left( (x_{1},y_{1}),\, (x_{2},y_{2}) \right)
+\end{align*}
 $T$ preserva ángulos:
 
 Sean $A,B$ y $C$ puntos. Si $A^{\prime }=T\left( A\right) $, $B^{\prime
@@ -2359,24 +2228,20 @@ Sean $A,B$ y $C$ puntos. Si $A^{\prime }=T\left( A\right) $, $B^{\prime
 \begin{figure}[H]
     \centering
     \caption{Traslación}
-    $%
-    \begin{array}{c}
-    \begin{array}{c}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12T8F.png}
-    \end{array}%
-    \end{array}%
-    $
+    \includegraphics[width=0.8\textwidth]{Images/SDY12T8F.png}
     \label{fig:placeholder3.12}
 \end{figure}
 
-$B^{\prime }-A^{\prime }=\left( x_{2}+a,y_{2}+b\right) -\left(
-x_{1}+a,y_{1}+b\right) =\left( x_{2},y_{2}\right) -\left( x_{1},y_{1}\right)
-=B-A.$
-
-$C^{\prime }-A^{\prime }=\left( x_{3}+a,y_{3}+b\right) -\left(
-x_{1}+a,y_{1}+b\right) =\left( x_{3},y_{3}\right) -\left( x_{1},y_{1}\right)
-=C-A$
-
+\begin{align*}
+B^{\prime} - A^{\prime} 
+    &= \left( x_{2} + a,\, y_{2} + b \right) - \left( x_{1} + a,\, y_{1} + b \right) \\
+    &= \left( x_{2},\, y_{2} \right) - \left( x_{1},\, y_{1} \right) \\
+    &= B - A. \\
+C^{\prime} - A^{\prime} 
+    &= \left( x_{3} + a,\, y_{3} + b \right) - \left( x_{1} + a,\, y_{1} + b \right) \\
+    &= \left( x_{3},\, y_{3} \right) - \left( x_{1},\, y_{1} \right) \\
+    &= C - A.
+\end{align*}
 Así, $\overrightarrow{A^{\prime }B^{\prime }}\cdot \overrightarrow{A^{\prime
 }C^{\prime }}=\left( B^{\prime }-A^{\prime }\right) \cdot \left( C^{\prime
 }-A^{\prime }\right) =\left( B-A\right) \cdot \left( C-A\right) =%
@@ -2391,40 +2256,31 @@ Así que $\angle \left( \overrightarrow{A^{\prime }B^{\prime }},%
 \overrightarrow{A^{\prime }C^{\prime }}\right) \cong \angle \left( 
 \overrightarrow{AB},\overrightarrow{AC}\right)$
 
+\bigskip
+
 \textbf{Composición de traslaciones}
 
 Sean $T_{1}\left( x,y\right) =\left( x,y\right) +\left( a,b\right) $ y $
 T_{2}\left( x,y\right) =\left( x,y\right) +\left( c,d\right) $ dos traslaciones.
 
 La composición de $T_{1}$ y $T_{2}$ nuevamente es una traslación y conmuta.
-
-$\left( T_{1}\circ T_{2}\right) \left( x,y\right) =T_{1}\left( T_{2}\left(
-x,y\right) \right) $
-
-$\qquad \qquad \qquad =T_{1}\left( \left( x,y\right) +\left( c,d\right)
-\right) $
-
-$\qquad \qquad \qquad =T_{1}\left( \left( x+c,y+d\right) \right) $
-
-$\qquad \qquad \qquad =\left( x+c,y+d\right) +\left( a,b\right) $
-
-$\qquad \qquad \qquad =\left( x+c+a,y+d+b\right) $
-
-$\qquad \qquad \qquad =\left( x,y\right) +\left( a+c,b+d\right) $ \ 
-
+\begin{align*}
+\left( T_{1}\circ T_{2}\right) (x, y)
+    &= T_{1}\left( T_{2}(x, y) \right) \\
+    &= T_{1}\left( (x, y) + (c, d) \right) \\
+    &= T_{1}\left( x + c,\, y + d \right) \\
+    &= (x + c,\, y + d) + (a, b) \\
+    &= (x + c + a,\, y + d + b) \\
+    &= (x, y) + (a + c,\, b + d)
+\end{align*}
 es la traslación según el vector suma $\left( a,b\right) +\left( c,d\right)$
-
-$\left( T_{2}\circ T_{1}\right) \left( x,y\right) =T_{2}\left( T_{1}\left(
-x,y\right) \right) $
-
-$\qquad \qquad \qquad =T_{2}\left( \left( x,y\right) +\left( a,b\right)
-\right) $
-
-$\qquad \qquad \qquad =\left( x,y\right) +\left( a,b\right) +\left(
-c,d\right) $
-
-$\qquad \qquad \qquad =\left( T_{1}\circ T_{2}\right) \left( x,y\right) $
-
+\begin{align*}
+\left( T_{2} \circ T_{1} \right) (x, y) 
+    &= T_{2} \left( T_{1}(x, y) \right) \\
+    &= T_{2} \left( (x, y) + (a, b) \right) \\
+    &= (x, y) + (a, b) + (c, d) \\
+    &= \left( T_{1} \circ T_{2} \right) (x, y)
+\end{align*}
 Luego, la composición de traslaciones es conmutativa.
 
 \bigskip
@@ -2432,9 +2288,7 @@ Luego, la composición de traslaciones es conmutativa.
 \textbf{Inversa de una traslación y traslación de curvas}
 
 Si $T\left( x,y\right) =\left( x^{\prime},y^{\prime}\right) =T\left( x,y\right) +\left( a,b\right) =\allowbreak \left( a+x,b+y\right)$, para despejar $\left( x,y\right) $ a partir de $\left( x^{\prime},y^{\prime}\right)$ se tiene:
-
-$\left( x,y\right) =\left( x^{\prime}-a,y^{\prime}-b\right) $
-
+\[\left( x,y\right) =\left( x^{\prime}-a,y^{\prime}-b\right) \]
 Así que $T^{-1}\left( x,y\right) =\left( x-a,y-b\right) $
 
 Sea $C$ una curva con ecuación implícita $F\left( x,y\right) =0$. Al trasladar $C$ $a$ unidades a la derecha y $b$ unidades arriba, la ecuación de la curva trasladada $C^{\prime }$ es $F\left( x-a,y-b\right) =0$.
@@ -2464,7 +2318,7 @@ Cuando una figura gira a través de una línea, la preimagen y su imagen son con
 \begin{figure}[H]
     \centering
     \caption{Imagen por una reflexión}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12T8H.png}
+    \includegraphics[width=0.6\textwidth]{Images/SDY12T8H.png}
     \label{fig:placeholder3.14}
 \end{figure}
 
@@ -2480,7 +2334,7 @@ La reflexión respecto a una recta $l$ es una transformación con las siguientes
 \begin{figure}[H]
     \centering
     \caption{Reflexión de un punto alrededor de $l$}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12T8I.png}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T8I.png}
     \label{fig:placeholder3.15}
 \end{figure}
 
@@ -2495,31 +2349,25 @@ Una reflexión respecto a una recta es una isometría.
 \begin{figure}[H]
     \centering
     \caption{Reflexión respecto a la recta $y=mx$}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12T8J.png}
+    \includegraphics[width=0.6\textwidth]{Images/SDY12T8J.png}
     \label{fig:placeholder3.16}
 \end{figure}
 
-$%
-\begin{tabular}{l}
-Recta de reflexión $y=mx$ \\ 
-Vector director de la recta $v=\left( 1,m\right) $ \\ 
+Recta de reflexión $y=mx$ 
+
+Vector director de la recta $v=\left( 1,m\right) $
 
 De acuerdo a la figura~\ref{fig:placeholder3.16}, se tiene:
-
-$u=\left( x,y\right) ,$ \ $u^{\prime}=\left( x^{\prime},y^{\prime}\right) $ \\ 
-$u^{\prime}=T\left( u\right) =\Pr oy_{v}u+\Pr oy_{v}u-u$ \\ 
-\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $=2\Pr oy_{v}u-u$ \\ 
-\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $=2\frac{u\cdot v}{\left\Vert v\right\Vert
-^{2}}v-u$ \\ 
-\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ $=2\frac{x+my}{1+m^{2}}\left( 1,m\right)
--\left( x,y\right) $ \\ 
-$\ =\frac{1}{m^{2}+1}\left( -xm^{2}+2ym+x,ym^{2}+2xm-y\right) \allowbreak $%
-\end{tabular}%
-$
-
+\begin{align*}
+u &= \left( x,y\right) , \quad u^{\prime} = \left( x^{\prime}, y^{\prime} \right) \\
+u^{\prime} &= T\left( u \right) = \Proy_{v}u + \Proy_{v}u - u \\
+           &= 2 \Proy_{v}u - u \\
+           &= 2 \frac{u\cdot v}{\left\Vert v \right\Vert ^2} v - u \\
+           &= 2 \frac{x + m y}{1 + m^2} \left( 1, m \right) - \left( x, y \right) \\
+           &= \frac{1}{m^2 + 1} \left( -x m^2 + 2 y m + x,\; y m^2 + 2 x m - y \right)
+\end{align*}
 Matricialmente, la reflexión queda:
-
-$T\left( 
+\[T\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -2539,13 +2387,11 @@ y%
 x \\ 
 y%
 \end{array}%
-\right) $
-
+\right)\]
 Note que los números $2m,m^{2}-1$ y $m^{2}+1$ forman una tripla pitagórica.
 
 La reflexión respecto al eje $x$ se obtiene reemplazando $m$ por $0$:
-
-$T\left( 
+\[T\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -2560,134 +2406,143 @@ y%
 x \\ 
 y%
 \end{array}%
-\right) $
-
+\right)\]
 La reflexión respecto al eje $y$ se obtiene tomando el límite cuando $m$ tiende a $\infty$:
-
-$T\left( 
+\begin{align*}
+T\left( 
 \begin{array}{c}
 x \\ 
-y%
-\end{array}%
-\right) =\left( 
+y
+\end{array}
+\right) 
+&=
+\left( 
 \begin{array}{cc}
-\lim_{m\rightarrow \infty }\frac{1-m^{2}}{m^{2}+1} & \lim_{m\rightarrow
-\infty }\frac{2m}{m^{2}+1} \\ 
-\lim_{m\rightarrow \infty }\frac{2m}{m^{2}+1} & \lim_{m\rightarrow \infty }%
-\frac{m^{2}-1}{m^{2}+1}%
-\end{array}%
-\right) \left( 
+\lim\limits_{m\rightarrow \infty} \dfrac{1 - m^{2}}{m^{2} + 1} & \lim\limits_{m\rightarrow \infty} \dfrac{2m}{m^{2} + 1} \\[1em]
+\lim\limits_{m\rightarrow \infty} \dfrac{2m}{m^{2} + 1} & \lim\limits_{m\rightarrow \infty} \dfrac{m^{2} - 1}{m^{2} + 1}
+\end{array}
+\right)
+\left( 
 \begin{array}{c}
 x \\ 
-y%
-\end{array}%
-\right) $
-
-$\qquad \qquad =\left( 
+y
+\end{array}
+\right) \\[1em]
+&=
+\left( 
 \begin{array}{cc}
 -1 & 0 \\ 
-0 & 1%
-\end{array}%
-\right) \left( 
+0 & 1
+\end{array}
+\right)
+\left( 
 \begin{array}{c}
 x \\ 
-y%
-\end{array}%
-\right) $
+y
+\end{array}
+\right)
+\end{align*}
 
 \bigskip
-\textit{Reflexión respecto a la recta $y=x$}
+
+\textbf{Reflexión respecto a la recta $y=x$}
 
 En este caso, la pendiente de la recta es $m=1$ y la reflexión es:
-
-$T\left( 
+\begin{align*}
+T\left( 
 \begin{array}{c}
 x \\ 
-y%
-\end{array}%
-\right) =\frac{1}{2}\left( 
+y
+\end{array}
+\right)
+&= \frac{1}{2} \left(
 \begin{array}{cc}
-0 & 2 \\ 
-2 & 0%
-\end{array}%
-\right) \left( 
+0 & 2 \\
+2 & 0
+\end{array}
+\right)
+\left(
 \begin{array}{c}
-x \\ 
-y%
-\end{array}%
-\right) $
-
-$\qquad \qquad =\left( 
+x \\
+y
+\end{array}
+\right) \\
+&= \left(
 \begin{array}{cc}
-0 & 1 \\ 
-1 & 0%
-\end{array}%
-\right) \left( 
+0 & 1 \\
+1 & 0
+\end{array}
+\right)
+\left(
 \begin{array}{c}
-x \\ 
-y%
-\end{array}%
-\right) $
-
-$\qquad \qquad =\left( 
+x \\
+y
+\end{array}
+\right) \\
+&= 
+\left(
 \begin{array}{c}
-y \\ 
-x%
-\end{array}%
-\right) $
-
+y \\
+x
+\end{array}
+\right)
+\end{align*}
 Una reflexión respecto a la recta $y=x$ de una curva consiste en intercambiar las variables $x$ y $y$, de manera que el reflejo de la curva $f\left(x,y\right) =0$ es $f\left( y,x\right) =0$.
 
-\bigskip
-\textit{Reflexión respecto a la recta $y=4x$}
+\clearpage
+
+\textbf{Reflexión respecto a la recta \boldmath{$y=4x$}}
 
 La pendiente de la recta es $m=4$
-
-$T\left( 
+\begin{align*}
+T\left( 
 \begin{array}{c}
 x \\ 
-y%
-\end{array}%
-\right) =\frac{1}{17}\left( 
+y
+\end{array}
+\right) 
+&= \frac{1}{17}
+\left( 
 \begin{array}{cc}
 -15 & 8 \\ 
-8 & 15%
-\end{array}%
-\right) \left( 
+8 & 15
+\end{array}
+\right)
+\left(
 \begin{array}{c}
 x \\ 
-y%
-\end{array}%
-\right) $
-
-$\qquad \qquad =\left( 
+y
+\end{array}
+\right) \\
+&= 
+\left( 
 \begin{array}{cc}
 -\frac{15}{17} & \frac{8}{17} \\ 
-\frac{8}{17} & \frac{15}{17}%
-\end{array}%
-\right) \left( 
+\frac{8}{17} & \frac{15}{17}
+\end{array}
+\right)
+\left(
 \begin{array}{c}
 x \\ 
-y%
-\end{array}%
-\right) $
-
-$\qquad \qquad =\left( 
+y
+\end{array}
+\right) \\
+&= 
+\left(
 \begin{array}{c}
 \frac{8}{17}y-\frac{15}{17}x \\ 
-\frac{8}{17}x+\frac{15}{17}y%
-\end{array}%
-\right) $
+\frac{8}{17}x+\frac{15}{17}y
+\end{array}
+\right)
+\end{align*}
 
 \begin{example}
 Refleje la curva $y=\sqrt{x}$ respecto a la recta $y=4x$.
 \end{example}
 
 \textbf{Solución}
-
-$y-\sqrt{x}=0\qquad \frac{8}{17}x+\frac{15}{17}y-\sqrt{\frac{8}{17}y-\frac{15%
-}{17}x}=0$
-
+\[y-\sqrt{x}=0 \qquad \frac{8}{17}x+\frac{15}{17}y-\sqrt{\frac{8}{17}y-\frac{15%
+}{17}x}=0\]
 En la figura~\ref{fig:placeholder3.17} se dibujan la curva $y=\sqrt{x}$ y su reflexión respecto a la recta $y=4x$.
 
 \begin{figure}[H]

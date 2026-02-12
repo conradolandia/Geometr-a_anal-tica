@@ -56,7 +56,7 @@
 \usepackage[spanish,es-tabla]{babel}
 \usepackage{graphicx}
 \graphicspath{{Images/}}
-\usepackage[tableposition=top,figureposition=top]{caption} %labelsep=period
+\usepackage[figureposition=top]{caption} %labelsep=period
 \usepackage{float}
 
 \usepackage{csquotes}
@@ -99,6 +99,7 @@ style=ieee,
 %%%%%%%%%%%%%%
 
 % Referencias cruzadas e hipervínculos
+\usepackage{soul} % before pdfcomment so soulutf8 is not loaded (soulutf8 is obsolete in TL2025)
 \usepackage[unicode,naturalnames,bookmarksopen,bookmarksdepth=2,breaklinks=true,hyperfootnotes=false]{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -124,7 +125,6 @@ style=ieee,
 \usepackage[table]{xcolor}
 \usepackage{tikz}
 \usetikzlibrary{matrix,arrows.meta}
-\newsavebox{\crossprodbox}
 \newcommand{\trapezoid}{
     \begin{tikzpicture}[scale=0.35,baseline=-0.5ex]
         \draw (0,0) -- (1,0) -- (0.8,0.5) -- (0.2,0.5) -- cycle;
@@ -149,7 +149,7 @@ style=ieee,
 \usepackage{booktabs}
 
 % Ejemplos (sin usar amsthm)
-\newcounter{example}[chapter]
+\newcounter{example}
 \newenvironment{example}[1][]{\refstepcounter{example}\par\medskip
    \noindent \textbf{Ejemplo~\theexample}\ifx&#1&\else~(#1)\fi\par\nobreak\noindent\rmfamily}{\par\medskip}
 
@@ -161,10 +161,18 @@ style=ieee,
 \DeclareMathOperator{\Col}{Col}
 \DeclareMathOperator{\Proy}{Proy}
 \DeclareMathOperator{\Vol}{Vol}
+\DeclareMathOperator{\area}{Área}
+\DeclareMathOperator{\volumen}{Volumen}
+
 \let\oldsqrt\sqrt
 \let\sqrt\SQRT
 \let\sin\sen
 \setcounter{MaxMatrixCols}{10}
+\newsavebox{\crossprodbox}
+\newsavebox{\smcrossprodboxa}
+\newsavebox{\smcrossprodboxb}
+\newsavebox{\smcrossprodboxc}
+\newsavebox{\smcrossprodboxd}
 
 %% Para editar: comentar esta línea.
 %% Para produccion del libro: activar esta linea.
@@ -284,11 +292,17 @@ style=ieee,
 
 % Capitulos a incluir
 
+\include{Introducción}
+
+\newpage\thispagestyle{empty}
+
 \include{Capítulo_1}
 
 \newpage\thispagestyle{empty}
 
 \include{Capítulo_2}
+
+\newpage\thispagestyle{empty}
 
 \include{Capítulo_3}
 
