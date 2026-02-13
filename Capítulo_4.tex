@@ -2,6 +2,8 @@
 
 En este capítulo se presentan las secciones cónicas, que son curvas obtenidas por la intersección de un cono y un plano. Se estudian las circunferencias, parábolas, elipses e hipérbolas, y se construyen sus ecuaciones canónicas cuando su centro está en el origen. Además, se determina cada uno de sus elementos, se transforman sus ecuaciones por medio de traslaciones y se estudian las cónicas a partir de la ecuación general de segundo orden en dos variables. Finalmente, se transforman los ejes por medio de una rotación para identificar y graficar las ecuaciones de cónicas rotadas.
 
+\enlargethispage*{\baselineskip}
+
 \section{Circunferencias}
 
 Las circunferencias se generan por la intersección de un cono con un plano perpendicular a su eje (figura~\ref{fig:placeholder3.27}).
@@ -9,7 +11,7 @@ Las circunferencias se generan por la intersección de un cono con un plano perp
 \begin{figure}[H]
     \centering
     \caption{Circunferencia intersección de cono y plano}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12R3U.png}
+    \includegraphics[width=0.45\textwidth]{Images/SDY12R3U.png}
     \label{fig:placeholder3.27}
 \end{figure}
 
@@ -18,23 +20,17 @@ Una circunferencia es el conjunto de puntos del plano que equidistan de un punto
 \begin{figure}[H]
     \centering
     \caption{Circunferencia}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12R3V.png}
+    \includegraphics[width=0.55\textwidth]{Images/SDY12R3V.png}
     \label{fig:placeholder3.28}
 \end{figure}
 
 Si el centro es $C=(h,k)$ y la distancia constante es $r$, tenemos que un punto $P=(x,y)$ está sobre la circunferencia si satisface:
-
-$d(P,C)=r$
-
+\[d(P,C)=r\]
 Se aplica la fórmula de la distancia
-
-$\sqrt{(x-h)^{2}+(y-k)^{2}}=r$; se eleva al cuadrado
-
-$(x-h)^{2}+(y-k)^{2}=r^{2}$
-
+\[\sqrt{(x-h)^{2}+(y-k)^{2}}=r\]
+Se eleva al cuadrado
+\[(x-h)^{2}+(y-k)^{2}=r^{2}\]
 La última ecuación obtenida es llamada la ecuación canónica de la circunferencia con centro en $\left( h,k\right)$ y radio $r$.
-
-\bigskip
 
 \begin{example}
 Supongamos que un satélite Starlink orbita alrededor de la Tierra en una órbita circular. Se sabe que la altitud promedio de estos satélites es de aproximadamente 550 kilómetros sobre la superficie terrestre y que el radio
@@ -48,10 +44,9 @@ Dado que la órbita del satélite Starlink es circular, podemos modelarla como u
 Como la altitud del satélite sobre la Tierra es de $550$ kilómetros y el radio de la Tierra es 6371 km, el radio de la órbita del satélite Starlink es la suma del radio promedio de la Tierra y la altitud del satelite: $r=6371+550=6921$ kilómetros.
 
 Por lo tanto, la ecuación de la circunferencia que modela la órbita del satélite Starlink es:
-
-\begin{center}
-$x^{2}+y^{2}=6921^{2}$
-\end{center}
+\begin{equation*}
+x^{2}+y^{2}=6921^{2}
+\end{equation*}
 
 \begin{example}
 Hallar el centro y radio de una circunferencia que pasa por tres puntos no colineales.
@@ -60,9 +55,10 @@ Hallar el centro y radio de la circunferencia que pasa por $\left(1,2\right) ,\l
 \end{example}
 
 \textbf{Solución}
-
-$\left( x,y\right) \rightarrow E:h^{2}+k^{2}-2xh-2yk=r^{2}-x^{2}-y^{2}$
-
+\[
+\left( x,y\right) \rightarrow E:h^{2}+k^{2}-2xh-2yk=r^{2}-x^{2}-y^{2}
+\]
+\begin{center}
 \begin{tabular}{|l|l|l|}
 \hline
 $\left( x,y\right) $ & $E$ & $h^{2}+k^{2}-2xh-2yk=r^{2}-x^{2}-y^{2}$ \\ 
@@ -71,29 +67,28 @@ $\left( 1,2\right) $ & $E_{1}$ & $h^{2}+k^{2}-2h-4k=r^{2}-5$ \\ \hline
 $\left( -1,-1\right) $ & $E_{2}$ & $h^{2}+k^{2}+2h+2k=r^{2}-2$ \\ \hline
 $\left( 4,0\right) $ & $E_{3}$ & $h^{2}+k^{2}-8h=r^{2}-16$ \\ \hline
 \end{tabular}
-
-$E_{1}-E_{2}:E_{4}:-4h-6k=-3\rightarrow h=\frac{-6k+3}{4}$
-
-$E_{1}-E_{3}:E_{5}:6h-4k=11$
-
-Reemplazamos $h=\frac{-6k+3}{4}$ en $E_{5}:$
-
-$6\left( \frac{-6k+3}{4}\right) -4k=11\rightarrow \frac{3}{2}\left(
--6k+3\right) -4k=11\rightarrow -9k+\frac{9}{2}-4k=11$
-
-$\rightarrow -13k=11-\frac{9}{2}\rightarrow k=\frac{\frac{13}{2}}{-13}=-%
-\frac{1}{2}=-0.5$
-
+\end{center}
+\begin{align*}
+E_{1}-E_{2}:E_{4}:-4h-6k&=-3\rightarrow h=\frac{-6k+3}{4} \\
+E_{1}-E_{3}:E_{5}:6h-4k&=11
+\end{align*}
+Reemplazamos $h=\frac{-6k+3}{4}$ en $E_{5}$:
+\begin{align*}
+6\left( \frac{-6k+3}{4}\right) -4k & = 11 \rightarrow \frac{3}{2}\left(
+-6k+3\right) -4k \\ 
+& = 11\rightarrow -9k+\frac{9}{2}-4k=11 \rightarrow -13k \\ 
+& = 11-\frac{9}{2}\rightarrow k=\frac{\frac{13}{2}}{-13} \\ 
+& = -\frac{1}{2}=-0.5
+\end{align*}
 Reemplazamos $k=-\frac{1}{2}$ en $h=\frac{-6k+3}{4}=\frac{-6\left( -\frac{1}{%
 2}\right) +3}{4}=\frac{3}{2}=1.5$
 
-Reemplazamos $h=\frac{3}{2},k=-\frac{1}{2}$ en $E_{3}:$
-
-$h^{2}+k^{2}-8h=r^{2}-16\rightarrow r=\sqrt{h^{2}+k^{2}-8h+16}$
-
-$r=\sqrt{\left( \frac{3}{2}\right) ^{2}+\left( -\frac{1}{2}\right)
-^{2}-8\left( \frac{3}{2}\right) +16}=\sqrt{\frac{13}{2}}$
-
+Reemplazamos $h=\frac{3}{2}$,\enspace$k=-\frac{1}{2}$ en $E_{3}$:
+\begin{align*}
+h^{2}+k^{2}-8h = r^{2}-16\rightarrow & r = \sqrt{h^{2}+k^{2}-8h+16} \\
+& r = \sqrt{\left( \frac{3}{2}\right) ^{2}+\left( -\frac{1}{2}\right)
+^{2}-8\left( \frac{3}{2}\right) +16}=\sqrt{\frac{13}{2}}
+\end{align*}
 Ecuación $\left( x-\frac{3}{2}\right) ^{2}+\left( y+\frac{1}{2}\right) ^{2}=%
 \frac{13}{2}$
 
@@ -102,11 +97,9 @@ En la figura~\ref{fig:placeholder3.29} se dibujan los puntos y la circunferencia
 \begin{figure}[H]
     \centering
     \caption{Circunferencia que pasa por tres puntos}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12R3W.png}
+    \includegraphics[width=0.55\textwidth]{Images/SDY12R3W.png}
     \label{fig:placeholder3.29}
 \end{figure}
-
-\bigskip
 
 \begin{example}
 Cómo encontrar los centros de las circunferencias que pasan por dos puntos distintos y tienen un mismo radio.
@@ -115,10 +108,11 @@ Halle los centros de las circunferencias que pasan por $\left(-1,-1\right)$, $\l
 \end{example}
 
 \textbf{Solución}
-
-$\left( x,y\right) \rightarrow E:h^{2}+k^{2}-2xh-2yk=r^{2}-x^{2}-y^{2}\qquad
-\qquad r=5$
-
+\begin{equation*}
+\left( x,y\right) \rightarrow E:h^{2}+k^{2}-2xh-2yk=r^{2}-x^{2}-y^{2}
+\qquad r=5
+\end{equation*}
+\begin{center}
 \begin{tabular}{|l|l|l|}
 \hline
 $\left( x,y\right) $ & $E$ & $h^{2}+k^{2}-2xh-2yk=r^{2}-x^{2}-y^{2}$ \\ 
@@ -126,89 +120,91 @@ $\left( x,y\right) $ & $E$ & $h^{2}+k^{2}-2xh-2yk=r^{2}-x^{2}-y^{2}$ \\
 $\left( -1,-1\right) $ & $E_{1}$ & $h^{2}+k^{2}+2h+2k=23$ \\ \hline
 $\left( 2,3\right) $ & $E_{2}$ & $h^{2}+k^{2}-4h-6k=12$ \\ \hline
 \end{tabular}
-
-$E_{1}-E_{2}:6h+8k=11\rightarrow h=\frac{-8k+11}{6}$
-
+\end{center}
+\[
+E_{1}-E_{2}:6h+8k=11\rightarrow h=\frac{-8k+11}{6}
+\]
 Reemplazamos $h=\frac{-8k+11}{6}$ en $E_{1}:h^{2}+k^{2}+2h+2k=23$
-
-$\left( \frac{-8k+11}{6}\right) ^{2}+k^{2}+2\frac{-8k+11}{6}+2k-23=0$
-
-$\frac{64k^{2}-166k+121}{36}+k^{2}+\frac{-8k+11}{3}+2k-23=0$ 
-
-Multiplicamos
-cada término por $36$.
-
-$64k^{2}-166k+121+36k^{2}+12\left( -8k+11\right) +72k-36\left( 23\right) =0$
-
-$64k^{2}-166k+121+36k^{2}-96k+132+72k-828=0$
-
-$100k^{2}-190k-575=0$
-
-Resolvemos la ecuación cuadrática con $a=100\qquad b=-190\qquad c=-575$
-
-$k=\frac{-b\pm \sqrt{b^{2}-4ac}}{2a}=\frac{190\pm \sqrt{190^{2}-4\left(
-100\right) \left( -575\right) }}{200}=\frac{190\pm \sqrt{266\,100}}{200}$
-
-$k_{1}=\frac{190-\sqrt{266\,100}}{200}=-1.6292\qquad \qquad k_{2}=\frac{190+%
-\sqrt{266\,100}}{200}=3.529\,2$
-
+\begin{align*}
+\left( \frac{-8k+11}{6}\right) ^{2}+k^{2}+2\frac{-8k+11}{6}+2k-23&=0 \\
+\frac{64k^{2}-166k+121}{36}+k^{2}+\frac{-8k+11}{3}+2k-23&=0
+\end{align*}
+Multiplicamos cada término por $36$.
+\begin{align*}
+64k^{2}-166k+121+36k^{2}+12\left( -8k+11\right) +72k-36\left( 23\right) &=0 \\
+64k^{2}-166k+121+36k^{2}-96k+132+72k-828&=0\\
+100k^{2}-190k-575&=0
+\end{align*}
+Resolvemos la ecuación cuadrática con $a=100$, $b=-190$ y $c=-575$
+\begin{align*}
+k&=\frac{-b\pm \sqrt{b^{2}-4ac}}{2a}=\frac{190\pm \sqrt{190^{2}-4\left(
+100\right) \left( -575\right) }}{200}\\ 
+&= \frac{190\pm \sqrt{266\,100}}{200}\\
+k_{1}&=\frac{190-\sqrt{266\,100}}{200}=-1.6292 \quad \text{y} \quad k_{2}=\frac{190+\sqrt{266\,100}}{200}=3.5292
+\end{align*}
 De $h=\frac{-8k+11}{6}$, tenemos:
-
-$h_{1}=\frac{-8k_{1}+11}{6}=\frac{-8\left( -1.6292\right) +11}{6}=4.0056$
-
-$h_{2}=\frac{-8\left( 3.529\,2\right) +11}{6}=-2.8723$
-
-Centros: $\left( h_{1},k_{1}\right) =\left( 4.0056,-1.6292\right) \qquad
-\qquad \left( h_{2},k_{2}\right) =\left( -2.8723,3.529\,2\right) $
-
+\begin{align*}
+h_{1}&=\frac{-8k_{1}+11}{6}=\frac{-8\left( -1.6292\right) +11}{6}=4.0056\\
+h_{2}&=\frac{-8\left( 3.5292\right) +11}{6}=-2.8723
+\end{align*}
+Centros: $\left( h_{1},k_{1}\right) =\left( 4.0056,-1.6292\right)$,\enspace 
+$\left( h_{2},k_{2}\right) =\left( -2.8723,3.5292\right)$.
 En la figura~\ref{fig:placeholder3.30} se dibujan los dos puntos y la circunferencias que los contienen. 
 
 \begin{figure}[H]
     \centering
     \caption{Circunferencias que contienen dos puntos dados}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12R3X.png}
+    \includegraphics[width=0.6\textwidth]{Images/SDY12R3X.png}
     \label{fig:placeholder3.30}
 \end{figure}
-\bigskip
 
 \begin{example}
-Puntos de intersección de dos circunferencias
+Puntos de intersección de dos circunferencias.\pdfcomment{¿Me parece que esta línea se puede borrar?}
 
 Halle los puntos de intersección de las circunferencias con ecuaciones $x^{2}+4x+y^{2}+6y=3$ y $x^{2}+2x+y^{2}+4y=11$.
 \end{example}
 
 \textbf{Solución}
 
-\begin{tabular}{l}
-Restamos las ecuaciones. \\ 
-$E_{1}:x^{2}+4x+y^{2}+6y=3$ \\ 
-$E_{2}:x^{2}+2x+y^{2}+4y=11$ \\ 
-$E_{1}-E_{2}:2x+2y=-8$ \\ Dividimos cada término entre $2$. \\ 
-$x+y=-4\rightarrow y=-x-4=-\left( x+4\right) $ \\ 
-Reemplazamos $y=-\left( x+4\right) $\ en $E_{1}$. \\ 
-$E_{1}:x^{2}+4x+\left( -\left( x+4\right) \right) ^{2}+6\left( -\left(
-x+4\right) \right) =3$ \\ 
-$x^{2}+4x+x^{2}+8x+16-6x-24-3=0$%
-\end{tabular}
-
-\begin{tabular}{l}
-$\underset{a}{\underbrace{2}}x^{2}+\underset{b}{\underbrace{6}}x\underset{c}{%
-\underbrace{-11}}=0$ Resolvemos la cuadrática: \\ 
-$x=\dfrac{-b\pm \sqrt{b^{2}-4ac}}{2a}=\dfrac{-6\pm \sqrt{36-8\left( -11\right) }}{%
-4}.$ $x_{1}\approx -4.284,$ $x_{2}\approx 1.284$ \\ 
-$y_{1}=-x_{1}-4\approx 4.284-4\approx 0.\,284$ \\ 
-$y_{2}=-x_{2}-4\approx -1.284-4\approx -5.284$ \\ 
-Los puntos de intersección son: \  \\ 
-$\left( x_{1},y_{1}\right) =\left( -4.284,0.\,284\right) $ \ y \ $\left(
-x_{2},y_{2}\right) =\left( 1.284,-5.284\right) $%
-\end{tabular}
-
+Restamos las ecuaciones.
+\begin{align*}
+E_{1}&:x^{2}+4x+y^{2}+6y=3 \\ 
+E_{2}&:x^{2}+2x+y^{2}+4y=11 \\ 
+E_{1}-E_{2}&:2x+2y=-8
+\end{align*}
+Dividimos cada término entre $2$.
+\[x+y=-4\rightarrow y=-x-4=-\left( x+4\right)\]
+Reemplazamos $y=-\left( x+4\right) $\ en $E_{1}$.
+\begin{align*}
+E_{1}:x^{2}+4x+\left( -\left( x+4\right) \right) ^{2}+6\left( -\left(
+x+4\right) \right) =3 \\ 
+x^{2}+4x+x^{2}+8x+16-6x-24-3=0
+\end{align*}
+\[
+\underset{a}{\underbrace{2}}x^{2}+\underset{b}{\underbrace{6}}x\underset{c}{
+\underbrace{-11}}=0 
+\]
+Resolvemos la cuadrática:
+\begin{align*}
+x & =\dfrac{-b\pm \sqrt{b^{2}-4ac}}{2a}
+    =\dfrac{-6\pm \sqrt{36-8\left( -11\right) }}{4}\\ 
+x_{1} &\approx -4.284\\ 
+x_{2} &\approx 1.284 \\
+y_{1} & =-x_{1}-4 \approx 4.284-4\approx 0.284 \\ 
+y_{2} & =-x_{2}-4 \approx -1.284-4\approx -5.284
+\end{align*}
+Los puntos de intersección son:
+\begin{align*}
+    \left( x_{1},y_{1}\right) &= \left( -4.284,0.284\right)\\
+    & \enspace \text{y} \\
+    \left(x_{2},y_{2}\right) &= \left( 1.284,-5.284\right)
+\end{align*}\enlargethispage*{\baselineskip}
 En la figura~\ref{fig:placeholder3.31} se dibujan las circunferencias y sus puntos de intersección. 
 
 \begin{figure}[H]
     \centering
     \caption{Puntos de corte de dos circunferencias}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12R3Y.png}
+    \includegraphics[width=0.4\textwidth]{Images/SDY12R3Y.png}
     \label{fig:placeholder3.31}
 \end{figure}
 
@@ -246,25 +242,24 @@ ecuaciones $x^{2}+2x+y^{2}+2y=2$ y $x^{2}+4x+y^{2}+2y=4$
 
 \section{Parábolas}
 
+\enlargethispage*{\baselineskip}
+
 Las parábolas se generan por la intersección de un cono con un plano oblicuo, como se muestra en la figura~\ref{fig:placeholder3.32}:
 
 \begin{figure}[H]
     \centering
     \caption{Parábola intersección de un plano y un cono}
     \begin{tabular}{l}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12R3Z.png}
+    \includegraphics[width=0.38\textwidth]{Images/SDY12R3Z.png}
     \end{tabular}
     \label{fig:placeholder3.32}
 \end{figure}
-
 
 Una parábola es una curva plana formada por el conjunto de puntos que equidistan de un punto fijo llamado foco y una recta fija llamada directriz.
 
 El eje de la parábola es la recta perpendicular a la directriz que pasa por el foco.
 
 El vértice de la parábola es el punto de intersección entre la parábola y su eje.
-
-\bigskip
 
 \subsection{Parábolas que abren hacia arriba}
 
@@ -273,81 +268,65 @@ Si suponemos que las coordenadas del vértice son $\left( 0,0\right)$, las del f
 \begin{figure}[H]
     \centering
     \caption{Parábola que abre hacia arriba}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12S40.png}
+    \includegraphics[width=0.8\textwidth]{Images/SDY12S40.png}
     \label{fig:placeholder3.33}
 \end{figure}
 
 Como se ve en la figura~\ref{fig:placeholder3.33}, cada punto $P=\left( x,y\right)$ en la parábola satisface:
-
-
-$d\left( P,F\right) =d\left( P,L\right) $
-
-
-$d\left( \left( x,y\right) ,\left( 0,p\right) \right) =d\left( \left(
-x,y\right) ,\left( x,-p\right) \right) $ \ elevamos al cuadrado
-
-
-$d\left( \left( x,y\right) ,\left( 0,p\right) \right) ^{2}=d\left( \left(
-x,y\right) ,\left( x,-p\right) \right) ^{2}$ \ \ aplicamos la fórmula de la
-distancia
-
-
-$x^{2}+\left( y-p\right) ^{2}=\left( y-\left( -p\right) \right) ^{2}$
-
-
-$x^{2}=\left( y-p\right) ^{2}-\left( y+p\right) ^{2}$
-
-
-$x^{2}=\left( y-p-\left( y+p\right) \right) \left( y-p+y+p\right) $
-
-
-$x^{2}=2p\left( 2y\right) $
-
-
-$x^{2}=4py$
-
+\begin{align*}
+d\left( P,F\right) &=d\left( P,L\right) \\
+d\left( \left( x,y\right) ,\left( 0,p\right) \right) &=d\left( \left(
+x,y\right) ,\left( x,-p\right) \right)
+\end{align*}
+Elevamos al cuadrado
+\[d\left( \left( x,y\right) ,\left( 0,p\right) \right) ^{2}=d\left( \left(
+x,y\right) ,\left( x,-p\right) \right) ^{2}\]
+Aplicamos la fórmula de la distancia
+\begin{align*}
+x^{2}+\left( y-p\right) ^{2} & = \left( y-\left( -p\right) \right) ^{2} \\
+x^{2} & = \left( y-p\right) ^{2}-\left( y+p\right) ^{2} \\
+x^{2} & = \left( y-p-\left( y+p\right) \right) \left( y-p+y+p\right) \\
+x^{2} & = 2p\left( 2y\right) \\
+x^{2} & = 4py
+\end{align*}
 Esta última es la ecuación de la parábola que abre hacia arriba. Tiene vértice $V=\left( 0,0\right) $ y distancia focal $p$.
 
-Si sustituimos en $x^{2}=4py$,$\ x$ por $-x$, la ecuación queda igual. Esto significa que la parábola es simétrica respecto al eje $y$.
-
-\bigskip
+Si sustituimos en $x^{2}=4py$, $x$ por $-x$, la ecuación queda igual. Esto significa que la parábola es simétrica respecto al eje $y$.
 
 \subsection{Parábolas que abren hacia abajo}
 
 Al reflejar la parábola con ecuación $x^{2}=4py$ respecto al eje $x$, se obtiene una parábola con vértice $V=\left( 0,0\right)$ que abre hacia abajo (figura~\ref{fig:placeholder3.34}). Esto se logra reemplazando $y$ por $-y$, y se obtiene la ecuación
-
-$x^{2}=-4py$
+\[x^{2}=-4py\]
 
 \begin{figure}[H]
     \centering
     \caption{Parábola que abre hacia abajo}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12S41.png}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12S41.png}
     \label{fig:placeholder3.34}
 \end{figure}
+
 
 \subsection{Parábolas que abren a la derecha}
 
 Al reflejar la parábola con ecuación $x^{2}=4py$ respecto a la recta $y=x$, se obtiene una parábola con vértice $V=\left( 0,0\right)$ que abre hacia la derecha (figura~\ref{fig:placeholder3.35}). Esto se realiza intercambiando las variables $x$ y $y$, y se obtiene la ecuación
-
-$y^{2}=4px$
+\[y^{2}=4px\]
 
 \begin{figure}[H]
     \centering
     \caption{Parábola que abre hacia la derecha}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12S42.png}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12S42.png}
     \label{fig:placeholder3.35}
 \end{figure}
 
 \subsection{Parábolas que abren a la izquierda}
 
 Al reflejar la parábola con ecuación $x^{2}=-4py$ respecto a la recta $y=x$, se obtiene una parábola con vértice $V=\left( 0,0\right)$ que abre hacia la izquierda (figura~\ref{fig:placeholder3.36}). Esto se logra intercambiando las variables $x$ y $y$, y se obtiene la ecuación
-
-$y^{2}=-4px$
+\[y^{2}=-4px\]
 
 \begin{figure}[H]
     \centering
     \caption{Parábola que abre a la izquierda}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12S43.png}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12S43.png}
     \label{fig:placeholder3.36}
 \end{figure}
 
@@ -383,28 +362,20 @@ Entonces, el vértice de la órbita parabólica del cometa Nishimura es $\left(0
 \begin{figure}[H]
     \centering
     \caption{Órbita del cometa}
-    \includegraphics[width=0.5\textwidth]{Images/SDY1D29S.png}
+    \includegraphics[width=0.7\textwidth]{Images/SDY1D29S.png}
     \label{fig:placeholder3.38}
 \end{figure}
 
 Así que
-
-$x^{2}=4p\left( y-\left( -p\right) \right) $
-
+\[x^{2}=4p\left( y-\left( -p\right) \right)\]
 Como el valor de $p$ es $0.22$ UA,
-
-$x^{2}=4\left( 0.22\right) \left( y+0.22\right) $
-
-$x^{2}=0.88\left( y+0.22\right) $
-
-$x^{2}=0.88y+0.1936$
-
+\begin{align*}
+    x^{2} & = 4\left( 0.22\right) \left( y+0.22\right) \\
+    x^{2} & = 0.88\left( y+0.22\right) \\
+    x^{2} & = 0.88y+0.1936
+\end{align*}
 Al despejar $x$ en términos de $y$, la ecuación de la órbita es:
-
-\begin{center}
-$y=\frac{1}{0.88}\left( x^{2}-0.1936\right)$
-\end{center}
-
+\[y=\frac{1}{0.88}\left( x^{2}-0.1936\right)\]
 En la figura~\ref{fig:placeholder3.38}, se dibuja la órbita del cometa, su vértice y foco.
 
 \section{Elipses}
@@ -430,76 +401,39 @@ Una elipse se define como una curva formada por el conjunto de todos los puntos 
 
 \subsection{Elipse alargada en la horizontal}
 
-\pdfcomment{Este párrafo es diferente en el PDF con correcciones anotadas (07_Ajustes _diagramacion Geom Analitica_JEB.pdf)}
-
-El centro de la elipse es $C=\left( 0,0\right) $ y las coordenadas de los focos son $F_{1}=\left(-c,0\right) $ y $F_{1}=\left(c,0\right) $, como la suma de distancias de cada punto a los focos es la constante $2a$, llamando $c^{2}=a^{2}-b^{2}$ con $a>b$, cada punto $P=\left( x,y\right)$ en la elipse de la figura~\ref{fig:placeholder3.41}, satisface:
-
+El centro de la elipse es $C=\left( 0,0\right) $ y las coordenadas de los focos son $F_{1}=\left(-c,0\right) $ y $F_{1}=\left(c,0\right) $, como la suma de distancias de cada punto a los focos es la constante $2a$, llamando $c^{2}=a^{2}-b^{2}$ con $a>b$, cada punto $P=\left( x,y\right)$ en la elipse de la figura~\ref{fig:placeholder3.41}, satisface:\pdfcomment{Este párrafo es diferente en el PDF con correcciones anotadas (07_Ajustes _diagramacion Geom Analitica_JEB.pdf)}
 \begin{figure}[H]
     \centering
     \caption{Elipse alargada horizontalmente}
-    \includegraphics[width=0.9\textwidth]{Images/SDY12S47.png}
+    \includegraphics[width=\textwidth]{Images/SDY12S47.png}
     \label{fig:placeholder3.41}
 \end{figure}
-
-$d\left( P,F_{1}\right) +d\left( P,F_{2}\right) =2a$
-
-
-$d\left( P,F_{1}\right) =2a-d\left( P,F_{2}\right) $
-
-
-$d\left( P,F_{1}\right) =\left( 2a-d\left( P,F_{2}\right) \right) ^{2}$
-
-
-$d\left( P,F_{1}\right) ^{2}=4a^{2}-4ad\left( P,F_{2}\right) +d\left(
-P,F_{2}\right) ^{2}$ 
-
+\begin{align*}
+    d\left( P,F_{1}\right) +d\left( P,F_{2}\right) &=2a \\
+    d\left( P,F_{1}\right) &=2a-d\left( P,F_{2}\right) \\
+    d\left( P,F_{1}\right) &=\left( 2a-d\left( P,F_{2}\right) \right) ^{2} \\
+    d\left( P,F_{1}\right) ^{2}&=4a^{2}-4ad\left( P,F_{2}\right) +d\left(P,F_{2}\right) ^{2}
+\end{align*}
 Elevamos al cuadrado
-
-
-$d\left( \left( x,y\right) ,\left( -c,0\right) \right) ^{2}=4a^{2}-4ad\left(
+\[
+d\left( \left( x,y\right) ,\left( -c,0\right) \right) ^{2}=4a^{2}-4ad\left(
 \left( x,y\right) ,\left( c,0\right) \right) +d\left( \left( x,y\right)
-,\left( c,0\right) \right) ^{2}$
-
-
+,\left( c,0\right) \right) ^{2}
+\]
 Aplicamos la fórmula de la distancia
-
-$\left( x+c\right) ^{2}+y^{2}=4a^{2}-4a\sqrt{\left( x-c\right) ^{2}+y^{2}}%
-+\left( x-c\right) ^{2}+y^{2}$
-
-
-$\left( x+c\right) ^{2}-\left( x-c\right) ^{2}=4a^{2}-4a\sqrt{\left(
-x-c\right) ^{2}+y^{2}}$
-
-
-$\left( x+c-\left( x-c\right) \right) \left( x+c+x-c\right) =4a^{2}-4a\sqrt{%
-\left( x-c\right) ^{2}+y^{2}}$
-
-
-$2c\left( 2x\right) =4a^{2}-4a\sqrt{\left( x-c\right) ^{2}+y^{2}}$
-
-
-$4a\sqrt{\left( x-c\right) ^{2}+y^{2}}=4\left( a^{2}-cx\right) $
-
-
-$a^{2}\left( \sqrt{\left( x-c\right) ^{2}+y^{2}}\right) ^{2}=\left(
-a^{2}-cx\right) ^{2}$
-
-
-$a^{2}x^{2}-2a^{2}cx+a^{2}c^{2}+a^{2}y^{2}=a^{4}-2a^{2}cx+c^{2}x^{2}$
-
-
-$a^{2}x^{2}+a^{2}c^{2}+a^{2}y^{2}=a^{4}+c^{2}x^{2}$
-
-
-$\left( a^{2}-c^{2}\right) x^{2}+a^{2}y^{2}=a^{2}\left( a^{2}-c^{2}\right) $
-
-
-$b^{2}x^{2}+a^{2}y^{2}=a^{2}b^{2}$
-
-
-$\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1.$
-
-
+\begin{align*}
+    \left( x+c \right)^2 + y^2 &= 4a^2 - 4a \sqrt{(x-c)^2 + y^2} + (x-c)^2 + y^2 \\[1ex]
+    \left( x+c \right)^2 - (x-c)^2 &= 4a^2 - 4a \sqrt{(x-c)^2 + y^2} \\[1ex]
+    \left( x+c - (x-c) \right)\left( x+c + x-c \right) &= 4a^2 - 4a \sqrt{(x-c)^2 + y^2} \\[1ex]
+    2c \cdot (2x) &= 4a^2 - 4a \sqrt{(x-c)^2 + y^2} \\[1ex]
+    4a \sqrt{(x-c)^2 + y^2} &= 4(a^2 - c x) \\[1ex]
+    a^2 \left( \sqrt{(x-c)^2 + y^2} \right)^2 &= (a^2 - c x)^2 \\[1ex]
+    a^2 x^2 - 2a^2 c x + a^2 c^2 + a^2 y^2 &= a^4 - 2 a^2 c x + c^2 x^2 \\[1ex]
+    a^2 x^2 + a^2 c^2 + a^2 y^2 &= a^4 + c^2 x^2 \\[1ex]
+    (a^2 - c^2) x^2 + a^2 y^2 &= a^2 (a^2 - c^2) \\[1ex]
+    b^2 x^2 + a^2 y^2 &= a^2 b^2 \\[1ex]
+    \frac{x^2}{a^2} + \frac{y^2}{b^2} &= 1
+\end{align*}
 Si reemplazamos $x$ por $-x$ o $y$ por $-y$ en la ecuación de la elipse $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1$, la ecuación permanece igual. Esto significa que la elipse es simétrica respecto a los ejes $x$ y $y$.
 
 \subsection{Elipse alargada en la vertical}
@@ -550,9 +484,7 @@ Se sabe que la distancia entre Marte y el Sol en su punto más cercano (periheli
 \textbf{Solución}
 
 La ecuación de una elipse en coordenadas cartesianas centrada en el origen es:
-
-$\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1$
-
+\[\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1\]
 Donde $a$ es la longitud del semieje mayor y $b$ es la longitud del semieje menor. 
 
 En el caso de la órbita de Marte, podemos considerar el Sol como uno de los focos de la elipse.
@@ -562,15 +494,9 @@ Por lo tanto, $a=\frac{206.7+249.22}{2}=227.96$ millones de kilómetros, y
 $c=\frac{249.2-206.72}{2}=21.25$ millones de kilómetros, donde $c$ es la distancia del centro al foco.
 
 Ahora, podemos calcular $b$ utilizando la relación $c^{2}=a^{2}-b^{2}$.
-
-$b=\sqrt{a^{2}-c^{2}}=\sqrt{(227.96)^{2}-(21.25)^{2}}\approx 226.97$
-millones de kilómetros.
-
+\[b=\sqrt{a^{2}-c^{2}}=\sqrt{(227.96)^{2}-(21.25)^{2}}\approx 226.97\ \text{millones de kilómetros.}\]
 Entonces, la ecuación de la órbita de Marte alrededor del Sol es:
-
-\begin{center}
-$\frac{x^{2}}{(227.95)^{2}}+\frac{y^{2}}{(226.97)^{2}}=1.$
-\end{center}
+\[\frac{x^{2}}{(227.95)^{2}}+\frac{y^{2}}{(226.97)^{2}}=1\]
 
 \subsection{Excentricidad de una elipse}
 
@@ -588,59 +514,38 @@ de variar la excentricidad $e$.
 \begin{figure}[H]
     \centering
     \caption{Excentricidades de elipses}
-    $%
-    \begin{tabular}{llll}
-    \includegraphics[width=0.2\textwidth]{Images/SDY12T8X.png}
-    
-    &
-    
-    \includegraphics[width=0.2\textwidth]{Images/SDY12T8Y.png}
-    
-    & 
-    
-    
-    \includegraphics[width=0.2\textwidth]{Images/SDY12T8Z.png}
-    
-    
-    & 
-    \includegraphics[width=0.2\textwidth]{Images/SDY12T90.png}
-    \\ 
+    \begin{tabular}{cccc}
+    \includegraphics[width=0.2\linewidth]{Images/SDY12T8X.png} &
+    \includegraphics[width=0.2\linewidth]{Images/SDY12T8Y.png} & 
+    \includegraphics[width=0.2\linewidth]{Images/SDY12T8Z.png} & 
+    \includegraphics[width=0.2\linewidth]{Images/SDY12T90.png} \\ 
     $e=0.1$ & $e=0.6$ & $e=0.8$ & $e=0.9$%
-    \end{tabular}%
-    $   
+    \end{tabular}
     \label{fig:placeholder3.44}
 \end{figure}
-
-
-\bigskip
 
 \begin{example}
 Halle la ecuación y los elementos, y grafique la elipse con excentricidad $e=\frac{1}{2}$ y con focos en $\left( 0,\pm 6\right)$.
 \end{example}
 
+\clearpage
+
 \textbf{Solución}
 
 Dado que los focos están en $\left( 0,\pm 6\right)$, el centro de la elipse es $\left(0,0\right) $ y es achatada en la vertical; luego $c=6$ y $e=\frac{c}{a}=%
 \frac{1}{2}$ y $\ a=2c=12$.
-
-$b=\sqrt{a^{2}-c^{2}}=\sqrt{12^{2}-6^{2}}=\sqrt{6^{2}\left( 4\right) -6^{2}}=6\sqrt{3}$
-
+\[b=\sqrt{a^{2}-c^{2}}=\sqrt{12^{2}-6^{2}}=\sqrt{6^{2}\left( 4\right) -6^{2}}=6\sqrt{3}\]
 La ecuación de la elipse es:
-
-\begin{center}
-$\frac{x^{2}}{108}+\frac{y^{2}}{144}=1$
-\end{center}
-
+\[\frac{x^{2}}{108}+\frac{y^{2}}{144}=1\]
 Los vértices son $\left( 0,\pm 12\right) $ y $\left( \pm 6\sqrt{3},0\right)$.
 
 La longitud del eje mayor vertical es $2a=24$ y la longitud del eje menor horizontal es $2b=12\sqrt{3}$.
-
 Su gráfica se muestra en la figura~\ref{fig:placeholder3.45}.
 
 \begin{figure}[H]
     \centering
     \caption{Ejemplo de elipse alargada verticalmente}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12T91.png}
+    \includegraphics[width=0.6\textwidth]{Images/SDY12T91.png}
     \label{fig:placeholder3.45}
 \end{figure}
 
@@ -651,7 +556,7 @@ Las hipérbolas se generan por intersección de un cono con un plano paralelo al
 \begin{figure}[H]
     \centering
     \caption{Hipérbola intersección de un plano y un cono}
-    \includegraphics[width=0.5\textwidth]{Images/SDY12T92.png}
+    \includegraphics[width=0.4\textwidth]{Images/SDY12T92.png}
     \label{fig:placeholder3.46}
 \end{figure}
 
@@ -667,120 +572,71 @@ Si el centro de la hipérbola es $C=\left( 0,0\right) $ y las coordenadas de los
     \includegraphics[width=0.5\textwidth]{Images/SDY12T93.png}
     \label{fig:placeholder3.47}
 \end{figure}
-
-
-$d\left( P,F_{1}\right) -d\left( P,F_{2}\right) =2a$
-
-
-$d\left( P,F_{1}\right) =2a+d\left( P,F_{2}\right) $
-
-
-$d\left( P,F_{1}\right) ^{2}=\left( 2a+d\left( P,F_{2}\right) \right) ^{2}$
-
-
-$d\left( P,F_{1}\right) ^{2}=4a^{2}+4ad\left( P,F_{2}\right) +d\left(
-P,F_{2}\right) ^{2}$ \ \ \ \ elevamos al cuadrado
-
-
-$d\left( \left( x,y\right) ,\left( -c,0\right) \right) ^{2}=4a^{2}+4ad\left(
+\begin{align*}
+    d\left( P,F_{1}\right) - d\left( P,F_{2}\right) &= 2a \\
+    d\left( P,F_{1}\right) &= 2a + d\left( P,F_{2}\right) \\
+    d\left( P,F_{1}\right)^2 &= \left( 2a + d\left( P,F_{2}\right) \right)^2 \\
+    d\left( P,F_{1}\right)^2 &= 4a^2 + 4a d\left( P,F_{2}\right) + d\left(P,F_{2}\right)^2
+\end{align*}
+elevamos al cuadrado
+\[d\left( \left( x,y\right) ,\left( -c,0\right) \right) ^{2}=4a^{2}+4ad\left(
 \left( x,y\right) ,\left( c,0\right) \right) +d\left( \left( x,y\right)
-,\left( c,0\right) \right) ^{2}$ \ \ \ 
-
-
+,\left( c,0\right) \right) ^{2}\]
 aplicamos la fórmula de la distancia
-
-
-$\left( x+c\right) ^{2}+y^{2}=4a^{2}+4a\sqrt{\left( x-c\right) ^{2}+y^{2}}%
-+\left( x-c\right) ^{2}+y^{2}$
-
-
-$\left( x+c\right) ^{2}-\left( x-c\right) ^{2}=4a^{2}+4a\sqrt{\left(
-x-c\right) ^{2}+y^{2}}$
-
-
-$\left( x+c-\left( x-c\right) \right) \left( x+c+x-c\right) =4a^{2}+4a\sqrt{\left( x-c\right) ^{2}+y^{2}}$
-
-
-$2c\left( 2x\right) =4\left( a^{2}+a\sqrt{\left( x-c\right) ^{2}+y^{2}}%
-\right) $
-
-
-$cx=a^{2}+a\sqrt{\left( x-c\right) ^{2}+y^{2}}$
-
-
-$cx-a^{2}=a\sqrt{\left( x-c\right) ^{2}+y^{2}}$
-
-
-$\left( cx-a^{2}\right) ^{2}=\left( a\sqrt{\left( x-c\right) ^{2}+y^{2}}%
-\right) ^{2}$
-
-
-$c^{2}x^{2}-2a^{2}cx+a^{4}=a^{2}x^{2}-2a^{2}cx+a^{2}c^{2}+a^{2}y^{2}$
-
-
-$\left( c^{2}-a^{2}\right) x^{2}=a^{2}\left( c^{2}-a^{2}\right) +a^{2}y^{2}$
-
-
-$b^{2}x^{2}=a^{2}b^{2}+a^{2}y^{2}\qquad $
-
-
-$\frac{x^{2}}{a^{2}}=1+\frac{y^{2}}{b^{2}}$
-
-
-$\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1$
-
-
-
+\begin{align*}
+    \left( x+c \right)^2 + y^2 &= 4a^2 + 4a\sqrt{(x-c)^2 + y^2} + (x-c)^2 + y^2 \\
+    \left( x+c \right)^2 - (x-c)^2 &= 4a^2 + 4a\sqrt{(x-c)^2 + y^2} \\
+    \big( x+c - (x-c) \big)\big( x+c + x-c \big) &= 4a^2 + 4a\sqrt{(x-c)^2 + y^2} \\
+    2c \cdot 2x &= 4 \left( a^2 + a\sqrt{(x-c)^2 + y^2} \right) \\
+    cx &= a^2 + a\sqrt{(x-c)^2 + y^2} \\
+    cx - a^2 &= a\sqrt{(x-c)^2 + y^2} \\
+    (cx - a^2)^2 &= \left( a \sqrt{(x-c)^2 + y^2} \right)^2 \\
+    c^2 x^2 - 2a^2 c x + a^4 &= a^2 x^2 - 2 a^2 c x + a^2 c^2 + a^2 y^2 \\
+    \left( c^2 - a^2 \right)x^2 &= a^2\left( c^2 - a^2 \right) + a^2 y^2 \\
+    b^2 x^2 &= a^2 b^2 + a^2 y^2 \\
+    \frac{x^2}{a^2} &= 1 + \frac{y^2}{b^2} \\
+    \frac{x^2}{a^2} - \frac{y^2}{b^2} &= 1
+\end{align*}
 Si sustituimos $x$ por $-x$ o $y$ por $-y$ en la ecuación de la hipérbola $\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1$, la ecuación queda igual. Esto significa que la hipérbola es simétrica respecto a los ejes $x$ y $y$. 
 
 Los puntos de intersección con el eje $x$ son $\pm a$, por lo que los puntos $\left(-a,0\right) $ y $\left( a,0\right)$ son los vértices de la hipérbola. 
 
 No hay punto de intersección con el eje $y$, ya que, al hacer $x=0$ en la ecuación de la hipérbola, se obtiene $-y^{2}=b^{2}$, lo cual no tiene solución real. 
 
-Además, la ecuación de la hipérbola implica que
-
-
-$\frac{x^{2}}{a^{2}}=\frac{y^{2}}{b^{2}}+1\geq 1$, así que $\frac{x^{2}}{a^{2}}\geq 1$; entonces $x^{2}\geq a^{2}$ y, por lo tanto, $x\geq a$ o $x\leq a$.
+Además, la ecuación de la hipérbola implica que $\frac{x^{2}}{a^{2}}=\frac{y^{2}}{b^{2}}+1\geq 1$, así que $\frac{x^{2}}{a^{2}}\geq 1$; entonces $x^{2}\geq a^{2}$ y, por lo tanto, $x\geq a$ o $x\leq a$.
 
 Esto significa que la hipérbola está formada por dos partes llamadas ramas.
 
 El segmento que une los dos vértices en las ramas separadas es el eje transverso de la hipérbola, mientras que el origen recibe el nombre de centro.
 
-
 \subsection{Asíntotas de la hipérbola}
+
 Las asíntotas de la hipérbola son rectas a las que la hipérbola se aproxima para valores grandes de $x$ y $y$. Para hallarlas, despejamos $y$:
-
-
-$y=\pm \sqrt{b^{2}\left( \frac{x^{2}}{a^{2}}-1\right) }\qquad \qquad y=\pm 
-\frac{b}{a}\sqrt{x^{2}-a^{2}}\qquad \qquad y=\pm \frac{b}{a}x\sqrt{1-\frac{%
-a^{2}}{x^{2}}}$
-
-
+\begin{align*}
+y & =\pm \sqrt{b^{2}\left( \frac{x^{2}}{a^{2}}-1\right) } \\
+y & =\pm \frac{b}{a}\sqrt{x^{2}-a^{2}}\\ 
+y & =\pm \frac{b}{a}x\sqrt{1-\frac{a^{2}}{x^{2}}}
+\end{align*}
 Cuando $x$ se hace grande, $\frac{a^{2}}{x^{2}}$ se acerca a cero. En consecuencia, para $x$ grande, el valor de $y$ puede aproximarse a $y=\pm\frac{b}{a}x$. Esto demuestra que estas rectas son asíntotas de la hipérbola.
-
 
 Las asíntotas son un recurso esencial para graficar una hipérbola, ya que nos ayudan a determinar su forma. 
 
 Una manera útil de hallar las asíntotas para una hipérbola con eje transverso horizontal es primero localizar los puntos $(-a,0)$, $(a,0)$, $( 0,-b) $ y $(0,b)$. Entonces, se trazan segmentos horizontales y verticales que pasen por estos puntos para construir un rectángulo. A este rectángulo se le da el nombre de rectángulo auxiliar de la hipérbola. Las pendientes de las diagonales del rectángulo central son $\pm \frac{b}{a}$, de modo que, al prolongarlas, obtenemos las asíntotas $y=\pm \frac{b}{a}x$.
 
-
 Finalmente, determinamos los vértices y usamos las asíntotas como guía para trazar la hipérbola.
 
-
 \subsection{Gráfica de una hipérbola paso a paso}
+
 En la figura~\ref{fig:placeholder3.48}, se muestra como se construye la gráfica de la hipérbola, primero se dibuja el rectángulo auxiliar, luego se dibujan las asíntotas que son las diagonales del rectángulo auxiliar y después se ubican los vértices y a partir de ellos se traza la hipérbola siguiendo la dirección de las asíntotas.
 
 \begin{figure}[H]
     \centering
     \caption{Construcción de la gráfica de una hipérbola}
     \begin{tabular}{ccc}
-    \includegraphics[width=0.3\textwidth]{Images/SDY12T94.png}
-    & 
-    \includegraphics[width=0.3\textwidth]{Images/SDY12T95.png}
-    & 
-    \includegraphics[width=0.3\textwidth]{Images/SDY12T96.png}
-    \\ 
-    \text{Rectángulo auxiliar} & \text{Asíntotas} & \text{Hipérbola}%
+        \includegraphics[width=0.3\textwidth]{Images/SDY12T94.png} & 
+        \includegraphics[width=0.3\textwidth]{Images/SDY12T95.png} & 
+        \includegraphics[width=0.3\textwidth]{Images/SDY12T96.png} \\ 
+        \text{Rectángulo auxiliar} & \text{Asíntotas} & \text{Hipérbola}%
     \end{tabular}
     \label{fig:placeholder3.48}
 \end{figure}
@@ -788,13 +644,12 @@ En la figura~\ref{fig:placeholder3.48}, se muestra como se construye la gráfica
 \subsection{Hipérbola que abre verticalmente}
 
 Al reflejar la hipérbola con focos en la horizontal, con ecuación $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1$ respecto a la recta $y=x$, se obtiene una hipérbola con vértice $V=\left( 0,0\right)$, cuyos focos están en la vertical (figura~\ref{fig:placeholder3.49}). Esto se logra intercambiando las variables $x$ y $y$, de forma que la ecuación de esta hipérbola es:
-
-$\frac{y^{2}}{a^{2}}-\frac{x^{2}}{b^{2}}=1$
+\[\frac{y^{2}}{a^{2}}-\frac{x^{2}}{b^{2}}=1\]
 
 \begin{figure}[H]
     \centering
     \caption{Hipérbola con focos verticales}
-    \includegraphics[width=0.9\textwidth]{Images/SDY12T97.png}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T97.png}
     \label{fig:placeholder3.49}
 \end{figure}
 
@@ -805,14 +660,10 @@ Halle los elementos y grafique la curva con ecuación $16x^{2}-9y^{2}=-144$.
 \textbf{Solución}
 
 Al dividir cada término de la ecuación entre $-144$, obtenemos:
-
-\begin{center}
-$-\frac{x^{2}}{9}+\frac{y^{2}}{16}=1$
-\end{center}
-
+\[-\frac{x^{2}}{9}+\frac{y^{2}}{16}=1\]
 Esta es la ecuación de una hipérbola que abre verticalmente, con centro en $\left( 0,0\right) $, $a=\sqrt{16}=4$, $b=\sqrt{9}=3$.
 
-El valor de $c$ es: \ $c=\sqrt{a^{2}+b^{2}}=\sqrt{9+16}=\sqrt{25}=5$
+El valor de $c$ es: $c=\sqrt{a^{2}+b^{2}}=\sqrt{9+16}=\sqrt{25}=5$
 
 Los focos son: $\left( 0,\pm c\right) :\left( 0,\pm 5\right)$
 
@@ -825,7 +676,7 @@ La gráfica de la hipérbola se muestra en la figura~\ref{fig:placeholder3.50}:
 \begin{figure}[H]
     \centering
     \caption{Ejemplo de hipérbola que abre verticalmente}
-    \includegraphics[width=0.9\textwidth]{Images/SDY12T98.png}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T98.png}
     \label{fig:placeholder3.50}
 \end{figure}
 
@@ -836,35 +687,24 @@ Una nave espacial viaja desde la Tierra hacia Marte utilizando una trayectoria h
 \textbf{Solución}
 
 La ecuación de una hipérbola con el centro en el origen $(0,0)$ es:
-
-$\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1$
-
+\[\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1\]
 Donde $a$ es el semieje mayor y $b$ se puede calcular usando la relación:
-
-$c^{2}=a^{2}+b^{2}$
-
+\[c^{2}=a^{2}+b^{2}\]
 Dado que $c=5200$ km y $a=5000$ km, podemos calcular $b$:
-
-$b=\sqrt{c^{2}-a^{2}}$
-
-$=\sqrt{5200^{2}-5000^{2}}$
-
-$\approx 1428.28$\thinspace km
-
-Así que la ecuación de la hipérbola es \ $\frac{x^{2}}{5000^{2}}-\frac{y^{2}%
-}{\left( 1428.28\right) ^{2}}=1$.
+\begin{align*}
+    b & =\sqrt{c^{2}-a^{2}} \\
+    b & =\sqrt{5200^{2}-5000^{2}} \\
+    & \approx 1428.28\, \text{km}
+\end{align*}
+Así que la ecuación de la hipérbola es $\frac{x^{2}}{5000^{2}}-\frac{y^{2}}{\left( 1428.28\right) ^{2}}=1$.
 
 La distancia mínima desde el centro de Marte hasta la trayectoria de la nave espacial (distancia más cercana al foco) es la resta de la distancia focal y el semieje mayor:
-
-$d_{min}=c-a$
-
-$d_{min}=5200\,km-5000\,km=200\,km$
-
+\begin{align*}
+d_{\min}&=c-a \\
+d_{\min}&=5200\,\text{km}-5000\,\text{km}=200\,\text{km}
+\end{align*}
 Dado que la nave pasa a $300$ km de la superficie de Marte y el radio de Marte es aproximadamente de $3390$ km, la distancia desde el centro de Marte al punto de mayor aproximación de la nave es:
-
-$300\,km+3390\,km=3690\,km$
-
-\bigskip
+\[300\,\text{km}+3390\,\text{km}=3690\,\text{km}\]
 
 \subsection{Ejercicios}
 
@@ -918,75 +758,45 @@ Cambio & Cómo es desplazada la gráfica\\
 
 \begin{enumerate}
 \item Al trasladar $h$ unidades en la horizontal y $k$ unidades en la vertical la parábola con ecuación $x^{2}=4py$, se obtiene la parábola (figura~\ref{fig:placeholder3.51}) con ecuación:
-
-\begin{center}
-$\left( x-h\right) ^{2}=4p\left( y-k\right)$
-\end{center}
-
+\[\left( x-h\right) ^{2}=4p\left( y-k\right)\]
 \begin{figure}[H]
     \centering
     \caption{Parábola que abre hacia arriba trasladada}
-    $%
-    \begin{array}{c}
-    \begin{array}{c}
-    
-    \includegraphics[width=0.7\textwidth]{Images/SDY12T99.png}
-    \end{array}%
-    \end{array}%
-    $
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T99.png}
     \label{fig:placeholder3.51}
 \end{figure}
 
 \item Al trasladar $h$ unidades a la derecha y $k$ unidades hacia arriba la parábola con ecuación $x^{2}=-4py$, se obtiene la parábola (figura~\ref{fig:placeholder3.52}) con ecuación:
-
-\begin{center}
-$\left( x-h\right) ^{2}=-4p\left( y-k\right)$
-
-
-
-\end{center}
+\[\left( x-h\right) ^{2}=-4p\left( y-k\right)\]
 \begin{figure}[H]
     \centering
     \caption{Parábola que abre hacia abajo trasladada}
-    $%
-    \begin{array}{c}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12T9A.png}
-    \end{array}%
-    $
+    \includegraphics[width=0.5\textwidth]{Images/SDY12T9A.png}
     \label{fig:placeholder3.52}
 \end{figure}
 
 \item Al trasladar $h$ unidades a la derecha y $k$ unidades en la vertical la parábola con ecuación $y^{2}=4px$, se obtiene la parábola (figura~\ref{fig:placeholder3.53}) con ecuación:
-
-\begin{center}
-$\left( y-k\right) ^{2}=4p\left( x-h\right)$
-
-\end{center}
+\[\left( y-k\right) ^{2}=4p\left( x-h\right)\]
 \begin{figure}[H]
     \centering
     \caption{Parábola que abre a la derecha trasladada}
-    \includegraphics[width=0.6\textwidth]{Images/SDY12U9B.png}
+    \includegraphics[width=0.4\textwidth]{Images/SDY12U9B.png}
     \label{fig:placeholder3.53}
 \end{figure}
 
 \item Al trasladar $h$ unidades a la derecha y $k$ unidades hacia arriba la parábola con ecuación $x^{2}=4py$, se obtiene la parábola (figura~\ref{fig:placeholder3.54}) con ecuación:
-
-\begin{center}
-$\left( y-k\right) ^{2}=-4p\left( x-h\right)$
-\end{center}
-
+\[\left( y-k\right) ^{2}=-4p\left( x-h\right)\]
 \begin{figure}[H]
     \centering
     \caption{Parábola que abre a la izquierda trasladada}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12U9C.png}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12U9C.png}
     \label{fig:placeholder3.54}
 \end{figure}
 \end{enumerate}
 
 \begin{example}
 Determine el vértice, el foco, la directriz, el eje y grafique las parábolas con ecuación:
-\begin{enumerate}
-\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+\begin{enumerate}[label=(\alph*)]
         \item $x^{2}+4x+8y-12=0$
         \item $4y^{2}+16y-6x-2=0$
 \end{enumerate}
@@ -994,48 +804,42 @@ Determine el vértice, el foco, la directriz, el eje y grafique las parábolas c
 
 \textbf{Solución}
 
-(a) $x^{2}+4x+8y-12=0$
-
-Completamos el cuadrado para $x$.
-
-$x^{2}+4x+4=-8y+12+4$
-
-Factorizamos el término $-8$ en $y$.
-
-$\left( x+2\right) ^{2}=-8\left( y-2\right) $
-
-La parábola abre hacia abajo con vértice $\left( -2,2\right)$.
-
-$4p=8\rightarrow p=2$ \qquad Eje $x=-2$\qquad Foco $=(-2,0)$ \qquad Directriz: $y=4$
+\begin{enumerate}[label=(\alph*)]
+    \item \hfill $\displaystyle x^{2}+4x+8y-12=0$ \hfill\break
+    
+    Completamos el cuadrado para $x$.
+    \[x^{2}+4x+4=-8y+12+4\]
+    Factorizamos el término $-8$ en $y$.
+    \[\left( x+2\right) ^{2}=-8\left( y-2\right) \]
+    La parábola abre hacia abajo con vértice $\left( -2,2\right)$.
+    \[4p=8\rightarrow p=2 \qquad \text{Eje} x=-2\qquad \text{Foco} =(-2,0) \qquad \text{Directriz} y=4\]
 
 La gráfica de la parábola se muestra en la figura~\ref{fig:placeholder3.55}.
 
 \begin{figure}[H]
     \centering
     \caption{Ejemplo parábola que abre hacia abajo trasladada}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12U9D.png}
+    \includegraphics[width=0.5\textwidth]{Images/SDY12U9D.png}
     \label{fig:placeholder3.55}
 \end{figure}
 
-(b) $4y^{2}+16y-6x-2=0$ dividimos la ecuación entre 4.
-
-$y^{2}+4y=\frac{3}{2}x+\frac{1}{2}$ completamos cuadrados para $y$
-
-$y^{2}+4y+4=\frac{3}{2}x+\frac{1}{2}+4$
-
-$\left( y+2\right) ^{2}=\frac{3}{2}x+\frac{9}{2}$ 
-
-$\left( y+2\right) ^{2}=\frac{3}{2}\left( x+3\right) $ 
-
+\item \hfill $\displaystyle 4y^{2}+16y-6x-2=0$\quad dividimos la ecuación entre 4.\hfill\mbox{}
+\begin{align*}
+y^{2}+4y & =\frac{3}{2}x+\frac{1}{2}\quad \text{completamos cuadrados para $y$}\\
+y^{2}+4y+4 & =\frac{3}{2}x+\frac{1}{2}+4 \\
+\left( y+2\right) ^{2} & =\frac{3}{2}x+\frac{9}{2} \\
+\left( y+2\right) ^{2} & =\frac{3}{2}\left( x+3\right) 
+\end{align*}
 La ecuación corresponde a una parábola trasladada con vértice $V=\left( -3,-2\right)$, que abre a la derecha. Al calcular $4p=\frac{3}{2}$, tenemos que $p=\frac{3}{8}$. Por lo tanto, el eje de simetría es $y=-2$, la ecuación de la directriz es $x=-3-\frac{3}{8}$, es decir, $x=-\frac{27}{8}$, y el el foco
 tiene coordenadas $\left( -\frac{21}{8},-2\right)$.
 
 En la figura~\ref{fig:placeholder3.56}, se dibuja la gráfica de esta parábola.
+\end{enumerate}
 
 \begin{figure}[H]
     \centering
     \caption{Parábola que abre a la derecha trasladada}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12U9E.png}
+    \includegraphics[width=0.6\textwidth]{Images/SDY12U9E.png}
     \label{fig:placeholder3.56}
 \end{figure}
 
@@ -1044,7 +848,7 @@ En la figura~\ref{fig:placeholder3.56}, se dibuja la gráfica de esta parábola.
 \begin{example}
 Encuentre la ecuación de la parábola que cumpla las condiciones dadas: 
 
-Foco (0,7) \qquad Directriz $y=-7$ 
+Foco $=(0,7)$ \qquad Directriz $y=-7$ 
 \end{example}
 
 \textbf{Solución}
@@ -1060,7 +864,7 @@ La gráfica de esta parábola se presenta en la figura~\ref{fig:placeholder3.57}
 \begin{figure}[H]
     \centering
     \caption{Parábola con foco y directriz dados}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12U9F.png}
+    \includegraphics[width=0.6\textwidth]{Images/SDY12U9F.png}
     \label{fig:placeholder3.57}
 \end{figure}
 
@@ -1080,9 +884,11 @@ Para cada parábola en los ejercicios del 1 al 6, halle el vértice, el foco, la
 \item $3x^{2}+30x-8y+75=0\qquad $
 
 \item $y^{2}-4y-4x+3=0$
+\end{enumerate}
 
 En los ejercicios del 7 al 13, encuentre la ecuación de la parábola que cumpla las condiciones dadas:
 
+\begin{enumerate}\setcounter{enumi}{6}
 \item Foco $(0,7)$, directriz $y=-7$
 
 \item Foco $(0,-5)$, directriz $y = 5$
@@ -1109,28 +915,18 @@ final del tubo el agua toca el suelo?
 
 \begin{enumerate}
 \item Al trasladar $h$ unidades a la derecha y $k$ unidades hacia arriba la elipse horizontal con ecuación $\frac{x^{2}}{a^{2}}+\frac{y^{2}}{b^{2}}=1$, se obtiene la elipse (figura~\ref{fig:placeholder3.58}) con ecuación:
-
-\begin{center}
-$\frac{\left( x-h\right) ^{2}}{a^{2}}+\frac{\left( y-k\right) ^{2}}{b^{2}}%
-=1. $
-
-\end{center}
+\[\frac{\left( x-h\right) ^{2}}{a^{2}}+\frac{\left( y-k\right) ^{2}}{b^{2}}%
+=1\]
 \begin{figure}[H]
     \centering
     \caption{Elipse con focos horizontales trasladada}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12U9G.png}
+    \includegraphics[width=0.9\textwidth]{Images/SDY12U9G.png}
     \label{fig:placeholder3.58}
 \end{figure}
 
-
 \item Al trasladar $h$ unidades a la derecha y $k$ unidades hacia arriba la elipse vertical con ecuación $\frac{x^{2}}{b^{2}}+\frac{y^{2}}{a^{2}}=1$, se obtiene la elipse (figura~\ref{fig:placeholder3.59}) con ecuación:
-
-\begin{center}
-$\frac{\left( x-h\right) ^{2}}{b^{2}}+\frac{\left( y-k\right) ^{2}}{a^{2}}%
-=1. $
-
-\end{center}
-
+\[\frac{\left( x-h\right) ^{2}}{b^{2}}+\frac{\left( y-k\right) ^{2}}{a^{2}}%
+=1\]
 \begin{figure}[H]
     \centering
     \caption{Elipse alargada en la vertical trasladada}
@@ -1144,22 +940,15 @@ Halle los elementos y grafique la curva con ecuación $9x^{2}+36x+25y^{2}-150y=-
 \end{example}
 
 \textbf{Solución}
-
-$9x^{2}+36x+25y^{2}-150y=-36$
-
-$9\left( x^{2}+4x+4\right) +25\left( y^{2}-6y+9\right) =-36+36+225$
-
-$9\left( x+2\right) ^{2}+25\left( y-3\right) ^{2}=225\qquad \left( \div
-225\right) $
-
-$\frac{9\left( x+2\right) ^{2}}{225}+\frac{25\left( y-3\right) ^{2}}{225}=1$
-
-$\frac{\left( x+2\right) ^{2}}{25}+\frac{\left( y-3\right) ^{2}}{9}=1$
-
+\begin{align*}
+    9x^{2} + 36x + 25y^{2} - 150y &= -36 \\
+    9\left( x^{2} + 4x + 4 \right) + 25\left( y^{2} - 6y + 9 \right) &= -36 + 36 + 225 \\
+    9(x + 2)^2 + 25(y - 3)^2 &= 225 \qquad (\div 225) \\
+    \frac{9(x + 2)^2}{225} + \frac{25(y - 3)^2}{225} &= 1 \\
+    \frac{(x + 2)^2}{25} + \frac{(y - 3)^2}{9} &= 1
+\end{align*}
 La elipse tiene centro en $\left( -2,3\right) $ \ $a=\sqrt{25}=5,b=\sqrt{9}=3,a>b$ y está achatada en la horizontal
-
-$c=\sqrt{25-9}=\sqrt{16}=4\qquad ejes$ \ $x=-2,y=3$
-
+\[c=\sqrt{25-9}=\sqrt{16}=4\qquad \text{ejes } x=-2,\, y=3\]
 \begin{figure}[H]
     \centering
     \caption{Ejemplo de elipse trasladada}
@@ -1176,7 +965,6 @@ V_{4}&=\left( -2,0\right) \\
 F_{1}&=\left( -6,3\right) \\ 
 F_{2}&=\left( 2,3\right)
 \end{align*}
-
 La gráfica de esta elipse se presenta en la figura~\ref{fig:placeholder3.60}
 
 \subsection{Ejercicios}
@@ -1184,32 +972,22 @@ La gráfica de esta elipse se presenta en la figura~\ref{fig:placeholder3.60}
 En los problemas 1 a 6, halle el centro, los focos, los vértices, el eje mayor, el eje menor y grafique cada elipse:
 
 \begin{enumerate}
-
-\item $27.4x^{2}+\left( y+\frac{2}{3}\right) ^{2}=4$
-
-\item $2x^{2}+4y^{2}+4x+16y=7$
-
-\item $25x^{2}+9y^{2}-100x+18y-116=0$
-
-\item $x^{2}+3y^{2}+18y+18=0$
-
-\item $4y^{2}+12x^{2}-4y-24x+1=0$
-
-\item $x^{2}+4y^{2}-2x-4y+1=0.$
+    \item $27.4x^{2}+\left( y+\frac{2}{3}\right) ^{2}=4$
+    \item $2x^{2}+4y^{2}+4x+16y=7$
+    \item $25x^{2}+9y^{2}-100x+18y-116=0$
+    \item $x^{2}+3y^{2}+18y+18=0$
+    \item $4y^{2}+12x^{2}-4y-24x+1=0$
+    \item $x^{2}+4y^{2}-2x-4y+1=0.$
+\end{enumerate}
 
 En los problemas 7 a 12, encuentre una ecuación de la elipse que satisfaga las condiciones dadas.
 
+\begin{enumerate}\setcounter{enumi}{6}
 \item Vértices $(\pm 5,0)$, focos $(\pm 3,0)$.
-
 \item Vértices $(0,\pm 2)$ y $(\pm 4,0)$.
-
-\item Un foco $(0,-2)$, centro en el origen, longitud del eje menor igual a
-3.
-
+\item Un foco $(0,-2)$, centro en el origen, longitud del eje menor igual a 3.
 \item Focos $(\pm 4,0)$, longitud del eje menor 6.
-
 \item Focos $(0,\pm \sqrt{6})$, longitud del eje mayor 16.
-
 \item Centro $(1,3)$, un vértice $(1,-1)$ y un foco $(1,0)$.
 
 \item Plutón tiene una órbita elíptica alrededor del Sol, con este en uno de sus focos. Si la longitud del eje mayor es de 7350 millones de millas y la longitud del eje menor es 7117 millones de millas, ¿cuáles son las distancias mínima y máxima entre Plutón y el Sol?
@@ -1223,16 +1001,10 @@ En los problemas 7 a 12, encuentre una ecuación de la elipse que satisfaga las 
 
 \subsection{Traslación de hipérbolas}
 
-
 \begin{enumerate}
-
 \item Al trasladar $h$ unidades a la derecha y $k$ unidades hacia arriba la hipérbola horizontal con ecuación $\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1$, se obtiene la hipérbola (figura~\ref{fig:placeholder3.61}) con ecuación:
-
-\begin{center}
-$\frac{\left( x-k\right) ^{2}}{a^{2}}-\frac{\left( y-h\right) ^{2}}{b^{2}}%
-=1. $
-
-\end{center}
+\[\frac{\left( x-k\right) ^{2}}{a^{2}}-\frac{\left( y-h\right) ^{2}}{b^{2}}%
+=1\]
 \begin{figure}[H]
     \centering
     \caption{Hipérbola horizontal trasladada}
@@ -1241,11 +1013,8 @@ $\frac{\left( x-k\right) ^{2}}{a^{2}}-\frac{\left( y-h\right) ^{2}}{b^{2}}%
 \end{figure}
 
 \item Al trasladar $h$ unidades a la derecha y $k$ unidades hacia arriba la hipérbola vertical con ecuación $\frac{y^{2}}{a^{2}}-\frac{x^{2}}{b^{2}}=1$, se obtiene la hipérbola (figura~\ref{fig:placeholder3.62}) con ecuación:
-
-\begin{center}
-$\frac{\left( y-k\right) ^{2}}{a^{2}}-\frac{\left( x-h\right) ^{2}}{b^{2}}%
-=1. $
-\end{center}
+\[\frac{\left( y-k\right) ^{2}}{a^{2}}-\frac{\left( x-h\right) ^{2}}{b^{2}}%
+=1\]
 \begin{figure}[H]
     \centering
     \caption{Hipérbola vertical trasladada}
@@ -1259,27 +1028,21 @@ Halle los elementos y grafique la curva con ecuación $9x^{2}+18x-y^{2}-4y=4$.
 \end{example}
 
 \textbf{Solución}
-
-$9x^{2}+18x-y^{2}-4y=4$
-
-$9\left( x^{2}+2x+1\right) -\left( y^{2}+4y+4\right) =4+9-4$
-
-$9\left( x+1\right) ^{2}-\left( y+2\right) ^{2}=9\qquad \left( \div 9\right) 
-$
-
-$\left( x+1\right) ^{2}-\frac{\left( y+2\right) ^{2}}{9}=1$
-
+\begin{align*}
+    9x^{2} + 18x - y^{2} - 4y &= 4 \\
+    9\left( x^{2} + 2x + 1 \right) - \left( y^{2} + 4y + 4 \right) &= 4 + 9 - 4 \\
+    9(x+1)^2 - (y+2)^2 &= 9 \qquad (\div 9) \\
+    (x+1)^2 - \frac{(y+2)^2}{9} &= 1
+\end{align*}
 Esta ecuación es una hipérbola que abre horizontalmente, con centro en $\left( -1,-2\right) $ y semiejes $a=1$ y $b=3$.
 
-Los ejes de simetría son: $x=-1,y=-2$
+Los ejes de simetría son: $x=-1$, $y=-2$
 
-La distancia centro foco es: $c=\sqrt{1+9}=\sqrt{10}%
-\approx 3.162\,3$
+La distancia centro foco es: $c=\sqrt{1+9}=\sqrt{10} \approx 3.1623$
 
-Las ecuaciones de las asíntotas son:\ $y=\pm 3\left( x+1\right) -2$ \
+Las ecuaciones de las asíntotas son:\ $y=\pm 3\left( x+1\right) -2$
 
 La gráfica de la hipérbola se presenta en la figura~\ref{fig:placeholder3.63}.
-
 
 \begin{figure}[H]
     \centering
@@ -1289,9 +1052,12 @@ La gráfica de la hipérbola se presenta en la figura~\ref{fig:placeholder3.63}.
 \end{figure}
 
 Las coordenadas de los vértices y focos son:
-
-$V_{1}=\left( -2,-2\right) ,$ $V_{2}=\left( 0,-2\right) ,F_{1}=\left( -1+%
-\sqrt{10},-2\right) $ y $F_{2}=\left( -1+\sqrt{10},-2\right)$
+\begin{align*}
+    V_{1}&=\left( -2,-2\right) \\
+    V_{2}&=\left( 0,-2\right) \\
+    F_{1}&=\left( -1+\sqrt{10},-2\right) \\
+    F_{2}&=\left( -1+\sqrt{10},-2\right)
+\end{align*}
 
 \subsection{Ejercicios}
 
@@ -1307,9 +1073,11 @@ En los problemas 1 a 5, halle el centro, los focos, los vértices, las asíntota
 \item $x^{2}-y^{2}+2y=5$
 
 \item $y^{2}-2x^{2}-4y-4x=2$
+\end{enumerate}
 
 En los problemas 6 a 11, encuentre una ecuación de la hipérbola que satisfaga las condiciones dadas.
 
+\begin{enumerate}\setcounter{enumi}{5}
 \item Vértices $(\pm 4,0)$ y un foco en $(0,5)$
 
 \item Centro $(-1,3)$, un vértice $(-1,4)$ y pasa por $(-5,3+\sqrt{5})$
@@ -1321,14 +1089,16 @@ En los problemas 6 a 11, encuentre una ecuación de la hipérbola que satisfaga 
 \item Vértices $(0,\pm 3)$ y pasa por $(\frac{16}{3},5)$
 
 \item Focos $(3,0)$ y $(11,0)$, la diferencia de distancias fija $2a=12$
+\end{enumerate}
 
 En los problemas 12 a 14, grafique y encuentre los puntos de intersección aproximados, si los hay, entre las cónicas dadas.
 
-\item $x^{2}-y^{2}-1=0\qquad $y$\qquad x^{2}-3x+y^{2}=7$
+\begin{enumerate}\setcounter{enumi}{11}
+\item $x^{2}-y^{2}-1=0\quad $y$\quad x^{2}-3x+y^{2}=7$
 
-\item $y^{2}+12y-4x+16=0\qquad $y$\qquad 2x^{2}+y^{2}+4x+12y=7$
+\item $y^{2}+12y-4x+16=0\quad $y$\quad 2x^{2}+y^{2}+4x+12y=7$
 
-\item $y^{2}-x^{2}-12y-4x+16=0\qquad $y$\qquad 400x^{2}-1600x+4y^{2}+8y+1204=0$
+\item $y^{2}-x^{2}-12y-4x+16=0\quad $y$\quad 400x^{2}-1600x+4y^{2}+8y+1204=0$
 \end{enumerate}
 
 \section{Cónicas rotadas}
@@ -1336,11 +1106,7 @@ En los problemas 12 a 14, grafique y encuentre los puntos de intersección aprox
 \subsection{Ecuación general de una cónica desplazada}
 
 Si expandimos y simplificamos las ecuaciones de cualquiera de las cónicas desplazadas, siempre vamos a obtener una ecuación de la forma siguiente:
-
-\begin{center}
-$Ax^{2}+Cy^{2}+Dx+Ey+F=0$
-\end{center}
-
+\[Ax^{2}+Cy^{2}+Dx+Ey+F=0\]
 Donde tanto $A$ como $C$ son diferentes de cero. 
 
 Recíprocamente, si partimos de una ecuación con esta forma, podemos completar el cuadrado en $x$ y $y$ para determinar qué tipo de sección cónica representa. En algunos casos, la gráfica de la ecuación resulta ser solo un par de rectas, un solo punto o puede no haber gráfica en absoluto. Estos casos reciben el nombre de \emph{cónicas degeneradas}.
@@ -1363,13 +1129,9 @@ Grafique la ecuación $x^{2}+y^{2}+2x-4y+5=0$
 \textbf{Solución}
 
 Se completan los cuadrados.
-
-$\left( x+1\right) ^{2}+\left( y-2\right) ^{2}=0$
-
+\[\left( x+1\right) ^{2}+\left( y-2\right) ^{2}=0\]
 Una suma de cuadrados es cero solamente cuando cada uno de ellos es cero, por lo que
-
-$x=-1$, $y=2$
-
+\[x=-1,\ y=2\]
 Así, la gráfica de la ecuación es solamente el punto $(-1,2)$.
 
 \begin{example}
@@ -1379,13 +1141,11 @@ Grafique la ecuación $x^{2}-y^{2}+8x+8y=0$.
 \textbf{Solución}
 
 Al completar los cuadrados, la ecuación es equivalente a
-
-$\left( x+4\right) ^{2}-\left( y-4\right) ^{2}=0$
-
-$\left( y-4\right) ^{2}=\left( x+4\right) ^{2}$
-
-$y-4=\pm \left( x+4\right) $
-
+\begin{align*}
+    \left( x+4\right) ^{2}-\left( y-4\right) ^{2} &= 0 \\
+    \left( y-4\right) ^{2} &= \left( x+4\right) ^{2} \\
+    y-4 &= \pm \left( x+4\right)
+\end{align*}
 La gráfica de la ecuación son las dos rectas $y=x+8$ y $y=-x$ y se dibujan en la figura~\ref{fig:placeholder3.64}.
 
 \begin{figure}[H]
@@ -1398,16 +1158,10 @@ La gráfica de la ecuación son las dos rectas $y=x+8$ y $y=-x$ y se dibujan en 
 Si la ecuación no es la gráfica de una cónica degenerada, entonces podemos saber si representa una parábola, una elipse o una hipérbola simplemente con examinar los signos de $A$ y $C$.
 
 La gráfica de la ecuación
-
-\begin{center}
-$Ax^{2}+Cy^{2}+Dx+Ey+F=0$
-\end{center}
-
-donde tanto $A$ como $C$ son diferentes de cero, es una cónica o una cónica
-degenerada.
+\[Ax^{2}+Cy^{2}+Dx+Ey+F=0\]
+donde tanto $A$ como $C$ son diferentes de cero, es una cónica o una cónica degenerada.
 
 En los casos no degenerados, la gráfica corresponde a:
-
 \begin{enumerate}
     \item Una parábola si $A$ o $C$ es $0$.
     \item Una elipse si $A$ y $C$ tienen el mismo signo (o una circunferencia si $A=C$).
@@ -1425,7 +1179,6 @@ En la figura~\ref{fig:placeholder3.65} los ejes $x$ y $y$ han sido rotados un á
     \label{fig:placeholder3.65}
 \end{figure}
  
-
 Un punto $P$, cuyas coordenadas en el sistema antiguo son $\left( x,y\right)$, tiene nuevas coordenadas $\left( X,Y\right)$ en el sistema rotado. Si denotamos por $r$ la distancia de $P$ al origen y por $\theta $ el ángulo que el segmento $OP$ forma con el nuevo eje $X$, entonces, en la figura~\ref{fig:placeholder3.65} (al considerar los dos triángulos rectángulos de la figura). Se  hallan $X,Y$ en términos de $x,y$, de la siguiente forma:
 
 Supongamos $X=r\cos \theta ,Y=r\sin \theta $
@@ -1434,14 +1187,12 @@ Entonces $x=r\cos \left( \theta +\phi \right) ,y=r\sin \left( \theta +\phi
 \right) $
 
 Por identidades de suma de ángulos para seno y coseno, tenemos:
-
-$x=r\cos \theta \cos \phi -r\sin \theta \sin \phi =X\cos \phi -Y\sin \phi $
-
-$y=r\sin \theta \cos \phi +r\cos \theta \sin \phi =Y\cos \phi +X\sin \phi $
-
+\begin{align*}
+x&=r\cos \theta \cos \phi -r\sin \theta \sin \phi =X\cos \phi -Y\sin \phi\\
+y&=r\sin \theta \cos \phi +r\cos \theta \sin \phi =Y\cos \phi +X\sin \phi
+\end{align*}
 Esto puede escribirse matricialmente por:
-
-$\left( 
+\[\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -1456,9 +1207,8 @@ y%
 X \\ 
 Y%
 \end{array}%
-\right) $
-
-y como $\left( 
+\right)\]
+y como \[\left( 
 \begin{array}{cc}
 \cos \phi & -\sin \phi \\ 
 \sin \phi & \cos \phi%
@@ -1468,9 +1218,9 @@ y como $\left(
 \cos \phi & \sin \phi \\ 
 -\sin \phi & \cos \phi%
 \end{array}%
-\right) ,$ se cumple:
-
-$\left( 
+\right)\] 
+se cumple:
+\[\left( 
 \begin{array}{c}
 X \\ 
 Y%
@@ -1485,16 +1235,12 @@ Y%
 x \\ 
 y%
 \end{array}%
-\right) $
+\right)\]
 
 \subsection{Ecuación general de una cónica}
 
 La ecuación general de segundo grado
-
-\begin{center}
-$Ax^{2}+Bxy+Cx^{2}+Dx+Ey+F=0$
-\end{center}
-
+\[Ax^{2}+Bxy+Cx^{2}+Dx+Ey+F=0\]
 es la ecuación de una cónica en el plano.
 
 El discriminante de la ecuación es $B^{2}-4AC$.
@@ -1502,9 +1248,12 @@ El discriminante de la ecuación es $B^{2}-4AC$.
 Si $B\neq 0$, la ecuación contiene un término en el producto cruzado $xy$, lo que indica que esta cónica tiene sus ejes rotados. Luego, aplicando una transformación de rotación, se puede convertir en una ecuación en $X$ y $Y$ que no contiene el término $XY$ al escoger un ángulo de rotación adecuado.
 
 Para hallar el ángulo que funcione, giramos los ejes un ángulo $\phi$ y sustituimos $x$ y $y$ usando la fórmula para rotación de ejes:
-
-\begin{center}
-$\left( 
+\[\left( 
+\begin{array}{c}
+x \\ 
+y%
+\end{array}%
+\right) =\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -1524,86 +1273,63 @@ Y%
 X\cos \phi -Y\sin \phi \\ 
 X\sin \phi +Y\cos \phi%
 \end{array}%
-\right) $
-\end{center}
-
+\right)\]
 Se obtiene:
-
 \begin{equation*}
 Ax^{2}+Bxy+Cy^{2}+Dx+Ey+F=0
 \end{equation*}
-
-\begin{eqnarray*}
-&&A\left( X\cos \phi -Y\sin \phi \right) ^{2}+B\left( X\cos \phi -Y\sin \phi
-\right) \left( X\sin \phi +Y\cos \phi \right) \\
-&&+C\left( X\sin \phi +Y\cos \phi \right) ^{2}+D\left( X\cos \phi -Y\sin
-\phi \right) +E\left( X\sin \phi +Y\cos \phi \right) +F \\
-&=&0
-\end{eqnarray*}
-
-\begin{eqnarray*}
-&&\underset{A^{\prime}}{\underbrace{\left( A\cos ^{2}\phi +B\cos \phi \sin \phi
+\begin{align*}
+A&\left( X\cos \phi -Y\sin \phi \right) ^{2}\\ 
+&+B\left( X\cos \phi -Y\sin \phi \right) \left( X\sin \phi +Y\cos \phi \right) \\
+&+C\left( X\sin \phi +Y\cos \phi \right) ^{2}\\ 
+&+D\left( X\cos \phi -Y\sin \phi \right) \\ 
+&+E\left( X\sin \phi +Y\cos \phi \right) +F \\
+=&0
+\end{align*}
+\begin{align*}
+&\underset{A^{\prime}}{\underbrace{\left( A\cos ^{2}\phi +B\cos \phi \sin \phi
 +C\sin ^{2}\phi \right) }}X^{2} \\
-&&+\underset{B^{\prime}}{\underbrace{\left( B\left( \cos ^{2}\phi -\sin ^{2}\phi
+&+\underset{B^{\prime}}{\underbrace{\left( B\left( \cos ^{2}\phi -\sin ^{2}\phi
 \right) +\left( C-A\right) 2\cos \phi \sin \phi \right) }}XY \\
-&&+\underset{C^{\prime}}{\underbrace{\left( A\sin ^{2}\phi -B\cos \phi \sin \phi
+&+\underset{C^{\prime}}{\underbrace{\left( A\sin ^{2}\phi -B\cos \phi \sin \phi
 +C\cos ^{2}\phi \right) }}Y^{2} \\
-&&+\underset{D^{\prime}}{\underbrace{\left( D\cos \phi +E\sin \phi \right)
+&+\underset{D^{\prime}}{\underbrace{\left( D\cos \phi +E\sin \phi \right)
 X+\left( E\cos \phi -D\sin \phi \right) }}Y+\underset{F^{\prime}}{\underbrace{F}}
 \\
-&=&0
-\end{eqnarray*}
-
+&=0
+\end{align*}
 Para eliminar el término en $XY$, el ángulo $\phi$ debe cumplir:
-
-$B\left( \cos ^{2}\phi -\sin ^{2}\phi \right) -\left( A-C\right) 2\cos \phi
-\sin \phi =0$ \qquad \qquad \qquad
-
+\[B\left( \cos ^{2}\phi -\sin ^{2}\phi \right) -\left( A-C\right) 2\cos \phi
+\sin \phi =0\]
 Al aplicar identidades del ángulo doble\ $\sin \left( 2\phi \right) =2\sin
-\phi \cos \phi ,$ \ $\sin \left( 2\phi \right) =\cos ^{2}\phi -\sin ^{2}\phi 
+\phi \cos \phi$, $\sin \left( 2\phi \right) =\cos ^{2}\phi -\sin ^{2}\phi 
 $, se tiene
-
-$B\cos \left( 2\phi \right) =\left( A-C\right) \sin \left( 2\phi \right) $ \
+\[B\cos \left( 2\phi \right) =\left( A-C\right) \sin \left( 2\phi \right)\]
 de donde:
-
-$\cot \left( 2\phi \right) =\frac{A-C}{B}$ \ \ $B\neq 0$, pues hay término en 
-$xy.$
-
+\[\cot \left( 2\phi \right) =\frac{A-C}{B}\quad B\neq 0,\text{ pues hay término en 
+$xy$.}\]
 Luego, el ángulo de rotación $\phi $ que elimina el producto $XY$ satisface:
-
-\begin{center}
-$\cot \left( 2\phi \right) =\frac{C-A}{B}.$
-
-\bigskip
-\end{center}
+\[\cot \left( 2\phi \right) =\frac{C-A}{B}\]
 
 El discriminante de la ecuación general de segundo grado $Ax^{2}+Bxy+Cy^{2}+Dx+Ey+F=0$ y el discriminante de la ecuación rotada $A^{\prime}x^{2}+B^{\prime}xy+C^{\prime}y^{2}+D^{\prime}x+E^{\prime}y+F^{\prime}=0$ son iguales.
 
 De la ecuación general rotada, tenemos:
-
-$\left( B^{\prime}\right) ^{2}-4A^{\prime}C^{\prime}$
-
-$=\left( B\left( \cos ^{2}\phi -\sin ^{2}\phi \right) +\left( C-A\right)
-2\cos \phi \sin \phi \right) ^{2}$
-
-$\ \ -4\left( A\cos ^{2}\phi +B\cos \phi \sin \phi +C\sin ^{2}\phi \right)
-\left( A\sin ^{2}\phi -B\cos \phi \sin \phi +C\cos ^{2}\phi \right) $
-
-$=4A^{2}\cos ^{2}\phi \sin ^{2}\phi -4AB\cos ^{3}\phi \sin \phi +4AB\cos
-\phi \sin ^{3}\phi -8AC\cos ^{2}\phi \sin ^{2}\phi +\allowbreak B^{2}\cos
-^{4}\phi -2B^{2}\cos ^{2}\phi \sin ^{2}\phi +B^{2}\sin ^{4}\phi $
-
-$\ \ +4BC\cos ^{3}\phi \sin \phi -4BC\cos \phi \sin ^{3}\phi +4C^{2}\cos
-^{2}\phi \sin ^{2}\phi -4A^{2}\cos ^{2}\phi \sin ^{2}\phi +4AB\cos ^{3}\phi
-\sin \phi -4AB\cos \phi \sin ^{3}\phi $
-
-$\ -4AC\cos ^{4}\phi -4AC\sin ^{4}\phi +4B^{2}\cos ^{2}\phi \sin ^{2}\phi
--4BC\cos ^{3}\phi \sin \phi +\allowbreak 4BC\cos \phi \sin ^{3}\phi
--4C^{2}\cos ^{2}\phi \sin ^{2}\phi $
-
-$=B^{2}-4AC$
-
-$\bigskip $
+\begin{align*}
+\left(B'\right)^2 - 4A'C' 
+    &= \left[ B \left( \cos^2\phi - \sin^2\phi \right) + (C - A) 2\cos\phi\sin\phi \right]^2 \\
+    &\qquad - 4 \left( A\cos^2\phi + B\cos\phi\sin\phi + C\sin^2\phi \right)\\
+    &\qquad\phantom{ - 4}\enspace \left( A\sin^2\phi - B\cos\phi\sin\phi + C\cos^2\phi \right) \\
+    &= 4A^2\cos^2\phi \sin^2\phi - 4AB\cos^3\phi \sin\phi\\ 
+    &\quad + 4AB\cos\phi \sin^3\phi - 8AC\cos^2\phi \sin^2\phi \\
+    &\quad + B^2\cos^4\phi - 2B^2\cos^2\phi \sin^2\phi + B^2\sin^4\phi \\
+    &\quad + 4BC\cos^3\phi \sin\phi - 4BC\cos\phi \sin^3\phi\\ 
+    &\quad + 4C^2\cos^2\phi \sin^2\phi - 4A^2\cos^2\phi \sin^2\phi \\
+    &\quad + 4AB\cos^3\phi \sin\phi - 4AB\cos\phi \sin^3\phi \\
+    &\quad - 4AC\cos^4\phi - 4AC\sin^4\phi \\
+    &\quad + 4B^2\cos^2\phi \sin^2\phi - 4BC\cos^3\phi \sin\phi \\
+    &\quad + 4BC\cos\phi \sin^3\phi - 4C^2\cos^2\phi \sin^2\phi \\
+    &= B^2 - 4AC
+\end{align*}
 
 \begin{example}
 Elimine el término $xy$ y grafique la cónica con ecuación $x^{2}+2xy+y^{2}+12\sqrt{2}x-12\sqrt{2}y=0$.
@@ -1612,15 +1338,15 @@ Elimine el término $xy$ y grafique la cónica con ecuación $x^{2}+2xy+y^{2}+12
 \textbf{Solución}
 
 Hallamos el ángulo $\phi$ de rotación.
-
-$\cot \left( 2\phi \right) =\frac{A-C}{B}\rightarrow \cot \left( 2\phi
-\right) =\frac{1-1}{2}=0\rightarrow \frac{\cos \left( 2\phi \right) }{\sin
-\left( 2\phi \right) }=0\rightarrow \cos \left( 2\phi \right) =0\rightarrow
-2\phi =\frac{\pi }{2}\rightarrow \phi =\frac{\pi }{4}$
-
-El ángulo $\phi =\frac{\pi }{4}$ $radianes=45\degree$ y el cambio de coordenadas es:
-
-$\left( 
+\begin{align*}
+    \cot \left( 2\phi \right) = \frac{A-C}{B} \quad &\rightarrow  \quad
+    \cot \left( 2\phi \right) = \frac{1-1}{2} = 0 \\
+    \frac{\cos \left( 2\phi \right)}{\sin \left( 2\phi \right)} = 0 \quad &\rightarrow  \quad
+    \cos \left( 2\phi \right) = 0 \\
+    2\phi = \frac{\pi}{2} \quad &\rightarrow \quad \phi = \frac{\pi}{4}
+\end{align*}
+El ángulo $\phi =\frac{\pi }{4}\,\text{radianes}=45\degree$ y el cambio de coordenadas es:
+\[\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -1637,30 +1363,24 @@ Y%
 \end{array}%
 \right) =\left( 
 \begin{array}{c}
-\frac{1}{\sqrt{2}}X-\frac{1}{\sqrt{2}}Y \\ 
+\frac{1}{\sqrt{2}}X-\frac{1}{\sqrt{2}}Y \\
 \frac{1}{\sqrt{2}}X+\frac{1}{\sqrt{2}}Y%
 \end{array}%
-\right) $
-
+\right)\]
 Se reemplaza
-
-$%
-\begin{array}{r}
-\left( \frac{1}{\sqrt{2}}X-\frac{1}{\sqrt{2}}Y\right) ^{2}+2\left( \frac{1}{%
-\sqrt{2}}X-\frac{1}{\sqrt{2}}Y\right) \left( \frac{1}{\sqrt{2}}X+\frac{1}{%
-\sqrt{2}}Y\right) +\left( \frac{1}{\sqrt{2}}X+\frac{1}{\sqrt{2}}Y\right) ^{2}
-\\ 
-+12\sqrt{2}\left( \frac{1}{\sqrt{2}}X-\frac{1}{\sqrt{2}}Y\right) -12\sqrt{2}%
-\left( \frac{1}{\sqrt{2}}X+\frac{1}{\sqrt{2}}Y\right) =0%
-\end{array}%
-$
-
-$2X^{2}-24Y=0\qquad $ dividimos entre $2:$
-
-$X^{2}=12Y$
-
-El resultado es la ecuación de una parábola centrada en $\left( 0,0\right)$ en el plano $
-X,Y$, que abre en dirección positiva de $Y$ y con $p=3$. Su gráfica se presenta en la figura~\ref{fig:placeholder3.66}.
+\begin{align*}
+\left( \frac{1}{\sqrt{2}}X-\frac{1}{\sqrt{2}}Y\right) ^{2} & 
++2\left( \frac{1}{\sqrt{2}}X-\frac{1}{\sqrt{2}}Y\right) 
+\left( \frac{1}{\sqrt{2}}X+\frac{1}{\sqrt{2}}Y\right) 
++\left( \frac{1}{\sqrt{2}}X+\frac{1}{\sqrt{2}}Y\right) ^{2}\\ 
+& +12\sqrt{2}\left( \frac{1}{\sqrt{2}}X-\frac{1}{\sqrt{2}}Y\right) 
+-12\sqrt{2}\left( \frac{1}{\sqrt{2}}X+\frac{1}{\sqrt{2}}Y\right) =0
+\end{align*}
+\begin{align*}
+2X^{2}-24Y & =0\quad \text{dividimos entre $2$:}\\
+X^{2} & =12Y
+\end{align*}
+El resultado es la ecuación de una parábola centrada en $\left( 0,0\right)$ en el plano $X,Y$, que abre en dirección positiva de $Y$ y con $p=3$. Su gráfica se presenta en la figura~\ref{fig:placeholder3.66}.
 
 \begin{figure}[H]
     \centering
@@ -1676,31 +1396,26 @@ Elimine el término $xy$ y grafique la cónica con ecuación $91x^{2}+18\sqrt{3}
 \textbf{Solución}
 
 Hallamos el ángulo $\phi$ de rotación.
-
-$\cot \left( 2\phi \right) =\frac{A-C}{B}\rightarrow \cot \left( 2\phi
-\right) =\frac{91-73}{18\sqrt{3}}=\frac{1}{\sqrt{3}}$
-
-Para hallar la rotación, debemos hallar $\cos \phi $ \ y \ $\sin \phi $.
+\[\cot \left( 2\phi \right) =\frac{A-C}{B}\quad\rightarrow\quad \cot \left( 2\phi
+\right) =\frac{91-73}{18\sqrt{3}}=\frac{1}{\sqrt{3}}\]
+Para hallar la rotación, debemos hallar $\cos \phi $ y $\sin \phi $.
 Para esto, usamos el triángulo de la figura~\ref{fig:placeholder3.67} para $2\phi$.
 
 \begin{figure}[H]
     \centering
     \caption{Ángulo de rotación}
-    \includegraphics[width=0.7\textwidth]{Images/SDY12U9P.png}
+    \includegraphics[width=0.4\textwidth]{Images/SDY12U9P.png}
     \label{fig:placeholder3.67}
 \end{figure}
 
-Usando las identidades del ángulo medio $\cos \phi =\sqrt{\frac{1+\cos 2\phi 
-}{2}}$ y $\sin \phi =\sqrt{\frac{1-\cos 2\phi }{2}}$, se obtiene
-
-$\cos \phi =\sqrt{\frac{1+\frac{1}{2}}{2}}=\frac{\sqrt{3}}{2}=$ y $\sin \phi
-=\sqrt{\frac{1-\frac{1}{2}}{2}}=\frac{1}{2}$
-
-y el ángulo $\phi =\frac{\pi }{6}$ $radianes=30\degree$.
+Usando las identidades del ángulo medio 
+\[\cos \phi =\sqrt{\frac{1+\cos 2\phi}{2}}\quad \text{y}\quad \sin \phi =\sqrt{\frac{1-\cos 2\phi }{2}}\]
+se obtiene
+\[\cos \phi =\sqrt{\frac{1+\frac{1}{2}}{2}}=\frac{\sqrt{3}}{2}\quad \text{y}\quad \sin \phi =\sqrt{\frac{1-\frac{1}{2}}{2}}=\frac{1}{2}\]
+y el ángulo $\phi =\frac{\pi }{6}\,\text{radianes}=30\degree$.
 
 El cambio de coordenadas es
-
-$\left( 
+\[\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -1720,27 +1435,21 @@ Y%
 \frac{\sqrt{3}}{2}X-\frac{1}{2}Y \\ 
 \frac{1}{2}X+\frac{\sqrt{3}}{2}Y%
 \end{array}%
-\right) $
-
+\right)\]
 Reemplazamos.
-
-$%
-\begin{array}{l}
-91\left( \frac{\sqrt{3}}{2}X-\frac{1}{2}Y\right) ^{2}+18\sqrt{3}\left( \frac{%
-\sqrt{3}}{2}X-\frac{1}{2}Y\right) \left( \frac{1}{2}X+\frac{\sqrt{3}}{2}%
-Y\right) +73\left( \frac{1}{2}X+\frac{\sqrt{3}}{2}Y\right) ^{2}-1600 \\ 
-=100X^{2}+64Y^{2}-1600%
-\end{array}%
-$
-
-$100X^{2}+64Y^{2}-1600=0$ \ 
-
+\begin{align*}
+91\left( \frac{\sqrt{3}}{2}X-\frac{1}{2}Y\right) ^{2}&
++18\sqrt{3}\left( \frac{\sqrt{3}}{2}X-\frac{1}{2}Y\right) 
+\left( \frac{1}{2}X+\frac{\sqrt{3}}{2}Y\right)\\ 
+&+73\left( \frac{1}{2}X+\frac{\sqrt{3}}{2}Y\right) ^{2}-1600 \\ 
+&=100X^{2}+64Y^{2}-1600%
+\end{align*}
+\[100X^{2}+64Y^{2}-1600=0\]
 Dividimos entre 1600.
-
-$\frac{100X^{2}}{1600}+\frac{64Y^{2}}{1600}=1$
-
-$\frac{X^{2}}{16}+\frac{Y^{2}}{25}=1$
-
+\begin{align*}
+\frac{100X^{2}}{1600}+\frac{64Y^{2}}{1600} &= 1 \\
+\frac{X^{2}}{16}+\frac{Y^{2}}{25} &= 1
+\end{align*}
 Es la ecuación de una elipse centrada en $(0,0)$ en el plano $XY$ con semieje menor $b=4$ sobre el eje $X$ y semieje mayor $a=5$ sobre el eje $Y$, cuya gráfica se presenta en la figura~\ref{fig:placeholder3.68}.
 
 \begin{figure}[H]
@@ -1757,25 +1466,17 @@ Elimine el término $xy$ y grafique la cónica con ecuación $-11x^{2}+50\sqrt{3
 \textbf{Solución}
 
 Hallamos el ángulo $\phi$ de rotación.
-
-$\cot \left( 2\phi \right) =\frac{A-C}{B}\rightarrow \cot \left( 2\phi
-\right) =\frac{-11-39}{50\sqrt{3}}=-\frac{1}{\sqrt{3}}$
-
+\[\cot \left( 2\phi \right) =\frac{A-C}{B}\quad\rightarrow\quad \cot \left( 2\phi
+\right) =\frac{-11-39}{50\sqrt{3}}=-\frac{1}{\sqrt{3}}\]
 Resolvemos la ecuación trigonométrica.
-
-$\cot \left( 2\phi \right) =-\frac{1}{\sqrt{3}}$
-
-$\tan \left( 2\phi \right) =-\sqrt{3}$
-
-$2\phi =\tan ^{-1}\left( -\sqrt{3}\right) =-\frac{1}{3}\pi +k\pi ,$ $k\in 
-\mathbb{Z}$
-
-$\phi =-\frac{\pi }{6}+k\frac{\pi }{2},$ con $k=1,$ tenemos $\phi =\frac{\pi 
-}{3}$
-
-El ángulo de rotación es $\phi =\frac{\pi }{3}$ $radianes=60\degree$ y el cambio de coordenadas es
-
-$\left( 
+\begin{align*}
+\cot \left( 2\phi \right) &=-\frac{1}{\sqrt{3}}\\
+\tan \left( 2\phi \right) &=-\sqrt{3} 2\phi \\ 
+&=\tan ^{-1}\left( -\sqrt{3}\right) =-\frac{1}{3}\pi +k\pi,\ k\in \mathbb{Z}\\
+\phi & =-\frac{\pi }{6}+k\frac{\pi }{2},\ \text{con } k=1,\ \text{tenemos } \phi =\frac{\pi}{3}
+\end{align*}
+El ángulo de rotación es $\phi =\frac{\pi }{3}\, \text{radianes}=60\degree$ y el cambio de coordenadas es
+\[\left( 
 \begin{array}{c}
 x \\ 
 y%
@@ -1795,47 +1496,34 @@ Y%
 \frac{1}{2}X-\frac{1}{2}\sqrt{3}Y \\ 
 \frac{1}{2}Y+\frac{1}{2}\sqrt{3}X%
 \end{array}%
-\right)$
-
+\right)\]
 Al reemplazar
-
-$%
-\begin{array}{r}
--11\left( \frac{1}{2}X-\frac{1}{2}\sqrt{3}Y\right) ^{2}+\left( 50\sqrt{3}%
+\begin{align*}
+-11\left( \frac{1}{2}X-\frac{1}{2}\sqrt{3}Y\right) ^{2} & +\left( 50\sqrt{3}%
 \right) \left( \frac{1}{2}X-\frac{1}{2}\sqrt{3}Y\right) \left( \frac{1}{2}Y+%
-\frac{1}{2}\sqrt{3}X\right) -\left( 36\sqrt{3}\right) \left( \frac{1}{2}X-%
-\frac{1}{2}\sqrt{3}Y\right) \\ 
-+39\left( \frac{1}{2}Y+\frac{1}{2}\sqrt{3}X\right) ^{2}+36\left( \frac{1}{2}%
+\frac{1}{2}\sqrt{3}X\right) \\ 
+&-\left( 36\sqrt{3}\right) \left( \frac{1}{2}X-\frac{1}{2}\sqrt{3}Y\right) \\ 
+&+39\left( \frac{1}{2}Y+\frac{1}{2}\sqrt{3}X\right) ^{2}+36\left( \frac{1}{2}%
 Y+\frac{1}{2}\sqrt{3}X\right) =612%
-\end{array}%
-$
-
+\end{align*}
 Simplificando, se obtiene
-
-$64X^{2}-36Y^{2}+72Y=612$ \ \ 
-
+\[64X^{2}-36Y^{2}+72Y=612\]
 Completamos los cuadrados.
-
-$64X^{2}-36\left( Y^{2}-2Y+1\right) =612-36$
-
-$64X^{2}-36\left( Y-1\right) ^{2}=576$ \ \ \ \ 
-
+\begin{align*}
+64X^{2}-36\left( Y^{2}-2Y+1\right) &=612-36\\
+64X^{2}-36\left( Y-1\right) ^{2}&=576
+\end{align*}
 Dividimos entre 576.
-
-$\frac{64X^{2}}{576}-\frac{36\left( Y-1\right) ^{2}}{576}=1\qquad $
-
-$\frac{X^{2}}{9}-\frac{\left( Y-1\right) ^{2}}{16}=1.$
-
+\begin{align*}
+\frac{64X^{2}}{576}-\frac{36\left( Y-1\right) ^{2}}{576}&=1\\
+\frac{X^{2}}{9}-\frac{\left( Y-1\right) ^{2}}{16}&=1
+\end{align*}
 Esta última ecuación es la de una hipérbola trasladada con centro $\left(0,1\right) $ en el plano $XY$, que abre en dirección de $X$ con $a=3$, $b=4,c=5$. Su gráfica se presenta en la figura~\ref{fig:placeholder3.69}.
 
 \begin{figure}[H]
     \centering
     \caption{Hipérbola rotada}
-    $
-    \begin{array}{c}
     \includegraphics[width=0.7\textwidth]{Images/SDY12U9R.png}
-    \end{array}
-    $
     \label{fig:placeholder3.69}
 \end{figure}
 
@@ -1849,37 +1537,30 @@ La gráfica de la ecuación $Ax^{2}+Bxy+Cx^{2}+Dx+Ey+F=0$ representa una cónica
     \item Una hipérbola si $B^{2}-4AC>0$
 \end{enumerate}
 
-La prueba de este resultado se demuestra considerando una rotación de los ejes en un ángulo $\phi$, lo que permite obtener una ecuación de la forma siguiente:
-
-\begin{center}
-$A^{\prime}x^{2}+B^{\prime}xy+C^{\prime}y^{2}+D^{\prime}x+E^{\prime}y+F^{\prime}=0$\pdfcomment{Se reemplazan signos personales del autor por la notación convencional de primas en todos los casos del libro.}
-\end{center}
-
+La prueba de este resultado se demuestra considerando una rotación de los ejes en un ángulo $\phi$, lo que permite obtener una ecuación de la forma siguiente:\pdfcomment{Se reemplazan signos personales del autor por la notación convencional de primas en todos los casos del libro.}
+\begin{equation*}
+A^{\prime}x^{2}+B^{\prime}xy+C^{\prime}y^{2}+D^{\prime}x+E^{\prime}y+F^{\prime}=0
+\end{equation*}
 Ya probamos que el discriminante: $B^{2}-4AC=\left( B^{\prime}\right)
-^{2}-4A^{\prime}C^{\prime}$
-
-Por lo tanto, la expresión $B^{2}-4AC$ sigue sin cambio para cualquier rotación. En particular, si escogemos una rotación que elimina el término en $xy$ $\left(B^{\prime}=0\right) $, obtenemos:
-
-\begin{center}
-$A^{\prime}x^{2}+C^{\prime}y^{2}+D^{\prime}x+E^{\prime}y+F^{\prime}=0$
-\end{center}
-
+^{2}-4A^{\prime}C^{\prime}$. Por lo tanto, la expresión $B^{2}-4AC$ sigue sin cambio para cualquier rotación. En particular, si escogemos una rotación que elimina el término en $xy$ $\left(B^{\prime}=0\right) $, obtenemos:
+\begin{equation*}
+A^{\prime}x^{2}+C^{\prime}y^{2}+D^{\prime}x+E^{\prime}y+F^{\prime}=0
+\end{equation*}
 En este caso, $B^{2}-4AC=\left( B^{\prime}\right) ^{2}-4A^{\prime}C^{\prime}=-4A^{\prime}C^{\prime}$
 
 Por lo tanto:
+\begin{enumerate}
+\item Si $B^{2}-4AC=0$, entonces $A^{\prime}C^{\prime}=0$ y $A^{\prime}=0$ o $C^{\prime}=0$ y la gráfica de la ecuación es una parábola.
 
-Si $B^{2}-4AC=0$, entonces $A^{\prime}C^{\prime}=0$ y $A^{\prime}=0$ o $C^{\prime}=0$ y la gráfica de la ecuación es una parábola.
+\item Si $B^{2}-4AC<0$, entonces $A^{\prime}C^{\prime}>0$ y $A^{\prime}$, y $C^{\prime}$ tienen el mismo signo y la gráfica de la ecuación es una elipse.
 
-Si $B^{2}-4AC<0$, entonces $A^{\prime}C^{\prime}>0$ y $A^{\prime}$, y $C^{\prime}$ tienen el mismo signo y la gráfica de la ecuación es una elipse.
-
-Si $B^{2}-4AC>0$, entonces $A^{\prime}C^{\prime}<0$ y $A^{\prime}$, y $C^{\prime}$ tienen signo contrario y la gráfica de la ecuación es una hipérbola.
-
+\item Si $B^{2}-4AC>0$, entonces $A^{\prime}C^{\prime}<0$ y $A^{\prime}$, y $C^{\prime}$ tienen signo contrario y la gráfica de la ecuación es una hipérbola.
+\end{enumerate}
 
 \begin{example}
 Identifique si la gráfica de cada ecuación es una parábola elipse o una hipérbola.
 
-\begin{enumerate}
-\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
+\begin{enumerate}[label=(\alph*)]
         \item $2x^{2}+4xy+3y^{2}-2x+6y+1=0$
         \item $x^{2}+4xy+4y^{2}-x+y-2=0$
         \item $4x^{2}+7xy+2y^{2}+3x+3y+5=0$
@@ -1888,11 +1569,10 @@ Identifique si la gráfica de cada ecuación es una parábola elipse o una hipé
 
 \textbf{Solución}
 
-\begin{enumerate}
-\renewcommand{\theenumi}{\alph{enumi}} \renewcommand{\labelenumi}{(\alph{enumi})}
-    \item En esta ecuación de segundo grado, $A=2,B=4,C=3$, el discriminante es $B^{2}-4AC=16-24=-8<0$, lo que indica que es una elipse.
-    \item De la ecuación $A=1,B=4,C=4$, el discriminante es $B^{2}-4AC=16-16=0$, por lo cual es una parábola.
-    \item Los coeficientes de la ecuación son $A=4,B=7,C=2$, el discriminante es $B^{2}-4AC=49-32=17>0$, lo que implica que es una hipérbola.
+\begin{enumerate}[label=(\alph*)]
+    \item En esta ecuación de segundo grado, $A=2$, $B=4$, $C=3$, el discriminante es $B^{2}-4AC=16-24=-8<0$, lo que indica que es una elipse.
+    \item De la ecuación $A=1$, $B=4$, $C=4$, el discriminante es $B^{2}-4AC=16-16=0$, por lo cual es una parábola.
+    \item Los coeficientes de la ecuación son $A=4$, $B=7$, $C=2$, el discriminante es $B^{2}-4AC=49-32=17>0$, lo que implica que es una hipérbola.
 \end{enumerate}
 
 \subsection{Ejercicios}
