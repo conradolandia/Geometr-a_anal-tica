@@ -171,6 +171,7 @@
 \newsavebox{\smcrossprodboxb}
 \newsavebox{\smcrossprodboxc}
 \newsavebox{\smcrossprodboxd}
+\newsavebox{\catalografica}
 
 %% Para editar: comentar esta línea.
 %% Para produccion del libro: activar esta linea.
@@ -210,13 +211,13 @@
 \newpage
 
 %%%%%%%% EDITAR INICIO PORTADILLA 1 %%%%%%%%%%%%%%%
-\portadillauno{Geometría analítica}{(no hay subtítulo)}
+\portadillauno{Geometría analítica}{(no hay subtítulo)}\pdfcomment{La pauta requiere el uso de subtítulo. ¿Qué se debe hacer cuando no hay subtítulo? la pauta no lo aclara.}
 %%%%%%%% FIN PORTADILLA 1 %%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \
 \newpage
 %%%%%%%% EDITAR INICIO PORTADILLA 2 %%%%%%%%%%%%%%%
-\portadillados{Geometría analítica}{(no hay subtitulo)}
+\portadillados{Geometría analítica}{(no hay subtitulo)}\pdfcomment{La pauta requiere el uso de subtítulo. ¿Qué se debe hacer cuando no hay subtítulo? la pauta no lo aclara.}
 \vspace*{5.5mm}
 \begin{flushleft}
   \leftskip=2mm
@@ -247,14 +248,12 @@
   \comocitar{Sarmiento Sarmiento, E. (2026). \emph{Geometría analítica.} Universidad Distrital Francisco José de Caldas-Editorial UD.}{10.16925/9789587604047}
 \end{flushright}
 
-\cleardoublepage
-
 \newpage\thispagestyle{empty}
 
 % Página legal
-[Página legal pendiente]
+\include{legal}
 
-\newpage
+\newpage\thispagestyle{empty}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% TABLA DE CONTENIDOS

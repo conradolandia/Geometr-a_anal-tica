@@ -2340,16 +2340,14 @@ La reflexión respecto a una recta $l$ es una transformación con las siguientes
 
 Una reflexión respecto a una recta es una isometría.
 
-\bigskip
+\paragraph{Reflexión respecto a una recta que pasa por el origen}\pdfcomment{es importante aclarar la jerarqía de los títulos en este capítulo. No es claro si debemos llegar hasta este nivel (párrafo) o incluso uno más abajo (que no se ha creado, simplemente se usa una línea de  texto en negrilla, similar a los títulos de los ejemplos y sus soluciones)}
 
-\textbf{Reflexión respecto a una recta que pasa por el origen}
-
-\textit{Reflexión respecto a la recta $y=mx$}
+\textbf{Reflexión respecto a la recta \boldmath{$y=mx$}}
 
 \begin{figure}[H]
     \centering
     \caption{Reflexión respecto a la recta $y=mx$}
-    \includegraphics[width=0.6\textwidth]{Images/SDY12T8J.png}
+    \includegraphics[width=0.7\textwidth]{Images/SDY12T8J.png}
     \label{fig:placeholder3.16}
 \end{figure}
 
@@ -2367,17 +2365,19 @@ u^{\prime} &= T\left( u \right) = \Proy_{v}u + \Proy_{v}u - u \\
            &= \frac{1}{m^2 + 1} \left( -x m^2 + 2 y m + x,\; y m^2 + 2 x m - y \right)
 \end{align*}
 Matricialmente, la reflexión queda:
-\[T\left( 
+\begin{align*}
+T\left( 
 \begin{array}{c}
 x \\ 
 y%
 \end{array}%
-\right) =\frac{1}{m^{2}+1}\left( 
+\right) & =\frac{1}{m^{2}+1}\left( 
 \begin{array}{c}
 \left( 1-m^{2}\right) x+2ym \\ 
 2xm+y\left( m^{2}-1\right)%
 \end{array}%
-\right) =\frac{1}{m^{2}+1}\left( 
+\right) \\ 
+& =\frac{1}{m^{2}+1}\left( 
 \begin{array}{cc}
 1-m^{2} & 2m \\ 
 2m & m^{2}-1%
@@ -2387,7 +2387,8 @@ y%
 x \\ 
 y%
 \end{array}%
-\right)\]
+\right)
+\end{align*}
 Note que los números $2m,m^{2}-1$ y $m^{2}+1$ forman una tripla pitagórica.
 
 La reflexión respecto al eje $x$ se obtiene reemplazando $m$ por $0$:
